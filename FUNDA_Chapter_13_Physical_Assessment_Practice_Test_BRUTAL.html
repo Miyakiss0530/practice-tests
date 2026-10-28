@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 13 - Physical Assessment - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Signs, Symptoms, Disease Origins and Risk Factors";
+var CB = "Disease Terms, Inflammation and Frequently Noted Signs";
+var CC = "Examination Role, Equipment, Positions and Interview";
+var CD = "Assessment Techniques, History and Review of Systems";
+var CE = "Neurologic, Skin, Chest and Breath Sounds";
+var CF = "Heart, Pulses, Abdomen, Edema and Communication";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 5,
+  "types": {
+   "single": 4,
+   "multi": 1
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 5,
+  "types": {
+   "single": 4,
+   "multi": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 6,
+  "types": {
+   "single": 5,
+   "multi": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 9,
+  "types": {
+   "order": 2,
+   "single": 5,
+   "dropdown": 1,
+   "matrix": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 15,
+  "types": {
+   "dropdown": 1,
+   "single": 11,
+   "matrix": 1,
+   "multi": 2
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 13,
+  "types": {
+   "single": 9,
+   "multi": 1,
+   "dropdown": 1,
+   "order": 1,
+   "matrix": 1
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A patient tells the nurse, 'My stomach feels like a knife is stabbing it,' while pointing to the upper abdomen. The nurse also notes a rash and a temperature of 100.8 degrees F. Which documentation is correct?",
+  opts: [ O("Quote the patient's stabbing description as subjective data and chart the rash and temperature as signs", true, "Correct. The patient's words are subjective symptom data; rash and measured temperature are objective signs. Framework named in the teaching point."), O("Chart the stabbing description as a sign because the patient pointed to where the pain is located today", false, "Incorrect. Pointing localizes the symptom but the felt description remains the patient's subjective perception."), O("Convert the patient's words to a medical pain term so later readers are not influenced by the wording", false, "Incorrect. Subjective data and chief complaints are recorded in the patient's own words to avoid bias."), O("Chart the rash and temperature as symptoms because both were found while the patient reported the pain", false, "Incorrect. Timing does not change the category; findings the nurse sees or measures are objective signs.") ],
+  tp: "Document symptoms in the patient's own words with onset, course, character, and aggravating or alleviating factors; signs are what the nurse observes and measures. Framework: Nursing Process/ADPIE (assessment data classification)" });
+
+BANK.push({ cat: CA, type: "multi",
+  stem: "A 58-year-old patient smokes a pack daily, sleeps 4 hours nightly, sunbathes weekly, is 62 years old, and has a parent who died of cancer. Which findings should the nurse target first in a risk-reduction teaching plan? Select all that apply.",
+  opts: [ O("Daily smoking, because it is a lifestyle risk the patient can change starting now", true, "Correct. Smoking is modifiable and is the most preventable cause of death in society."), O("Short nightly sleep, because insufficient rest is a modifiable lifestyle risk factor", true, "Correct. Insufficient rest and sleep are listed lifestyle risk factors that can be changed."), O("Weekly sunbathing, because it raises skin cancer risk and the habit can be changed", true, "Correct. Sunbathing is a lifestyle risk factor for skin cancer and is modifiable."), O("The patient's age of 62 years, because aging is the easiest risk factor to reverse", false, "Incorrect. Age is a risk category but it is not modifiable."), O("The parent's cancer history, because family history can be changed by teaching alone", false, "Incorrect. Family history is a genetic risk factor and cannot be modified; it guides screening and vigilance.") ],
+  tp: "Risk factors fall into four categories: genetic and physiologic, age, environment, and lifestyle. Presence raises the chance of disease; it does not guarantee it. Framework: Maslow (prevention and health promotion before disease treatment)" });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A newborn has a condition traced to failure to develop normally during the first 2 months of pregnancy after maternal infection and poor nutrition. The parents ask whether this means the condition was inherited. Which response is most accurate?",
+  opts: [ O("'This condition appeared at birth and is linked to development before birth, not to a gene passed from you.'", true, "Correct. Congenital conditions appear at birth or shortly after, are not caused by genetic abnormalities, and involve factors such as maternal infection, drugs, alcohol, malnutrition, radiation, or inadequate oxygen."), O("'Yes, conditions present at birth are passed genetically, like cystic fibrosis and sickle cell anemia are.'", false, "Incorrect. Cystic fibrosis and sickle cell anemia are hereditary examples; presence at birth alone does not mean genetic transmission."), O("'No, a condition from this time period is caused only by microorganisms invading the body after delivery.'", false, "Incorrect. Invasion by microorganisms describes infectious origin, not abnormal embryonic development."), O("'This is a metabolic condition, because endocrine dysfunction before birth disrupts metabolic balance.'", false, "Incorrect. Metabolic origin involves dysfunction such as pancreatic islet or thyroid dysfunction, not the developmental failure described.") ],
+  tp: "Congenital = present at birth, not genetic, from failure to develop normally in the embryonic stage or first 2 months of pregnancy. Framework: Nursing Process/ADPIE (accurate patient teaching during assessment)" });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "During a health history, a patient with a new lung mass says, 'The provider said it is growing fast and spreading into nearby tissue.' Which origin description should the nurse understand this to match?",
+  opts: [ O("A malignant neoplastic process, because abnormal new tissue grows rapidly and invades nearby tissue", true, "Correct. Neoplastic growth is abnormal new tissue; malignant neoplasms rapidly grow and invade and are a serious threat to health."), O("A benign neoplastic process, because new tissue growth always stays limited to its original site only", false, "Incorrect. Some neoplasms are benign, but rapid growth with invasion is the malignant pattern in the chapter."), O("An inflammatory process, because the body is reacting to an injurious agent with an allergic response", false, "Incorrect. Inflammatory origin is a reaction to an injurious agent such as microorganisms or allergens, not invasive new growth."), O("A traumatic process, because physical trauma is the most common reason new tissue invades nearby areas", false, "Incorrect. Traumatic origin follows physical or emotional trauma such as a motor vehicle accident, not invasive tissue growth.") ],
+  tp: "Neoplastic = abnormal growth of new tissue, benign or malignant; malignant growth rapidly grows and invades. Framework: Safety first (recognizing a serious threat to health in the history)" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient with a hot, reddened, swollen knee reports pain and cannot bend the joint. Creamy yellow-green drainage is present. Which set of findings should the nurse report as the cardinal signs present here?",
+  opts: [ O("Redness, swelling, heat, pain, purulent drainage, and loss of function in the affected knee joint", true, "Correct. All six universal cardinal signs of infection and inflammation are present in this vignette."), O("Redness, swelling, heat, and pain only, because drainage and function are not part of this sign group", false, "Incorrect. Purulent drainage and loss of function complete the cardinal list given in the chapter."), O("Fever, rapid pulse, rapid breathing, and pain only, because vital signs define the local sign group here", false, "Incorrect. Those are systemic vital-sign changes; the cardinal signs are the local findings listed in the chapter."), O("Itching, rash, nausea, and pain only, because the patient reported each of these findings personally", false, "Incorrect. Itching and nausea are symptoms from Table 13.1 examples, not the cardinal sign set for inflammation.") ],
+  tp: "Cardinal signs of infection and inflammation: erythema, edema, heat, pain, purulent drainage, and loss of function. Framework: ABCs and safety first (complete recognition of an infectious process)" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient returns 3 days after starting therapy and says all signs of a long-standing illness have completely disappeared. The provider continues monitoring rather than discharging the patient as cured. Which concept explains this plan?",
+  opts: [ O("Remission, because the disease characteristics can disappear partly or completely without a cure", true, "Correct. Remission is partial or complete disappearance of clinical and subjective characteristics, spontaneous or from therapy; it is not a cure, and the disease described was long-standing, i.e., chronic."), O("Acute disease, because an illness that disappears after treatment must have begun abruptly this week", false, "Incorrect. The illness was long-standing, which fits chronic disease; disappearance after therapy fits remission."), O("Functional disease, because disappearing findings prove no structural problem ever existed in the body", false, "Incorrect. Functional disease means no structural or physiologic abnormality is found on examination; that is not shown here."), O("Organic disease, because a structural change in an organ is required before monitoring can be stopped", false, "Incorrect. Organic disease describes structural change interfering with function; it does not explain continued monitoring after disappearance.") ],
+  tp: "Chronic disease persists over a long period; remission is disappearance of its characteristics, not proof of cure. Framework: Acute vs chronic (long-standing course changes the interpretation)" });
+
+BANK.push({ cat: CB, type: "multi",
+  stem: "A nurse assesses a wound with increased redness and warmth. Which explanations from the chapter support these two findings? Select all that apply.",
+  opts: [ O("Blood flow to the damaged area has increased, producing both the redness and the warmth felt", true, "Correct. Erythema and heat are the result of increased blood flow to the damaged area."), O("Capillary walls near the damage have become more permeable as tissue chemicals are released", true, "Correct. Damaged tissue releases chemicals that make capillary walls more permeable, letting WBCs and plasma move in."), O("White blood cells are moving into the area to digest microorganisms and cellular debris there", true, "Correct. Neutrophils move to the affected area and digest microorganisms and cellular debris as part of the response."), O("Fluid is collecting in the tissues, and that collection is the direct cause of the redness seen", false, "Incorrect. Excess tissue fluid causes edema and pressure pain; redness and heat come from increased blood flow."), O("Function of the area was lost first, and resting the part then caused the vessels to dilate widely", false, "Incorrect. Loss of function imposes rest as a result of the response; it is not the cause of the redness and heat.") ],
+  tp: "Inflammatory response: increased flow causes erythema and heat; permeability lets WBCs and plasma enter; excess fluid causes edema and pain; loss of function rests the area. Framework: Nursing Process/ADPIE (analyzing cues before intervening)" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient's stool is described as dark black and tarry, and the vomitus looks like coffee grounds. Which interpretation should the nurse act on?",
+  opts: [ O("Both findings can indicate bleeding in the intestinal tract or stomach and need prompt reporting", true, "Correct. Table 13.1 states dark black, tarry stools mean bleeding in the intestinal tract and coffee-ground vomitus indicates bleeding in the stomach."), O("Both findings are expected after most meals and only need routine documentation at shift change", false, "Incorrect. These are not expected findings; bright red blood would indicate active or gastric bleeding, and these darker forms also signal bleeding."), O("The tarry stool shows lower tract bleeding is active now, and the vomitus finding can be disregarded", false, "Incorrect. Bright red blood indicates active lower bleeding; tarry stool means intestinal tract bleeding, and the vomitus also matters."), O("The coffee-ground vomitus shows the stomach is empty, so the stool finding alone determines the plan", false, "Incorrect. Coffee-ground vomitus indicates stomach bleeding; it adds concern rather than canceling the stool finding.") ],
+  tp: "Stool and vomit color traps: tarry black stool = intestinal bleeding; bright red = active lower bleeding; coffee-ground vomitus = stomach bleeding; bright red vomitus = possible gastric hemorrhage. Framework: Safety first (bleeding cues require prompt reporting)" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A male provider is about to perform a gynecologic examination. Which action should the nurse take first?",
+  opts: [ O("Remain in attendance during the examination, as many facilities require for this type of exam", true, "Correct. The nurse should not leave the patient alone, most examiners appreciate a nurse in attendance, and many facilities require a female nurse present when a male provider performs a gynecologic examination."), O("Leave the room once the patient is positioned so the patient has privacy during the examination", false, "Incorrect. Privacy is protected by draping and discretion, not by leaving the patient alone during the exam."), O("Ask the patient to assume the lithotomy position for the full preparation period before the exam", false, "Incorrect. Lithotomy is embarrassing and uncomfortable, so time in it is minimized, not extended during preparation."), O("Obtain the Pap smear slides after the examination so the provider is not delayed at the start time", false, "Incorrect. Supplies such as Pap smear slides are confirmed and obtained before the examination begins.") ],
+  tp: "Pre-exam: verify consent, prerequisites, supplies, appropriate room with stirrups for a gynecologic exam, positioning ability, and specimen needs; do not leave the patient alone. Framework: Safety first (attendance, privacy, and patient protection)" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A frail, weakened patient cannot sit up for assessment of the lungs and upper body. Which position should the nurse use instead?",
+  opts: [ O("Supine with the head of the bed elevated, because this patient cannot maintain a sitting position", true, "Correct. Table 13.2 lists this exact alternative for physically weakened patients unable to sit."), O("Prone with the face turned to one side, because this position best expands the lungs for assessment", false, "Incorrect. Prone is used only for hip extension and is tolerated poorly by patients with respiratory difficulties."), O("Knee-chest with the hips raised high, because this position exposes the posterior chest most fully now", false, "Incorrect. Knee-chest provides maximum rectal exposure and is embarrassing and uncomfortable; it is not a lung position."), O("Lithotomy with the legs in stirrups, because this position keeps a weakened patient from falling down", false, "Incorrect. Lithotomy exposes the female genitalia and genital tract for speculum insertion, not the lungs or upper body.") ],
+  tp: "Sitting gives full lung expansion and symmetry; the weakened patient alternative is supine with head of bed elevated. Framework: Stable vs unstable (matching position to the patient's strength)" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A patient becomes short of breath whenever the head of the bed is lowered flat. The nurse needs to assess the abdomen. Which adjustment keeps the assessment valid?",
+  opts: [ O("Use supine or dorsal recumbent with the head of the bed raised as this patient needs for breathing", true, "Correct. The supine table entry directs raising the head of the bed if the patient becomes short of breath easily; dorsal recumbent relaxes abdominal muscles, with knees flexed for comfort."), O("Place the patient prone for the abdominal assessment so the back muscles support the breathing effort", false, "Incorrect. Prone is only for hip extension assessment and is tolerated poorly with respiratory difficulty."), O("Keep the patient fully flat until the abdominal assessment ends, then raise the head of the bed again", false, "Incorrect. A patient who becomes short of breath easily should have the head of bed raised; breathing takes priority over a flat position."), O("Move the patient to knee-chest so abdominal contents shift and the abdomen is easier to palpate today", false, "Incorrect. Knee-chest is for maximum rectal exposure, is embarrassing and uncomfortable, and would worsen breathing.") ],
+  tp: "Position limitations are safety data: dyspnea changes the position plan; dorsal recumbent relaxes the abdomen and knees flexed eases painful disorders. Framework: ABCs (breathing outranks completing the abdominal position)" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "At the start of an interview, a patient keeps asking how the hospital bed works and appears distracted. Which action best follows the chapter's interview guidance?",
+  opts: [ O("Answer the pressing question about the bed first, then begin the assessment questions with the patient", true, "Correct. Answering pressing questions first meets immediate needs; a patient distracted by the bed thinks about that more than the questions."), O("Repeat the assessment questions more slowly until the patient stops asking about the hospital bed", false, "Incorrect. Slowing down does not remove the distraction; meeting the immediate need first is the chapter guidance."), O("Tell the patient the bed will be explained after the 30-minute interview has been fully completed", false, "Incorrect. Deferring a pressing question leaves the patient distracted; the chapter directs answering it first."), O("Ask a family member to answer the assessment questions while the patient figures out the bed alone", false, "Incorrect. The health history comes from the patient; family data supplements but does not replace the patient's answers.") ],
+  tp: "Interview technique: introduce name, role, purpose, and time; answer pressing questions first; sit at eye level; use the patient's preferred name; nonjudgmental language, reflection, and restating clarify communication. Framework: Maslow (immediate comfort and control needs before data collection)" });
+
+BANK.push({ cat: CC, type: "multi",
+  stem: "Which interview behaviors build trust and a therapeutic relationship during assessment? Select all that apply.",
+  opts: [ O("Conducting the interview in a private, well-lit setting while remaining objective and compassionate", true, "Correct. A private, well-lit setting with compassion, concern, and objectivity is the chapter standard."), O("Sitting or standing at eye level and using the name the patient wishes to be addressed by today", true, "Correct. Eye level enhances comfort, and using the patient's chosen name is a listed technique."), O("Using nonjudgmental responses such as 'Yes, I see' that encourage the patient to keep talking", true, "Correct. Nonjudgmental language encourages communication without the patient feeling threatened."), O("Promising to keep detailed family information from every other member of the care team entirely", false, "Incorrect. Information is shared only with caregivers who need it to provide care; it is not withheld from the team providing care."), O("Continuing questions without pause when the patient becomes uncomfortable or unstable in bed", false, "Incorrect. The nurse pauses the interview if necessary, stabilizes the patient, and ensures comfort and safety before proceeding.") ],
+  tp: "Trust is the last step of initiating the relationship; professionalism, privacy, eye contact, and approving nods facilitate exchange of information. Framework: Safety first (pause and stabilize before continuing the interview)" });
+
+BANK.push({ cat: CD, type: "order",
+  stem: "Place the steps of preparing for and starting a physical assessment in the correct order.",
+  items: [ { t: "Wash hands thoroughly before beginning the physical assessment of the patient", r: "Hand hygiene comes first, before beginning the assessment, per CDC standard precautions guidance in the chapter." }, { t: "Give the patient the opportunity to empty the bladder before the examination", r: "Voiding before the exam makes the patient more comfortable and allows easier abdominal assessment." }, { t: "Obtain vital signs, pain rating, height, and weight at the start of the examination", r: "Vital signs are obtained at the beginning and give clues to areas needing detailed assessment; height and weight are measured then and compared with stated values." }, { t: "Begin the head-to-toe sequence with the neurologic assessment of the patient", r: "The head-to-toe assessment begins with neurologic assessment, then skin, hair, head, and neck." } ],
+  tp: "Assessment setup: hand hygiene, bladder emptying, vital signs including pain as the fifth vital sign, then a systematic head-to-toe sequence performed the same way each time. Framework: Nursing Process/ADPIE (ordered assessment sequence)" });
+
+BANK.push({ cat: CD, type: "order",
+  stem: "Place the head-to-toe assessment areas in the correct order as listed in the chapter.",
+  items: [ { t: "Neurologic assessment, then skin, hair, head, and neck assessment", r: "Neurologic assessment is first in the head-to-toe sequence." }, { t: "Eyes, ears, nose, and mouth as part of the head assessment", r: "The head assessment includes eyes, ears, nose, and mouth after the opening neurologic and skin steps." }, { t: "Chest, back, arms, and then the abdomen of the patient", r: "Chest, back, and arms come before the abdomen in the listed order." }, { t: "Perineal area, then the legs, and finally the feet", r: "Perineal area, legs, and feet complete the sequence in that order." } ],
+  tp: "Head-to-toe order: neurologic, skin, hair, head/neck (eyes, ears, nose, mouth), chest, back, arms, abdomen, perineal area, legs, feet. Painful areas are assessed last; assessment is continuous, not one-time. Framework: Nursing Process/ADPIE (systematic sequence prevents omissions)" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Midway through a head-to-toe assessment, the nurse reaches a markedly tender abdomen that makes the patient guard and grimace. A colleague suggests finishing that area first next time. Which principle should guide the plan for the next assessment?",
+  opts: [ O("Assess painful areas last so the patient stays cooperative through the rest of the examination", true, "Correct. The chapter directs that painful areas are best assessed last during head-to-toe assessment to ensure better cooperation."), O("Assess painful areas first so the most important findings are finished before the patient tires out", false, "Incorrect. Pain first reduces cooperation for everything that follows; the chapter's rule is painful areas last."), O("Skip the painful area entirely and document that the area could not be assessed at this visit today", false, "Incorrect. The area still needs assessment, including watching the face for grimacing and noting guarding; it is sequenced last, not skipped."), O("Palpate the tender area deeply first because deep palpation is the quickest way to finish the exam", false, "Incorrect. Deep palpation is used by advanced practice nurses for tenderness or masses; sequencing painful areas last is the guiding rule here.") ],
+  tp: "During palpation, watch the face: a grimace is a cue to describe the pain; guarding is tightening of abdominal muscles when a tender area is touched. Framework: Nursing Process/ADPIE (sequencing that preserves cooperation)" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A nurse is about to palpate a patient's abdomen. Which preparation and technique are correct?",
+  opts: [ O("Short fingernails and warm hands, using fingertip pads flat with slight pressure and gentle rotation", true, "Correct. Before palpation nails are short and hands warm; pads of the fingers lie flat with slight pressure and gentle rotation, and the actions are explained first."), O("Long fingernails kept still, using the fingertips to press deeply at one point without any rotation", false, "Incorrect. Nails must be short, and deep single-point pressure without explanation risks pain and fear during palpation."), O("Cold hands used quickly so the patient has less time to become embarrassed by the touching involved", false, "Incorrect. Hands are warmed before touching; conversation during palpation relaxes the patient rather than rushing the technique."), O("Gloved palms pressed firmly over clothing so the patient does not feel direct skin contact at all now", false, "Incorrect. Palpation uses fingertip pads on the skin to detect masses, pulsations, temperature, texture, and moisture.") ],
+  tp: "Palpation confirms or rules out suspicions from interview and inspection; untrained palpation can cause internal injury, so explain actions and ask the patient to report tenderness, pressure, or pain. Framework: Safety first (technique that prevents injury and pain)" });
+
+BANK.push({ cat: CD, type: "dropdown",
+  stem: "A patient describes new leg pain. The nurse sorts the statements into OPQRSTUV elements. Pain began suddenly while walking [[0]]. Walking makes it worse and rest makes it better [[1]]. It is a cramping feeling in the calf [[2]]. It stays in the calf and does not travel [[3]].",
+  blanks: [ { o: [ O("Onset and timing of the problem", true, "Correct. O covers when it began and how it starts, including what the patient was doing."), O("Region and radiation of the problem", false, "Incorrect. Region and radiation cover where it is and whether it spreads."), O("Severity scale rating of the problem", false, "Incorrect. Severity is how bad it is, rated on a scale such as 0 to 10.") ] }, { o: [ O("Quality and quantity of the problem", false, "Incorrect. Quality and quantity describe what it is like and how much of it there is."), O("Precipitating and provocative-palliative factors", true, "Correct. P covers what causes it, what makes it better, and what makes it worse."), O("Treatments tried for the problem so far", false, "Incorrect. Treatments are T, what helps and for how long.") ] }, { o: [ O("Understanding of what is causing it", false, "Incorrect. U is what the patient thinks is causing the problem."), O("Values and goals for care of the patient", false, "Incorrect. V covers goals of care and expectations."), O("Quality and quantity of the problem", true, "Correct. Q covers what the problem feels like and how much of it there is.") ] }, { o: [ O("Region and radiation of the problem", true, "Correct. R covers where it is and whether it spreads or travels."), O("Onset and timing of the problem", false, "Incorrect. Onset covers when and how the problem began."), O("Severity scale rating of the problem", false, "Incorrect. Severity rates how bad the problem is at its worst.") ] } ],
+  tp: "OPQRSTUV gives complete present-illness data: onset, precipitating/provocative-palliative, quality/quantity, region/radiation, severity, treatments, understanding, values. Framework: Nursing Process/ADPIE (complete data before planning)" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A patient reports a long medication allergy history. Which documentation follows the chapter's health-history rule?",
+  opts: [ O("Document the allergy, the specific reaction, and the treatment on the assessment form for this patient", true, "Correct. When an allergy is identified, the allergy, specific reaction, and treatment are documented on the assessment form."), O("Document only that the patient 'has allergies' so the form stays short and easy for others to read now", false, "Incorrect. A general note omits the reaction and treatment details the chapter requires for safe care."), O("Document the amount the patient uses by writing 'drinks alcohol' instead of how much is consumed daily", false, "Incorrect. The chapter gives the opposite example: document how much alcohol is drunk, with type, frequency, and duration for habits."), O("Document allergies only when the reaction was severe enough to require emergency treatment in the past", false, "Incorrect. Allergies to medications, food, or environmental pollutants are documented when identified, not only after emergencies.") ],
+  tp: "Health history: hospitalizations, surgeries, allergies with reaction and treatment, and habits (alcohol, tobacco, drugs, caffeine, herbals, OTC and prescription drugs) with type, frequency, and duration. Framework: Safety first (allergy detail prevents a harmful exposure)" });
+
+BANK.push({ cat: CD, type: "matrix",
+  stem: "For each history element, choose the history section it belongs to.",
+  cols: ["Health (past) history", "Family history"],
+  rows: [ { t: "Prior hospitalization and the reason for that admission", a: 0, r: "Hospitalizations and surgeries belong to the health (past) history." }, { t: "A sibling's diabetes mellitus and a parent's heart disease", a: 1, r: "Diabetes, hypertension, heart disease, and cancer in blood relatives belong to family history." }, { t: "Allergy to a food with the reaction and treatment used", a: 0, r: "Allergies are documented in the health history with reaction and treatment." }, { t: "Cause of death of immediate family members in the record", a: 1, r: "Family history includes relatives' conditions and cause of death." }, { t: "Habits such as tobacco use with frequency and duration", a: 0, r: "Habits and lifestyle patterns are identified from the health history." } ],
+  tp: "Health history = the patient's own experiences, allergies, and habits. Family history = relatives' illnesses and causes of death, used to find genetic risk and prevention areas. Framework: Nursing Process/ADPIE (sorting data into the correct history section)" });
+
+BANK.push({ cat: CE, type: "dropdown",
+  stem: "A patient after a head injury opens the eyes to a verbal command [[0]], answers with confused conversation but can answer questions [[1]], and obeys commands for movement [[2]]. The nurse calculates the total Glasgow Coma Scale score from these three responses.",
+  blanks: [ { o: [ O("3 points for eye opening", true, "Correct. Eye opening to verbal stimuli, command, or speech scores 3."), O("4 points for eye opening", false, "Incorrect. Four points is spontaneous eye opening with blinking at baseline."), O("2 points for eye opening", false, "Incorrect. Two points is eye opening to a fingertip stimulus.") ] }, { o: [ O("5 points for verbal response", false, "Incorrect. Five points requires an oriented verbal response."), O("4 points for verbal response", true, "Correct. Confused conversation but able to answer questions scores 4."), O("3 points for verbal response", false, "Incorrect. Three points is intelligible single words only.") ] }, { o: [ O("5 points for motor response", false, "Incorrect. Five points is bringing the hand above the clavicle to a stimulus on the head or neck."), O("4 points for motor response", false, "Incorrect. Four points is rapid elbow flexion with features not predominantly abnormal."), O("6 points for motor response", true, "Correct. Obeying commands for movement scores the motor maximum of 6; total here is 13.") ] } ],
+  tp: "GCS total here is 3 + 4 + 6 = 13. A normal GCS is 15; a score of 8 or less indicates severe brain injury, and scores of 3 to 8 are usually described as coma. Framework: ABCs and safety first (scoring neurologic status accurately)" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A patient's GCS drops to 7 during hourly checks after a head injury. Which action should the nurse take first?",
+  opts: [ O("Report the change promptly, because a score of 8 or less indicates severe brain injury in this patient", true, "Correct. A GCS of 8 or less indicates severe brain injury, and a change in LOC is one of the first signs of altered neurologic status, so this decline is reported immediately."), O("Recheck the score at the next scheduled hourly check, because single-point changes are usually minor", false, "Incorrect. A drop into the severe range is not minor; waiting delays response to a worsening neurologic status."), O("Document the score and continue the skin assessment, because the head-to-toe sequence should not change", false, "Incorrect. A focused assessment and prompt reporting take priority when the patient's condition changes."), O("Ask the patient orientation questions only, because verbal answers alone can confirm the total score here", false, "Incorrect. GCS requires eye, verbal, and motor scoring; orientation questions alone do not replace the full scale or the report.") ],
+  tp: "Careful neurologic assessment is critical after head injury or with signs of neurologic deficit; integrate grip testing, orientation, speech, and interaction throughout the assessment. Framework: Safety first (a declining GCS is reported immediately)" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A nurse shines a penlight into a patient's right pupil from the side while the patient looks straight ahead. Both pupils constrict equally. Which documentation is accurate?",
+  opts: [ O("Direct response in the right pupil and consensual response in the left, with equal constriction noted", true, "Correct. The pupil receiving light constricts directly; the other pupil constricting is the consensual response, and equal constriction is the normal accommodation pattern described."), O("Direct response in the left pupil only, because the light was aimed from the side of the right eye now", false, "Incorrect. The direct response is in the eye receiving the light, which is the right eye here."), O("An abnormal finding, because only the eye receiving the light should constrict during this test at all", false, "Incorrect. The other pupil also constricts when the response is normal; that is the consensual response."), O("PERRLA cannot be documented until the pupils measure larger than the normal size range for adults", false, "Incorrect. Normal pupils are 3 to 7 mm; PERRLA documents equal, round, reactive to light, and accommodation when findings are normal.") ],
+  tp: "Pupil check: darken the room, light from the side, patient looking straight ahead at a focal point; assess both eyes individually. Framework: Nursing Process/ADPIE (accurate neurologic documentation)" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A nurse prepares to examine the ears of a 2-year-old child and a 40-year-old adult. Which technique is correct for both?",
+  opts: [ O("Pull the child's pinna back and down; pull the adult's external ear back and up to straighten the canal", true, "Correct. Children younger than 3 years: pinna back and down. Older patients: pull back and up gently to straighten and examine the canal and eardrum."), O("Pull both patients' pinnae back and up, because one technique is used for every age group in the chapter", false, "Incorrect. The under-3 technique differs: back and down, not back and up."), O("Pull the child's pinna back and up; pull the adult's pinna back and down to straighten the ear canal", false, "Incorrect. This reverses the two age techniques given in the chapter."), O("Expect pain with the movement in both patients, because some pain is normal during an ear examination", false, "Incorrect. Normally no pain is associated with this movement in either age group.") ],
+  tp: "Ear canal should be free of excess cerumen, discharge, and foreign bodies; note whether the patient follows commands, indicating hearing. Framework: Safety first (age-correct technique prevents injury)" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "While palpating the neck, a nurse feels a vibrating sensation along the carotid artery and later hears a swishing sound with the bell of the stethoscope. Which pairing should be documented?",
+  opts: [ O("A thrill on palpation and a bruit on auscultation, with the carotid palpated gently one side at a time", true, "Correct. A vibrating sensation during palpation is a thrill; a bruit is an abnormal swishing sound over an artery, from a narrowed or partially occluded vessel such as in atherosclerosis."), O("A bruit on palpation and a thrill on auscultation, with both carotids palpated firmly at the same time", false, "Incorrect. The terms are reversed, and carotids are palpated gently and one at a time, never both firmly together."), O("A normal carotid finding, because a regular palpable pulse without symptoms needs no further notation", false, "Incorrect. The normal carotid pulse is regular and palpable without a thrill, and normally no bruits are audible."), O("Jugular venous distention, because neck vessel findings during palpation always reflect right heart filling", false, "Incorrect. Jugular distention is an inspection finding reflecting right-sided filling pressure and volume, not a palpated vibration or auscultated swish.") ],
+  tp: "Carotid rules: palpate gently, one at a time, beneath the jaw and down each side of the neck for nodes; tenderness of a node is not normal even if enlargement may not be abnormal. Framework: Safety first (one-at-a-time carotid palpation)" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A patient with a respiratory rate of 26 breaths/min must lean forward to breathe and cannot lie supine. SpO2 is 89%. Which action should the nurse take first?",
+  opts: [ O("Keep the patient sitting and leaning forward, assess the breathing status, and report the distress findings", true, "Correct. Inability to lie supine or needing to lean forward shows respiratory distress; tachypnea is greater than 20/min, and an SpO2 of 90% to 100% is needed to replenish oxygen in plasma, so 89% with distress is reported promptly."), O("Lay the patient supine to complete the chest assessment in the standard position for lung examination", false, "Incorrect. A patient unable to lie supine is showing respiratory distress; forcing the position worsens breathing."), O("Document tachypnea only, because posture is not part of the respiratory assessment in this chapter at all", false, "Incorrect. Posture is often indicative of acute or chronic respiratory disease and is an assessment cue here."), O("Reassess the rate in one hour, because a rate above the normal range is expected during any examination", false, "Incorrect. Normal adult rate is 12 to 20/min and quiet; 26/min with distress positioning and low saturation needs action now.") ],
+  tp: "Respiratory normals: rate 12 to 20/min, quiet breathing, symmetric bilateral expansion, SpO2 90% to 100% by pulse oximetry (finger or earlobe sensor). Framework: ABCs (airway and breathing before completing the examination)" });
+
+BANK.push({ cat: CE, type: "matrix",
+  stem: "Classify each breath sound by whether it is continuous or discontinuous.",
+  cols: ["Continuous", "Discontinuous"],
+  rows: [ { t: "Wheezes heard as air moves through narrowed passages in the airways", a: 0, r: "Wheezes are continuous sounds produced by air through narrowed passages." }, { t: "Crackles heard as short, interrupted, bubbling sounds during inspiration", a: 1, r: "Crackles are discontinuous fluid sounds in the bronchioles and alveoli." }, { t: "Sibilant wheezes with a high-pitched, squeaking, musical quality noted", a: 0, r: "Sibilant wheezes are wheezes, which are continuous sounds." }, { t: "Sonorous wheezes with a low-pitched, gurgling, snoring quality noted", a: 0, r: "Sonorous wheezes are continuous and usually indicate mucus in the trachea and large airways." }, { t: "Fine crackles that sound like hairs rolled between fingers near the ear", a: 1, r: "Crackles are described as fine or coarse and remain discontinuous." } ],
+  tp: "After hearing adventitious sounds, have the patient cough and listen again: sonorous wheezes are most likely to clear somewhat with cough; crackles sometimes clear somewhat too, and that is documented. Framework: Nursing Process/ADPIE (classifying cues before reporting)" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A high-pitched, inspiratory, crowing sound is louder in the neck than over the chest wall in a patient with a swollen throat. Which finding and implication should the nurse report?",
+  opts: [ O("Stridor from the larynx or trachea, indicating upper airway obstruction needing prompt reporting now", true, "Correct. Stridor originates in the larynx or trachea and indicates upper airway obstruction from swollen, inflamed tissues or a foreign body."), O("A pleural friction rub from inflamed pleura, heard as leather pieces rubbing together on auscultation", false, "Incorrect. A friction rub is a rubbing, grating, squeaky sound from pleural inflammation, not a crowing neck sound."), O("A sonorous wheeze from mucus in large airways, which is the sound most likely to clear after coughing", false, "Incorrect. Sonorous wheezes are low-pitched and gurgling from mucus; this crowing inspiratory neck sound is stridor."), O("A sibilant wheeze from narrowed small airways, heard mainly over the posterior chest wall during exams", false, "Incorrect. Sibilant wheezes are high-pitched and musical through narrowed airways, but stridor is louder in the neck and signals obstruction.") ],
+  tp: "Never listen through clothing, never rush auscultation, use the diaphragm firmly on skin for one full inspiratory-expiratory cycle at each point, comparing side to side in a zigzag from apices to bases. Framework: ABCs (upper airway obstruction is an airway emergency cue)" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "Standing assessment shows an exaggerated posterior curvature of the thoracic spine in an older patient. Which term and check belong together?",
+  opts: [ O("Kyphosis, and the nurse also checks that the shoulders and hips are evenly aligned in this patient", true, "Correct. Kyphosis is an exaggeration of the posterior curvature of the thoracic spine; shoulders and hips should be evenly aligned and the spine straight with a normal lumbosacral curve."), O("Lordosis, and the nurse documents a lateral curvature of the spine from side to side in the record", false, "Incorrect. Lordosis is increased lumbar curvature (swayback); lateral curvature is scoliosis."), O("Scoliosis, and the nurse documents an increased lumbar curve known as swayback in the record today", false, "Incorrect. Scoliosis is lateral spinal curvature; swayback describes lordosis, an increased lumbar curve."), O("A normal spine finding, because posterior thoracic curvature is not assessed in a sitting patient", false, "Incorrect. Spine curvature is noted with the patient sitting, posture is assessed standing, and fingers are run down the spine.") ],
+  tp: "Posture terms: kyphosis = humpback (thoracic posterior), lordosis = swayback (lumbar), scoliosis = lateral curvature. Framework: Nursing Process/ADPIE (matching the term to the observed posture)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "A nurse hears a dull, soft extra sound right after S2 at the apex of a 68-year-old patient with new fatigue. Which interpretation should be reported?",
+  opts: [ O("An S3, which is usually abnormal in adults and can be an early sign of heart failure in this patient", true, "Correct. S3 follows S2, is heard best at the apex, has a dull soft sound, is sometimes normal in children but usually abnormal in adults, and can be an early heart failure sign."), O("An S4, which is heard late in diastole just before S1 and is linked to coronary disease after an MI", false, "Incorrect. S4 timing is before S1, not right after S2; the timing in the stem identifies S3."), O("A normal S1, because the first heart sound is also heard most clearly at the apex of the heart area", false, "Incorrect. S1 is AV valve closure at the start of systole, not an extra dull sound after S2."), O("A normal S2, because the second heart sound ends systole and is heard most clearly at the apex area", false, "Incorrect. S2 is semilunar closure heard most clearly at the base, and it is not an extra sound after itself.") ],
+  tp: "Listen in several positions (sitting leaning forward, supine, left lateral recumbent) for several cycles; note intensity and rhythm regularity. Framework: Safety first (a new S3 in an adult is reported)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "A patient has pedal pulses graded 1+, capillary refill of 5 seconds, and cool feet. Which interpretation is most accurate?",
+  opts: [ O("Perfusion is impaired: the pulse is thready, refill is abnormal, and the feet should normally be warm", true, "Correct. On the scale 1+ is thready and 3+ is normal; refill of 5 seconds is abnormal (more than 3 is sluggish), and hands and feet are normally warm."), O("Perfusion is normal: a 1+ pulse is the normal grade and refill up to 5 seconds is within the range", false, "Incorrect. Normal pulse grade is 3+, and refill should be less than 3 seconds; 5 seconds is abnormal."), O("Perfusion is strong: a bounding pulse with slow refill shows the heart is compensating well today", false, "Incorrect. A bounding pulse is 4+, not 1+; slow refill signals poor cardiac function, dehydration, or peripheral vascular disease."), O("Only the temperature matters: pulse grade and refill time are not part of perfusion assessment here", false, "Incorrect. Pulse rate, rhythm, and strength plus capillary refill and temperature are all peripheral vascular assessment data.") ],
+  tp: "Begin with the most distal pulses; use fingertip pads without occluding the artery; count the rate for 60 seconds and check rhythm regularity. Framework: ABCs (circulation findings are interpreted together)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "A patient reports cramplike pain in the calves after walking that eases with rest, and the dorsalis pedis pulse is hard to find. Which action is most appropriate?",
+  opts: [ O("Vary fingertip position and pressure to locate the pulse, then assess and report the perfusion findings", true, "Correct. If a pulse is hard to locate, move the fingers slightly and vary pressure without occluding the artery. Claudication pain after walking reflects insufficient oxygenated blood to leg muscles from narrowed arteries, often atherosclerosis."), O("Press harder over the dorsalis pedis site until a pulse is felt, then document it as a normal finding", false, "Incorrect. Pressing hard enough to occlude the artery hides the pulse; light touch along the dorsum between the first and second toes is the technique."), O("Document the pulse as absent without rechecking, because walking pain explains why it cannot be felt", false, "Incorrect. Position and pressure are varied first before concluding a pulse cannot be located."), O("Have the patient walk again to reproduce the pain so the pulse can be timed while the pain is present", false, "Incorrect. Reproducing ischemic pain is not an assessment step; ischemia is decreased oxygenated blood supply to tissues.") ],
+  tp: "Pulse sites: radial, brachial, ulnar, femoral, popliteal, dorsalis pedis, posterior tibial. Posterior tibial is below and behind the medial malleolus; popliteal is deep in the back of the slightly bent knee. Framework: Safety first (do not provoke ischemic pain to complete an assessment)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "After 1 minute of listening in each abdominal quadrant, a nurse hears no bowel sounds in a postoperative patient. Which action is correct?",
+  opts: [ O("Continue listening for at least 4 minutes total before concluding that bowel sounds are absent here", true, "Correct. Bowel sounds can be highly irregular; listen at least 4 minutes before concluding absence, which indicates arrest of intestinal motility, a medical problem."), O("Document a silent abdomen now, because 1 minute in each quadrant is the maximum listening time set", false, "Incorrect. One minute per quadrant localizes sounds, but concluding absence requires at least 4 minutes of listening."), O("Palpate the abdomen firmly to stimulate sounds, then listen again and chart what is heard afterward", false, "Incorrect. Palpation can stimulate intestinal activity and alter bowel sounds, which is why auscultation precedes palpation."), O("Document hyperactive sounds, because no sounds after surgery usually mean motility is increasing fast", false, "Incorrect. Absent or diminished sounds accompany inhibition of motility, as with paralytic ileus, inflammation, or peritonitis.") ],
+  tp: "Bowel sounds occur every 15 to 60 seconds and are also printed as 4 to 32 per minute (both as printed); classify as active, hypoactive, or absent. Framework: Nursing Process/ADPIE (thorough data before concluding absence)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "During abdominal palpation the nurse feels a pulsating mass. Which action should the nurse take first?",
+  opts: [ O("Stop palpation immediately and notify the health care provider about the finding in this patient", true, "Correct. A pulsating abdominal mass can indicate an aneurysm; if a lump or mass is detected, stop palpation immediately and notify the provider."), O("Continue moderate palpation to measure the size and borders of the mass for the assessment record", false, "Incorrect. Continued palpation of a possible aneurysm is unsafe; the book action rule is to stop and notify."), O("Percuss over the mass to confirm its density before deciding whether the finding needs reporting", false, "Incorrect. Percussion does not make continued manipulation safe; stopping palpation and notifying come first."), O("Document the mass at the end of the shift so the rest of the examination can be finished first today", false, "Incorrect. This finding is reported promptly, not held until the end of the shift.") ],
+  tp: "Normal abdomen: even contour, homogeneous skin color, free of masses, tenderness, and pulsations; a felt liver may be enlarged, and a normal liver is smooth and nontender. Framework: Safety first (stop and notify for a pulsating mass)" });
+
+BANK.push({ cat: CF, type: "multi",
+  stem: "Which findings indicate increased bowel sounds and increased motility? Select all that apply.",
+  opts: [ O("Loud, gurgling borborygmi in a patient who has diarrhea today", true, "Correct. Loud gurgling borborygmi accompanies increased motility such as with diarrhea."), O("High-pitched, loud sounds in a patient with an early bowel obstruction", true, "Correct. Early obstruction sounds are high pitched, usually loud, and echo as if through a hollow vessel."), O("Sounds heard with gastroenteritis and with a subsiding ileus pattern", true, "Correct. Gastroenteritis and subsiding ileus are listed with increased bowel sounds; laxative use can also increase motility."), O("Diminished sounds in a patient with peritonitis and electrolyte disturbance", false, "Incorrect. Peritonitis and electrolyte disturbances are listed with decreased peristalsis and diminished sounds."), O("Absent sounds in a patient whose bowel was manipulated during surgery", false, "Incorrect. Surgical manipulation is listed with decreased motility and diminished or absent sounds.") ],
+  tp: "Increased sounds: diarrhea, gastroenteritis, early obstruction, subsiding ileus, laxatives. Decreased sounds: peritonitis, electrolyte disturbance, surgical manipulation, late obstruction, paralytic ileus, lower lobe pneumonia. Framework: Nursing Process/ADPIE (distinguishing increased from decreased motility)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "A nurse presses over the shin bone for 5 seconds and a 6 mm pit remains for about 45 seconds. Which grade and follow-up are correct?",
+  opts: [ O("Grade it 3+ pitting edema and assess dependent areas including feet, legs, scrotum, and sacral area", true, "Correct. A 6 mm deep pit lasting 30 seconds to more than 1 minute is 3+ moderate edema; edema is assessed in dependent parts of the body."), O("Grade it 1+ pitting edema, because any pit that rebounds within a minute is only a trace amount now", false, "Incorrect. 1+ is a barely perceptible 2 mm pit; depth and duration here are well beyond trace."), O("Grade it 4+ pitting edema, because a pit lasting 45 seconds is the longest rebound time on the scale", false, "Incorrect. 4+ is an 8 mm pit that may last 2 to 5 minutes; 45 seconds with 6 mm is the 3+ range."), O("Do not grade it, because edema beside a bone cannot be scored on the pitting scale used in the chapter", false, "Incorrect. Pressing against a bony prominence for 5 seconds is exactly the pitting test; nonpitting edema is what cannot be graded.") ],
+  tp: "Also assess color, motion, sensation, and temperature (CMST) of both feet; test sensation with eyes closed; observe gait for range of motion. Framework: Nursing Process/ADPIE (grading edema by depth and rebound time)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "A rectal examination is planned and a vaginal inspection is also needed. Which position serves both areas as listed?",
+  opts: [ O("Sims position, because flexion of the hip and knee improves exposure of the rectal area for exams", true, "Correct. Table 13.2 lists Sims for rectum and vagina; hip and knee flexion improves rectal exposure, though joint deformities may hinder bending."), O("Knee-chest position, because it is the only position listed for both the rectum and the vagina here", false, "Incorrect. Knee-chest is listed for the rectum only and gives maximum rectal exposure; it is not the combined listing."), O("Lithotomy position, because it is listed for the rectum as well as for the female genital tract area", false, "Incorrect. Lithotomy is listed for female genitalia and genital tract, not for the rectum."), O("Prone position, because lying face down exposes both areas without any bending of hip or knee joints", false, "Incorrect. Prone is used only to assess hip joint extension in the musculoskeletal system.") ],
+  tp: "Rectal area assessment: Sims is also the position used to spread the buttocks and look for hemorrhoids or lesions; normal perianal skin is darker than surrounding skin. Framework: Least restrictive (choosing the position that fits both assessments)" });
+
+BANK.push({ cat: CF, type: "dropdown",
+  stem: "A nurse gathers specimens for ordered tests. A stool guaiac test checks for [[0]]. A sputum acid-fast bacilli (AFB) test is a sputum analysis item listed beside [[1]]. A 24-hour urine collection is used to measure [[2]].",
+  blanks: [ { o: [ O("Occult blood in the gastrointestinal tract", true, "Correct. Guaiac (Hematest) stool testing and the hemoccult test indicate whether gastrointestinal bleeding is present."), O("Ova and parasites living in the stool sample", false, "Incorrect. Ova and parasites is a separate stool analysis item in Box 13.5."), O("Clostridium difficile growing in the stool sample", false, "Incorrect. C. difficile testing is a separate stool analysis item.") ] }, { o: [ O("Culture and sensitivity and cytology testing", true, "Correct. Sputum analysis lists AFB, culture and sensitivity, and cytology tests."), O("Creatinine clearance and protein content testing", false, "Incorrect. Those are 24-hour urine collection purposes, not sputum tests."), O("Guaiac and ova and parasites testing panels", false, "Incorrect. Those are stool analysis items, not sputum items.") ] }, { o: [ O("Creatinine clearance and protein content levels", true, "Correct. The 24-hour urine collection is listed for creatinine clearance and protein content."), O("Acid-fast bacilli and cytology cell examination", false, "Incorrect. Those are sputum analysis items."), O("Cholesterol and triglyceride lipid profile levels", false, "Incorrect. Lipid profile is a blood analysis item in Box 13.5.") ] } ],
+  tp: "Box 13.5 also lists imaging (CXR, CT, MRI, IVP, barium enema, upper GI) and other tests (colonoscopy, endoscopy, ECG, echocardiogram, stress test, TB skin test). Framework: Nursing Process/ADPIE (matching the specimen to the ordered test)" });
+
+BANK.push({ cat: CF, type: "order",
+  stem: "Place the parts of an SBAR telephone report in the correct order.",
+  items: [ { t: "Situation: state what is happening with the patient right now", r: "Situation opens the SBAR report with the current problem." }, { t: "Background: give the relevant history behind the current situation", r: "Background follows with the context for the situation." }, { t: "Assessment: state the nurse's assessment of the patient problem", r: "Assessment presents the nurse's analysis before the request." }, { t: "Recommendation: state what the nurse recommends should happen next", r: "Recommendation closes SBAR with the requested action." } ],
+  tp: "SBAR was developed at Kaiser Permanente of Colorado, meets Joint Commission safety goals, and standardizes handoff between sender and receiver; HIPAA guidelines protect patient information in telephone consultation. Framework: Safety first (standardized communication prevents handoff errors)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "An older adult tires during a long assessment, slumping and sighing. Which plan best fits the lifespan guidance?",
+  opts: [ O("Use several shorter sessions, watch for fatigue, keep the room warm and draft-free, and allow voiding first", true, "Correct. Several shorter sessions are better tolerated; monitor for fatigue such as slumping, sighing, or irritability; ensure warmth, privacy, and a chance to void, with bathroom facilities readily available."), O("Finish the full assessment in one session so the patient is not disturbed by repeated visits later on", false, "Incorrect. One long session is the pattern the guidance warns against for older adults who fatigue."), O("Have the family member answer all questions so the session can be completed as quickly as possible", false, "Incorrect. A family member may assist if the patient wishes, but must not dominate; the patient answers in their own words without interruption."), O("Use medical terminology and speak quickly so the older patient processes the questions more efficiently", false, "Incorrect. The guidance is the opposite: avoid jargon, speak slowly and clearly, and allow time to reply.") ],
+  tp: "Older adults do not show aging changes at the same rate; sort expected changes from pathologic processes and obtain both objective and subjective data. Framework: Maslow (comfort, rest, and dignity needs of the older adult)" });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "A patient calls the clinic with a new health problem. Which telephone-consultation action is within the nurse's role?",
+  opts: [ O("Assess the reported problem and advise the patient to come in, see a specialist on the team, or go to the ED", true, "Correct. In telephone consultation the nurse advises, directs the patient to come in, instructs the patient to call a specialist already on the team, or instructs the patient to seek emergency department care, based on the nurse's assessment."), O("Diagnose the problem from the call and prescribe a treatment plan for the patient to start at home", false, "Incorrect. The nurse's interventions are based on assessment and may require collaborating with a provider and calling the patient back; prescribing is not the nurse's role."), O("Share the caller's details with any staff who ask, because clinic teamwork overrides privacy rules here", false, "Incorrect. HIPAA guidelines must be followed to protect the privacy of patient information."), O("Tell the caller that telephone advice is never given and that no assessment can occur by phone at all", false, "Incorrect. Telephone consultation is a described nursing setting; assessment data comes directly from the patient by phone.") ],
+  tp: "Documentation of interview and assessment must be objective, clear, complete, and concise; it is the baseline for evaluating later changes and therapy decisions. Framework: Safety first (triage advice matched to the assessed problem)" });
+
+BANK.push({ cat: CF, type: "matrix",
+  stem: "Classify each finding as a normal finding or a deviation to document and follow up.",
+  cols: ["Normal finding", "Deviation to document"],
+  rows: [ { t: "Mucous membranes that are moist, pink, and free of lesions in the mouth", a: 0, r: "Moist, pink, lesion-free mucous membranes are the stated normal finding." }, { t: "Foul, fruity, or musty breath odor noted during the mouth assessment", a: 1, r: "Foul, fruity, or musty breath is not normal; breath odors often indicate disease." }, { t: "Conjunctiva that appears pink when the lower lid is gently depressed", a: 0, r: "A pink conjunctiva is the normal finding." }, { t: "Periorbital edema seen around the eyes during the eye assessment", a: 1, r: "Periorbital edema is abnormal." }, { t: "A normal white vaginal discharge known as leukorrhea in a female patient", a: 0, r: "Leukorrhea is a normal white vaginal discharge that is sometimes present." }, { t: "A deviated septum found while assessing patency of both of the nostrils", a: 1, r: "A deviated septum is a deviation to note during the nose assessment." } ],
+  tp: "Head and neck normals: head upright and still, comfortable head ROM, normal carotid pulse without a thrill, jugular veins not observable when sitting, and no bruits audible. Framework: Nursing Process/ADPIE (separating normals from deviations)" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A patient who was admitted 30 hours ago still has no baseline assessment documented. Which statement about timing and responsibility is correct?",
+  opts: [ O("The baseline was due as soon after admission as possible, and the initial baseline is the RN's responsibility", true, "Correct. The best time is as soon after admission as possible, some facilities require completion within 24 hours, and the RN performs the initial baseline assessment; ongoing assessment is shared by the RN and LPN/LVN."), O("The timing is acceptable, because the baseline may be completed any time during the first week of care", false, "Incorrect. The chapter standard is as soon as possible, within 24 hours in some facilities, not within a week."), O("The LPN should complete the initial baseline now, because initial and ongoing assessments share one owner", false, "Incorrect. The initial baseline is the RN's; ongoing assessment is the responsibility of both the RN and the LPN/LVN."), O("A focused assessment at the next condition change will replace the missing baseline assessment entirely", false, "Incorrect. A focused assessment targets a specific change; it does not replace the baseline database for the care plan.") ],
+  tp: "Assessment database includes health history, physical findings, laboratory and diagnostic results, and information from team members and family; it bases the individualized plan of care. Framework: Nursing Process/ADPIE (baseline data anchors the care plan)" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "During a shift assessment, a patient's condition changes in one body area. Which assessment type and focus are correct?",
+  opts: [ O("A focused assessment directed at the specific body part or most active problem area of the change", true, "Correct. A focused assessment is performed when the nurse assesses a change in condition, directed to a specific part or localized, most active problem area."), O("A full head-to-toe assessment repeated from the start, because any change restarts the whole sequence", false, "Incorrect. The formal head-to-toe is done on admission and at the start of each shift; a change calls for a focused assessment first."), O("A review of systems interview only, because changes in condition are always subjective data problems", false, "Incorrect. A change may involve objective findings; the focused assessment examines the changed area directly."), O("No assessment until the provider arrives, because condition changes are outside nursing assessment scope", false, "Incorrect. Beginning-of-shift and focused assessments let the nurse identify changes, anticipate problems, communicate to providers, and alter the plan.") ],
+  tp: "Assessment setting must be comfortable and safe, private, free of distracting sights, sounds, and odors, with comfortable room temperature in any setting: hospital, clinic, extended care, or home. Framework: Acute vs chronic (a new change is assessed as an acute priority)" });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A retired shipyard worker who was exposed to asbestos for years develops lung problems, and a neighbor exposed to carbon monoxide from fossil fuels becomes suddenly ill. Which teaching point covers both histories?",
+  opts: [ O("Both are environmental conditions from exposure to harmful substances in the surroundings of the patient", true, "Correct. Environmental origin covers conditions from harmful substances such as asbestos, linked to lung problems and cancers, and carbon monoxide, which may lead to sudden illness and death."), O("Both are hereditary conditions, because exposures that begin at work are passed to children genetically", false, "Incorrect. Hereditary means transmitted genetically from parents to children, as with hemophilia or color blindness."), O("Both are deficiency conditions, because each person lacked a specific nutrient in the daily diet intake", false, "Incorrect. Deficiency results from lack of a specific nutrient such as iron, not from environmental exposure."), O("Both are traumatic conditions, because any harmful event at work is classified as physical trauma here", false, "Incorrect. Traumatic origin follows physical or emotional trauma such as an accident or loss, not substance exposure.") ],
+  tp: "High crime rates, overcrowding, pollution, and family conflict are also environmental stressors in Box 13.1. Framework: Safety first (recognizing environmental exposure in the history)" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient reports profound weakness with loss of strength and energy, feels indifferent and sluggish, and has no appetite at all. Which set of terms matches these three reports in order?",
+  opts: [ O("Asthenia for the weakness, lethargy for the sluggish indifference, and anorexia for the loss of appetite", true, "Correct. Asthenia is debility with loss of strength, energy, and vitality; lethargy is indifference, apathy, or sluggishness; anorexia is lack of appetite resulting in inability to eat."), O("Lethargy for the weakness, anorexia for the sluggish indifference, and asthenia for the loss of appetite", false, "Incorrect. The second and third terms are swapped in this set; anorexia is the appetite term."), O("Asthenia for the weakness, anorexia for the sluggish indifference, and lethargy for the loss of appetite", false, "Incorrect. Lethargy, not anorexia, describes being indifferent, apathetic, or sluggish."), O("Anorexia for the weakness, asthenia for the sluggish indifference, and lethargy for the loss of appetite", false, "Incorrect. All three terms are rotated out of place in this set; match each report to its own definition.") ],
+  tp: "Table 13.1 terms are tested as a set because asthenia, lethargy, and anorexia are easily confused with one another. Framework: Nursing Process/ADPIE (precise terminology in documentation)" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A provider will perform an eye and ear examination plus a Pap smear today. Which setup shows the nurse prepared the room correctly?",
+  opts: [ O("Snellen chart, ophthalmoscope, otoscope, Pap smear slides, lubricant, drapes, and gloves are all ready", true, "Correct. Box 13.2 lists the eye chart, ophthalmoscope, otoscope, Pap smear slides, lubricant, drapes, and gloves among examination supplies, and the nurse confirms all supplies before the exam."), O("Only a stethoscope and blood pressure cuff are ready, because other supplies are gathered as requested", false, "Incorrect. The nurse confirms all necessary supplies and equipment have been obtained before the provider begins."), O("The room is set without drapes or a patient gown, because those items are optional for these examinations", false, "Incorrect. Drapes and a gown for the patient are listed supplies and protect privacy during exposure."), O("Specimen containers are left in storage until after the visit, because specimens are labeled the next day", false, "Incorrect. The nurse determines what specimen supplies are necessary and where specimens are sent before the examination.") ],
+  tp: "Also in Box 13.2: cotton applicators, Cytobrush, flashlight, forms, percussion hammer, safety pins, scale with height rod, spatula, sphygmomanometer, tape measure, thermometer, tongue depressor, tuning fork, and vaginal speculum. Framework: Nursing Process/ADPIE (preparation before the examination)" });
+
+BANK.push({ cat: CE, type: "single", grp: "case1", scen: "CASE STUDY — Mr. Daniel Ortiz, 74, is admitted with worsening shortness of breath over 2 days. He must sit upright and lean forward to breathe and cannot lie flat. Vitals: temperature 99.1 degrees F, pulse 104, respirations 28 breaths/min, blood pressure 148/88, SpO2 89% on room air. The nurse hears crackles in both lower lobes and notes 3+ pitting edema at both ankles. He answers questions with confused conversation, reports calf-free legs, and rates his breathing discomfort 7 of 10. His skin is warm and dry, capillary refill is 2 seconds, and pedal pulses are 2+.",
+  stem: "CASE STUDY 1 of 6 — RECOGNIZE CUES: Which cluster of findings in Mr. Ortiz requires the nurse's immediate attention?",
+  opts: [ O("Respirations 28, SpO2 89%, crackles, and needing to sit up and lean forward to breathe comfortably", true, "Correct. Tachypnea greater than 20, saturation below the 90% to 100% range needed to replenish plasma oxygen, fluid sounds in the alveoli, and distress positioning are the urgent breathing cues."), O("Capillary refill of 2 seconds, warm dry skin, and pedal pulses graded 2+ in both of his feet today", false, "Incorrect. Refill under 3 seconds is normal, warm dry skin is expected, and these are not the immediate-threat cues in this case."), O("Temperature of 99.1 degrees F with a blood pressure of 148/88 recorded at the time of admission now", false, "Incorrect. These values matter for monitoring, but they do not outrank the breathing cluster that threatens oxygenation."), O("A discomfort rating of 7 of 10 for breathing, reported by the patient during the admission interview", false, "Incorrect. The rating is important subjective data and uses the 0 to 10 scale correctly, but the objective breathing cues drive the immediate response.") ],
+  tp: "Recognize cues first: crackles are discontinuous fluid sounds in bronchioles and alveoli; orthopnea-type positioning signals respiratory distress. Framework: ABCs (breathing cues are recognized before all other data)" });
+
+BANK.push({ cat: CE, type: "multi", grp: "case1", scen: "CASE STUDY — Mr. Daniel Ortiz, 74, is admitted with worsening shortness of breath over 2 days. He must sit upright and lean forward to breathe and cannot lie flat. Vitals: temperature 99.1 degrees F, pulse 104, respirations 28 breaths/min, blood pressure 148/88, SpO2 89% on room air. The nurse hears crackles in both lower lobes and notes 3+ pitting edema at both ankles. He answers questions with confused conversation, reports calf-free legs, and rates his breathing discomfort 7 of 10. His skin is warm and dry, capillary refill is 2 seconds, and pedal pulses are 2+.",
+  stem: "CASE STUDY 2 of 6 — ANALYZE CUES: Which interpretations of Mr. Ortiz's findings are supported by the chapter? Select all that apply.",
+  opts: [ O("Crackles indicate fluid in the bronchioles and alveoli of his lungs", true, "Correct. Crackles are discontinuous sounds produced by fluid in the bronchioles and alveoli, usually heard during inspiration."), O("His need to sit or stand to breathe comfortably matches orthopnea", true, "Correct. Orthopnea is the condition in which a person has to sit or stand to breathe deeply or comfortably."), O("The 3+ ankle edema shows a deep 6 mm pit lasting 30 seconds or more", true, "Correct. The 3+ grade on Box 13.10 is a deep 6 mm pit lasting 30 seconds to more than 1 minute."), O("His confused conversation changes his GCS verbal score to a full 5 points", false, "Incorrect. Confused conversation that can still answer questions scores 4 verbal points, not the oriented score of 5."), O("His respiratory rate of 28 is within the normal adult range of 12 to 20 daily", false, "Incorrect. A rate of 28 is tachypnea, greater than 20 breaths per minute.") ],
+  tp: "Analyze by linking each cue to its chapter meaning before choosing a hypothesis; edema is also assessed in dependent areas such as feet, legs, scrotum, and sacrum. Framework: Nursing Process/ADPIE (analyze cues)" });
+
+BANK.push({ cat: CE, type: "single", grp: "case1", scen: "CASE STUDY — Mr. Daniel Ortiz, 74, is admitted with worsening shortness of breath over 2 days. He must sit upright and lean forward to breathe and cannot lie flat. Vitals: temperature 99.1 degrees F, pulse 104, respirations 28 breaths/min, blood pressure 148/88, SpO2 89% on room air. The nurse hears crackles in both lower lobes and notes 3+ pitting edema at both ankles. He answers questions with confused conversation, reports calf-free legs, and rates his breathing discomfort 7 of 10. His skin is warm and dry, capillary refill is 2 seconds, and pedal pulses are 2+.",
+  stem: "CASE STUDY 3 of 6 — PRIORITIZE HYPOTHESES: Which problem should the nurse prioritize for Mr. Ortiz?",
+  opts: [ O("Impaired breathing and oxygenation, shown by tachypnea, low saturation, crackles, and distress posture", true, "Correct. Breathing is the priority: rate 28, SpO2 89%, fluid sounds, and inability to lie flat all point to oxygenation as the immediate problem."), O("Incomplete health history data, shown by the missing family history and review of systems sections", false, "Incorrect. Completing the history matters, but a focused assessment of the active breathing problem comes before completing every history section."), O("Ankle edema as the main problem, shown by the 3+ pitting grade recorded at both of his ankles today", false, "Incorrect. The edema is an important cue in the pattern, but it does not threaten oxygenation the way the breathing findings do."), O("Confused conversation as the main problem, shown by his answers during the admission interview today", false, "Incorrect. Confusion is a neurologic cue to monitor, but the breathing cluster is the first priority under an airway-breathing order.") ],
+  tp: "A focused assessment is directed at the most active problem area when a condition changes; beginning assessments identify changes early so the plan can be altered. Framework: ABCs (breathing before history completion or edema care)" });
+
+BANK.push({ cat: CE, type: "multi", grp: "case1", scen: "CASE STUDY — Mr. Daniel Ortiz, 74, is admitted with worsening shortness of breath over 2 days. He must sit upright and lean forward to breathe and cannot lie flat. Vitals: temperature 99.1 degrees F, pulse 104, respirations 28 breaths/min, blood pressure 148/88, SpO2 89% on room air. The nurse hears crackles in both lower lobes and notes 3+ pitting edema at both ankles. He answers questions with confused conversation, reports calf-free legs, and rates his breathing discomfort 7 of 10. His skin is warm and dry, capillary refill is 2 seconds, and pedal pulses are 2+.",
+  stem: "CASE STUDY 4 of 6 — GENERATE SOLUTIONS: Which planned actions fit Mr. Ortiz's priority problem? Select all that apply.",
+  opts: [ O("Keep the head of the bed elevated to assist him to breathe easier in bed", true, "Correct. Elevating the head of the bed assists breathing, and assistive personnel can be instructed to keep it elevated and report rate or depth changes immediately."), O("Place oxygen on him as ordered to meet his basic need for oxygen now", true, "Correct. The chapter example directs steps to ensure placement of oxygen, positioning, deep breathing, and coughing when oxygen is a basic human need."), O("Report the breathing findings and changes to the health care provider promptly", true, "Correct. Assessment at the start of care identifies changes, anticipates problems, and communicates changes to providers so the plan can be altered."), O("Lay him flat in the prone position to complete the lung assessment sequence first", false, "Incorrect. Prone is tolerated poorly with respiratory difficulty, and he cannot lie flat; positioning must support breathing."), O("Finish the full written history before reassessing his respirations or saturation", false, "Incorrect. Reassessment of the active problem outranks paperwork; his breathing status is rechecked and reported as it changes.") ],
+  tp: "Generate solutions from the priority problem: position, oxygen need, reporting, and reassessment, with assistive personnel observing respirations and reporting changes in rate and depth immediately. Framework: Maslow (physiologic oxygen need before documentation needs)" });
+
+BANK.push({ cat: CE, type: "single", grp: "case1", scen: "CASE STUDY — Mr. Daniel Ortiz, 74, is admitted with worsening shortness of breath over 2 days. He must sit upright and lean forward to breathe and cannot lie flat. Vitals: temperature 99.1 degrees F, pulse 104, respirations 28 breaths/min, blood pressure 148/88, SpO2 89% on room air. The nurse hears crackles in both lower lobes and notes 3+ pitting edema at both ankles. He answers questions with confused conversation, reports calf-free legs, and rates his breathing discomfort 7 of 10. His skin is warm and dry, capillary refill is 2 seconds, and pedal pulses are 2+.",
+  stem: "CASE STUDY 5 of 6 — TAKE ACTION: Which action should the nurse take first for Mr. Ortiz?",
+  opts: [ O("Sit him upright with the head of the bed elevated and reassess his breathing and saturation at once", true, "Correct. Positioning for breathing comes first for a patient who must sit up to breathe, followed immediately by reassessment of rate, depth, and saturation."), O("Begin the full head-to-toe assessment at the neurologic step and work down in the usual sequence", false, "Incorrect. When a focused problem is active, the focused assessment of that problem comes first rather than the full sequence."), O("Ask him to cough once and then document the lung sounds as final for this shift's assessment note", false, "Incorrect. Having the patient cough and listening again is a real step for adventitious sounds, but positioning and reassessment come first and findings are not closed after one cough."), O("Lower the head of the bed so the posterior chest can be auscultated in the standard flat position", false, "Incorrect. Posterior auscultation is done sitting, leaning forward with arms across the lap; lowering him flat worsens the distress shown.") ],
+  tp: "Auscultation setup for lungs: sitting, leaning forward, arms across the lap, diaphragm firmly on skin (never over clothing), mouth breathing quietly, deeper and slower, one full cycle per point, zigzag side-to-side comparison. Framework: ABCs (position and reassess breathing first)" });
+
+BANK.push({ cat: CE, type: "single", grp: "case1", scen: "CASE STUDY — Mr. Daniel Ortiz, 74, is admitted with worsening shortness of breath over 2 days. He must sit upright and lean forward to breathe and cannot lie flat. Vitals: temperature 99.1 degrees F, pulse 104, respirations 28 breaths/min, blood pressure 148/88, SpO2 89% on room air. The nurse hears crackles in both lower lobes and notes 3+ pitting edema at both ankles. He answers questions with confused conversation, reports calf-free legs, and rates his breathing discomfort 7 of 10. His skin is warm and dry, capillary refill is 2 seconds, and pedal pulses are 2+.",
+  stem: "CASE STUDY 6 of 6 — EVALUATE OUTCOMES: Two hours later, which finding set shows Mr. Ortiz's priority problem is improving?",
+  opts: [ O("Respirations 18 breaths/min, SpO2 96%, breathing comfortably at 45 degrees, and clearer lung sounds", true, "Correct. A rate back inside 12 to 20, saturation inside 90% to 100%, comfortable breathing without leaning forward, and clearing sounds show the breathing problem improving."), O("Respirations 24 breaths/min, SpO2 90%, still leaning forward, and crackles unchanged in both bases", false, "Incorrect. The rate is still tachypneic and the distress posture and crackles persist, so the problem is not yet improving."), O("Edema now graded 1+ at the ankles and pedal pulses now graded 3+, while respirations remain 26 breaths/min", false, "Incorrect. The edema and pulse grades improved, but the respiratory rate is still tachypneic, so the priority breathing outcome has not been met."), O("Respirations 28 breaths/min, SpO2 89%, confusion resolved, and discomfort now rated 2 of 10 by him", false, "Incorrect. Orientation and comfort improved, but rate and saturation are unchanged from the urgent admission values, so the priority problem has not improved.") ],
+  tp: "Evaluate against the same measures used at recognition: respiratory rate, saturation, position tolerance, and breath sounds; assessment is a continuous process, not a one-time event. Framework: Nursing Process/ADPIE (evaluate outcomes against baseline cues)" });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 13: Physical Assessment</h1>';
+  h += '<div class="sub">Brutal mode | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

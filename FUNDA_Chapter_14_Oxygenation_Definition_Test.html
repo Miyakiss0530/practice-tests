@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 14 - Oxygenation - Definition Practice Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Hypoxia, Oxygen Basics & Delivery Devices";
+var CB = "Oxygen Safety, COPD & Home Care";
+var CC = "Oxygen Administration & Airway Suctioning";
+var CD = "Tracheostomy & Artificial Airways";
+var CATS = [CA, CB, CC, CD];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 14,
+  "types": {
+   "single": 12,
+   "multi": 2
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 11,
+  "types": {
+   "single": 10,
+   "multi": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 12,
+  "types": {
+   "single": 10,
+   "multi": 2
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 11,
+  "types": {
+   "single": 10,
+   "multi": 1
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement best describes hypoxia?",
+  opts: [O("Tissue and cells receive excess oxygen, so cell metabolism speeds up beyond normal limits", false, "Incorrect. Excess oxygen describes oxygen toxicity risk, not hypoxia; hypoxia is too little oxygen in tissue and cells."), O("Airway passages narrow from swelling, so less air moves in and out with each breath taken", false, "Incorrect. Airway narrowing can cause hypoxia but is not what the term itself describes in this chapter."), O("Blood carries reduced carbon dioxide, so the respiratory drive weakens and breathing slows", false, "Incorrect. Hypoxia is about oxygen content in tissue and cells, not a primary drop in carbon dioxide carriage."), O("Tissue and cells receive reduced oxygen, so cell metabolism slows and cells begin to die", true, "Correct. The chapter defines hypoxia as reduced oxygen content in tissue and cells; metabolism slows and cells begin to die.")],
+  tp: "Hypoxia = reduced oxygen in tissue and cells; metabolism slows and cells begin to die." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement about oxygen therapy is accurate?",
+  opts: [O("Oxygen is treated as a drug and is given following the six rights of administration", true, "Correct. The chapter treats oxygen as a drug, so the six rights of drug administration apply."), O("Oxygen is treated as a comfort measure and may be started without any provider order", false, "Incorrect. Oxygen must be ordered by a health care provider; it is never a free-standing comfort measure."), O("Oxygen is treated as a supply item and needs no monitoring once the flow is first set", false, "Incorrect. The nurse closely monitors the patient and evaluates the response to oxygen therapy."), O("Oxygen is treated as a drug and may be titrated freely by any staff member on the unit", false, "Incorrect. Treating oxygen as a drug means the opposite: the flow is changed only within the provider order.")],
+  tp: "Oxygen is a drug: provider order required, six rights apply, response is monitored." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement about starting oxygen therapy is accurate?",
+  opts: [O("Oxygen therapy must be ordered by the respiratory therapist and monitored by the nurse", false, "Incorrect. A respiratory therapist may initiate therapy, but the order comes from a health care provider."), O("Oxygen therapy must be ordered by a health care provider and monitored by the nurse", true, "Correct. A provider order is required, and the nurse monitors administration and response."), O("Oxygen therapy may be ordered by unlicensed staff and then monitored by the nurse daily", false, "Incorrect. Unlicensed staff cannot order oxygen; initiation requires a licensed provider with an order."), O("Oxygen therapy may be ordered by the family and then monitored by the nurse each shift", false, "Incorrect. Families do not order oxygen; a licensed provider order is required before therapy.")],
+  tp: "Oxygen needs a provider order; a respiratory therapist, nurse, or EMT may initiate it with that order." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "What is the normal range for PaO2?",
+  opts: [O("80 to 100 mm Hg in the arterial circulation of a healthy adult patient", true, "Correct. PaO2, the oxygen in arterial blood, normally runs 80 to 100 mm Hg."), O("100 to 120 mm Hg in the arterial circulation of a healthy adult patient", false, "Incorrect. 100 to 120 mm Hg sits above the normal arterial range printed in the chapter."), O("60 to 80 mm Hg in the arterial circulation of a healthy adult patient", false, "Incorrect. 60 to 80 mm Hg falls below the normal arterial range printed in the chapter."), O("40 to 60 mm Hg in the venous circulation of a healthy adult patient", false, "Incorrect. PaO2 is an arterial value, and 40 to 60 mm Hg is far below its normal range.")],
+  tp: "PaO2 normal = 80 to 100 mm Hg; it is the amount of oxygen in the arterial circulation." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement about PaO2 in older adults is accurate?",
+  opts: [O("A 70-year-old may run 100 to 110 mm Hg without significant changes in health status", false, "Incorrect. 100 to 110 mm Hg exceeds the normal range; aging lowers PaO2 slightly, never raises it."), O("A 70-year-old may run 80 to 85 mm Hg without significant changes in health status", true, "Correct. The chapter notes a 70-year-old may have a PaO2 of 80 to 85 mm Hg without significant alterations in health."), O("A 70-year-old may run 60 to 65 mm Hg without significant changes in health status", false, "Incorrect. 60 to 65 mm Hg is well below what the chapter accepts for a healthy 70-year-old."), O("A 70-year-old may run 70 to 75 mm Hg only when a chronic lung disease is present", false, "Incorrect. The printed older-adult value is 80 to 85 mm Hg, and it applies without chronic lung disease.")],
+  tp: "Older adult PaO2 may sit at 80 to 85 mm Hg and still be without significant health alteration." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement about flow rate and FiO2 is accurate?",
+  opts: [O("The percentage of oxygen delivered is set by the humidifier rather than by the device used", false, "Incorrect. The humidifier adds moisture; the delivery device determines the FiO2 percentage."), O("The liters per minute ordered always equal the percentage of oxygen delivered exactly", false, "Incorrect. The chapter stresses the numbers in L/min do NOT correlate directly with the percentage delivered."), O("The liters per minute ordered do not directly equal the percentage of oxygen delivered", true, "Correct. L/min and FiO2 are different measures; the device used determines the percentage delivered."), O("The liters per minute ordered matter only for masks and never for nasal cannula devices", false, "Incorrect. Flow rate matters for every device; each device converts flow to its own FiO2 range.")],
+  tp: "Flow in L/min is not the FiO2; Table 14.1 gives each device its own flow-to-FiO2 range." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "How is a flowmeter with a metal ball read correctly?",
+  opts: [O("The middle of the metal ball is lined up on the mark for the prescribed flow rate", true, "Correct. The oxygen is turned on until the middle of the metal ball sits on the line for the prescribed flow."), O("The metal ball is raised fully to the top before the tubing is attached to the patient", false, "Incorrect. The ball is set to the prescribed line, not raised fully; full flow could harm the patient."), O("The bottom of the metal ball is lined up on the mark for the prescribed flow rate", false, "Incorrect. Reading the bottom of the ball under-delivers; the chapter specifies the middle of the ball."), O("The top of the metal ball is lined up on the mark for the prescribed flow rate", false, "Incorrect. Reading the top of the ball over-delivers; the chapter specifies the middle of the ball.")],
+  tp: "Flowmeter: set the flow until the MIDDLE of the metal ball is on the prescribed line." });
+
+BANK.push({ cat: CA, type: "multi",
+  stem: "Which statements about the nasal cannula are accurate? Select all that apply.",
+  opts: [O("Is the most common method used to administer oxygen to patients", true, "Correct. The chapter names the nasal cannula as the most common way to administer oxygen."), O("Delivers 70% to 100% oxygen when the flow is set at 6 to 15 L/min", false, "Incorrect. 70% to 100% at 6 to 15 L/min describes the nonrebreather mask, not the cannula."), O("Delivers 24% to 44% oxygen when the flow is set at 1 to 6 L/min", true, "Correct. Table 14.1 pairs the cannula at 1 to 6 L/min with 24% to 44% oxygen."), O("Lets the patient eat and talk normally while oxygen is running", true, "Correct. The cannula leaves the mouth free, so the patient can eat and talk normally."), O("Uses a reservoir bag that must fill fully before it is placed on", false, "Incorrect. The cannula has no reservoir bag; bag-filling steps belong to reservoir masks.")],
+  tp: "Cannula: 1 to 6 L/min = 24% to 44%, most common device, mouth stays free for eating and talking." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement about the oxymizer is accurate?",
+  opts: [O("It can be set no higher than 6 L/min even when higher flows are ordered", false, "Incorrect. The oxymizer can be set as high as 15 L/min, well above the cannula ceiling."), O("It delivers 7% less oxygen than a cannula when both are set at 6 L/min flow", false, "Incorrect. At 6 L/min the oxymizer delivers 7% MORE FiO2 than the nasal cannula, not less."), O("Its reservoirs collect and conserve oxygen, raising the percentage delivered", true, "Correct. The oxymizer reservoirs collect and conserve oxygen so a higher percentage can be delivered."), O("Its reservoirs collect and conserve carbon dioxide, lowering the delivered dose", false, "Incorrect. The reservoirs conserve oxygen, not carbon dioxide, and they raise the percentage delivered.")],
+  tp: "Oxymizer: 1 to 15 L/min = 29% to 50%; at 6 L/min it gives 7% more FiO2 than a cannula; check reservoirs stay inflated." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement about the Venturi mask is accurate?",
+  opts: [O("It offers humidified oxygen only and cannot deliver a set concentration", false, "Incorrect. Delivering a set, controlled concentration is the defining strength of the Venturi mask."), O("It offers the highest concentration of oxygen of any device in the table", false, "Incorrect. The nonrebreather mask reaches 70% to 100%, higher than the Venturi range of 24% to 55%."), O("It offers a variable concentration that changes with each breath taken", false, "Incorrect. The Venturi is chosen precisely because its concentration stays controlled and precise."), O("It offers a precise, controlled concentration of oxygen for the patient", true, "Correct. The Venturi mask is the device used when a precise, controlled concentration is required.")],
+  tp: "Venturi mask: 4 to 10 L/min = 24% to 55%, chosen for a precise, controlled concentration." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement compares the two reservoir masks accurately?",
+  opts: [O("Both reservoirs stay fully inflated on inhalation when either mask is working properly", false, "Incorrect. The partial rebreather reservoir should almost collapse on inhalation when it works properly."), O("The partial reservoir never collapses on inhalation; the nonrebreather almost does fully", false, "Incorrect. That reverses the pair: the partial almost collapses, the nonrebreather never totally does."), O("Both reservoirs collapse completely on inhalation when either mask is working properly", false, "Incorrect. The nonrebreather reservoir never totally collapses on inhalation when it works properly."), O("The partial reservoir almost collapses on inhalation; the nonrebreather never fully does", true, "Correct. Partial rebreather: reservoir almost collapses on inhalation. Nonrebreather: it never totally collapses.")],
+  tp: "Reservoir check: partial = almost collapses on inhalation; nonrebreather = never totally collapses." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A simple face mask run at 5 to 8 L/min delivers which FiO2 range?",
+  opts: [O("35% to 55% oxygen while it fits snugly over the nose and the mouth", true, "Correct. Table 14.1 pairs the simple face mask at 5 to 8 L/min with 35% to 55% oxygen."), O("60% to 90% oxygen while it fits snugly over the nose and the mouth", false, "Incorrect. 60% to 90% is the partial rebreather range at 6 to 12 L/min, not the simple mask range."), O("70% to 100% oxygen while it fits snugly over the nose and the mouth", false, "Incorrect. 70% to 100% is the nonrebreather range at 6 to 15 L/min, not the simple mask range."), O("24% to 44% oxygen while it fits snugly over the nose and the mouth", false, "Incorrect. 24% to 44% is the nasal cannula range at 1 to 6 L/min, not the simple mask range.")],
+  tp: "Simple face mask: 5 to 8 L/min = 35% to 55% (Table 14.1). Skill 14.1 prints masks usually at 6 to 10 L/min." });
+
+BANK.push({ cat: CA, type: "multi",
+  stem: "Which findings are listed in the chapter as signs of hypoxia? Select all that apply.",
+  opts: [O("Cardiac dysrhythmias and cyanosis are listed signs of hypoxia here", true, "Correct. Box 14.2 lists cardiac dysrhythmias and cyanosis among the signs of hypoxia."), O("Restlessness, apprehension, and anxiety are listed signs of hypoxia", true, "Correct. Box 14.2 lists apprehension, anxiety, and restlessness among the signs of hypoxia."), O("Decreased concentration and decreased consciousness are listed signs", true, "Correct. Box 14.2 lists decreased ability to concentrate and decreased level of consciousness."), O("Increased concentration and increased alertness are listed signs here", false, "Incorrect. Hypoxia decreases concentration and consciousness; it never sharpens alertness."), O("Pink mucous membranes with a calm affect are the earliest listed signs", false, "Incorrect. Early signs are neurologic and behavioral, with color changes such as pallor and cyanosis.")],
+  tp: "Box 14.2 hypoxia signs: restlessness, anxiety, behavioral changes, dysrhythmias, cyanosis, falling concentration and consciousness, dyspnea, pallor, vertigo." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement describes how vital signs change as hypoxia advances?",
+  opts: [O("Pulse stays unchanged while respirations alone signal advancing hypoxia", false, "Incorrect. Pulse changes are part of the pattern: tachycardia early, bradycardia as hypoxia advances."), O("Pulse falls first, respirations slow, then both rise as apnea develops", false, "Incorrect. The sequence runs the other way: rates rise first and only slow as hypoxia advances."), O("Pulse and respirations both fall steadily from the very start of hypoxia", false, "Incorrect. Both rise first as the body compensates; the fall comes later and signals worsening hypoxia."), O("Pulse rises first, respirations deepen, then both slow as apnea develops", true, "Correct. Early: pulse and respiratory rate/depth increase. Advancing: bradycardia, shallow slow respirations, then apnea.")],
+  tp: "Hypoxia pattern: early tachycardia and deeper, faster breathing; late bradycardia, shallow slow breathing, then apnea." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about oxygen and fire is accurate?",
+  opts: [O("Oxygen neither burns nor supports combustion, so fire precautions are minor", false, "Incorrect. Because oxygen supports combustion, smoking, sparks, and flammable products are strictly avoided."), O("Oxygen supports combustion only when it is delivered at flows above 10 L/min", false, "Incorrect. Combustion risk exists at any flow; safety precautions apply whenever oxygen is in use."), O("Oxygen does not burn or explode itself, but it strongly supports combustion", true, "Correct. Oxygen is colorless, odorless, and tasteless; it does not burn, but it enables combustion."), O("Oxygen burns and explodes by itself whenever it is exposed to open room air", false, "Incorrect. Oxygen alone does not burn or explode; it supports combustion when a spark or fire is present.")],
+  tp: "Oxygen supports combustion at any flow: no smoking, no sparks, no petrolatum, grounded equipment." });
+
+BANK.push({ cat: CB, type: "multi",
+  stem: "Which items are avoided while oxygen is being administered? Select all that apply.",
+  opts: [O("Wool blankets are avoided while oxygen is being administered", true, "Correct. Wool blankets are on the chapter list of items to avoid during oxygen administration."), O("Petrolatum products are avoided while oxygen is being administered", true, "Correct. Petroleum jelly and other petrolatum products are avoided because of combustibility."), O("Cotton gowns are avoided while oxygen is being administered", false, "Incorrect. Cotton gowns are not on the avoid list; non-fire-resistant clothing is the concern."), O("Electric razors are avoided while oxygen is being administered", true, "Correct. Electric razors can spark and are avoided; electrical appliances are kept away from oxygen."), O("Distilled water is avoided while oxygen is being administered", false, "Incorrect. Distilled water is required in humidifiers during oxygen therapy, never avoided.")],
+  tp: "Avoid with oxygen: smoking, wool blankets, electric razors, friction toys, heating pads, petrolatum products." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about portable oxygen cylinders is accurate?",
+  opts: [O("Portable cylinders are secured upright so they cannot fall and become projectiles", true, "Correct. Cylinders are secured in proper carriers and stored upright; a falling cylinder can become a projectile."), O("Portable cylinders are stored beside heat sources so the valves stay easy to open", false, "Incorrect. Cylinders are kept away from heat sources such as lamps and radiators, never beside them."), O("Portable cylinders are left unchained in hallways so staff can reach them quickly", false, "Incorrect. Unsecured cylinders can tip and become projectiles; they are chained or placed in proper holders."), O("Portable cylinders are laid flat on the floor so they cannot roll toward the patient", false, "Incorrect. Cylinders are secured upright in holders, not laid loose on the floor where they can roll.")],
+  tp: "Cylinders: upright, secured or chained, away from heat; an unsecured cylinder can become a projectile." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about delegation and oxygen flow is accurate?",
+  opts: [O("Adjusting the oxygen flow rate may be delegated after brief instruction to personnel", false, "Incorrect. Instruction allows delegation of device placement only; the flow rate itself is never delegated."), O("Adjusting the oxygen flow rate is delegated to family members in the home setting", false, "Incorrect. Families are taught to keep the set rate and change it only with provider knowledge and advice."), O("Adjusting the oxygen flow rate is never delegated to unlicensed assistive personnel", true, "Correct. Flow-rate adjustment stays with the nurse; it is NOT delegated to UAP."), O("Adjusting the oxygen flow rate is delegated whenever the nurse is busy with others", false, "Incorrect. Workload never expands UAP scope; flow-rate adjustment remains the nurse responsibility.")],
+  tp: "Delegation line: device placement/adjustment MAY be delegated after instruction; flow-rate adjustment is NEVER delegated." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about delegating oxygen device placement is accurate?",
+  opts: [O("Correct placement of a device may be delegated along with the flow rate adjustment", false, "Incorrect. The two are split: placement may be delegated, flow-rate adjustment may not."), O("Correct placement of a device is never delegated under any circumstance on any unit", false, "Incorrect. Placement may be delegated after instruction; only flow-rate adjustment is withheld from UAP."), O("Correct placement of a device may be delegated with no instruction about complications", false, "Incorrect. Delegation requires prior instruction about possible complications, outcomes, and immediate reporting."), O("Correct placement of a device may be delegated after instruction about complications", true, "Correct. Placement and adjustment of devices may be delegated once the UAP is instructed about complications and reporting.")],
+  tp: "UAP may place/adjust the device after instruction and must report complications to the nurse immediately." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about the respiratory drive in COPD is accurate?",
+  opts: [O("In COPD, rising carbon dioxide rather than low oxygen drives the breathing effort", false, "Incorrect. Rising PaCO2 is the normal drive; in COPD, hypoxia itself becomes the driving force."), O("In COPD, neither oxygen nor carbon dioxide levels influence the breathing effort", false, "Incorrect. The hypoxic drive is precisely an oxygen-level influence on respiratory effort in COPD."), O("In COPD, the drive to breathe comes mainly from the level of nitrogen in the blood", false, "Incorrect. Nitrogen plays no role here; the chapter contrasts the PaCO2 drive with the COPD hypoxic drive."), O("In COPD, low oxygen rather than rising carbon dioxide drives the breathing effort", true, "Correct. Normally rising PaCO2 drives breathing; in COPD the hypoxic drive takes over as the driving force.")],
+  tp: "Normal drive = rising PaCO2. COPD drive = hypoxia. Correcting hypoxia can remove the drive to breathe." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about oxygen flow in COPD is accurate?",
+  opts: [O("Flows above 2 L/min are given freely because the drive strengthens with oxygen", false, "Incorrect. Added oxygen weakens the hypoxic drive in COPD; breathing may slow or stop, not strengthen."), O("Flows above 4 L/min are given with great caution because the drive may be lost", false, "Incorrect. 4 L/min is the humidification threshold; the COPD caution threshold printed is 2 L/min."), O("Flows above 2 L/min are given with great caution because the drive may be lost", true, "Correct. Correcting hypoxia reduces the hypoxic drive, so flows greater than 2 L/min are given with great caution."), O("Flows above 6 L/min are given with great caution because the drive may be lost", false, "Incorrect. 6 L/min is the top of the cannula range; the COPD caution threshold printed is 2 L/min.")],
+  tp: "COPD trap: greater than 2 L/min can eliminate the hypoxic drive and breathing may stop." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about home humidifier care is accurate?",
+  opts: [O("Humidifier bottles are filled with distilled water, refilled every 8 hours", false, "Incorrect. The water type is right but the interval is wrong; home bottles are refilled every 24 hours."), O("Humidifier bottles are filled with distilled water, refilled every 24 hours", true, "Correct. Home humidifier bottles are filled with distilled water only and refilled every 24 hours."), O("Humidifier bottles are filled with tap water, refilled every 24 hours at home", false, "Incorrect. Tap water is never used in a humidifier; only distilled water is used, at home or in the facility."), O("Humidifier bottles are filled with sterile saline, refilled every 24 hours", false, "Incorrect. The interval is right but the fluid is wrong; humidifiers take distilled water, not saline.")],
+  tp: "Humidifier rule everywhere: distilled water only, never tap; home bottles refilled every 24 hours." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about home oxygen tubing is accurate?",
+  opts: [O("Home tubing may reach 50 feet, so the patient is taught the fall risk it creates", true, "Correct. Home tubing can be 50 feet (15.2 m) long, and that length is a tripping and fall hazard to teach."), O("Home tubing may reach 20 feet, so the patient is taught the fall risk it creates", false, "Incorrect. The hazard teaching is right, but the printed home length is 50 feet, not 20 feet."), O("Home tubing may reach 50 feet, so the patient is taught it carries no fall risk", false, "Incorrect. The length is right, but 50 feet of tubing is a real tripping hazard that must be taught."), O("Home tubing may reach 100 feet, so extra tubing is coiled beside the bed at night", false, "Incorrect. The printed length is 50 feet, and loose coiled tubing would add to the fall risk.")],
+  tp: "Home oxygen: tubing up to 50 feet = fall hazard; two full tubing sets; three-prong outlet for the compressor." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about cannula use in older adults is accurate?",
+  opts: [O("Cannula tubing can break down skin over the ears, so straps and padding are checked", true, "Correct. Older adults are at increased risk for skin impairment over the ears from cannula tubing."), O("Cannula tubing never threatens skin in older adults, so routine checks are optional", false, "Incorrect. Older adults are at increased risk, so the ears are monitored frequently for erythema and breakdown."), O("Cannula tubing can break down skin under the chin, so straps and padding are checked", false, "Incorrect. The printed pressure point is over the ears, where the tubing rests; the chin strap is secondary."), O("Cannula tubing breaks down skin only when flows remain above 10 L/min for many days", false, "Incorrect. Skin risk comes from pressure and friction of the tubing, not from a high-flow threshold.")],
+  tp: "Older adult + cannula: watch the ears; loosen straps, reposition tubing, or add padding at the first erythema." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about home oxygen safety signs is accurate?",
+  opts: [O("A No Smoking sign is posted only in the bedroom where the oxygen is stored", false, "Incorrect. The sign goes on all entry doors so anyone entering sees it, not just in one room."), O("A No Smoking sign is posted on all entry doors of the house for home oxygen", true, "Correct. Home teaching includes posting a No Smoking sign on all entry doors of the house."), O("A No Smoking sign is posted only when visitors who smoke are expected over", false, "Incorrect. The sign is a standing precaution on all entry doors, not a visitor-by-visitor step."), O("A No Smoking sign is optional at home because home flows are always very low", false, "Incorrect. Home oxygen supports combustion at any flow; the signage precaution still applies.")],
+  tp: "Home oxygen safety: No Smoking signs on ALL entry doors; cylinders upright and chained; know tank levels." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "What is the first standard step before any procedure in this chapter?",
+  opts: [O("Check the provider order before any procedure is started in this chapter", true, "Correct. Standard Step 1 is checking the health care provider order; verification is essential before starting."), O("Check the flow rate first and verify the order only if the patient complains", false, "Incorrect. The order is verified first regardless of complaints; flow is set to match that verified order."), O("Check the supply room stock before any procedure is started in this chapter", false, "Incorrect. Equipment is assembled at Step 8; the order check comes first, before anything else begins."), O("Check the patient armband only after the procedure has been fully completed", false, "Incorrect. Identification happens before the procedure, by bracelet and the patient stating name or birth date.")],
+  tp: "Standard Steps: 1 check the order, identify the patient, explain, assess, hand hygiene, assemble, privacy, then proceed." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which statement about hand hygiene in the standard steps is accurate?",
+  opts: [O("Hand hygiene is the most important technique for preventing spread of organisms", true, "Correct. The standard steps call hand hygiene the most important technique for preventing spread of microorganisms."), O("Hand hygiene matters only before sterile procedures and not after glove removal", false, "Incorrect. Step 15 requires hand hygiene after removing gloves for every procedure, sterile or not."), O("Hand hygiene can be replaced by glove changes between each step of a procedure", false, "Incorrect. Changing gloves does not eliminate the need for hand hygiene at any point in the steps."), O("Hand hygiene is an optional technique once clean gloves have been put on first", false, "Incorrect. Gloves never replace hand hygiene; it is performed before gloving and again after glove removal.")],
+  tp: "Wearing gloves does not eliminate hand hygiene: wash before the procedure and again after gloves come off." });
+
+BANK.push({ cat: CC, type: "multi",
+  stem: "Which actions belong to the assessment done before oxygen is administered in Skill 14.1? Select all that apply.",
+  opts: [O("The flow rate is set above the order before oxygen is given now", false, "Incorrect. The flow is set exactly to the prescribed rate; exceeding the order is never part of the skill."), O("Signs of hypoxia or distress are observed before oxygen is given", true, "Correct. Signs and symptoms of hypoxia or respiratory distress (Box 14.2) are observed before administration."), O("The humidifier is filled with tap water before oxygen is given", false, "Incorrect. Humidifiers are filled with distilled water only; tap water is never used."), O("Arterial blood gas results are reviewed before oxygen is given", true, "Correct. ABG results are reviewed to confirm airway patency and determine the need for oxygen."), O("Lung sounds are auscultated before the oxygen is administered", true, "Correct. Skill 14.1 begins with auscultating lung sounds before oxygen is given, as baseline data.")],
+  tp: "Before oxygen (Skill 14.1): lung sounds, Box 14.2 signs, ABG review, Fowler position, then the ordered flow." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which statement about patient positioning for oxygen therapy is accurate?",
+  opts: [O("Trendelenburg position allows for maximum lung expansion in most cases", false, "Incorrect. Head-down positioning works against lung expansion; Fowler's positions are used instead."), O("Fowler's or semi-Fowler's position allows for maximum venous pooling", false, "Incorrect. The purpose printed in the skill is maximum lung expansion, not venous pooling."), O("Fowler's or semi-Fowler's position allows for maximum lung expansion", true, "Correct. Skill 14.1 positions the patient in Fowler's or semi-Fowler's for maximum lung expansion."), O("Side-lying flat position allows for maximum lung expansion in most cases", false, "Incorrect. Flat side-lying is the position for an unconscious suctioning patient, not for lung expansion.")],
+  tp: "Position for oxygen: Fowler's or semi-Fowler's = maximum lung expansion." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "When is oxygen humidified during administration?",
+  opts: [O("Oxygen is humidified when the flow rate is greater than 6 L/min", false, "Incorrect. 6 L/min is the cannula ceiling, not the humidification threshold printed in the skill."), O("Oxygen is humidified when the flow rate is greater than 2 L/min", false, "Incorrect. 2 L/min is the COPD caution threshold, not the humidification threshold."), O("Oxygen is humidified when the flow rate is greater than 4 L/min", true, "Correct. Skill 14.1 directs humidification when the flow rate is greater than 4 L/min."), O("Oxygen is humidified only when the patient reports a dry mouth", false, "Incorrect. The trigger is the flow rate, greater than 4 L/min, not a patient complaint of dryness.")],
+  tp: "Humidify when flow is greater than 4 L/min; distilled water only; bubbling confirms humidification." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "What does bubbling in the humidifier during oxygen therapy show?",
+  opts: [O("Bubbling in the humidifier shows oxygen is humidified before delivery", true, "Correct. The presence of bubbling indicates the oxygen is humidified before it reaches the patient."), O("Bubbling in the humidifier shows the tubing has become fully obstructed", false, "Incorrect. Obstruction would stop flow and bubbling; bubbling is the expected, correct finding."), O("Bubbling in the humidifier shows the flow rate is set above the order", false, "Incorrect. Bubbling reflects humidification, not the flow setting; the flowmeter shows the rate."), O("Bubbling in the humidifier shows the reservoir bag is filling properly", false, "Incorrect. Reservoir filling is judged on the mask bag itself, not on humidifier bubbling.")],
+  tp: "Verify bubbling before delivery: bubbling = oxygen is being humidified." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which statement about preparing a nasal cannula is accurate?",
+  opts: [O("Tubing and prongs are never flushed before the cannula is placed in the nares", false, "Incorrect. Flushing first lets the nurse feel the oxygen flow on the skin and confirm the system works."), O("Tubing and prongs are flushed at 6 to 10 L/min, then set to the ordered rate", true, "Correct. The flowmeter is set to 6 to 10 L/min to flush tubing and prongs, then adjusted to the prescribed rate."), O("Tubing and prongs are flushed at 1 to 2 L/min, then set to the ordered rate", false, "Incorrect. 1 to 2 L/min is too low to flush the tubing; the printed flush range is 6 to 10 L/min."), O("Tubing and prongs are flushed at 12 to 15 L/min, then set to the ordered rate", false, "Incorrect. The printed flush range is 6 to 10 L/min; 12 to 15 L/min exceeds the skill steps.")],
+  tp: "Cannula setup: flush at 6 to 10 L/min, feel the flow, then dial back to the ordered 1 to 6 L/min." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "How often is cannula-related skin checked during oxygen therapy?",
+  opts: [O("Nares and the skin over both ears are checked only when the patient complains", false, "Incorrect. Checks are scheduled every 6 to 8 hours whether or not the patient reports discomfort."), O("Nares and the skin over both ears are checked every 2 to 4 hours for impairment", false, "Incorrect. Every 2 to 4 hours is the mask skin-check interval; the cannula interval is 6 to 8 hours."), O("Nares and the skin over both ears are checked once a week for any impairment", false, "Incorrect. A week is far too long; pressure areas under a cannula are checked every 6 to 8 hours."), O("Nares and the skin over both ears are checked every 6 to 8 hours for impairment", true, "Correct. Skill 14.1 directs evaluating the nares and the superior surface of both ears every 6 to 8 hours.")],
+  tp: "Skin clocks: cannula nares/ears every 6 to 8 hours; mask skin every 2 to 4 hours. Do not swap them." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "How often is the skin under an oxygen mask evaluated?",
+  opts: [O("The mask is removed and the skin is evaluated only at discharge", false, "Incorrect. Mask removal also clears condensation and debris that would otherwise break down skin."), O("The mask is removed and the skin is evaluated every 6 to 8 hours", false, "Incorrect. Every 6 to 8 hours is the cannula check interval; mask skin is checked every 2 to 4 hours."), O("The mask is removed and the skin is evaluated every 2 to 4 hours", true, "Correct. Skill 14.1 directs removing the mask and evaluating the skin every 2 to 4 hours."), O("The mask is removed and the skin is evaluated once every 24 hours", false, "Incorrect. Condensation and debris build up quickly under a mask; 24 hours is far too long.")],
+  tp: "Mask care: off and skin check every 2 to 4 hours; this also removes condensation and debris." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which lubricant is used on the nares during cannula therapy?",
+  opts: [O("Petroleum jelly is used on the nares because it will not block the cannula prongs", false, "Incorrect. Petrolatum products are avoided during oxygen use because of combustibility."), O("Water-soluble lubricant is avoided on the nares because it blocks the cannula", false, "Incorrect. The chapter states the opposite: water-soluble lubricant will not occlude the cannula."), O("Any household lotion is used on the nares because all lotions protect the skin", false, "Incorrect. Only water-soluble lubricant is specified; petrolatum-based products are a fire risk."), O("Water-soluble lubricant is used on the nares because it will not block the cannula", true, "Correct. Water-soluble lubricant is applied to the nares as needed and will not occlude the nasal cannula.")],
+  tp: "Nares care: water-soluble lubricant only; petroleum jelly is avoided with oxygen (combustibility)." });
+
+BANK.push({ cat: CC, type: "multi",
+  stem: "Which findings show that suctioning is needed? Select all that apply.",
+  opts: [O("A calm, sleeping state shows that suctioning is needed for this patient", false, "Incorrect. A calm state is not a suctioning trigger; gurgling, drooling, vomitus, and restlessness are."), O("Vomitus in the mouth shows that suctioning is needed for this patient", true, "Correct. Skill 14.5 lists vomitus in the mouth as a physical sign that suctioning is needed."), O("Quiet, even respirations show that suctioning is needed for this patient", false, "Incorrect. Quiet, even respirations show a clear airway; suctioning is driven by signs of retained secretions."), O("Gurgling respirations show that suctioning is needed for this patient", true, "Correct. Skill 14.5 lists gurgling respirations as a physical sign that suctioning is needed."), O("Drooling and restlessness show that suctioning is needed in this case", true, "Correct. Skill 14.5 lists drooling and restlessness among the signs that suctioning is needed.")],
+  tp: "Suctioning triggers (Skill 14.5): gurgling respirations, restlessness, vomitus in the mouth, drooling." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which statement about airway suctioning time in Skill 14.5 is accurate?",
+  opts: [O("Suction is limited to 5 seconds exactly, with 10 minutes of rest between all passes", false, "Incorrect. Both numbers are wrong for Skill 14.5: 10 to 15 seconds, resting 1 to 2 minutes."), O("Suction is limited to 10 to 15 seconds, with 1 to 2 minutes of rest between passes", true, "Correct. Skill 14.5 limits suction to 10 to 15 seconds and allows 1 to 2 minutes of rest between attempts."), O("Suction is limited to 20 to 25 seconds, with 1 to 2 minutes of rest between passes", false, "Incorrect. The rest interval is right, but 20 to 25 seconds risks cardiopulmonary compromise."), O("Suction is limited to 10 to 15 seconds, with no rest needed between repeated passes", false, "Incorrect. The time limit is right, but rest of 1 to 2 minutes between attempts is required.")],
+  tp: "Skill 14.5: suction 10 to 15 seconds max, rest 1 to 2 minutes. Skill 14.2 trach suctioning is stricter: 10 seconds max." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement about endotracheal tube duration is accurate?",
+  opts: [O("An ET tube is long-term; a tracheostomy replaces it beyond about 2 days", false, "Incorrect. Two days is far too early; the printed threshold for switching to a tracheostomy is 2 weeks."), O("An ET tube is short-term; a tracheostomy replaces it beyond about 2 months", false, "Incorrect. Two months is far too long to leave an ET tube; the printed threshold is 2 weeks."), O("An ET tube is permanent; a tracheostomy is used only for a few hours", false, "Incorrect. The roles are reversed: the ET tube is temporary and the tracheostomy serves long-term needs."), O("An ET tube is short-term; a tracheostomy replaces it beyond about 2 weeks", true, "Correct. ET tubes are for short-term airway management and are replaced by a tracheostomy after about 2 weeks.")],
+  tp: "ET tube = short-term airway; tracheostomy = long-term, typically when an artificial airway is needed beyond 2 weeks." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Why can a patient with an endotracheal tube not speak?",
+  opts: [O("The patient cannot speak because sedation is always required with a tube", false, "Incorrect. Sedation is not the printed reason; speech fails because air bypasses the vocal cords."), O("The patient cannot speak because the tube blocks the tongue from moving", false, "Incorrect. Tongue movement is not the barrier; the barrier is airflow past the vocal cords."), O("The patient cannot speak because the cuff covers the mouth and the lips", false, "Incorrect. The cuff sits in the trachea, not over the mouth; the issue is vocal cord airflow."), O("The patient cannot speak because air cannot flow through the vocal cords", true, "Correct. With an ET tube in place, air cannot flow through the vocal cords, so the patient cannot speak.")],
+  tp: "ET tube = no speech (no air through the cords). A fenestrated trach tube with a cap restores speech." });
+
+BANK.push({ cat: CD, type: "multi",
+  stem: "Which statements give accurate reasons for creating a tracheostomy? Select all that apply.",
+  opts: [O("A tracheostomy may be used to prevent aspiration of secretions or blood", true, "Correct. Preventing aspiration of secretions and blood is a printed purpose of a tracheostomy."), O("A tracheostomy may be created to improve the patient sense of taste", false, "Incorrect. Taste is not a tracheostomy purpose; the purposes are airway, aspiration protection, and access."), O("A tracheostomy may be created when a patient is experiencing apnea", true, "Correct. The chapter lists apnea, cessation of breathing, as a reason for a tracheostomy."), O("A tracheostomy may be used to give easier access to the lower airways", true, "Correct. Easier access to the lower airways for suctioning and care is a printed purpose."), O("A tracheostomy may be used to replace the need for all suctioning care", false, "Incorrect. A tracheostomy increases the need for suctioning and meticulous airway care, not less.")],
+  tp: "Tracheostomy purposes: apnea or obstruction, prevent aspiration, easier access to the lower airways." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement about infection risk with an artificial airway is accurate?",
+  opts: [O("An artificial airway gives pathogens a direct route into the lower airway", true, "Correct. An ET or tracheostomy tube provides a direct route for pathogens into the lower airway, raising infection risk."), O("An artificial airway changes infection risk only during the first hour", false, "Incorrect. The risk persists the whole time the tube is in place, not just the first hour."), O("An artificial airway lowers infection risk below that of a natural airway", false, "Incorrect. Risk rises, which is why sterile technique and equipment changes every 8 hours are required."), O("An artificial airway blocks pathogens from ever reaching the lower airway", false, "Incorrect. The tube bypasses upper-airway defenses and opens a direct route downward for pathogens.")],
+  tp: "Artificial airway = direct pathogen route to the lower airway: sterile technique, equipment changed/cleaned every 8 hours." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement about tracheostomy suctioning time in Skill 14.2 is accurate?",
+  opts: [O("Tracheostomy suctioning lasts a maximum of 10 seconds, never any longer", true, "Correct. Skill 14.2 caps each suction pass at 10 seconds because prolonged suctioning depletes oxygen."), O("Tracheostomy suctioning lasts a maximum of 20 seconds, never any longer", false, "Incorrect. Twenty seconds doubles the printed cap and would deplete the patient oxygen supply."), O("Tracheostomy suctioning has no time limit when the patient tolerates it well", false, "Incorrect. Tolerance does not remove the cap; suction is limited to 10 seconds at a time, always."), O("Tracheostomy suctioning lasts a maximum of 30 seconds when secretions are thick", false, "Incorrect. Thick secretions do not extend the limit; the cap stays at 10 seconds per pass.")],
+  tp: "Trach suctioning (Skill 14.2): 10 seconds max per pass, no more than three attempts; Skill 14.5 allows 10 to 15 seconds." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement about suction catheter insertion is accurate?",
+  opts: [O("Full suction is applied while the catheter is being inserted into the airway", false, "Incorrect. Suction during insertion injures the mucous membrane; suction starts only on withdrawal."), O("Suction is applied on insertion for infants but never for adult patients", false, "Incorrect. The no-suction-on-insertion rule applies at every age and for every suction route."), O("Suction is applied on insertion only when the secretions are very thick", false, "Incorrect. Secretion thickness never justifies suction on insertion; the rule holds for every pass."), O("No suction is applied while the catheter is being inserted into the airway", true, "Correct. The thumb stays off the vent during insertion; suction on insertion damages the mucosa.")],
+  tp: "Insertion rule for every route: no suction going in; intermittent suction with gentle rotation coming out." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which patients are cuffed tracheostomy tubes used for?",
+  opts: [O("Cuffed tubes are used for ventilation and for patients at risk for aspiration", true, "Correct. Cuffed tubes seal the airway for mechanical ventilation and protect patients at risk for aspiration."), O("Cuffed tubes are used only for neonates, infants, and very young children", false, "Incorrect. Neonates and young children usually receive uncuffed, single-cannula tubes."), O("Cuffed tubes are used when the patient is able to eat without difficulty", false, "Incorrect. A patient who can eat does best with a cuffless tube; cuffed tubes serve ventilation and aspiration risk."), O("Cuffed tubes are used only for patients who are being weaned from the tube", false, "Incorrect. Weaning and long-term patients are typically moved to cuffless tubes, not cuffed ones.")],
+  tp: "Cuffed = ventilator or aspiration risk, maximum seal. Cuffless = long-term, weaning, or able to eat." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Why is a tracheostomy cuff deflated at prescribed intervals?",
+  opts: [O("The cuff stays inflated at all times to prevent tracheal tissue necrosis", false, "Incorrect. Constant inflation is what causes the pressure injury; scheduled deflation prevents it."), O("The cuff is deflated at prescribed intervals to prevent drying of the mouth", false, "Incorrect. Mouth dryness is managed with mouth care and humidification, not with cuff deflation."), O("The cuff is deflated at prescribed intervals to prevent tracheal tissue necrosis", true, "Correct. Sustained cuff pressure can necrose tracheal tissue, so the cuff is deflated at prescribed intervals."), O("The cuff is deflated only at discharge to prevent tracheal tissue necrosis", false, "Incorrect. Deflation happens at prescribed intervals throughout therapy, not only at discharge.")],
+  tp: "Cuff care: deflate at prescribed intervals to prevent tracheal necrosis; inflate by the minimal-leak method." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "What do the holes in a fenestrated tracheostomy tube do?",
+  opts: [O("Holes in the tube let humidified air bypass the need for a collar device", false, "Incorrect. A fenestrated tube does not replace humidification; artificial airways still need added moisture."), O("Holes in the tube let air flow upward so the patient can talk naturally", true, "Correct. Fenestrations let air flow upward through the vocal cords and mouth, so the patient can talk."), O("Holes in the tube let secretions drain outward so suctioning is not needed", false, "Incorrect. Fenestrations are for airflow and speech; suctioning is still needed to clear secretions."), O("Holes in the tube let the cuff inflate faster so the airway seals sooner", false, "Incorrect. Fenestrations have nothing to do with cuff inflation speed or sealing the airway.")],
+  tp: "Fenestrated tube: holes route air up through the vocal cords, restoring natural speech and breathing." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Why do patients with artificial airways need constant humidification?",
+  opts: [O("Artificial airways need constant humidification because the upper airway is bypassed", true, "Correct. The upper airway normally filters and humidifies air; a tracheostomy bypasses it, so moisture must be added."), O("Artificial airways need humidification only during the first postoperative day at most", false, "Incorrect. The need is constant for as long as the artificial airway is in place, not one day."), O("Artificial airways need no humidification because the upper airway is bypassed fully", false, "Incorrect. Bypassing the upper airway is exactly why constant humidification is required, via T piece or collar."), O("Artificial airways need constant humidification because the upper airway overproduces it", false, "Incorrect. The problem is the opposite: bypassed air arrives dry because the upper airway is skipped.")],
+  tp: "Trach air is dry air: constant humidification by T piece or tracheostomy collar is mandatory." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement about the T piece or tracheostomy collar is accurate?",
+  opts: [O("The mist of humidified oxygen is expected to disappear as the therapy settles in", false, "Incorrect. A disappearing mist signals a problem with humidification or flow and must be corrected."), O("The mist of humidified oxygen must be visible at all times during collar therapy", true, "Correct. Skill 14.4 requires the mist to stay visible; it is the visual proof that oxygen is being humidified."), O("The mist of humidified oxygen must be visible only at the start of collar therapy", false, "Incorrect. The mist must be visible at all times, not just when therapy begins."), O("The mist of humidified oxygen matters only when the flow is above 10 L/min here", false, "Incorrect. The visible-mist rule applies at any flow during T piece or collar therapy.")],
+  tp: "T piece/collar checks: mist visible at all times, connections secure, drain condensation before it obstructs flow." });
+
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 14: Oxygenation - Definition Practice Test</h1>';
+  h += '<div class="sub">Definition practice test | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

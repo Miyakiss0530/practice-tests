@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 13 - Physical Assessment - Definition Practice Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Signs, Symptoms, Disease Origins and Risk Factors";
+var CB = "Disease Terms, Inflammation and Frequently Noted Signs";
+var CC = "Examination Role, Equipment, Positions and Interview";
+var CD = "Assessment Techniques, History and Review of Systems";
+var CE = "Neurologic, Skin, Chest and Breath Sounds";
+var CF = "Heart, Pulses, Abdomen, Edema and Communication";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 8,
+  "types": {
+   "single": 6,
+   "multi": 2
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 8,
+  "types": {
+   "multi": 1,
+   "single": 7
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 8,
+  "types": {
+   "single": 5,
+   "multi": 3
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 8,
+  "types": {
+   "single": 8
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A nurse measures a temperature of 101.2 degrees F and sees a reddened rash. How is this information classified?",
+  opts: [ O("Objective data, because the nurse can see and measure both of the findings directly", true, "Correct. Signs are objective data perceived by the nurse and verifiable by observation and measurement."), O("Subjective data, because the patient must confirm that both findings feel abnormal", false, "Incorrect. Confirmation by the patient is not what makes data subjective; these were observed and measured."), O("Objective data only if another nurse repeats the same measurement at a later time", false, "Incorrect. Objective data can be verified by more than one person, but repeat measurement is not required first."), O("Subjective data, because all findings noted during an illness are patient symptoms", false, "Incorrect. Symptoms are what the patient perceives; findings the nurse observes or measures are signs.") ],
+  tp: "Signs are objective data the nurse sees, hears, measures, or feels; symptoms are subjective data the patient perceives." });
+
+BANK.push({ cat: CA, type: "multi",
+  stem: "Which of the following are examples of symptoms as the chapter defines them? Select all that apply.",
+  opts: [ O("Pain that the patient describes as stabbing in the upper abdomen area", true, "Correct. Pain is perceived by the patient and reported in the patient's own words, so it is subjective."), O("Nausea and a sore throat that the patient reports during the interview", true, "Correct. Nausea and sore throat are in the chapter list of subjective symptom examples."), O("A visible rash and drainage that the nurse observes on the patient's skin", false, "Incorrect. A rash and visible drainage are signs the nurse perceives, so they are objective data."), O("An abnormal lung sound that the nurse hears while using a stethoscope", false, "Incorrect. A sound the nurse hears is a sign; it is objective even though the patient cannot hear it."), O("Anxiety and ringing in the ears that the patient says have been present", true, "Correct. Anxiety and ringing in the ears are perceived by the patient and listed as symptom examples.") ],
+  tp: "Symptoms listed in the chapter include pain, nausea, vertigo, sore throat, ringing in the ears, and anxiety." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement most accurately distinguishes drainage from exudate?",
+  opts: [ O("Drainage removes fluids from a cavity or wound; exudate leaks from vessels into tissues", true, "Correct. Drainage is passive or active removal of fluids; exudate leaks out of blood vessels into nearby tissues."), O("Drainage leaks from vessels into tissues; exudate removes fluids through a closed system", false, "Incorrect. This reverses the two definitions; a closed urinary system is an example of drainage, not exudate."), O("Drainage contains only clear water; exudate is any fluid that a patient reports as present", false, "Incorrect. Exudate contains cells, proteins, and solid materials; it is observed, not merely reported."), O("Drainage occurs only with infection; exudate occurs only after a surgical procedure ends", false, "Incorrect. Neither definition is limited that way; exudate may ooze from cuts or areas of infection or inflammation.") ],
+  tp: "Drainage = removal of fluids from a body cavity, wound, or discharge source. Exudate = fluid leaking from blood vessels into tissues, also called pus." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A disease has no known cause despite study. Which term describes the cause status of that disease?",
+  opts: [ O("Its etiology is unknown, because some diseases have no identified cause at this time", true, "Correct. Etiology is the cause of a disease, and the chapter states some diseases have an unknown etiology."), O("Its etiology is congenital, because every condition present at birth has a known cause", false, "Incorrect. Congenital describes appearing at birth or shortly after, not whether a cause is known."), O("Its etiology is hereditary, because an unknown cause is always passed down genetically", false, "Incorrect. Hereditary means transmitted genetically from parents to children; that is not stated here."), O("Its etiology is functional, because no structural change has been named in the stem here", false, "Incorrect. Functional describes manifestations without structural or physiologic abnormality on examination.") ],
+  tp: "Etiology means the cause of a disease; some diseases have an unknown etiology." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which example matches a congenital origin of disease rather than a hereditary origin?",
+  opts: [ O("Failure to develop normally in the embryonic stage after inadequate oxygen exposure", true, "Correct. Congenital conditions appear at birth or shortly after and are not caused by genetic abnormalities."), O("Cystic fibrosis passed genetically from both parents to a child born in this family", false, "Incorrect. Cystic fibrosis is listed as hereditary, transmitted genetically from parents to children."), O("Sickle cell anemia inherited through genes that are carried by members of the family", false, "Incorrect. Sickle cell anemia is a hereditary example in the origins table, not a congenital one."), O("Color blindness present because of a gene received from a parent before the birth date", false, "Incorrect. Color blindness is listed under hereditary origins; genetic transmission is the key point.") ],
+  tp: "Hereditary = transmitted genetically (cystic fibrosis, sickle cell anemia, hemophilia). Congenital = present at birth, not genetic, from abnormal embryonic development." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Diabetes mellitus is listed under which origin of disease in the chapter table?",
+  opts: [ O("Metabolic, because pancreatic islet dysfunction causes loss of metabolic balance", true, "Correct. Metabolic diseases involve dysfunction and loss of metabolic balance, usually involving endocrine glands."), O("Deficiency, because the body lacks one specific nutrient in the daily diet intake", false, "Incorrect. Deficiency results from lack of a specific nutrient such as a mineral, vitamin, protein, fat, or carbohydrate."), O("Degenerative, because aging progressively wears down one part of the body over time", false, "Incorrect. Degenerative implies progressive degeneration with aging, as in osteoarthritis, not endocrine dysfunction."), O("Inflammatory, because the body reacts to an injurious agent with local inflammation", false, "Incorrect. Inflammatory origin is a reaction to an injurious agent such as microorganisms or an allergic response.") ],
+  tp: "Metabolic origin: diabetes mellitus (pancreatic islets), hypothyroidism, and acromegaly are the chapter examples." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A patient has several risk factors for a disease. Which interpretation is accurate?",
+  opts: [ O("The patient's chance of developing the disease is higher, but disease is not certain", true, "Correct. Presence of risk factors increases vulnerability; it does not necessarily mean disease will develop."), O("The patient will develop the disease unless every risk factor is removed completely", false, "Incorrect. Risk raises probability only; removing factors lowers risk but the chapter makes no certainty claim."), O("The risk factors explain the disease only if the patient already has clear symptoms", false, "Incorrect. Risk factors are assessed to address potential as well as actual problems; symptoms are not required."), O("The patient has no increased risk unless at least one factor is genetic in its origin", false, "Incorrect. Age, environment, and lifestyle factors also increase vulnerability without any genetic factor.") ],
+  tp: "A risk factor increases vulnerability to illness or accident; it raises the chance, it does not guarantee disease." });
+
+BANK.push({ cat: CA, type: "multi",
+  stem: "Which risk factors in Box 13.1 are modifiable by the patient? Select all that apply.",
+  opts: [ O("Smoking cigarettes on a regular daily basis for many years", true, "Correct. Smoking is a lifestyle risk factor the patient can change; it is the most preventable cause of death in society."), O("Age, which places an older adult at higher risk for fractures", false, "Incorrect. Age is not modifiable; osteoporosis in older adults is an age-category example."), O("Overeating and poor nutrition as part of a daily eating pattern", true, "Correct. Overeating and poor nutrition are lifestyle factors that can be modified."), O("Family history of cancer recorded in the patient's health history", false, "Incorrect. Family history is a genetic factor and cannot be changed by the patient."), O("Poor personal hygiene and insufficient rest and sleep each night", true, "Correct. Hygiene, rest, and sleep are lifestyle factors listed in Box 13.1 and can be changed.") ],
+  tp: "Many environmental and lifestyle risk factors are modifiable; age and family history are not." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement accurately describes a chronic disease?",
+  opts: [ O("It develops slowly and persists over a long period, often for a person's lifetime", true, "Correct. Chronic disease is slow to develop and long-lasting; diabetes mellitus is the chapter example."), O("It begins abruptly with severe signs and symptoms and then subsides with treatment", false, "Incorrect. That describes acute disease, such as an episode of appendicitis, not a chronic disease."), O("It disappears completely for a period and then is considered permanently cured later", false, "Incorrect. Disappearance of characteristics describes remission, which is not the same as a cure."), O("It causes a structural change in one organ that interferes with that organ's function", false, "Incorrect. A structural change interfering with function describes organic disease, a different term.") ],
+  tp: "Chronic = slow onset, persists a long time or a lifetime. Acute = abrupt, marked intensity, then often subsides." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Remission is best understood as which of the following?",
+  opts: [ O("A partial or complete disappearance of the disease's clinical characteristics", true, "Correct. Remission may be spontaneous or a result of therapy, and it can be partial or complete."), O("A complete cure confirmed when all treatment for the disease has been stopped", false, "Incorrect. Remission does not mean cure; characteristics disappear but the disease is not declared cured."), O("A return of severe signs and symptoms after a period of quiet disease activity", false, "Incorrect. That describes a relapse or exacerbation pattern, the opposite direction from remission."), O("A structural repair of the damaged organ so that its function returns to normal", false, "Incorrect. Remission concerns disappearance of characteristics, not documented structural repair of an organ.") ],
+  tp: "Remission = partial or complete disappearance of clinical and subjective characteristics of disease; not a cure." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Examination fails to reveal any structural or physiologic abnormality, yet manifestations look like organic disease. This is classified as:",
+  opts: [ O("Functional disease, because no structural abnormality is found on careful examination", true, "Correct. Functional disease mimics organic disease but careful examination reveals no structural or physiologic abnormality."), O("Organic disease, because the manifestations resemble those of a structural disorder", false, "Incorrect. Organic disease requires a structural change in an organ that interferes with its functioning."), O("Congenital disease, because the problem must have been present since the time of birth", false, "Incorrect. Nothing in the stem places the condition at birth; congenital is about timing and development."), O("Degenerative disease, because the body part involved must be wearing down with aging", false, "Incorrect. Degenerative disease implies progressive degeneration, often with aging, as in osteoarthritis.") ],
+  tp: "Organic = structural change interfering with function. Functional = manifestations without structural or physiologic abnormality; many nervous and mental diseases are functional." });
+
+BANK.push({ cat: CB, type: "multi",
+  stem: "Which findings are among the universal (cardinal) signs of infection and inflammation? Select all that apply.",
+  opts: [ O("Erythema and heat noted over the affected area of the body", true, "Correct. Erythema (redness) and heat are cardinal signs, resulting from increased blood flow to the damaged area."), O("Edema and pain present at the site of the affected tissue area", true, "Correct. Edema (swelling) and pain are cardinal signs; excess fluid raises pressure on sensitive nerve endings."), O("Purulent drainage and loss of function of the affected part", true, "Correct. Purulent drainage (pus) and loss of function complete the cardinal sign list in the chapter."), O("Bradycardia and a respiratory rate below the normal adult range", false, "Incorrect. Slow heart and breathing rates are vital-sign findings, not cardinal signs of inflammation at a site."), O("Jaundice visible in the skin and in the sclera of both of the eyes", false, "Incorrect. Jaundice is a frequently noted sign linked to bile flow obstruction, not a cardinal sign of inflammation.") ],
+  tp: "Cardinal signs: erythema, edema, heat, pain, purulent drainage, and loss of function." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Why do erythema and heat appear at an inflamed area?",
+  opts: [ O("Increased blood flow to the damaged area brings warmth and visible redness there", true, "Correct. The chapter states erythema and heat result from increased blood flow to the damaged area."), O("White blood cells digesting debris release pigments that color the skin surface red", false, "Incorrect. Neutrophils digest microorganisms and debris; they do not create the redness and heat."), O("Fluid leaking into the tissues reflects light and makes the area appear much warmer", false, "Incorrect. Excess tissue fluid causes edema and pressure pain, not the redness and heat of inflammation."), O("Loss of function rests the area so that blood pools and the surface becomes hot there", false, "Incorrect. Loss of function imposes rest; it is a result in the response, not the cause of redness and heat.") ],
+  tp: "Inflammation sequence: increased blood flow causes erythema and heat; permeable capillaries let WBCs and plasma move into tissues; excess fluid causes edema and pain." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Purulent exudate is best described as an accumulation of which materials?",
+  opts: [ O("Neutrophils, dead cells, bacteria, and other debris from the infectious process", true, "Correct. Purulent exudate is defined by that accumulation at the site of infection."), O("Clear plasma and water that leak from capillaries without any cellular material", false, "Incorrect. Clear fluid without cells does not match purulent exudate, which is pus from an infectious process."), O("Red blood cells that escape from a vessel and collect under the surface of the skin", false, "Incorrect. Blood collecting in subcutaneous tissues describes ecchymosis, a bruise, not purulent exudate."), O("Mucus produced in the large airways that gives a gurgling quality to breath sounds", false, "Incorrect. Mucus in large airways relates to sonorous wheezes, not to the composition of purulent exudate.") ],
+  tp: "Purulent exudate = neutrophils, dead cells, bacteria, and debris; bacterial infection is the most common cause of purulent drainage." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement about infection is accurate?",
+  opts: [ O("It is caused by invasion of microorganisms that produce damage to body tissues", true, "Correct. Infection is invasion by bacteria, viruses, fungi, or parasites that produce tissue damage."), O("It is the body's protective response of tissues to irritation or to an injury", false, "Incorrect. That is inflammation, the protective tissue response, not the invasion itself."), O("It occurs only when a patient develops a fever above the normal temperature range", false, "Incorrect. Fever is a frequently noted sign; infection is defined by invasion and tissue damage, not by fever alone."), O("It is present whenever purulent drainage is seen at any site on the patient's body", false, "Incorrect. Purulent drainage is a cardinal sign, but infection is defined by microorganism invasion, not one sign alone.") ],
+  tp: "Infection = invasion by microorganisms producing tissue damage. Inflammation = protective tissue response to irritation, injury, or invasion." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient reports itching, and the nurse sees redness and a rash. Which pairing is correct?",
+  opts: [ O("Pruritus is the reported symptom; erythema is a sign the nurse can observe directly", true, "Correct. Pruritus (itching) is perceived and reported; erythema and rash are visible signs that often accompany it."), O("Pruritus is a sign the nurse measures; erythema is a symptom only the patient feels", false, "Incorrect. This reverses them; itching is felt by the patient, redness is seen by the nurse."), O("Both findings are subjective because they were first noticed during the same visit", false, "Incorrect. Timing does not decide the category; who perceives the data decides it."), O("Both findings are objective because a rash can be confirmed by any other observer", false, "Incorrect. Only the rash and erythema are objective; the itching itself is the patient's perception.") ],
+  tp: "Many signs accompany symptoms: the nurse often sees erythema and a rash when the patient reports pruritus." });
+
+BANK.push({ cat: CC, type: "multi",
+  stem: "Which actions are pre-examination responsibilities of the nurse assisting with a physical examination? Select all that apply.",
+  opts: [ O("Verify that informed consent was obtained and the form has appropriate signatures", true, "Correct. Verifying consent and signatures is a listed pre-examination responsibility."), O("Confirm that all necessary supplies and equipment have been obtained for the provider", true, "Correct. The nurse confirms supplies and equipment are ready before the examination."), O("Verify that prerequisites are completed and that the results are available to review", true, "Correct. Checking prerequisites and result availability is part of preparing for the examination."), O("Decide which diagnosis the provider should record after the examination is finished", false, "Incorrect. Making the medical diagnosis is the provider's role, based on clustered signs and symptoms."), O("Leave the patient alone in the room while the equipment is gathered from storage", false, "Incorrect. The nurse should not leave the patient alone; assistance needs are determined in advance.") ],
+  tp: "Pre-exam: verify consent, prerequisites and results, supplies/equipment, appropriate room, positioning ability, and specimen needs." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which equipment pairing is matched to its assessment use in this chapter?",
+  opts: [ O("Snellen chart for vision screening and a tuning fork among the examination supplies", true, "Correct. Box 13.2 lists the eye chart (e.g., Snellen), tuning fork, ophthalmoscope, and otoscope as examination supplies."), O("Percussion hammer for listening to heart sounds and a speculum for viewing the retina", false, "Incorrect. A percussion hammer tests reflex response by tapping; listening uses a stethoscope, and a speculum is vaginal."), O("Sphygmomanometer for measuring body temperature and a tape measure for blood pressure", false, "Incorrect. The sphygmomanometer measures blood pressure; temperature uses a thermometer, not a tape measure."), O("Tongue depressor for palpating pulses and cotton applicators for measuring height now", false, "Incorrect. Pulses are palpated with fingertip pads; height uses the scale's measurement rod, not applicators.") ],
+  tp: "Box 13.2 supplies include Snellen chart, ophthalmoscope, otoscope, percussion hammer, sphygmomanometer, stethoscope, tuning fork, and vaginal speculum." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Why is the sitting position used to assess the head, neck, thorax, and heart?",
+  opts: [ O("Sitting upright allows full lung expansion and better visualization of upper-body symmetry", true, "Correct. Table 13.2 gives full expansion of lungs and visualization of symmetry as the rationale for sitting."), O("Sitting relaxes the abdominal muscles so the abdomen can be assessed more comfortably", false, "Incorrect. Abdominal muscle relaxation is the rationale for dorsal recumbent, used for abdominal assessment."), O("Sitting gives maximal exposure of the genital tract for speculum insertion during exams", false, "Incorrect. Maximal genital exposure is the rationale for lithotomy, not for the sitting position."), O("Sitting flexes the hip and knee to improve exposure of the rectal area for examination", false, "Incorrect. Hip and knee flexion improving rectal exposure describes the Sims position rationale.") ],
+  tp: "Sitting: full lung expansion and symmetry of upper body. A weakened patient who cannot sit is placed supine with the head of bed elevated." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "The dorsal recumbent position is chosen for abdominal assessment primarily because it:",
+  opts: [ O("Promotes relaxation of the abdominal muscles during the examination of the abdomen", true, "Correct. Table 13.2 states dorsal recumbent promotes abdominal muscle relaxation; patients with pain are more comfortable with knees flexed."), O("Provides the easiest access to peripheral pulse sites in the lower extremities area", false, "Incorrect. Easy access to pulse sites is a rationale for supine, the most normally relaxed position."), O("Aids in detecting heart murmurs that are difficult to hear in other body positions", false, "Incorrect. Aiding murmur detection is the rationale for lateral recumbent, which is used for the heart."), O("Is used only to assess extension of the hip joint during a musculoskeletal examination", false, "Incorrect. Assessing hip joint extension only is the stated use of the prone position, not dorsal recumbent.") ],
+  tp: "Dorsal recumbent = abdominal assessment through muscle relaxation. Supine = relaxed position with easy pulse access." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which limitation and precaution belong to the lithotomy position?",
+  opts: [ O("It is embarrassing and uncomfortable, so time in it is minimized and draping is kept", true, "Correct. Table 13.2 lists embarrassment and discomfort; minimize time in lithotomy and keep the patient well draped."), O("Patients with respiratory difficulties tolerate it poorly, so it is avoided in dyspnea", false, "Incorrect. Poor tolerance with respiratory difficulty is listed for prone and lateral recumbent positions."), O("Joint deformities may prevent the patient from bending the hip and knee as required", false, "Incorrect. Joint deformity limiting hip and knee bending is the limitation listed for the Sims position."), O("Physically weakened patients cannot maintain it, so the head of bed is raised instead", false, "Incorrect. The weakened-patient limitation and head-of-bed alternative belong to the sitting position.") ],
+  tp: "Lithotomy: female genitalia/genital tract, maximal exposure for speculum; minimize time, keep well draped." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which statement about the prone position is accurate?",
+  opts: [ O("It is used only to assess extension of the hip joint, and respiratory patients tolerate it poorly", true, "Correct. Table 13.2 limits prone to hip extension assessment and warns patients with respiratory difficulties tolerate it poorly."), O("It aids in detecting heart murmurs and is the preferred position for cardiac assessment", false, "Incorrect. Murmur detection is the purpose of lateral recumbent, not prone."), O("It provides maximum exposure of the rectal area for a complete rectal examination today", false, "Incorrect. Maximum rectal exposure describes knee-chest, which is embarrassing and uncomfortable."), O("It promotes relaxation of abdominal muscles for assessment of the abdomen and pelvis", false, "Incorrect. Abdominal muscle relaxation describes dorsal recumbent, not the prone position.") ],
+  tp: "Prone = musculoskeletal, hip extension only; respiratory difficulty = poor tolerance. Lateral recumbent also is tolerated poorly with respiratory difficulty." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "What is the first step when initiating the nurse-patient relationship for an assessment interview?",
+  opts: [ O("Introduce name, position, and purpose, and indicate the time the assessment will take", true, "Correct. The first step is introduction with name, position, and purpose; stating the time needed helps ensure cooperation."), O("Begin with detailed family history questions before explaining why the nurse is there", false, "Incorrect. Family history comes later in the history; the relationship begins with introduction and purpose."), O("Ask the patient to answer pressing questions later so the interview is not interrupted", false, "Incorrect. Answering pressing questions first meets immediate needs and helps the patient focus on the interview."), O("Explain that hospital patients are expected to stay available for the full interview", false, "Incorrect. The chapter warns not to treat even a hospital patient as a captive audience; use the patient's time appropriately.") ],
+  tp: "Interview opening: name, role, purpose, content, about 30 minutes in the book example, chance for questions, then vital signs." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which statement about confidentiality during the interview is accurate?",
+  opts: [ O("Personal information is shared only with caregivers who need it to provide proper care", true, "Correct. The patient must be comfortable that information goes only to caregivers who need it; trust is essential."), O("Detailed wellness and family information may be shared freely with any hospital staff", false, "Incorrect. Past or present wellness and family relationship information is strictly confidential."), O("Trust is built mainly by promising the patient that no information will be documented", false, "Incorrect. Assessment information is documented for care; trust comes from discretion about who receives it."), O("The nurse should use medical terminology so personal details sound less sensitive here", false, "Incorrect. Simple language is necessary; complicated terminology confuses patients and adds to their fears.") ],
+  tp: "Confidentiality: share only with caregivers who need the information to provide proper care; a sense of trust is essential." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement about inspection is accurate?",
+  opts: [ O("It is used most frequently, begins at first contact, and continues through the history", true, "Correct. Inspection is the most-used technique; it begins with first contact and continues throughout, often head-to-toe."), O("It is used least frequently and is reserved for locating internal organs by tapping", false, "Incorrect. Tapping to locate organs describes percussion, which is the technique used least frequently."), O("It requires a stethoscope to amplify sounds produced by internal organs of the body", false, "Incorrect. Amplifying body sounds with a stethoscope describes auscultation, not visual inspection."), O("It uses the hands and sense of touch to detect masses, texture, and temperature data", false, "Incorrect. Gathering data by touch describes palpation, not inspection.") ],
+  tp: "Four techniques: inspection (visual, most frequent), palpation (touch), auscultation (listening), percussion (tapping, least frequent)." });
+
+BANK.push({ cat: CD, type: "multi",
+  stem: "Palpation is used to gather which kinds of data? Select all that apply.",
+  opts: [ O("Temperature, texture, and moisture of an area being examined", true, "Correct. Palpation gathers temperature, texture, and moisture along with other structural data."), O("Masses and pulsations that can be felt through the skin surface", true, "Correct. Masses and pulsations are listed palpation data, gathered with hands and sense of touch."), O("Tenderness and vibration in the area under the nurse's fingertips", true, "Correct. Tenderness and vibration are detected by palpation, along with changes in structural integrity."), O("Sounds produced inside the body that require amplification to hear", false, "Incorrect. Body sounds are gathered by auscultation with a stethoscope, not by touch."), O("Density of underlying tissue as judged from tapping vibration tones", false, "Incorrect. Density judged from tapping sounds is percussion, a different technique.") ],
+  tp: "Palpation detects tenderness, temperature, texture, vibration, pulsations, masses, and structural changes." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A hollow organ such as the stomach is percussed. Which note is expected?",
+  opts: [ O("Tympany, a high-pitched and drumlike sound heard over a hollow organ", true, "Correct. Tympany is high-pitched and drumlike over a hollow organ such as the stomach."), O("Dullness, a low-pitched and thudlike sound heard over a dense organ", false, "Incorrect. Dullness is heard over a dense organ such as the liver, not a hollow stomach."), O("Flatness, a soft and high-pitched flat sound heard over muscle tissue", false, "Incorrect. Flatness is heard over muscle, not over a hollow organ."), O("Resonance that is judged only by the volume of the patient's breathing", false, "Incorrect. Percussion notes are judged from tapping the body surface, not from breathing volume.") ],
+  tp: "Percussion notes: tympany = hollow organ (stomach); dullness = dense organ (liver); flatness = muscle." });
+
+BANK.push({ cat: CD, type: "multi",
+  stem: "Which body systems does the nurse auscultate as listed in Box 13.4? Select all that apply.",
+  opts: [ O("The cardiovascular system, listening to sounds of the heart and vessels", true, "Correct. The cardiovascular system is one of the three systems listed for auscultation."), O("The respiratory system, listening to sounds of breathing in the lungs", true, "Correct. The respiratory system is auscultated for breath sounds with a stethoscope."), O("The gastrointestinal system, listening to sounds of bowel activity", true, "Correct. The gastrointestinal system is the third listed system; fetal heart sounds are also detected by auscultation."), O("The integumentary system, listening to sounds produced by the skin", false, "Incorrect. Skin is inspected and palpated for color, temperature, and turgor; it is not an auscultated system."), O("The musculoskeletal system, listening to sounds produced by the joints", false, "Incorrect. Musculoskeletal assessment uses inspection, palpation, posture, and gait, not stethoscope listening.") ],
+  tp: "Auscultation systems: cardiovascular, respiratory, gastrointestinal; also fetal heart sounds." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "How should the chief complaint be documented?",
+  opts: [ O("In the patient's own words, placed in quotation marks on the assessment record", true, "Correct. The chief complaint is written in the patient's own words in quotation marks to remove bias from later interpretation."), O("In medical terminology chosen by the nurse to summarize what the patient reported", false, "Incorrect. Translating into nurse terminology risks bias; the patient's own words are required."), O("As a one-word label selected from the patient's list of past medical diagnoses", false, "Incorrect. The chief complaint is why the patient is seeking care now, not a past diagnosis label."), O("In the words of a family member who can describe the problem more completely today", false, "Incorrect. The reason for seeking care is determined from the patient and recorded in the patient's words.") ],
+  tp: "Chief complaint: 'What brings you to the hospital today?' — document the answer in the patient's own words in quotation marks." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "In OPQRSTUV, the letter P asks about which aspect of the present illness?",
+  opts: [ O("What causes it, what makes it better, and what makes it worse for this patient", true, "Correct. P is precipitating and provocative-palliative: causes, what makes it better, and what makes it worse."), O("Where the problem is located and whether it spreads or travels to another area", false, "Incorrect. Location and spread are R, region and radiation."), O("How bad the problem is at its worst and whether it interferes with daily activities", false, "Incorrect. How bad it is and activity interference are covered by S, severity, and also Q quantity elements."), O("What the patient thinks is causing it and how the problem affects the patient now", false, "Incorrect. The patient's own understanding is U, understanding, not P.") ],
+  tp: "OPQRSTUV: O onset, P precipitating/provocative-palliative, Q quality/quantity, R region/radiation, S severity, T treatments, U understanding, V values." });
+
+BANK.push({ cat: CD, type: "multi",
+  stem: "What are the purposes of taking a family history? Select all that apply.",
+  opts: [ O("To determine risk for illnesses of a genetic or familial nature in this patient", true, "Correct. Identifying genetic or familial risk is a stated objective of family history."), O("To identify areas for health promotion and for illness prevention for the patient", true, "Correct. Health promotion and illness prevention areas are the second stated objective."), O("To learn about family structure, interaction, and function within the family unit", true, "Correct. Family history also provides information about structure, interaction, and function."), O("To decide that a supportive family must always be placed in charge of the care plan", false, "Incorrect. A supportive family is a possible resource; if family involvement adds stress, refraining may be more therapeutic."), O("To replace the patient's own history with relatives' accounts of the present illness", false, "Incorrect. Family history supplements the patient's history; it does not replace the patient's own account.") ],
+  tp: "Family history covers immediate family and blood relatives: diabetes, hypertension, heart disease, cancer, and cause of death." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement about the review of systems (ROS) is accurate?",
+  opts: [ O("It is a systematic method that questions the patient about functioning of each system", true, "Correct. ROS systematically collects data on all body systems, asking about normal functioning and changes noted."), O("It includes every detailed question for every system in every history that is taken", false, "Incorrect. The nurse will not include all aspects every time; essential areas are included and positive responses trigger detail."), O("The patient's statements during the ROS are recorded as objective data for the chart", false, "Incorrect. Patient statements and descriptions of changes during ROS are subjective data."), O("It is completed only after the physical examination findings have been fully recorded", false, "Incorrect. ROS is part of health history data collection through questioning, not a post-examination step.") ],
+  tp: "ROS: some questions for each system in every history; detailed follow-up when responses are positive; statements are subjective data." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A patient knows person, place, and time but not purpose. How is orientation documented?",
+  opts: [ O("Oriented x 3, because purpose is the fourth element that is not yet established here", true, "Correct. Oriented x 3 is person, place, and time; adding purpose makes oriented x 4 where that is required."), O("Oriented x 4, because knowing three elements is counted as complete orientation here", false, "Incorrect. Oriented x 4 requires purpose in addition to person, place, and time."), O("Oriented x 2, because time questions are not counted in the orientation assessment", false, "Incorrect. Time is one of the three core elements, with person and place."), O("Not oriented, because any missing element means the patient has no orientation at all", false, "Incorrect. Orientation is documented by the elements the patient does know, not as all or nothing.") ],
+  tp: "Orientation: x3 = person, place, time. x4 adds purpose. Always begin the neurologic assessment with orientation." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "PERRLA documents a normal pupil examination. What does it record?",
+  opts: [ O("Pupils equal, round, reactive to light, and accommodation, with a normal response", true, "Correct. PERRLA stands for pupils equal, round, reactive to light, and accommodation."), O("Pupils even, relaxed, responsive to touch, and aligned, with a normal response", false, "Incorrect. The letters map to equal, round, reactive to light, and accommodation, not to touch or alignment."), O("Pupils enlarged, round, reactive to pain, and asymmetric, with a normal response", false, "Incorrect. Enlarged and asymmetric findings would not be documented as a normal PERRLA result."), O("Pupils equal, regular, resistant to light, and adapted, with a normal response today", false, "Incorrect. Pupils should constrict and react to light; resistance to light is not the normal finding.") ],
+  tp: "Normal pupils are 3 to 7 mm, equal in size; record PERRLA when the reaction is normal in all examinations." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "Which set lists the three areas scored on the Glasgow Coma Scale?",
+  opts: [ O("Eye opening, verbal response, and motor response, each scored and then summed together", true, "Correct. GCS scores eye opening (max 4), verbal response (max 5), and motor response (max 6), summed for 3 to 15."), O("Eye opening, pupil size, and grip strength, each scored and then summed together now", false, "Incorrect. Pupil checks and grip are neurologic assessment items, but they are not GCS scoring areas."), O("Orientation, breathing pattern, and pulse strength, each scored and summed together", false, "Incorrect. Breathing and pulse are vital-sign items; the GCS verbal area is a response score, not orientation alone."), O("Motor response, reflex response, and pain response, each scored and summed together", false, "Incorrect. Reflexes are a separate neurologic area; GCS uses eye, verbal, and motor responses.") ],
+  tp: "GCS range is 3 to 15; 15 is normal with no brain trauma; 8 or less indicates severe brain injury." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A patient is drowsy, arousable, responds appropriately, then falls asleep again. Which LOC term fits?",
+  opts: [ O("Lethargy, because the patient can be aroused and responds appropriately before sleeping", true, "Correct. Lethargy (hypersomnia) is drowsiness with appropriate response when aroused, possibly falling asleep again immediately."), O("Delirium, because any drowsiness with sleep between questions indicates disordered perception", false, "Incorrect. Delirium adds confusion, disordered perception, motor and sensory excitement, and marked anxiety."), O("Confusion, because the patient shows a decreased attention span and memory in this state", false, "Incorrect. Confusion involves inappropriate responses to stimuli and commands, not appropriate responses when aroused."), O("Coma, because the patient returns to sleep and therefore has lost all consciousness now", false, "Incorrect. Coma is loss or lowering of consciousness; this patient arouses and responds appropriately.") ],
+  tp: "A change in LOC is one of the first signs of altered neurologic status. Lethargy = arousable, appropriate, may fall back asleep." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "Skin grasped between two fingers slowly returns to its previous position. What does this show?",
+  opts: [ O("Decreased turgor from dehydration, shown by lax skin that tents when it is grasped", true, "Correct. Dehydration decreases turgor; skin that slowly returns is called skin tenting."), O("Increased turgor from marked edema, shown by skin that cannot be grasped at all", false, "Incorrect. Marked edema gives smooth, taut, shiny skin that cannot be grasped and raised, the opposite handling finding."), O("Normal turgor, because healthy skin is warm, dry, smooth, and returns at this speed", false, "Incorrect. Normal skin has good turgor and returns promptly; slow return is the deviation described."), O("A thrill over the skin surface, felt as vibration when the fingers are placed flat", false, "Incorrect. A thrill is a vibrating sensation perceived during palpation along an artery, not a turgor finding.") ],
+  tp: "Turgor = skin elasticity. Dehydration: tenting, slow return. Marked edema: increased turgor, taut shiny skin that cannot be grasped." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "For a dark-skinned patient, where may jaundice be most visible?",
+  opts: [ O("In the sclera, the hard palate, and the palmar or plantar surfaces of the body", true, "Correct. In dark-skinned individuals jaundice may appear as yellow staining in the sclera, hard palate, and palmar or plantar surfaces."), O("Only in the nail beds and in the palms, because other areas cannot be assessed here", false, "Incorrect. The chapter lists sclera and hard palate as well; overall color is noted in sclera, conjunctiva, tongue, lips, nail beds, palms, and soles."), O("In the conjunctiva alone, because the sclera does not change color with jaundice", false, "Incorrect. Scleral icterus is yellowing of the sclera from bilirubin; the sclera is a key site."), O("Behind the ears and on the scalp, because those areas show yellow color earliest now", false, "Incorrect. Those sites are not the chapter's listed locations for jaundice in dark-skinned patients.") ],
+  tp: "Skin color changes signaling systemic disease include pallor, cyanosis, jaundice, and ecchymosis; check sclera, conjunctiva, tongue, lips, nail beds, palms, and soles." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "Which breathing-rate pairing matches the chapter definitions for an adult?",
+  opts: [ O("Tachypnea is greater than 20 breaths per minute; bradypnea is less than 10 per minute", true, "Correct. Normal adult rate is 12 to 20; tachypnea is greater than 20 and bradypnea is less than 10 as printed."), O("Tachypnea is greater than 30 breaths per minute; bradypnea is less than 16 per minute", false, "Incorrect. Those cutoffs are not the chapter's printed values for this chapter's definitions."), O("Tachypnea is less than 10 breaths per minute; bradypnea is greater than 20 per minute", false, "Incorrect. This reverses the two terms; tachy- is rapid and brady- is slow in this pairing."), O("Tachypnea is greater than 100 beats per minute; bradypnea is less than 60 beats a minute", false, "Incorrect. Those are heart-rate values for tachycardia and bradycardia, not respiratory rates.") ],
+  tp: "Adult respirations: normal 12 to 20/min, quiet breathing; tachypnea greater than 20; bradypnea less than 10 (as printed, p. 332)." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "Which pairing of breath-sound type and pattern is accurate?",
+  opts: [ O("Crackles are discontinuous; wheezes are continuous sounds through narrowed passages", true, "Correct. Crackles are discontinuous fluid sounds; wheezes are continuous as air is squeezed through narrowed airways."), O("Crackles are continuous; wheezes are discontinuous sounds heard only on inspiration", false, "Incorrect. This swaps the two classifications; crackles are the discontinuous sounds."), O("Both sounds are continuous, and both are produced by fluid in bronchioles and alveoli", false, "Incorrect. Fluid in bronchioles and alveoli describes crackles only; wheezes come from narrowed passages."), O("Both sounds are discontinuous, and both clear completely whenever the patient coughs", false, "Incorrect. Sonorous wheezes are most likely to clear with cough; crackles sometimes clear somewhat, not completely by rule.") ],
+  tp: "Crackles = discontinuous, fluid in bronchioles/alveoli, usually inspiratory. Wheezes = continuous, narrowed airways; sibilant high-pitched, sonorous low-pitched with mucus." });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "Which statement accurately distinguishes S1 from S2?",
+  opts: [ O("S1 closes the AV valves and begins systole at the apex; S2 closes semilunar valves at the base", true, "Correct. S1 is AV valve closure, beginning of systole, clearest at the apex; S2 is semilunar closure, end of systole, clearest at the base."), O("S1 closes semilunar valves and ends systole at the base; S2 closes AV valves at the apex", false, "Incorrect. This reverses both the valves and the locations for the two normal heart sounds."), O("S1 is an extra sound after S2 at the apex; S2 is heard just before the next S1 begins now", false, "Incorrect. Extra sounds after S2 or before S1 describe S3 and S4, not the normal S1 and S2."), O("S1 and S2 are both produced by atrial contraction late in diastole at the apex of heart", false, "Incorrect. Atrial contraction late in diastole is associated with S4, heard immediately before S1.") ],
+  tp: "S1 = AV closure, systole begins, apex. S2 = semilunar closure, systole ends, base. The lub-dub is these two closures." });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "Which statement about the extra heart sounds is accurate?",
+  opts: [ O("S3 follows S2 and can signal heart failure in adults; S4 comes just before S1 sounds", true, "Correct. S3 is heard after S2, usually abnormal in adults and an early sign of heart failure; S4 is late diastole, immediately before S1."), O("S3 comes just before S1 and is always normal in adults; S4 follows S2 in the cycle here", false, "Incorrect. This swaps their timing; S3 follows S2, and S4 precedes S1."), O("S3 is normal in adults with heart disease; S4 is the sound that is normal only in children", false, "Incorrect. S3 is sometimes normal in children but usually abnormal in adults; S4 is sometimes normal and sometimes pathologic."), O("S3 and S4 are both best heard at the base with the patient in a sitting position only", false, "Incorrect. Both extra sounds are heard best or most clearly at the apex, not at the base.") ],
+  tp: "S3: after S2, apex, dull and soft, early heart failure sign in adults. S4: before S1, apex, low pitch, seen after MI or in cardiomyopathy." });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "On the chapter pulse-strength scale, a normal pulse is graded as:",
+  opts: [ O("3+, which the scale lists as the normal strength for a palpable peripheral pulse", true, "Correct. The scale is 0 absent, 1+ thready, 2+ weak, 3+ normal, and 4+ bounding."), O("2+, which the scale lists as the normal strength for a palpable peripheral pulse", false, "Incorrect. 2+ is weak on this scale, one step below normal."), O("4+, which the scale lists as the normal strength for a palpable peripheral pulse", false, "Incorrect. 4+ is bounding, stronger than the normal grade."), O("1+, which the scale lists as the normal strength for a palpable peripheral pulse", false, "Incorrect. 1+ is thready, the weakest palpable grade on the scale.") ],
+  tp: "Pulse scale: 0 absent, 1+ thready, 2+ weak, 3+ normal, 4+ bounding. Count the pulse rate for 60 seconds." });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "Capillary refill is assessed and interpreted as which of the following?",
+  opts: [ O("Press firmly for 5 seconds; return in less than 3 seconds shows good distal perfusion", true, "Correct. Press for 5 seconds; refill under 3 seconds indicates good cardiac function and distal perfusion."), O("Press firmly for 1 second; return in less than 5 seconds shows good distal perfusion", false, "Incorrect. The press time is 5 seconds and the normal return is less than 3 seconds, not less than 5."), O("Press firmly for 5 seconds; return at 5 seconds exactly is still a normal finding here", false, "Incorrect. More than 3 seconds is sluggish and 5 seconds is considered abnormal."), O("Press firmly for 10 seconds; any return within 10 seconds is a normal finding today", false, "Incorrect. Neither the 10-second press nor the 10-second return matches the chapter technique or values.") ],
+  tp: "Capillary refill: press 5 seconds; less than 3 seconds normal; more than 3 sluggish; 5 seconds abnormal. Poor cardiac function, dehydration, and peripheral vascular disease delay refill." });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "Why is the abdomen auscultated before it is palpated?",
+  opts: [ O("Palpation can stimulate intestinal activity and alter the bowel sounds being assessed", true, "Correct. Manipulation can stimulate intestinal activity and change bowel sounds, so auscultation comes first."), O("Palpation removes air from the bowel so that percussion notes cannot be heard later", false, "Incorrect. The stated reason concerns bowel sounds being altered by palpation, not percussion air."), O("Auscultation first warms the hands so that palpation is more comfortable for patients", false, "Incorrect. Warming hands is a comfort measure for palpation, not the reason for the assessment order."), O("Auscultation is always the first technique used for every body system in this chapter", false, "Incorrect. The order rule is specific to the abdomen; other systems follow their own sequences.") ],
+  tp: "Abdomen order trap: inspect, auscultate, then palpate. Listen 1 minute in all quadrants; listen at least 4 minutes before concluding bowel sounds are absent." });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "Which statement about grading edema is accurate?",
+  opts: [ O("Only pitting edema can be graded on the 1+ to 4+ scale; nonpitting edema cannot be graded", true, "Correct. If edema is not pitting, it cannot be given a grade on this scale."), O("Nonpitting edema is graded 1+ when it is caused by arterial disease or an occlusion", false, "Incorrect. Arterial disease is a cause of nonpitting edema, but nonpitting edema still cannot be graded on the pitting scale."), O("Unilateral edema is always graded 4+ because it signals occlusion of a major vein here", false, "Incorrect. Unilateral edema likely results from venous occlusion, but grade depends on pit depth and rebound, not side alone."), O("Edema is graded by how long the patient has had swelling rather than by the pit depth", false, "Incorrect. Grades are based on pit depth in millimeters and rebound time, from 2 mm at 1+ to 8 mm at 4+.") ],
+  tp: "Pitting scale: 1+ 2 mm trace; 2+ 4 mm, rebounds 10-15 s; 3+ 6 mm, lasts 30 s to over 1 min; 4+ 8 mm, may last 2-5 min. Press a bony prominence for 5 seconds." });
+
+BANK.push({ cat: CF, type: "multi",
+  stem: "Which items belong in a complete blood count (CBC) as listed in Box 13.5? Select all that apply.",
+  opts: [ O("Red blood cell count, hemoglobin, and hematocrit values for the patient", true, "Correct. RBC, hemoglobin, and hematocrit are listed components of the CBC."), O("White blood cell count with differential and platelet count values", true, "Correct. WBC with differential and platelets are listed CBC components."), O("Examination of peripheral blood cells and erythrocyte indices values", true, "Correct. Peripheral blood cell examination and erythrocyte indices complete the listed CBC."), O("International normalized ratio and prothrombin time values for clotting", false, "Incorrect. INR, PT, and PTT are separate blood tests in Box 13.5, not CBC components."), O("Fasting blood sugar and a lipid profile with triglyceride values today", false, "Incorrect. FBS and lipid profile are separate blood analysis items, not parts of the CBC.") ],
+  tp: "Box 13.5 blood tests also include ABG, blood chemistry, electrolytes (SMA-6, SMA-12), INR, PT, PTT, FBS, and lipid profile as separate items." });
+
+BANK.push({ cat: CF, type: "single",
+  stem: "SBAR communication is organized in which order?",
+  opts: [ O("Situation, Background, Assessment, and Recommendation, in that sequence for handoff", true, "Correct. SBAR stands for Situation, Background, Assessment, and Recommendation and standardizes handoff communication."), O("Symptoms, Background, Allergies, and Results, in that sequence for handoff calls", false, "Incorrect. The A is Assessment and the R is Recommendation; allergies and results are not the SBAR letters."), O("Situation, Biography, Assessment, and Referral, in that sequence for handoff calls", false, "Incorrect. B is Background, not biography, and R is Recommendation, not referral."), O("Status, Baseline, Action, and Review, in that sequence for handoff communication", false, "Incorrect. Those words do not match the SBAR tool developed for standardized patient-safety communication.") ],
+  tp: "SBAR meets Joint Commission safety goals and allows standardized communication during handoff between sender and receiver; it can be verbal and written." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 13: Physical Assessment - Definition Practice Test</h1>';
+  h += '<div class="sub">Definition practice test | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

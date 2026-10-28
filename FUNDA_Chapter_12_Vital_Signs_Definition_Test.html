@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 12 - Vital Signs - Definition Practice Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Vital Signs Basics and Temperature";
+var CB = "Fever, Temperature Measurement, and Stethoscope";
+var CC = "Pulse and Apical Pulse";
+var CD = "Respirations and Oxygen Saturation";
+var CE = "Blood Pressure, Height and Weight";
+var CATS = [CA, CB, CC, CD, CE];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 11,
+  "types": {
+   "single": 9,
+   "multi": 2
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 9,
+  "types": {
+   "single": 8,
+   "multi": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 7,
+  "types": {
+   "single": 6,
+   "multi": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 7,
+  "types": {
+   "single": 6,
+   "multi": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 10,
+  "types": {
+   "single": 8,
+   "multi": 2
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which statement most accurately describes what a baseline set of vital signs is used for?",
+  opts: [ O("A first set taken at initial contact, compared with every later set of readings", true, "Correct. The baseline is obtained at initial contact and later readings are compared with it."), O("A single reading taken once, treated as proof that the patient is stable all day", false, "Incorrect. One set is a snapshot; values vary and are read with condition and history."), O("An average of readings from other patients of the same age on the same unit", false, "Incorrect. A baseline is this patient's own initial set, not a unit average."), O("A set taken only after surgery, used to judge whether anesthesia has worn off", false, "Incorrect. Baselines are taken at initial contact, before any procedure baseline is needed.") ],
+  tp: "Baseline = first set at initial contact; every later reading is compared with it." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A temperature rise of 1 degree F is expected to change the other vital signs in which way?",
+  opts: [ O("Pulse rises by about 4 beats per minute, and respirations and blood pressure rise too", true, "Correct. As printed: 1 degree F rise can increase pulse by 4 beats per minute; RR and BP also rise."), O("Pulse falls by about 4 beats per minute, and respirations and blood pressure fall too", false, "Incorrect. The direction is upward for pulse, respirations, and blood pressure."), O("Pulse stays unchanged, because temperature and pulse are regulated independently", false, "Incorrect. The chapter links a temperature rise to changes in the other vital signs."), O("Pulse rises by about 40 beats per minute, while respirations and blood pressure fall", false, "Incorrect. The printed pulse change is 4 beats per minute, not 40, and the others rise.") ],
+  tp: "Trap number: 1 degree F up = pulse up about 4 beats/min; RR and BP rise as well." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which finding pattern matches the chapter description of hemorrhage?",
+  opts: [ O("Blood pressure falls while pulse and respiratory rates rise and temperature falls", true, "Correct. With hemorrhage the BP falls, pulse and respirations increase, and temperature usually decreases."), O("Blood pressure rises while pulse and respiratory rates fall and temperature rises", false, "Incorrect. That reverses every direction the chapter gives for hemorrhage."), O("Blood pressure falls while pulse and respiratory rates fall and temperature rises", false, "Incorrect. Pulse and respirations rise to compensate; they do not fall."), O("Blood pressure stays normal while only the temperature changes in either direction", false, "Incorrect. Hemorrhage changes pressure, pulse, respirations, and temperature together.") ],
+  tp: "Hemorrhage pattern: BP down, pulse up, respirations up, temperature usually down." });
+
+BANK.push({ cat: CA, type: "multi", kt: [],
+  stem: "Which are times the chapter lists for assessing vital signs? Select all that apply.",
+  opts: [ O("On admission and discharge, and on a routine schedule ordered or set by policy", true, "Correct. Box 12.2 lists admission, discharge, and routine scheduled assessment."), O("Before and after surgery and before and after invasive diagnostic procedures", true, "Correct. Box 12.2 lists both surgical and invasive-procedure time points."), O("When the general condition changes, such as hemorrhage or loss of consciousness", true, "Correct. A change in condition is a listed trigger for vital sign assessment."), O("Only at the start of each shift, regardless of orders, procedures, or condition", false, "Incorrect. Frequency follows orders and policy, and many triggers occur mid-shift."), O("Only when the patient asks, because scheduled readings disturb rest and recovery", false, "Incorrect. Patient reports are one trigger, not the only time signs are taken.") ],
+  tp: "Box 12.2 triggers: admission/discharge, routine schedule, surgery, procedures, medications, condition change, interventions, vague distress." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which statement about frequency of vital sign measurement is accurate for this chapter?",
+  opts: [ O("Critical care and postanesthesia units may assess blood pressure every 5 minutes", true, "Correct. As printed, BP may be assessed as often as every 5 minutes in those units."), O("Long-term care and home patients are always assessed every 5 minutes around the clock", false, "Incorrect. In long-term care and home settings, signs may be assessed weekly."), O("Postoperative patients need readings only once a shift until they feel fully awake", false, "Incorrect. Postoperative or seriously ill patients need readings every 5 to 10 minutes until stable."), O("Every patient in every setting is assessed on the same fixed four-hour schedule", false, "Incorrect. Frequency is based on the patient's condition and the setting.") ],
+  tp: "Frequency scales with acuity: every 5 min in critical care, every 5-10 min postop until stable, weekly in some long-term/home care." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "According to Table 12.1 as printed, which set matches the adult row?",
+  opts: [ O("Heart rate 60 to 100, respirations 12 to 20, systolic 100 to 120, diastolic 70 to 80", true, "Correct. Those are the adult values printed in Table 12.1."), O("Heart rate 120 to 160, respirations 36 to 60, and a systolic pressure of only 20 to 60", false, "Incorrect. Those are the neonate values printed in Table 12.1."), O("Heart rate 90 to 120, respirations 20 to 30, and a systolic pressure of 80 to 100", false, "Incorrect. Those are the toddler values printed in Table 12.1."), O("Heart rate 60 to 100, respirations 12 to 18, systolic 130 to 140, diastolic 90 to 95", false, "Incorrect. That is the older adult row as printed, not the adult row.") ],
+  tp: "Table 12.1 adult: HR 60-100, RR 12-20, BP systolic 100-120 / diastolic 70-80. Older adult BP is printed 130-140/90-95 - do not swap them." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which statement about the hypothalamus and temperature is accurate?",
+  opts: [ O("It balances heat lost and heat produced, and it sits in the brain at the third ventricle", true, "Correct. The hypothalamus regulates temperature and forms the floor and part of the lateral wall of the third ventricle."), O("It produces most body heat during exercise, digestion, and other metabolic activity daily", false, "Incorrect. A rise in metabolism generates heat; the hypothalamus regulates the balance."), O("It controls the respiratory rate, working together with the medulla oblongata center", false, "Incorrect. The medulla oblongata controls respiration; the hypothalamus regulates temperature."), O("It keeps surface temperature constant while allowing core temperature to vary widely", false, "Incorrect. Core temperature stays relatively constant; surface temperature varies with environment.") ],
+  tp: "Hypothalamus = temperature regulator. Medulla oblongata = respiration control. Core stays constant; surface varies." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Converting temperatures: which pair of formulas is printed in the chapter?",
+  opts: [ O("Fahrenheit to Celsius: subtract 32, then multiply by 5/9; reverse: multiply by 9/5, add 32", true, "Correct. (98.6 - 32) x 5/9 = 37, and 37 x 9/5 + 32 = 98.6."), O("Fahrenheit to Celsius: add 32, then multiply by 5/9; reverse: multiply by 9/5, subtract 32", false, "Incorrect. The first step subtracts 32; adding 32 belongs to the reverse conversion."), O("Fahrenheit to Celsius: subtract 32, then multiply by 9/5; reverse: multiply by 5/9, add 32", false, "Incorrect. The fractions are swapped; F to C uses 5/9 and C to F uses 9/5."), O("Fahrenheit to Celsius: divide by 2 and add 30; reverse: subtract 30 and then double it", false, "Incorrect. That rough shortcut is not the formula the chapter prints.") ],
+  tp: "Formulas: F to C = (F - 32) x 5/9. C to F = C x 9/5 + 32." });
+
+BANK.push({ cat: CA, type: "multi", kt: [],
+  stem: "Which factors that affect body temperature does Box 12.4 list? Select all that apply.",
+  opts: [ O("Age, with labile regulation in infancy and a lower normal range in older adults", true, "Correct. Age is a listed factor at both ends of the lifespan."), O("Exercise, with prolonged strenuous exercise raising temperature as high as 105.8 F", true, "Correct. Prolonged strenuous exercise can temporarily raise temperature to 103.2-105.8 degrees F."), O("Diurnal variation, with the lowest reading between 1 and 4 a.m. each day", true, "Correct. The daily low averages 97.7 degrees F between 1 and 4 a.m., peaking at 4-6 p.m."), O("Hormonal changes during ovulation and menopause, and physical or emotional stress", true, "Correct. Hormonal influences and stress are both listed factors."), O("The color of the room and the type of thermometer used to take the reading", false, "Incorrect. Room color is not a factor, and the device affects accuracy, not body temperature.") ],
+  tp: "Box 12.4 factors: age, exercise, hormones, diurnal variation, stress, environment, food/drink ingestion, smoking." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A night-shift worker sleeps during the day. Which statement about diurnal rhythm is accurate?",
+  opts: [ O("The temperature cycle does not reverse at once; reversal generally takes 1 to 3 weeks", true, "Correct. Night workers' patterns do not reverse automatically; 1-3 weeks are needed."), O("The temperature cycle reverses on the first night shift, so readings can be compared", false, "Incorrect. Reversal is gradual over weeks, not immediate on the first shift."), O("Night workers have no diurnal variation at all, so time of day never matters for them", false, "Incorrect. The variation persists; it simply has not yet reversed to the new schedule."), O("The daily low moves to midday within two days, averaging 97.7 degrees at noon daily", false, "Incorrect. The printed low stays 1-4 a.m. on average until the cycle slowly reverses.") ],
+  tp: "Diurnal trap: night-shift reversal takes 1-3 weeks, not one shift." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which statement accurately describes a constant fever, as the chapter classifies fevers?",
+  opts: [ O("It remains elevated consistently over time and fluctuates very little from hour to hour", true, "Correct. A constant fever stays elevated with very little fluctuation."), O("It rises and falls each day, returning to normal or subnormal values in the morning", false, "Incorrect. That pattern is an intermittent fever, not a constant fever."), O("It fluctuates each day but never returns to normal until the patient becomes well again", false, "Incorrect. That pattern is a remittent fever, not a constant fever."), O("It alternates long periods of apnea with periods of deep and rapid breathing daily", false, "Incorrect. That describes Cheyne-Stokes respirations, a breathing pattern, not a fever.") ],
+  tp: "Fever patterns: constant = stays up, little fluctuation. Intermittent = returns to normal/subnormal. Remittent = never returns to normal until well." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which set of signs belongs to Box 12.5, signs of elevated body temperature?",
+  opts: [ O("Flushed warm skin, glassy eyes, headache, thirst, and increased pulse and respirations", true, "Correct. Box 12.5 lists flushed warm skin, glassy eyes/photophobia, headache, thirst, and faster pulse and respirations."), O("Pale cool skin, constricted pupils, slow pulse, and a strong appetite for large meals", false, "Incorrect. Elevated temperature produces flushed warm skin and anorexia, not cool pale skin and appetite."), O("Bradycardia, slow respirations, drowsiness from cold, and a temperature below 93 degrees", false, "Incorrect. Those point toward hypothermia, the opposite problem in this topic."), O("Cyanotic nail beds, stridorous respirations, confusion, and a productive morning cough", false, "Incorrect. Those are related signs of abnormal respirations in Box 12.12, not Box 12.5.") ],
+  tp: "Box 12.5 fever signs: anorexia, flushed warm skin, glassy eyes/photophobia, headache, perspiration, faster pulse/RR, irritability or sleepiness, thirst." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which normal temperature values by site does Box 12.3 print?",
+  opts: [ O("Oral 98.6, rectal 99.6, axillary 97.6, and tympanic or temporal 98.6 degrees F", true, "Correct. Box 12.3: oral 98.6, rectal 99.6, axillary 97.6, tympanic/temporal 98.6 degrees F."), O("Oral 99.6, rectal 98.6, axillary 98.6, and tympanic or temporal 97.6 degrees F", false, "Incorrect. Rectal is the higher reading and axillary the lower one; this set swaps them."), O("Oral 97.6, rectal 97.6, axillary 99.6, and tympanic or temporal 99.6 degrees F", false, "Incorrect. Axillary is 1 degree below oral, not the highest value in the box."), O("Oral 98.6, rectal 98.6, axillary 98.6, and tympanic or temporal 98.6 degrees F", false, "Incorrect. Only oral and tympanic/temporal share 98.6; rectal is higher and axillary lower.") ],
+  tp: "Site normals (F): oral 98.6, rectal 99.6 (+1), axillary 97.6 (-1), tympanic/temporal 98.6." });
+
+BANK.push({ cat: CB, type: "multi", kt: [],
+  stem: "Which statements about temperature measurement sites are accurate? Select all that apply.",
+  opts: [ O("Rectal readings run about 1 degree F higher than oral readings in the same patient", true, "Correct. Rectal is normally 1 degree F higher than oral."), O("Axillary readings run about 1 degree F lower than oral readings in the same patient", true, "Correct. Axillary is normally 1 degree F lower than oral."), O("The axillary method is the least accurate of the temperature measurement methods", true, "Correct. The chapter calls axillary the least accurate method."), O("Oral temperature may be used freely for a comatose or disoriented patient at any age", false, "Incorrect. Oral measurement requires cooperation and is not attempted on comatose or disoriented patients or small infants."), O("Rectal measurement is preferred right after rectal surgery or with a rectal tumor", false, "Incorrect. Rectal measurement is contraindicated after rectal surgery or with rectal disorders such as tumor or hemorrhoids.") ],
+  tp: "Site rules: rectal +1, axillary -1 and least accurate; no oral for comatose/disoriented/infants; no rectal after rectal surgery/disorder." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which statement about tympanic temperature measurement is accurate?",
+  opts: [ O("It measures infrared heat from the eardrum, which shares blood supply with the hypothalamus", true, "Correct. The tympanic membrane shares its blood supply with the hypothalamus, giving a core reading."), O("It measures heat from the skin of the forehead by brushing a sensor across the temple area", false, "Incorrect. That describes the temporal artery method, not the tympanic method."), O("It is the preferred method for infants younger than 6 months because it is most accurate", false, "Incorrect. Tympanic thermometers are suitable for all ages except infants less than 6 months."), O("Excessive cerumen improves the reading by holding heat close to the eardrum membrane", false, "Incorrect. Excessive cerumen can interfere with an accurate tympanic reading.") ],
+  tp: "Tympanic: infrared from eardrum, core source; not for infants under 6 months; cerumen interferes; be indoors 10 min first." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A patient just drank iced water. Which statement about the oral reading is accurate as printed?",
+  opts: [ O("Iced water can shift an oral reading by 2.2 to 2.6 degrees F, so the nurse waits 20 to 30 minutes", true, "Correct. As printed, iced water shifts oral readings by 2.2-2.6 degrees F; wait 20-30 min after hot/cold intake or smoking."), O("Iced water changes an oral reading by only 0.2 degrees F, so the reading may be taken at once", false, "Incorrect. The 0.2 degree figure belongs to smoking; iced water shifts the reading far more."), O("Cold liquids affect only rectal readings, so an oral reading taken now is fully accurate", false, "Incorrect. Ingested hot or cold liquids are exactly why oral readings are delayed."), O("Waiting 5 to 10 minutes is enough for the mouth to return to a true temperature reading", false, "Incorrect. The printed wait after intake or smoking is 20-30 minutes; 5-10 min is the rest wait before respirations.") ],
+  tp: "Wait traps: oral temp 20-30 min after intake/smoking; BP 30 min after caffeine/smoking; respirations 5-10 min rest after activity." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which statement about the stethoscope diaphragm and bell is accurate?",
+  opts: [ O("The diaphragm transmits high-pitched sounds and is placed firmly; the bell transmits low-pitched sounds placed lightly", true, "Correct. Diaphragm = high-pitched, firm pressure. Bell = low-pitched, light placement; pressing the bell creates a diaphragm effect."), O("The diaphragm transmits low-pitched sounds placed lightly; the bell transmits high-pitched sounds placed firmly", false, "Incorrect. The two sides are swapped in this statement; diaphragm is high and firm, bell is low and light."), O("Both sides transmit the same sounds, so either side may be pressed with equal firm pressure", false, "Incorrect. The sides differ by pitch, and compressing the bell changes what it transmits."), O("The bell is covered with a thin plastic disk and must leave a red ring on the skin after use", false, "Incorrect. The diaphragm is the flat disk side that may leave a temporary red ring; the bell is bowl-shaped with a rubber ring.") ],
+  tp: "Diaphragm: flat disk, high-pitched, firm (may leave red ring). Bell: bowl, low-pitched, light touch only." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which statement about caring for a stethoscope is accurate?",
+  opts: [ O("Earpieces are cleaned of cerumen and the chest piece of dust and oils after patient contact", true, "Correct. Clean earpieces regularly and bell/diaphragm after each patient contact for infection control."), O("The tubing should be cleaned with alcohol each day, because alcohol preserves the material", false, "Incorrect. Alcohol can dry and crack the material and is not recommended; mild soap and water are preferred."), O("Draping it around the neck next to the skin is the recommended way to carry it on the unit", false, "Incorrect. Do not drape it around the neck next to skin; carry it in your pocket."), O("Longer tubing improves sound, so tubing well over 18 inches gives the clearest heart sounds", false, "Incorrect. Tubing is usually 12-18 inches; longer tubing decreases sound transmission.") ],
+  tp: "Stethoscope care: clean after each contact, mild soap and water (not alcohol), pocket not neck, tubing 12-18 inches." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Which statement about pulse volume grading is accurate on the chapter scale?",
+  opts: [ O("0 is absent, 1+ is thready, 2+ is weak, 3+ is normal, and 4+ is a bounding pulse", true, "Correct. Table 12.3 grades volume 0 absent through 4+ bounding, with 3+ as normal."), O("0 is normal, 1+ is weak, 2+ is bounding, 3+ is thready, and 4+ is an absent pulse", false, "Incorrect. That scrambles the scale; 3+ is normal and 0 is absent."), O("1+ is a normal pulse, 2+ is bounding, 3+ is absent, and 4+ is a thready pulse felt", false, "Incorrect. Normal is 3+, bounding is 4+, thready is 1+, absent is 0."), O("The scale runs from 1+ to 3+ only, with 3+ used for a bounding, springlike pulse", false, "Incorrect. The scale runs 0 to 4+; a full springlike pulse under moderate pressure is 4+.") ],
+  tp: "Pulse volume: 0 absent, 1+ thready, 2+ weak, 3+ normal, 4+ bounding." });
+
+BANK.push({ cat: CC, type: "multi", kt: [],
+  stem: "Which factors influence pulse rate, as Box 12.9 lists them? Select all that apply.",
+  opts: [ O("Acute pain and anxiety, which raise the rate through sympathetic stimulation", true, "Correct. Acute pain and anxiety increase pulse via sympathetic stimulation."), O("Fever and heat, which raise the rate, while hypothermia lowers the pulse rate", true, "Correct. Fever and heat increase rate through higher metabolic rate; hypothermia decreases it."), O("Hemorrhage and dehydration, which raise the rate as the heart compensates for volume", true, "Correct. Blood and fluid loss make the heart beat faster to maintain pressure and circulation."), O("Digoxin-type and beta-blocker medications, which lower the rate, unlike atropine", true, "Correct. Digitalis and beta-blockers decrease pulse; atropine and epinephrine increase it."), O("Unrelieved severe or chronic pain, which raises the rate through sympathetic drive", false, "Incorrect. Unrelieved severe/chronic pain decreases rate via parasympathetic stimulation - the classic swap with acute pain.") ],
+  tp: "Pulse factors: acute pain UP (sympathetic) vs unrelieved severe/chronic pain DOWN (parasympathetic). Fever/hemorrhage/dehydration UP; digoxin/beta-blockers DOWN." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Which statement about the apical pulse is accurate?",
+  opts: [ O("It is auscultated at the apex and represents the actual beating of the heart itself", true, "Correct. The apical pulse at the PMI represents the actual beating of the heart; lub-dub is one cycle."), O("It is palpated at the wrist and represents only the beats that reach the radial artery", false, "Incorrect. That describes the radial pulse; the apical is heard with a stethoscope at the chest."), O("It is counted for 15 seconds and multiplied, because apical beats are always regular", false, "Incorrect. The apical pulse is counted for a full 60 seconds, like the pulse skill."), O("It is used only for infants, because adult heart rates are always taken at the wrist", false, "Incorrect. Apical is best for infants but essential for cardiac patients, irregular radial pulse, and digoxin therapy.") ],
+  tp: "Apical: stethoscope at PMI (5th ICS, left MCL), count 60 seconds, lub-dub = one beat." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "A pulse deficit exists, by the chapter rule, in which situation?",
+  opts: [ O("Two nurses count at the same time for 1 minute and the two counts differ by more than two", true, "Correct. Same watch, same minute, apical vs radial; a difference of more than two means a pulse deficit exists."), O("One nurse counts the radial pulse, then the apical pulse, and the two counts differ by one", false, "Incorrect. The counts must be simultaneous, and a difference of one is within the rule."), O("The radial pulse feels weaker than the brachial pulse when both are palpated together", false, "Incorrect. A deficit is a counted rate difference, not a strength comparison between sites."), O("The apical rate is exactly two beats higher than the radial rate on a simultaneous count", false, "Incorrect. More than two is the cutoff; a difference of exactly two does not meet it.") ],
+  tp: "Pulse deficit: apical minus radial, two nurses, same watch, 1 minute; >2 = deficit (example 92-88=4)." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Which statement about carotid pulse assessment is accurate and safe?",
+  opts: [ O("Never palpate both carotids at once, and measure on the side of the neck facing you", true, "Correct. Simultaneous pressure can occlude blood supply to the brain; do not reach across the neck."), O("Palpate both carotids together to compare them, pressing firmly for a full minute each", false, "Incorrect. Both carotids are never palpated simultaneously; other symmetric pulses may be compared together."), O("Reach across the neck to the far carotid, because that side gives the strongest signal", false, "Incorrect. Reaching across can occlude the airway with your arm; use the side facing you."), O("Use the thumb to palpate the carotid, because the thumb gives the firmest pressure felt", false, "Incorrect. Pulses are palpated with finger pads, and the thumb has its own pulse.") ],
+  tp: "Carotid safety: never both at once, never reach across, finger pads not thumb, slight pressure only." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Which statement about counting a pulse is accurate for Skill 12.2?",
+  opts: [ O("Count for 60 seconds with the pads of the index and middle fingers using slight pressure", true, "Correct. Count a full 60 seconds; too much pressure obliterates the pulse."), O("Count for 15 seconds with the thumb using firm pressure so the beat is easy to feel", false, "Incorrect. The thumb has its own pulse, firm pressure blocks flow, and the count is 60 seconds."), O("Count for 30 seconds and double it, using whichever fingers are most convenient today", false, "Incorrect. The skill specifies a 60-second count with the index and middle finger pads."), O("Count only until a pattern is clear, then estimate the rate for the rest of the minute", false, "Incorrect. Estimating is not the skill; the full minute is counted and rate, rhythm, and volume noted.") ],
+  tp: "Pulse skill: 60 seconds, index + middle finger pads, slight pressure, note rate + rhythm + volume." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which statement about internal and external respiration is accurate?",
+  opts: [ O("External respiration exchanges gases between alveoli and pulmonary blood; internal is at tissue level", true, "Correct. External = alveoli to pulmonary blood. Internal = gas exchange at the tissues from cellular oxidation."), O("External respiration exchanges gases at the tissue level; internal is between alveoli and blood", false, "Incorrect. The two are swapped; external happens in the lungs, internal at the tissues."), O("Both terms describe inhaling oxygen into the lungs during the inspiration phase only", false, "Incorrect. Inspiration is only one phase; respiration includes exchange in lungs and tissues."), O("Internal respiration is controlled by the hypothalamus, and external by the diaphragm only", false, "Incorrect. Respiration rate is controlled by the medulla oblongata; the diaphragm aids movement of air.") ],
+  tp: "External = alveoli/pulmonary blood. Internal = tissues. Rate center = medulla oblongata. Normal breath moves about 500 mL." });
+
+BANK.push({ cat: CD, type: "multi", kt: [],
+  stem: "Which factors influence respirations, as Box 12.11 lists them? Select all that apply.",
+  opts: [ O("Acute pain, which increases rate and depth while making breathing more shallow overall", true, "Correct. Acute pain raises rate and depth via sympathetic stimulation, with shallow breathing."), O("Body position, with slumped posture impairing ventilation and erect posture expanding the chest", true, "Correct. Slumped/stooped positions reduce lung volume; a straight erect posture promotes full expansion."), O("Narcotic analgesics, which depress the ability to increase inspired volume and lower the rate", true, "Correct. Narcotics depress respirations; amphetamines/cocaine raise rate, bronchodilators lower it."), O("Brainstem injury, which impairs the respiratory center and inhibits rate and rhythm control", true, "Correct. Brainstem injury impairs the respiratory center itself."), O("A flat lying position, which promotes the fullest chest expansion for accurate counting", false, "Incorrect. Lying flat should be avoided because it limits full chest expansion.") ],
+  tp: "Respiration factors: pain, position, brainstem injury, disease, exercise, fever, hemoglobin, medications, smoking, stress, age, gender." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which statement about counting respirations is accurate for Skill 12.4?",
+  opts: [ O("Count each chest rise for 60 seconds right after the pulse, fingers still in pulse position", true, "Correct. Counting right after the pulse, unnoticed, keeps the patient from consciously altering respirations."), O("Tell the patient to breathe deeply while you count chest rises for 15 seconds and multiply", false, "Incorrect. Announcing the count changes breathing; the skill counts a full 60 seconds unobtrusively."), O("Count for 60 seconds only after the patient has just walked back from the hallway bathroom", false, "Incorrect. After activity, wait 5-10 minutes because exercise raises rate and depth."), O("Position the patient flat in bed, because a flat position gives the most accurate rate", false, "Incorrect. Use comfort, sitting or supine with head of bed 45-60 degrees; flat limits expansion.") ],
+  tp: "Respirations: 60 seconds, right after pulse, head of bed 45-60 degrees, wait 5-10 min after activity." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which respiratory rates need immediate intervention, according to Box 12.12?",
+  opts: [ O("Rates less than 10 or more than 30 per minute, especially with shallow, slow breathing", true, "Correct. Box 12.12: rates <10 or >30, and hypoventilation, are likely to need immediate intervention."), O("Rates of 12 to 20 per minute in a resting adult who is comfortable and speaking easily", false, "Incorrect. 12-20 is the normal adult range and needs no intervention by itself."), O("A newborn's short apneic spells lasting less than 20 seconds during normal sleep time", false, "Incorrect. Apneic spells under 20 seconds are normal in a newborn as printed."), O("A rate of 22 per minute right after a patient has walked the length of the hallway", false, "Incorrect. Exercise raises rate and depth; reassess after 5-10 minutes of rest.") ],
+  tp: "Intervention thresholds: RR <10 or >30. Newborn apnea <20 seconds is normal." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which statement about pulse oximetry is accurate?",
+  opts: [ O("Normal saturation without chronic lung disease is 95% to 100%, read after 15 to 30 seconds", true, "Correct. Normal SpO2 is 95-100% without chronic lung disease; wait about 15-30 s for a consistent reading."), O("Normal saturation is 85% to 90% for all adults, and the first number shown is the valid one", false, "Incorrect. Normal is 95-100%, and a reading taken too quickly may be inaccurate."), O("Nail polish and artificial nails improve the light signal and should be left in place", false, "Incorrect. Nail polish and artificial nails prevent an accurate measurement and are removed."), O("The oximeter pulse never needs checking, because the device cannot display a wrong pulse", false, "Incorrect. Compare the oximeter pulse with a manual pulse to verify accuracy and device function.") ],
+  tp: "SpO2: 95-100% normal (no chronic lung disease), wait 15-30 s, no polish/artificial nails, verify against manual pulse." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which pattern description matches Cheyne-Stokes respirations?",
+  opts: [ O("Alternating periods of apnea and deep rapid breathing, seen in critically ill patients", true, "Correct. Cheyne-Stokes alternates apnea with deep rapid breathing and is noted in critically or terminally ill patients."), O("Rapid, deep, labored breathing that continues steadily without any apneic periods at all", false, "Incorrect. That describes Kussmaul respirations; Cheyne-Stokes includes apneic periods."), O("A frequently interspersed deeper breath among otherwise regular, comfortable breaths", false, "Incorrect. That describes sighing, which is a normal occasional pattern."), O("Ventilation too slow and shallow to meet metabolic needs after a surgical procedure", false, "Incorrect. That describes hypoventilation, not the alternating Cheyne-Stokes pattern.") ],
+  tp: "Patterns: Cheyne-Stokes = apnea + deep rapid cycles. Kussmaul = rapid deep labored. Sighing = occasional deeper breath, normal." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about systolic and diastolic pressure is accurate?",
+  opts: [ O("Systolic is the higher number as ventricles contract; diastolic is the pressure between beats", true, "Correct. Systolic = ventricles contracting, forcing blood out. Diastolic = pressure between contractions."), O("Systolic is the lower number between beats; diastolic is the higher number on contraction", false, "Incorrect. The definitions are swapped; systolic is higher and occurs with contraction."), O("Both numbers reflect the same moment, and the difference between them is always zero", false, "Incorrect. The difference is pulse pressure - 40 at 120/80 - and indicates cardiac function."), O("Diastolic pressure is measured in the veins, while systolic is measured only in chambers", false, "Incorrect. Blood pressure is the pressure of circulating blood on arterial walls, veins, and chambers, charted as systolic over diastolic.") ],
+  tp: "Systolic = contraction, higher. Diastolic = between beats, lower. Pulse pressure = difference (40 at 120/80)." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Using Table 12.4 (AHA categories as printed), a reading of 132/84 is classified as which?",
+  opts: [ O("High blood pressure stage 1, because systolic 130 to 139 or diastolic 80 to 89 qualifies", true, "Correct. Table 12.4 stage 1 = systolic 130-139 OR diastolic 80-89; 132/84 meets both."), O("Elevated, because any systolic in the 130s with a diastolic under 90 is called elevated", false, "Incorrect. Elevated is systolic 120-129 AND diastolic less than 80; 132/84 exceeds that."), O("Normal, because the chapter text calls everything under 140/90 a normal blood pressure", false, "Incorrect. The text's 140/90 line is the hypertension threshold; Table 12.4 stage 1 starts at 130/80."), O("High blood pressure stage 2, because either number above the normal range means stage 2", false, "Incorrect. Stage 2 starts at systolic 140 or higher or diastolic 90 or higher.") ],
+  tp: "Table 12.4 trap: two standards are printed. Stage 1 starts 130/80 in the table; text hypertension is sustained above 140/90." });
+
+BANK.push({ cat: CE, type: "multi", kt: [],
+  stem: "Which conditions or factors raise blood pressure, as Table 12.5 and Box 12.13 list them? Select all that apply.",
+  opts: [ O("Acute pain, through increased vasomotor tone and peripheral resistance from sympathetic drive", true, "Correct. Acute pain raises pressure via sympathetic stimulation."), O("Exercise, through increased cardiac output during and shortly after the activity period", true, "Correct. Exercise raises pressure by increasing cardiac output."), O("Smoking, through increased vasoconstriction of the peripheral blood vessels over time", true, "Correct. Smoking raises pressure through vasoconstriction."), O("End-stage renal disease, through sodium and water retention and release of renin hormone", true, "Correct. Renal failure raises volume and renin, raising pressure."), O("Hemorrhage, through the increased blood volume that bleeding adds to the circulation", false, "Incorrect. Hemorrhage lowers pressure by decreasing blood volume; general anesthesia also lowers it.") ],
+  tp: "Raises BP: pain, exercise, smoking, increased ICP, renal disease, essential hypertension. Lowers BP: hemorrhage, anesthesia, postural change." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about cuff size and blood pressure accuracy is accurate?",
+  opts: [ O("A cuff too small reads falsely high; a cuff too large reads falsely low; width is about 40% of arm circumference", true, "Correct. Too small = falsely high, too large = falsely low; cuff width about 40% of the extremity circumference."), O("A cuff too small reads falsely low; a cuff too large reads falsely high; width is about 80% of arm circumference", false, "Incorrect. Both directions and the width are wrong; small cuffs overread and large cuffs underread."), O("Cuff size does not affect the reading, so any cuff on the unit may be used for any patient", false, "Incorrect. An improper size gives an inaccurate reading; size must be determined for the patient."), O("Forearm placement with a small cuff is an accepted substitute when the upper arm is large", false, "Incorrect. Forearm readings cannot substitute for upper arm and differed by as much as 33 mm Hg in the cited study.") ],
+  tp: "Cuff traps: small = falsely HIGH, large = falsely LOW, width ~40% of circumference, placed 1-2 inches above antecubital space." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about the auscultatory gap is accurate?",
+  opts: [ O("Sounds temporarily disappear between phases; missing it underestimates systolic or overestimates diastolic", true, "Correct. The gap occurs between the first and second Korotkoff sounds and can span 40 mm Hg; palpating first prevents the error."), O("Sounds become louder between phases; missing it has no effect on either reading taken", false, "Incorrect. The gap is a disappearance of sound, and missing it distorts systolic or diastolic values."), O("It occurs only in the lower extremity, where systolic pressure runs 10 to 40 higher overall", false, "Incorrect. The leg difference is a separate fact; the gap occurs at the brachial artery during auscultation."), O("It is prevented by inflating the cuff only to the point where sounds are first heard again", false, "Incorrect. Prevention is palpating the radial pulse and inflating 30 mm Hg above where it disappears.") ],
+  tp: "Auscultatory gap: palpate radial first, inflate 30 mm Hg above disappearance; gap can cover 40 mm Hg." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about orthostatic hypotension measurement (Box 12.14) is accurate?",
+  opts: [ O("Do not delegate it; recheck sitting after 1 to 3 minutes and stop at once if dizziness occurs", true, "Correct. Orthostatic measurement needs nursing judgment, is not delegated, and stops with the patient returned supine if symptoms occur."), O("Delegate it to assistive personnel, because it is a routine set of three simple readings", false, "Incorrect. The box states this task is not delegated; it requires critical thinking and ongoing judgment."), O("Continue to standing even if the patient reports dizziness, to complete the full series", false, "Incorrect. Orthostatic symptoms end the measurement and the patient is assisted back to supine."), O("Use a different arm for each position, choosing whichever reading is lowest each time", false, "Incorrect. Obtain both arms first and use the arm with the highest systolic for all subsequent measurements.") ],
+  tp: "Orthostatics: NOT delegated, same (higher) arm, 1-3 min sitting, detectable within 1 min of standing, stop + supine if dizzy/weak." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about height and weight measurement is accurate?",
+  opts: [ O("Weigh in the morning after voiding and before breakfast, same scale, same clothing each time", true, "Correct. Standardizing time, scale, and clothing allows objective comparison of weights."), O("Weigh at whatever time is convenient, on any scale, in whatever clothing the patient wears", false, "Incorrect. Changing time, scale, or clothing gives a false picture of fluid change."), O("A stated height and weight from the patient is preferred over measuring on the scale", false, "Incorrect. A stated height and weight should not be relied on; delay is acceptable only in extreme illness."), O("A 1 kg weight change reflects about 2 liters of fluid gained or lost by the patient", false, "Incorrect. 1 L of fluid equals 1 kg (2.2 lb), so a 1 kg change reflects about 1 L of fluid.") ],
+  tp: "Weight rules: morning, after voiding, before breakfast, same scale/clothing/time. 1 kg = 1 L fluid. 1 inch = 2.54 cm." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about Korotkoff phases is accurate, in order?",
+  opts: [ O("Phase 1 sharp thump, phase 2 blowing or whooshing, phase 3 softer thump, phase 4 softer blowing fading, phase 5 silence", true, "Correct. Those are the five phases in order; phase 1 is systolic and phase 5 silence is diastolic in the example."), O("Phase 1 silence, phase 2 sharp thump, phase 3 blowing, phase 4 sharp thump again, and phase 5 a loud whooshing sound", false, "Incorrect. Silence is the last phase, not the first; the sequence starts with a sharp thump."), O("Phase 1 blowing, phase 2 silence, phase 3 sharp thump, phase 4 whooshing, and phase 5 a softer thump that fades", false, "Incorrect. The phases are out of order; blowing/whooshing is phase 2 and silence ends the sequence."), O("Only three phases are described, because sounds stop entirely once the diastolic point is reached at phase 3", false, "Incorrect. Five phases are described in Figure 12.11, ending with silence.") ],
+  tp: "Korotkoff: 1 thump, 2 blowing/whooshing, 3 softer thump, 4 softer blowing fading, 5 silence." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which statement about recording vital signs is accurate?",
+  opts: [ O("A rectal reading is marked with a circled R and an axillary reading with a circled Ax nearby", true, "Correct. Rectal = circled R, axillary = circled Ax next to the reading; BP is written systolic over diastolic."), O("A rectal reading is marked with a circled Ax and an axillary reading with a circled R nearby", false, "Incorrect. The marks are swapped; R is rectal and Ax is axillary."), O("Blood pressure is written diastolic over systolic, because the lower number is read first", false, "Incorrect. Blood pressure is always written with systolic first and diastolic beneath, as 120/80."), O("Abnormal findings are charted at the end of the shift so the provider is not disturbed", false, "Incorrect. All abnormal findings must be reported immediately to the nurse manager or provider.") ],
+  tp: "Recording: circled R = rectal, circled Ax = axillary, BP systolic/diastolic, report abnormals immediately." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which statement about the temporal artery method is accurate?",
+  opts: [ O("An infrared sensor is brushed across the forehead over the temporal artery to the earlobe", true, "Correct. The probe stays flush, sweeping across the forehead to just behind the earlobe until the highest temperature clicks."), O("A probe is inserted 1.5 inches and held in place until an audible signal sounds in the ear", false, "Incorrect. The 1.5-inch insertion describes rectal measurement in an adult, not a forehead scan."), O("Diaphoresis and airflow across the face improve accuracy by cooling the artery surface", false, "Incorrect. Diaphoresis and airflow across the face may affect temporal artery accuracy."), O("The forehead must be covered with a dressing so the sensor can read through the material", false, "Incorrect. Bandages or dressings on the face or head are removed to prevent interference.") ],
+  tp: "Temporal artery: dry forehead, flush probe, sweep to behind earlobe; sweat/airflow/dressings interfere." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Which statement about pulse sites is accurate?",
+  opts: [ O("The carotid site is best for finding a pulse quickly when a patient's condition deteriorates", true, "Correct. The heart keeps delivering blood through the carotid to the brain as long as possible; radial and carotid are easiest to palpate."), O("Peripheral pulses become stronger and easier to palpate when cardiac output falls sharply", false, "Incorrect. When cardiac output declines significantly, peripheral pulses weaken and are difficult to palpate."), O("The dorsalis pedis pulse is found at the thumb side of the inner wrist, lateral to tendons", false, "Incorrect. That location describes the radial pulse; dorsalis pedis is on the foot and shows flow to the foot."), O("Only the radial pulse is assessed on initial assessment, because other sites add no data", false, "Incorrect. On initial assessment, palpate all major pulses and auscultate the apical rate.") ],
+  tp: "Sites: carotid = fastest in deterioration; peripheral pulses weaken as output falls; initial assessment = all major pulses + apical." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which statement about a Doppler and weakened pulses is accurate?",
+  opts: [ O("If a pulse cannot be palpated, a Doppler is used to verify blood flow and pulse presence", true, "Correct. Box 12.10: use a Doppler to verify flow when a pulse cannot be palpated; edema can make palpation difficult."), O("If a pulse cannot be palpated, chart it as absent without any further assessment steps", false, "Incorrect. A complete peripheral assessment and Doppler verification come before concluding a pulse is absent."), O("A Doppler is used only for blood pressure in infants and never to verify a weak pulse", false, "Incorrect. A Doppler also verifies a pulse that cannot be palpated, and amplifies Korotkoff sounds for weak BP."), O("Capillary refill over 3 seconds with pink, warm extremities proves circulation is adequate", false, "Incorrect. As printed in Box 12.10, refill in less than 3 seconds with pink extremities indicates circulation; cool cyanotic findings do not.") ],
+  tp: "Weak pulse pathway: complete peripheral assessment, Doppler to verify, watch distal perfusion, notify provider if circulation inadequate." });
+
+BANK.push({ cat: CE, type: "multi", kt: [],
+  stem: "Which are situations in which the chapter says NOT to apply a blood pressure cuff to an arm? Select all that apply.",
+  opts: [ O("An arteriovenous shunt is in place in that arm for dialysis access by the patient", true, "Correct. A shunt arm is listed: do not apply the cuff there."), O("Breast or axillary surgery has been performed on that same side as the cuff arm", true, "Correct. Prior breast or axillary surgery on that side is a listed reason to avoid the arm."), O("A catheter is in the antecubital fossa of that arm and fluids are infusing there", true, "Correct. An infusing catheter in the antecubital fossa is a listed reason to avoid the arm."), O("A lower arm cast or bulky bandage is in place on the arm being considered today", true, "Correct. A cast or bulky bandage on the lower arm is a listed reason to avoid the arm."), O("The patient prefers the other arm because the cuff feels tighter on this arm today", false, "Incorrect. Preference matters for comfort, but it is not one of the listed contraindicated-arm conditions.") ],
+  tp: "No cuff on an arm with: infusing antecubital catheter, AV shunt, same-side breast/axillary surgery, trauma/disease, cast/bulky bandage." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about comparing blood pressure in the arms and legs is accurate?",
+  opts: [ O("Arms normally differ by 5 to 10 mm Hg; leg systolic runs 10 to 40 higher than brachial, diastolic about the same", true, "Correct. Normal arm difference is 5-10 mm Hg, with >10 suggesting a vascular problem; leg systolic is 10-40 higher, diastolic essentially the same."), O("Arms normally differ by 25 to 30 mm Hg; leg systolic runs 10 to 40 lower than brachial overall", false, "Incorrect. Arm differences over 10 mm Hg are abnormal, and leg systolic is higher, not lower."), O("The arm with the lower pressure is used for all later readings once both arms are measured", false, "Incorrect. Subsequent readings use the arm with the higher pressure."), O("Leg pressure is taken at the radial artery with a standard arm cuff wrapped at the ankle", false, "Incorrect. Leg pressure uses a wide thigh cuff over the popliteal artery behind the knee.") ],
+  tp: "Comparisons: arms 5-10 normal, >10 = possible stenosis/occlusion, use higher arm later; legs systolic +10 to 40, diastolic same." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 12: Vital Signs - Definition Practice Test</h1>';
+  h += '<div class="sub">Definition practice test | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

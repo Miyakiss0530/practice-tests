@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 4 - Communication - Key Terms Drill</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Key Terms and Definitions";
+var CATS = [CA];
+var KEYTERMS = ["active listening", "aggressive communication", "aphasia", "assertive communication", "clarifying", "closed question", "communication", "connotative meaning", "conveying acceptance", "denotative meaning", "expressive aphasia", "focusing", "gestures", "jargon", "minimal encouragement", "nontherapeutic communication", "nonverbal communication", "one-way communication", "open-ended question", "offering information", "paraphrasing", "passive listening", "posture", "receptive aphasia", "reflecting", "restating", "sender", "stating observations", "summarizing", "therapeutic communication", "two-way communication", "unassertive communication", "verbal communication"];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 66,
+  "types": {
+   "single": 66
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single", kt: ["active listening"], stem: "Which term matches this description? Full attention to what the patient says, interpreting the message and giving feedback the patient can confirm", opts: [O("active listening", true, "Correct. This term matches the description in the stem exactly."), O("closed question", false, "That term names a different concept from this chapter, not the one described."), O("passive listening", false, "That term names a different concept from this chapter, not the one described."), O("receptive aphasia", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: active listening - Full attention to what the patient says, interpreting the message and giving feedback the patient can confirm" });
+BANK.push({ cat: CA, type: "single", kt: ["nonverbal communication"], stem: "Which description matches the term: nonverbal communication?", opts: [O("Messages transmitted without words, through tone, eye contact, appearance, posture, and touch", true, "Correct. This description matches the term in the stem exactly."), O("Repeating the main point the patient is trying to communicate, with voice rising as if asking", false, "That description belongs to a different term from this chapter, not this one."), O("The person who conveys a message to another person or group during an interaction or exchange", false, "That description belongs to a different term from this chapter, not this one."), O("A concise review of the main ideas from a discussion, giving focus and closure to the session", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: nonverbal communication - Messages transmitted without words, through tone, eye contact, appearance, posture, and touch" });
+BANK.push({ cat: CA, type: "single", kt: ["aggressive communication"], stem: "Which term matches this description? Interacting in an overpowering and forceful way to meet your own needs at the expense of the other person", opts: [O("aggressive communication", true, "Correct. This term matches the description in the stem exactly."), O("assertive communication", false, "That term names a different concept from this chapter, not the one described."), O("nonverbal communication", false, "That term names a different concept from this chapter, not the one described."), O("therapeutic communication", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: aggressive communication - Interacting in an overpowering and forceful way to meet your own needs at the expense of the other person" });
+BANK.push({ cat: CA, type: "single", kt: ["one-way communication"], stem: "Which description matches the term: one-way communication?", opts: [O("Highly structured communication with the sender in control and little response from the receiver", true, "Correct. This description matches the term in the stem exactly."), O("The commonplace terminology unique to people in one work setting or to one specific type of work", false, "That description belongs to a different term from this chapter, not this one."), O("Communication that involves the use of spoken words, written words, or symbols to send a message", false, "That description belongs to a different term from this chapter, not this one."), O("Encouraging the patient to select one topic over another as the primary focus of the discussion", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: one-way communication - Highly structured communication with the sender in control and little response from the receiver" });
+BANK.push({ cat: CA, type: "single", kt: ["aphasia"], stem: "Which term matches this description? Deficient or absent language function after an ischemic brain injury such as stroke, trauma, or anoxia", opts: [O("aphasia", true, "Correct. This term matches the description in the stem exactly."), O("posture", false, "That term names a different concept from this chapter, not the one described."), O("focusing", false, "That term names a different concept from this chapter, not the one described."), O("gestures", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: aphasia - Deficient or absent language function after an ischemic brain injury such as stroke, trauma, or anoxia" });
+BANK.push({ cat: CA, type: "single", kt: ["open-ended question"], stem: "Which description matches the term: open-ended question?", opts: [O("A question with no specific answer required, letting the patient elaborate freely on a subject", true, "Correct. This description matches the term in the stem exactly."), O("Brief comments, nodding, and eye contact showing interest and inviting the patient to say more", false, "That description belongs to a different term from this chapter, not this one."), O("Providing the patient with relevant data and seeking feedback about the level of understanding", false, "That description belongs to a different term from this chapter, not this one."), O("An exchange that builds a positive nurse-patient relationship and involves the patient in care", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: open-ended question - A question with no specific answer required, letting the patient elaborate freely on a subject" });
+BANK.push({ cat: CA, type: "single", kt: ["assertive communication"], stem: "Which term matches this description? Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient", opts: [O("assertive communication", true, "Correct. This term matches the description in the stem exactly."), O("nonverbal communication", false, "That term names a different concept from this chapter, not the one described."), O("aggressive communication", false, "That term names a different concept from this chapter, not the one described."), O("minimal encouragement", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: assertive communication - Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient" });
+BANK.push({ cat: CA, type: "single", kt: ["offering information"], stem: "Which description matches the term: offering information?", opts: [O("Providing the patient with relevant data and seeking feedback about the level of understanding", true, "Correct. This description matches the term in the stem exactly."), O("Brief comments, nodding, and eye contact showing interest and inviting the patient to say more", false, "That description belongs to a different term from this chapter, not this one."), O("A question with no specific answer required, letting the patient elaborate freely on a subject", false, "That description belongs to a different term from this chapter, not this one."), O("An exchange that builds a positive nurse-patient relationship and involves the patient in care", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: offering information - Providing the patient with relevant data and seeking feedback about the level of understanding" });
+BANK.push({ cat: CA, type: "single", kt: ["clarifying"], stem: "Which term matches this description? Seeking more information or elaboration when a message is incomplete, confusing, or not deep enough", opts: [O("clarifying", true, "Correct. This term matches the description in the stem exactly."), O("reflecting", false, "That term names a different concept from this chapter, not the one described."), O("restating", false, "That term names a different concept from this chapter, not the one described."), O("summarizing", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: clarifying - Seeking more information or elaboration when a message is incomplete, confusing, or not deep enough" });
+BANK.push({ cat: CA, type: "single", kt: ["paraphrasing"], stem: "Which description matches the term: paraphrasing?", opts: [O("Restating the patient's message in the nurse's own words to check that the interpretation is right", true, "Correct. This description matches the term in the stem exactly."), O("The commonly accepted definition of a word, shared by anyone familiar with the language being used", false, "That description belongs to a different term from this chapter, not this one."), O("Showing interest through eye contact, nodding, and brief phrases, without confirming understanding", false, "That description belongs to a different term from this chapter, not this one."), O("Sharing observations made during an interaction back to the patient for clarification of a message", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: paraphrasing - Restating the patient's message in the nurse's own words to check that the interpretation is right" });
+BANK.push({ cat: CA, type: "single", kt: ["closed question"], stem: "Which term matches this description? A focused question seeking a particular answer, usually answered in one or two words or with yes or no", opts: [O("closed question", true, "Correct. This term matches the description in the stem exactly."), O("active listening", false, "That term names a different concept from this chapter, not the one described."), O("communication", false, "That term names a different concept from this chapter, not the one described."), O("passive listening", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: closed question - A focused question seeking a particular answer, usually answered in one or two words or with yes or no" });
+BANK.push({ cat: CA, type: "single", kt: ["passive listening"], stem: "Which description matches the term: passive listening?", opts: [O("Showing interest through eye contact, nodding, and brief phrases, without confirming understanding", true, "Correct. This description matches the term in the stem exactly."), O("The commonly accepted definition of a word, shared by anyone familiar with the language being used", false, "That description belongs to a different term from this chapter, not this one."), O("Restating the patient's message in the nurse's own words to check that the interpretation is right", false, "That description belongs to a different term from this chapter, not this one."), O("Sharing observations made during an interaction back to the patient for clarification of a message", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: passive listening - Showing interest through eye contact, nodding, and brief phrases, without confirming understanding" });
+BANK.push({ cat: CA, type: "single", kt: ["communication"], stem: "Which term matches this description? The exchange of information between people, taking verbal and nonverbal forms and conveying many messages", opts: [O("communication", true, "Correct. This term matches the description in the stem exactly."), O("paraphrasing", false, "That term names a different concept from this chapter, not the one described."), O("closed question", false, "That term names a different concept from this chapter, not the one described."), O("summarizing", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: communication - The exchange of information between people, taking verbal and nonverbal forms and conveying many messages" });
+BANK.push({ cat: CA, type: "single", kt: ["posture"], stem: "Which description matches the term: posture?", opts: [O("The way a person sits, stands, and moves, conveying warmth or distance during an interaction", true, "Correct. This description matches the term in the stem exactly."), O("Communication that usually blocks the development of a trusting and therapeutic relationship", false, "That description belongs to a different term from this chapter, not this one."), O("Messages transmitted without words, through tone, eye contact, appearance, posture, and touch", false, "That description belongs to a different term from this chapter, not this one."), O("Repeating the main point the patient is trying to communicate, with voice rising as if asking", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: posture - The way a person sits, stands, and moves, conveying warmth or distance during an interaction" });
+BANK.push({ cat: CA, type: "single", kt: ["connotative meaning"], stem: "Which term matches this description? The subjective side of a word, reflecting one person's own perception or interpretation of that word", opts: [O("connotative meaning", true, "Correct. This term matches the description in the stem exactly."), O("open-ended question", false, "That term names a different concept from this chapter, not the one described."), O("conveying acceptance", false, "That term names a different concept from this chapter, not the one described."), O("denotative meaning", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: connotative meaning - The subjective side of a word, reflecting one person's own perception or interpretation of that word" });
+BANK.push({ cat: CA, type: "single", kt: ["receptive aphasia"], stem: "Which description matches the term: receptive aphasia?", opts: [O("An inability to recognize or interpret the verbal message that is being received by the patient", true, "Correct. This description matches the term in the stem exactly."), O("Encouraging the patient to select one topic over another as the primary focus of the discussion", false, "That description belongs to a different term from this chapter, not this one."), O("Movements people use to emphasize the idea they are trying to communicate or to clarify a point", false, "That description belongs to a different term from this chapter, not this one."), O("Communication where sender and receiver both participate and exchange input and feedback freely", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: receptive aphasia - An inability to recognize or interpret the verbal message that is being received by the patient" });
+BANK.push({ cat: CA, type: "single", kt: ["conveying acceptance"], stem: "Which term matches this description? Demonstrating acceptance of a patient's right to current beliefs without condoning harmful practices", opts: [O("conveying acceptance", true, "Correct. This term matches the description in the stem exactly."), O("offering information", false, "That term names a different concept from this chapter, not the one described."), O("stating observations", false, "That term names a different concept from this chapter, not the one described."), O("verbal communication", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: conveying acceptance - Demonstrating acceptance of a patient's right to current beliefs without condoning harmful practices" });
+BANK.push({ cat: CA, type: "single", kt: ["reflecting"], stem: "Which description matches the term: reflecting?", opts: [O("Helping the patient reflect on feelings and thoughts rather than seeking advice from another person", true, "Correct. This description matches the term in the stem exactly."), O("Seeking more information or elaboration when a message is incomplete, confusing, or not deep enough", false, "That description belongs to a different term from this chapter, not this one."), O("The patient is unable to send the desired verbal message, even though the message may be understood", false, "That description belongs to a different term from this chapter, not this one."), O("The subjective side of a word, reflecting one person's own perception or interpretation of that word", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: reflecting - Helping the patient reflect on feelings and thoughts rather than seeking advice from another person" });
+BANK.push({ cat: CA, type: "single", kt: ["denotative meaning"], stem: "Which term matches this description? The commonly accepted definition of a word, shared by anyone familiar with the language being used", opts: [O("denotative meaning", true, "Correct. This term matches the description in the stem exactly."), O("expressive aphasia", false, "That term names a different concept from this chapter, not the one described."), O("connotative meaning", false, "That term names a different concept from this chapter, not the one described."), O("open-ended question", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: denotative meaning - The commonly accepted definition of a word, shared by anyone familiar with the language being used" });
+BANK.push({ cat: CA, type: "single", kt: ["restating"], stem: "Which description matches the term: restating?", opts: [O("Repeating the main point the patient is trying to communicate, with voice rising as if asking", true, "Correct. This description matches the term in the stem exactly."), O("Messages transmitted without words, through tone, eye contact, appearance, posture, and touch", false, "That description belongs to a different term from this chapter, not this one."), O("The person who conveys a message to another person or group during an interaction or exchange", false, "That description belongs to a different term from this chapter, not this one."), O("A concise review of the main ideas from a discussion, giving focus and closure to the session", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: restating - Repeating the main point the patient is trying to communicate, with voice rising as if asking" });
+BANK.push({ cat: CA, type: "single", kt: ["expressive aphasia"], stem: "Which term matches this description? The patient is unable to send the desired verbal message, even though the message may be understood", opts: [O("expressive aphasia", true, "Correct. This term matches the description in the stem exactly."), O("denotative meaning", false, "That term names a different concept from this chapter, not the one described."), O("connotative meaning", false, "That term names a different concept from this chapter, not the one described."), O("open-ended question", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: expressive aphasia - The patient is unable to send the desired verbal message, even though the message may be understood" });
+BANK.push({ cat: CA, type: "single", kt: ["sender"], stem: "Which description matches the term: sender?", opts: [O("The person who conveys a message to another person or group during an interaction or exchange", true, "Correct. This description matches the term in the stem exactly."), O("Messages transmitted without words, through tone, eye contact, appearance, posture, and touch", false, "That description belongs to a different term from this chapter, not this one."), O("Repeating the main point the patient is trying to communicate, with voice rising as if asking", false, "That description belongs to a different term from this chapter, not this one."), O("A concise review of the main ideas from a discussion, giving focus and closure to the session", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: sender - The person who conveys a message to another person or group during an interaction or exchange" });
+BANK.push({ cat: CA, type: "single", kt: ["focusing"], stem: "Which term matches this description? Encouraging the patient to select one topic over another as the primary focus of the discussion", opts: [O("focusing", true, "Correct. This term matches the description in the stem exactly."), O("gestures", false, "That term names a different concept from this chapter, not the one described."), O("aphasia", false, "That term names a different concept from this chapter, not the one described."), O("posture", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: focusing - Encouraging the patient to select one topic over another as the primary focus of the discussion" });
+BANK.push({ cat: CA, type: "single", kt: ["stating observations"], stem: "Which description matches the term: stating observations?", opts: [O("Sharing observations made during an interaction back to the patient for clarification of a message", true, "Correct. This description matches the term in the stem exactly."), O("The commonly accepted definition of a word, shared by anyone familiar with the language being used", false, "That description belongs to a different term from this chapter, not this one."), O("Restating the patient's message in the nurse's own words to check that the interpretation is right", false, "That description belongs to a different term from this chapter, not this one."), O("Showing interest through eye contact, nodding, and brief phrases, without confirming understanding", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: stating observations - Sharing observations made during an interaction back to the patient for clarification of a message" });
+BANK.push({ cat: CA, type: "single", kt: ["gestures"], stem: "Which term matches this description? Movements people use to emphasize the idea they are trying to communicate or to clarify a point", opts: [O("gestures", true, "Correct. This term matches the description in the stem exactly."), O("focusing", false, "That term names a different concept from this chapter, not the one described."), O("aphasia", false, "That term names a different concept from this chapter, not the one described."), O("posture", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: gestures - Movements people use to emphasize the idea they are trying to communicate or to clarify a point" });
+BANK.push({ cat: CA, type: "single", kt: ["summarizing"], stem: "Which description matches the term: summarizing?", opts: [O("A concise review of the main ideas from a discussion, giving focus and closure to the session", true, "Correct. This description matches the term in the stem exactly."), O("Messages transmitted without words, through tone, eye contact, appearance, posture, and touch", false, "That description belongs to a different term from this chapter, not this one."), O("Repeating the main point the patient is trying to communicate, with voice rising as if asking", false, "That description belongs to a different term from this chapter, not this one."), O("The person who conveys a message to another person or group during an interaction or exchange", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: summarizing - A concise review of the main ideas from a discussion, giving focus and closure to the session" });
+BANK.push({ cat: CA, type: "single", kt: ["jargon"], stem: "Which term matches this description? The commonplace terminology unique to people in one work setting or to one specific type of work", opts: [O("jargon", true, "Correct. This term matches the description in the stem exactly."), O("sender", false, "That term names a different concept from this chapter, not the one described."), O("aphasia", false, "That term names a different concept from this chapter, not the one described."), O("posture", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: jargon - The commonplace terminology unique to people in one work setting or to one specific type of work" });
+BANK.push({ cat: CA, type: "single", kt: ["therapeutic communication"], stem: "Which description matches the term: therapeutic communication?", opts: [O("An exchange that builds a positive nurse-patient relationship and involves the patient in care", true, "Correct. This description matches the term in the stem exactly."), O("Brief comments, nodding, and eye contact showing interest and inviting the patient to say more", false, "That description belongs to a different term from this chapter, not this one."), O("A question with no specific answer required, letting the patient elaborate freely on a subject", false, "That description belongs to a different term from this chapter, not this one."), O("Providing the patient with relevant data and seeking feedback about the level of understanding", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: therapeutic communication - An exchange that builds a positive nurse-patient relationship and involves the patient in care" });
+BANK.push({ cat: CA, type: "single", kt: ["minimal encouragement"], stem: "Which term matches this description? Brief comments, nodding, and eye contact showing interest and inviting the patient to say more", opts: [O("minimal encouragement", true, "Correct. This term matches the description in the stem exactly."), O("one-way communication", false, "That term names a different concept from this chapter, not the one described."), O("two-way communication", false, "That term names a different concept from this chapter, not the one described."), O("conveying acceptance", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: minimal encouragement - Brief comments, nodding, and eye contact showing interest and inviting the patient to say more" });
+BANK.push({ cat: CA, type: "single", kt: ["two-way communication"], stem: "Which description matches the term: two-way communication?", opts: [O("Communication where sender and receiver both participate and exchange input and feedback freely", true, "Correct. This description matches the term in the stem exactly."), O("Encouraging the patient to select one topic over another as the primary focus of the discussion", false, "That description belongs to a different term from this chapter, not this one."), O("Movements people use to emphasize the idea they are trying to communicate or to clarify a point", false, "That description belongs to a different term from this chapter, not this one."), O("An inability to recognize or interpret the verbal message that is being received by the patient", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: two-way communication - Communication where sender and receiver both participate and exchange input and feedback freely" });
+BANK.push({ cat: CA, type: "single", kt: ["nontherapeutic communication"], stem: "Which term matches this description? Communication that usually blocks the development of a trusting and therapeutic relationship", opts: [O("nontherapeutic communication", true, "Correct. This term matches the description in the stem exactly."), O("therapeutic communication", false, "That term names a different concept from this chapter, not the one described."), O("unassertive communication", false, "That term names a different concept from this chapter, not the one described."), O("aggressive communication", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: nontherapeutic communication - Communication that usually blocks the development of a trusting and therapeutic relationship" });
+BANK.push({ cat: CA, type: "single", kt: ["unassertive communication"], stem: "Which description matches the term: unassertive communication?", opts: [O("Agreeing to a request even when it creates problems, sacrificing your own legitimate rights", true, "Correct. This description matches the term in the stem exactly."), O("Communication that usually blocks the development of a trusting and therapeutic relationship", false, "That description belongs to a different term from this chapter, not this one."), O("The way a person sits, stands, and moves, conveying warmth or distance during an interaction", false, "That description belongs to a different term from this chapter, not this one."), O("Messages transmitted without words, through tone, eye contact, appearance, posture, and touch", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: unassertive communication - Agreeing to a request even when it creates problems, sacrificing your own legitimate rights" });
+BANK.push({ cat: CA, type: "single", kt: ["nonverbal communication"], stem: "Which term matches this description? Messages transmitted without words, through tone, eye contact, appearance, posture, and touch", opts: [O("nonverbal communication", true, "Correct. This term matches the description in the stem exactly."), O("assertive communication", false, "That term names a different concept from this chapter, not the one described."), O("aggressive communication", false, "That term names a different concept from this chapter, not the one described."), O("minimal encouragement", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: nonverbal communication - Messages transmitted without words, through tone, eye contact, appearance, posture, and touch" });
+BANK.push({ cat: CA, type: "single", kt: ["verbal communication"], stem: "Which description matches the term: verbal communication?", opts: [O("Communication that involves the use of spoken words, written words, or symbols to send a message", true, "Correct. This description matches the term in the stem exactly."), O("The commonplace terminology unique to people in one work setting or to one specific type of work", false, "That description belongs to a different term from this chapter, not this one."), O("Highly structured communication with the sender in control and little response from the receiver", false, "That description belongs to a different term from this chapter, not this one."), O("Encouraging the patient to select one topic over another as the primary focus of the discussion", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: verbal communication - Communication that involves the use of spoken words, written words, or symbols to send a message" });
+BANK.push({ cat: CA, type: "single", kt: ["one-way communication"], stem: "Which term matches this description? Highly structured communication with the sender in control and little response from the receiver", opts: [O("one-way communication", true, "Correct. This term matches the description in the stem exactly."), O("minimal encouragement", false, "That term names a different concept from this chapter, not the one described."), O("two-way communication", false, "That term names a different concept from this chapter, not the one described."), O("conveying acceptance", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: one-way communication - Highly structured communication with the sender in control and little response from the receiver" });
+BANK.push({ cat: CA, type: "single", kt: ["active listening"], stem: "Which description matches the term: active listening?", opts: [O("Full attention to what the patient says, interpreting the message and giving feedback the patient can confirm", true, "Correct. This description matches the term in the stem exactly."), O("Interacting in an overpowering and forceful way to meet your own needs at the expense of the other person", false, "That description belongs to a different term from this chapter, not this one."), O("The exchange of information between people, taking verbal and nonverbal forms and conveying many messages", false, "That description belongs to a different term from this chapter, not this one."), O("Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: active listening - Full attention to what the patient says, interpreting the message and giving feedback the patient can confirm" });
+BANK.push({ cat: CA, type: "single", kt: ["open-ended question"], stem: "Which term matches this description? A question with no specific answer required, letting the patient elaborate freely on a subject", opts: [O("open-ended question", true, "Correct. This term matches the description in the stem exactly."), O("connotative meaning", false, "That term names a different concept from this chapter, not the one described."), O("conveying acceptance", false, "That term names a different concept from this chapter, not the one described."), O("denotative meaning", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: open-ended question - A question with no specific answer required, letting the patient elaborate freely on a subject" });
+BANK.push({ cat: CA, type: "single", kt: ["aggressive communication"], stem: "Which description matches the term: aggressive communication?", opts: [O("Interacting in an overpowering and forceful way to meet your own needs at the expense of the other person", true, "Correct. This description matches the term in the stem exactly."), O("The exchange of information between people, taking verbal and nonverbal forms and conveying many messages", false, "That description belongs to a different term from this chapter, not this one."), O("Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient", false, "That description belongs to a different term from this chapter, not this one."), O("Deficient or absent language function after an ischemic brain injury such as stroke, trauma, or anoxia", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: aggressive communication - Interacting in an overpowering and forceful way to meet your own needs at the expense of the other person" });
+BANK.push({ cat: CA, type: "single", kt: ["offering information"], stem: "Which term matches this description? Providing the patient with relevant data and seeking feedback about the level of understanding", opts: [O("offering information", true, "Correct. This term matches the description in the stem exactly."), O("conveying acceptance", false, "That term names a different concept from this chapter, not the one described."), O("stating observations", false, "That term names a different concept from this chapter, not the one described."), O("verbal communication", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: offering information - Providing the patient with relevant data and seeking feedback about the level of understanding" });
+BANK.push({ cat: CA, type: "single", kt: ["aphasia"], stem: "Which description matches the term: aphasia?", opts: [O("Deficient or absent language function after an ischemic brain injury such as stroke, trauma, or anoxia", true, "Correct. This description matches the term in the stem exactly."), O("A focused question seeking a particular answer, usually answered in one or two words or with yes or no", false, "That description belongs to a different term from this chapter, not this one."), O("Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient", false, "That description belongs to a different term from this chapter, not this one."), O("The subjective side of a word, reflecting one person's own perception or interpretation of that word", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: aphasia - Deficient or absent language function after an ischemic brain injury such as stroke, trauma, or anoxia" });
+BANK.push({ cat: CA, type: "single", kt: ["paraphrasing"], stem: "Which term matches this description? Restating the patient's message in the nurse's own words to check that the interpretation is right", opts: [O("paraphrasing", true, "Correct. This term matches the description in the stem exactly."), O("communication", false, "That term names a different concept from this chapter, not the one described."), O("summarizing", false, "That term names a different concept from this chapter, not the one described."), O("clarifying", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: paraphrasing - Restating the patient's message in the nurse's own words to check that the interpretation is right" });
+BANK.push({ cat: CA, type: "single", kt: ["assertive communication"], stem: "Which description matches the term: assertive communication?", opts: [O("Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient", true, "Correct. This description matches the term in the stem exactly."), O("Deficient or absent language function after an ischemic brain injury such as stroke, trauma, or anoxia", false, "That description belongs to a different term from this chapter, not this one."), O("A focused question seeking a particular answer, usually answered in one or two words or with yes or no", false, "That description belongs to a different term from this chapter, not this one."), O("Interacting in an overpowering and forceful way to meet your own needs at the expense of the other person", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: assertive communication - Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient" });
+BANK.push({ cat: CA, type: "single", kt: ["passive listening"], stem: "Which term matches this description? Showing interest through eye contact, nodding, and brief phrases, without confirming understanding", opts: [O("passive listening", true, "Correct. This term matches the description in the stem exactly."), O("receptive aphasia", false, "That term names a different concept from this chapter, not the one described."), O("active listening", false, "That term names a different concept from this chapter, not the one described."), O("denotative meaning", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: passive listening - Showing interest through eye contact, nodding, and brief phrases, without confirming understanding" });
+BANK.push({ cat: CA, type: "single", kt: ["clarifying"], stem: "Which description matches the term: clarifying?", opts: [O("Seeking more information or elaboration when a message is incomplete, confusing, or not deep enough", true, "Correct. This description matches the term in the stem exactly."), O("The patient is unable to send the desired verbal message, even though the message may be understood", false, "That description belongs to a different term from this chapter, not this one."), O("Helping the patient reflect on feelings and thoughts rather than seeking advice from another person", false, "That description belongs to a different term from this chapter, not this one."), O("The subjective side of a word, reflecting one person's own perception or interpretation of that word", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: clarifying - Seeking more information or elaboration when a message is incomplete, confusing, or not deep enough" });
+BANK.push({ cat: CA, type: "single", kt: ["posture"], stem: "Which term matches this description? The way a person sits, stands, and moves, conveying warmth or distance during an interaction", opts: [O("posture", true, "Correct. This term matches the description in the stem exactly."), O("aphasia", false, "That term names a different concept from this chapter, not the one described."), O("focusing", false, "That term names a different concept from this chapter, not the one described."), O("gestures", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: posture - The way a person sits, stands, and moves, conveying warmth or distance during an interaction" });
+BANK.push({ cat: CA, type: "single", kt: ["closed question"], stem: "Which description matches the term: closed question?", opts: [O("A focused question seeking a particular answer, usually answered in one or two words or with yes or no", true, "Correct. This description matches the term in the stem exactly."), O("Deficient or absent language function after an ischemic brain injury such as stroke, trauma, or anoxia", false, "That description belongs to a different term from this chapter, not this one."), O("Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient", false, "That description belongs to a different term from this chapter, not this one."), O("The subjective side of a word, reflecting one person's own perception or interpretation of that word", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: closed question - A focused question seeking a particular answer, usually answered in one or two words or with yes or no" });
+BANK.push({ cat: CA, type: "single", kt: ["receptive aphasia"], stem: "Which term matches this description? An inability to recognize or interpret the verbal message that is being received by the patient", opts: [O("receptive aphasia", true, "Correct. This term matches the description in the stem exactly."), O("passive listening", false, "That term names a different concept from this chapter, not the one described."), O("active listening", false, "That term names a different concept from this chapter, not the one described."), O("denotative meaning", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: receptive aphasia - An inability to recognize or interpret the verbal message that is being received by the patient" });
+BANK.push({ cat: CA, type: "single", kt: ["communication"], stem: "Which description matches the term: communication?", opts: [O("The exchange of information between people, taking verbal and nonverbal forms and conveying many messages", true, "Correct. This description matches the term in the stem exactly."), O("Interacting in an overpowering and forceful way to meet your own needs at the expense of the other person", false, "That description belongs to a different term from this chapter, not this one."), O("Confidently and comfortably expressing thoughts and feelings while respecting the rights of the patient", false, "That description belongs to a different term from this chapter, not this one."), O("Deficient or absent language function after an ischemic brain injury such as stroke, trauma, or anoxia", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: communication - The exchange of information between people, taking verbal and nonverbal forms and conveying many messages" });
+BANK.push({ cat: CA, type: "single", kt: ["reflecting"], stem: "Which term matches this description? Helping the patient reflect on feelings and thoughts rather than seeking advice from another person", opts: [O("reflecting", true, "Correct. This term matches the description in the stem exactly."), O("clarifying", false, "That term names a different concept from this chapter, not the one described."), O("restating", false, "That term names a different concept from this chapter, not the one described."), O("summarizing", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: reflecting - Helping the patient reflect on feelings and thoughts rather than seeking advice from another person" });
+BANK.push({ cat: CA, type: "single", kt: ["connotative meaning"], stem: "Which description matches the term: connotative meaning?", opts: [O("The subjective side of a word, reflecting one person's own perception or interpretation of that word", true, "Correct. This description matches the term in the stem exactly."), O("Demonstrating acceptance of a patient's right to current beliefs without condoning harmful practices", false, "That description belongs to a different term from this chapter, not this one."), O("Seeking more information or elaboration when a message is incomplete, confusing, or not deep enough", false, "That description belongs to a different term from this chapter, not this one."), O("The patient is unable to send the desired verbal message, even though the message may be understood", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: connotative meaning - The subjective side of a word, reflecting one person's own perception or interpretation of that word" });
+BANK.push({ cat: CA, type: "single", kt: ["restating"], stem: "Which term matches this description? Repeating the main point the patient is trying to communicate, with voice rising as if asking", opts: [O("restating", true, "Correct. This term matches the description in the stem exactly."), O("clarifying", false, "That term names a different concept from this chapter, not the one described."), O("focusing", false, "That term names a different concept from this chapter, not the one described."), O("gestures", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: restating - Repeating the main point the patient is trying to communicate, with voice rising as if asking" });
+BANK.push({ cat: CA, type: "single", kt: ["conveying acceptance"], stem: "Which description matches the term: conveying acceptance?", opts: [O("Demonstrating acceptance of a patient's right to current beliefs without condoning harmful practices", true, "Correct. This description matches the term in the stem exactly."), O("The subjective side of a word, reflecting one person's own perception or interpretation of that word", false, "That description belongs to a different term from this chapter, not this one."), O("Seeking more information or elaboration when a message is incomplete, confusing, or not deep enough", false, "That description belongs to a different term from this chapter, not this one."), O("The patient is unable to send the desired verbal message, even though the message may be understood", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: conveying acceptance - Demonstrating acceptance of a patient's right to current beliefs without condoning harmful practices" });
+BANK.push({ cat: CA, type: "single", kt: ["sender"], stem: "Which term matches this description? The person who conveys a message to another person or group during an interaction or exchange", opts: [O("sender", true, "Correct. This term matches the description in the stem exactly."), O("jargon", false, "That term names a different concept from this chapter, not the one described."), O("aphasia", false, "That term names a different concept from this chapter, not the one described."), O("posture", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: sender - The person who conveys a message to another person or group during an interaction or exchange" });
+BANK.push({ cat: CA, type: "single", kt: ["denotative meaning"], stem: "Which description matches the term: denotative meaning?", opts: [O("The commonly accepted definition of a word, shared by anyone familiar with the language being used", true, "Correct. This description matches the term in the stem exactly."), O("Restating the patient's message in the nurse's own words to check that the interpretation is right", false, "That description belongs to a different term from this chapter, not this one."), O("Showing interest through eye contact, nodding, and brief phrases, without confirming understanding", false, "That description belongs to a different term from this chapter, not this one."), O("Sharing observations made during an interaction back to the patient for clarification of a message", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: denotative meaning - The commonly accepted definition of a word, shared by anyone familiar with the language being used" });
+BANK.push({ cat: CA, type: "single", kt: ["stating observations"], stem: "Which term matches this description? Sharing observations made during an interaction back to the patient for clarification of a message", opts: [O("stating observations", true, "Correct. This term matches the description in the stem exactly."), O("conveying acceptance", false, "That term names a different concept from this chapter, not the one described."), O("offering information", false, "That term names a different concept from this chapter, not the one described."), O("verbal communication", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: stating observations - Sharing observations made during an interaction back to the patient for clarification of a message" });
+BANK.push({ cat: CA, type: "single", kt: ["expressive aphasia"], stem: "Which description matches the term: expressive aphasia?", opts: [O("The patient is unable to send the desired verbal message, even though the message may be understood", true, "Correct. This description matches the term in the stem exactly."), O("Seeking more information or elaboration when a message is incomplete, confusing, or not deep enough", false, "That description belongs to a different term from this chapter, not this one."), O("Helping the patient reflect on feelings and thoughts rather than seeking advice from another person", false, "That description belongs to a different term from this chapter, not this one."), O("The subjective side of a word, reflecting one person's own perception or interpretation of that word", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: expressive aphasia - The patient is unable to send the desired verbal message, even though the message may be understood" });
+BANK.push({ cat: CA, type: "single", kt: ["summarizing"], stem: "Which term matches this description? A concise review of the main ideas from a discussion, giving focus and closure to the session", opts: [O("summarizing", true, "Correct. This term matches the description in the stem exactly."), O("clarifying", false, "That term names a different concept from this chapter, not the one described."), O("paraphrasing", false, "That term names a different concept from this chapter, not the one described."), O("reflecting", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: summarizing - A concise review of the main ideas from a discussion, giving focus and closure to the session" });
+BANK.push({ cat: CA, type: "single", kt: ["focusing"], stem: "Which description matches the term: focusing?", opts: [O("Encouraging the patient to select one topic over another as the primary focus of the discussion", true, "Correct. This description matches the term in the stem exactly."), O("Movements people use to emphasize the idea they are trying to communicate or to clarify a point", false, "That description belongs to a different term from this chapter, not this one."), O("An inability to recognize or interpret the verbal message that is being received by the patient", false, "That description belongs to a different term from this chapter, not this one."), O("Communication where sender and receiver both participate and exchange input and feedback freely", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: focusing - Encouraging the patient to select one topic over another as the primary focus of the discussion" });
+BANK.push({ cat: CA, type: "single", kt: ["therapeutic communication"], stem: "Which term matches this description? An exchange that builds a positive nurse-patient relationship and involves the patient in care", opts: [O("therapeutic communication", true, "Correct. This term matches the description in the stem exactly."), O("unassertive communication", false, "That term names a different concept from this chapter, not the one described."), O("aggressive communication", false, "That term names a different concept from this chapter, not the one described."), O("assertive communication", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: therapeutic communication - An exchange that builds a positive nurse-patient relationship and involves the patient in care" });
+BANK.push({ cat: CA, type: "single", kt: ["gestures"], stem: "Which description matches the term: gestures?", opts: [O("Movements people use to emphasize the idea they are trying to communicate or to clarify a point", true, "Correct. This description matches the term in the stem exactly."), O("Encouraging the patient to select one topic over another as the primary focus of the discussion", false, "That description belongs to a different term from this chapter, not this one."), O("An inability to recognize or interpret the verbal message that is being received by the patient", false, "That description belongs to a different term from this chapter, not this one."), O("Communication where sender and receiver both participate and exchange input and feedback freely", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: gestures - Movements people use to emphasize the idea they are trying to communicate or to clarify a point" });
+BANK.push({ cat: CA, type: "single", kt: ["two-way communication"], stem: "Which term matches this description? Communication where sender and receiver both participate and exchange input and feedback freely", opts: [O("two-way communication", true, "Correct. This term matches the description in the stem exactly."), O("minimal encouragement", false, "That term names a different concept from this chapter, not the one described."), O("one-way communication", false, "That term names a different concept from this chapter, not the one described."), O("conveying acceptance", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: two-way communication - Communication where sender and receiver both participate and exchange input and feedback freely" });
+BANK.push({ cat: CA, type: "single", kt: ["jargon"], stem: "Which description matches the term: jargon?", opts: [O("The commonplace terminology unique to people in one work setting or to one specific type of work", true, "Correct. This description matches the term in the stem exactly."), O("Highly structured communication with the sender in control and little response from the receiver", false, "That description belongs to a different term from this chapter, not this one."), O("Communication that involves the use of spoken words, written words, or symbols to send a message", false, "That description belongs to a different term from this chapter, not this one."), O("Encouraging the patient to select one topic over another as the primary focus of the discussion", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: jargon - The commonplace terminology unique to people in one work setting or to one specific type of work" });
+BANK.push({ cat: CA, type: "single", kt: ["unassertive communication"], stem: "Which term matches this description? Agreeing to a request even when it creates problems, sacrificing your own legitimate rights", opts: [O("unassertive communication", true, "Correct. This term matches the description in the stem exactly."), O("therapeutic communication", false, "That term names a different concept from this chapter, not the one described."), O("aggressive communication", false, "That term names a different concept from this chapter, not the one described."), O("assertive communication", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: unassertive communication - Agreeing to a request even when it creates problems, sacrificing your own legitimate rights" });
+BANK.push({ cat: CA, type: "single", kt: ["minimal encouragement"], stem: "Which description matches the term: minimal encouragement?", opts: [O("Brief comments, nodding, and eye contact showing interest and inviting the patient to say more", true, "Correct. This description matches the term in the stem exactly."), O("A question with no specific answer required, letting the patient elaborate freely on a subject", false, "That description belongs to a different term from this chapter, not this one."), O("Providing the patient with relevant data and seeking feedback about the level of understanding", false, "That description belongs to a different term from this chapter, not this one."), O("An exchange that builds a positive nurse-patient relationship and involves the patient in care", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: minimal encouragement - Brief comments, nodding, and eye contact showing interest and inviting the patient to say more" });
+BANK.push({ cat: CA, type: "single", kt: ["verbal communication"], stem: "Which term matches this description? Communication that involves the use of spoken words, written words, or symbols to send a message", opts: [O("verbal communication", true, "Correct. This term matches the description in the stem exactly."), O("conveying acceptance", false, "That term names a different concept from this chapter, not the one described."), O("offering information", false, "That term names a different concept from this chapter, not the one described."), O("stating observations", false, "That term names a different concept from this chapter, not the one described.")], tp: "Key term: verbal communication - Communication that involves the use of spoken words, written words, or symbols to send a message" });
+BANK.push({ cat: CA, type: "single", kt: ["nontherapeutic communication"], stem: "Which description matches the term: nontherapeutic communication?", opts: [O("Communication that usually blocks the development of a trusting and therapeutic relationship", true, "Correct. This description matches the term in the stem exactly."), O("The way a person sits, stands, and moves, conveying warmth or distance during an interaction", false, "That description belongs to a different term from this chapter, not this one."), O("Messages transmitted without words, through tone, eye contact, appearance, posture, and touch", false, "That description belongs to a different term from this chapter, not this one."), O("Repeating the main point the patient is trying to communicate, with voice rising as if asking", false, "That description belongs to a different term from this chapter, not this one.")], tp: "Key term: nontherapeutic communication - Communication that usually blocks the development of a trusting and therapeutic relationship" });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 4: Communication - Key Terms Drill</h1>';
+  h += '<div class="sub">Key terms drill | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

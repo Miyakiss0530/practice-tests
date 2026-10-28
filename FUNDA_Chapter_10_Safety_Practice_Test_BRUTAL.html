@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 10 - Safety - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Safety Basics, Falls, and Lifespan Risks";
+var CB = "Safety Reminder Devices and Restraint-Free Care";
+var CC = "Environmental Hazards, Violence, Fire, and Poisoning";
+var CD = "Disasters, Terrorism, and the Nursing Process";
+var CATS = [CA, CB, CC, CD];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 12,
+  "types": {
+   "single": 10,
+   "multi": 1,
+   "order": 1
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 18,
+  "types": {
+   "single": 11,
+   "multi": 4,
+   "dropdown": 2,
+   "order": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 18,
+  "types": {
+   "single": 13,
+   "order": 1,
+   "matrix": 1,
+   "multi": 2,
+   "dropdown": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 9,
+  "types": {
+   "single": 7,
+   "multi": 1,
+   "dropdown": 1
+  }
+ }
+};
+BANK.push({ cat: CA, type: "single", stem: "An 80-year-old woman, postoperative day 1 after bowel surgery, received a narcotic for pain 40 minutes ago. The nurse enters and finds her standing at the bedside, gripping the IV pole, saying the room is spinning. Which of the following actions should the nurse take first?", opts: [O("Document the dizziness in the chart and return after finishing the medication pass", false, "Wrong. Documentation never outranks a patient actively at risk of falling."), O("Ask the patient to walk to the bathroom slowly while the nurse watches from here", false, "Wrong. Narcotics, recent surgery, and dizziness make unassisted walking unsafe now."), O("Leave the patient standing briefly while going to the desk to get a gait belt", false, "Wrong. Leaving an unsteady, dizzy patient standing alone invites the fall itself."), O("Ease the patient back into bed or a chair and stay with her while assessing her", true, "Correct. A patient who starts to fall or is unsteady is eased into a sitting position and supported; assessment follows once she is safe. Framework: safety first.")], tp: "Fall risk rises with anesthesia, sedatives, narcotics, unsteady gait, and balance problems; assess risk on admission and on any significant change. Framework: safety first." });
+BANK.push({ cat: CA, type: "single", stem: "A nurse admits a 76-year-old man with pneumonia, an IV line, and a history of one fall last year. She is assigning care to unlicensed assistive personnel (UAP). Which task must the nurse keep for herself?", opts: [O("Making sure he wears nonskid footwear whenever he gets up to walk the hallway", false, "Wrong. Confirming nonskid footwear is a delegable safety precaution."), O("Keeping his bed locked, in the low position, with his call bell within easy reach", false, "Wrong. Environmental safety measures like bed position and call bell placement are delegable."), O("Keeping his pathway to the bathroom clear of clutter, books, and loose shoes", false, "Wrong. Clearing the environment is a delegable safety precaution."), O("Scoring his fall risk assessment and deciding the precautions his score requires", true, "Correct. Assessment for risk of fall or injury requires the critical thinking and knowledge application unique to the nurse and is not delegated. Framework: Nursing Process/ADPIE.")], tp: "When delegating, the nurse stresses the patient's mobility limits, the specific measures for that patient, and easing a falling patient to a chair or the floor. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CA, type: "multi", stem: "A patient scores high on the fall risk assessment. Which precautions from the chapter should the nurse put in place? Select all that apply.", opts: [O("Keep the room dim at all times so the patient rests and stays in bed through the shift", false, "Wrong. Adequate lighting is a Box 10.1 precaution; dim rooms raise fall risk."), O("Store the patient's shoes and magazines on the floor beside the bed for quick access", false, "Wrong. Floor clutter is a trip hazard that Box 10.1 says to remove."), O("Keep the bed in the low position with wheels locked whenever care is not being given", true, "Correct. Box 10.1: beds stay low except during care, with wheels locked on beds, wheelchairs, and gurneys."), O("Demonstrate the emergency call button and instruct the patient to use it for assistance", true, "Correct. Box 10.1: demonstrate the call system and teach the patient to call for help."), O("Turn on the bed alarm because this patient is restless and disoriented during the night", true, "Correct. Box 10.1: use the bed alarm for the restless, disoriented patient."), O("Place the bedside table within reach with telephone and eyeglasses easily accessible", true, "Correct. Box 10.1: frequently used items stay within easy reach of the patient.")], tp: "Box 10.1 also covers nonslip footwear, handrails, orienting the patient, and wiping spills promptly. Framework: safety first." });
+BANK.push({ cat: CA, type: "single", stem: "A UAP is ambulating a patient with a gait belt when the patient says, 'I feel faint,' and her knees begin to buckle. Which action is correct for the UAP?", opts: [O("Hold the patient upright by the belt until the faint feeling passes on its own", false, "Wrong. A buckling patient is lowered, not held standing."), O("Let go of the belt and run to the nurses' station to report what is happening", false, "Wrong. Releasing the patient abandons her mid-fall; ease her down first."), O("Ease the patient into a sitting position on the floor and alert the nurse at once", true, "Correct. When a patient starts to fall during assisted ambulation, ease the patient into a sitting position in a chair or on the floor and alert the nurse. Framework: safety first."), O("Walk the patient quickly back to her room so she can lie down in her own bed", false, "Wrong. Continuing to walk a fainting patient risks a full fall.")], tp: "The delegation briefing for ambulation must include exactly this: how to ease a falling patient down and alert the nurse. Framework: safety first." });
+BANK.push({ cat: CA, type: "single", stem: "Before ambulating a patient, the nurse applies a gait belt. Which check confirms the belt is fitted correctly?", opts: [O("No fingers fit between the gait belt and the patient's waist once it is secured", false, "Wrong. A belt with no finger space is too tight to be safe or comfortable."), O("One finger fits between the gait belt and the patient's waist once it is secured", false, "Wrong. The printed check is two fingers, not one."), O("Two fingers fit between the gait belt and the patient's waist once it is secured", true, "Correct. The worker should be able to fit two fingers between the gait belt and the patient's waist. Framework: safety first."), O("A full fist fits between the gait belt and the patient's waist once it is secured", false, "Wrong. A fist is the fit check for a vest SRD, not a gait belt.")], tp: "Walk on the patient's weaker side, grasp the belt at the patient's back, and walk slightly behind with knees and hips flexed. Framework: safety first." });
+BANK.push({ cat: CA, type: "single", stem: "A toddler is admitted to a pediatric unit for observation. The nurse must turn away for a moment to obtain supplies from the cart at the bedside. Which action keeps the child safe?", opts: [O("Keep the child within reach and never leave the toddler unattended during the turn", true, "Correct. Never leave an infant or toddler unattended when turning to obtain supplies; use the crib or raised side rails. Framework: safety first."), O("Ask the toddler to stay still and promise a sticker if he does not move at all", false, "Wrong. A toddler cannot be relied on to self-protect by instruction."), O("Place the toddler on the examination table, which is too high for him to climb off", false, "Wrong. An unattended toddler on a high table is a fall waiting to happen."), O("Lower the side rails so the toddler can climb down safely if he becomes restless", false, "Wrong. Lowered rails invite the fall the rails exist to prevent.")], tp: "Growth and new motor skills keep raising a child's injury risk; each stage carries its own dangers. Framework: safety first." });
+BANK.push({ cat: CA, type: "single", stem: "A mother is preparing to take her crawling 9-month-old home. Which statement by the mother indicates an understanding of the teaching?", opts: [O("'I will cover the electrical outlets and keep cords out of reach now that she crawls.'", true, "Correct. As infants learn to crawl, electrical sockets and cords become a danger; covering outlets matches the stage-specific risk. Framework: Nursing Process/ADPIE."), O("'I will turn pot handles toward the front of the stove so I can reach them faster.'", false, "Wrong. Pot handles are turned away from a child's reach to prevent burns."), O("'I will leave cleaning bottles under the sink because she cannot read the labels yet.'", false, "Wrong. Inability to read labels is exactly why cleaning items are a poisoning danger."), O("'I will leave her alone in the bathtub briefly because the water is only lukewarm.'", false, "Wrong. Bath water is a hazard by temperature and by leaving a child unattended at all.")], tp: "Infants in the oral stage put almost anything in their mouths; pool safety and burn prevention round out toddler teaching. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CA, type: "single", stem: "A patient with a seizure disorder begins a generalized seizure in the day room. The nurse is called to the scene. Which of the following actions should the nurse take first?", opts: [O("Send the UAP to assess the patient while the nurse finishes the medication pass", false, "Wrong. Seizure intervention is the nurse's role, not a delegated task."), O("Assess airway patency, breathing, and circulatory status while protecting the patient", true, "Correct. Interventions during a seizure are not delegated; airway, breathing, and circulation assessment requires the nurse's critical thinking. Framework: ABCs."), O("Hold the patient's arms firmly against the chair so the movements stop quickly", false, "Wrong. Never attempt to restrain a patient during a seizure."), O("Place a padded tongue blade between the patient's teeth to protect the airway", false, "Wrong. Never place anything in the mouth of a patient during a seizure.")], tp: "Setting up seizure precautions may be delegated to trained UAP; responding to the seizure itself may not. Framework: ABCs." });
+BANK.push({ cat: CA, type: "single", stem: "During a home visit, an 82-year-old woman shows the nurse three prescription bottles plus 'just vitamins and pain pills from the store' that she never mentions to her doctor. Which risk should drive the nurse's plan?", opts: [O("Accidental poisoning from unreported over-the-counter drugs interacting with prescriptions", true, "Correct. Many older adults do not consider OTC products real medicine, fail to report them, and risk interactions that potentiate or interfere with prescription drugs. Framework: safety first."), O("Intentional overdose, because unreported medications always signal a plan to self-harm", false, "Wrong. Nothing here suggests intent; the pattern is under-reporting, a knowledge and safety gap."), O("Allergic reaction to vitamins, because store brands are not checked by any pharmacist", false, "Wrong. The chapter risk is interaction and administration error, not brand allergy."), O("Medication theft by visitors, because unreported medications are stored without records", false, "Wrong. Storage by visitors is not the risk this pattern presents.")], tp: "Medication organizers or dispensers help reduce home medication errors; visual changes also raise the risk of misread labels. Framework: safety first." });
+BANK.push({ cat: CA, type: "single", stem: "An older adult's blood pressure drops 25 mm Hg systolic and 10 mm Hg diastolic on standing. He takes an antihypertensive and a diuretic. Which teaching is most important for this patient?", opts: [O("Stop both medications until the blood pressure readings return to a normal range", false, "Wrong. The nurse does not stop prescribed therapy; the fix is slow rising and monitoring."), O("Rise from bed or a chair slowly to prevent the dizziness of postural hypotension", true, "Correct. The chapter prints this drop as orthostatic hypotension, and teaching slow position change prevents the vertigo that leads to falls. Framework: safety first."), O("Drink a full glass of water only after dizziness has already caused a near fall", false, "Wrong. Waiting for a near fall is reactive; slow rising prevents the event."), O("Rise from bed or a chair quickly so blood flow returns to the head without delay", false, "Wrong. Rapid rising worsens postural hypotension and fall risk.")], tp: "Sedatives, hypnotics, tranquilizers, antihypertensives, diuretics, and antihistamines all raise older adults' injury risk. Framework: safety first." });
+BANK.push({ cat: CA, type: "order", stem: "A nurse admits a patient after a syncopal fall at home. Place the nurse's safety actions in the correct order.", items: [{"t": "Complete the fall risk assessment for this patient on admission to the unit", "r": "First. A fall risk assessment is performed on admission, before precautions are chosen. Framework: Nursing Process/ADPIE."}, {"t": "Determine the fall precautions required by the answers on the assessment tool", "r": "Second. Facilities require precautions when the tool's yes answers reach the set number."}, {"t": "Set the bed low and locked, call bell in reach, and orient the patient to the room", "r": "Third. The environment is arranged to match the precautions the tool required."}, {"t": "Offer fluids and toileting every 2 hours while the patient is awake on the unit", "r": "Fourth. Scheduled fluids and toileting, from Care Plan 10.1, maintain the precautions over time."}], tp: "Assessment drives precautions; the environment and scheduled rounds carry them out. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CA, type: "single", stem: "A nurse gives a double dose of a medication through a decimal-point error, and the patient dies. The nurse manager reviews the event with the team. Which statement about this event is accurate?", opts: [O("It is a sentinel event; reporting includes a thorough review and a plan to prevent recurrence", true, "Correct. A medication error leading to death is a sentinel event; reporting requires a thorough review plus an improvement plan so the event does not recur. Framework: safety first."), O("It is a near miss; reporting includes a thorough review and a plan to prevent recurrence", false, "Wrong. The patient died, so this is far beyond a near miss."), O("It is a sentinel event; reporting is optional because the error was a simple decimal slip", false, "Wrong. Reporting of certain sentinel events to The Joint Commission is required."), O("It is a staffing incident; reporting is limited to the nurse's personnel file entry only", false, "Wrong. A death from a medication error is a patient safety event, not a personnel matter.")], tp: "Inappropriate application of safety reminder devices is also listed among sentinel event examples. Framework: safety first." });
+BANK.push({ cat: CB, type: "single", stem: "An ICU patient with an endotracheal tube keeps pulling at the tube. Alternatives have failed, and the provider has ordered a wrist safety reminder device. Which application is correct?", opts: [O("Pad the wrist, form a clove hitch that will not tighten, and tie to the raised side rail", false, "Wrong. Ties never anchor to side rails; the rail moves separately and can injure the patient."), O("Pad the wrist, tie a regular tight knot, and tie to the moving bed frame securely", false, "Wrong. A tight knot can constrict and impede circulation; use a quick-release knot."), O("Skip the wrist padding, form a clove hitch, and tie to the moving bed frame snugly", false, "Wrong. Padding is required to decrease injury to the underlying skin."), O("Pad the wrist, form a clove hitch that will not tighten, and tie to the moving bed frame", true, "Correct. Padding protects skin, the clove hitch does not tighten when pulled, and ties anchor to the frame that moves with the patient, with a quick-release knot. Framework: safety first.")], tp: "Leave 1 to 2 inches of slack and palpate pulses below the device to confirm circulation. Framework: safety first." });
+BANK.push({ cat: CB, type: "single", stem: "During rounds, a nurse finds a patient's wrist safety reminder device tied to the side rail with a tight, regular knot. The patient's fingers are cool. Which of the following actions should the nurse take first?", opts: [O("Remove the device entirely and leave the patient unrestrained without an assessment", false, "Wrong. Abrupt removal without assessment ignores why the device was ordered."), O("Loosen the knot slightly and leave the ties attached to the side rail as they are", false, "Wrong. Side-rail anchoring stays wrong even with a looser knot."), O("Assess the circulation of the hand and then re-secure the ties correctly to the bed frame", true, "Correct. Cool fingers signal possible constriction; assess circulation first, then anchor the ties to the frame that moves with the patient using a quick-release knot. Framework: ABCs."), O("Document the finding and recheck the hand again at the end of the current shift", false, "Wrong. Cool fingers need action now, not end-of-shift documentation.")], tp: "A tight knot potentially causes constriction and impedes circulation; assessment for constriction prevents neurovascular injury. Framework: ABCs." });
+BANK.push({ cat: CB, type: "multi", stem: "A patient is wearing an extremity safety reminder device. Which nursing actions are required while it is in place? Select all that apply.", opts: [O("Monitor the device's position, circulation, skin condition, and mental status often", true, "Correct. Position, circulation, skin, and mental status are monitored frequently for safety."), O("Remove the device from one extremity at a time at least every 2 hours for 5 minutes", true, "Correct. Removal is one extremity at a time, at least every 2 hours, for 5 minutes of supervised movement."), O("Assess the extremity distal to the device every 30 minutes or more often as needed", true, "Correct. Follow-up care requires distal extremity assessment every 30 minutes or more frequently."), O("Remove all devices at once every 2 hours so the patient can move freely for a while", false, "Wrong. Removal is one extremity at a time, never all at once."), O("Massage the skin beneath the device and apply lotion during the removal periods", true, "Correct. Gentle massage increases circulation; lotion or powder may be applied during removal."), O("Stay with the patient during any temporary removal of the device for repositioning", true, "Correct. The patient is never left unattended during temporary removal of an SRD.")], tp: "Change the device when it is soiled or wet, and watch for tangled ties and pressure points from knots. Framework: safety first." });
+BANK.push({ cat: CB, type: "single", stem: "A nurse finds that a vest safety reminder device was put on a restless patient with the V-shaped opening at the back. The patient is now pulling at the vest. Which of the following actions should the nurse take first?", opts: [O("Assess the patient's breathing and reapply the vest with the V opening in the front", true, "Correct. A vest worn backward can choke a restless patient; assess respiratory status, then reapply with the V in front and a fist of space. Framework: ABCs."), O("Tighten the vest straps so the patient cannot pull the vest out of its position", false, "Wrong. Tightening a backward vest raises the choking risk further."), O("Document the backward placement and correct it during the next scheduled removal", false, "Wrong. A choking hazard is corrected now, not at the next removal."), O("Add a second vest over the first one so the opening cannot shift during movement", false, "Wrong. Layering devices is not a correction and adds restriction.")], tp: "With any vest SRD, monitor respiratory status; restriction from the vest can cause respiratory distress. Framework: ABCs." });
+BANK.push({ cat: CB, type: "single", stem: "The family of a long-term care resident with dementia asks the nurse to 'just put the vest on him every night so he stops wandering.' Which response follows the law and the chapter?", opts: [O("Agree to the nightly vest but chart it as a positioning aid rather than a restraint", false, "Wrong. Relabeling a device does not change what it is or the rules around it."), O("Agree to the nightly vest, because a family request replaces the need for an order here", false, "Wrong. Family request does not replace a physician's written order with duration and circumstances."), O("Explain that the vest can be used nightly as long as the family signs a consent form", false, "Wrong. Consent does not make routine use lawful under OBRA."), O("Explain that routine SRD use is prohibited in long-term care and offer alternatives first", true, "Correct. OBRA prohibits routine SRD use in long-term care; alternatives such as a room near the station, sitters, and toileting routines come first. Framework: least restrictive.")], tp: "OBRA permits SRDs in long-term care only for physical safety, after all other interventions have been attempted and documented. Framework: least restrictive." });
+BANK.push({ cat: CB, type: "single", stem: "A nurse, worried about a confused patient, applies a wrist safety reminder device without a provider order and without documenting any assessment or alternatives. Which consequence does the chapter name for this action?", opts: [O("The nurse risks losing delegation privileges for restraining without an order today", false, "Wrong. The named consequence is a legal charge, not a privilege loss."), O("The nurse risks a sentinel event review for restraining without an order today", false, "Wrong. Sentinel review follows patient harm events; the named risk here is false imprisonment."), O("The nurse risks charges of false imprisonment for restraining without reasonable cause", true, "Correct. Applying an SRD without a physician's order or reasonable cause incurs the risk of charges of false imprisonment. Framework: safety first."), O("The nurse risks charges of battery for restraining without reasonable cause today", false, "Wrong. The charge named in the skill is false imprisonment.")], tp: "A comprehensive assessment of the need comes before any SRD, and most facilities require a specific provider order. Framework: safety first." });
+BANK.push({ cat: CB, type: "dropdown", stem: "The nurse reviews safety reminder device care intervals for a patient with a wrist device. Distal circulation is assessed every [[0]]. The device is removed at least every [[1]] for [[2]].", blanks: [{"o": [O("30 minutes", true, "Correct. The extremity distal to an extremity SRD is assessed every 30 minutes or more often."), O("2 hours", false, "Wrong. Two hours is the removal interval, not the distal check interval."), O("15 minutes", false, "Wrong. The printed distal check interval is 30 minutes.")]}, {"o": [O("2 hours", true, "Correct. The SRD is removed at least every 2 hours."), O("8 hours", false, "Wrong. Eight hours far exceeds the removal interval."), O("30 minutes", false, "Wrong. Thirty minutes is the distal assessment interval.")]}, {"o": [O("5 minutes", true, "Correct. Each removal lasts 5 minutes and covers one extremity at a time."), O("30 minutes", false, "Wrong. The printed removal period is 5 minutes."), O("60 minutes", false, "Wrong. The printed removal period is 5 minutes.")]}], tp: "Never leave the patient unattended during removal; use the time to reposition, inspect skin, and massage. Framework: safety first." });
+BANK.push({ cat: CB, type: "single", stem: "An infant needs an ear examination that requires her to hold still. The nurse prepares a mummy restraint. Which action is correct?", opts: [O("Ask the mother to hold the infant unwrapped while the examiner works quickly", false, "Wrong. The mummy restraint exists because holding alone does not keep the infant safely still."), O("Apply the wrap, then step out to prepare the next patient while the exam proceeds", false, "Wrong. The infant is never left unattended in the restraint."), O("Apply the blanket wrap, remain with the infant, and remove it right after the exam", true, "Correct. Remain with the infant during a mummy restraint and remove it immediately after treatment is complete. Framework: safety first."), O("Ask the mother to apply the wrap, since infants calm fastest in a parent's hands", false, "Wrong. The applier should not be the child's parent or guardian.")], tp: "If restraint must continue, remove it at least every 2 hours and perform range-of-motion exercises on all extremities. Framework: safety first." });
+BANK.push({ cat: CB, type: "single", stem: "Which chart entry best documents safety reminder device care for a patient in a wrist device?", opts: [O("'1400: wrist SRD applied because the unit was busy; family not notified of the device.'", false, "Wrong. Staffing convenience is not a reason, and family notification belongs in the record."), O("'1400: wrist SRD applied per order for pulling at IV; skin intact, fingers warm, removal due 1600.'", true, "Correct. The entry captures the reason, the order, skin and circulation status, and the removal schedule. Framework: Nursing Process/ADPIE."), O("'1400: wrist SRD applied; patient resting quietly in bed; will recheck again tomorrow.'", false, "Wrong. No reason, order, circulation check, or removal plan is documented."), O("'1400: wrist SRD applied; ties secured to side rails; patient unable to reach call bell.'", false, "Wrong. Side-rail ties and an unreachable call bell are unsafe and wrongly documented as acceptable.")], tp: "Document reason, explanation to patient and family, duration, response, circulation and skin checks, continued need, and outcome. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CB, type: "order", stem: "A provider orders a safety reminder device for a patient who keeps climbing out of bed. Place the nurse's actions in the correct order.", items: [{"t": "Assess the patient's need for the device and review the order in the care plan", "r": "First. A comprehensive assessment of need comes before application, with the order checked in the record. Framework: Nursing Process/ADPIE."}, {"t": "Perform hand hygiene, identify the patient, and explain the procedure and its reason", "r": "Second. Hand hygiene, identification, and explanation decrease anxiety and enlist cooperation."}, {"t": "Apply the device gently with padding and a quick-release knot tied to the bed frame", "r": "Third. Application follows preparation: padding, quick-release knot, frame anchor, patient unable to untie it."}, {"t": "Assess the extremity distal to the device and plan removal at least every 2 hours", "r": "Fourth. Follow-up monitoring and scheduled removal complete the cycle of care."}], tp: "Applying a device without this sequence risks injury to the patient and charges of false imprisonment. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CB, type: "single", stem: "A long-term care resident with Alzheimer disease wears a wander guard. The alarm sounds at the facility exit as the resident reaches the door. Which statement shows the nurse understands this device?", opts: [O("'The wrist device tracks his exact location anywhere in the county once he has left.'", false, "Wrong. The device alarms at exit; it is not a tracking system."), O("'The wrist device locks the exit doors automatically when he walks toward them at night.'", false, "Wrong. The device alarms; it does not lock doors."), O("'The wrist device restrains him in his chair if he tries to stand up without calling.'", false, "Wrong. The wander guard does not restrain; bed and chair alarms cover rising."), O("'The wrist device alarms when he leaves the facility, because he is at risk for elopement.'", true, "Correct. The wander guard is worn on the wrist or ankle and alarms when a resident at risk for elopement leaves the facility. Framework: safety first.")], tp: "Wander guards especially benefit confused or disoriented residents who might try to leave unsupervised. Framework: safety first." });
+BANK.push({ cat: CB, type: "multi", stem: "A confused patient keeps getting out of bed at night. Which restraint-free measures should the nurse try before any safety reminder device? Select all that apply.", opts: [O("Review the patient's medications for effects that add to the nighttime restlessness", true, "Correct. Box 10.3: evaluate all medications for their therapeutic effect and contribution to the problem."), O("Apply a vest device at bedtime each night as the unit's standing routine for confusion", false, "Wrong. A standing nightly device is routine restraint, the opposite of restraint-free care."), O("Assign the patient to a room near the nurses' station and observe the patient frequently", true, "Correct. Box 10.3: confused or disoriented patients go near the station with frequent observation."), O("Encourage family or a sitter to stay with the patient during the high-risk night hours", true, "Correct. Box 10.3: family, friends, or sitters provide supervision without a device."), O("Maintain a toileting routine so the patient is not rising alone to reach the bathroom", true, "Correct. Box 10.3: toileting routines remove a common reason for unassisted rising."), O("Provide diversional activities and an exercise and ambulation schedule during the day", true, "Correct. Box 10.3: diversional activity plus exercise and ambulation schedules reduce nighttime restlessness.")], tp: "Box 10.3 also covers orientation, visual and auditory stimuli, relaxation, and eliminating bothersome treatments early. Framework: least restrictive." });
+BANK.push({ cat: CC, type: "single", stem: "A patient with a documented latex allergy is scheduled for a procedure. The nurse is setting up the room. Which of the following actions should the nurse take first?", opts: [O("Use standard latex gloves but change them twice as often during the procedure", false, "Wrong. Latex gloves are not worn at all when caring for a patient with latex allergy."), O("Ask the patient to confirm the allergy again while the standard kit is opened", false, "Wrong. Confirmation does not replace switching to latex-free supplies."), O("Use exclusively latex-free products and inspect every supply kit for latex items", true, "Correct. For patients at high risk or with suspected sensitivity, use latex-free products only, including gloves, and inspect kit contents for latex. Framework: safety first."), O("Use standard latex products but keep an antihistamine ready in case of hives", false, "Wrong. Prevention with latex-free products comes before rescue medication.")], tp: "Institutions stock latex-free procedure kits; question every patient about allergies and ask specifically about latex. Framework: safety first." });
+BANK.push({ cat: CC, type: "single", stem: "A nurse notices redness, itching, and hives on her hands that began a day after a run of shifts wearing latex gloves and lasted about 48 hours. Which level of latex sensitivity fits this pattern?", opts: [O("Type IV hypersensitivity, the delayed cell-mediated reaction to latex protein", true, "Correct. Type IV is the cell-mediated, delayed reaction with redness, itching, and hives lasting up to 48 hours. Framework: Nursing Process/ADPIE."), O("Type II hypersensitivity, the antibody reaction against the nurse's own cells", false, "Wrong. The chapter's latex levels are contact dermatitis, Type IV, and Type I."), O("Type I hypersensitivity, the true allergy that can end in respiratory arrest", false, "Wrong. Type I is rapid and systemic, not a 48-hour delayed skin course."), O("Contact dermatitis, the nonallergic response to processing chemicals in latex", false, "Wrong. Contact dermatitis is nonallergic and lacks the hives of this allergic picture.")], tp: "Severity of Type IV depends on the amount and type of latex protein and the degree of individual sensitivity. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CC, type: "single", stem: "Minutes after a latex catheter is placed, a patient develops hives, generalized edema, coughing, bronchospasm, and a falling blood pressure. The nurse recognizes which emergency?", opts: [O("Contact dermatitis, a nonallergic skin response to chemicals in the catheter", false, "Wrong. Contact dermatitis stays at skin redness and itching."), O("Type IV hypersensitivity, a delayed reaction that will peak in about 48 hours", false, "Wrong. This collapse is immediate and systemic, not delayed."), O("Type I hypersensitivity, a true latex allergy that can progress to arrest", true, "Correct. Type I brings local and systemic signs up to laryngeal edema, hypotension, tachycardia, and respiratory or cardiac arrest. Framework: ABCs."), O("A panic response, a brief anxiety episode that settles once staff reassure him", false, "Wrong. Bronchospasm with hypotension is an allergic emergency, not anxiety.")], tp: "Runny eyes and nose, diarrhea, and nausea also belong to the Type I systemic picture. Framework: ABCs." });
+BANK.push({ cat: CC, type: "order", stem: "A glass thermometer breaks and mercury spills on a treatment room floor. Place the nurse's actions in the correct order while trained personnel are on the way.", items: [{"t": "Evacuate the room, keeping only a housekeeping crew in the area if one is available", "r": "First. Step 1 of the spill procedure is evacuating the room. Framework: safety first."}, {"t": "Ventilate the area by closing interior doors and opening the outside windows", "r": "Second. Step 2 is ventilation: interior doors closed, outside windows open."}, {"t": "Mop the floor with a mercury-specific cleanser according to the agency policy", "r": "Third. Step 4 is mopping with a mercury-specific cleanser; the spill is never vacuumed."}, {"t": "Dispose of the collected mercury under local environmental safety regulations", "r": "Fourth. Step 5 is disposal per local environmental regulations, then agency policy follow-up."}], tp: "Mercury enters the body through inhalation and skin absorption and can affect the brain or kidneys. Framework: safety first." });
+BANK.push({ cat: CC, type: "single", stem: "A housekeeper reaches for a vacuum cleaner to clean up a mercury spill. Which of the following actions should the nurse take?", opts: [O("Stop the vacuuming plan only if a patient is scheduled to enter the room soon", false, "Wrong. The ban on vacuuming the spill is unconditional."), O("Stop the vacuuming plan and direct the crew to the mercury spill procedure instead", true, "Correct. The procedure states plainly: do NOT vacuum the spill; evacuate, ventilate, mop with mercury cleanser, and dispose per regulations. Framework: safety first."), O("Allow the vacuuming if the vacuum has a special filter fitted for the task", false, "Wrong. No filter exception appears in the spill procedure."), O("Allow the vacuuming but open the windows so the fumes leave the room faster", false, "Wrong. Ventilation never makes vacuuming a mercury spill acceptable.")], tp: "The nurse must know whom to contact whenever exposure to a hazardous chemical such as mercury occurs. Framework: safety first." });
+BANK.push({ cat: CC, type: "single", stem: "A nurse is assigned to a patient receiving internal radiation therapy. The patient's pregnant daughter and 16-year-old son arrive to visit. Which action is correct?", opts: [O("Restrict both visitors and delegate the patient's care to the UAP for this shift", false, "Wrong. Internal radiation care is not delegated; it requires the nurse's critical thinking."), O("Allow both visitors for 10 minutes, because brief visits carry no exposure rules", false, "Wrong. The restrictions have no brief-visit exception."), O("Restrict the son only, because pregnancy matters less than the visitor age rule", false, "Wrong. Both restrictions apply: no one under 18 and no one who is or may be pregnant."), O("Restrict both visitors and use time, distance, and shielding while giving the care", true, "Correct. Visitor restrictions bar anyone younger than 18 and anyone pregnant; the nurse limits time, maximizes distance, and uses shielding. Framework: safety first.")], tp: "Staff working near radiation routinely wear dosimeters tracking cumulative exposure; readings above the limit move staff to non-radiation areas. Framework: safety first." });
+BANK.push({ cat: CC, type: "matrix", stem: "A charge nurse sorts four tasks for the shift. Classify each task by whether it may be delegated to trained UAP or must be performed by the nurse.", cols: ["May delegate to trained UAP", "Nurse must perform"], rows: [{"t": "Setting up seizure precautions at the bedside of a patient at risk for seizures", "a": 0, "r": "Setup of seizure precautions is delegable when the UAP has been trained appropriately."}, {"t": "Assessing a newly admitted patient's risk for falling during this admission", "a": 1, "r": "Fall risk assessment requires the nurse's critical thinking and is not delegated."}, {"t": "Assessing airway, breathing, and circulation while a patient is actively seizing", "a": 1, "r": "Interventions during a seizure are not delegated; ABC assessment is the nurse's role."}, {"t": "Providing care to a patient who is receiving internal radiation therapy today", "a": 1, "r": "Internal radiation care is not delegated; it requires the nurse's critical thinking."}], tp: "Delegation rule of the chapter: setup and environment can go to trained UAP; assessment and intervention judgment stay with the nurse. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CC, type: "single", stem: "A visitor in a patient's room becomes agitated, raises his voice, and clenches his fists. Which positioning and approach should the nurse use?", opts: [O("Stand directly in front of him, close enough to take his arm and guide him to sit", false, "Wrong. Touching and close range put the nurse within striking distance."), O("Match his volume so he can hear that the staff is serious about the unit rules", false, "Wrong. Raising the voice, arguing, and interrupting are all prohibited responses."), O("Stand beyond the reach of his arms and legs, near the door, hands free, speaking calmly", true, "Correct. Judge arm and leg length, stand out of striking range, stay near the door, keep hands free, stay calm, and do not touch or argue. Framework: safety first."), O("Stand between him and the door so he must calm down before he can leave the room", false, "Wrong. Blocking the exit traps both parties and escalates the threat.")], tp: "Wear a breakaway badge, know panic button and alarm locations, leave when able, and complete an incident report. Framework: safety first." });
+BANK.push({ cat: CC, type: "multi", stem: "Which responsibilities belong to the nurse in a workplace violence prevention program? Select all that apply.", opts: [O("Understand and follow the facility's workplace violence prevention program fully", true, "Correct. Following safety and security measures and the prevention program is a listed nurse responsibility."), O("Voice safety and security concerns when a pattern of risk becomes apparent", true, "Correct. Voicing concerns is a listed nurse responsibility."), O("Skip reporting incidents that caused no injury, since they do not count as violence", false, "Wrong. Violence includes threats and gestures; unreported incidents hide the true picture."), O("Report violent incidents promptly and accurately whenever they occur on the unit", true, "Correct. Prompt, accurate reporting is a listed nurse responsibility, even when injuries are minor."), O("Serve on health and safety committees that review incidents of workplace violence", true, "Correct. Committee service reviewing incidents is a listed nurse responsibility."), O("Take part in training on recognizing and managing potentially violent situations", true, "Correct. Training participation is a listed nurse responsibility.")], tp: "Health care's days-away rate was 10.4 per 10,000 full-time workers versus 2.1 for all workers (BLS). Framework: safety first." });
+BANK.push({ cat: CC, type: "single", stem: "A nurse smells smoke and finds a wastebasket of paper burning in an occupied patient room. Which of the following actions should the nurse take first?", opts: [O("Extinguish the fire with the unit extinguisher before moving anyone from the room", false, "Wrong. Extinguishing is last in RACE, after rescue, alarm, and confine."), O("Confine the fire by closing the room door and windows before moving anyone", false, "Wrong. Confining is third, after rescue and alarm."), O("Rescue and remove the patient who is in immediate danger from the room at once", true, "Correct. R in RACE is Rescue: remove all patients in immediate danger before anything else. Framework: safety first."), O("Activate the fire alarm at the pull station down the hall before moving anyone", false, "Wrong. Alarm activation is second; the patient in immediate danger is rescued first.")], tp: "Activate the alarm before attempting to extinguish even a minor fire; an ABC extinguisher works on any fire type. Framework: safety first." });
+BANK.push({ cat: CC, type: "dropdown", stem: "The nurse matches fire types to extinguisher classes on the unit. A paper and wood fire needs [[0]]. A grease fire needs [[1]]. An electrical fire needs [[2]].", blanks: [{"o": [O("a type A extinguisher", true, "Correct. Paper, wood, and cloth fires require a type A extinguisher."), O("a type B extinguisher", false, "Wrong. Type B is for flammable liquid fires."), O("a type C extinguisher", false, "Wrong. Type C is for electrical fires.")]}, {"o": [O("a type B extinguisher", true, "Correct. Flammable liquid fires such as grease and anesthetics require a type B extinguisher."), O("a type A extinguisher", false, "Wrong. Type A is for paper, wood, and cloth."), O("a type C extinguisher", false, "Wrong. Type C is for electrical fires.")]}, {"o": [O("a type C extinguisher", true, "Correct. Electrical fires require a type C extinguisher."), O("a type A extinguisher", false, "Wrong. Type A is for paper, wood, and cloth."), O("a type B extinguisher", false, "Wrong. Type B is for flammable liquid fires.")]}], tp: "Extinguishers marked ABC are acceptable on any type of fire; PASS: Pull, Aim low, Squeeze, Sweep. Framework: safety first." });
+BANK.push({ cat: CC, type: "single", stem: "Smoke is filling the corridor outside a unit, and the horizontal route through the fire doors is blocked. A helpless patient must be moved down an interior stairway by one staff member. Which method fits?", opts: [O("The elevator carry, with the blanket extending 8 inches above the patient's head", false, "Wrong. Elevators are never used as an exit route during a fire."), O("The blanket drag, with the blanket extending 8 inches above the patient's head", true, "Correct. When vertical evacuation by stairway is necessary, one person can use the blanket drag; the patient comes headfirst with the blanket 8 inches above the head. Framework: safety first."), O("The universal carry, with the blanket extending 8 inches above the patient's head", false, "Wrong. The universal carry moves a patient from bed to floor, not down stairs."), O("The two-person swing, with the blanket extending 8 inches above the patient's head", false, "Wrong. The swing needs two staff and is not a stairway method.")], tp: "Move horizontally first; go vertical only when smoke or fire blocks the horizontal route. Framework: safety first." });
+BANK.push({ cat: CC, type: "single", stem: "During a nursery evacuation, the nurse must move two infants quickly. Which method follows the chapter?", opts: [O("Place each infant alone in a separate crib and roll the cribs one at a time slowly", false, "Wrong. Two people can pull one crib together, but the bassinet-on-blanket method moves two at once."), O("Place both infants in one bassinet and carry the bassinet down the elevator shaft", false, "Wrong. Elevators are never used during a fire evacuation."), O("Carry one infant in each arm and walk both infants out of the unit separately", false, "Wrong. Arm carrying is not the chapter's infant evacuation method."), O("Place both infants in one bassinet with padding, set it on a blanket, and pull to safety", true, "Correct. Place two infants in each bassinet if possible with diaper or blanket padding, set the bassinet on a blanket, fold a pocket, and pull to safety. Framework: safety first.")], tp: "Two staff can also place babies in one crib and pull the crib to the prescribed area. Framework: safety first." });
+BANK.push({ cat: CC, type: "single", stem: "A 3-year-old is brought in after drinking furniture polish. The parent asks whether to make the child vomit. Which of the following actions should the nurse take first?", opts: [O("Tell the parent to induce vomiting quickly so the polish leaves the stomach at once", false, "Wrong. Vomiting after polish ingestion raises the risk of internal burns."), O("Tell the parent not to induce vomiting and contact the poison control center for guidance", true, "Correct. Vomiting is not induced for furniture polish because it increases the risk of internal burns; poison control furnishes treatment guidelines. Framework: safety first."), O("Tell the parent to give syrup of ipecac and then drive the child to the clinic", false, "Wrong. Ipecac is no longer recommended for use."), O("Tell the parent to give the child milk and watch at home for the next few hours", false, "Wrong. Home watching delays the poison control guidance this ingestion needs.")], tp: "Vomiting is also never induced in an unconscious person, because of aspiration risk. Framework: safety first." });
+BANK.push({ cat: CC, type: "multi", stem: "A nurse gathers the history for a child with a suspected poisoning. Which data belong in that history? Select all that apply.", opts: [O("The route of exposure, whether injected, ingested, inhaled, or absorbed via skin", true, "Correct. Box 10.11: identify the route, type, and amount of the poisonous substance."), O("The brand of the container and the store where the family purchased the product", false, "Wrong. Purchase details do not guide antidote or treatment decisions."), O("Allergies, prescribed medications, medical problems, and general health state", true, "Correct. Box 10.11: allergy, medication, and medical history are part of the data gathering."), O("The type and amount of the substance and how long ago the poisoning happened", true, "Correct. Box 10.11: type, amount, and time since exposure guide antidote and treatment choices."), O("The names of siblings who were in the home when the exposure event occurred", false, "Wrong. Sibling names are not part of the poisoning history."), O("Changes in mental status and any motor or sensory deficits found on assessment", true, "Correct. Box 10.11: assess for mental status changes and motor and sensory deficits.")], tp: "Notify the poison control center and follow facility protocols; monitor vital signs and treatment response afterward. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CC, type: "single", stem: "A parent tells the home health nurse, 'I keep syrup of ipecac in the cabinet, just in case one of the kids swallows something.' Which response is correct?", opts: [O("'Ipecac should not be kept at home; the first step is to call poison control instead.'", true, "Correct. The AAP and poison control centers recommend ipecac not be kept in homes; the first action in an ingestion is calling 1-800-222-1222. Framework: Nursing Process/ADPIE."), O("'That is a good plan; give it first and call poison control only if symptoms appear.'", false, "Wrong. Ipecac use at home is exactly what current guidance advises against."), O("'Keep it, but store it on a high shelf so the children cannot reach the bottle.'", false, "Wrong. Storage height does not fix the recommendation against keeping ipecac."), O("'That is a good plan; ipecac works best when given within the first five minutes.'", false, "Wrong. The chapter states ipecac is no longer recommended at all.")], tp: "Most pharmacies no longer carry ipecac syrup, and the FDA is considering prescription-only status. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CC, type: "single", stem: "A nurse finds the unit's sharps container filled past the fill line, with a needle protruding. Which action is correct?", opts: [O("Carry the container to the soiled utility room balanced on top of a linen cart", false, "Wrong. Transporting an overfilled container spreads the exposure risk to others."), O("Press the protruding needle down with a gloved hand so the lid can close tightly", false, "Wrong. Pushing on a protruding needle is how a stick occurs."), O("Empty half the contents into a second container so the first one can keep being used", false, "Wrong. Handling loose sharps contents multiplies exposure for everyone involved."), O("Stop using the container, report it, and use a fresh container for the next disposal", true, "Correct. Sticking a needle into an overfilled sharps container is a named cause of needlestick injury; the container must be replaced, not forced. Framework: safety first.")], tp: "Stray needles in linens or wastebaskets endanger housekeeping and laundry staff, not only caregivers. Framework: safety first." });
+BANK.push({ cat: CC, type: "single", stem: "A newly hired nurse needs the hepatitis B vaccine series. Which schedule follows the CDC recommendations in the chapter?", opts: [O("Three doses: now, the second in 6 months, the third about 5 months after that", false, "Wrong. The second dose comes at 1 month, not 6 months."), O("Three doses: now, the second in 1 month, the third about 5 months after the second", true, "Correct. The 3-dose hepatitis B series runs now, 1 month, and approximately 5 months after dose 2, with anti-HBs testing 1 to 2 months after dose 3. Framework: Nursing Process/ADPIE."), O("Two doses: now, the second in 1 month, with no third dose required for staff", false, "Wrong. Hepatitis B for health care personnel is a 3-dose series."), O("One dose now, repeated every 10 years with the tetanus booster schedule", false, "Wrong. The 10-year booster rhythm belongs to Td, not hepatitis B.")], tp: "Also on the CDC list: influenza yearly, varicella 2 doses 4 weeks apart, and Tdap once with Td boosters every 10 years. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CD, type: "single", stem: "A tornado strikes a nearby town and casualties begin arriving at the emergency department in waves. Which action anchors the nurse's response?", opts: [O("Follow the facility disaster plan and carry out her assigned disaster responsibilities", true, "Correct. The disaster manual sets chain of command, call-back, assignments, and triage; knowing her own responsibilities saves valuable time. Framework: Nursing Process/ADPIE."), O("Follow the routine admission routine and carry out her usual assignment unchanged", false, "Wrong. A disaster activates the disaster plan, not business as usual."), O("Wait for the state governor's office to fax instructions before treating any arrivals", false, "Wrong. The facility plan, drills, and codes exist so response starts immediately."), O("Send stable inpatients home without assessment to make room for the new arrivals", false, "Wrong. Discharge or transfer follows assessment under the plan, never blanket release.")], tp: "This is an external disaster; the emergency department is the main focus of activity. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CD, type: "single", stem: "A disaster is declared while a nurse is at home off duty. Which action follows the chapter?", opts: [O("Stay home until the second day, because the first wave is handled by on-duty staff", false, "Wrong. Call-back procedures, not personal timing, govern reporting."), O("Follow the facility's protocol for reporting in, which may mean contacting her manager", true, "Correct. Off-duty staff follow facility protocols: some report at regular times, others contact the manager for instruction. Framework: Nursing Process/ADPIE."), O("Drive to the nearest hospital rather than her own facility, because help is needed", false, "Wrong. The plan assigns personnel through her own facility's call-back procedures."), O("Report to the emergency department entrance and choose whichever task looks busiest", false, "Wrong. Assignments come through the chain of command in the disaster manual.")], tp: "Community agencies and resources are incorporated into the overall disaster plan. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CD, type: "multi", stem: "Over one weekend, an emergency department sees nine adults from the same warehouse with fever, cough, chest pain, and hemoptysis; two die within days. Which actions fit a suspected bioterrorism event? Select all that apply.", opts: [O("Limit patient transport and movement to what is essential for treatment and care", true, "Correct. Infection control practice limits transport and movement of suspected cases to the essential."), O("Send the patients home with oral antibiotics once their fevers begin to settle", false, "Wrong. Rapidly progressive pneumonic illness in a cluster is not a discharge pattern."), O("Treat the patients with standard precautions, adding airborne and contact precautions", true, "Correct. Suspected cases get standard precautions; pneumonic plague also requires airborne and contact precautions."), O("Report the suspected occurrence to the local public health authorities promptly", true, "Correct. The nurse must know who reports suspected bioterrorism to local public health authorities; timely communication alerts the community."), O("Recognize the cluster from one locale with rapidly fatal cases as a warning pattern", true, "Correct. Clusters from a single locale and large numbers of rapidly fatal cases are listed warning trends."), O("Wait for the monthly infection report before telling anyone outside the department", false, "Wrong. Delay defeats the rapid alerting a covert attack response depends on.")], tp: "A covert attack surfaces only after incubation, when the earliest, sickest patients reach emergency departments. Framework: safety first." });
+BANK.push({ cat: CD, type: "single", stem: "Patients begin arriving at a designated area after a chemical release downtown. Which decontamination step comes first for each patient?", opts: [O("Fine decontamination: swabbing the mucous membranes of the nose and mouth", false, "Wrong. Membrane swabbing is a later, fine decontamination step."), O("Dry decontamination: brushing powders off the skin with a stiff hand brush", false, "Wrong. The chapter's first stage is water showering, not dry brushing."), O("Formal decontamination: scrubbing with brushes and cleaning under the nails", false, "Wrong. Scrubbing belongs to formal decontamination, which follows the gross stage."), O("Gross decontamination: continuous water showering plus removal of all clothing", true, "Correct. Gross decontamination, a continuous water shower with clothing removal, comes first; formal and fine decontamination follow it. Framework: safety first.")], tp: "Decontamination happens in specific isolated areas of the facility with several cleaning steps. Framework: safety first." });
+BANK.push({ cat: CD, type: "single", stem: "A patient exposed to a chlorine release feels fine at triage, then returns 14 hours later with shortness of breath, chest tightness, wheezing, and pink frothy sputum. Which statement explains this course?", opts: [O("Pulmonary agent symptoms never involve the lungs, so this patient needs a skin check", false, "Wrong. Pulmonary agents act on the lungs by definition of the class."), O("Pulmonary agent symptoms fade by 14 hours, so this patient can be sent home now", false, "Wrong. Delayed edema is the danger pattern, not a discharge sign."), O("Pulmonary agent symptoms always appear within 10 minutes, so this is a new illness", false, "Wrong. The printed onset window runs up to 24 hours."), O("Pulmonary agent symptoms can take 2 to 24 hours to appear, then progress to edema", true, "Correct. Pulmonary agents cause dyspnea, tightness, wheeze, and pulmonary edema; symptoms may be delayed 2 to 24 hours and can require ventilation. Framework: Nursing Process/ADPIE.")], tp: "Fluid in the lungs leads to hypovolemia and hypotension; supportive care and mechanical ventilation may be needed. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CD, type: "dropdown", stem: "The nurse sorts three chemical agents by class. Chlorine gas belongs to [[0]]. Agent BZ belongs to [[1]]. Sulfur mustard belongs to [[2]].", blanks: [{"o": [O("the pulmonary agents", true, "Correct. Chlorine, phosgene, ammonia, and hydrochloric acid are the pulmonary agents."), O("the vesicant agents", false, "Wrong. Vesicants blister skin, eyes, and airway."), O("the cyanide agents", false, "Wrong. Cyanide agents form cyanide when metabolized.")]}, {"o": [O("the incapacitating agents", true, "Correct. BZ, a glycolate anticholinergic, is an incapacitating agent that impairs rather than kills."), O("the pulmonary agents", false, "Wrong. Pulmonary agents injure the lungs and airways."), O("the nerve agents", false, "Wrong. Nerve agents cause salivation, rhinorrhea, vomiting, and weakness.")]}, {"o": [O("the vesicant agents", true, "Correct. Sulfur mustard is a vesicant; vesicants form vesicles that progress to necrosis and sloughing."), O("the incapacitating agents", false, "Wrong. Incapacitating agents impair function without this blistering injury."), O("the cyanide agents", false, "Wrong. Cyanide agents carry the bitter almond odor clue.")]}], tp: "Vesicants can remain in the environment for weeks, creating a continuing source of exposure. Framework: safety first." });
+BANK.push({ cat: CD, type: "single", stem: "A radiation accident patient absorbed more than 0.75 Gy. His nausea and vomiting settle after two days, and he asks to stop monitoring because he 'feels cured.' Which response is correct?", opts: [O("Explain that symptoms fade permanently once vomiting stops in radiation illness", false, "Wrong. GI symptoms return in the illness phase with fluid and electrolyte loss."), O("Agree, because doses under 30 Gy never produce a syndrome that needs follow-up", false, "Wrong. Risk of the syndrome begins above 0.75 Gy, far below 30 Gy."), O("Explain that symptoms often fade in a latent phase, then return stronger in illness", true, "Correct. Acute radiation syndrome moves through a latent phase of days to weeks before the illness phase brings symptoms back, intensified. Framework: Nursing Process/ADPIE."), O("Agree that two symptom-free days confirm recovery and end the monitoring plan", false, "Wrong. The latent phase is a pause, not a recovery.")], tp: "Death in acute radiation syndrome typically comes from infection or other complications. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CD, type: "single", stem: "A nursing home must evacuate residents after an internal fire damages one wing. Which element is essential to the relocation?", opts: [O("Identification bracelets only for ambulatory residents, and a transport log", false, "Wrong. Identification matters most for residents who cannot identify themselves, such as memory unit residents."), O("Identification for each resident, a press release for media, and a transport log", false, "Wrong. Media releases are not the chapter's relocation essentials."), O("Identification for each resident, family and physician notification, and a transport log", true, "Correct. Nursing home plans require resident identification, critical family and physician notification, and a log of names, transport, and destinations. Framework: Nursing Process/ADPIE."), O("Family notification after relocation ends, with the transport log written next week", false, "Wrong. Notification is critical during the event, and the log is kept as events occur.")], tp: "At the triage site, nurses decide where relocated residents will go, including hospitals or temporary shelters. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CD, type: "single", stem: "A nurse evaluates the safety plan for a patient whose problem list includes Potential for Falling. Which finding shows the evaluation step done correctly?", opts: [O("The patient's injury-free status is compared against the expected outcomes in the plan", true, "Correct. Evaluation compares the patient's response with the expected outcomes for each goal; the overall goal is remaining free from injury. Framework: Nursing Process/ADPIE."), O("The patient's new room assignment is compared against the expected outcomes in the plan", false, "Wrong. Room assignment is an intervention detail, not the outcome comparison."), O("The patient's fall score from admission is compared against the expected outcomes now", false, "Wrong. Evaluation compares response to outcomes, not an old score to outcomes."), O("The patient's medication list is compared against the expected outcomes in the plan", false, "Wrong. The medication list informs assessment; evaluation weighs response against goals.")], tp: "The LPN/LVN participates in planning, follows the defined prioritization, and recommends revisions to the plan as needed. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CB, type: "multi", grp: "case1", scen: "CASE STUDY — Mr. Delgado, 84 years old, is on a medical-surgical unit on postoperative day 1 after repair of a fractured hip. He has a history of mild dementia. Overnight he has become increasingly restless and confused, has pulled out his IV line once, and has been found twice with his legs over the side rail trying to climb out of bed. Vital signs: BP 128/76, HR 96, RR 18, SpO2 97% on room air. His room is across from the nurses' station, a bed alarm is in place, toileting is offered every 2 hours, and family visited during the day. After alternatives were tried, the provider has written an order for a wrist safety reminder device.", stem: "CASE STUDY 1 of 6 — RECOGNIZE CUES: Which findings in Mr. Delgado's presentation are cues that his safety risk is rising? Select all that apply.", opts: [O("Increasing restlessness and confusion developing overnight after his surgery", true, "Correct. New and worsening confusion is a cue that his risk is escalating."), O("Oxygen saturation of 97% on room air during the overnight assessment", false, "Wrong. This is a normal finding, not a risk cue."), O("Pulling out his IV line once during the night shift on the medical unit", true, "Correct. Line pulling is a cue of risk to his treatment and to himself."), O("A history of mild dementia documented before this hospital admission", true, "Correct. Baseline dementia raises his risk and shapes the safety plan."), O("Blood pressure of 128/76 during the overnight assessment on the unit", false, "Wrong. This is a normal finding, not a risk cue."), O("Being found twice with his legs over the side rail, trying to climb out", true, "Correct. Repeated climb-out attempts are direct cues of fall and injury risk.")], tp: "Cue recognition starts the clinical judgment sequence; normal vital signs do not cancel behavioral cues. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CB, type: "single", grp: "case1", scen: "CASE STUDY — Mr. Delgado, 84 years old, is on a medical-surgical unit on postoperative day 1 after repair of a fractured hip. He has a history of mild dementia. Overnight he has become increasingly restless and confused, has pulled out his IV line once, and has been found twice with his legs over the side rail trying to climb out of bed. Vital signs: BP 128/76, HR 96, RR 18, SpO2 97% on room air. His room is across from the nurses' station, a bed alarm is in place, toileting is offered every 2 hours, and family visited during the day. After alternatives were tried, the provider has written an order for a wrist safety reminder device.", stem: "CASE STUDY 2 of 6 — ANALYZE CUES: Which interpretation best links Mr. Delgado's cues together?", opts: [O("His confusion and repeated climb-out attempts combine into a need for less observation", false, "Wrong. The pattern calls for more supervision, not less."), O("His confusion and repeated climb-out attempts combine into a rising risk for injury", true, "Correct. The cues cluster into one pattern: a confused postoperative patient repeatedly attempting unassisted rising is at rising risk for harm. Framework: Nursing Process/ADPIE."), O("His confusion and repeated climb-out attempts combine into a plan for early discharge", false, "Wrong. Escalating risk argues against, not for, early discharge."), O("His confusion and repeated climb-out attempts combine into a rising risk for infection", false, "Wrong. Nothing in the cues points to an infectious process.")], tp: "Analysis turns scattered cues into the problem the plan must solve. Framework: Nursing Process/ADPIE." });
+BANK.push({ cat: CB, type: "single", grp: "case1", scen: "CASE STUDY — Mr. Delgado, 84 years old, is on a medical-surgical unit on postoperative day 1 after repair of a fractured hip. He has a history of mild dementia. Overnight he has become increasingly restless and confused, has pulled out his IV line once, and has been found twice with his legs over the side rail trying to climb out of bed. Vital signs: BP 128/76, HR 96, RR 18, SpO2 97% on room air. His room is across from the nurses' station, a bed alarm is in place, toileting is offered every 2 hours, and family visited during the day. After alternatives were tried, the provider has written an order for a wrist safety reminder device.", stem: "CASE STUDY 3 of 6 — PRIORITIZE HYPOTHESES: Which patient problem takes priority for Mr. Delgado right now?", opts: [O("Compromised Physical Mobility, from the hip repair limiting his movement in bed", false, "Wrong. Mobility is limited by surgery, but the active danger is harm from his attempts to move."), O("Potential for Harm or Damage to the Body, from falls and line pulling while confused", true, "Correct. Of the chapter's safety problems, Potential for Harm fits a patient actively climbing out and pulling lines; it outranks the others tonight. Framework: safety first."), O("Potential for Harm only if he succeeds in climbing out during the next night", false, "Wrong. The problem is present now; two attempts have already occurred."), O("Potential for Falling only, from the hip repair limiting his movement in bed", false, "Wrong. Falling is part of the picture, but line pulling and climbing make the broader harm problem the priority.")], tp: "Prioritization weighs the problem that can hurt the patient first and worst. Framework: safety first." });
+BANK.push({ cat: CB, type: "multi", grp: "case1", scen: "CASE STUDY — Mr. Delgado, 84 years old, is on a medical-surgical unit on postoperative day 1 after repair of a fractured hip. He has a history of mild dementia. Overnight he has become increasingly restless and confused, has pulled out his IV line once, and has been found twice with his legs over the side rail trying to climb out of bed. Vital signs: BP 128/76, HR 96, RR 18, SpO2 97% on room air. His room is across from the nurses' station, a bed alarm is in place, toileting is offered every 2 hours, and family visited during the day. After alternatives were tried, the provider has written an order for a wrist safety reminder device.", stem: "CASE STUDY 4 of 6 — GENERATE SOLUTIONS: Alongside the ordered device, which solutions should the nurse build into tonight's plan? Select all that apply.", opts: [O("Review his medication list for drugs adding to his confusion and restlessness", true, "Correct. Medication evaluation is part of designing a restraint-free environment."), O("Ask the family about staying or arrange a sitter for the high-risk night hours", true, "Correct. Family presence or a sitter adds supervision without adding restriction."), O("Keep his room assignment near the nurses' station with frequent direct observation", true, "Correct. Proximity and frequent observation are restraint-free foundations of the plan."), O("Provide familiar stimuli such as family pictures and a clock in his room area", true, "Correct. Visual and auditory stimuli support orientation in a restraint-free plan."), O("Offer fluids and toileting every 2 hours while he is awake, per the care plan", true, "Correct. Scheduled toileting removes a common trigger for unassisted rising."), O("Add a vest device tonight as well, so two devices guard against any movement", false, "Wrong. Stacking devices violates keeping restraint to a minimum.")], tp: "Solutions pair the ordered device with the least restrictive supports around it. Framework: least restrictive." });
+BANK.push({ cat: CB, type: "dropdown", grp: "case1", scen: "CASE STUDY — Mr. Delgado, 84 years old, is on a medical-surgical unit on postoperative day 1 after repair of a fractured hip. He has a history of mild dementia. Overnight he has become increasingly restless and confused, has pulled out his IV line once, and has been found twice with his legs over the side rail trying to climb out of bed. Vital signs: BP 128/76, HR 96, RR 18, SpO2 97% on room air. His room is across from the nurses' station, a bed alarm is in place, toileting is offered every 2 hours, and family visited during the day. After alternatives were tried, the provider has written an order for a wrist safety reminder device.", stem: "CASE STUDY 5 of 6 — TAKE ACTION: The nurse applies the ordered wrist device. Ties are secured to [[0]] with [[1]], leaving [[2]] of slack.", blanks: [{"o": [O("the bed frame that moves with the patient", true, "Correct. Ties anchor to the frame portion that moves with the patient when the bed is adjusted."), O("the side rails on both sides of the bed", false, "Wrong. Ties are never secured to side rails."), O("the bed's fixed headboard at the top end", false, "Wrong. The anchor must move with the patient.")]}, {"o": [O("a quick-release knot", true, "Correct. A quick-release knot undoes fast in an emergency; a tight knot can constrict and impede circulation."), O("a regular tight knot", false, "Wrong. A tight knot risks constriction and neurovascular injury."), O("a double square knot", false, "Wrong. Only the quick-release knot meets the emergency-release requirement.")]}, {"o": [O("1 to 2 inches", true, "Correct. Leave as much slack as possible, printed as 1 to 2 inches, to provide for movement."), O("5 to 6 inches", false, "Wrong. That much slack lets the patient work the device loose."), O("no slack at all", false, "Wrong. Zero slack risks constriction of the extremity.")]}], tp: "Padding goes under the device, pulses are palpated below it, and the patient must not be able to untie it. Framework: safety first." });
+BANK.push({ cat: CB, type: "single", grp: "case1", scen: "CASE STUDY — Mr. Delgado, 84 years old, is on a medical-surgical unit on postoperative day 1 after repair of a fractured hip. He has a history of mild dementia. Overnight he has become increasingly restless and confused, has pulled out his IV line once, and has been found twice with his legs over the side rail trying to climb out of bed. Vital signs: BP 128/76, HR 96, RR 18, SpO2 97% on room air. His room is across from the nurses' station, a bed alarm is in place, toileting is offered every 2 hours, and family visited during the day. After alternatives were tried, the provider has written an order for a wrist safety reminder device.", stem: "CASE STUDY 6 of 6 — EVALUATE OUTCOMES: Thirty minutes after application, the nurse checks Mr. Delgado. Which finding shows the device plan is working as intended?", opts: [O("His fingers cannot be checked because the device covers his whole hand and wrist", false, "Wrong. A device that blocks distal checks is wrongly applied and must be corrected."), O("His fingers are warm with brisk refill, the device has not shifted, and he is resting", true, "Correct. Distal assessment every 30 minutes confirms circulation; warm fingers, correct position, and rest show the device is adequate and appropriate. Framework: Nursing Process/ADPIE."), O("His fingers are cool with slow refill, the device has not shifted, and he is resting", false, "Wrong. Cool fingers with slow refill mean constriction; loosen and reassess rather than accept."), O("His fingers are warm with brisk refill, the device has slipped off, and he is standing", false, "Wrong. A slipped device with the patient standing is a failed outcome, not success.")], tp: "Evaluation also confirms quick-release knots release easily and that removal happens at least every 2 hours. Framework: Nursing Process/ADPIE." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 10: Safety</h1>';
+  h += '<div class="sub">Brutal mode | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

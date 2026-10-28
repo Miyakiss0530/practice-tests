@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 19 - Nutritional Concepts - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Nutrients and Energy";
+var CB = "Fats, Cholesterol and Protein";
+var CC = "Vitamins and Minerals";
+var CD = "Electrolytes, Water and Life Cycle";
+var CE = "Therapeutic and Modified Diets";
+var CF = "Feeding Methods and Eating Assistance";
+var CATS = [CA,CB,CC,CD,CE,CF];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 5,
+  "types": {
+   "single": 4,
+   "multi": 1
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 5,
+  "types": {
+   "single": 3,
+   "multi": 1,
+   "matrix": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 7,
+  "types": {
+   "single": 5,
+   "multi": 1,
+   "matrix": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 8,
+  "types": {
+   "single": 6,
+   "order": 1,
+   "dropdown": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 13,
+  "types": {
+   "single": 8,
+   "multi": 3,
+   "dropdown": 2
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 14,
+  "types": {
+   "single": 12,
+   "order": 1,
+   "matrix": 1
+  }
+ }
+};
+
+BANK.push({"cat": CA, "type": "single", "stem": "A postoperative patient is weak, has lost 4 lb in a week, and eats only a few bites at meals. The provider orders a high-kilocalorie, high-protein diet. Which of the following actions should the nurse take first at the next meal?", "opts": [{"t": "Serve the protein portion first and keep calorie-dense snacks within reach at all times", "c": true, "r": "Correct. Protein first, small volumes and dense additions protect intake in a compromised patient. Framework: Nursing Process, implementation matched to the deficit."}, {"t": "Serve a large salad and broth first so the patient fills up on lighter foods before protein", "c": false, "r": "Incorrect. Filling up on low-density foods first defeats a high-kilocalorie, high-protein order."}, {"t": "Offer only a clear liquid tray until the provider rechecks the patient at the next visit", "c": false, "r": "Incorrect. A clear liquid diet is low in kcal and protein and moves this patient further into deficit."}, {"t": "Document the poor intake and wait for the dietitian visit scheduled later in the week", "c": false, "r": "Incorrect. Waiting leaves a known deficit unaddressed; bedside serving strategies start now."}], "tp": "High-kcal/high-protein: small volumes, protein foods first, snacks always available, butter/oil/cheese/cream additions. Framework: Nursing Process."});
+
+BANK.push({"cat": CA, "type": "single", "stem": "A patient with burns over a large area is eating a regular diet in normal portions, yet keeps losing weight. Which explanation should guide the nurse's next action?", "opts": [{"t": "Stress from the burns has raised energy and protein needs above a normal intake level", "c": true, "r": "Correct. Surgery, sepsis, fractures, burns and pressure injuries raise BMR and protein needs significantly."}, {"t": "The regular diet must be defective, because normal portions always meet any patient need", "c": false, "r": "Incorrect. A normal intake can be a deficit diet when physiologic stress raises requirements."}, {"t": "Weight loss after burns is expected and needs no change in the nutrition care plan at all", "c": false, "r": "Incorrect. Unmet needs cost protein stores and weight, and both energy and nitrogen balance go negative."}, {"t": "The patient should be switched to a clear liquid diet until the weight loss stops completely", "c": false, "r": "Incorrect. Clear liquids are low in kcal and protein and would deepen this patient's deficit."}], "tp": "Physiologic stress raises BMR: a normal intake can be a deficit for a burn, sepsis, trauma or pressure-injury patient. Framework: acute vs chronic."});
+
+BANK.push({"cat": CA, "type": "multi", "stem": "A nurse is teaching a patient who wants to add more fiber for constipation. Which statements should the nurse include? Select all that apply.", "opts": [{"t": "Increase the fiber gradually over days rather than adding a large amount all at once", "c": true, "r": "Correct. A sudden jump in fiber causes bloating, gas and constipation instead of relief."}, {"t": "Drink at least eight glasses of water a day while the fiber intake is increasing", "c": true, "r": "Correct. Fiber is paired with at least 8 glasses of water a day; fiber without water backfires."}, {"t": "Choose whole grains and fresh fruits and vegetables over processed food products", "c": true, "r": "Correct. Whole grains and fresh produce carry the fiber with less sodium and fewer preservatives."}, {"t": "Double the fiber today and expect bowel results by this evening without extra fluids", "c": false, "r": "Incorrect. Doubling fiber suddenly, without fluids, causes bloating, gas and worse constipation."}, {"t": "Use fiber supplements instead of food, because food sources of fiber work too slowly", "c": false, "r": "Incorrect. The chapter advises fiber from fruits and vegetables rather than fiber supplements."}, {"t": "Expect fiber to supply extra calories that will help with the weight gain goal too", "c": false, "r": "Incorrect. Fiber has no nutritive value and supplies no usable energy to the patient."}], "tp": "Fiber rules: gradual increase, at least 8 glasses of water daily, food sources first. Framework: safety first in patient teaching."});
+
+BANK.push({"cat": CA, "type": "single", "stem": "A patient added a large bowl of bran and three fiber bars yesterday and now reports bloating, gas and no bowel movement. Which of the following actions should the nurse take first?", "opts": [{"t": "Review how quickly the fiber was added and how much fluid the patient drank with it", "c": true, "r": "Correct. Too much fiber added too fast, without water, produces exactly this picture. Framework: Nursing Process, assessment before intervention."}, {"t": "Encourage another large bran serving tonight so the bowel is pushed to move by morning", "c": false, "r": "Incorrect. More fiber on top of a sudden load worsens bloating, gas and constipation."}, {"t": "Tell the patient fiber does not affect the bowel and the symptoms must have another cause", "c": false, "r": "Incorrect. Fiber directly affects stool bulk and transit; the timing here points to the fiber load."}, {"t": "Stop all fiber permanently and document fiber intolerance in the patient care record today", "c": false, "r": "Incorrect. The problem is the speed and fluid pairing, not fiber itself; gradual use is therapeutic."}], "tp": "Fiber added too fast causes bloating, gas and constipation. Assess the pattern before changing the plan. Framework: Nursing Process/ADPIE."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "A patient's lipid panel shows total cholesterol 246 mg/dL and LDL 172 mg/dL. Which teaching point should the nurse emphasize first?", "opts": [{"t": "Replace solid fats with oils and unsaturated fats, and choose seafood over fatty meats", "c": true, "r": "Correct. Substituting unsaturated for saturated fat is the chapter's highest-yield fat intervention. Framework: Maslow, physiologic risk reduction."}, {"t": "Add organ meats and egg yolks several times a week to raise the total cholesterol further", "c": false, "r": "Incorrect. Organ meats and egg yolks are concentrated cholesterol sources and LDL is already high."}, {"t": "Stop eating all plant foods, because plant foods are the source of dietary cholesterol", "c": false, "r": "Incorrect. Cholesterol is found only in animal foods; plant sterols can lower blood cholesterol."}, {"t": "Rely on the next lipid panel in a year, because values in this range need no diet change", "c": false, "r": "Incorrect. Total cholesterol at or above 240 and LDL 160 to 189 are both in the high ranges."}], "tp": "LDL 160-189 is high and total cholesterol 240 or more is high. Swap unsaturated for saturated and trans fats. Framework: safety first."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "A patient with a swollen abdomen, edema in the feet and face, and low albumin is a young child whose family reports plenty of rice but almost no protein foods. Which condition should the nurse suspect?", "opts": [{"t": "Kwashiorkor, in which edema and ascites make a protein-starved child look well fed", "c": true, "r": "Correct. Severe protein restriction with other calories present causes edema and a fatty liver. Framework: Nursing Process, cue recognition."}, {"t": "Marasmus, in which fat and muscle stores waste away to a skin-and-bones appearance", "c": false, "r": "Incorrect. Marasmus is total energy deficiency and looks like wasting, not swelling."}, {"t": "Normal growth, because a rounded abdomen and full face show the child is well fed now", "c": false, "r": "Incorrect. The swelling is edema and ascites from low albumin, not healthy tissue gain."}, {"t": "Fluid overload from heart failure, which is the usual cause of swelling at this age group", "c": false, "r": "Incorrect. The diet history and low albumin point to protein-energy malnutrition instead."}], "tp": "Kwashiorkor looks fat but is protein starvation: edema, ascites, low albumin. Marasmus is skin and bones. Framework: Nursing Process."});
+
+BANK.push({"cat": CB, "type": "multi", "stem": "A patient recovering from major trauma has poor intake, muscle wasting and delayed wound healing. Which actions support a positive nitrogen balance? Select all that apply.", "opts": [{"t": "Provide adequate protein so tissue building can exceed the tissue being broken down daily", "c": true, "r": "Correct. Positive balance means building more tissue than is broken down; protein intake drives it."}, {"t": "Provide adequate carbohydrate so protein is spared from being burned just for energy", "c": true, "r": "Correct. Enough carbohydrate keeps protein from being burned for energy, preserving its building job."}, {"t": "Track intake records and wound healing as markers of whether the plan is working well", "c": true, "r": "Correct. Intake records, weight and wound healing are the response markers the nurse monitors."}, {"t": "Restrict protein so the healing wound is not stressed by extra nitrogen in the diet", "c": false, "r": "Incorrect. Restriction deepens negative balance, muscle atrophy and poor function of body systems."}, {"t": "Expect the balance to stay negative until discharge, because trauma prevents any building", "c": false, "r": "Incorrect. Negative balance is seen in trauma, but the care goal is restoring intake to reverse it."}, {"t": "Skip one day of protein foods each week to rest the kidneys of this trauma patient now", "c": false, "r": "Incorrect. A prolonged protein deficit, not a single day, is the danger, and this patient needs protein."}], "tp": "Negative nitrogen balance is catabolism (illness, burns, trauma). Restore energy and protein early. Framework: Nursing Process."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "A 16-year-old girl wants to protect her future bone health. She eats little dairy. Which teaching is most accurate for her age group?", "opts": [{"t": "Her calcium target is 1300 mg a day, and fortified foods can help when dairy intake is low", "c": true, "r": "Correct. Older children and adolescents need 1300 mg/day, and the peak bone mass window is now."}, {"t": "Her calcium target is 800 mg a day, and bone density is mostly set by age twelve years", "c": false, "r": "Incorrect. The adolescent target is 1300 mg/day and peak bone mass is reached at 19 to 30 years."}, {"t": "She can wait until menopause to think about calcium, because loss only starts after age 50", "c": false, "r": "Incorrect. Bone is built from birth to early adulthood; waiting until menopause is damage control."}, {"t": "Calcium supplements should replace food sources so she does not need fortified products", "c": false, "r": "Incorrect. Supplements should never replace calcium-rich foods, which provide other nutrients too."}], "tp": "Fill the calcium bank early: 1300 mg/day for adolescents, peak bone mass at 19 to 30 years. Framework: health promotion."});
+
+BANK.push({"cat": CB, "type": "matrix", "stem": "For each patient statement, select whether it describes LDL cholesterol or HDL cholesterol.", "cols": ["LDL cholesterol", "HDL cholesterol"], "rows": [{"t": "It carried cholesterol out to my tissues, where plaque built up in my artery walls", "a": 0, "r": "Correct. LDL delivers cholesterol to the tissues and increases plaque buildup."}, {"t": "It carried cholesterol back to my liver so it could be broken down and excreted", "a": 1, "r": "Correct. HDL carries cholesterol to the liver to be degraded and excreted."}, {"t": "Raising it is a goal of my diet plan, because it removes cholesterol from circulation", "a": 1, "r": "Correct. The teaching goal is to lower LDL and increase or maintain HDL."}, {"t": "Lowering it is a goal of my diet plan, because it lays cholesterol down in arteries", "a": 0, "r": "Correct. LDL is the bad cholesterol targeted for reduction."}], "tp": "LDL = bad, delivers cholesterol to tissues and plaque. HDL = good, hauls cholesterol to the liver for disposal."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "An older adult in long-term care is confined indoors, drinks no milk, and has new bone pain and a stooped posture. Which nutrient problem should the nurse consider first?", "opts": [{"t": "Vitamin D deficiency, because sunlight exposure and fortified dairy intake are both absent", "c": true, "r": "Correct. Vitamin D comes from fortified dairy and skin exposure to sunlight; deficiency in adults is osteomalacia."}, {"t": "Vitamin C deficiency, because bleeding gums and easy bruising are the classic bone signs", "c": false, "r": "Incorrect. Those are scurvy signs; this picture of bone pain fits vitamin D and bone softening."}, {"t": "Vitamin K deficiency, because impaired clotting factors cause bone loss in older adults", "c": false, "r": "Incorrect. Vitamin K deficiency impairs clotting factor formation, not bone softening."}, {"t": "Niacin deficiency, because dermatitis and dementia are the classic signs in this setting", "c": false, "r": "Incorrect. Those describe pellagra; the risk pattern here is no sunlight plus no milk."}], "tp": "Vitamin D: fortified dairy, fish liver oils, and sunlight synthesis. Older adults confined indoors who drink no milk are the classic risk. Framework: Nursing Process."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A patient had a total gastrectomy last year and now has a macrocytic anemia with tingling in the hands. Which treatment should the nurse expect?", "opts": [{"t": "Vitamin B12 injections continued for a lifetime, because oral B12 cannot be absorbed now", "c": true, "r": "Correct. Without intrinsic factor from the stomach, oral B12 does not work; injections are lifelong."}, {"t": "Oral vitamin B12 tablets with breakfast, increased until the anemia fully resolves", "c": false, "r": "Incorrect. After gastrectomy there is no intrinsic factor, so oral B12 cannot be absorbed."}, {"t": "Folic acid alone in high doses, because it corrects both the anemia and nerve symptoms", "c": false, "r": "Incorrect. Folate can mask B12 deficiency while neurologic damage continues; B12 is the need."}, {"t": "Iron tablets with orange juice, because all macrocytic anemias are caused by iron lack", "c": false, "r": "Incorrect. Iron deficiency causes microcytic anemia; this picture is B12 deficiency."}], "tp": "Pernicious anemia after gastrectomy: B12 injections for life. Folate masking B12 is a trap. Framework: safety first."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A patient taking warfarin reports she has started eating large kale salads some days and none on others, and her anticoagulation results are swinging. Which teaching should the nurse give first?", "opts": [{"t": "Keep the amount of vitamin K foods about the same from one day to the next each week", "c": true, "r": "Correct. Vitamin K counteracts warfarin; consistency, not avoidance, keeps therapy stable. Framework: safety first, medication teaching."}, {"t": "Stop eating all green vegetables so the warfarin can work at its full strength daily", "c": false, "r": "Incorrect. The chapter teaches consistent vitamin K intake, not elimination of vitamin K foods."}, {"t": "Double the vitamin K foods on days when a warfarin dose is accidentally missed at home", "c": false, "r": "Incorrect. Large fluctuations in vitamin K intake alter the drug effect and destabilize therapy."}, {"t": "Add high-dose vitamin E supplements, which will steady the anticoagulant effect daily", "c": false, "r": "Incorrect. High-dose vitamin A and E supplements are to be avoided with anticoagulants."}], "tp": "Warfarin plus vitamin K means consistency day to day. Framework: safety first."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A pregnant patient in her first trimester asks how to take the iron supplement she was prescribed. Which instruction is correct?", "opts": [{"t": "Take it with orange juice, and keep coffee, bran and milk away from the dose timing", "c": true, "r": "Correct. Vitamin C enhances iron absorption; bran, coffee and milk or calcium inhibit it. Framework: patient teaching, medication timing."}, {"t": "Take it with a glass of milk, which protects the stomach and improves iron absorption", "c": false, "r": "Incorrect. Milk and calcium work against iron absorption at the same time as the dose."}, {"t": "Take it with a high-fiber bran cereal, which speeds the iron through the bowel faster", "c": false, "r": "Incorrect. Bran with meals inhibits iron absorption, lowering what the patient receives."}, {"t": "Take it with morning coffee, because caffeine helps the iron dissolve more completely", "c": false, "r": "Incorrect. Coffee with meals inhibits iron absorption and is kept away from the dose."}], "tp": "Iron rules: vitamin C helps, bran, coffee, milk and calcium hinder. Pregnancy iron need is 27 mg/day. Framework: Nursing Process."});
+
+BANK.push({"cat": CC, "type": "multi", "stem": "A nurse reviews a patient who takes several vitamin supplements in large doses. Which findings should prompt a report to the provider? Select all that apply.", "opts": [{"t": "Flushing and itching after starting a large-dose niacin supplement this past month", "c": true, "r": "Correct. Niacin toxicity from supplements presents with flushing and pruritus."}, {"t": "New tingling and clumsiness after months of very large vitamin B6 supplement doses", "c": true, "r": "Correct. Vitamin B6 toxicity causes peripheral neuropathy and impaired coordination."}, {"t": "More bruising and bleeding tendency after starting large-dose vitamin E supplements", "c": true, "r": "Correct. Vitamin E excess increases the tendency for hemorrhage in patients."}, {"t": "A request to take one simple multivitamin each day under provider supervision", "c": false, "r": "Incorrect. A simple multivitamin under supervision follows the chapter supplement rule."}, {"t": "Eating fortified cereal and milk at breakfast while taking a basic multivitamin", "c": false, "r": "Incorrect. Food sources plus a simple supplement do not match the toxicity patterns listed."}, {"t": "Taking vitamin C at the printed dietary level with meals during the winter months", "c": false, "r": "Incorrect. Toxicity signs for vitamin C are abdominal cramps and diarrhea at large doses."}], "tp": "Supplement toxicity: niacin flushing, B6 neuropathy, vitamin E hemorrhage tendency, and stored A and D poisoning. Framework: safety first."});
+
+BANK.push({"cat": CC, "type": "matrix", "stem": "For each patient, select the vitamin deficiency that best matches the findings.", "cols": ["Vitamin B3 niacin", "Vitamin C", "Vitamin D", "Vitamin A"], "rows": [{"t": "Dermatitis, diarrhea, dementia and depression in a patient with a very limited diet", "a": 0, "r": "Correct. Pellagra is niacin deficiency with the D pattern."}, {"t": "Bleeding gums, easy bruising and a wound that is healing very poorly over weeks", "a": 1, "r": "Correct. Scurvy is vitamin C deficiency with gingivitis, bruising and poor healing."}, {"t": "Soft, painful bones in an adult who gets no sunlight and drinks no fortified milk", "a": 2, "r": "Correct. Osteomalacia is vitamin D deficiency in adults."}, {"t": "Night blindness progressing toward dry, damaged eyes in a malnourished patient", "a": 3, "r": "Correct. Night blindness and xerophthalmia are vitamin A deficiency findings."}], "tp": "Deficiency map: pellagra-B3, scurvy-C, osteomalacia-D in adults, night blindness-A, beriberi-B1."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A patient with heart failure gained 3 lb overnight, has new ankle edema, and ate canned soup and cured meats yesterday. Which of the following actions should the nurse take first?", "opts": [{"t": "Assess the lungs and report the weight gain, edema and high-sodium intake promptly today", "c": true, "r": "Correct. Excess sodium drives edema and workload on the heart; rapid gain is a reportable change. Framework: ABCs and safety first, assessment of fluid overload."}, {"t": "Encourage extra fluids today to flush the sodium from the canned soup out of the body", "c": false, "r": "Incorrect. Added fluid worsens overload in a patient already showing edema and rapid gain."}, {"t": "Add salt substitutes at meals so the patient can season food without using table salt", "c": false, "r": "Incorrect. Hidden sodium in canned soup and cured meats is the problem to remove, not season around."}, {"t": "Document the gain as expected and recheck the weight again at the visit next month", "c": false, "r": "Incorrect. A 3 lb overnight gain with new edema in heart failure needs prompt reporting."}], "tp": "Sodium excess means hypertension and edema; canned soups, cured meats and processed foods are hidden sodium sources. Framework: ABCs."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A patient on furosemide has a potassium level of 3.1 mmol/L, muscle weakness and an irregular pulse. Which of the following actions should the nurse take first?", "opts": [{"t": "Report the level and signs promptly, because this potassium-wasting drug depletes potassium", "c": true, "r": "Correct. Below 3.5 mmol/L is hypokalemia, life threatening with arrhythmias and weakness. Framework: safety first, cardiac risk."}, {"t": "Encourage the patient to buy an over-the-counter potassium supplement on the way home", "c": false, "r": "Incorrect. Potassium supplementation is provider-prescribed only; self-supplementation risks cardiac arrest."}, {"t": "Reassure the patient that weakness is expected and recheck the level in three months", "c": false, "r": "Incorrect. Hypokalemia with weakness and an irregular pulse is a life-threatening state now."}, {"t": "Teach the patient to avoid all potassium-rich foods until the next laboratory draw occurs", "c": false, "r": "Incorrect. With potassium-wasting diuretics, a potassium-rich diet is encouraged, not avoided."}], "tp": "Hypokalemia is below 3.5 mmol/L. Potassium-wasting diuretics deplete potassium, magnesium and calcium. Framework: safety first."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A patient taking spironolactone shows the nurse a potassium-based salt substitute she uses daily. Which response is correct?", "opts": [{"t": "That product should be avoided, because this drug already keeps potassium in the body", "c": true, "r": "Correct. Spironolactone decreases potassium excretion; supplements and salt substitutes can push potassium dangerously high."}, {"t": "That product is a good choice, because this drug wastes potassium like furosemide does", "c": false, "r": "Incorrect. Spironolactone is potassium-sparing, the opposite of the furosemide group."}, {"t": "That product is safe as long as it is used only on foods eaten at restaurant meals out", "c": false, "r": "Incorrect. The potassium load is the problem regardless of where the food is eaten."}, {"t": "That product should be doubled, because potassium needs rise sharply on this drug daily", "c": false, "r": "Incorrect. Added potassium with spironolactone risks hyperkalemia and cardiac arrest."}], "tp": "Spironolactone: avoid potassium supplements and salt substitutes. Above 5.0 mmol/L is hyperkalemia. Framework: safety first."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A mother of a 7-month-old asks about sweetening the baby's cereal with honey and starting whole cow's milk. Which response corrects both plans?", "opts": [{"t": "No honey before 12 months, and breast milk or iron-fortified formula instead of cow milk", "c": true, "r": "Correct. Honey risks botulism under 12 months; cow milk in the first year risks anemia and kidney overload. Framework: safety first, infant teaching."}, {"t": "Honey is fine in cereal, and whole cow milk can replace formula from six months of age", "c": false, "r": "Incorrect. Both parts are unsafe in the first year for the reasons in the correct option."}, {"t": "Honey is fine if it is cooked, and skim milk is the best first milk for a young infant", "c": false, "r": "Incorrect. Honey is never given under 12 months, and skim milk waits until age 2."}, {"t": "Cow milk is fine now, as long as honey is saved until after the first birthday passes", "c": false, "r": "Incorrect. The honey timing is right, but cow milk is still avoided for the whole first year."}], "tp": "First year rules: no honey under 12 months, no cow milk in the first year, no skim or low-fat milk until age 2. Framework: safety first."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "An infant is brought in with a sunken fontanel, fewer wet diapers than usual, and no tears when crying. Which of the following actions should the nurse take first?", "opts": [{"t": "Treat this as dehydration, assess further and report promptly for fluid correction now", "c": true, "r": "Correct. Sunken fontanel, fewer wet diapers and no tears are the printed infant dehydration signs. Framework: ABCs and safety first, infants are highest risk."}, {"t": "Reassure the parent that infants normally produce fewer wet diapers as they grow older", "c": false, "r": "Incorrect. Combined with a sunken fontanel and no tears, this pattern signals dehydration."}, {"t": "Offer the parent a feeding schedule handout and recheck the infant at the next visit", "c": false, "r": "Incorrect. Dehydration in an infant can progress quickly and needs prompt correction."}, {"t": "Advise extra juice feedings at home for the next two days before seeking further care", "c": false, "r": "Incorrect. Juice has no benefit before 6 months and delay risks severe dehydration."}], "tp": "Infant dehydration: sunken fontanels, decreased wet diapers, no tears. Severe dehydration is over 10% of body weight lost. Framework: ABCs."});
+
+BANK.push({"cat": CD, "type": "order", "stem": "Place the steps for responding to a conscious patient with hypoglycemia in the correct order.", "items": [{"t": "Give 15 grams of fast carbohydrate such as juice", "r": "Step 1 of the 15-15-15 rule: take 15 g of carbohydrate."}, {"t": "Wait 15 minutes after the carbohydrate is taken", "r": "Step 2: wait 15 minutes for the carbohydrate to act."}, {"t": "Retest the blood glucose level after the wait", "r": "Step 3: retest to see whether the response is adequate."}, {"t": "Repeat or escalate treatment if glucose is still low", "r": "Step 4: inadequate response means further treatment; an unconscious patient needs IV glucose."}], "tp": "15-15-15 rule: 15 g carbohydrate, wait 15 minutes, retest blood glucose."});
+
+BANK.push({"cat": CD, "type": "dropdown", "stem": "A clinic nurse reviews three results. Complete each interpretation using the chapter values. [[0]] [[1]] [[2]]", "blanks": [{"o": [{"t": "Total cholesterol 246 mg/dL: high range", "c": true, "r": "Correct. Total cholesterol of 240 mg/dL or more is classified high."}, {"t": "Total cholesterol 246 mg/dL: desirable range", "c": false, "r": "Incorrect. Desirable is below 200 mg/dL."}, {"t": "Total cholesterol 246 mg/dL: borderline range", "c": false, "r": "Incorrect. Borderline high is 200 to 239 mg/dL."}]}, {"o": [{"t": "Potassium 3.1 mmol/L: hypokalemia range", "c": true, "r": "Correct. Below 3.5 mmol/L is hypokalemia."}, {"t": "Potassium 3.1 mmol/L: normal adult range", "c": false, "r": "Incorrect. This value is below the 3.5 threshold."}, {"t": "Potassium 3.1 mmol/L: hyperkalemia range", "c": false, "r": "Incorrect. Hyperkalemia is above 5.0 mmol/L."}]}, {"o": [{"t": "Waist 42 inches in a man: metabolic syndrome range", "c": true, "r": "Correct. Forty inches or more in men is the printed cutoff."}, {"t": "Waist 42 inches in a man: below the risk cutoff", "c": false, "r": "Incorrect. The cutoff for men is 40 inches."}, {"t": "Waist 42 inches in a man: unrelated to syndrome risk", "c": false, "r": "Incorrect. Waist circumference is a defining measurement here."}]}], "tp": "Numbers: cholesterol 240 or more is high; potassium below 3.5 is hypokalemia; waist 40 in or more in men fits metabolic syndrome."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A postoperative patient's tray holds apple juice, gelatin, clear broth and orange juice with pulp. Which item does not belong on a clear liquid tray?", "opts": [{"t": "The orange juice with pulp, because pulp makes a juice a full liquid product instead", "c": true, "r": "Correct. If a juice has pulp or pieces, it counts as full liquid, not clear. Framework: Nursing Process, checking the order against the tray."}, {"t": "The apple juice, because fruit juices of any kind are never allowed on a clear tray", "c": false, "r": "Incorrect. Apple and white grape juice are classic clear liquid items on the tray."}, {"t": "The gelatin, because a semisolid food can never count as a clear liquid item at all", "c": false, "r": "Incorrect. Gelatin and popsicles count as clear liquids even though they are semisolid."}, {"t": "The clear broth, because broth contains sodium and is classed with regular foods now", "c": false, "r": "Incorrect. Clear broth is a standard clear liquid item; sodium content does not change that."}], "tp": "Clear means see-through: apple juice, gelatin, popsicles, clear broth, tea, coffee. Pulp makes it full liquid. Framework: Nursing Process."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A patient has been on a clear liquid diet for five days after surgery and is weak, with poor skin turgor beginning to show. Which concern should the nurse raise?", "opts": [{"t": "The diet is low in kilocalories, protein and most nutrients and was meant for 2 to 3 days", "c": true, "r": "Correct. Clear liquid is a temporary diet, preferably only 2 to 3 days. Framework: Nursing Process, evaluating the plan."}, {"t": "The diet is too high in protein, which explains the weakness the patient is showing now", "c": false, "r": "Incorrect. Clear liquids are low in protein, not high; weakness fits the deficit."}, {"t": "The diet should continue unchanged, because clear liquids are complete for long-term use", "c": false, "r": "Incorrect. Even a full liquid diet lacks iron, zinc and fiber; clear liquid lacks more."}, {"t": "The weakness proves the patient needs no diet change until discharge papers are signed", "c": false, "r": "Incorrect. Five days exceeds the printed temporary window and needs provider review."}], "tp": "Clear liquid diet: temporary, preferably 2 to 3 days only, small meals every 2 to 3 hours. Framework: Nursing Process."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "Three weeks after a partial gastrectomy, a patient reports nausea, cramping, diarrhea, sweating and palpitations shortly after meals. Which meal plan should the nurse teach?", "opts": [{"t": "Small frequent meals higher in protein and fat, lower in carbohydrate, without sweets", "c": true, "r": "Correct. This is dumping syndrome, and the diet slows gastric emptying. Framework: Nursing Process, therapeutic diet selection."}, {"t": "Three large meals with concentrated sweets, followed by a full glass of fluid each time", "c": false, "r": "Incorrect. Concentrated sweets trigger dumping, and fluids belong apart from meals."}, {"t": "Small frequent meals taken with fluids, then sitting upright for one hour after eating", "c": false, "r": "Incorrect. Fluids go 30 to 60 minutes before or after meals, and lying down follows meals."}, {"t": "A clear liquid diet for the next month, with sweetened juices at every small meal daily", "c": false, "r": "Incorrect. Sweetened juices are concentrated sugar, a direct trigger for dumping signs."}], "tp": "Dumping syndrome: small frequent meals, no concentrated sweets, fluids 30 to 60 minutes apart from meals, lie down 20 to 60 minutes after eating. Framework: Nursing Process."});
+
+BANK.push({"cat": CE, "type": "multi", "stem": "Which statements by a post-gastrectomy patient indicate an understanding of the teaching? Select all that apply.", "opts": [{"t": "I will lie down for about half an hour after my meals to slow my stomach emptying", "c": true, "r": "Correct. Lying down 20 to 60 minutes after meals is the printed dumping syndrome position."}, {"t": "I will drink my fluids about an hour apart from meals instead of with the food itself", "c": true, "r": "Correct. Fluids are taken 30 to 60 minutes before or after meals, not with the meal."}, {"t": "I will skip concentrated sweets, because too much simple sugar brings on my symptoms", "c": true, "r": "Correct. Dumping signs follow too much simple or refined sugar shortly after meals."}, {"t": "I will sit upright for an hour after meals, like patients with reflux are taught to do", "c": false, "r": "Incorrect. Dumping syndrome is one of the few conditions where lying down after meals is encouraged."}, {"t": "I will eat one large high-carbohydrate meal a day so my stomach empties only once", "c": false, "r": "Incorrect. Meals are small and frequent, higher in protein and fat and lower in carbohydrate."}, {"t": "I will add sweetened juice with each meal to keep my blood sugar from falling later", "c": false, "r": "Incorrect. Concentrated sweets with meals trigger the dumping pattern this patient has."}], "tp": "Dumping teaching check: lie down after meals, fluids apart from meals, no concentrated sweets. Framework: evaluating teaching."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A patient with type 2 diabetes is ill with a fever and asks whether to stop insulin and skip meals until she feels better. Which response is correct?", "opts": [{"t": "Keep taking insulin, monitor glucose closely, and push fluids and carbohydrate foods", "c": true, "r": "Correct. During illness the patient keeps taking insulin and monitors carefully, with fluids and palatable carbohydrate. Framework: safety first, sick-day rules."}, {"t": "Stop the insulin until eating normally again, because insulin without food is dangerous", "c": false, "r": "Incorrect. The chapter rule for illness is to keep taking insulin and monitor glucose carefully."}, {"t": "Skip all carbohydrate until the fever breaks, because carbohydrate raises glucose levels", "c": false, "r": "Incorrect. Adequate carbohydrate is encouraged during illness, in forms like juice and gelatin."}, {"t": "Double the insulin dose today to cover the fever, then return to the usual dose tomorrow", "c": false, "r": "Incorrect. No doubling rule is printed; monitoring and provider direction govern changes."}], "tp": "Sick-day diabetes: do not stop insulin, monitor glucose, encourage fluids and carbohydrate. Type 1 risks ketoacidosis; type 2 risks hyperosmolar syndrome. Framework: safety first."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A patient with diabetes is found unconscious, sweaty and trembling an hour after taking insulin without eating. Which of the following actions should the nurse take first?", "opts": [{"t": "Give glucose intravenously, because an unconscious patient cannot take carbohydrate safely", "c": true, "r": "Correct. The chapter states IV glucose is essential when the hypoglycemic patient is unconscious. Framework: ABCs and safety first."}, {"t": "Give 15 grams of oral carbohydrate and retest the glucose level in 15 minutes from now", "c": false, "r": "Incorrect. The 15-15-15 rule is for a patient who can swallow; this patient is unconscious."}, {"t": "Give the next scheduled insulin dose early so the blood glucose stabilizes more quickly", "c": false, "r": "Incorrect. More insulin lowers glucose further in a patient already hypoglycemic."}, {"t": "Place the patient flat and wait fifteen minutes to see whether consciousness returns", "c": false, "r": "Incorrect. Waiting without glucose risks harm; IV glucose is the essential action."}], "tp": "Unconscious hypoglycemia needs IV glucose. Conscious hypoglycemia uses the 15-15-15 rule. Framework: ABCs."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A patient with end-stage renal disease made 400 mL of urine yesterday. Using the chapter formula, what is today's fluid allowance?", "opts": [{"t": "About 900 mL for the day, split between dietary and nursing portions for the patient", "c": true, "r": "Correct. Restriction is 500 mL per day plus an amount equal to daily urine output: 500 plus 400. Framework: Nursing Process, calculation."}, {"t": "About 400 mL for the day, matching the urine output with nothing additional allowed", "c": false, "r": "Incorrect. The formula adds the base 500 mL to the urine output amount."}, {"t": "About 2000 mL for the day, because most adults need two to three liters of fluid daily", "c": false, "r": "Incorrect. Two to three liters is the usual need; this patient's restriction is calculated, not usual."}, {"t": "About 1400 mL for the day, using one liter plus the full urine output from yesterday", "c": false, "r": "Incorrect. The printed base is 500 mL per day plus the output amount, giving about 900 mL."}], "tp": "ESRD fluid: 500 mL/day plus an amount equal to daily urine output. Gelatin, ice cream, soups and similar foods count as fluid. Framework: Nursing Process."});
+
+BANK.push({"cat": CE, "type": "multi", "stem": "A patient on a 1000 mL fluid restriction asks what counts toward the total. Which items should the nurse name? Select all that apply.", "opts": [{"t": "Gelatin and popsicles served on the meal tray during the day for this patient here", "c": true, "r": "Correct. Gelatins and popsicles are listed foods that add fluid to the diet totals."}, {"t": "Ice cream, sherbet and puddings eaten as desserts or snacks between regular meals", "c": true, "r": "Correct. Ice cream, sherbet and puddings all count toward a fluid restriction total."}, {"t": "Soups served at meals, plus any fluids given with scheduled medications each day", "c": true, "r": "Correct. Soups and medication fluids count; teaching names IV and medication fluids too."}, {"t": "Dry toast and crackers, because all solid foods count equally toward fluid totals", "c": false, "r": "Incorrect. The counted foods are those that are liquid or melt; dry solids are not listed."}, {"t": "Cooked rice and pasta, because starches release their full water content when eaten", "c": false, "r": "Incorrect. The chapter list is gelatins, ice cream, sherbet, puddings, popsicles, fruit ices and soups."}, {"t": "Nothing but plain water, because beverages are the only fluids that are ever counted", "c": false, "r": "Incorrect. Food fluids and medication fluids count toward the restriction as well."}], "tp": "Fluid counts include gelatin, ice cream, sherbet, puddings, popsicles, fruit ices, soups, IV fluids and medication fluids. Framework: patient teaching."});
+
+BANK.push({"cat": CE, "type": "multi", "stem": "A fluid-restricted patient complains of constant thirst. Which measures should the nurse offer? Select all that apply.", "opts": [{"t": "Freezing part of the allowed fluid so it takes longer to consume during the day", "c": true, "r": "Correct. Frozen fluids take longer to consume, one of the printed thirst-relief measures."}, {"t": "Rinsing the mouth with mouthwash and brushing the teeth often during the day", "c": true, "r": "Correct. Mouthwash rinses and frequent tooth brushing are printed thirst-relief measures."}, {"t": "Chewing gum or sucking hard candies or breath mints in moderation during the day", "c": true, "r": "Correct. Gum, mints and hard candies in moderation are printed thirst-relief measures."}, {"t": "Adding extra salt to meals so the patient feels satisfied with less fluid overall", "c": false, "r": "Incorrect. Limiting sodium is part of thirst control; extra salt worsens thirst and retention."}, {"t": "Drinking the whole day's allowance at breakfast so thirst is gone for the day ahead", "c": false, "r": "Incorrect. The allowance is spread across the day; front-loading leaves nothing for later."}, {"t": "Sipping unmeasured water from the bathroom tap between the scheduled fluid rounds", "c": false, "r": "Incorrect. Unmeasured intake breaks the restriction the measures are meant to support."}], "tp": "Thirst relief: freeze fluids, lemon in cold water, mouthwash, gum or mints, frequent brushing, limit sodium. Framework: comfort and adherence."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A patient with cirrhosis had protein at the usual level, but the blood ammonia is now rising and the patient is drowsy. Which diet change should the nurse expect?", "opts": [{"t": "A low-protein diet, because the scarred liver cannot clear ammonia from protein waste", "c": true, "r": "Correct. In cirrhosis, protein starts at or above the DRI but is cut when blood ammonia rises. Framework: Nursing Process, responding to labs."}, {"t": "A high-protein diet, because more protein will help the liver clear the ammonia faster", "c": false, "r": "Incorrect. Rising ammonia is the trigger to reduce protein, not increase it."}, {"t": "No change, because protein in cirrhosis is never adjusted once the diet is first ordered", "c": false, "r": "Incorrect. The chapter adjusts protein in cirrhosis when ammonia rises, to protect the brain."}, {"t": "A clear liquid diet, because liquids are the only safe protein source for this patient", "c": false, "r": "Incorrect. Clear liquids are a consistency diet for GI rest, not the cirrhosis protein adjustment."}], "tp": "Cirrhosis: protein at or above DRI for healing, cut when ammonia rises toward hepatic coma. Framework: Nursing Process."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A pre-dialysis patient with renal failure asks why eggs and fish are emphasized while beans and whole grains are limited. Which explanation is correct?", "opts": [{"t": "Complete proteins are emphasized, while incomplete plant proteins add to azotemia risk", "c": true, "r": "Correct. Renal diets limit total protein and emphasize high-quality complete proteins. Framework: patient teaching."}, {"t": "Plant proteins contain no nitrogen, so they cannot help this patient meet protein needs", "c": false, "r": "Incorrect. All protein contains nitrogen; incomplete proteins contribute to azotemia and are limited."}, {"t": "Eggs and fish are used because they contain no protein waste products for the kidneys", "c": false, "r": "Incorrect. Protein waste is exactly what failing kidneys cannot excrete; quality and amount both matter."}, {"t": "Beans are limited only for their sodium, which is higher than the sodium in fish meals", "c": false, "r": "Incorrect. The printed reason is azotemia from incomplete protein waste, not sodium content."}], "tp": "Renal failure: modest protein restriction, complete proteins emphasized, incomplete plant proteins limited. On dialysis, needs rise. Framework: patient teaching."});
+
+BANK.push({"cat": CE, "type": "dropdown", "stem": "A nurse plans care for three patients. Complete each plan using the chapter diet rules. [[0]] [[1]] [[2]]", "blanks": [{"o": [{"t": "Patient with diverticulosis: high-fiber diet with adequate fluids", "c": true, "r": "Correct. High-fiber diet with fluids is used for diverticulosis and constipation."}, {"t": "Patient with diverticulosis: low-residue diet without any fluids", "c": false, "r": "Incorrect. Low-residue is a different modification; fiber plus fluids fits diverticulosis."}, {"t": "Patient with diverticulosis: clear liquid diet for the next month", "c": false, "r": "Incorrect. Clear liquid is temporary and low in nutrients."}]}, {"o": [{"t": "Patient needing less colon residue: low-residue diet limiting milk products", "c": true, "r": "Correct. Low-residue restricts milk and milk products, which leave more residue."}, {"t": "Patient needing less colon residue: soft diet with extra milk at meals", "c": false, "r": "Incorrect. Extra milk adds residue; the low-residue diet restricts it."}, {"t": "Patient needing less colon residue: high-fiber diet with bran at meals", "c": false, "r": "Incorrect. High fiber increases residue rather than reducing it."}]}, {"o": [{"t": "Patient who cannot chew well: mechanical soft diet with ground meats", "c": true, "r": "Correct. Mechanical soft grinds meats and cooks and purees fruits and vegetables."}, {"t": "Patient who cannot chew well: regular diet with whole raw vegetables", "c": false, "r": "Incorrect. Raw whole foods defeat the chewing modification."}, {"t": "Patient who cannot chew well: full liquid diet continued indefinitely", "c": false, "r": "Incorrect. Mechanical soft is nutritionally adequate across food groups."}]}], "tp": "Diet matching: high-fiber for diverticulosis, low-residue limits milk, mechanical soft grinds and purees for chewing problems."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "Before a tube feeding, a nurse pushes air through the tube, hears a swoosh over the epigastrium, and prepares to feed. Which action is correct?", "opts": [{"t": "Stop and verify placement by a dependable method, because the swoosh alone is not reliable", "c": true, "r": "Correct. Air in a tube in the lungs, pharynx or esophagus can sound similar. Framework: safety first, placement before feeding."}, {"t": "Proceed with the feeding, because hearing the swoosh confirms the tube is in the stomach", "c": false, "r": "Incorrect. The auscultatory method is not reliable alone and misplacement risks aspiration pneumonia."}, {"t": "Give medications first and check placement later, because medications are low in volume", "c": false, "r": "Incorrect. Placement is verified before giving any medication or feeding, every time."}, {"t": "Remove the tube at once, because a swoosh sound proves the tube entered the lung field", "c": false, "r": "Incorrect. The sound neither confirms nor rules out placement; a dependable check is needed."}], "tp": "X-ray is most dependable, pH is next best (gastric 0 to 4), the swoosh is not reliable alone. Framework: safety first."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "Before a scheduled tube feeding, the nurse aspirates 165 mL of residual from a patient's tube. Which of the following actions should the nurse take first?", "opts": [{"t": "Check the orders and notify the provider, because residual above 150 mL may mean holding", "c": true, "r": "Correct. Skill 19.1: residual over 150 mL means check orders and notify if excessive. Framework: safety first, Nursing Process."}, {"t": "Give the full feeding at a faster rate so the stomach empties before the next check", "c": false, "r": "Incorrect. A large residual signals slow emptying; speed worsens distention and aspiration risk."}, {"t": "Discard the aspirate and document the residual as within the expected range for feeding", "c": false, "r": "Incorrect. Discarding aspirate causes fluid and electrolyte losses, and 165 mL is above the threshold."}, {"t": "Flush with 100 mL of water and begin the feeding once the flush passes through easily", "c": false, "r": "Incorrect. Flushing does not address the high residual or the need to check orders first."}], "tp": "Residuals: over 150 mL, check orders and notify; Table 19.14 omits the feeding at 100 to 150 mL aspirated. Return aspirate to the stomach. Framework: safety first."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "During a tube feeding, a patient begins coughing, becomes short of breath, and oxygen saturation falls. Which of the following actions should the nurse take first?", "opts": [{"t": "Stop the feeding and assess the airway, because these signs can signal aspiration occurring", "c": true, "r": "Correct. Shortness of breath, low saturation, vomiting or color change must be reported and acted on at once. Framework: ABCs, airway first."}, {"t": "Speed up the feeding so it finishes, then recheck the oxygen level in one hour from now", "c": false, "r": "Incorrect. Continuing the feeding during possible aspiration adds formula to the airway."}, {"t": "Lower the head of the bed flat so the patient can rest more comfortably during the event", "c": false, "r": "Incorrect. The head of bed stays at 30 to 45 degrees to prevent aspiration, not flat."}, {"t": "Document the episode as feeding intolerance and restart the feeding at the next round", "c": false, "r": "Incorrect. These are aspiration warning signs requiring immediate action, not routine documentation."}], "tp": "Aspiration response: stop, assess airway, keep head of bed 30 to 45 degrees, report respiratory signs. Framework: ABCs."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "A patient on total parenteral nutrition has a blood glucose of 268 mg/dL on a morning check. Which action should the nurse expect in the plan?", "opts": [{"t": "Sliding-scale regular insulin as ordered, with glucose checks several times each day", "c": true, "r": "Correct. TPN can raise glucose; sliding-scale insulin may be needed to keep glucose below 200 mg/dL, as printed. Framework: Nursing Process, metabolic monitoring."}, {"t": "No glucose monitoring, because intravenous feeding does not change blood glucose levels", "c": false, "r": "Incorrect. Hyperglycemia and hypoglycemia are listed metabolic complications of TPN."}, {"t": "Stop all chemistries once the line is placed, because the catheter is the only real risk", "c": false, "r": "Incorrect. Blood chemistry is monitored frequently on TPN along with glucose checks."}, {"t": "Switch the patient to oral feedings today, because the glucose proves the gut now works", "c": false, "r": "Incorrect. A glucose value does not establish GI function; the route follows GI status."}], "tp": "TPN monitoring: frequent chemistries, glucose several times daily, sliding-scale insulin to keep glucose below 200 mg/dL, as printed. Framework: Nursing Process."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "A patient needs intravenous nutrition for an expected five weeks, is fluid restricted, and needs a concentrated formula. Which route should the nurse expect?", "opts": [{"t": "Total parenteral nutrition through a central vein, because all three needs point centrally", "c": true, "r": "Correct. TPN fits concentrated needs, fluid restriction and therapy longer than 3 weeks. Framework: Nursing Process, route selection."}, {"t": "Peripheral parenteral nutrition, because the peripheral route is always used first for months", "c": false, "r": "Incorrect. PPN is first when it can meet the need; it cannot carry this concentrated, long plan."}, {"t": "Enteral tube feeding, because intravenous nutrition is never used beyond a few days only", "c": false, "r": "Incorrect. A nonfunctioning or overloaded plan can require central IV nutrition for weeks."}, {"t": "Oral supplements three times a day, because they deliver the same concentrated nutrition", "c": false, "r": "Incorrect. Oral supplements cannot replace a prescribed concentrated IV plan for this patient."}], "tp": "TPN indications: concentrated formula needs, fluid restriction, therapy over 3 weeks, or unusable peripheral veins. Framework: Nursing Process."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "A patient with a stroke eats slowly, and food pocketed on the affected side is poorly swallowed. Which action best supports safe eating?", "opts": [{"t": "Sit the patient upright and place food toward the unaffected side of the mouth each bite", "c": true, "r": "Correct. Sitting up eases swallowing, and the unaffected side chews and swallows better. Framework: safety first, aspiration prevention."}, {"t": "Keep the patient flat and place food on the affected side so it can be monitored closely", "c": false, "r": "Incorrect. Flat positioning raises choking and aspiration risk, and the affected side handles food poorly."}, {"t": "Stand beside the bed and feed quickly so the meal ends before the patient becomes tired", "c": false, "r": "Incorrect. Sitting beside the patient signals unhurried care; rushing reduces intake and raises aspiration risk."}, {"t": "Offer pain medication after the meal, because timing around meals does not affect intake", "c": false, "r": "Incorrect. Pain medication is given at least 30 minutes before a meal so pain does not suppress eating."}], "tp": "Assisting with eating: sit up, sit beside the patient, announce each bite, food to the unaffected side after stroke, pain medication 30 minutes before meals. Framework: safety first."});
+
+BANK.push({"cat": CF, "type": "order", "stem": "Place the steps for assisting a dependent patient with a meal in the correct order.", "items": [{"t": "Give a rest period, offer the bedpan, and provide hand and mouth care", "r": "First: complete or delay interfering care, rest, toileting, hand washing and mouth care come before the tray."}, {"t": "Give pain medication at least 30 minutes before the meal begins", "r": "Second in this sequence as printed in Skill 19.3: pain control is timed before the meal."}, {"t": "Raise the head of the bed to a sitting position for the meal", "r": "Third: sitting or semi-sitting makes swallowing easier and lowers aspiration risk."}, {"t": "Sit beside the patient, announce each bite, and allow chewing time", "r": "Fourth: spoon-sized bites, announced, in the patient's preferred order, without rushing."}, {"t": "Remove the tray promptly once the meal is completed by the patient", "r": "Last: food left sitting can nauseate the patient, so the tray is removed when done."}], "tp": "Skill 19.3 order: prepare the patient, time pain medication, sit up, feed unhurried, remove the tray promptly."});
+
+BANK.push({"cat": CF, "type": "matrix", "stem": "For each feeding problem, select the diet or route response that matches the chapter rule.", "cols": ["Slow or change the feeding", "Verify or stop before feeding"], "rows": [{"t": "Diarrhea begins after tube feedings are run rapidly at a concentrated strength", "a": 0, "r": "Correct. Diarrhea usually means the nourishment was too rapid or too concentrated; decrease strength and slow it."}, {"t": "No bowel sounds are heard before a scheduled tube feeding is due to begin", "a": 1, "r": "Correct. Absent bowel sounds mean the tract cannot digest or absorb; withhold the feeding."}, {"t": "Nausea develops each time the tube feeding rate is increased on the pump", "a": 0, "r": "Correct. Nausea usually follows too-rapid delivery; administer more slowly or change formula."}, {"t": "Tube placement is in doubt right before a medication is due through the tube", "a": 1, "r": "Correct. Do not administer a feeding or medication when placement is in doubt; verify first."}], "tp": "Tube problems: slow down for diarrhea or nausea; withhold and verify for absent bowel sounds or doubtful placement."});
+
+BANK.push({"cat": CA, "type": "single", "stem": "A patient with obesity has a BMI calculated at 33. The patient asks what the number means and what a realistic first goal is. Which response is correct?", "opts": [{"t": "A BMI of 30 or more is the obese range, and losing 5 to 15 percent often cuts health risks", "c": true, "r": "Correct. BMI 25 to 29.9 is overweight and 30 or more is obese; modest loss of 5% to 15% reduces risk significantly. Framework: health promotion, realistic goals."}, {"t": "A BMI of 33 is the normal range, so no change in diet or activity needs to be discussed", "c": false, "r": "Incorrect. Normal is 18.5 to 24.9; 33 falls in the obese category on the chapter chart."}, {"t": "The only worthwhile goal is reaching a chart ideal weight, however long that may take", "c": false, "r": "Incorrect. Chart ideal weights are impossible for many; goals must be realistic and maintainable."}, {"t": "A diet under 1200 kilocalories a day is the standard starting point for this BMI range", "c": false, "r": "Incorrect. A good diet provides no fewer than 1200 kcal/day; below 1500, a supplement is recommended."}], "tp": "BMI: weight in kg divided by height in meters squared. Obese is 30 or more. Framework: health promotion."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A woman who could become pregnant asks why folic acid is discussed before she is even pregnant. Which explanation is correct?", "opts": [{"t": "The neural tube forms in the early weeks, often before a pregnancy is known to exist", "c": true, "r": "Correct. Folate protection is needed in the early weeks, so intake is a before-conception habit. Framework: health promotion, timing."}, {"t": "Folic acid only matters in the last trimester, when the baby gains the most weight fast", "c": false, "r": "Incorrect. Neural tube defects arise from deficiency in the early weeks of pregnancy."}, {"t": "Folic acid replaces the prenatal iron supplement, so only one of the two is ever needed", "c": false, "r": "Incorrect. Pregnancy anemias include both iron-deficiency and folic-acid-deficiency types."}, {"t": "Folic acid is discussed now because it prevents the nausea of the first trimester months", "c": false, "r": "Incorrect. Nausea relief uses small frequent meals and dry crackers, not folic acid."}], "tp": "Folate: 400 mcg/day folic acid for women capable of becoming pregnant, plus food folate. Framework: health promotion."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A patient in the second month after bariatric surgery asks why blood work keeps checking iron, folate and B12. Which explanation is correct?", "opts": [{"t": "Those three are the most common nutritional deficiencies after bariatric surgery today", "c": true, "r": "Correct. Iron, folic acid and vitamin B12 are the printed common deficiencies after this surgery. Framework: Nursing Process, monitoring."}, {"t": "Those three are checked because they rise dangerously after surgery in most patients", "c": false, "r": "Incorrect. The concern is deficiency developing silently, not excess of these nutrients."}, {"t": "Those three replace the need for the prescribed multivitamin and mineral supplement", "c": false, "r": "Incorrect. A multivitamin and mineral supplement is usually prescribed after bariatric surgery."}, {"t": "Those three are the only nutrients ever checked, so other symptoms need no follow-up", "c": false, "r": "Incorrect. They are the most common deficiencies, not the only follow-up items after surgery."}], "tp": "After bariatric surgery: small, slow, thoroughly chewed meals, fluids apart from food, supplements as prescribed, watch iron, folate and B12. Framework: Nursing Process."});
+
+BANK.push({"cat": CE, "type": "dropdown", "stem": "A nurse teaches three patients about their modified diets. Complete each statement using the chapter rules. [[0]] [[1]] [[2]]", "blanks": [{"o": [{"t": "After bariatric surgery: eat small portions slowly and chew completely", "c": true, "r": "Correct. Small portions, slow eating and complete chewing are the printed post-surgical mechanics."}, {"t": "After bariatric surgery: eat large portions quickly to stretch the stomach", "c": false, "r": "Incorrect. Large rapid meals defeat the surgical restriction."}, {"t": "After bariatric surgery: drink a full glass of fluid with every bite taken", "c": false, "r": "Incorrect. Beverages and food are consumed at separate times after surgery."}]}, {"o": [{"t": "On a low-fat diet: limit eggs to four or fewer per week on the meal plan", "c": true, "r": "Correct. The low-fat diet limits eggs to four or fewer per week."}, {"t": "On a low-fat diet: limit eggs to ten or more per week on the meal plan", "c": false, "r": "Incorrect. Ten exceeds the printed low-fat limit for eggs."}, {"t": "On a low-fat diet: eat organ meats daily to replace the fat that was cut", "c": false, "r": "Incorrect. Organ meats are limited to one serving or less per week."}]}, {"o": [{"t": "For fluid-restricted thirst: freeze allowed fluids so they last longer", "c": true, "r": "Correct. Freezing fluids so they take longer to consume is a printed thirst measure."}, {"t": "For fluid-restricted thirst: add table salt to meals to reduce dryness", "c": false, "r": "Incorrect. Sodium is limited; extra salt worsens thirst."}, {"t": "For fluid-restricted thirst: drink unmeasured water between fluid rounds", "c": false, "r": "Incorrect. Unmeasured intake breaks the restriction."}]}], "tp": "Modified-diet numbers: post-bariatric small and slow, low-fat eggs four or fewer weekly, frozen fluids ease thirst on restriction."});
+
+BANK.push({"cat": CF, "type": "single", "grp": "case1", "scen": "CASE STUDY - Mrs. Elena Ruiz, 68, is on day 2 of continuous nasogastric tube feedings after a stroke left her unable to swallow safely. The formula runs by pump with the head of her bed at 40 degrees. She weighs 132 lb, up from 130 lb yesterday. Her latest fingerstick glucose is 212 mg/dL. Albumin and prealbumin are slowly rising. This morning the nurse aspirated 165 mL of residual before the scheduled rate increase. An hour later Mrs. Ruiz is coughing, her oxygen saturation is 88%, and she is short of breath with formula-colored fluid at her lips.", "stem": "CASE STUDY 1 of 6 - RECOGNIZE CUES: Which findings in this scenario require action before the rate is increased?", "opts": [{"t": "The 165 mL residual, the coughing with saturation of 88 percent, and the fluid at her lips", "c": true, "r": "Correct. High residual plus respiratory signs with formula at the lips point to intolerance and possible aspiration. Framework: ABCs, cue recognition."}, {"t": "The rising albumin and prealbumin, which show her nutrition plan is failing at this time", "c": false, "r": "Incorrect. Rising albumin and prealbumin signal improving nutritional status, not failure."}, {"t": "The head of bed at 40 degrees, which is outside the safe range for any tube feeding plan", "c": false, "r": "Incorrect. Thirty to 45 degrees is the printed aspiration-prevention range; 40 degrees fits it."}, {"t": "The weight gain of two pounds, which proves the formula calories are set far too high", "c": false, "r": "Incorrect. Two pounds in 24 hours may indicate fluid excess and is noted, but the respiratory cues act first."}], "tp": "Case cue set: residual over 150 mL, coughing, saturation 88% and formula at the lips outrank every other finding. Framework: ABCs."});
+
+BANK.push({"cat": CF, "type": "single", "grp": "case1", "scen": "CASE STUDY - Mrs. Elena Ruiz, 68, is on day 2 of continuous nasogastric tube feedings after a stroke left her unable to swallow safely. The formula runs by pump with the head of her bed at 40 degrees. She weighs 132 lb, up from 130 lb yesterday. Her latest fingerstick glucose is 212 mg/dL. Albumin and prealbumin are slowly rising. This morning the nurse aspirated 165 mL of residual before the scheduled rate increase. An hour later Mrs. Ruiz is coughing, her oxygen saturation is 88%, and she is short of breath with formula-colored fluid at her lips.", "stem": "CASE STUDY 2 of 6 - ANALYZE CUES: Which explanation best connects the new respiratory findings to the feeding?", "opts": [{"t": "Formula is likely entering the airway, because a misplaced or poorly tolerated tube can aspirate", "c": true, "r": "Correct. Aspiration is the complication that links coughing, low saturation and formula at the lips. Framework: Nursing Process, analysis."}, {"t": "The formula is too diluted, because watery feedings commonly cause coughing and low oxygen", "c": false, "r": "Incorrect. Dilution is not linked to this picture; misplacement and aspiration are."}, {"t": "The pump rate is too slow, because slow feedings allow formula to pool at the lips over time", "c": false, "r": "Incorrect. Slow delivery does not explain respiratory distress; rapid or misplaced delivery risks aspiration."}, {"t": "The glucose of 212 caused the breathing change, because enteral formula never affects glucose", "c": false, "r": "Incorrect. Enteral formulas can raise glucose, but glucose does not explain formula at the lips."}], "tp": "Analyze: respiratory signs plus formula at the lips after tube feeding equals probable aspiration until proven otherwise. Framework: Nursing Process."});
+
+BANK.push({"cat": CF, "type": "single", "grp": "case1", "scen": "CASE STUDY - Mrs. Elena Ruiz, 68, is on day 2 of continuous nasogastric tube feedings after a stroke left her unable to swallow safely. The formula runs by pump with the head of her bed at 40 degrees. She weighs 132 lb, up from 130 lb yesterday. Her latest fingerstick glucose is 212 mg/dL. Albumin and prealbumin are slowly rising. This morning the nurse aspirated 165 mL of residual before the scheduled rate increase. An hour later Mrs. Ruiz is coughing, her oxygen saturation is 88%, and she is short of breath with formula-colored fluid at her lips.", "stem": "CASE STUDY 3 of 6 - PRIORITIZE HYPOTHESES: Which problem takes priority for this patient right now?", "opts": [{"t": "Aspiration with impaired breathing, ahead of the glucose level and the feeding schedule", "c": true, "r": "Correct. Airway and breathing problems outrank glucose correction and nutrition delivery. Framework: ABCs, airway and breathing first."}, {"t": "The glucose of 212, ahead of breathing, because glucose is checked every four to six hours", "c": false, "r": "Incorrect. Glucose monitoring matters, but 212 does not outrank a saturation of 88 percent."}, {"t": "The two-pound weight gain, ahead of breathing, because fluid excess changes the whole plan", "c": false, "r": "Incorrect. A sudden 2 lb gain may signal fluid excess, but breathing is the immediate threat."}, {"t": "The missed rate increase, ahead of breathing, because nutrition goals must stay on schedule", "c": false, "r": "Incorrect. Feeding goals never outrank an airway problem; the feeding is the suspected cause."}], "tp": "Priority order in this case: airway and breathing, then circulation and glucose, then nutrition delivery. Framework: ABCs."});
+
+BANK.push({"cat": CF, "type": "single", "grp": "case1", "scen": "CASE STUDY - Mrs. Elena Ruiz, 68, is on day 2 of continuous nasogastric tube feedings after a stroke left her unable to swallow safely. The formula runs by pump with the head of her bed at 40 degrees. She weighs 132 lb, up from 130 lb yesterday. Her latest fingerstick glucose is 212 mg/dL. Albumin and prealbumin are slowly rising. This morning the nurse aspirated 165 mL of residual before the scheduled rate increase. An hour later Mrs. Ruiz is coughing, her oxygen saturation is 88%, and she is short of breath with formula-colored fluid at her lips.", "stem": "CASE STUDY 4 of 6 - GENERATE SOLUTIONS: Which set of actions fits this patient at this moment?", "opts": [{"t": "Stop the feeding, keep the head of bed up, suction the mouth and throat, and report at once", "c": true, "r": "Correct. Stopping the source, positioning, clearing the mouth and reporting are the printed aspiration responses. Framework: safety first."}, {"t": "Increase the rate to finish the bag, lower the bed flat, and report at the end of shift", "c": false, "r": "Incorrect. More formula, a flat bed and delayed reporting all worsen an aspiration event."}, {"t": "Give the rate increase as ordered, offer oral fluids, and recheck saturation in four hours", "c": false, "r": "Incorrect. Oral fluids and more feeding are unsafe in a patient who cannot swallow safely."}, {"t": "Flush the tube with water, restart at a slower rate, and document intolerance tomorrow", "c": false, "r": "Incorrect. Restarting before assessment and reporting ignores placement and airway checks."}], "tp": "Aspiration solutions: stop, sit up 30 to 45 degrees, suction mouth and throat if regurgitation occurs, report respiratory signs. Framework: safety first."});
+
+BANK.push({"cat": CF, "type": "single", "grp": "case1", "scen": "CASE STUDY - Mrs. Elena Ruiz, 68, is on day 2 of continuous nasogastric tube feedings after a stroke left her unable to swallow safely. The formula runs by pump with the head of her bed at 40 degrees. She weighs 132 lb, up from 130 lb yesterday. Her latest fingerstick glucose is 212 mg/dL. Albumin and prealbumin are slowly rising. This morning the nurse aspirated 165 mL of residual before the scheduled rate increase. An hour later Mrs. Ruiz is coughing, her oxygen saturation is 88%, and she is short of breath with formula-colored fluid at her lips.", "stem": "CASE STUDY 5 of 6 - TAKE ACTION: Before any feeding is restarted, which action must come first?", "opts": [{"t": "Verify tube placement by a dependable method and confirm the provider orders to restart", "c": true, "r": "Correct. Placement is verified before any feeding or medication, and a high residual means checking orders. Framework: safety first, verification before action."}, {"t": "Listen for the swoosh of air once, then restart because a sound was heard over the stomach", "c": false, "r": "Incorrect. The auscultatory method is not reliable alone; air sounds transmit from lung or esophagus too."}, {"t": "Restart at the previous rate, because the residual was returned to the stomach earlier today", "c": false, "r": "Incorrect. Returning aspirate prevents electrolyte loss but does not verify placement or clear restart."}, {"t": "Give the scheduled medications through the tube, then verify placement at the next feeding", "c": false, "r": "Incorrect. Medications follow the same placement rule as feedings: verify first, every time."}], "tp": "Restart rule: dependable placement check plus provider orders first. X-ray is most dependable, pH is next best. Framework: safety first."});
+
+BANK.push({"cat": CF, "type": "single", "grp": "case1", "scen": "CASE STUDY - Mrs. Elena Ruiz, 68, is on day 2 of continuous nasogastric tube feedings after a stroke left her unable to swallow safely. The formula runs by pump with the head of her bed at 40 degrees. She weighs 132 lb, up from 130 lb yesterday. Her latest fingerstick glucose is 212 mg/dL. Albumin and prealbumin are slowly rising. This morning the nurse aspirated 165 mL of residual before the scheduled rate increase. An hour later Mrs. Ruiz is coughing, her oxygen saturation is 88%, and she is short of breath with formula-colored fluid at her lips.", "stem": "CASE STUDY 6 of 6 - EVALUATE OUTCOMES: Which finding set shows the plan is working at the next day's review?", "opts": [{"t": "Saturation back in her usual range, residuals low, and albumin and prealbumin still rising", "c": true, "r": "Correct. Breathing recovered, residuals tolerated and protein markers improving together show the plan working. Framework: Nursing Process, evaluation."}, {"t": "Glucose unchanged at 212, residuals still high, and the rate increased to meet the goal", "c": false, "r": "Incorrect. Persistent high residuals with a rate increase show tolerance is not established."}, {"t": "Weight up four more pounds in a day, with new edema noted at the morning assessment round", "c": false, "r": "Incorrect. Rapid gain of that size suggests fluid volume excess, a complication to report."}, {"t": "No bowel sounds at the morning check, with the feeding continued at the full ordered rate", "c": false, "r": "Incorrect. Absent bowel sounds mean the tract cannot digest or absorb; the feeding is withheld."}], "tp": "Evaluate enteral therapy by breathing, residuals, bowel sounds, weight trend, glucose and albumin, transferrin and prealbumin. Framework: Nursing Process."});
+
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 19: Nutritional Concepts</h1>';
+  h += '<div class="sub">Brutal mode | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

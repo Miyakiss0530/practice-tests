@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3 - Documentation - Definition Practice Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Purposes, Legal Basis, and Confidentiality";
+var CB = "Electronic Records and Safeguards";
+var CC = "Charting Rules, ISBAR, and Abbreviations";
+var CD = "Charting Systems and Formats";
+var CE = "Forms, Pathways, and Incident Reports";
+var CF = "Home Health and Long-Term Care";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = ["chart", "charting", "auditors", "peer review", "diagnosis-related groups (DRGs)", "electronic health record (EHR)", "electronic medical record (EMR)", "personal health record (PHR)", "patient portal", "point-of-care charting", "ISBAR", "ISBARR", "narrative charting", "traditional (block) chart", "problem-oriented medical record (POMR)", "problem list", "SOAPIER", "focus charting", "DARE", "charting by exception (CBE)", "PIE", "Kardex", "incident report", "clinical (critical) pathway", "minimum data set (MDS)", "HIPAA"];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 8,
+  "types": {
+   "multi": 2,
+   "single": 6
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 8,
+  "types": {
+   "single": 6,
+   "multi": 2
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 4,
+  "types": {
+   "multi": 1,
+   "single": 3
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "multi", kt: ["chart"],
+  stem: "Which of the following are among the five purposes of patient records? Select all that apply.",
+  opts: [ O("Documented communication among the care team members", true, "Correct. Documented communication is purpose one."), O("Permanent record kept for accountability of care given", true, "Correct. A permanent record for accountability is purpose two."), O("Teaching using patient examples held in confidence", true, "Correct. Teaching is purpose four, with patient information kept confidential."), O("Research and data collection drawn from the records", true, "Correct. Research and data collection is the fifth purpose."), O("Marketing material used to advertise the facility's services", false, "Advertising is not one of the five purposes of the patient record."), O("Personal journaling space for staff working on the unit", false, "Staff journaling is not a purpose of the patient record.") ],
+  tp: "Five purposes: documented communication, permanent record for accountability, legal record, teaching, research and data collection." });
+
+BANK.push({ cat: CA, type: "single", kt: ["chart"],
+  stem: "A nurse gives a treatment but writes nothing about it in the record. Which statement is accurate?",
+  opts: [ O("A court treats the undocumented care as care not provided", true, "Correct. However excellent the care was, undocumented care is treated as care not provided."), O("A court accepts the nurse's memory as equal to a written entry", false, "Spoken information is easily lost or altered; memory does not carry the care in court."), O("The treatment counts if a coworker saw it and remembers it well", false, "Witness memory does not replace the written or electronic record."), O("The treatment counts once it is mentioned at the next shift report", false, "Shift report is spoken communication; the legal record is the chart entry.") ],
+  tp: "If it was not documented, it was not provided - the legal thread of the whole chapter." });
+
+BANK.push({ cat: CA, type: "single", kt: ["charting"],
+  stem: "Which set lists exactly what an act of charting adds to the record?",
+  opts: [ O("The intervention, the time it was rendered, and a signature with title", true, "Correct. That trio is what makes an entry count."), O("The diagnosis, the prognosis expected, and a signature with title", false, "Diagnosis and prognosis are not the three elements of a charting entry."), O("The intervention, the charge for it, and a signature with title", false, "Billing charges are not part of the trio that defines charting."), O("The order received, the time it was written, and the provider's initials", false, "The entry records the care giver's own signature and title, not the provider's initials.") ],
+  tp: "Charting = intervention + time care was rendered + signature and title of the person who gave it." });
+
+BANK.push({ cat: CA, type: "single", kt: ["diagnosis-related groups (DRGs)"],
+  stem: "Which statement about diagnosis-related groups (DRGs) is accurate?",
+  opts: [ O("They produce a fixed payment set by prospective payment rules", true, "Correct. Medicare and Medicaid prospective payment sets a fixed amount by DRG."), O("They produce a payment that rises with each extra hospital day", false, "DRG payment is fixed by category; it does not rise day by day."), O("They classify nurses by the severity of the patients they carry", false, "Acuity ratings, not DRGs, describe patient severity for staffing."), O("They classify charts by which documentation format a facility uses", false, "DRGs classify patients by age, diagnosis, and procedure, not chart formats.") ],
+  tp: "DRGs classify by age, diagnosis, surgical procedure, and other information, in 25 major diagnostic categories." });
+
+BANK.push({ cat: CA, type: "single", kt: ["auditors"],
+  stem: "Which statement describes what auditors look for in a chart?",
+  opts: [ O("Ordered care charted as given, with responses to it noted", true, "Correct. Missing responses to care-plan items and treatments are what auditors look for."), O("Neat handwriting and correct spelling in every single entry", false, "Legibility matters, but the auditor's check is ordered care given and responses noted."), O("Entries written in narrative form rather than on flow sheets", false, "Auditors do not require one note style over another."), O("Signatures from the provider on every nursing note in the chart", false, "Provider signatures are not the auditor's stated check.") ],
+  tp: "Quality assurance audits evaluate services and results against accepted standards." });
+
+BANK.push({ cat: CA, type: "single", kt: ["chart"],
+  stem: "Who owns the original patient record, as stated in the chapter?",
+  opts: [ O("The physician or the institution that holds the record", true, "Correct. The physician or institution owns the original record."), O("The patient, who may take the original record home at discharge", false, "Patients may request access and copies, but the original stays owned by the physician or institution."), O("The nurse who wrote the largest share of the entries in it", false, "Writing entries does not transfer ownership of the record."), O("The insurance carrier that paid for the patient's hospital stay", false, "Carriers may gain access with permission; they do not own the original.") ],
+  tp: "Ownership and access are different: lawyers, courts, and the patient can all gain access through the stated procedures." });
+
+BANK.push({ cat: CA, type: "multi", kt: ["HIPAA"],
+  stem: "Which of the following statements about record access and confidentiality are accurate? Select all that apply.",
+  opts: [ O("Lawyers can gain access with the patient's written permission", true, "Correct. Lawyers with written permission and courts can gain access."), O("The patient gains access by following the facility's policy", true, "Correct. A written request may be required, and review may happen with staff present."), O("Any staff member may read any record out of professional interest", false, "Personnel may not read a record, or let others read it, without a clinical reason."), O("A unique diagnosis counts as identifying patient information", true, "Correct. Identifiers include a unique diagnosis or past medical history, not just name and age."), O("Students may take identified printouts home to finish assignments", false, "No information leaves the clinical site; printouts with identifiers are shredded before leaving.") ],
+  tp: "Confidentiality law named in the chapter: the Patient Care Partnership and HIPAA of 1996." });
+
+BANK.push({ cat: CA, type: "single", kt: ["chart"],
+  stem: "Which statement best describes what a legally protective record shows?",
+  opts: [ O("Individualized, goal-directed care based on the nursing assessment", true, "Correct. The record must show individualized care and describe exactly what happened to the patient."), O("Identical, standardized entries repeated for every patient on the unit", false, "Repetition without individualization does not limit liability; the record must fit this patient."), O("Brief entries that leave out events the staff found embarrassing", false, "Omitting events weakens the record; it must describe exactly what happened."), O("Entries written mainly to praise the team that provided the care", false, "The record documents care and responses, not team praise.") ],
+  tp: "Accurate documentation is one of the best defenses against legal claims over nursing care." });
+
+BANK.push({ cat: CB, type: "single", kt: ["electronic health record (EHR)"],
+  stem: "Which statement separates the EHR from the EMR?",
+  opts: [ O("The EHR travels between facilities; the EMR stays within one", true, "Correct. Travel is the key difference between the two records."), O("The EHR is kept on paper; the EMR is kept in a computer system", false, "Both are electronic; the difference is how far the data travels."), O("The EHR is entered by patients; the EMR is entered by the care team", false, "Both are entered by the care team; the patient-entered record is the PHR."), O("The EHR holds only medications; the EMR holds the full chart", false, "Both hold the same chart content as paper; neither is limited to medications.") ],
+  tp: "EHR = within plus between facilities. EMR = within one facility only." });
+
+BANK.push({ cat: CB, type: "single", kt: ["personal health record (PHR)"],
+  stem: "Which statement separates the PHR from the patient portal?",
+  opts: [ O("The patient adds data to the PHR but cannot add data to the portal", true, "Correct. Adding information is the PHR's job; the portal is view and message only."), O("The patient adds data to the portal but cannot add data to the PHR", false, "That reverses the two: the portal accepts no patient-entered information."), O("The PHR is run by the facility; the portal is run by the patient", false, "The PHR is patient-maintained; the portal is provided by the facility."), O("The PHR shows no results; the portal shows every provider note", false, "Portals do not show provider anecdotal notes or nurses' notes.") ],
+  tp: "Portal results appear only after the provider views and releases them, usually in 24 to 72 hours." });
+
+BANK.push({ cat: CB, type: "multi", kt: ["electronic health record (EHR)"],
+  stem: "Which of the following are gains of electronic records named in the chapter? Select all that apply.",
+  opts: [ O("Increased efficiency in documenting and finding information", true, "Correct. Efficiency is a stated gain of the EHR."), O("Increased consistency and accuracy across the entries made", true, "Correct. Consistency and accuracy are stated gains."), O("Decreased costs compared with maintaining paper records", true, "Correct. Decreased costs are a stated gain."), O("Legibility that paper handwriting often fails to provide", true, "Correct. Legibility is a stated gain of electronic entry."), O("Freedom from any need to train staff on the system used", false, "Staff need initial and refresher training; even experienced hires must learn a new system.") ],
+  tp: "Gains come with duties: software updates, refresher training, and learning the system's nomenclature." });
+
+BANK.push({ cat: CB, type: "single", kt: ["point-of-care charting"],
+  stem: "Which statement about point-of-care documentation is accurate?",
+  opts: [ O("Bedside entry makes current data available to the whole team", true, "Correct. Bedside charting saves time and makes current information immediately available."), O("Bedside entry delays data until the end-of-shift upload occurs", false, "POC entry is immediate; that immediacy is its stated advantage."), O("Bedside entry may only be done by the nurse who admitted the patient", false, "Access routes vary by facility; POC is not limited to the admitting nurse."), O("Bedside entry removes the need for any free-text narrative note", false, "Entries are often flow-sheet format plus free-text narrative, not flow sheet alone.") ],
+  tp: "Some POC systems auto-retrieve device data such as vital signs and file it in all relevant locations at once." });
+
+BANK.push({ cat: CB, type: "single", kt: ["patient portal"],
+  stem: "A patient asks why a new laboratory result is not yet visible in the portal. Which explanation is accurate?",
+  opts: [ O("Results appear after the provider views and releases them", true, "Correct. Results usually appear about 24 to 72 hours after they are available, once released."), O("Results appear in the portal the moment the laboratory runs them", false, "Release by the provider comes first; the result is not posted instantly."), O("Results never appear; the portal shows appointments only", false, "The portal shows labs, radiology, test results, and medication lists once released."), O("Results appear only if the patient types them in from a printout", false, "Patients cannot add their own information to the portal at all.") ],
+  tp: "Teach portal timing up front so a missing result is not read as a missing test." });
+
+BANK.push({ cat: CB, type: "multi", kt: ["HIPAA"],
+  stem: "Which of the following are safe computer documentation practices from Box 3.5? Select all that apply.",
+  opts: [ O("Log off before walking away from any terminal you used", true, "Correct. Never leave a terminal unattended while logged on."), O("Shred printouts and keep a log of every copy generated", true, "Correct. Printouts are protected, logged and tracked, and shredded per protocol."), O("Share your password with a trusted coworker during a busy shift", false, "Passwords are never shared; anything entered under your password is credited to you."), O("Correct an electronic error by protocol, dated and initialed", true, "Correct. Follow facility policy, add the correct information, and date and initial the entry."), O("Delete a wrong entry and leave the space blank for clarity", false, "Part of the permanent record is never deleted without an in-file explanation.") ],
+  tp: "Your password is your signature: every entry under it is credited to you." });
+
+BANK.push({ cat: CB, type: "single", kt: ["HIPAA"],
+  stem: "Which statement about faxing medical records is accurate?",
+  opts: [ O("HIPAA allows faxing between providers; verify the number first", true, "Correct. Verify the fax number with the recipient; some facilities preprogram frequent numbers."), O("HIPAA forbids faxing records between any two health facilities", false, "Faxing between providers and facilities is allowed under HIPAA with safeguards."), O("Fax numbers may be dialed from memory without any verification step", false, "Verification with the recipient is the stated safeguard against incorrect dialing."), O("Fax use is growing as electronic record systems continue to spread", false, "Fax is being used less as EHR systems spread; safeguards still apply where it is used.") ],
+  tp: "Password changes may be required at set intervals, such as every 90 days; some facilities use fingerprint scanners instead." });
+
+BANK.push({ cat: CB, type: "single", kt: ["electronic health record (EHR)"],
+  stem: "Which statement about accuracy in an electronic record is accurate?",
+  opts: [ O("Pick-list data are only as accurate as the nurse's system knowledge", true, "Correct. Accuracy depends on the nurse's familiarity with the system's nomenclature."), O("Pick-list data are accurate by design, whatever the nurse selects", false, "A wrong pick enters wrong data; the system cannot correct the nurse's choice."), O("Standardized phrases remove the need to learn system terminology", false, "Standardized phrases carry classifications the nurse must learn before relying on them."), O("Experienced nurses hired from other facilities need no system training", false, "Even experienced new hires must learn a new system.") ],
+  tp: "Informatics and terminology keep changing, so training is initial plus refresher, not one time." });
+
+BANK.push({ cat: CC, type: "single", kt: ["ISBAR"],
+  stem: "Which sequence gives the ISBAR steps in their correct order?",
+  opts: [ O("Introduction, Situation, Background, Assessment, Recommendation", true, "Correct. That is the ISBAR order, from who you are to what you are asking for."), O("Introduction, Background, Situation, Recommendation, Assessment", false, "Situation comes before Background, and Assessment comes before Recommendation."), O("Situation, Introduction, Assessment, Background, Recommendation", false, "Introduction comes first; you say who you are before the situation."), O("Introduction, Situation, Assessment, Recommendation, Background", false, "Background comes third, before Assessment, not last.") ],
+  tp: "End every ISBAR call with a clear, specific, answerable Recommendation." });
+
+BANK.push({ cat: CC, type: "single", kt: ["ISBARR"],
+  stem: "When does ISBAR become ISBARR?",
+  opts: [ O("When an order is received and must be read back to the provider", true, "Correct. The extra R is read back, used to confirm the order was heard accurately."), O("When a handoff happens between two nurses on the same unit", false, "A routine handoff uses ISBAR; the read back is added for orders received."), O("When the patient asks the nurse to repeat the discharge teaching", false, "Teaching confirmation is not the read back step of ISBARR."), O("When a second nurse witnesses the note that was charted", false, "Witnessing a note is not part of the ISBAR method at all.") ],
+  tp: "After the read back, chart the call, the information given, and the order received." });
+
+BANK.push({ cat: CC, type: "multi", kt: ["charting"],
+  stem: "Which of the following are named in the chapter as inappropriate documentation? Select all that apply.",
+  opts: [ O("Charting care in advance, before the care is provided", true, "Correct. Charting in advance can lead to malpractice claims."), O("Failing to record verbal orders that were received by phone", true, "Correct. Failing to record verbal orders is listed as inappropriate."), O("Charting the wrong time for an event that occurred on the unit", true, "Correct. Wrong times, and events never charted at all, are listed."), O("Documenting incorrect data about the patient's condition", true, "Correct. Incorrect data in the record is listed as inappropriate."), O("Charting a late entry and labeling it as facility policy directs", false, "A properly labeled late entry follows policy; it is not inappropriate documentation.") ],
+  tp: "Chart after care is provided, as soon and as often as necessary; never wait for end of shift on important changes." });
+
+BANK.push({ cat: CC, type: "single", kt: ["charting"],
+  stem: "How is an error in a handwritten entry corrected correctly?",
+  opts: [ O("Draw one line through it, identify it per policy, record it correctly", true, "Correct. A single line keeps the entry readable and the correction honest."), O("Erase it fully, then write the correct words over the erased area", false, "Erasing makes charting illegible and looks like an attempt to hide information."), O("Cover it with correction fluid, then write the correction on top", false, "Correction fluid is never used on the record; it suggests defacing it."), O("Scratch it out until the original words cannot be read at all", false, "Scratching out destroys legibility and looks like hiding information.") ],
+  tp: "On paper: permanent black ink only, since ink cannot be erased and black photocopies most legibly." });
+
+BANK.push({ cat: CC, type: "single", kt: ["charting"],
+  stem: "Which entry follows the chapter's rule for objective documentation?",
+  opts: [ O("A note describing a white metal ring with a clear stone in it", true, "Correct. Describe items as seen; the chapter's example avoids calling it a diamond ring."), O("A note recording that the patient owns a valuable diamond ring", false, "That assumes what the item is; the rule is to describe what is seen."), O("A note stating the patient probably hid the ring before surgery", false, "Speculation, guessing, and assuming are prohibited in the record."), O("A note quoting what a visitor guessed the ring was worth", false, "A visitor's guess is not an objective description by the nurse.") ],
+  tp: "Chart only what you hear, see, feel, or smell, and use direct quotes when appropriate." });
+
+BANK.push({ cat: CC, type: "single", kt: ["charting"],
+  stem: "Why are phrases such as 'status unchanged' and 'had good day' unacceptable?",
+  opts: [ O("They are too general to carry the patient's actual condition", true, "Correct. Empty phrases are delete-or-overlook traps that document nothing specific."), O("They are too technical for other members of the care team", false, "Their flaw is vagueness, not technical language."), O("They use abbreviations that appear on the list to avoid", false, "These are plain words; the problem is that they say nothing about the patient."), O("They belong in the incident report rather than in the notes", false, "Incident reports cover unusual events; these phrases fail as notes, not as reports.") ],
+  tp: "Be specific or do not write it: notes must be clear, concise, complete, and accurate." });
+
+BANK.push({ cat: CC, type: "single", kt: ["charting"],
+  stem: "Ordered care was not given because the patient was off the unit for a test. What must the record show?",
+  opts: [ O("The ordered care, with the reason it was not given at that time", true, "Correct. Chart all ordered care as given, or explain the deviation, such as NPO, off the unit, or refused."), O("The ordered care, charted as given so the record stays complete", false, "Charting care that was not given is false documentation."), O("Nothing at all, since the care will be given later in the shift", false, "An unexplained omission leaves the record showing care that never happened on time."), O("A note blaming the transport team for taking the patient away", false, "Critical comments about others do not belong in the record; record the facts.") ],
+  tp: "Also chart departures and returns: time plus method of transportation when a patient leaves the unit." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Why must the abbreviation 'BS' be handled with caution in charting?",
+  opts: [ O("It can stand for breath sounds, bowel sounds, or blood sugar", true, "Correct. One abbreviation with three meanings is the chapter's own error example."), O("It appears on every facility list of approved charting terms", false, "Ambiguous abbreviations are the ones facilities restrict, not approve freely."), O("It is a texting abbreviation borrowed from smartphone messages", false, "BS is a clinical abbreviation; its problem is multiple clinical meanings."), O("It can only be decoded by the provider who wrote the order", false, "Any reader can misread it; that is exactly why it is risky.") ],
+  tp: "When unsure of an abbreviation, use the complete word; texting abbreviations never appear in a patient record." });
+
+BANK.push({ cat: CD, type: "single", kt: ["traditional (block) chart"],
+  stem: "Which statement contrasts the traditional chart with the POMR correctly?",
+  opts: [ O("The traditional chart sorts by section; the POMR sorts by problem", true, "Correct. Section versus problem is the chapter's contrast anchor."), O("The traditional chart sorts by problem; the POMR sorts by section", false, "That reverses the two systems."), O("Both sort by problem, but only the POMR is kept electronically", false, "The traditional chart is organized by sections or blocks, not problems."), O("Both sort by section, but only the traditional chart has notes", false, "The POMR has shared progress notes organized around problems.") ],
+  tp: "In the POMR, all disciplines chart on the same progress notes to enhance communication." });
+
+BANK.push({ cat: CD, type: "multi", kt: ["problem-oriented medical record (POMR)"],
+  stem: "Which of the following are principal sections of the POMR? Select all that apply.",
+  opts: [ O("Database of history, examination, and diagnostic test results", true, "Correct. The database is used to identify and prioritize problems."), O("Problem list holding the patient's identified health problems", true, "Correct. The master problem list is a principal section."), O("Care plan developed from the problems that were identified", true, "Correct. All disciplines develop the care plan from the problem list."), O("Progress notes shared by every discipline caring for the patient", true, "Correct. Shared progress notes are a principal section."), O("Incident log recording every unusual event on the hospital unit", false, "Incident reports are separate confidential forms, not a POMR section.") ],
+  tp: "Four POMR sections: database, problem list, care plan, progress notes." });
+
+BANK.push({ cat: CD, type: "single", kt: ["SOAPIER"],
+  stem: "In a SOAPIER note, which letter holds what only the patient can provide?",
+  opts: [ O("S, the subjective data the patient states or feels", true, "Correct. Only the patient can provide subjective data."), O("O, the objective data the nurse measures directly", false, "Objective data are what the nurse can measure or factually describe."), O("A, the assessment analyzing the cause of the problem", false, "Assessment is the nurse's analysis, not the patient's own report."), O("E, the evaluation appraising the response to the plan", false, "Evaluation appraises response and effectiveness; it is not patient-only data.") ],
+  tp: "Never swap S and O: S is stated or felt by the patient, O is measured or described by the nurse." });
+
+BANK.push({ cat: CD, type: "single", kt: ["SOAPIER"],
+  stem: "How does SOAPE differ from SOAPIER?",
+  opts: [ O("Intervention folds into Plan, and Revision folds into Evaluation", true, "Correct. SOAPE is the briefer adaptation of the same shape."), O("Intervention folds into Assessment, and Revision folds into Plan", false, "The folds are Intervention into Plan and Revision into Evaluation."), O("Subjective folds into Objective, and Assessment folds into Plan", false, "S and O stay separate in both formats; only I and R fold."), O("Evaluation folds into Revision, and Plan folds into Assessment", false, "Evaluation remains its own letter in SOAPE and carries the Revision inside it.") ],
+  tp: "Only the parts of SOAPIER needed for completeness are used for a specific problem's note." });
+
+BANK.push({ cat: CD, type: "single", kt: ["DARE"],
+  stem: "In a DARE focus note, where is a medication administration documented?",
+  opts: [ O("In the Action step, with drug, dose, route, and site stated", true, "Correct. The chapter's epigastric pain example records the analgesic in Action."), O("In the Data step, with the patient's pain rating and report", false, "Data holds the quoted pain report and scale rating, not the drug given."), O("In the Response step, with the patient's words after the dose", false, "Response holds the evaluation, such as the patient saying the pain is gone."), O("In the Education step, with teaching about the drug's effects", false, "Education holds patient teaching; the administration itself is Action.") ],
+  tp: "DARE mapping: Data = assessment, Action = planning plus implementation, Response = evaluation." });
+
+BANK.push({ cat: CD, type: "single", kt: ["charting by exception (CBE)"],
+  stem: "Which statement about charting by exception is accurate?",
+  opts: [ O("A complete baseline is charted when the shift begins", true, "Correct. Physical assessments, observations, vitals, and IV data form the shift-start baseline."), O("A complete baseline is charted when the shift is ending", false, "The baseline opens the shift; exceptions only make sense against it."), O("No baseline is needed because exceptions describe the patient fully", false, "Without the baseline, an exception has no normal standard to stand against."), O("The baseline replaces the need to chart any change in condition", false, "Changes in condition are exactly the exceptions that must be charted.") ],
+  tp: "Each shift, evaluate each patient problem at least once; a resolved problem leaves the daily documentation." });
+
+BANK.push({ cat: CD, type: "single", kt: ["PIE"],
+  stem: "Which statement separates PIE from SOAPE by origin?",
+  opts: [ O("PIE arose from the nursing process; SOAPE from the medical model", true, "Correct. Same problem-solving shape, different origin."), O("PIE arose from the medical model; SOAPE from the nursing process", false, "That reverses the origins of the two formats."), O("Both arose from the medical model used in problem-oriented records", false, "SOAPE came from the medical model; PIE came from the nursing process."), O("Both arose from focus charting as developed by staff nurses", false, "Focus charting produced DARE, not PIE or SOAPE.") ],
+  tp: "APIE tracks the nursing-process steps by placing Assessment, with S and O data, in front of PIE." });
+
+BANK.push({ cat: CD, type: "single", kt: ["narrative charting"],
+  stem: "Which set completes a narrative note correctly?",
+  opts: [ O("Data on the problem, contacts made, care given, patient response", true, "Correct. A complete narrative carries data, consultation, implementation, and evaluation."), O("Data on the problem, care given, charges posted, patient response", false, "Charges are not part of a narrative note's required content."), O("Care given, orders copied, Kardex updated, patient response", false, "Copying orders and updating the Kardex do not substitute for the note's data and care."), O("Data on the problem, care planned for tomorrow, unit census noted", false, "The note covers today's care and response, not tomorrow's plan or the census.") ],
+  tp: "Never file a narrative note that stops at care given; the patient's response closes the note." });
+
+BANK.push({ cat: CE, type: "single", kt: ["Kardex"],
+  stem: "Which statement describes the Kardex correctly?",
+  opts: [ O("It consolidates orders and care needs in one concise place", true, "Correct. It is kept at the nursing station or built into the EHR for quick reference."), O("It replaces the nursing care plan as the record of proposed care", false, "The care plan is a separate consolidator; the Kardex is the quick reference."), O("It is completed once at admission and never changed afterward", false, "The Kardex is updated frequently as orders and needs change."), O("It holds the patient's own account of symptoms in quoted words", false, "Quoted patient words belong in the notes, not on the Kardex card.") ],
+  tp: "Nursing notes must correlate with the medical orders, the Kardex information, and the care plan." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about the discharge summary form is accurate?",
+  opts: [ O("It is always given to the patient and, or the family", true, "Correct. It gives written instructions they can refer back to."), O("It is given only when the patient asks for written instructions", false, "It must always be given; a request is not required."), O("It stays in the record and is never copied for anyone else", false, "Copies go to home health or extended-care facilities, and one copy stays with the record."), O("It is prepared only after the patient has left the facility", false, "Discharge planning begins at admission and the plan is revised as the condition changes.") ],
+  tp: "Involve the patient and family in discharge planning itself, not only in receiving the form." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "On this chapter's acuity scale, which patient is rated level 1?",
+  opts: [ O("A patient back from surgery with multisystem problems", true, "Correct. As printed in this book, level 1 is high acuity."), O("A patient awaiting discharge after a successful recovery", false, "That patient is the chapter's example of level 5, low acuity."), O("A patient who needs a bath and a linen change this shift", false, "Routine ADL needs do not match the high-acuity example given."), O("A patient whose only need is teaching about a new portal", false, "Teaching needs alone do not make the chapter's level 1 example.") ],
+  tp: "As printed: 1 = high, 5 = low. The direction is opposite many other scales; do not flip it." });
+
+BANK.push({ cat: CE, type: "multi", kt: ["incident report"],
+  stem: "Which of the following events call for an incident report? Select all that apply.",
+  opts: [ O("A medication that was ordered was neglected and not given", true, "Correct. A medication or treatment neglected is a named trigger."), O("An incorrect dose of a medication was given to a patient", true, "Correct. An incorrect dose given is a named trigger."), O("A visitor was injured in an unusual event on the unit", true, "Correct. Injuries to a patient, a visitor, or personnel are named triggers."), O("A nurse was injured while performing a routine care task", true, "Correct. Injuries to hospital personnel are documented the same way, with facts only."), O("A patient asked a question the nurse could not answer at once", false, "An unanswered question is not an unusual event requiring a report.") ],
+  tp: "The report's purpose is prevention: risk managers and unit managers track incidents to stop repeats." });
+
+BANK.push({ cat: CE, type: "single", kt: ["incident report"],
+  stem: "Which statement about the incident report and the patient's chart is accurate?",
+  opts: [ O("The chart records facts and care; the report is never named there", true, "Correct. Mentioning the report makes it easier for an attorney to request it for a court case."), O("The chart names the report so the whole team knows it was filed", false, "Naming the report in the notes is the exact error the chapter warns against."), O("The report replaces the chart note, so no chart entry is needed", false, "The incident's facts and the care given still belong in the patient's chart."), O("The report is filed inside the chart as part of the medical record", false, "The form is marked confidential and not part of the medical record.") ],
+  tp: "If the incident relates to patient care, the sheet stays on the record 24 hours, then goes to Risk Management." });
+
+BANK.push({ cat: CE, type: "single", kt: ["incident report"],
+  stem: "Which chart entry follows the chapter's proper-entry rule after a patient is found on the floor?",
+  opts: [ O("Found on floor in a sitting position beside the table at 1410", true, "Correct. It records only what was observed, with the time."), O("Apparently missed the chair when trying to move and sit down", false, "That is the chapter's wrong example: it speculates about why the fall happened."), O("Fell because the call light was not answered quickly enough", false, "Assigning a cause that was not observed adds liability and speculation."), O("Had a bad fall; incident report completed and sent to risk office", false, "It editorializes the event and names the incident report in the chart.") ],
+  tp: "Proper versus incorrect is observed versus assumed: chart findings, assessment, provider notified, and orders received." });
+
+BANK.push({ cat: CE, type: "single", kt: ["clinical (critical) pathway"],
+  stem: "Which patients fit a clinical (critical) pathway best?",
+  opts: [ O("Case types that occur in high volume and are predictable", true, "Correct. Pathways are built for high-volume, predictable case types."), O("Case types that are rare and follow no predictable course", false, "Rare, unpredictable cases do not fit a standardized day-by-day plan."), O("Every admitted patient, whatever the diagnosis or condition", false, "Not every patient belongs on a pathway."), O("Only patients whose care will be charted by exception that day", false, "CBE is often used with pathways, but volume and predictability decide fit.") ],
+  tp: "The pathway replaces other nursing forms such as the nursing care plan for that case type." });
+
+BANK.push({ cat: CE, type: "single", kt: ["clinical (critical) pathway"],
+  stem: "What is a variance in pathway documentation?",
+  opts: [ O("An anticipated intervention not provided as it was projected", true, "Correct. That deviation is exactly what must be documented."), O("A disagreement between two nurses about the plan for the day", false, "A variance is a care deviation from the pathway, not a staff disagreement."), O("A change in the patient's room assignment during the hospital stay", false, "Room changes are logistics, not pathway variances."), O("A difference between the printed pathway and another facility's form", false, "Forms vary among institutions; a variance is this patient's care deviating from the projection.") ],
+  tp: "Compare today's care against today's pathway line; anything not done as projected gets documented." });
+
+BANK.push({ cat: CF, type: "multi", kt: [],
+  stem: "Which of the following must be documented in home health care? Select all that apply.",
+  opts: [ O("The patient's eligibility for the home care services provided", true, "Correct. Eligibility must be assessed thoroughly and documented."), O("Procedures, treatments, and medications in detail, with responses", true, "Correct. Home care is documented in detail, including responses."), O("Patient education given and the patient's demonstration of learning", true, "Correct. Education and the return demonstration of learning are required."), O("Coordination of services by all members of the care team", true, "Correct. The record alone must show what care was rendered in the home."), O("Evidence that regulations for home care were complied with", true, "Correct. Evidence of compliance with regulations is on the must-document list."), O("The nurse's personal impressions of the family's household habits", false, "Personal impressions are not on the must-document list; the listed items are.") ],
+  tp: "Home-care documentation provides quality control and the justification for reimbursement from Medicare, Medicaid, and insurers." });
+
+BANK.push({ cat: CF, type: "single", kt: ["minimum data set (MDS)"],
+  stem: "Which statement about long-term care documentation is accurate?",
+  opts: [ O("OBRA of 1987 set standards built around the minimum data set", true, "Correct. OBRA set requirements for resident assessments, individualized care plans, and provider qualifications."), O("OBRA of 1996 set standards built around the patient portal system", false, "OBRA is 1987 and concerns long-term care; 1996 is HIPAA's year."), O("Each facility alone decides how often resident entries are made", false, "Each state's department of health governs how often required entries are made."), O("Residents are charted as patients because the settings are similar", false, "In long-term care the person is a resident, often for the rest of their life; the word itself is testable.") ],
+  tp: "Long-term care management hinges on justifying nursing care through sound documentation of services rendered." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "Which statement describes the planning process in long-term care?",
+  opts: [ O("Planning runs through resident assessment protocols from the MDS", true, "Correct. The MDS is the assessment; resident assessment protocols drive planning."), O("Planning runs through clinical pathways written for hospital stays", false, "Pathways are acute-care tools for a projected hospital length of stay."), O("Planning runs through the Kardex kept at the nursing station", false, "The Kardex is a quick-reference card, not the regulated long-term care planning process."), O("Planning runs through focus notes written only by the charge nurse", false, "The long-term care record is multidisciplinary, not one nurse's focus notes.") ],
+  tp: "Nurses, UAP, social workers, physical therapists, and dietitians communicate through the regulated long-term care record." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "Why does home health documentation carry extra weight compared with hospital documentation?",
+  opts: [ O("A narrower circle of people witnesses most of the care given", true, "Correct. In the home, the patient, family, and direct provider witness most care, so the record must carry it."), O("Home care patients are never eligible for insurance reimbursement", false, "Home documentation is exactly what justifies reimbursement from Medicare, Medicaid, and private insurers."), O("Home care records are exempt from confidentiality requirements", false, "Confidentiality rules apply in the home as elsewhere."), O("Home care is documented only when a problem or incident occurs", false, "Every service must be documented for payment, including instructions and observation visits.") ],
+  tp: "The nurse is the pivotal person in documenting delivery of home health care." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 3: Documentation - Definition Practice Test</h1>';
+  h += '<div class="sub">Definition practice test | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

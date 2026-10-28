@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 11 - Admission, Transfer, and Discharge - Definition Practice Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Admission Reactions, Identity and Culture";
+var CB = "Admitting Process, Rights and Room Preparation";
+var CC = "Admission Assessment and Skill 11.1";
+var CD = "Transfer and Continuity of Care";
+var CE = "Discharge Planning, Referrals and Home Health";
+var CF = "Discharge Procedure and AMA";
+var CATS = [CA,CB,CC,CD,CE,CF];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 9,
+  "types": {
+   "single": 7,
+   "multi": 2
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 7,
+  "types": {
+   "single": 6,
+   "multi": 1
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which statement accurately describes the most common reaction patients have on admission?",
+  opts: [ O("Fear of the unknown, linked to the safety need, is the most common reaction on admission", true, "Correct. The guide names fear of the unknown as the most common reaction, tied to Maslow safety."), O("Loneliness, linked to the esteem need, is the most common reaction on admission each time", false, "Loneliness is a common reaction, but it is not named the most common and it tracks belonging needs."), O("Loss of identity, linked to hunger needs, is the most common reaction on admission today", false, "Loss of identity threatens esteem, love, and belonging; it is not the most common reaction."), O("Disorientation, linked to the safety need, is the most common reaction on admission here", false, "Disorientation is a separate reaction: confusion about place, time, and identity.") ],
+  tp: "Fear of the unknown is the MOST common admission reaction; simple explanations and direct answers restore a sense of control." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A patient says the wrist band makes her feel like a number instead of a person. Which concept does this statement illustrate?",
+  opts: [ O("Loss of identity, threatening esteem, love, and belonging needs during the admission", true, "Correct. The guide ties the ID band reducing a patient to a name and number to loss of identity."), O("Separation anxiety, caused by being apart from familiar people and familiar surroundings", false, "Separation anxiety is about being separated from familiar surroundings and significant people."), O("Relocation stress, caused by moving an older adult from one unit to another unit nearby", false, "Relocation stress describes confusion and upset from moving, especially in older adults."), O("Fear of the unknown, caused by not knowing what procedure will happen next in the stay", false, "That reaction is about not knowing what lies ahead, not about feeling reduced to a number.") ],
+  tp: "Explain the ID band as a necessary safety and positive-identification step; learn the patient's name quickly." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which description matches disorientation as the guide presents it?",
+  opts: [ O("Mental confusion with inadequate or incorrect perception of place, time, and identity", true, "Correct. That is the guide wording for disorientation."), O("Fear and apprehension caused by separation from familiar surroundings and loved people", false, "That wording describes separation anxiety, not disorientation."), O("Feeling reduced to a name and number rather than being treated as a unique individual", false, "That wording describes loss of identity, not disorientation."), O("Worry about a health problem and about what the final outcome of treatment might be", false, "That is general concern on admission, not the specific confusion pattern of disorientation.") ],
+  tp: "Disorientation = incorrect perception of place, time, and identity." });
+
+BANK.push({ cat: CA, type: "multi", kt: [],
+  stem: "Which statements about separation anxiety are accurate? Select all that apply.",
+  opts: [ O("In young children it is generally expressed as crying during the separation period", true, "Correct. The guide states children generally express separation anxiety as crying."), O("In adults it can appear as being withdrawn or as being very talkative with staff", true, "Correct. Adults may be withdrawn or very talkative."), O("Parents should be encouraged to stay with a hospitalized child to prevent it", true, "Correct. Parental presence prevents separation anxiety and gives the child security."), O("It occurs only in young children and never in adults or in older adult patients", false, "The guide states adults and older adults often have this reaction too."), O("It is best treated by limiting visits so the patient adjusts to the facility alone", false, "The guide says the company of friends and loved ones is the best remedy, and visiting is encouraged.") ],
+  tp: "Separation anxiety spans all ages; family presence and visiting are the chapter remedy." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which statement accurately defines empathy in the admission context?",
+  opts: [ O("The ability to recognize and share the emotions and state of mind of another person", true, "Correct. That is the guide definition of empathy."), O("The ability to complete admission routines quickly without speaking to the patient", false, "Efficient routines matter only when paired with concern; speed alone is not empathy."), O("The ability to answer every family question before the patient has finished asking it", false, "Rushing answers is specifically discouraged with older patients; it is not empathy."), O("The ability to keep a professional distance by avoiding any warmth toward the patient", false, "The guide calls for a warm, caring attitude, courtesy, and empathy.") ],
+  tp: "A warm, caring attitude with courtesy and empathy reduces the severity of common admission reactions." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which form of address follows the guide rule for an adult patient?",
+  opts: [ O("Mr., Mrs., Ms., or Miss with the last name, unless the patient permits another form", true, "Correct. Adults are addressed by title and last name unless the patient grants permission otherwise."), O("The first name only, because it helps every adult patient feel relaxed and at home", false, "A first name is used only at the patient's request, not by default."), O("A familiar nickname from the chart, because it shows the nurse read the record first", false, "The guide directs staff to use the surname unless the patient directs otherwise."), O("Terms such as Honey or Pops, because they show warmth to an anxious adult patient", false, "Terms of endearment are never appropriate, per the guide trap list.") ],
+  tp: "Title + last name by default; first name only at the patient's request; terms of endearment never." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "Which statement about older adults on admission is accurate?",
+  opts: [ O("A change of environment can cause disorientation or altered sleep-wake patterns", true, "Correct. The guide lists both effects of the environment and routine change."), O("Family members should answer questions for them so the admission moves more quickly", false, "The guide says wait for the patient to answer rather than letting family answer for them."), O("Questions should be asked quickly because older adults process information instantly", false, "The guide says converse slowly and clearly because information may take longer to process."), O("Vision and hearing limits make older adults less likely to feel agitated or fearful", false, "The guide says those limits make older adults MORE likely to become agitated or fearful.") ],
+  tp: "Older adults: speak slowly and clearly, do not rush, let the patient answer, involve them in the plan of care." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A patient who does not speak English arrives for admission unaccompanied by any bilingual family member. Which statement is accurate?",
+  opts: [ O("An interpreter should be used for the admission process for this patient", true, "Correct. The guide states an interpreter should be used in exactly this situation."), O("Admission paperwork should proceed in English and be explained at discharge", false, "Waiting until discharge leaves the patient uninformed during the whole admission."), O("A bilingual housekeeper should be pulled in to interpret the medical content", false, "The guide calls for an interpreter, not an ad hoc staff substitute."), O("The patient should be asked to bring a family interpreter back the next day", false, "The guide directs use of an interpreter at admission when no bilingual family member is present.") ],
+  tp: "No English + no bilingual family member on admission = use an interpreter." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which set of information does the admitting department representative obtain?",
+  opts: [ O("Demographic, insurance, social security, and emergency contact information", true, "Correct. Those are the admitting department items named in the guide."), O("Vital signs, height, weight, and a full review of every body system assessed", false, "Those belong to the initial nursing assessment on the unit, not the admitting department."), O("Medication orders, laboratory orders, and the plan of care for the first day", false, "Orders and care planning are provider and RN work, not admitting-department intake."), O("Diet orders, activity orders, and follow-up appointments for after discharge", false, "Those are discharge-planning items, not what the admitting department collects.") ],
+  tp: "Admitting department: demographics, insurance, social security number, emergency contacts — with privacy maintained." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which document must hospitals present to the patient or legal guardian at the time of admission?",
+  opts: [ O("The Patient's Bill of Rights, as required by The Joint Commission and Medicare", true, "Correct. TJC and Medicare/Medicaid Services require presentation at admission."), O("The discharge summary, as required by The Joint Commission and Medicare rules", false, "A discharge summary is part of discharge planning, not an admission presentation."), O("The interagency transfer form, as required by The Joint Commission at admission", false, "That form is completed for a transfer to another facility, not at routine admission."), O("The AMA release form, as required by The Joint Commission for every admission", false, "The AMA form is used only when a patient leaves against medical advice.") ],
+  tp: "Patient's Bill of Rights is presented at admission; the patient has the right to dignity, courtesy, and respect." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "What does the Patient Self-Determination Act of 1991 address?",
+  opts: [ O("The right to accept or refuse medical treatment and advance directive information", true, "Correct. The guide states the 1991 Act addresses exactly those two areas."), O("The right to receive a private room and to choose the members of the care team", false, "Room choice and team choice are not what the Act addresses."), O("The right to transfer to any facility and to have the transfer paid in full", false, "Transfer rights and payment are not the subject of this Act."), O("The right to leave at any hour and to have all records destroyed on request", false, "Leaving AMA is a separate issue; the Act covers treatment choice and advance directives.") ],
+  tp: "PSDA 1991: accept or refuse treatment + advance directive information; Medicare/Medicaid hospitals must provide it." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which statement about HIPAA at admission is accurate?",
+  opts: [ O("Information is presented on admission and receipt is verified by a signature", true, "Correct. The guide states HIPAA information is given on admission and receipt is signed for."), O("Information is presented at discharge and receipt is verified by a signature", false, "HIPAA information in this chapter is an admission item, not a discharge item."), O("Information is mailed after discharge and no signature of receipt is required", false, "The guide requires presentation on admission with a verifying signature."), O("Information is posted in the lobby and patients are assumed to have read it", false, "Posting alone does not meet the guide's admission presentation and signature rule.") ],
+  tp: "This chapter's HIPAA points are admission points: present the information, verify receipt by signature, protect privacy." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "Which description matches telephone admission?",
+  opts: [ O("An admitting office calls the patient at home, usually the day before admission", true, "Correct. That is the guide description of telephone admission."), O("A nurse calls the patient at home, usually one week after a surgical procedure", false, "The call happens before admission, usually the day before, from the admitting office."), O("An admitting office calls the family at work, usually on the morning of discharge", false, "The call is to the patient at home before admission, not to family at discharge."), O("A provider calls the patient at home, usually the day after a hospital admission", false, "The timing and caller are both different in the guide description.") ],
+  tp: "Telephone admission: records begun by phone the day before; verify records and ID band with the patient on arrival." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "How should the bed be positioned for a patient who will arrive on a stretcher?",
+  opts: [ O("In the high position, ready for the stretcher arrival to the prepared room", true, "Correct. High position for a stretcher arrival."), O("In the low position, ready for the stretcher arrival to the prepared room", false, "Low position is for a patient arriving by wheelchair or walking."), O("In the flat position, ready for the stretcher arrival to the prepared room", false, "The guide specifies high position, not flat, for stretcher arrivals."), O("In the raised-head position, ready for the stretcher arrival to the room", false, "Head elevation is not the arrival rule; bed height is.") ],
+  tp: "Bed trap: HIGH for stretcher, LOW for wheelchair or walking arrivals." });
+
+BANK.push({ cat: CB, type: "multi", kt: [],
+  stem: "Which items belong in the Box 11.1 room orientation? Select all that apply.",
+  opts: [ O("How to call the nurse from the bed and from the bathroom area", true, "Correct. Box 11.1 includes calling from bed and bathroom."), O("How to adjust the bed and the lights in the patient room", true, "Correct. Box 11.1 includes bed and light adjustment."), O("The location of shower and bathroom facilities for the patient", true, "Correct. Box 11.1 includes shower and bathroom location."), O("How to operate the television provided in the patient room", true, "Correct. Box 11.1 includes television operation."), O("How to change the medication orders written by the provider", false, "Patients are never oriented to changing provider orders; that is not in Box 11.1.") ],
+  tp: "Box 11.1: policies, call system, bed/lights, intercom, shower/bathroom, television, lounge, room-to-station relationship." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A patient arrives from the emergency department to a special care unit. Who usually provides the admitting office with the necessary information?",
+  opts: [ O("A family member, usually the next of kin or the health care representative", true, "Correct. The guide names the next of kin or health care representative."), O("The patient, even when the patient is in critical condition on arrival", false, "In these situations the family member or representative provides the information."), O("The ambulance driver, using the run report completed during the transport", false, "The guide assigns this to family/next of kin or the representative, not the driver."), O("The receiving nurse, using the report received from the emergency nurse", false, "The receiving nurse confers for continuity, but the admitting office information comes from family.") ],
+  tp: "ED admissions may go directly to SCU, ICU, CCU, or burn unit; family/next of kin supplies admitting information." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "By when must the RN admission assessment be completed, per The Joint Commission requirement in the guide?",
+  opts: [ O("Within 24 hours of admission, with data collection aspects delegable to the LPN", true, "Correct. TJC requires the RN admission assessment within 24 hours; aspects of data collection may be delegated."), O("Within 4 hours of admission, with data collection aspects delegable to the LPN", false, "The guide timeframe is 24 hours, not 4 hours."), O("Within 48 hours of admission, with data collection aspects delegable to the LPN", false, "The guide timeframe is 24 hours, not 48 hours."), O("Within 72 hours of admission, with data collection aspects delegable to the LPN", false, "The guide timeframe is 24 hours, not 72 hours.") ],
+  tp: "RN owns the admission assessment within 24 hours; the LPN/LVN may be delegated aspects of data collection only." });
+
+BANK.push({ cat: CC, type: "multi", kt: [],
+  stem: "Which items are part of the initial assessment and health history on admission? Select all that apply.",
+  opts: [ O("Level of consciousness, vital signs, height, weight, and review of body systems", true, "Correct. Those are the initial assessment items named in the guide."), O("Reason for admission, illnesses, surgical procedures, and prior hospitalizations", true, "Correct. Those are health history items named in the guide."), O("Medications, allergies, eating habits, urinary and bowel patterns, sleep routine", true, "Correct. Those history items are all listed in the guide."), O("Language spoken, family members, interests, ADL ability, and patient occupation", true, "Correct. The guide adds language, family, interests, ADL ability, and occupation."), O("Stock portfolio, credit history, and the patient's preferred discharge vehicle", false, "Financial portfolio and vehicle preference are not admission history items in the guide.") ],
+  tp: "History covers reason, illnesses/surgery, meds, allergies, eating, elimination, sleep, activity, language, family, ADLs, occupation." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Which set lists the common patient problems for a newly admitted patient in the guide care plan?",
+  opts: [ O("Anxiousness, Potential for Injury, Insufficient Knowledge, and Fearfulness listed", true, "Correct. Those four are the common newly-admitted problems in the guide."), O("Acute Pain, Impaired Mobility, Fluid Overload, and Risk for Infection listed here", false, "Those may fit other patients, but they are not the guide's newly-admitted set."), O("Caregiver Strain, Social Isolation, Hopelessness, and Spiritual Distress listed", false, "Those are not the four problems the guide names for a newly admitted patient."), O("Constipation, Insomnia, Nausea, and Impaired Skin Integrity listed for admission", false, "Those are not the four problems the guide names for a newly admitted patient.") ],
+  tp: "New-admission problems: Anxiousness, Potential for Injury, Insufficient Knowledge Regarding Admission Process/Illness, Fearfulness." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "In Skill 11.1, which action opens and also closes the admission sequence at steps 1 and 15?",
+  opts: [ O("Performing hand hygiene at the start and again near the end of the sequence", true, "Correct. Hand hygiene is step 1 and step 15, reducing spread of microorganisms."), O("Checking the ID band at the start and again near the end of the sequence", false, "ID band checking is step 4, not the opening and closing action."), O("Recording information at the start and again near the end of the sequence", false, "Recording is step 16, after the second hand hygiene."), O("Assessing immediate needs at the start and again near the end of the sequence", false, "Assessing immediate needs is step 5, not steps 1 and 15.") ],
+  tp: "Skill 11.1: hand hygiene opens (step 1) and closes (step 15) the sequence." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "What is the Skill 11.1 safety setup after the assessment, at step 12?",
+  opts: [ O("Bed in low position, side rails up, and call light within easy reach of patient", true, "Correct. That is the step 12 safety setup, except side rails in long-term care differ."), O("Bed in high position, side rails down, and call light within easy reach of patient", false, "High bed and rails down reverse the safety step."), O("Bed in low position, side rails down, and call light placed at the nurses station", false, "Rails are up and the call light stays within the patient's reach."), O("Bed in high position, side rails up, and call light placed on the bedside table", false, "The bed is placed low, not high, for the safety step.") ],
+  tp: "Step 12 safety: bed low, rails up (unless LTC admission), call light within easy reach." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Which statement about patient valuables and medications on admission is accurate?",
+  opts: [ O("Disposition of valuables is documented, and home medications are sent home if able", true, "Correct. Documentation is required, and brought-in medications are sent home if possible."), O("Disposition of valuables is kept verbal, and home medications are left at the bedside", false, "Documentation in the medical record is required; medications are not left at the bedside."), O("Disposition of valuables is optional, and home medications are thrown away on arrival", false, "Loss carries serious legal implications; medications are sent home or locked up, not discarded."), O("Disposition of valuables is family work, and home medications are given to visitors", false, "The facility follows its policy and documents disposition; visitors do not take custody by default.") ],
+  tp: "Valuables: follow facility policy, document disposition in the record; home meds sent home or locked in a designated area." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Where are invasive procedures such as blood draws and IV starts generally performed best for a young child?",
+  opts: [ O("In a treatment room, so the child's own room stays perceived as a safe area", true, "Correct. The guide states invasive procedures are performed best in a treatment room."), O("In the child's own room, so the child stays in the most familiar area nearby", false, "Doing them in the room makes the room feel unsafe; the treatment room is preferred."), O("In the hallway outside the room, so the child can return to bed more quickly", false, "The hallway is not the guide location for invasive procedures in children."), O("In the parents' waiting area, so the parents can hold the child during the task", false, "Parents support the child, but the procedure location in the guide is the treatment room.") ],
+  tp: "For children: treatment room for invasive procedures, room stays safe; parents are the most reliable information source." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Which statement accurately describes an emergency admission onto the nursing unit?",
+  opts: [ O("Immediate treatment takes priority, and routine admission steps follow when able", true, "Correct. Box 11.2 puts treatment first; routine procedures proceed when the condition allows."), O("Routine admission steps take priority, and treatment follows the full paperwork", false, "Box 11.2 reverses this: treatment takes priority over routine admission procedures."), O("The temporary ID is removed first, and routine admission steps follow when able", false, "The patient arrives WITH a temporary ID bracelet; it is not removed as a first step."), O("Family stays in the room during assessment, and routine steps follow when able", false, "Family is asked to wait in the lounge during assessment and initial treatment, then may visit.") ],
+  tp: "Emergency admission: treatment first, read the ED record, confer with the ED nurse, routine steps when the condition allows." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which description matches an intraagency transfer?",
+  opts: [ O("Moving a patient from one unit to another unit within the same hospital facility", true, "Correct. Intraagency is unit-to-unit within the same facility."), O("Moving a patient from one health care facility to another health care facility", false, "That is an interagency transfer."), O("Moving a patient from a hospital to the patient's own home for home health care", false, "That is a discharge to home, not an intraagency transfer."), O("Moving a patient from an outpatient clinic to a same-day surgery waiting area", false, "The guide types are within-facility unit moves and between-facility moves.") ],
+  tp: "Intra = within the same facility; Inter = between facilities." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "What must be in place to begin any transfer process?",
+  opts: [ O("An order from the health care provider for the transfer of the patient", true, "Correct. A provider order is necessary to begin the transfer process."), O("A request from the patient's family for the transfer of the patient", false, "Family requests can prompt a room change discussion, but the process begins with a provider order."), O("A note from the charge nurse for the transfer of the patient that day", false, "A nursing note does not substitute for the provider order the guide requires."), O("A call from the receiving unit for the transfer of the patient to them", false, "The receiving unit is notified during the process; the order starts it.") ],
+  tp: "No provider order, no transfer process." });
+
+BANK.push({ cat: CD, type: "multi", kt: [],
+  stem: "Which elements are required for an interagency transfer? Select all that apply.",
+  opts: [ O("Documentation from the accepting facility and the accepting health care provider", true, "Correct. Accepting-side documentation is required."), O("Signed consent from the patient showing understanding of risks and benefits", true, "Correct. The patient's signed consent is required."), O("Thorough preparation, explanation to patient and family, and careful documentation", true, "Correct. Preparation, explanation, and documentation are required parts."), O("A verbal agreement only, because written consent slows the transfer process down", false, "The guide requires documentation and signed consent, not a verbal-only agreement."), O("Payment in full before departure, arranged directly with the patient's family", false, "Prepayment by the family is not a listed interagency requirement.") ],
+  tp: "Interagency: accepting documentation + signed patient consent; failure under COBRA/EMTALA can fine BOTH facilities." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which two threats to continuity of care does the chapter name?",
+  opts: [ O("Third-party payer requirements and a breakdown in staff communication patterns", true, "Correct. The guide names third-party payer interference and communication breakdown."), O("Family visiting hours and a shortage of wheelchairs on the receiving unit floor", false, "Neither is named as a continuity threat in the guide."), O("Meal schedule changes and a new roommate on the receiving unit after transfer", false, "Those are orientation issues, not the named continuity threats."), O("Weather delays in transport and a shortage of beds in the receiving facility", false, "Transport logistics are arranged in the process; they are not the named threats.") ],
+  tp: "Continuity threats named: third-party payer requirements and communication breakdown." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "What does SBAR stand for in the transfer report?",
+  opts: [ O("Situation, Background, Assessment, and Recommendation for the handoff report", true, "Correct. SBAR is Situation, Background, Assessment, Recommendation."), O("Symptoms, Background, Allergies, and Response for the handoff report format", false, "Allergies belong in the transfer information, but they are not the A in SBAR."), O("Situation, Biography, Assessment, and Referral for the handoff report format", false, "The B is Background and the R is Recommendation, not Biography and Referral."), O("Status, Baseline, Action, and Reassessment for the handoff report format here", false, "Those words are plausible but they are not the SBAR expansion in the guide.") ],
+  tp: "SBAR is the common format for reporting diagnosis, treatment, care plan, and medications at transfer." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "In Skill 11.2, after checking the provider order, what does the nurse do next in the listed sequence?",
+  opts: [ O("Inform the patient and family of the transfer and its timing for them", true, "Correct. Step 3 is informing the patient and family, reducing fear of the unknown."), O("Gather every belonging and record before telling the patient anything at all", false, "Gathering belongings is step 5, after informing and notifying."), O("Notify diagnostic imaging and the laboratory that the transfer will occur", false, "Department notification is step 12 for intraagency transfers, much later."), O("Introduce the patient to the roommate waiting on the receiving unit first", false, "Introductions on the new unit are step 7, after the move itself.") ],
+  tp: "Skill 11.2 order: hand hygiene, check order, inform patient/family, notify receiving unit, gather belongings/records." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which statement about admission to a long-term care facility is accurate?",
+  opts: [ O("Patients are encouraged to bring clothing and personal items for familiarity", true, "Correct. Box 11.3 encourages clothing and personal items to give a feeling of familiarity."), O("Patients are discouraged from bringing any personal items from their own home", false, "Box 11.3 encourages personal items; it does not discourage them."), O("No health history or initial assessment is needed for a long-term care admission", false, "A health history and initial nursing assessment are performed to determine condition."), O("Long-term care discharge has far fewer belongings to gather than hospital discharge", false, "The guide says there are MORE personal belongings to gather and pack.") ],
+  tp: "LTC admission can be a transfer or a direct admission; personal items support familiarity." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "Which pre-transfer care measures does Box 11.4 list for a patient going to another facility?",
+  opts: [ O("Suction the airway, give prescribed medication, change soiled dressings, empty devices", true, "Correct. Box 11.4 lists those measures among the pre-transfer care."), O("Feed a full meal, give a sedative, remove all dressings, and clamp every device shut", false, "Feeding, sedating, removing dressings, and clamping devices are not the listed measures."), O("Bathe the family, change the bed linen, restock the room, and file the transfer form", false, "Room restocking and family care are not Box 11.4 transfer measures for the patient."), O("Stop prescribed medication, leave soiled dressings, and leave devices full for staff", false, "Box 11.4 says the opposite: give medication, change soiled dressings, empty devices.") ],
+  tp: "Box 11.4: complete documentation and finish patient care measures before an interagency transfer." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "When does discharge planning begin, and which patients require it?",
+  opts: [ O("It begins on admission, and every patient in a facility requires discharge planning", true, "Correct. Discharge planning begins at admission for every patient."), O("It begins on the discharge day, and only complex patients require discharge planning", false, "Waiting until discharge day is the classic trap; planning begins on admission."), O("It begins after the first week, and only surgical patients require discharge planning", false, "Timing and scope are both wrong per the guide."), O("It begins when the family asks, and only older patients require discharge planning", false, "It is not family-triggered or age-limited; every patient requires it.") ],
+  tp: "Discharge planning begins on admission — for EVERY patient." });
+
+BANK.push({ cat: CE, type: "multi", kt: [],
+  stem: "Which items are purposes of discharge planning? Select all that apply.",
+  opts: [ O("Teaching the patient and family about the illness and its effect on lifestyle", true, "Correct. Illness and lifestyle teaching is a listed purpose."), O("Providing instructions for home care and any dietary or activity directions", true, "Correct. Home care, diet, and activity instructions are listed purposes."), O("Explaining medication purpose, adverse effects, and treatment scheduling facts", true, "Correct. Medication purpose, adverse effects, and scheduling are listed."), O("Arranging transportation and follow-up care and coordinating home health services", true, "Correct. Transportation, follow-up, and service coordination are listed purposes."), O("Guaranteeing the patient will never need readmission after leaving the facility", false, "Planning improves continuity and outcomes; it does not guarantee no readmission.") ],
+  tp: "Purposes: teach illness/lifestyle, home care + diet/activity, medication purpose/effects/schedule, transport + follow-up + services." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Who orchestrates discharge planning in most hospitals, per the guide?",
+  opts: [ O("Discharge planners or coordinators or case managers on the health care team", true, "Correct. The guide names discharge planners/coordinators or case managers as orchestrators."), O("The patient's family members, coordinated by the oldest adult child at home", false, "Family participates, but orchestration belongs to the planner/coordinator or case manager."), O("The admitting department, coordinated by the representative who registered them", false, "The admitting department handles intake information, not discharge orchestration."), O("The transport service, coordinated by the driver assigned for the discharge day", false, "Transport is arranged as part of planning; drivers do not orchestrate planning.") ],
+  tp: "Discharge planning is multidisciplinary and centralized; planners/case managers orchestrate, especially for at-risk patients." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which description matches transitional care in the guide?",
+  opts: [ O("Transition specialists begin in the hospital and stay available after discharge home", true, "Correct. The specialist starts in the hospital and remains available at home."), O("Transition specialists begin at discharge and meet the patient only at the home", false, "The guide says the specialist begins working with the patient in the hospital."), O("Transition specialists begin in the clinic and visit only during the first week", false, "The role bridges hospital to home recovery, not clinic-only first-week visits."), O("Transition specialists begin after readmission and coordinate the second discharge", false, "Transitional care is aimed at the first transition home, not a readmission pathway.") ],
+  tp: "Transitional care: specialist starts in the hospital, follows the patient home; cost effective, improved quality." });
+
+BANK.push({ cat: CE, type: "multi", kt: [],
+  stem: "Which instructions does The Joint Commission suggest giving at discharge? Select all that apply.",
+  opts: [ O("The reason for the admission and safe, effective use of medications and equipment", true, "Correct. Reason for admission and safe medication/equipment use are TJC items."), O("Rehabilitation techniques that support adaptation or functional independence at home", true, "Correct. Rehabilitation techniques are a TJC discharge instruction item."), O("Instruction on nutrition and modified diets the patient must follow after discharge", true, "Correct. Nutrition and modified diet instruction is a TJC item."), O("Access to available community resources the patient may need after leaving", true, "Correct. Community resource access is a TJC item."), O("A guarantee of a private room and a chosen nurse at any future readmission", false, "Room and nurse guarantees are not TJC discharge instruction items.") ],
+  tp: "TJC discharge instructions: reason for admission, meds/equipment, rehabilitation, nutrition/diets, community resources." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which patient carries a risk factor that demands more thorough discharge planning?",
+  opts: [ O("An older adult with a multisystem disease process after a major surgical procedure", true, "Correct. Older age, multisystem disease, and major surgery are all listed risk factors."), O("A young adult with a single sprained ankle treated briefly in the emergency area", false, "A minor single-system injury is not among the listed high-risk factors."), O("A middle-aged adult with a mild cold and no other medical conditions at all", false, "A mild cold with no other conditions is not a listed risk factor."), O("A healthy adult admitted overnight only for observation after a minor procedure", false, "Observation alone without listed factors does not match the risk list.") ],
+  tp: "Risk factors: older adult age, multisystem disease, major surgery, chronic or terminal illness, emotional instability, advanced age." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "What must be included in the discharge plan to obtain reimbursement from third-party payers?",
+  opts: [ O("Signed health care provider orders included in the discharge planning record", true, "Correct. Signed provider orders must be included for reimbursement."), O("Signed family agreements included in the discharge planning record packet", false, "Family acknowledgment forms exist for teaching, but reimbursement requires signed provider orders."), O("Signed transport waivers included in the discharge planning record packet", false, "Transport paperwork is not the reimbursement requirement named in the guide."), O("Signed visitor passes included in the discharge planning record packet file", false, "Visitor passes have nothing to do with discharge reimbursement.") ],
+  tp: "Discharge summary includes learning needs, teaching, goals, referrals, coordinated plan — plus signed provider orders for reimbursement." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "A patient needs meal planning and diet restriction teaching after discharge. Which referral fits that role?",
+  opts: [ O("The dietitian, who instructs on meal planning and diet restrictions for patients", true, "Correct. The dietitian provides nutrient requirements and meal-planning/diet instruction."), O("The social worker, who instructs on meal planning and diet restrictions for patients", false, "The social worker finds community and financial resources and counsels on life crises."), O("The speech therapist, who instructs on meal planning and diet restrictions for patients", false, "The speech therapist addresses oral communication and swallowing disorders."), O("The occupational therapist, who instructs on meal planning and diet restrictions", false, "The occupational therapist teaches adaptation for ADLs and vocational skills.") ],
+  tp: "Referral roles: dietitian = nutrition/meal planning; social worker = resources/counseling; PT = musculoskeletal rehab; OT = ADLs; speech = communication/swallowing." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Which statement about home health services is accurate?",
+  opts: [ O("A provider order is necessary for services to be reimbursable by insurance plans", true, "Correct. A provider order is necessary for insurance/Medicare/Medicaid reimbursement."), O("No provider order is necessary for services to be reimbursable by insurance plans", false, "The guide states an order IS necessary for reimbursement."), O("A family request alone is sufficient for services to be reimbursable by insurance", false, "A family request does not replace the required provider order."), O("Services begin only after a second hospital admission has been fully completed", false, "Home health follows discharge; a second admission is not a prerequisite.") ],
+  tp: "Home health agency: skilled nursing or ADL assistance at home; provider order required for reimbursement." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "What is the first verification in Skill 11.3 before a routine discharge proceeds?",
+  opts: [ O("Be certain there is a discharge order from the health care provider on file", true, "Correct. Step 2 is being certain a discharge order exists."), O("Be certain the family car is parked outside the facility entrance already", false, "Transport is notified at step 4; the order check comes first."), O("Be certain every supply and prescription is already packed in the bags", false, "Gathering supplies is step 6, after the order and family notification."), O("Be certain the room has been cleaned and assigned to the next patient", false, "Room turnover is not a Skill 11.3 step at all.") ],
+  tp: "Skill 11.3: hand hygiene, then be certain there is a discharge order." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "Against which list are the patient's clothing and valuables checked at discharge?",
+  opts: [ O("The clothing and valuables list made on admission, checked according to policy", true, "Correct. Step 8 checks the admission clothing and valuables list."), O("The medication list made on admission, checked according to policy on that day", false, "The medication list tracks drugs, not clothing and valuables."), O("The diet list made on admission, checked according to policy before departure", false, "Diet lists do not account for personal property at discharge."), O("The visitor list made on admission, checked according to policy for the family", false, "Visitor lists do not serve as the property inventory.") ],
+  tp: "The admission inventory (glasses, dentures, prostheses, money, clothing) is rechecked at discharge; signatures at both points." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "When does the agency's liability end at discharge, per the guide?",
+  opts: [ O("Once the patient is safely in the vehicle outside the facility building", true, "Correct. Liability ends once the patient is safely in the vehicle."), O("Once the patient signs the discharge instruction sheet inside the room", false, "Signing instructions does not end liability; safe transfer to the vehicle does."), O("Once the patient reaches the elevator on the way down from the unit", false, "The endpoint is being safely in the vehicle, not reaching the elevator."), O("Once the family arrives in the lobby to meet the patient downstairs", false, "Family arrival alone does not end liability.") ],
+  tp: "Escort to the vehicle, assist the patient in, help with belongings — liability ends once safely in the vehicle." });
+
+BANK.push({ cat: CF, type: "multi", kt: [],
+  stem: "Which items must be documented for the discharge procedure? Select all that apply.",
+  opts: [ O("The teaching that was provided to the patient during the discharge process", true, "Correct. Teaching is documented."), O("The patient's condition at the time of the discharge from the facility", true, "Correct. Condition is documented."), O("The method of discharge used for the patient leaving the facility that day", true, "Correct. Method of discharge is documented."), O("The entire discharge procedure, completing the legal record of what occurred", true, "Correct. The entire procedure is documented for legal verification."), O("The make and model of the family car used to transport the patient home", false, "Vehicle make and model are not discharge documentation items.") ],
+  tp: "Document the entire discharge: teaching, condition, and method of discharge." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "Which statement accurately describes leaving against medical advice?",
+  opts: [ O("Leaving a facility without a provider order for discharge, at patient insistence", true, "Correct. AMA is leaving without a provider's discharge order."), O("Leaving a facility with a provider order for discharge, at the scheduled time", false, "That is a routine ordered discharge, not AMA."), O("Leaving a facility for a scheduled test and returning to the same unit after", false, "A trip for testing with return is not leaving AMA."), O("Leaving a facility at the family's request while the patient wishes to stay", false, "AMA centers on the patient leaving without an order, not a family override.") ],
+  tp: "AMA: notify the provider immediately; the signed form releases the facility from legal responsibility after discharge." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "A patient leaving AMA refuses to sign the AMA form. Which action follows the guide?",
+  opts: [ O("Do not detain the patient, document thoroughly, and notify the health care provider", true, "Correct. Detaining violates legal rights; document thoroughly and notify the provider."), O("Detain the patient until the form is signed, and notify the health care provider", false, "Detaining a rational adult risks a false imprisonment lawsuit."), O("Call security to block the exit, document briefly, and notify the family instead", false, "Blocking the exit is detention; brief notes and family notification miss the required steps."), O("Let the patient leave with no documentation, and notify the provider next week", false, "Thorough documentation and provider notification are required after the patient leaves.") ],
+  tp: "Refusal to sign AMA: never detain (false imprisonment risk), document thoroughly, notify provider. Exception printed: mental illness may allow forcible detainment." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "Which pair lists common nursing diagnoses for the patient being discharged in the guide?",
+  opts: [ O("Compromised Maintenance of Health and Inability to Bathe Self for the patient", true, "Correct. Those are the two discharge diagnoses named in the guide."), O("Anxiousness and Potential for Injury related to the new facility environment", false, "Those are the common problems for admission/transfer, not the discharge pair."), O("Fearfulness and Insufficient Knowledge Regarding the Admission Process itself", false, "Those belong to the newly admitted patient's problem list."), O("Acute Pain and Impaired Mobility related to the surgical procedure performed", false, "Those are plausible elsewhere but are not the guide's discharge pair.") ],
+  tp: "Discharge diagnoses in the guide: Compromised Maintenance of Health and Inability to Bathe Self." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 11: Admission, Transfer, and Discharge - Definition Practice Test</h1>';
+  h += '<div class="sub">Definition practice test | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 4 - Communication - Definition Practice Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Communication Basics and Verbal Meaning";
+var CB = "Nonverbal Communication and Congruence";
+var CC = "Styles and the Therapeutic Relationship";
+var CD = "Therapeutic Communication Techniques";
+var CE = "Factors That Affect Communication";
+var CF = "Blocks, Compromised Communication, and Special Situations";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = ["communication", "sender", "receiver", "verbal communication", "nonverbal communication", "connotative meaning", "denotative meaning", "jargon", "posture", "assertive communication", "therapeutic communication", "active listening", "passive listening", "silence", "touch", "closed question", "open-ended question", "restating", "paraphrasing", "clarifying", "reflecting", "focusing", "summarizing", "aphasia", "expressive aphasia", "receptive aphasia"];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 10,
+  "types": {
+   "single": 9,
+   "multi": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 9,
+  "types": {
+   "single": 7,
+   "multi": 2
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 9,
+  "types": {
+   "single": 7,
+   "multi": 2
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single", kt: ["sender", "receiver"], stem: "A nurse reports on a patient within hearing of that patient, who was never meant to hear the report. Which statement about the roles is accurate?", opts: [O("The patient became an unintended receiver because the message reached someone it was not meant for", true, "Correct. A receiver can be unintended; overhearing still makes the patient a receiver, with real effects on trust."), O("The patient became the sender because hearing the report started a new message in the room by itself", false, "The patient sent nothing; the nurse conveyed the message and the patient received it."), O("No communication occurred with the patient because the report was addressed only to the other nurse", false, "Communication occurs whenever a message is received, even when that reception was not intended."), O("The other nurse was an unintended receiver because she was the person the report was addressed toward", false, "She was the intended receiver; the report was directed to her on purpose.")], tp: "Sender conveys, receiver receives - and a receiver can be unintended, as with Ms. B. overhearing a report about herself." });
+BANK.push({ cat: CA, type: "single", stem: "Which statement accurately contrasts one-way and two-way communication in this chapter?", opts: [O("One-way is highly structured and sender-controlled; two-way needs both parties participating and exchanging", true, "Correct. The contrast is structure and control versus participation and exchange between nurse and patient."), O("One-way is highly structured and patient-controlled; two-way needs one party directing the whole exchange", false, "The control sits with the sender in one-way communication, not with the receiver."), O("One-way builds trusting relationships most reliably; two-way is of limited use in nurse-patient care", false, "The chapter states the reverse: one-way is of limited use and two-way builds the trusting relationship."), O("One-way and two-way differ only in group size; a lecture and a bedside conversation work the same way", false, "They differ in participation and purpose, not simply in how many people are present.")], tp: "A lecture is the classic one-way example; at the bedside, always seek the patient's input and feedback instead of just talking to the patient." });
+BANK.push({ cat: CA, type: "single", kt: ["connotative meaning", "denotative meaning"], stem: "A family hears that their loved one is stable and concludes he is out of danger, while the nurse meant only that he is not deteriorating right now. Which concept explains the gap?", opts: [O("Connotative interpretation, because the family gave the word a subjective, personal interpretation of their own", true, "Correct. The subjective, personal side of a word can differ sharply from the shared definition intended."), O("Denotative interpretation, because the family applied the single dictionary definition shared by everyone", false, "The shared definition is the denotative side; the gap came from a personal, subjective reading."), O("Jargon interference, because the family used hospital terminology the nursing team could not understand at all", false, "Jargon is the professional's special terminology; here one ordinary word carried two readings."), O("One-way communication, because the family was never allowed to ask any questions during that conversation", false, "The gap is about word interpretation, not about who controlled the exchange.")], tp: "Connotative = subjective and personal. Denotative = the commonly accepted definition, as with the word telephone." });
+BANK.push({ cat: CA, type: "single", kt: ["jargon"], stem: "Which example shows jargon creating a barrier exactly as this chapter describes it?", opts: [O("Asking when the patient last voided or had a stool, when the patient knows only urinated and bowel movement", true, "Correct. Professional terms can leave a patient with no idea what is being asked, despite a shared language."), O("Asking when the patient last urinated or had a bowel movement, using plain words the patient already uses", false, "Plain words remove the barrier instead of creating it; nothing professional-only was used here."), O("Showing the patient a picture of a urinal and a bedpan before asking about output during the shift today", false, "Pictures help bridge a gap; they are a support for communication, not a barrier in this example."), O("Writing the patient's output on the intake record where the next nurse can read it during the handoff report", false, "Documentation for the team is not jargon spoken to a patient who cannot decode it.")], tp: "Jargon is the terminology unique to a work setting or type of work - nurse and patient can end up using different dictionaries." });
+BANK.push({ cat: CA, type: "single", kt: ["verbal communication"], stem: "Which statement about verbal communication is accurate?", opts: [O("It uses spoken or written words or symbols, yet different personal interpretations can still cause misunderstanding", true, "Correct. Understanding the words does not guarantee both parties assign them the same interpretation."), O("It uses spoken or written words or symbols, so misunderstanding is nearly impossible once words are understood well", false, "The chapter warns the opposite: familiar words can still carry very different interpretations."), O("It includes tone of voice, eye contact, and posture, because those cues travel with every spoken message sent", false, "Tone, gaze, and posture are nonverbal cues, even when they accompany spoken words."), O("It is limited to face-to-face spoken exchanges, because written words and symbols belong to documentation only", false, "Written words and symbols are part of verbal communication as the chapter defines it.")], tp: "Verbal = spoken or written words or symbols. The hidden risk is subjective variability in what those words suggest." });
+BANK.push({ cat: CA, type: "multi", kt: ["communication"], stem: "Which statements about communication itself are accurate? Select all that apply.", opts: [O("Some form of communication occurs each time an interaction takes place between people in care settings", true, "Correct. Every interaction communicates something, whether or not a message was carefully planned."), O("The message intended by a sender is not always the message that is actually received by the receiver", true, "Correct. That gap is why the nurse works to communicate effectively and minimize miscommunication."), O("Communication can convey information, emotions, humor, acceptance, or rejection in an interaction", true, "Correct. The chapter lists all of these among the messages communication can carry."), O("Communication counts only when both parties planned the exchange in advance and agreed on its purpose", false, "Unplanned and even unintended messages still communicate, as the overheard-report scenario shows."), O("Only spoken words count as communication, because silent presence sends no message a patient can read", false, "Silence, posture, and other nonverbal cues also communicate, often powerfully.")], tp: "Communication is the exchange of information in verbal and nonverbal forms - and it happens in every interaction." });
+BANK.push({ cat: CA, type: "single", stem: "Which statement about two-way communication at the bedside is accurate?", opts: [O("Its purpose is to meet the needs of both nurse and patient and to establish a trusting relationship between them", true, "Correct. Two-way exchange serves both parties and builds the trusting relationship the chapter aims for."), O("Its purpose is to let the nurse finish required teaching quickly, before the patient can raise other concerns", false, "Speed for the nurse is not the stated purpose; participation and trust are."), O("Its purpose is to keep the patient talking, because a quiet patient signals that an interaction has failed badly", false, "A quiet patient is not a failure; silence itself can be therapeutic when used deliberately."), O("Its purpose is to transfer control to the family, because relatives best know what the patient needs to hear", false, "Control transfer to the family is not the chapter's description of two-way communication.")], tp: "Talking to the patient is one-way. Two-way means seeking and accepting the patient's input and feedback." });
+BANK.push({ cat: CA, type: "single", kt: ["closed question"], stem: "A nurse asks a patient the exact morning insulin dose needed for a new admission record. Which point about that exchange is accurate?", opts: [O("A specific question seeking a specific answer fits a closed question, answered in one or two words by the patient", true, "Correct. A focused, specific question with a brief expected answer is the closed pattern in this chapter."), O("A specific question seeking a specific answer fits an open-ended question, inviting free elaboration on feelings", false, "Open-ended questions invite elaboration and cannot be answered in a word or two."), O("A specific question like this one should never be used, because closed questions block therapeutic relationships", false, "Closed questions are useful when specific information is the goal; they are not blocks."), O("A specific question like this one is really reflecting, because it sends the patient's feelings back for review", false, "Reflecting returns feelings and thoughts; it does not request a factual dose.")], tp: "Type of information sought determines the type of question: specific answer = closed; feelings and elaboration = open-ended." });
+BANK.push({ cat: CB, type: "single", stem: "Which statement about interpreting a patient's voice is accurate?", opts: [O("Tone, volume, and rate alone cannot support an accurate conclusion; the whole situation must be considered too", true, "Correct. A loud, rapid, high voice can signal fear or excitement, yet some people always speak that way."), O("Tone, volume, and rate alone can establish fear reliably; a loud rapid voice proves a patient is frightened now", false, "The chapter explicitly warns that no conclusion is appropriate from voice characteristics alone."), O("Tone and rate matter only for nurses, because patients do not read anything into how a nurse's voice sounds", false, "Voice characteristics shape nonverbal messages for both parties in an interaction."), O("Volume is the one voice feature worth assessing; tone and rate add nothing the nurse needs to consider here", false, "Tone, volume, and rate are all listed as aspects of voice affecting nonverbal messages.")], tp: "Consider voice characteristics in the context of the situation as a whole so interpretation stays accurate." });
+BANK.push({ cat: CB, type: "single", stem: "Which eye-contact pattern and interpretation pairing is accurate?", opts: [O("Brief but direct contact of 2 to 6 seconds reads as interest, respect, and caring to the receiver in care", true, "Correct. That 2-to-6-second range is the chapter's brief-but-direct band in Table 4.1."), O("Brief but direct contact of 2 to 6 seconds reads as aggression, intimidation, and disrespect to the receiver", false, "Aggression and intimidation belong to extended contact longer than 6 seconds, not to the brief band."), O("Extended contact under 2 seconds reads as interest and caring, while no contact at all reads as confidence", false, "Extended means longer than 6 seconds, and absent contact can signal shyness or low confidence."), O("Any steady contact is read the same in every culture, because eye contact carries a universal interpretation", false, "Culture significantly affects eye-contact interpretation; some cultures read it as impolite or improper.")], tp: "Numbers: brief/direct eye contact = 2-6 seconds. Extended = longer than 6 seconds." });
+BANK.push({ cat: CB, type: "single", stem: "Which statement about absence of eye contact is accurate?", opts: [O("It can signal shyness, disinterest, embarrassment, or hurt - or, in some cultures, deference and respect instead", true, "Correct. The same absent gaze carries very different possible readings, including a respectful one."), O("It can signal only disinterest and dishonesty, because an honest patient always looks directly at the nurse talking", false, "The chapter lists many other possibilities and warns against a single fixed reading."), O("It should always be corrected during teaching, because patients must learn to hold the nurse's gaze to be heard", false, "Forcing gaze ignores cultural meaning and the patient's own interpretation of eye contact."), O("It carries no message at all, because only deliberate gestures and spoken words communicate during interactions", false, "Absence of eye contact is itself a nonverbal message the chapter discusses in detail.")], tp: "Assess how this patient interprets eye contact - sensitivity to each partner's reading prevents miscommunication." });
+BANK.push({ cat: CB, type: "single", kt: ["posture"], stem: "Which posture description matches an open posture in this chapter?", opts: [O("Relaxed stance facing the receiver, arms and legs uncrossed, slight lean toward the receiver, with a smile", true, "Correct. Facing, unfolding, and shifting slightly toward the receiver make up the open pattern in Table 4.1."), O("Formal distant stance facing away, arms and legs tightly crossed, with the body angled toward the doorway", false, "That is the closed pattern: distance, crossing, and turning away from the receiver."), O("Standing tall over the receiver, arms folded across the chest, looking down while the receiver stays seated", false, "Standing over a patient reads as authority and control, not openness."), O("Leaning back and slouching in a chair, arms folded, checking the time while the receiver is still speaking", false, "Slouching, folding, and time-checking read as disinterest, not willingness to communicate.")], tp: "Open posture conveys warmth, acceptance, and caring; closed posture conveys disinterest, coldness, and nonacceptance." });
+BANK.push({ cat: CB, type: "single", stem: "A nurse says the right reassuring words while hurrying, gripping a pitcher, and speaking through tight lips, and the patient does not believe her. Which rule explains this?", opts: [O("When nonverbal cues conflict with the verbal message, the nonverbal message is the one most likely received", true, "Correct. Incongruence makes the body language the received message, as with Nurse M. and Mr. R."), O("When nonverbal cues conflict with the verbal message, the written record of the words settles what was meant", false, "No record settles it; the patient receives the nonverbal message in the moment."), O("When words are chosen correctly, hurried posture and tone cannot change how a patient receives the message", false, "The scenario shows correct words failing precisely because posture and tone contradicted them."), O("When a nurse is busy, patients discount nonverbal cues and judge only the efficiency of the task performed", false, "Busyness does not switch off nonverbal reading; Mr. R. read anger and frustration clearly.")], tp: "Congruence rule: words and body must match - if they disagree, the nonverbal message wins." });
+BANK.push({ cat: CB, type: "multi", stem: "Which nonverbal cues and possible readings pair correctly from Table 4.1? Select all that apply.", opts: [O("Gestures can read as emphasis, clarification, pleasure, helpfulness, anger, threat, or disrespect to a receiver", true, "Correct. Table 4.1 lists all of these as possible receiver readings of gestures."), O("Physical appearance can read as competence or incompetence and as trust or distrust to the other participant", true, "Correct. Appearance attributes feed readings of professionalism, trust, respect, and competence."), O("Voice can read as fear, excitement, stress, anger, comfort, concern, confidence, or calm to the listener present", true, "Correct. Those are the receiver readings Table 4.1 attaches to tone, volume, pitch, and rate."), O("Appearance never affects a relationship, because patients judge only clinical skill once care actually begins", false, "The chapter gives appearance major impact, as with bias about tattoos affecting trust."), O("Watch-checking during an interview reads as extra interest, because it shows concern for the patient's schedule", false, "Repeated watch-checking conveys disinterest and limited time, not extra interest.")], tp: "Table 4.1: every cue has a receiver reading - appearance, gestures, and voice all shape the message actually received." });
+BANK.push({ cat: CB, type: "single", stem: "Which statement about physical appearance and dress codes is accurate?", opts: [O("A professional appearance conveys self-respect and competence, and dress codes can signal each worker's role", true, "Correct. Scrub color by role is given as a way appearance itself communicates with the patient."), O("A professional appearance matters only on the first day, because patients stop noticing dress and grooming later", false, "Appearance influences perceptions in ongoing interactions, not just first meetings."), O("Wrinkled uniforms and soiled shoes send no message, because patients understand nurses are too busy to change", false, "The chapter says they can send the message that the patient is not worth the effort to look professional."), O("Dress codes exist only for infection control, because role identification is never part of how facilities dress staff", false, "Safety is one reason, but communicating role and professionalism is the chapter's stated purpose.")], tp: "Appearance includes size, skin color, dress, grooming, posture, and facial expression - and receivers read all of it." });
+BANK.push({ cat: CB, type: "single", stem: "Which statement about standing at the bedside during a conversation is accurate?", opts: [O("Standing and looking down puts the nurse in authority and control, and the patient may feel intimidated by it", true, "Correct. The chapter recommends being at the same level as the patient whenever possible instead."), O("Standing and looking down reassures most patients, because it shows the nurse is in charge and ready to act fast", false, "The chapter reads that position as intimidating and condescending, not reassuring."), O("Standing position makes no difference with children, because pediatric patients do not read posture like adults do", false, "Same-level positioning is called especially important with pediatric patients."), O("Standing is required for open posture, because sitting relaxes the nurse enough to look disinterested to patients", false, "Sitting at the bedside in a relaxed, open posture is the chapter's own positive example.")], tp: "Get level: sit at the bedside, facing the patient, especially with children." });
+BANK.push({ cat: CC, type: "single", kt: ["assertive communication"], stem: "Which statement accurately defines assertive communication for nurses?", opts: [O("Expressing your needs while aware of others' needs, confidently, directly, and honestly, honoring both parties' rights", true, "Correct. Box 4.1 pairs self-expression with awareness of the other person's needs and rights."), O("Expressing your needs by overpowering the other person, so your schedule and priorities prevail in the interaction", false, "Overpowering the other person to meet your own needs is the aggressive pattern, not the assertive one."), O("Suppressing your needs in every exchange, so the other person never feels refused, delayed, or inconvenienced at all", false, "Suppressing your own legitimate rights is the unassertive pattern, with resentment as its price."), O("Expressing your needs only in writing, because direct spoken honesty is too confrontational for nurse-patient care", false, "Assertive communication is direct and honest in person; writing-only is not the chapter's description.")], tp: "Assertive honors BOTH sets of rights - that is what separates it from aggressive and unassertive." });
+BANK.push({ cat: CC, type: "single", stem: "A nurse snaps that a request will have to wait because other patients matter more, leaving the patient humiliated. Which style was used, and what does the chapter say follows?", opts: [O("Aggressive style; it is destructive and nontherapeutic, and the nurse will likely feel guilty and disrespectful later", true, "Correct. Meeting your own needs at the patient's expense is aggressive, and neither party benefits."), O("Assertive style; it is the most effective style, and both parties leave with their needs met and dignity intact here", false, "Assertive communication leaves nobody humiliated; this interaction did the opposite."), O("Unassertive style; its price is resentment, and the patient will likely feel he imposed unduly on the nurse instead", false, "Resentment follows the unassertive pattern, where the nurse over-agrees rather than snapping."), O("Therapeutic style; brief firmness after a busy morning is expected and carries no effect on the relationship after", false, "The chapter treats aggressive responses as destructive and nontherapeutic, with lasting effects.")], tp: "Same request, three outcomes: aggressive humiliates, unassertive breeds resentment, assertive meets both sets of needs." });
+BANK.push({ cat: CC, type: "single", stem: "Which statement about the unassertive response in the water-pitcher example is accurate?", opts: [O("The nurse agreed while pleading about being busy, the patient felt he had imposed, and the nurse felt resentment", true, "Correct. Sacrificing her own legitimate rights left both parties worse off, exactly as the chapter traces."), O("The nurse refused while offering an alternative, the patient felt respected, and the nurse stayed on schedule after", false, "Refusal with an alternative and a time is the assertive script, not the unassertive one."), O("The nurse agreed cheerfully with no cost at all, because unassertive responses protect the nurse-patient relationship", false, "The chapter names a price: resentment, guilt, and a patient who feels like a bother."), O("The nurse delegated the task to an assistant, which the chapter presents as the defining sign of unassertive style", false, "Offering an assistant sooner is part of the assertive response in this same example.")], tp: "Unassertive = agreeing even though it creates additional problems. The price the chapter names is resentment." });
+BANK.push({ cat: CC, type: "multi", stem: "Which behaviors belong to the assertive nurse in Box 4.1? Select all that apply.", opts: [O("Appearing self-confident and composed, with verbal and nonverbal communication kept congruent during the exchange", true, "Correct. Congruence and composure are listed assertive-nurse behaviors in Box 4.1."), O("Maintaining eye contact, speaking firmly with a positive attitude, and speaking genuinely without using sarcasm", true, "Correct. Eye contact, firm positive speech, and genuineness without sarcasm are all listed."), O("Taking initiative to guide situations and using clear, concise speech while remaining unapologetic in the exchange", true, "Correct. Initiative, clear concise speech, and an unapologetic stance complete the Box 4.1 picture."), O("Apologizing repeatedly before every request, because assertive nurses soften each message to avoid any tension", false, "The assertive nurse is described as unapologetic, not repeatedly apologetic."), O("Avoiding eye contact to stay nonthreatening, because assertive nurses let the other person lead every exchange", false, "Box 4.1 says the assertive nurse maintains eye contact and takes initiative to guide situations.")], tp: "Box 4.1: confident, congruent, unapologetic, eye contact, firm and genuine, clear and concise, takes initiative." });
+BANK.push({ cat: CC, type: "single", stem: "Which statement about confidentiality in the therapeutic relationship is accurate?", opts: [O("Personal information is shared only with those who need it for safe, competent care, with a stated limit for harm", true, "Correct. Trust requires confidentiality, and intent to harm self or others must be reported - a limit patients should know."), O("Personal information is never shared with anyone, including the care team, because trust requires absolute secrecy", false, "Information is shared with those who need it to provide safe and competent care."), O("Personal information may be shared with family on request, because relatives are part of the patient's private circle", false, "Sharing is limited to those who need the information for care, not to family on request."), O("Statements about harming others stay confidential, because reporting them would end the therapeutic relationship", false, "The obligation to report intent to harm self or others is the chapter's stated exception.")], tp: "Confidentiality has one printed limit: intent to do self-harm or harm others must be reported, and patients should be told that." });
+BANK.push({ cat: CC, type: "single", stem: "A nurse promises to help with a bath in 15 minutes, then cannot return. Which action matches the chapter's trust guidance?", opts: [O("Explain the delay to the patient and establish another mutually agreeable plan for completing the promised bath", true, "Correct. Follow-through - or an explained, renegotiated plan - is what protects trust in the chapter."), O("Return much later without mentioning the promise, because patients rarely remember small time commitments made", false, "Ignoring the commitment undermines the relationship and erodes trust, the chapter's exact warning."), O("Send another staff member without any explanation, because who gives the bath matters less than that it happens", false, "An unexplained substitution skips the explanation and mutual replanning the chapter requires."), O("Avoid making any commitments in the future, because the chapter advises nurses never to promise specific times", false, "The chapter expects commitments to be made and fulfilled, not avoided altogether.")], tp: "Follow-through proves caring, sincerity, empathy, and trustworthiness. A broken promise without explanation erodes trust." });
+BANK.push({ cat: CC, type: "single", stem: "Which statement about professional boundaries is accurate?", opts: [O("Sharing personal information such as a home address or phone number with a patient is not advisable for the nurse", true, "Correct. The chapter warns that such sharing leads to situations the nurse is not prepared to handle."), O("Sharing a phone number is advisable once a patient is discharged, because boundaries apply only during admission", false, "The chapter gives no discharge exception; the advice is against sharing such information."), O("Boundaries require ending all personal conversation, because any friendly exchange weakens a therapeutic relationship", false, "Boundaries concern personal contact information and role limits, not ordinary friendly conversation."), O("Boundaries are the patient's responsibility, because the patient decides what contact is comfortable after discharge", false, "Maintaining professional boundaries is presented as the nurse's responsibility.")], tp: "Professional boundaries: no home address or phone number sharing with patients." });
+BANK.push({ cat: CC, type: "single", stem: "Which statement contrasts therapeutic and nontherapeutic communication accurately?", opts: [O("Therapeutic communication builds a positive relationship and involves the patient; nontherapeutic blocks that relationship", true, "Correct. That build-versus-block contrast is the chapter's own framing of the two kinds."), O("Therapeutic communication is any technically correct teaching; nontherapeutic is any conversation without teaching in it", false, "Correct technique alone does not guarantee therapeutic communication; awareness of feelings is required."), O("Therapeutic communication requires the nurse to talk more than the patient; nontherapeutic lets the patient lead too often", false, "Listening and patient involvement are therapeutic; nurse-dominated talking is not the definition."), O("Therapeutic and nontherapeutic describe equipment use: therapeutic means focusing on the patient, not on any device", false, "Focusing on the patient rather than equipment is trust guidance, not the definition of the two kinds.")], tp: "Therapeutic communication also requires awareness of the patient's feelings and ability to respond to the patient's needs." });
+BANK.push({ cat: CD, type: "single", kt: ["active listening", "passive listening"], stem: "Which statement accurately contrasts active and passive listening?", opts: [O("Active listening interprets the message and gives feedback the patient can validate; passive shows interest only", true, "Correct. Feedback and validation separate active listening from eye contact, nodding, and brief phrases."), O("Active listening interprets silently without feedback; passive listening is the one that confirms understanding aloud", false, "Feedback that lets the patient validate the message is the active pattern, not the passive one."), O("Active and passive listening differ only in note-taking; both confirm the message was received exactly as intended", false, "Passive listening gives no such confirmation, even though it shows interest and attention."), O("Passive listening is a blocking response, because nodding and brief phrases shut down further patient disclosure", false, "Passive listening is a listed technique that lets the patient know the nurse is attentive.")], tp: "Active = hear, interpret, feed back. Passive = eye contact, nodding, Uh-huh, I see - interest without confirmation." });
+BANK.push({ cat: CD, type: "single", kt: ["silence"], stem: "Which statement about therapeutic silence is accurate?", opts: [O("Silence gives time to organize thoughts, conveys support and caring, and its effect depends on congruent cues", true, "Correct. Silence works when body cues match willingness to wait; fidgeting and watch-looking send the opposite message."), O("Silence is useful only after bad news, because in ordinary conversation it always signals disinterest or anger", false, "Silence is a general technique for thinking time and support, not only a post-bad-news response."), O("Silence should be broken within a second or two, because American patients read any longer pause as rejection", false, "The chapter notes people need several seconds to interpret and formulate a response."), O("Silence works even while writing notes, because the patient judges the nurse's words rather than visible behavior", false, "Writing, fidgeting, and watch-looking communicate the opposite of willingness to wait.")], tp: "A person commonly needs several seconds after a message to interpret it and formulate a response - protect that time." });
+BANK.push({ cat: CD, type: "multi", kt: ["touch"], stem: "Which factors shape how a patient interprets touch, per this chapter? Select all that apply.", opts: [O("The duration and intensity of the contact and the body part that is touched during the nursing interaction", true, "Correct. Duration, intensity, and body part are all listed interpretation factors for touch."), O("The culture, gender, and age of both the patient and the nurse providing care in that particular interaction", true, "Correct. Culture, gender, and age of both parties are listed, along with environment."), O("The environment of the contact and the stage of development of the relationship between nurse and patient", true, "Correct. Environment and relationship stage complete the chapter's list of touch factors."), O("The nurse's years of experience alone, because experienced touch is always read by patients as warm and caring", false, "Experience is not on the list, and reluctant or hesitant touch can read as rejection."), O("The patient's diagnosis alone, because interpretation of touch follows the medical condition being treated here", false, "Diagnosis alone is not listed; sociocultural and relational factors drive interpretation.")], tp: "Touch can convey warmth, caring, support, and understanding - but only when used with discretion within sociocultural norms." });
+BANK.push({ cat: CD, type: "single", stem: "Which statement about conveying acceptance is accurate?", opts: [O("Accepting the patient is not approving the lifestyle; the nurse accepts the person's rights without condoning them", true, "Correct. Acceptance protects personal integrity while the nurse offers a healthier alternative."), O("Accepting the patient requires approving the lifestyle, because any reservation reads as judgment to the patient", false, "The chapter separates acceptance of the person from approval of the choices explicitly."), O("Accepting the patient means avoiding healthier alternatives, because suggesting change communicates disapproval", false, "After acceptance, the next step is communicating a healthier alternative and assisting if chosen."), O("Acceptance applies only when values match, because deep differences make a therapeutic relationship impossible", false, "Values will often differ; the nurse's nonjudgmental acceptance is key precisely then.")], tp: "Acceptance: nonjudgmental, protects integrity, does not condone - then offer the healthier alternative." });
+BANK.push({ cat: CD, type: "single", kt: ["minimal encouragement"], stem: "Which example matches minimal encouragement as this chapter defines it?", opts: [O("Nodding occasionally, holding appropriate eye contact, and saying Yes, go on, so the patient continues speaking", true, "Correct. Those nonverbal and brief verbal moves signal interest and invite the patient to say more."), O("Repeating the patient's main point back with rising tone, so the patient can confirm it was heard correctly here", false, "That repeating move is restating, a different technique with a different purpose."), O("Reviewing the main ideas of a long teaching session at the end, so the patient leaves with a sense of closure", false, "A closing review of main ideas is summarizing, used after lengthy interactions."), O("Asking a focused question with a one-word answer, so the nurse can finish the admission record without delay", false, "A focused one-word question is closed questioning, not encouragement to continue.")], tp: "Minimal encouragement also indicates acceptance of the patient as a person." });
+BANK.push({ cat: CD, type: "single", kt: ["paraphrasing", "restating"], stem: "Which pairing of technique and definition is accurate?", opts: [O("Paraphrasing restates the message in the nurse's own words; restating repeats the patient's main point as heard", true, "Correct. The two differ in intent: paraphrasing verifies interpretation, restating shows the point was heard."), O("Paraphrasing repeats the patient's exact words for feelings; restating introduces the nurse's own interpretation", false, "Exact-word repetition belongs to neither, and feelings belong to reflecting, not paraphrasing."), O("Paraphrasing and restating are interchangeable names, because the chapter treats them as a single technique here", false, "The chapter separates them by intent even though they bear some similarity."), O("Paraphrasing seeks new information about a vague point; restating selects one topic as the focus of discussion", false, "Seeking elaboration is clarifying; selecting a topic is focusing.")], tp: "Watch restating overuse: repeated too often it becomes parroting, which sounds planned and annoys the patient." });
+BANK.push({ cat: CD, type: "single", kt: ["reflecting"], stem: "A patient asks, What should I do? Which response uses reflecting as this chapter defines it?", opts: [O("What do you think you should do? - returning the question so the patient reflects on thoughts and feelings", true, "Correct. Reflecting promotes independent decision making and places the patient in control."), O("You should follow the plan your provider outlined - giving a direct answer so the patient feels safely guided", false, "Direct advice takes decision making away and is the opposite of reflecting."), O("Let me tell you what most patients choose - offering common choices so the patient can copy a proven decision", false, "Offering what others choose still directs the decision instead of reflecting it back."), O("Why do you feel unsure about this? - asking for the reason behind the feeling so the nurse can fix the barrier", false, "Why questions are a blocking response that can read as accusatory, not reflecting.")], tp: "Reflecting involves feelings and thoughts more than facts, and promotes self-esteem and autonomy." });
+BANK.push({ cat: CD, type: "single", kt: ["offering information"], stem: "Which statement accurately separates offering information from giving advice?", opts: [O("Offering information supports informed decisions with relevant data; giving advice takes decision making away", true, "Correct. Discharge teaching and procedure preparation are offering information; advice risks the relationship."), O("Offering information and giving advice are the same act, because both tell the patient what the nurse knows best", false, "The chapter separates them precisely because advice removes the patient's decision making."), O("Offering information is a blocking response when repeated; giving advice is therapeutic when the nurse is experienced", false, "Giving advice or personal opinions is itself a Table 4.4 blocking response."), O("Offering information requires the patient's permission in writing; giving advice requires only verbal agreement here", false, "No such consent distinction appears; the difference is who keeps the decision.")], tp: "Offering information: relevant data plus feedback on understanding. Advice: should, ought to, if I were you." });
+BANK.push({ cat: CD, type: "single", kt: ["summarizing"], stem: "Which statement about summarizing is accurate?", opts: [O("It is a concise review of main ideas, most useful after a lengthy interaction or one covering several issues", true, "Correct. Summarizing separates essential information from nice-to-know and gives closure to the session."), O("It is a concise review used at the opening of an interaction, so the patient knows the agenda before speaking", false, "Summarizing closes and focuses a discussion; it is not an opening agenda tool."), O("It repeats one sentence of the patient's message, so the patient can add detail the nurse may have missed here", false, "Repeating one main point is restating; summarizing reviews the main ideas of a whole discussion."), O("It selects one vague topic for deeper exploration, so a wandering discussion gains a single primary focus point", false, "Selecting one topic is focusing; summarizing reviews what was already covered.")], tp: "End-of-teaching summarizing helps the patient separate essential information from nice-to-know information." });
+BANK.push({ cat: CD, type: "single", stem: "Which statement about humor as a communication tool is accurate?", opts: [O("Laugh with the patient, never at the patient, and read timing and context - serious news is not the moment for it", true, "Correct. Humor can ease an interaction, but a new serious diagnosis or shared feelings is not the time."), O("Laugh at the patient's jokes about himself freely, because self-deprecating humor invites the nurse to join in fully", false, "The rule is never laugh at a patient; only laugh with a patient."), O("Use humor as the main tool for every fear, because a joke reliably opens discussion of difficult emotions in care", false, "Humor used to mask fears avoids the issue, and as the only tool it becomes destructive."), O("Use humor early with every new patient, because getting to know the patient first only delays a useful technique", false, "The chapter advises getting to know the patient before using humor, and extra caution across cultures.")], tp: "Laughter therapy findings in the chapter: lower systolic blood pressure and heart rate, higher serotonin, less pain, less depression and anxiety." });
+BANK.push({ cat: CE, type: "single", stem: "Which distance and activity pairing matches the chapter's zones of personal space?", opts: [O("Personal space runs 18 inches to 4 feet, and sitting and talking with a patient is its example interaction", true, "Correct. Personal space is the comfortable zone for a nurse-patient conversation."), O("Personal space runs 4 to 12 feet, and sitting and talking with a patient is its example interaction at bedside", false, "4 to 12 feet is social space, used for a group class rather than a bedside conversation."), O("Intimate space runs 18 inches to 4 feet, and bathing and catheter care are its example nursing interventions", false, "Bathing and catheter care are intimate-space work, but intimate space ends at about 18 inches."), O("Public space runs 4 to 12 feet, and a diabetes class for a group of patients is its example teaching activity", false, "A group diabetes class is the chapter's social-space example; public space is beyond 12 feet.")], tp: "Zones: intimate face to about 18 inches; personal 18 inches to 4 feet; social 4-12 feet; public beyond 12 to about 25 feet." });
+BANK.push({ cat: CE, type: "single", stem: "Which statement about the environment for a therapeutic interaction is accurate?", opts: [O("A calm, relaxed atmosphere and privacy are key; with a roommate, at minimum pull the privacy curtain between beds", true, "Correct. Commotion makes a therapeutic interaction extremely difficult; the curtain is the minimum fallback."), O("A calm atmosphere matters, but privacy is optional, because therapeutic conversation can happen anywhere on the unit", false, "Privacy is named a key element alongside calm, not an optional extra."), O("A private room with a closed door is required for every interaction, with no acceptable alternative ever available", false, "The chapter allows a conference room or, at minimum, the privacy curtain between roommates."), O("Background commotion improves realism, because patients must learn to focus despite noise during health teaching", false, "Commotion works against the interaction; it does not strengthen it.")], tp: "Ideal: private room, door closed. Not possible: conference room, or at least the privacy curtain." });
+BANK.push({ cat: CE, type: "multi", stem: "Which statements about communicating through a language barrier are accurate? Select all that apply.", opts: [O("Use trained interpreters when possible, address questions to the patient rather than to the interpreter present", true, "Correct. Box 4.3 directs questions to the patient, not the interpreter, and favors trained interpreters."), O("Avoid using younger children as interpreters, and use family interpreters cautiously because errors are likely", true, "Correct. Misinterpretation risk with family is high, and younger children should not interpret."), O("Keep messages simple, avoid medical terminology, and use gestures and pictures to support understanding safely", true, "Correct. Simple messages, gestures, and pictures are the chapter's supports when language differs."), O("Rely on an online dictionary without concern, because translated words carry little risk of an inaccurate message", false, "Translated words are to be used with caution; mispronunciation and wrong words are a high risk."), O("Speak loudly to a non-English-speaking patient, because volume is the main support when vocabulary is limited here", false, "For partially fluent patients the guidance is speak slowly and not loudly, unless hearing is impaired.")], tp: "HIPAA rules still apply when a family member or friend interprets." });
+BANK.push({ cat: CE, type: "single", stem: "Which guidance for a patient partially fluent in English is accurate?", opts: [O("Speak slowly and not loudly, use pictures when possible, seek feedback, and give time to process the discussion", true, "Correct. Box 4.2 also notes patients usually understand more than they can express."), O("Speak slowly and loudly throughout, avoid pictures, and expect immediate answers to keep the visit moving today", false, "Box 4.2 says not loudly (unless hearing-impaired) and stresses processing time, not speed."), O("Use medical terms freely, because repetition of professional words teaches the patient the needed vocabulary fast", false, "Box 4.2 says avoid using medical terms with a partially fluent patient."), O("Stand above the patient while speaking, because eye level matters less when a language barrier is present here", false, "Remain at eye level and assess comfort with eye contact, per Box 4.2.")], tp: "Stress interferes with thinking and speaking in English - another reason to slow down and seek feedback." });
+BANK.push({ cat: CE, type: "single", stem: "Which statement about older adults with hearing or cognitive barriers is accurate?", opts: [O("Face the patient, confirm the hearing aid is in and working, reduce background noise, allow response time, and never shout", true, "Correct. Getting attention, facing the patient, and checking assistive devices are the chapter's older-adult guidance."), O("Use elder speak with terms like honey and sweetie, slowly and simplified, because it comforts most older patients", false, "The chapter explicitly rejects talking to an older adult as a child with terms of endearment."), O("Shout when the patient misses a point, because raising volume is the fastest fix for an age-related hearing loss", false, "Do not shout; for hearing impairment, lower tone helps because high-pitched sounds are hardest to hear."), O("Keep glasses and hearing aids out during teaching, because devices distract older patients from the nurse's words", false, "Devices should be in place and working so sensory abilities operate at maximum potential.")], tp: "Elder speak is a named trap: no childlike, simplified slow speech and no honey or sweetie." });
+BANK.push({ cat: CE, type: "single", stem: "Which statement about pain as a physiologic factor is accurate?", opts: [O("A patient in pain focuses all available energy on coping with it, so address pain before communicating or teaching", true, "Correct. The chapter directs the nurse to address pain first, especially before any patient teaching."), O("A patient in pain communicates best during teaching, because distraction from pain sharpens attention on new material", false, "Pain consumes the energy needed to communicate about anything except the pain itself."), O("Pain affects only verbal reports, because nonverbal communication stays fully readable while pain is unaddressed", false, "Pain is presented as disrupting communication generally, not only spoken reports."), O("Pain should be documented and revisited after teaching, because teaching first gives the patient coping strategies", false, "The sequence in the chapter is pain first, then communication and teaching.")], tp: "Other physiologic factors: altered cognition from stroke, sedation, dementia, or developmental delay, and impaired hearing." });
+BANK.push({ cat: CE, type: "multi", stem: "Which statements about a stressed or grieving patient are accurate? Select all that apply.", opts: [O("Anger, impatience, or withdrawal under stress are coping mechanisms, not behavior directed at the nurse personally", true, "Correct. The chapter asks the nurse to read stress behaviors as coping, not personal attacks."), O("Under extreme stress, keep information simple, basic, and concrete, offer only essentials, and let the patient lead", true, "Correct. Modifying communication under stress means simple essentials and patient direction."), O("For a grieving patient, a silent presence is often enough, supported by listening, touch, and open-ended statements", true, "Correct. Silent presence, therapeutic touch, and open-ended statements can facilitate grieving."), O("With a stressed patient, give complete detailed information at once, because missing a detail could increase anxiety", false, "Detail overload is the opposite of the simple, basic, essential-only guidance for extreme stress."), O("With a grieving patient, avoid the subject entirely, because saying nothing protects the patient from added pain", false, "Avoiding the subject is the uneasy pattern the chapter challenges nurses to work past.")], tp: "Nurses may feel they do not know what to say to a grieving patient - attempt communication anyway." });
+BANK.push({ cat: CE, type: "single", stem: "Which cultural communication checks does this chapter name?", opts: [O("Explore dominant language and dialects, touch and eye-contact practices, time attitudes, and format for personal names", true, "Correct. Those four areas make up the chapter's Cultural Considerations checks."), O("Explore insurance coverage, preferred pharmacy, work schedule, and the family's preferred visiting hours on the unit", false, "Practical logistics are not the cultural communication checks the chapter lists."), O("Explore diet preferences only, because food practices carry the whole effect of culture on bedside communication", false, "Culture's effect is immense and includes language, touch, space, eye contact, time, and names."), O("Explore the patient's reading level only, because literacy determines every other communication choice in care today", false, "Literacy matters in care planning, but it is not the chapter's cultural considerations list.")], tp: "Cultural checks also cover willingness to share thoughts, spatial distancing, facial expressions, and greeting outsiders." });
+BANK.push({ cat: CE, type: "single", stem: "Which statement about level of trust is accurate?", opts: [O("Without trust, interaction does not progress past superficial social interaction, so trust must come before depth", true, "Correct. The nurse gains trust first, demonstrating confidence and competence."), O("Without trust, interaction deepens faster, because patients disclose more to nurses they have just met on the unit", false, "The chapter states the opposite: no trust means the interaction stays superficial."), O("Trust is built mainly by sharing the nurse's personal experiences, because self-disclosure proves sincerity quickly", false, "Personal contact sharing is a boundary problem; confidence and competence build trust here."), O("A patient's past negative encounters make trust impossible, so the nurse should keep interactions purely technical", false, "The nurse should be sensitive to past experiences and make a sincere effort at a positive one.")], tp: "Trust first, then meaningful interaction - especially with patients who have had negative encounters before." });
+BANK.push({ cat: CF, type: "single", kt: ["false reassurance"], stem: "Which response is an example of false reassurance as a blocking response?", opts: [O("Do not worry, everything will be just fine - a comforting phrase that promises an outcome that may not occur", true, "Correct. Table 4.4 defines false reassurance by falsely comforting phrases and unrealistic promises."), O("Tell me more about what worries you tonight - an invitation that opens the patient's concern for discussion", false, "That is an open, therapeutic invitation, not a blocking response."), O("You seem tense and restless this evening - an observation shared back so the patient can clarify the message", false, "Stating observations is a therapeutic technique, not false reassurance."), O("We covered many points today; the key ones are these - a closing review that focuses the teaching session well", false, "That is summarizing, a therapeutic technique used at the end of a session.")], tp: "False reassurance examples: It will be okay. You will be fine. The promise is the problem." });
+BANK.push({ cat: CF, type: "multi", stem: "Which responses block communication, per Table 4.4? Select all that apply.", opts: [O("Asking why the patient did not seek care sooner, because why questions can read as accusatory and defensive-making", true, "Correct. Asking for explanations with why questions puts the patient on the defensive."), O("Saying the doctor knows best when a patient worries, because stereotyped replies belittle feelings and concerns", true, "Correct. That is an automatic response: superficial, stereotyped, and not focused on feelings."), O("Telling a patient the topic is too sad to discuss now, because redirecting away blocks sharing of important feelings", true, "Correct. Changing the subject is rude, lacks empathy, and inhibits sharing important information."), O("Repeating the patient's main point back as a question, because any repetition of patient words blocks disclosure", false, "Repeating the main point is restating, a therapeutic technique when used selectively."), O("Offering discharge information before the patient goes home, because unsolicited facts overwhelm every patient", false, "Offering information for self-care teaching is therapeutic, not a blocking response.")], tp: "Nine blocks: false reassurance, advice, false assumptions, approval/disapproval, automatic responses, defensiveness, arguing, why questions, changing the subject." });
+BANK.push({ cat: CF, type: "single", stem: "Which statement about giving advice as a blocking response is accurate?", opts: [O("It makes a decision for the patient, impairs decision making, creates doubt, and invites blame if outcomes are poor", true, "Correct. Table 4.4 lists all of those outcomes for advice and personal opinions."), O("It strengthens decision making over time, because patients learn sound reasoning by following the nurse's choices", false, "Advice takes decision making away; it does not strengthen the patient's own process."), O("It blocks communication only when the advice proves wrong, because sound advice is always therapeutic in nursing", false, "Even well-meant advice is a block, because the harm is in who makes the decision."), O("It is the same as offering information, because both involve the nurse telling the patient something factual today", false, "Offering information supports the patient's own informed decision; advice replaces it.")], tp: "Advice phrases: If I were you I would. I think you should. Why do not you." });
+BANK.push({ cat: CF, type: "single", stem: "Which findings indicate the patient problem of compromised verbal communication?", opts: [O("Inability to produce words, lack of nonverbal communication, struggle with speech pattern, and disorientation present", true, "Correct. Those four indicators are the chapter's listed factors for this patient problem."), O("Ability to produce words clearly, rich nonverbal expression, fluent speech pattern, and full orientation present", false, "Those findings argue against the problem rather than indicating it."), O("A patient preference for written notes, full orientation, and a strong voice when speaking with family at bedside", false, "A preference for writing alone, with intact speech and orientation, is not an indicator listed."), O("Mild anxiety before a procedure, normal speech, and questions the patient asks freely during teaching sessions", false, "Anxiety with intact, free communication does not match the listed indicators.")], tp: "Example: an endotracheal tube after traumatic chest injury renders the patient unable to speak and express needs." });
+BANK.push({ cat: CF, type: "single", stem: "Which intervention set matches Box 4.6 for a patient who cannot communicate verbally?", opts: [O("Anticipate needs, keep the call light available, allow response time, praise progress, and never shout at the patient", true, "Correct. Anticipation, access, time, praise, and no shouting are all among the 15 Box 4.6 interventions."), O("Anticipate needs, keep the call light at the desk, hurry responses, correct every mistake, and speak loudly throughout", false, "Box 4.6 says ignore mistakes, allow time, and never raise your voice or shout."), O("Use long explanations, pretend to understand unclear messages, and avoid touch in every cultural situation at bedside", false, "Box 4.6 says be persistent, never pretend to understand, and use touch as culturally appropriate."), O("Test literacy once, skip procedure explanations, and reserve boards and devices only for patients who can read well", false, "Box 4.6 includes explaining all procedures and obtaining boards, devices, paper, and letter boards.")], tp: "Box 4.6 has 15 interventions - including determining language, validating expression, and keeping the environment quiet with a comprehension deficit." });
+BANK.push({ cat: CF, type: "single", stem: "Which statement about a ventilator-dependent patient's communication is accurate?", opts: [O("Assess cognition, literacy, vision, consciousness, language, and motor skills before choosing an alternative method", true, "Correct. The method must fit what the patient can actually do, so ability is assessed first."), O("Choose a communication board for every patient, because pointing at letters works regardless of literacy or vision", false, "A board is not feasible for a patient who does not read or cannot see well enough to select from it."), O("Choose writing first for every patient, because fine motor fatigue never limits a ventilated patient's messages", false, "Patients who cannot move well need other selection methods, such as a blink signal system."), O("Delay any alternative method until speech returns, because temporary silence causes no loss of control or distress", false, "Inability to speak is often devastating and disrupts well-being and control; alternatives are essential.")], tp: "Signal system: one blink for yes, two blinks for no, while the receiver points through items or letters." });
+BANK.push({ cat: CF, type: "single", kt: ["expressive aphasia", "receptive aphasia"], stem: "Which pairing of aphasia type and nursing approach is accurate?", opts: [O("Expressive: offer yes-or-no items, blinking, and a picture board. Receptive: use simple short questions plus facial gestures", true, "Correct. Expressive blocks sending, so simple response modes help; receptive blocks interpreting, so clues help."), O("Expressive: use simple short questions plus facial gestures. Receptive: offer yes-or-no items and a picture board only", false, "The approaches are reversed; match the aid to whether sending or interpreting is impaired."), O("Expressive and receptive: shout slowly and clearly, because louder speech reaches the language center more effectively", false, "Do not shout or speak loudly with aphasia; hearing loss is not the problem."), O("Expressive: encourage long speeches immediately. Receptive: avoid all gestures, because clues confuse interpretation", false, "Expressive care uses simple response modes at first; gestures add clues for comprehension problems.")], tp: "Aphasia follows ischemic insult such as stroke, brain trauma, or anoxia. Collaborate with a speech therapist." });
+BANK.push({ cat: CF, type: "multi", stem: "Which alternative methods for a patient unable to speak are listed in Box 4.7? Select all that apply.", opts: [O("A picture board the patient points to, and word or picture cards the patient picks or sorts into short phrases", true, "Correct. Picture boards and 3 by 5 word or picture cards are both Box 4.7 methods."), O("Eye blinks in a predetermined system, where the number of blinks in response indicates a yes or a no answer", true, "Correct. Predetermined eye-blink signaling is listed for patients who cannot speak."), O("Paper and pencil or a magic slate for written messages, and magnetic boards with letters to spell out words", true, "Correct. Writing tools and magnetic letter boards are both listed alternative methods."), O("A family spokesperson who answers every question, because relayed answers count as the patient's own communication", false, "A spokesperson replaces the patient's communication rather than enabling it; it is not a Box 4.7 method."), O("Sedation until the tube is removed, because rest is listed as the preferred alternative to attempted communication", false, "Sedation is not an alternative communication method in Box 4.7.")], tp: "Also listed: clock face communicator, computer-assisted communication, lip-reading, and sign language." });
+BANK.push({ cat: CF, type: "single", stem: "Which statement about communicating with an unresponsive patient is accurate?", opts: [O("Assume all sound and verbal stimuli may be heard, explain every procedure, and caution others against negative talk", true, "Correct. Some patients later report hearing statements made while they were unconscious."), O("Assume nothing is heard, so care discussions and worries can be shared freely at the bedside during procedures", false, "The chapter requires the opposite assumption and cautions nearby people about negative statements."), O("Speak to the patient only during procedures, because ordinary conversation would disturb an unresponsive patient", false, "Providers and family are encouraged to talk about daily activities and read to the patient."), O("Keep family from talking to the patient, because their attempts will feel awkward and add no benefit to recovery", false, "Family often need support and encouragement to talk with the patient; awkwardness is expected.")], tp: "Center every bedside conversation on the patient - nothing anxiety-producing where the patient may hear it." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 4: Communication - Definition Practice Test</h1>';
+  h += '<div class="sub">Definition practice test | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

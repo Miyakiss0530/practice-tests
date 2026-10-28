@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3 - Documentation - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Purposes, Legal Basis, and Confidentiality";
+var CB = "Electronic Records and Safeguards";
+var CC = "Charting Rules, ISBAR, and Abbreviations";
+var CD = "Charting Systems and Formats";
+var CE = "Forms, Pathways, and Incident Reports";
+var CF = "Home Health and Long-Term Care";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = ["chart", "charting", "auditors", "peer review", "diagnosis-related groups (DRGs)", "electronic health record (EHR)", "electronic medical record (EMR)", "personal health record (PHR)", "patient portal", "point-of-care charting", "ISBAR", "ISBARR", "narrative charting", "traditional (block) chart", "problem-oriented medical record (POMR)", "problem list", "SOAPIER", "focus charting", "DARE", "charting by exception (CBE)", "PIE", "Kardex", "incident report", "clinical (critical) pathway", "minimum data set (MDS)", "HIPAA"];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 7,
+  "types": {
+   "single": 6,
+   "multi": 1
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 7,
+  "types": {
+   "single": 6,
+   "multi": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 15,
+  "types": {
+   "single": 11,
+   "multi": 3,
+   "order": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 8,
+  "types": {
+   "single": 6,
+   "dropdown": 1,
+   "multi": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 8,
+  "types": {
+   "single": 6,
+   "multi": 1,
+   "matrix": 1
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 3,
+  "types": {
+   "single": 3
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single", kt: ["charting"],
+  stem: "A nurse administers a scheduled analgesic at 0900, reassesses pain at 0945, and is then pulled to an admission. At 1300 she realizes the analgesic and its effect were never entered. Which action should the nurse take first?",
+  opts: [ O("Enter a late entry labeled per policy, with the dose, time, and pain response", true, "Correct. Framework: Nursing Process, evaluation phase. The response to an analgesic must be charted, and a late entry labeled as policy directs keeps the record honest and complete."), O("Add the dose to the 0900 notes of the nurse who covered the admission", false, "A nurse charts only her own care and observations; another nurse's notes cannot carry her entry."), O("Wait until the next dose is due and chart both doses together then", false, "Important entries are not held for convenience; the gap also hides this dose's response from the team."), O("Ask the patient to confirm relief and rely on that at shift report", false, "Spoken confirmation is easily lost; only the written or electronic record carries the care legally.") ],
+  tp: "Framework: Nursing Process (ADPIE), evaluation. Note the response to analgesics and special medications, and label late entries as policy directs." });
+
+BANK.push({ cat: CA, type: "single", kt: ["chart"],
+  stem: "During a chart audit, a reviewer finds that wound care ordered twice daily is charted once daily for 3 days, with no responses recorded. The care was, in fact, given twice daily. What is the legal standing of the missing entries?",
+  opts: [ O("The undocumented care is treated as care that was not provided", true, "Correct. Framework: safety first through legal accountability. Auditors check that ordered care was charted as given and responses noted; a court treats the gaps as care not done."), O("The care is presumed given because the order itself was documented", false, "The order proves intent, not delivery; delivery and response must be charted."), O("The care is presumed given if the supply log shows dressings used", false, "Supply use is not a patient record of care, times, and responses."), O("The gap matters only if the patient files a complaint about care", false, "Audits and payer reviews test the record itself; no complaint is required for the gap to count.") ],
+  tp: "Institutions are reimbursed only for documented care, and courts treat undocumented care as not provided." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A student nurse is preparing a case presentation and has a printout that includes a patient's rare diagnosis and past surgical history, but no name or room number. Which action is required before the student leaves the clinical site?",
+  opts: [ O("Shred the printout and strip every identifier from the assignment copy", true, "Correct. Framework: safety first, confidentiality. A unique diagnosis or past medical history identifies a patient just as a name does, and no identified material leaves the site."), O("Fold the printout into a notebook so the details are not visible", false, "Concealing identified material still removes it from the site; identifiers must be stripped and printouts shredded."), O("Keep the printout because the name and room number were removed", false, "Identifiers are not only name, age, or ID number; the rare diagnosis identifies this patient."), O("Ask the patient after discharge whether keeping the printout is fine", false, "The rule applies at the site, before leaving; later permission does not cure taking identified material out.") ],
+  tp: "Strip all identifiers from course work, never leave identified documents unattended, and shred printouts before leaving." });
+
+BANK.push({ cat: CA, type: "multi", kt: ["HIPAA"],
+  stem: "A patient asks to review her own record. Which of the following facility actions are consistent with the chapter? Select all that apply.",
+  opts: [ O("Require the request in writing, as the facility policy directs", true, "Correct. A written request may be required for patient access."), O("Allow time to review the record before responding to the request", true, "Correct. A facility may allow time to review the record before responding."), O("Have a staff member present to answer questions during review", true, "Correct. A staff member or physician may be present to answer questions and protect the record's integrity."), O("Provide a copy of the record when the patient requests one", true, "Correct. Patients may also request a copy of the record."), O("Hand over the original record for the patient to keep at home", false, "The physician or institution owns the original; the patient gains access and copies, not the original.") ],
+  tp: "Access is not ownership: the patient, lawyers with written permission, and courts can all gain access by the stated routes." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A float nurse opens the record of a former neighbor who is a patient on another unit, saying she wants to check how the surgery went. She provides no care to this patient. Which statement describes this action?",
+  opts: [ O("It breaks confidentiality because there is no clinical reason to read it", true, "Correct. Framework: safety first, confidentiality. Personnel may not read a record, or let others read it, without a clinical reason."), O("It is permitted because she knows the patient personally outside work", false, "A personal relationship is not a clinical reason for access."), O("It is permitted if she reads only the operative report and nothing else", false, "Limiting the pages read does not create a clinical reason for the access."), O("It breaks confidentiality only if she repeats the findings to someone", false, "The unauthorized reading itself is the breach; repeating it is not required.") ],
+  tp: "Breaking confidentiality often leads to job termination, lawsuits, or both, and it destroys patient trust." });
+
+BANK.push({ cat: CA, type: "single", kt: ["diagnosis-related groups (DRGs)"],
+  stem: "A payer reviewer denies part of a stay's payment, stating that ordered nursing care for a postoperative patient cannot be verified in the record. Which record element most directly decides this review?",
+  opts: [ O("Nursing notes showing the ordered care was given, with responses", true, "Correct. Framework: Nursing Process, evaluation. Payers review items in the record, including nursing notes, to decide whether necessary, ordered care was given under the DRG payment."), O("The admission form showing the patient's insurance carrier name", false, "Coverage identity does not prove that ordered care was delivered and charted."), O("The Kardex showing the care that was planned for each shift", false, "The Kardex shows plans and orders; the reviewer needs the record of care actually given."), O("The pathway form showing the expected length of stay for the case", false, "A projected stay does not verify that this patient's ordered care occurred.") ],
+  tp: "DRG payment is fixed; the documented record, nursing notes included, is what payers audit to release it." });
+
+BANK.push({ cat: CB, type: "single", kt: ["electronic health record (EHR)"],
+  stem: "A patient is transferred from a community hospital to a regional center. The receiving team pulls up the full record from the sending hospital in their own system. Which record type made this possible?",
+  opts: [ O("The EHR, because it exchanges data from one facility to another", true, "Correct. Framework: Nursing Process, assessment data sharing. The EHR exchanges data within a facility and between facilities, which is its key difference from the EMR."), O("The EMR, because it exchanges data from one facility to another", false, "The EMR exchanges data within a facility only; between-facility travel is the EHR."), O("The PHR, because the patient carried the record between facilities", false, "A PHR can gather a patient's data, but team-to-team system exchange is the EHR's function."), O("The portal, because the patient viewed the record before transfer", false, "The portal is a patient view into one facility's released information, not a transfer system.") ],
+  tp: "Ask where the data travels: within one facility = EMR; within plus between facilities = EHR." });
+
+BANK.push({ cat: CB, type: "single", kt: ["patient portal"],
+  stem: "A patient shows the nurse a portal screen listing home medications and says, 'I stopped one of these last week; I will just fix the list here myself.' Which response by the nurse is correct?",
+  opts: [ O("Explain the portal cannot accept her edits, and update the care team record", true, "Correct. Framework: Nursing Process, assessment. The portal lets her view lists and message the provider, but she cannot add or change information in it; the change goes through the care team."), O("Agree, since the portal list belongs to the patient to maintain", false, "Portal content is facility-provided; patient-maintained data belongs in a PHR."), O("Tell her to fix it in her PHR, which will correct the facility list", false, "Her PHR is her own database and does not rewrite the facility's medication list."), O("Advise her to wait for discharge, when lists no longer matter much", false, "A stopped medication matters now; the discrepancy needs team documentation, not delay.") ],
+  tp: "Portal = view and message, no adding. PHR = the patient inputs and updates the data." });
+
+BANK.push({ cat: CB, type: "single", kt: ["HIPAA"],
+  stem: "A nurse finishes charting at a hallway terminal and is called to a room. A colleague says, 'Leave it logged in, I will use your screen and save us both time.' Which action should the nurse take?",
+  opts: [ O("Log off before leaving, and let the colleague sign in separately", true, "Correct. Framework: safety first. Anything entered under a password is credited to whoever signed in, and a logged-in terminal left unattended exposes patient information."), O("Leave it logged in, since the colleague is a licensed staff member", false, "Licensure does not transfer accountability; entries under her password become hers in the record."), O("Turn the monitor toward the wall and leave the session logged in", false, "Hiding the screen does not log the session off or protect the displayed information."), O("Ask the colleague to sign the entries she makes with both names", false, "Dual signing does not fix entries made under another person's password.") ],
+  tp: "Box 3.5: log on with your own password, log off before walking away, never share the password." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A nurse discovers she entered a full assessment into the wrong patient's electronic chart. Which action follows the chapter's correcting protocol?",
+  opts: [ O("Follow facility policy to identify the error, add correct data, date and initial it", true, "Correct. Framework: Nursing Process, implementation with accountability. Electronic errors are corrected by protocol, with the correction identified, dated, and initialed."), O("Delete the assessment from the wrong chart so no trace remains there", false, "Deleting part of the permanent record without explanation is prohibited; an in-file explanation is required."), O("Copy the assessment into the right chart and say nothing about the error", false, "Silently copying leaves the wrong chart wrong and the correction unexplained."), O("Ask the next shift to watch both charts and fix anything that looks off", false, "The nurse who made the error follows the correcting protocol herself, now.") ],
+  tp: "Deleting record content requires an in-file explanation with date, time, and initials, plus a written explanation to the manager." });
+
+BANK.push({ cat: CB, type: "multi", kt: ["point-of-care charting"],
+  stem: "A nurse is charting at the bedside on a handheld device when the patient's spouse says, 'Staff are always on their phones here.' Which of the following actions address this correctly? Select all that apply.",
+  opts: [ O("Explain that the device is used to enter care into the health record", true, "Correct. The chapter directs staff to tell patients and family the handheld device is an EHR device."), O("Show the spouse the current vital signs flow sheet for this patient", false, "Showing one patient a screen is not the fix, and displays risk exposure of information; explanation is the directed action."), O("Continue charting at the bedside so the data stay current for the team", true, "Correct. Bedside entry makes current information immediately available to everyone who needs it."), O("Move all charting back to the nursing station for the rest of the shift", false, "Retreating to the station gives up the time savings and immediacy of point-of-care entry."), O("Apologize and promise the device will not be used in the room again", false, "The chapter's fix is explanation, not abandoning bedside documentation.") ],
+  tp: "Handheld devices can look like personal phones; a one-line explanation protects both perception and current data." });
+
+BANK.push({ cat: CB, type: "single", kt: ["electronic health record (EHR)"],
+  stem: "A newly hired experienced nurse keeps selecting the wrong pick-list terms, entering assessments that do not match what she observed. Which interpretation is correct?",
+  opts: [ O("Her entries are only as accurate as her grasp of this system's terms", true, "Correct. Framework: Nursing Process, assessment accuracy. With pick lists, data accuracy depends on the nurse's familiarity with the system's nomenclature, and even experienced hires must learn a new system."), O("The system should be replaced, since pick lists cannot hold accurate data", false, "Pick lists work when the user knows the terminology; training, not replacement, is the chapter's answer."), O("Her experience elsewhere proves the entries are right despite mismatches", false, "Experience does not transfer automatically; the observed mismatch shows the terms were misread."), O("Free-text notes alone will fix the problem if she avoids pick lists", false, "Avoiding required pick-list fields leaves records incomplete; learning the nomenclature is the fix.") ],
+  tp: "Informatics changes constantly: software updates, initial training, and refresher training are standing duties." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A nurse must fax a patient's records to another facility for a consultation. Which action should the nurse take first?",
+  opts: [ O("Verify the fax number with the recipient before sending the records", true, "Correct. Framework: safety first, confidentiality. HIPAA allows faxing between providers and facilities, and verification with the recipient is the safeguard against incorrect dialing."), O("Send a test page with the patient's name to confirm the line works", false, "A test page still sends identifiable information before the number is verified with the recipient."), O("Dial the number from memory, since the facility is a frequent contact", false, "Memory dialing skips the verification step; frequent numbers are often preprogrammed to prevent errors."), O("Ask the patient to carry a printed copy to the other facility instead", false, "Faxing between facilities is permitted; the safeguard is verification, not avoiding the fax entirely.") ],
+  tp: "Stored records also need backup files, and printouts must be logged, tracked, and shredded per protocol." });
+
+BANK.push({ cat: CC, type: "single", kt: ["ISBARR"],
+  stem: "A nurse calls a provider about a patient whose potassium is 2.1 mEq/L. The provider gives a new potassium order by phone. Which action should the nurse take first after receiving the order?",
+  opts: [ O("Read the order back to the provider to confirm it was heard correctly", true, "Correct. Framework: safety first, closed-loop communication. The extra R in ISBARR exists for exactly this moment, before the order is charted or acted on."), O("Chart the order in the record and administer the dose as soon as possible", false, "Acting before the read back risks acting on a misheard order; verification comes first."), O("Ask a second nurse to listen on another line and confirm the dose later", false, "A second listener afterward is not the read back to the provider that confirms the order."), O("Repeat the order to the patient so the patient can confirm the plan", false, "The patient cannot verify a provider's phoned order; the read back goes to the provider.") ],
+  tp: "ISBARR sequence closes the loop: read back, then chart the call, the information given, and the order received." });
+
+BANK.push({ cat: CC, type: "single", kt: ["ISBAR"],
+  stem: "A nurse begins a provider call by listing laboratory values for 3 minutes without saying who she is, why she is calling, or what she needs. Which ISBAR element failure is the priority problem?",
+  opts: [ O("No Introduction or Situation, and no Recommendation to act on", true, "Correct. Framework: Nursing Process, communication. ISBAR starts with who you are and why you are calling, and ends with a specific request; a data dump prevents action."), O("No Background, because admission details were not recited first", false, "Background matters, but the call also lacks an opening and a closing ask; data without framing is the broader failure."), O("No Assessment, because her opinion was not stated before the values", false, "Her assessment belongs after background; the missing bookends of the call are the priority failure."), O("No read back, because every provider call must end with one", false, "Read back applies when an order is received; no order has been given in this call yet.") ],
+  tp: "Say who you are first, frame the situation in one line, and end with a clear recommendation." });
+
+BANK.push({ cat: CC, type: "single", kt: ["charting"],
+  stem: "At 0730 a nurse charts the 0800 medications as given because the medication room will be crowded later and she wants the record finished early. A peer notices the times. Which statement is correct?",
+  opts: [ O("Charting care in advance is inappropriate and can lead to malpractice claims", true, "Correct. Framework: safety first through legal accountability. Care is charted after it is provided, never before, and at the time it actually occurs."), O("Charting in advance is acceptable when the nurse fully intends to give the care", false, "Intent does not make an entry true; a charted-but-ungiven dose misleads every later reader."), O("Charting in advance is acceptable if the medications are routine daily doses", false, "Routine status does not exempt an entry from the after-care rule."), O("Charting in advance is an error only if the patient later refuses the dose", false, "The entry was false when written, whether or not the dose is later given or refused.") ],
+  tp: "Chart after care, as soon as possible, and chart departures, deviations, and refusals as they happen." });
+
+BANK.push({ cat: CC, type: "single", kt: ["charting"],
+  stem: "A nurse finds she wrote the wrong drainage amount in a handwritten note. A coworker hands her correction fluid and says, 'Just paint over it so the note looks clean.' Which action is correct?",
+  opts: [ O("Draw a single line through the error, identify it per policy, write it correctly", true, "Correct. Framework: Nursing Process, accountability. A single line keeps the original readable and the correction transparent, in permanent black ink."), O("Use the correction fluid, then initial and date the painted area neatly", false, "Correction fluid is never used; it makes charting look defaced even when initialed."), O("Rewrite the whole page and discard the page with the error in it", false, "Removing a page destroys part of the legal record; corrections happen on the original entry."), O("Scratch out the amount until it is unreadable, then write the new one", false, "Scratching out looks like hiding information and makes the entry illegible.") ],
+  tp: "Never erase, use correction fluid, or scratch out: single line, identify per policy, record correctly." });
+
+BANK.push({ cat: CC, type: "multi", kt: ["charting"],
+  stem: "Which of the following entries meet the chapter's documentation standards? Select all that apply.",
+  opts: [ O("A note quoting the patient's own words for the pain she reports", true, "Correct. Direct quotes are used when appropriate for subjective reports."), O("A note describing a ring as white metal with a clear stone in it", true, "Correct. Describe items as seen instead of naming what they are assumed to be."), O("A note stating the patient is faking pain to obtain more medication", false, "That is speculation and a critical judgment, not an objective description."), O("A note stating the physician made an error in the morning order", false, "The record states that clarification was sought, never that the physician made an error."), O("A note recording the response 45 minutes after an analgesic dose", true, "Correct. Responses to analgesics and other special medications are charted.") ],
+  tp: "Objective only: what you hear, see, feel, or smell, with quotes, and no retaliatory or critical comments." });
+
+BANK.push({ cat: CC, type: "single", kt: ["charting"],
+  stem: "A nurse questions whether a written order's dose is safe and calls the provider, who clarifies the order. Which chart entry is correct?",
+  opts: [ O("An entry stating the named provider was called to clarify the order", true, "Correct. Framework: Nursing Process, advocacy with objectivity. The chapter's own wording records that clarification was sought from the named provider."), O("An entry stating the provider made an error and corrected the order", false, "Assigning error to the provider in the record is prohibited; the clarification is what is charted."), O("No entry at all, because the clarified order now speaks for itself", false, "Seeking clarification is part of the care record and is charted."), O("An entry on the incident form only, kept out of the patient's chart", false, "A clarified order is routine care communication, not an incident; it belongs in the chart.") ],
+  tp: "Chart facts and actions taken; never chart retaliatory or critical comments about a patient or another professional." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "An order is written as 'BS checks q6h' for a patient with diabetes who also has pneumonia. The nurse is unsure which meaning the writer intended. Which action should the nurse take first?",
+  opts: [ O("Confirm the intended check with the writer before acting on the order", true, "Correct. Framework: safety first. BS can mean breath sounds, bowel sounds, or blood sugar; an ambiguous abbreviation is clarified, never guessed."), O("Check blood sugar, since diabetes is the patient's admitting problem", false, "Guessing the most likely meaning can chart and act on the wrong assessment entirely."), O("Chart all three checks each time so every possible meaning is covered", false, "Doing unneeded checks to cover an unclear order wastes care and still leaves the order ambiguous."), O("Write out a guessed meaning in the note and proceed with the checks", false, "Recording a guess as fact corrupts the record; the complete word and a clarified order are required.") ],
+  tp: "When an abbreviation could be misread, spell the word out; if unsure of any order, clarify it and chart that clarification was sought." });
+
+BANK.push({ cat: CC, type: "order", kt: ["ISBAR"],
+  stem: "Place the parts of an ISBAR provider call in the order the nurse should deliver them.",
+  items: [
+    { t: "State your name, unit, and the patient you are calling about", r: "Introduction comes first: who you are, your unit, and who the call is about." },
+    { t: "Give the one-line reason for the call, in a single sentence", r: "Situation follows: why you are calling, in one line." },
+    { t: "Present the facts behind the problem, including prior results", r: "Background gives the facts, such as results that were normal except one value." },
+    { t: "State what you found and what you think is going on now", r: "Assessment is your analysis of the patient's problem or need." },
+    { t: "Make a specific request the provider can answer directly", r: "Recommendation closes ISBAR with a clear, answerable ask." },
+    { t: "Read back any order received, word for word, to the provider", r: "The read back is the added R of ISBARR, done when an order is received." }
+  ],
+  tp: "Framework: safety first, structured communication. ISBARR order never changes: introduce, situation, background, assessment, recommendation, read back." });
+
+BANK.push({ cat: CD, type: "single", kt: ["problem-oriented medical record (POMR)"],
+  stem: "A unit converts to a problem-oriented record. A nurse asks where the respiratory therapist's notes on the patient's breathing problem will appear. Which answer is correct?",
+  opts: [ O("On the same shared progress notes the whole team uses per problem", true, "Correct. Framework: Nursing Process, communication. In the POMR, physicians, nurses, social workers, and therapists chart on the same progress notes to enhance communication."), O("In a separate therapy section at the back of the block chart", false, "Separate discipline sections describe the traditional block chart, not the POMR."), O("On the problem list itself, in the space beside each problem", false, "The problem list is the index; progress is charted in the progress notes."), O("In the database section, beside the admission history and examination", false, "The database holds history, examination, and test results used to identify problems.") ],
+  tp: "One problem, one shared story: narrative notes, flow sheets, and discharge summaries document progress together in the POMR." });
+
+BANK.push({ cat: CD, type: "single", kt: ["SOAPIER"],
+  stem: "A patient says, 'My chest feels tight when I walk to the bathroom,' and the nurse measures an oxygen saturation of 89% on room air. Where do these two data points belong in a SOAPIER note?",
+  opts: [ O("The patient's words under S and the saturation reading under O", true, "Correct. Framework: Nursing Process, assessment. S is what only the patient can state or feel; O is what the nurse can measure or factually describe."), O("Both data points under S, since both were gathered at one time", false, "The saturation is measured by the nurse and belongs under O, however it was timed."), O("Both data points under O, since both are now part of the record", false, "Being recorded does not make the patient's felt symptom objective data."), O("The words under A and the saturation reading under S in the note", false, "A is the nurse's analysis of cause, and the measured value is O, not S.") ],
+  tp: "Sort every datum before you write: stated or felt = S; measured or described = O." });
+
+BANK.push({ cat: CD, type: "single", kt: ["focus charting"],
+  stem: "A nurse using focus charting writes the focus as 'pneumonia' for a patient who is anxious about a new oxygen mask and keeps pulling it off. Which correction is needed?",
+  opts: [ O("Rewrite the focus as the patient's concern and behavior, not the diagnosis", true, "Correct. Framework: Nursing Process, assessment focus. A focus is a current concern, behavior, status change, or therapy event, never a medical diagnosis."), O("Keep the diagnosis, since the mask problem is caused by the pneumonia", false, "Causation does not convert a diagnosis into a focus; focus charting indexes patient needs."), O("Drop the entry, because anxiety is not charted in focus charting", false, "A behavior change and a therapy event are exactly what a focus can be."), O("Move the entry to the problem list and number it as a new problem", false, "The focus list resembles the problem list, but this entry belongs in focus charting with the focus corrected.") ],
+  tp: "Focus = need, concern, behavior change, or significant therapy event. Diagnosis belongs to the medical problem list." });
+
+BANK.push({ cat: CD, type: "single", kt: ["DARE"],
+  stem: "A focus note records a patient's quoted epigastric pain report rated 7 of 10 and the analgesic given, with dose, route, and site. At reassessment the patient says the pain is gone, but the note is left as written. What is missing?",
+  opts: [ O("The Response step, recording the patient's words after the treatment", true, "Correct. Framework: Nursing Process, evaluation. The chapter's worked example closes with the patient's words that the pain is gone; without Response the note is unfinished."), O("The Education step, recording teaching about the drug's side effects", false, "Education is included by some facilities, but the missing required close is the patient's response."), O("The Data step, recording the dose and route of the analgesic given", false, "Dose, route, and site belong to Action, which is already recorded."), O("A second focus entry, since each pain episode needs its own focus", false, "One focus entry is completed by its Response; a new entry is not the fix.") ],
+  tp: "DARE: Data pairs with assessment, Action with planning plus implementation, Response with evaluation of effectiveness." });
+
+BANK.push({ cat: CD, type: "single", kt: ["charting by exception (CBE)"],
+  stem: "On a charting-by-exception unit, a patient's 1400 assessment finds new crackles and a respiratory rate of 28, changed from a clear baseline at 0700. The nurse plans to chart at shift end with the other notes. Which action is correct?",
+  opts: [ O("Chart the change now, because under this system the exception is the note", true, "Correct. Framework: acute versus stable, safety first. A change in condition is the exception CBE exists to capture; waiting leaves a false picture of a stable patient."), O("Chart it at shift end, because exceptions are gathered once per shift", false, "Exceptions are charted when found; end-of-shift batching defeats the method and delays response."), O("Skip the entry, because the baseline already describes this patient fully", false, "The baseline describes the patient at shift start, not this new finding."), O("Note it only on the flow sheet checkbox for lungs and move on today", false, "A new concern needs a charted exception with the finding, not a checkbox alone against standardized criteria.") ],
+  tp: "CBE still stands behind the legal rule: undocumented care and findings are treated as not done and not found." });
+
+BANK.push({ cat: CD, type: "dropdown", kt: ["PIE"],
+  stem: "A nurse is choosing formats for three notes. Match each note to its format. Note A, built from Problem, Intervention, and Evaluation, comes from [[0]]. Note B, the seven-letter format ending in Revision, is [[1]]. Note C, which folds Intervention into Plan and Revision into Evaluation, is [[2]].",
+  blanks: [
+    { o: [ O("the nursing process", true, "PIE arose from the nursing process."), O("the medical model", false, "The medical model produced SOAPE, not PIE."), O("focus charting", false, "Focus charting produced DARE, not PIE.") ] },
+    { o: [ O("SOAPIER", true, "SOAPIER is the full seven-letter format ending in Revision."), O("SOAPE", false, "SOAPE has five letters and folds Revision into Evaluation."), O("APIE", false, "APIE has four parts and does not end in Revision.") ] },
+    { o: [ O("SOAPE", true, "SOAPE folds Intervention into Plan and Revision into Evaluation."), O("SOAPIER", false, "SOAPIER gives Intervention and Revision their own letters."), O("DARE", false, "DARE is Data, Action, Response, and Education.") ] }
+  ],
+  tp: "Framework: Nursing Process origins. PIE and APIE track the nursing process; SOAPE and SOAPIER come from the medical model." });
+
+BANK.push({ cat: CD, type: "single", kt: ["narrative charting"],
+  stem: "A narrative note describes a dressing change in detail, the supplies used, and the wound's appearance, then ends. The preceptor returns it for completion. Which element must the nurse add?",
+  opts: [ O("The patient's response to the treatment that was provided", true, "Correct. Framework: Nursing Process, evaluation. A complete narrative note carries the data, any contacts made, the care provided, and the patient's response."), O("The patient's response to treatments given on the previous shift", false, "The response that closes this note is to this treatment, not an earlier one."), O("A statement that the wound status is unchanged from yesterday", false, "Empty phrases such as status unchanged are too general to carry the patient's condition."), O("A copy of the supply charges generated by the dressing change", false, "Charges are not part of a narrative note's required content.") ],
+  tp: "A narrative note that stops at care given repeats the classic error: evaluation closes the note." });
+
+BANK.push({ cat: CE, type: "single", kt: ["incident report"],
+  stem: "A patient received hydrochlorothiazide 25 mg by mouth; 12.5 mg was ordered. Vitals are stable. Which chart entry is correct?",
+  opts: [ O("State the drug, the 25 mg given, the 12.5 mg ordered, vitals, and who was notified", true, "Correct. Framework: safety first, objective documentation. The proper entry states the drug, both doses, the vitals, the provider notified, and the orders received, with no opinion words."), O("State that the dose was given by mistake and that vitals remained stable", false, "Writing by mistake adds opinion and omits the ordered-versus-given dose facts the entry requires."), O("State the dose given and note that an incident report was completed", false, "The incident report is never mentioned in the patient's chart."), O("State the ordered dose only, since the patient had no reaction to it", false, "Charting the ordered dose as if given falsifies the record of what actually happened.") ],
+  tp: "This is the chapter's own medication-error example: dose facts, vitals, provider notified, monitoring orders received." });
+
+BANK.push({ cat: CE, type: "single", kt: ["incident report"],
+  stem: "After the same medication error, the nurse completes the incident report. Which content belongs in that report?",
+  opts: [ O("Objective observed facts, the response care given, and the provider's name", true, "Correct. Framework: safety first. The report holds only objective, observed information, the care given in response, and the name of the provider notified."), O("An explanation of why the nurse believes the error happened that day", false, "Speculation about causes does not belong in the report; observed facts only."), O("A statement accepting liability on behalf of the facility for the error", false, "Admitting liability is a named error in incident reporting."), O("Extra background details about the nurse's workload and staffing that day", false, "Unnecessary details are a named error; the report stays with the event's facts.") ],
+  tp: "The incident form is marked confidential, not part of the medical record; it goes to Risk Management after 24 hours on the record." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "A patient is found sitting on the floor beside the bed table, awake, with a 1-cm abrasion on the left knee and stable vitals. The provider orders neurologic checks and fall-risk precautions. Which set belongs in the patient's chart?",
+  opts: [ O("Position found, the abrasion and its location, provider notified, orders received", true, "Correct. Framework: Nursing Process, assessment then evaluation. The chart holds the complete assessment, findings, provider notified, and orders, without naming any report."), O("Position found, a guess that the patient reached for water, orders received", false, "Why the patient fell is not chartable unless it was observed; the abrasion finding is also missing."), O("The abrasion and its location, and a note that a full report was filed", false, "Naming the report in the chart is prohibited, and the position found is part of the assessment."), O("Orders received and fall precautions started, with findings left to the report", false, "Findings belong in the chart; the report never substitutes for the chart entry.") ],
+  tp: "Chart the incident's facts and care in the record; file the report separately and never name it." });
+
+BANK.push({ cat: CE, type: "single", kt: ["Kardex"],
+  stem: "At change of shift, the Kardex shows an activity order that conflicts with the current medical order and the nursing notes from the day shift. Which action should the nurse take first?",
+  opts: [ O("Verify against the current medical orders and correct the Kardex entry", true, "Correct. Framework: safety first, consistency of the record. Nursing notes must correlate with the medical orders, the Kardex, and the care plan; conflicting entries are a documentation failure."), O("Follow the Kardex, since it is the quickest reference used on the unit", false, "Speed does not outrank accuracy; the Kardex must match the actual current order."), O("Follow the day shift notes, since that nurse saw the patient most recently", false, "Recent notes do not override a current medical order; the sources must be reconciled."), O("Leave all three as written and let the night shift sort out the conflict", false, "Handing on a known conflict risks the wrong activity level being carried out.") ],
+  tp: "The Kardex is updated frequently precisely so the quick card never drifts from the orders and notes." });
+
+BANK.push({ cat: CE, type: "single", kt: ["clinical (critical) pathway"],
+  stem: "A patient on a total hip pathway is projected for a diet advancement on day 2, but reports nausea and does not advance. Which documentation action is required?",
+  opts: [ O("Document the variance, since the projected intervention was not provided", true, "Correct. Framework: Nursing Process, evaluation against the plan. With pathways, staff document when anticipated interventions are not provided as projected."), O("Leave the pathway line blank, since nothing was actually done that day", false, "A blank hides the deviation; the variance is exactly what must be documented."), O("Mark the diet as advanced so the pathway stays on schedule on paper", false, "Charting care not given falsifies both the pathway and the record."), O("Remove the patient from the pathway because of this single deviation", false, "One documented variance does not end pathway care; monitoring continues on the pathway.") ],
+  tp: "The pathway is both the plan and the documentation tool: activity, pain control, diet, and teaching, day by day." });
+
+BANK.push({ cat: CE, type: "multi", kt: [],
+  stem: "A patient is admitted for same-day surgery at 0800 and will be discharged that evening. Which of the following discharge actions are correct? Select all that apply.",
+  opts: [ O("Begin discharge planning now, at admission, rather than at discharge time", true, "Correct. Discharge planning begins at admission, in some cases before it, including same-day surgery."), O("Revise the discharge plan as the patient's condition changes today", true, "Correct. The plan is revised as the condition changes."), O("Give the discharge summary form to the patient and, or the family", true, "Correct. The form must always be given to the patient and/or family as written instructions."), O("Send a copy to the home health agency involved in follow-up care", true, "Correct. Copies go to home health or extended-care facilities for continuity, and one copy stays with the record."), O("Involve the patient and family only when handing over the papers", false, "The patient and family are involved in the planning process itself, not only at handover.") ],
+  tp: "Framework: Nursing Process, planning from admission. The 24-hour record and discharge summary keep one day of care in one system." });
+
+BANK.push({ cat: CE, type: "matrix", kt: [],
+  stem: "For each patient, choose the acuity level this chapter's scale assigns. Use the scale as printed in the chapter.",
+  cols: ["Level 1", "Level 5"],
+  rows: [
+    { t: "A patient just back from surgery with multisystem problems", a: 0, r: "Level 1 is high acuity on this book's printed scale; this is the chapter's own example." },
+    { t: "A patient awaiting discharge after a successful surgical recovery", a: 1, r: "Level 5 is low acuity on this book's printed scale; this is the chapter's own example." },
+    { t: "A patient whose documented interventions show the heaviest care needs on the unit", a: 0, r: "Acuity rates severity from documented interventions; the heaviest needs sit at the high end, level 1 as printed." },
+    { t: "A patient whose documented interventions show the lightest care needs on the unit", a: 1, r: "The lightest needs sit at the low end of this printed scale, level 5." }
+  ],
+  tp: "Framework: Maslow and staffing by acuity. As printed in this book, 1 = high and 5 = low; staffing patterns and ratios are set from these ratings." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Routine vital signs, a bath, and a medication dose are all completed on a stable patient. A new nurse asks whether each one needs its own narrative note. Which answer is correct?",
+  opts: [ O("No; those data live on their own flow sheets and forms instead", true, "Correct. Framework: Nursing Process, efficient documentation. Forms exist so the same data are not duplicated in the nursing notes every time."), O("Yes; every care act requires a full narrative note in the record", false, "That all-care narrative policy is the time-consuming pattern these forms were built to replace."), O("No; routine care needs no documentation in any location at all", false, "The care is documented, on its designated forms; the point is avoiding duplication, not documentation."), O("Yes, unless the patient is stable enough that notes can be skipped", false, "Stability does not decide it; the form system decides where each datum is recorded.") ],
+  tp: "Double-charting the same datum in notes and on its form creates duplication and conflicting entries." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "A home health nurse teaches a patient to self-inject a medication, and the patient performs the injection correctly while the nurse watches. Which documentation is required for payment and quality review?",
+  opts: [ O("The education given and the patient's demonstration of the learning", true, "Correct. Framework: Nursing Process, evaluation of teaching. Home health must document education and the patient's demonstration of learning, along with the care and responses."), O("The education given, with the demonstration left for the next visit", false, "The demonstration of learning is part of the must-document list for the visit where it occurred."), O("A note that teaching was completed, without describing what was taught", false, "Procedures, treatments, and teaching in the home are documented in detail, with responses."), O("A note in the patient's own PHR, which the patient updates at home", false, "The nurse's visit documentation is the agency record that justifies reimbursement, not the patient's PHR.") ],
+  tp: "Every home service is documented for payment: direct skilled care, instructions, skilled observations, and evaluation visits." });
+
+BANK.push({ cat: CF, type: "single", kt: ["minimum data set (MDS)"],
+  stem: "A long-term care resident's condition changes and the care team from nursing, social work, physical therapy, and dietary all need the same current picture. Which system carries their shared documentation?",
+  opts: [ O("The MDS assessment with planning through resident assessment protocols", true, "Correct. Framework: Nursing Process, interdisciplinary planning. The regulated record is multidisciplinary, with the MDS as assessment and protocols driving the plan."), O("A clinical pathway written for the resident's original hospital stay", false, "Pathways are acute-care, day-by-day hospital tools, not the long-term care record system."), O("Each discipline's separate narrative notes kept in different binders", false, "The long-term care system is a shared regulated record, not separated discipline files."), O("The resident's PHR, updated by the family between team meetings", false, "The PHR is a personal database; the facility's regulated record carries team documentation.") ],
+  tp: "Call them residents: acuity and disabilities in long-term care keep rising with age, changing the documentation basis from acute care." });
+
+BANK.push({ cat: CF, type: "single", kt: [],
+  stem: "A home health agency's claims are denied because visit records describe care but never establish why the patients qualified for home services. Which missing documentation element caused the denials?",
+  opts: [ O("Thorough assessment and documentation of each patient's eligibility", true, "Correct. Framework: Nursing Process, assessment as justification. Eligibility must be assessed thoroughly and documented; services without it are unsupported and unpaid."), O("A discharge summary form given to each patient at the first visit", false, "The discharge summary belongs to discharge; the missing element here is documented eligibility."), O("A Kardex card kept at the agency office for each home patient", false, "A quick-reference card does not establish eligibility for reimbursement."), O("Portal messages between the patients and their providers", false, "Portal messages are communication, not the eligibility documentation payers require.") ],
+  tp: "Home-care documentation gaps are payment gaps: it is the quality control and the justification for reimbursement." });
+
+BANK.push({ cat: CD, type: "multi", kt: ["problem list"],
+  stem: "A POMR problem list is being updated at a team review. Which of the following updates are correct? Select all that apply.",
+  opts: [ O("Number and date a newly identified problem as it is added to the list", true, "Correct. Problems are numbered and dated as they are identified on the master list."), O("Mark a problem resolved when the team agrees it no longer applies", true, "Correct. Problems are marked resolved or reactivated as printed on the form."), O("Keep potential problems on the list alongside active problems", true, "Correct. The list holds active, inactive, potential, and resolved problems."), O("Delete inactive problems so the list shows only today's concerns", false, "Inactive and resolved problems stay on the list; deleting them breaks the chart's index."), O("Let each discipline keep its own separate problem list for clarity", false, "The POMR uses one shared problem list that all disciplines build the care plan from.") ],
+  tp: "The problem list is the index of the whole POMR; skipping its updates breaks the chart's organization." });
+
+BANK.push({ cat: CA, type: "single", kt: ["chart"],
+  stem: "A nurse documents care for a patient with needs in several areas but writes only about the wound and the medications, omitting the patient's anxiety, family strain, and spiritual distress discussed that shift. Which standard has the entry failed?",
+  opts: [ O("Charting must cover physical, emotional, psychological, social, and spiritual needs", true, "Correct. Framework: Maslow, whole-person care. The record covers all areas of patient need, not only the physical tasks performed."), O("Charting must use the DARE steps for every entry made on a shift", false, "DARE is one format for focus notes; the failed standard here is breadth of need coverage."), O("Charting must be completed at the bedside on a point-of-care device", false, "Entry location does not cure missing content about the patient's other needs."), O("Charting must be reviewed by a peer before the end of every shift", false, "Peer review appraises practice over time; it is not a per-shift entry requirement.") ],
+  tp: "Table 3.1 maps the record to the nursing process across assessment, implementation, and evaluation for the whole patient." });
+
+BANK.push({ cat: CC, type: "single", kt: ["charting"],
+  stem: "A handwritten progress note ends mid-page with four blank lines before the next nurse's entry. Which action corrects the risk in those blank lines?",
+  opts: [ O("Draw a line through the blank space and sign at the end of the entry", true, "Correct. Framework: safety first, record integrity. Blank spaces let another person insert additional or incorrect information into the note."), O("Leave the space, since entries are dated and timed at their start", false, "A date and time do not protect open space below an entry from later insertions."), O("Ask the next nurse to begin her entry inside the blank space instead", false, "Entries are charted consecutively line by line; sharing space muddles accountability."), O("Fill the space by copying the previous entry's findings into it", false, "Copying old findings into blank space falsifies the timing and content of the record.") ],
+  tp: "Begin each entry with the time, end with signature and title, and chart consecutively, line by line." });
+
+BANK.push({ cat: CC, type: "single", grp: "case1", kt: ["ISBAR"],
+  scen: "CASE STUDY — A 68-year-old patient is preparing for discharge after treatment for heart failure. Predischarge laboratory results are all within normal range except the serum potassium, which is 2.1 mEq/L. The patient takes furosemide daily at home and tells the nurse, 'I stopped taking that potassium pill about 2 weeks ago; it upset my stomach.' Vital signs are stable: BP 118/72, HR 84, RR 16, T 98.4 F. The discharge instructions are printed and waiting, and the provider has not yet seen the potassium result.",
+  stem: "CASE STUDY 1 of 6 — RECOGNIZE CUES: Which finding in this exhibit requires action before the discharge proceeds?",
+  opts: [ O("The serum potassium of 2.1 mEq/L, the one result outside normal range", true, "Correct. Framework: safety first, recognize the abnormal cue. Every other result is within normal range; this single abnormal value is the cue the chapter's own example is built on."), O("The blood pressure of 118/72, recorded with the morning vital signs", false, "This value is unremarkable and is not the cue driving action in this case."), O("The printed discharge instructions waiting at the nursing station", false, "Printed papers are a workflow detail, not a clinical cue requiring intervention."), O("The patient's age of 68 years, listed on the discharge paperwork", false, "Age alone is not an actionable cue here; the abnormal laboratory value is.") ],
+  tp: "Recognize cues first: one abnormal result among normal ones is the signal, and it must reach the provider before discharge." });
+
+BANK.push({ cat: CC, type: "multi", grp: "case1", kt: ["ISBAR"],
+  scen: "CASE STUDY — A 68-year-old patient is preparing for discharge after treatment for heart failure. Predischarge laboratory results are all within normal range except the serum potassium, which is 2.1 mEq/L. The patient takes furosemide daily at home and tells the nurse, 'I stopped taking that potassium pill about 2 weeks ago; it upset my stomach.' Vital signs are stable: BP 118/72, HR 84, RR 16, T 98.4 F. The discharge instructions are printed and waiting, and the provider has not yet seen the potassium result.",
+  stem: "CASE STUDY 2 of 6 — ANALYZE CUES: Which of the following connections between the cues are supported by the exhibit? Select all that apply.",
+  opts: [ O("The potassium supplement was stopped about 2 weeks ago by the patient", true, "Correct. The patient's own statement supplies this background fact."), O("The furosemide was continued while the potassium supplement was stopped", true, "Correct. The patient kept taking furosemide and stopped only the potassium pill."), O("All other predischarge laboratory results were within normal range", true, "Correct. The exhibit states the potassium is the single exception."), O("The low potassium was caused by the printed discharge instructions", false, "Paperwork timing plays no role in the laboratory value."), O("The provider has already reviewed and acted on the potassium result", false, "The exhibit states the provider has not yet seen the result.") ],
+  tp: "Framework: Nursing Process, analysis. Background in the call will be: all results normal except potassium 2.1, supplement stopped, furosemide continued." });
+
+BANK.push({ cat: CC, type: "single", grp: "case1", kt: ["ISBAR"],
+  scen: "CASE STUDY — A 68-year-old patient is preparing for discharge after treatment for heart failure. Predischarge laboratory results are all within normal range except the serum potassium, which is 2.1 mEq/L. The patient takes furosemide daily at home and tells the nurse, 'I stopped taking that potassium pill about 2 weeks ago; it upset my stomach.' Vital signs are stable: BP 118/72, HR 84, RR 16, T 98.4 F. The discharge instructions are printed and waiting, and the provider has not yet seen the potassium result.",
+  stem: "CASE STUDY 3 of 6 — PRIORITIZE HYPOTHESES: Which concern takes priority over completing the discharge as scheduled?",
+  opts: [ O("The patient may be discharged with an untreated, abnormal potassium level", true, "Correct. Framework: safety first, unstable result over routine process. Discharging before the provider sees a potassium of 2.1 sends the problem home untreated."), O("The patient may be discharged without a copy of the printed instructions", false, "Instructions matter and must always be given, but the unseen abnormal result is the safety priority."), O("The patient may be unclear about which pill upset the stomach earlier", false, "Clarifying the history supports the call, but it does not outrank the abnormal value itself."), O("The patient's vital signs may change during the trip home from hospital", false, "The vitals are stable; speculation about the trip does not outrank the known abnormal result.") ],
+  tp: "Prioritize the hypothesis that explains the abnormal cue and carries risk now, not the routine discharge steps." });
+
+BANK.push({ cat: CC, type: "multi", grp: "case1", kt: ["ISBARR"],
+  scen: "CASE STUDY — A 68-year-old patient is preparing for discharge after treatment for heart failure. Predischarge laboratory results are all within normal range except the serum potassium, which is 2.1 mEq/L. The patient takes furosemide daily at home and tells the nurse, 'I stopped taking that potassium pill about 2 weeks ago; it upset my stomach.' Vital signs are stable: BP 118/72, HR 84, RR 16, T 98.4 F. The discharge instructions are printed and waiting, and the provider has not yet seen the potassium result.",
+  stem: "CASE STUDY 4 of 6 — GENERATE SOLUTIONS: Which of the following planned actions are appropriate? Select all that apply.",
+  opts: [ O("Call the provider using ISBAR, opening with name, unit, and patient", true, "Correct. A structured call is the planned route for this exact situation."), O("Ask the provider for a potassium order as the call's Recommendation", true, "Correct. The call ends with a specific, answerable request."), O("Read back any order received, then chart the call and the order given", true, "Correct. Read back confirms the order, and failing to record verbal orders is inappropriate documentation."), O("Hold the discharge until the provider has addressed the result", true, "Correct. The discharge waits while the abnormal result is acted on."), O("Add a potassium dose to the printed instructions without calling first", false, "Writing an order the provider never gave is outside the nurse's role and outside this plan.") ],
+  tp: "Framework: Nursing Process, planning. The solution set is a structured call, a clear ask, a read back, a charted order, and a held discharge." });
+
+BANK.push({ cat: CC, type: "single", grp: "case1", kt: ["ISBARR"],
+  scen: "CASE STUDY — A 68-year-old patient is preparing for discharge after treatment for heart failure. Predischarge laboratory results are all within normal range except the serum potassium, which is 2.1 mEq/L. The patient takes furosemide daily at home and tells the nurse, 'I stopped taking that potassium pill about 2 weeks ago; it upset my stomach.' Vital signs are stable: BP 118/72, HR 84, RR 16, T 98.4 F. The discharge instructions are printed and waiting, and the provider has not yet seen the potassium result.",
+  stem: "CASE STUDY 5 of 6 — TAKE ACTION: During the call, the provider orders a new potassium prescription for discharge. Which action should the nurse take first?",
+  opts: [ O("Read the new order back to the provider before ending the phone call", true, "Correct. Framework: safety first, closed-loop communication. The added R of ISBARR verifies the order was heard accurately, before it is charted or added to the instructions."), O("Add the new order to the printed instructions and hand them to the patient", false, "Acting on the order before the read back risks teaching from a misheard prescription."), O("Chart that the provider was notified, and leave the order for the next shift", false, "The order was received on this call; the read back and charting belong to this nurse now."), O("Repeat the order to the patient to confirm the patient agrees with it", false, "Patient agreement does not verify a provider order; the read back goes to the provider.") ],
+  tp: "In the chapter's example, the new potassium prescription is added to the discharge instructions only after the call is handled correctly." });
+
+BANK.push({ cat: CC, type: "single", grp: "case1", kt: ["charting"],
+  scen: "CASE STUDY — A 68-year-old patient is preparing for discharge after treatment for heart failure. Predischarge laboratory results are all within normal range except the serum potassium, which is 2.1 mEq/L. The patient takes furosemide daily at home and tells the nurse, 'I stopped taking that potassium pill about 2 weeks ago; it upset my stomach.' Vital signs are stable: BP 118/72, HR 84, RR 16, T 98.4 F. The discharge instructions are printed and waiting, and the provider has not yet seen the potassium result.",
+  stem: "CASE STUDY 6 of 6 — EVALUATE OUTCOMES: The order is read back, charted, and added to the discharge instructions. Which record best evaluates whether this episode of care is complete?",
+  opts: [ O("A record showing the call, the order, the updated instructions, and follow-up", true, "Correct. Framework: Nursing Process, evaluation. The completed loop is visible only if the communication, the verbal order, the teaching update, and the follow-up plan are all documented."), O("A record showing only the final potassium prescription that was ordered", false, "The prescription alone does not show the call, the read back, or the updated teaching."), O("A record showing the discharge time, since leaving on time closes the case", false, "Departure timing does not evaluate whether the abnormal result was handled."), O("A record showing the patient's quote about the pill, with nothing after it", false, "The quote is background data; evaluation requires the actions and their outcome to be recorded.") ],
+  tp: "Evaluate against the whole loop: cue found, provider called, order read back and charted, instructions updated, follow-up documented." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 3: Documentation</h1>';
+  h += '<div class="sub">Brutal mode | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 24 - Lifespan Development - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Growth, Families and Stress";
+var CB = "Erikson, Piaget and Language";
+var CC = "Infancy and Toddler";
+var CD = "Preschool and School Age";
+var CE = "Adolescence and Early Adulthood";
+var CF = "Middle, Late Adulthood and Aging";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 7,
+  "types": {
+   "single": 5,
+   "multi": 1,
+   "matrix": 1
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 6,
+  "types": {
+   "single": 4,
+   "order": 1,
+   "dropdown": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 9,
+  "types": {
+   "single": 6,
+   "multi": 2,
+   "matrix": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 7,
+  "types": {
+   "single": 6,
+   "multi": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 6,
+  "types": {
+   "single": 5,
+   "multi": 1
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 15,
+  "types": {
+   "single": 11,
+   "multi": 2,
+   "order": 1,
+   "dropdown": 1
+  }
+ }
+};
+
+BANK.push({"cat": CA, "type": "single", "stem": "Parents of a healthy 4-month-old worry because an older sibling sat at 5 months while this infant still needs support. Which response should the nurse give first?", "opts": [{"t": "Explain that sequence is predictable while timing is individual, then review this infant's own pattern", "c": true, "r": "Correct. Patterns are predictable but rate is highly individualized; falling off the child's own pattern is the flag. Framework: Nursing Process, assessment and family teaching."}, {"t": "Tell the parents the infant is delayed and needs a developmental workup before the next visit", "c": false, "r": "Incorrect. Needing support at 4 months fits the sequence; sitting steadily without support comes near the end of month 7."}, {"t": "Advise daily sitting drills until the infant matches the older sibling's five month milestone", "c": false, "r": "Incorrect. Children should not be pushed to sit before adequate muscle strength is achieved."}, {"t": "Reassure the parents that milestones never matter, so no follow-up of development is needed", "c": false, "r": "Incorrect. Milestones do matter; the pattern and the child's own trajectory are what get watched."}], "tp": "Sequence fixed, rate individual. Compare the child with the predictable sequence, not with a sibling. Framework: Nursing Process."});
+
+BANK.push({"cat": CA, "type": "single", "stem": "A couple planning pregnancy both carry a gene for an inherited disease and ask what help is available before they decide. Which action should the nurse take first?", "opts": [{"t": "Connect the couple with genetic counseling so likelihood and testing options can be reviewed", "c": true, "r": "Correct. A genetic counselor reviews the likelihood of an inherited disease and testing informs future decisions. Framework: Nursing Process, referral before decisions."}, {"t": "Tell the couple testing is routine for everyone and schedule it without reviewing their history", "c": false, "r": "Incorrect. Testing is offered based on risk factors such as age, medical history and ethnicity, not as a routine assumption."}, {"t": "Advise the couple to avoid pregnancy entirely, because a carrier result settles the decision now", "c": false, "r": "Incorrect. Counseling provides information for the couple's own decision making; it does not make the decision for them."}, {"t": "Wait until after birth to test the newborn, because prenatal information cannot change any plan", "c": false, "r": "Incorrect. Testing before pregnancy decisions is the printed purpose of genetic testing and counseling."}], "tp": "Genetic testing is risk-based and supports future decision making. Supportive services should be available for hard results. Framework: Nursing Process."});
+
+BANK.push({"cat": CA, "type": "single", "stem": "A pregnant patient smokes a pack daily and uses alcohol on weekends. Which of the following actions should the nurse take first?", "opts": [{"t": "Flag both exposures for the provider and teach that smoke raises the risk of a low-birth-weight baby", "c": true, "r": "Correct. Drugs, alcohol, viruses and cigarette smoke are teratogens; smoke is tied to low birth weight. Framework: safety first, teratogen exposure."}, {"t": "Document the habits without reporting them, because exposures matter only after the baby is born", "c": false, "r": "Incorrect. Teratogens interfere with prenatal development, so identification and flagging happen during pregnancy."}, {"t": "Focus only on the alcohol, because cigarette smoke has no named effect on the unborn baby here", "c": false, "r": "Incorrect. Cigarette smoke is a named teratogen with a named low-birth-weight effect in the chapter."}, {"t": "Tell the patient exposures explain every possible poor outcome, so further screening is pointless", "c": false, "r": "Incorrect. Teratogens account for a possible 5% to 25% of unfavorable outcomes, not every outcome."}], "tp": "Teratogen exposures are identified and flagged for the provider. Framework: safety first.", "kt": ["Teratogen"]});
+
+BANK.push({"cat": CA, "type": "single", "stem": "A 6-year-old whose parents just divorced tells the nurse the split happened because he was bad. Which response is most therapeutic?", "opts": [{"t": "Reassure him the divorce is not his fault and encourage him to talk about his feelings openly", "c": true, "r": "Correct. Younger children often believe they caused the divorce and feel lost and abandoned. Framework: Maslow, emotional safety and age-appropriate reassurance."}, {"t": "Ask him to carry messages between his parents so he can hear both sides of the disagreement", "c": false, "r": "Incorrect. Children must not be used as pawns or go-betweens between divorcing parents, as printed."}, {"t": "Tell him his parents will likely reunite soon, because most children hope for that outcome anyway", "c": false, "r": "Incorrect. Many children hold reconciliation fantasies for a long time; feeding the fantasy is not the teaching."}, {"t": "Change the subject to schoolwork, because young children recover faster when feelings stay unspoken", "c": false, "r": "Incorrect. The printed tips say encourage children to talk about their feelings and seek help if needed."}], "tp": "Box 24.5: talk about feelings, no go-betweens, no negative talk about an ex-spouse in front of children, reassure it is not the child's fault. Framework: Maslow."});
+
+BANK.push({"cat": CA, "type": "multi", "stem": "A nurse assesses a family after a father's job loss. Which findings raise concern for family violence risk? Select all that apply.", "opts": [{"t": "Financial strain combined with social isolation from relatives, friends, and community supports", "c": true, "r": "Correct. Financial strain and social isolation are printed risk factors related to family violence."}, {"t": "A parent with low self-esteem who was abused as a child and now uses harsh, punitive discipline", "c": true, "r": "Correct. Low self-esteem, a history of abuse, and harsh punitive parenting are printed risk findings."}, {"t": "Unreasonable expectations of the children combined with poor self-control during disagreements", "c": true, "r": "Correct. Unreasonable expectations, immaturity and lack of self-control are printed parent characteristics."}, {"t": "A democratic pattern in which both adults share decisions and support each other's individuality", "c": false, "r": "Incorrect. Joint decision making is a functional pattern, not a printed violence risk factor."}, {"t": "Grandparents living in the home who share responsibilities for childcare and household tasks", "c": false, "r": "Incorrect. Extended family sharing responsibilities is a family type, not a violence risk factor."}, {"t": "A family that rearranges roles after the job loss so the other parent can increase work hours", "c": false, "r": "Incorrect. Rearranging roles after a change is adaptive; rigidity, not flexibility, is the concern."}], "tp": "Violence risk factors: financial strain, isolation, low self-esteem, history of abuse. Framework: safety first, family assessment."});
+
+BANK.push({"cat": CA, "type": "single", "stem": "A grandmother heads a household raising three grandchildren, and the family lives below the poverty line. Which action should the nurse take first?", "opts": [{"t": "Screen the family for resource needs and include the grandmother as a primary caregiver in teaching", "c": true, "r": "Correct. About a third of grandfamilies include a parent, 21% live below poverty, and real caregivers get teaching. Framework: Nursing Process, assessment of the actual family."}, {"t": "Direct all teaching to the children's mother, even though she does not live in the home full time", "c": false, "r": "Incorrect. Teaching goes to the real caregivers in the household, which here is the grandmother heading it."}, {"t": "Document the home as a nuclear family, because children living with relatives count the same way", "c": false, "r": "Incorrect. This is a grandfamily, a distinct type; mislabeling hides who provides care and decides."}, {"t": "Focus the visit only on the children's vaccines, because income level does not affect health needs", "c": false, "r": "Incorrect. The chapter directs screening grandfamilies for resource needs, not just health needs."}], "tp": "Grandfamilies: nearly 8 million children; 21% below the poverty line. Framework: Nursing Process."});
+
+BANK.push({"cat": CA, "type": "matrix", "stem": "For each household, select the family type that matches the description.", "cols": ["Nuclear family", "Extended family", "Blended family", "Social contract family"], "rows": [{"t": "Married parents and their biological children living alone in their own apartment", "a": 0, "r": "Correct. Parents and their children in an independent household form a nuclear family."}, {"t": "Parents, their children, and two grandparents sharing one house and its responsibilities", "a": 1, "r": "Correct. Nuclear plus additional relatives in the same household is an extended family."}, {"t": "A mother and father who each brought children from earlier marriages into one new home", "a": 2, "r": "Correct. Combining children from previous marriages after remarriage forms a blended family."}, {"t": "Two unrelated adults living together without a legal commitment but sharing family roles", "a": 3, "r": "Correct. Cohabitation without legal commitment, sharing roles, is a social contract family."}], "tp": "Family types decide who provides care, who decides, and who needs teaching. Framework: Nursing Process."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "A hospitalized 20-month-old screams when her mother leaves and rejects comfort food and toys from staff. Which interpretation should guide the nurse's first action?", "opts": [{"t": "Keep the child's usual rituals and routines and support the mother's presence when she returns", "c": true, "r": "Correct. Toddlers feel safer when usual rituals and routines are followed during hospitalization. Framework: Maslow, security needs of the toddler stage."}, {"t": "Tell the mother her visits cause the outbursts, so visits should be shortened until discharge day", "c": false, "r": "Incorrect. Separation distress reflects the stage, not harm from visiting; routine and caregiver presence help."}, {"t": "Offer the child a choice between two unsafe options so she feels more control over the unit", "c": false, "r": "Incorrect. Choices are offered only when either option is acceptable; unsafe choices are not offered."}, {"t": "Ignore every outburst completely, including episodes where the child could hurt herself or others", "c": false, "r": "Incorrect. Negativism is best ignored unless the child or others are in danger of harm, as printed."}], "tp": "Toddler autonomy: rituals give consistent structure. Temper tantrums come from frustration and limited impulse control. Framework: Maslow."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "A 5-year-old refuses a procedure, saying the machine will bite him, and asks the same question repeatedly. Which approach should the nurse take first?", "opts": [{"t": "Use concrete, present-tense words, one idea at a time, and let him handle safe equipment first", "c": true, "r": "Correct. Preoperational children conceptualize time in present terms and need concrete, single-idea communication. Framework: Nursing Process, developmentally matched communication."}, {"t": "Explain the full abstract physiology behind the procedure so he can reason through his fears", "c": false, "r": "Incorrect. Abstract reasoning arrives at formal operational thought, years after the preschool stage."}, {"t": "Tell him his fear proves he is being babyish compared with the older children on the unit", "c": false, "r": "Incorrect. Egocentrism and magical thinking are normal at this stage, not misbehavior to shame."}, {"t": "Promise the procedure will not happen at all, then let the treatment team surprise him later", "c": false, "r": "Incorrect. Breaking trust damages care; concrete preparation in present terms is the chapter approach."}], "tp": "Match communication to the Piaget stage: concrete and present for preoperational children. Framework: Nursing Process."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "A 10-year-old with a chronic illness asks why his dose changed when a taller classmate takes a different amount. Which explanation fits his stage?", "opts": [{"t": "Use his own concrete numbers and a sorting activity so he can classify and compare the two cases", "c": true, "r": "Correct. Concrete operational children classify, sort, and use cause and effect on specific perceptions. Framework: Nursing Process, stage-matched teaching."}, {"t": "Use a hypothetical debate about future treatment choices he might face as an adult someday", "c": false, "r": "Incorrect. Hypothetical and abstract reasoning belong to formal operations in adolescence, not this stage."}, {"t": "Give only one-idea commands with no reasons, because he cannot yet link a cause with an effect", "c": false, "r": "Incorrect. That undersells concrete operations; this child can recognize cause-and-effect relationships."}, {"t": "Let him decide his own dose changes, because industry means children set their medical plans", "c": false, "r": "Incorrect. Industry is about competence and productivity, not independent control of prescribed dosing."}], "tp": "School age: praise and encouragement build industry. Concrete examples carry the teaching. Framework: Nursing Process."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "Parents ask why their 3-year-old is still not talking while a neighbor's child speaks in sentences. Which of the following actions should the nurse take first?", "opts": [{"t": "Arrange evaluation by a physician for possible hearing loss or other speech disturbance now", "c": true, "r": "Correct. Not talking by age 3 requires evaluation for hearing loss or pathologic speech disturbance. Framework: safety first, screening flag over reassurance."}, {"t": "Reassure the parents that all children talk by age five, so waiting another two years is fine", "c": false, "r": "Incorrect. The printed threshold is age 3; waiting years misses the evaluation window the chapter sets."}, {"t": "Advise the parents to stop reading aloud, because listening has replaced the need to practice", "c": false, "r": "Incorrect. Parents are advised to keep reading to the child to expand language and comprehension."}, {"t": "Tell the parents firstborn children talk latest, so birth order fully explains this child's delay", "c": false, "r": "Incorrect. As printed, firstborn children develop language earlier than later-born children, not later."}], "tp": "Language delay is a screening flag: not talking by 3 years means evaluation. Framework: safety first."});
+
+BANK.push({"cat": CB, "type": "order", "stem": "Place these developmental achievements in the order they appear across childhood.", "items": [{"t": "Learns an object still exists when it is hidden from sight", "r": "First, in the sensorimotor stage of infancy: object permanence."}, {"t": "Uses one word to carry a complete message to a caregiver", "r": "Second, at 1 to 2 years: the holophrase."}, {"t": "Centers on one aspect of an object and views the world egocentrically", "r": "Third, in preoperational thought from 2 to 7 years."}, {"t": "Classifies and sorts facts and recognizes cause-and-effect relationships", "r": "Fourth, in concrete operational thought from 7 to 11 years."}, {"t": "Solves hypothetical problems with a systematic, scientific approach", "r": "Fifth, in formal operational thought from about age 12 on."}], "tp": "Piaget sequence: sensorimotor, preoperational, concrete operational, formal operational. Framework: Nursing Process."});
+
+BANK.push({"cat": CB, "type": "dropdown", "stem": "A nurse matches three children with Erikson tasks. Complete each match using the chapter table. [[0]] [[1]] [[2]]", "blanks": [{"o": [{"t": "Eight-month-old who calms when fed and held consistently: trust versus mistrust", "c": true, "r": "Correct. Infancy is basic trust versus mistrust, built by responsive care."}, {"t": "Eight-month-old who calms when fed and held consistently: autonomy versus shame", "c": false, "r": "Incorrect. Autonomy is the toddler task, not the infant task."}, {"t": "Eight-month-old who calms when fed and held consistently: initiative versus guilt", "c": false, "r": "Incorrect. Initiative is the preschool task in the table."}]}, {"o": [{"t": "Nine-year-old proud of a finished science project: industry versus inferiority", "c": true, "r": "Correct. School age is industry versus inferiority, centered on competence."}, {"t": "Nine-year-old proud of a finished science project: identity versus role confusion", "c": false, "r": "Incorrect. Identity is the adolescent task, not school age."}, {"t": "Nine-year-old proud of a finished science project: intimacy versus isolation", "c": false, "r": "Incorrect. Intimacy is the young adult task in the table."}]}, {"o": [{"t": "Fifty-year-old mentoring junior staff at work: generativity versus stagnation", "c": true, "r": "Correct. Middle adulthood is generativity versus stagnation."}, {"t": "Fifty-year-old mentoring junior staff at work: ego integrity versus despair", "c": false, "r": "Incorrect. Ego integrity is the late adulthood task."}, {"t": "Fifty-year-old mentoring junior staff at work: trust versus mistrust all over again", "c": false, "r": "Incorrect. Trust is the infant task that opens the sequence."}]}], "tp": "Erikson pairs: trust, autonomy, initiative, industry, identity, intimacy, generativity, ego integrity."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A 2-month-old is brought for a checkup. The parent reports the infant cries inconsolably at night and was left sleeping face-down on a soft pillow. Which teaching should the nurse give first?", "opts": [{"t": "Place the infant on the back to sleep, without soft bedding or pillows, in a ventilated room", "c": true, "r": "Correct. Back to sleep, no soft bedding or pillows, and a ventilated room are the first SIDS Safety Alert steps. Framework: safety first, highest-risk teaching first."}, {"t": "Continue stomach sleeping but add a bed wedge, because head elevation protects the airway best", "c": false, "r": "Incorrect. Bed wedges are on the avoid list in the Safety Alert, and stomach sleeping is the trap position."}, {"t": "Advise smoking only outdoors after the infant is asleep, because timing removes the smoke risk", "c": false, "r": "Incorrect. The alert says avoid exposure to cigarette smoke and avoid smoking during pregnancy, without a timing loophole."}, {"t": "Reassure the parent that crying at night is the main SIDS warning sign to watch in this infant", "c": false, "r": "Incorrect. SIDS has no identifiable warning signs; persistent crying signals discomfort or illness to investigate."}], "tp": "SIDS peaks at 2 to 3 months. Ten alert steps include pacifier use, checkups, breastfeeding if possible, and vaccinations. Framework: safety first.", "kt": ["SIDS"]});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A mother propped a bottle of juice in her 7-month-old's crib at night and now the infant has damaged front teeth. Which teaching corrects the plan?", "opts": [{"t": "Put only water in the night bottle and hold the infant during feedings instead of propping", "c": true, "r": "Correct. Sugar in juice destroys enamel in bottle-mouth syndrome, and a propped bottle can lead to aspiration. Framework: safety first, feeding safety."}, {"t": "Keep propping the bottle but switch to milk, because milk sugar does not damage tooth enamel", "c": false, "r": "Incorrect. Sugar in milk and formula also causes the severe decay named bottle-mouth syndrome."}, {"t": "Add cereal to the night bottle so the infant sleeps longer and needs fewer night feedings", "c": false, "r": "Incorrect. The rule is water only in the night bottle; holding during feeding adds warmth and bonding."}, {"t": "Wait until age two to address teeth, because dental care starts only after all teeth erupt", "c": false, "r": "Incorrect. The first dental visit is when the first tooth appears, and no later than the first birthday."}], "tp": "Oral hygiene in young infants: sips of clear water, wiping and massaging the gums. Framework: safety first."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A breast-fed newborn at day 4 has had two wet diapers in 24 hours, is fussy, and shows persistent skin wrinkling. Which interpretation should the nurse act on?", "opts": [{"t": "These findings fit underfeeding, so feeding adequacy needs assessment and prompt follow-up care", "c": true, "r": "Correct. Lack of satisfaction, fussiness, little weight gain and wrinkled skin are printed underfeeding signs. Framework: Nursing Process, cue recognition in a newborn."}, {"t": "These findings are expected at day four, because wet diapers normally stay low for the first week", "c": false, "r": "Incorrect. By the fourth day the baby should have four to six wet diapers per day, as printed."}, {"t": "These findings show overfeeding, so the mother should cut one feeding from each day this week", "c": false, "r": "Incorrect. Few wet diapers with fussiness and wrinkling point to too little intake, not too much."}, {"t": "These findings mean the infant needs juice between feedings to raise fluid intake starting today", "c": false, "r": "Incorrect. Breast milk or formula is the only food needed until 6 months; underfeeding is assessed, not juiced."}], "tp": "Breast-fed adequacy: two to three seedy stools daily, four to six wet diapers daily by day four. Framework: Nursing Process."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "Parents of a 15-month-old want to start toilet training this week with a sticker chart and time-outs for accidents. Which guidance should the nurse give first?", "opts": [{"t": "Wait until readiness appears near eighteen to twenty-four months, praise success, and ignore accidents", "c": true, "r": "Correct. Maturity for training arrives at 18 to 24 months; punishment fosters shame and doubt. Framework: Nursing Process, readiness before training."}, {"t": "Start now and keep time-outs, because early pressure produces faster daytime bladder control", "c": false, "r": "Incorrect. Bowel control comes first and nighttime control last; pressure before readiness backfires."}, {"t": "Start now but train nighttime control first, because it is the easiest control for toddlers to learn", "c": false, "r": "Incorrect. Nighttime bladder control is achieved after daytime control is established, not before it."}, {"t": "Keep the toddler in diapers with no practice chances, because opportunities create doubt at this age", "c": false, "r": "Incorrect. Giving no opportunities to control urges fosters doubt; readiness plus opportunities is the plan."}], "tp": "Toilet readiness needs neuromuscular development, communication of needs, and clothing skills. Framework: Nursing Process."});
+
+BANK.push({"cat": CC, "type": "multi", "stem": "A nurse teaches safety for a 9-month-old who is crawling and pulling to stand. Which points should the nurse include? Select all that apply.", "opts": [{"t": "Never leave the infant alone on an elevated surface, in a highchair, or unattended in a bath", "c": true, "r": "Correct. Those never-leave rules are printed Safety Alert items for infants and young children."}, {"t": "Keep crib sides up with the mattress at its lowest setting and secure stairways and exits now", "c": true, "r": "Correct. Crib sides up, lowest mattress setting, and secured stairways and exits are printed rules."}, {"t": "Keep popcorn, grapes, raisins, hot dogs, and hard candies away because infants choke easily", "c": true, "r": "Correct. Those named foods carry high choking potential and are kept from infants and young children."}, {"t": "Prop the bottle during naps so the infant can self-feed while the caregiver does housework", "c": false, "r": "Incorrect. A propped bottle can lead to aspiration; the infant is held during feeding instead."}, {"t": "Use a soft pillow in the crib for naps, because comfort helps the infant sleep more soundly", "c": false, "r": "Incorrect. Soft bedding and pillows are avoided; avoid pillows with small infants, as printed."}, {"t": "Allow walker play near the stairs, because walkers build the leg strength needed for walking", "c": false, "r": "Incorrect. Never leave an infant unattended in a walker, and stairways are secured, as printed."}], "tp": "Accidents are the leading cause of death in infants and young children; precautions start at birth. Framework: safety first."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A 2-year-old eats mostly milk, about 30 ounces a day, refuses meats and vegetables, and looks pale. Which action should the nurse take first?", "opts": [{"t": "Review the diet pattern and raise the milk excess and iron concern with the provider promptly", "c": true, "r": "Correct. Over 24 ounces of milk daily fills the stomach, cuts solids, and can lead to iron deficiency. Framework: Nursing Process, nutrition assessment with a named risk."}, {"t": "Praise the milk intake, because two cups of dairy daily means this diet already exceeds the goal", "c": false, "r": "Incorrect. Two cups is the daily dairy target; 30 ounces is well over it and is displacing solid foods."}, {"t": "Advise serving one large meal daily, because a toddler stomach handles volume better once a day", "c": false, "r": "Incorrect. Toddlers need frequent smaller nutritious meals; the stomach cannot hold large portions."}, {"t": "Tell the parents picky eating never matters at this age, so no diet change is needed this year", "c": false, "r": "Incorrect. Idiosyncratic eating is common, but milk excess with few solids and pallor needs action."}], "tp": "Serving guide: 1 tablespoon of each solid food per year of age. Milk over 24 oz/day risks iron deficiency. Framework: Nursing Process."});
+
+BANK.push({"cat": CC, "type": "matrix", "stem": "For each finding, select whether it is expected for the age or needs follow-up.", "cols": ["Expected for age", "Needs follow-up"], "rows": [{"t": "Seven-month-old sits steadily without support during a clinic play session", "a": 0, "r": "Correct. Sitting steadily without support is expected by the end of the seventh month."}, {"t": "Three-year-old who has not begun talking at all by the third birthday visit", "a": 1, "r": "Correct. Not talking by age 3 needs evaluation for hearing loss or speech disturbance."}, {"t": "Two-month-old holds the head up while lying prone on the examination table", "a": 0, "r": "Correct. Holding the head up prone is the printed 2-month motor milestone."}, {"t": "Breast-fed newborn with two wet diapers on day four and persistent skin wrinkling", "a": 1, "r": "Correct. Four to six wet diapers are expected by day four; wrinkling fits underfeeding."}], "tp": "Milestones: head up prone 2 months, sits without support end of month 7, talking by age 3."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A 4-year-old blames herself for her baby brother's illness because she once wished he would go away. Which response should the nurse give first?", "opts": [{"t": "Reassure her that thoughts and wishes do not make illness happen and let her talk about the fear", "c": true, "r": "Correct. Magical thinking can make a preschooler feel responsible when a wished-for bad event occurs. Framework: Maslow, emotional safety in the preoperational stage."}, {"t": "Explain germ theory in abstract terms so she can test each possible cause of the illness herself", "c": false, "r": "Incorrect. Abstract reasoning is not available to the preoperational child; concrete reassurance fits."}, {"t": "Tell her the wish did cause extra stress at home, so she should apologize to her brother tonight", "c": false, "r": "Incorrect. Her wish did not cause the illness; confirming blame deepens the guilt the stage produces."}, {"t": "Ignore the statement, because preschoolers forget fears quickly when adults change the subject", "c": false, "r": "Incorrect. Common preschool fears and guilt need direct, age-fitted reassurance, not dismissal."}], "tp": "Preschool fears: thunder, dark, pain, abandonment, monsters, fed by vivid imagination and media. Framework: Maslow."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "An 8-year-old is excluded from games, receives mocking texts, and his grades are falling. Which of the following actions should the nurse take first?", "opts": [{"t": "Ask about the pattern at school, involve the parents and school, and assess his mood and sleep", "c": true, "r": "Correct. Relational and cyber bullying with falling performance needs pattern assessment and adult involvement. Framework: safety first, bullying can lead to depression, anxiety, sleep problems and injury."}, {"t": "Advise him to tease the group back, because matching their behavior restores the power balance", "c": false, "r": "Incorrect. Revenge can make a child feel powerful but builds unacceptable ways of handling impulses."}, {"t": "Document the report as normal peer conflict, because bullying requires physical hitting only", "c": false, "r": "Incorrect. Bullying includes verbal, relational and cyber forms, not only physical aggression."}, {"t": "Tell the parents to wait a school year, because most bullying resolves once children mature more", "c": false, "r": "Incorrect. A repeated pattern with harm is acted on now, with consistently enforced antibullying policies."}], "tp": "Bullying: unwanted, power imbalance, repeated. Signs of troubled behavior overlap here and need professional help when they appear. Framework: safety first."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A 7-year-old finds an unloaded gun in a closet and brings it to show his father. Which teaching does this event show is still needed?", "opts": [{"t": "Reinforce stop, do not touch, leave the area, and report any gun to an adult, and secure the gun", "c": true, "r": "Correct. The child rules are stop, do not touch, leave, report; adults lock guns away from children. Framework: safety first, the child handled the gun, so both lessons failed."}, {"t": "Teach him how to check whether a gun is loaded, so he can make the next find safe by himself", "c": false, "r": "Incorrect. Knowledge of handling a gun is not sufficient; children are taught not to touch guns at all."}, {"t": "Praise him for carrying it carefully, because bringing it to an adult was the safest available act", "c": false, "r": "Incorrect. Carrying it means touching and moving a gun, the exact behavior the child rules forbid."}, {"t": "Store ammunition with the gun from now on, so a single locked box can hold the complete set", "c": false, "r": "Incorrect. Ammunition is never stored with the gun and is locked in a separate location, as printed."}], "tp": "Gun safety: lock gun and ammunition separately, lock poisonous cleaning supplies, keep out of children's reach. Framework: safety first."});
+
+BANK.push({"cat": CD, "type": "multi", "stem": "Parents ask how to limit media violence effects on their 9-year-old. Which strategies should the nurse teach? Select all that apply.", "opts": [{"t": "Limit the time the child spends watching television each day at home and at friends' houses", "c": true, "r": "Correct. Limiting viewing time is the first printed parent strategy for media violence influence."}, {"t": "Screen programs ahead of time for content and for whether they fit the child's age level", "c": true, "r": "Correct. Screening for content and age appropriateness is the second printed parent strategy."}, {"t": "Watch programs together with the child and discuss the content of what was watched after", "c": true, "r": "Correct. Co-viewing and discussing content is the third printed parent strategy."}, {"t": "Let the child self-select all programs, because discussion after viewing alone removes the effect", "c": false, "r": "Incorrect. Self-selection skips the screening strategy; the three strategies work as a set."}, {"t": "Raise viewing to six hours daily so violent content becomes familiar and loses its impact slowly", "c": false, "r": "Incorrect. Children already average 4 hours daily; the strategy is to limit time, not raise it."}, {"t": "Ban all discussion of programs, because talking about violence makes children copy it more often", "c": false, "r": "Incorrect. Discussing content with the child is a printed strategy, the opposite of this option."}], "tp": "Children who view violent acts are more likely to show aggression and to fear something bad will happen. Framework: health promotion."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A 6-year-old needs 12 hours of sleep but is now getting 8, and teachers report inattention and irritability. Which action should the nurse take first?", "opts": [{"t": "Review the sleep pattern and teach that fatigue, irritability, and inattention signal too little sleep", "c": true, "r": "Correct. Those three findings are the printed signs of inadequate sleep in the school-age child. Framework: Nursing Process, matching findings to the sleep need for age."}, {"t": "Reassure the parents that 8 hours is plenty, because sleep needs stay flat across childhood years", "c": false, "r": "Incorrect. Needs fall with age, from about 12 hours at age 6 to about 10 hours by age 12, not to 8."}, {"t": "Advise a later bedtime with stimulating play before bed, so the child falls asleep faster at night", "c": false, "r": "Incorrect. Stimulating activity before sleep works against settling; the toddler bedtime guidance favors quiet routines."}, {"t": "Suggest skipping the vision and scoliosis screening this year to leave more time for rest at home", "c": false, "r": "Incorrect. Vision testing and routine scoliosis screening are school-age care, unrelated to fixing sleep."}], "tp": "School-age sleep: about 12 hours at age 6, about 10 hours by age 12. Dental checkups every 6 months. Framework: Nursing Process."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A 15-year-old who was withdrawn and sad now seems suddenly elated, and gave his guitar to a friend yesterday. Which of the following actions should the nurse take first?", "opts": [{"t": "Treat the change as a possible suicide warning and arrange prompt professional evaluation today", "c": true, "r": "Correct. A sudden swing from extreme sadness can signal a decision to act, and giving away possessions is a printed indicator. Framework: safety first, all threats and warning changes are taken seriously."}, {"t": "Congratulate the family on his recovery, because improved mood means the depression has lifted", "c": false, "r": "Incorrect. This exact swing is the printed warning; relief here would miss a possible suicide decision."}, {"t": "Ask him to promise to call a friend next time, then recheck his mood at the visit next month", "c": false, "r": "Incorrect. A possible suicide plan needs professional help now, not a month-long wait for a recheck."}, {"t": "Document normal adolescent mood swings, because moodiness alone never signals anything serious", "c": false, "r": "Incorrect. Mood swings are common, but this pattern plus giving away possessions is a Box 24.18 warning."}], "tp": "Depressed adolescents often cannot improve without professional therapy. Framework: safety first."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A 14-year-old athlete has tight, sore calves after every practice during a growth spurt. Which teaching fits the chapter?", "opts": [{"t": "Stretch and warm up before practice, use fitting equipment and a helmet, and treat existing injuries", "c": true, "r": "Correct. The sports Safety Alert lists warm-up, stretching, fitting equipment, helmets, supervision and treating injuries. Framework: safety first, sports injury prevention."}, {"t": "Skip warm-ups during growth spurts, because tight muscles and tendons should be rested completely", "c": false, "r": "Incorrect. Bones outgrow muscles and tendons in spurts, which is why stretching and warm-up are taught."}, {"t": "Push through calf pain in every practice, because overuse injuries heal faster with more training", "c": false, "r": "Incorrect. Avoiding overuse and treating existing injuries to prevent reinjury are printed alert points."}, {"t": "Stop all sports until growth ends at age twenty, because spurts make any activity unsafe for teens", "c": false, "r": "Incorrect. Sports continue with the alert's precautions; parents on the sidelines can support self-esteem."}], "tp": "Growth spurts: bones grow faster than muscles and tendons, leaving them short and tight. Framework: safety first."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A 17-year-old eats little, exercises for hours, has lost 25 pounds, and insists she is overweight. Which action should the nurse take first?", "opts": [{"t": "Raise the eating-disorder concern with the provider and teach the family the warning signs now", "c": true, "r": "Correct. Anorexia nervosa and bulimia are rising in young women and can be fatal; families need warning-sign education. Framework: safety first, a potentially fatal disorder pattern."}, {"t": "Praise her discipline and suggest she keep a food diary to support her weight loss program", "c": false, "r": "Incorrect. Praising restriction supports the disorder pattern this presentation describes."}, {"t": "Tell the family weight concern is vanity at this age and will pass once she starts college", "c": false, "r": "Incorrect. Eating disorders can be fatal; dismissal misses the risk the chapter names directly."}, {"t": "Advise a high-calorie supplement drink at each meal as the only change needed in her plan", "c": false, "r": "Incorrect. A supplement alone does not address a disorder that needs provider and family involvement."}], "tp": "Peak growth needs: females up to 2,600 calories daily, males up to 3,600, with protein at 12% to 16% of intake. Framework: safety first."});
+
+BANK.push({"cat": CE, "type": "multi", "stem": "A nurse reviews screening with a healthy 38-year-old woman and her 52-year-old husband. Which items match the chapter schedule? Select all that apply.", "opts": [{"t": "She has the option to begin mammograms between ages forty and forty-four, then yearly screening", "c": true, "r": "Correct. As printed, mammograms are an option at 40 to 44 and yearly from 45 to 54 years of age."}, {"t": "He should discuss prostate screening now, with a PSA blood test with or without a rectal exam", "c": true, "r": "Correct. Discussion begins at age 50 for most men; testing is PSA with or without DRE, as printed."}, {"t": "Both need routine dental examinations every six months and eye examinations every two years", "c": true, "r": "Correct. Dental exams every 6 months and eye exams every 2 years are the printed routine intervals."}, {"t": "She should wait until age fifty-five for any mammogram, because earlier screening is not offered", "c": false, "r": "Incorrect. The option to begin is printed at 40 to 44, with yearly screening at 45 to 54 years."}, {"t": "He should start prostate discussion at age forty, because forty is the printed age for all men", "c": false, "r": "Incorrect. The printed ages are 50 for most men and 45 for higher-risk men, not 40 for all men."}, {"t": "Both can skip physical examinations until symptoms appear, because annual exams are not advised", "c": false, "r": "Incorrect. Annual physicals are recommended in early adulthood in the chapter's health guidance."}], "tp": "Prostate discussion at 45 for African American men or a father or brother with prostate cancer before 65. Framework: health promotion."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A 28-year-old new graduate works nights, sleeps 4 hours, smokes, and skips exercise. Which teaching should the nurse prioritize?", "opts": [{"t": "Protect the current physical peak with seven to nine hours of sleep, no smoking, and daily exercise", "c": true, "r": "Correct. Early adulthood habits are the chapter's prevention against heart disease and cancer later. Framework: Maslow, physiologic foundations during the peak years."}, {"t": "Focus teaching only on career planning, because health habits can wait until middle adulthood", "c": false, "r": "Incorrect. The decline begins inside this stage; habits set now are the preventive measures named."}, {"t": "Advise cutting sleep further to gain study time, because young adults recover from any deficit", "c": false, "r": "Incorrect. Most adults function well with 7 to 9 hours of restorative sleep, not with 4 hours."}, {"t": "Tell him accidents are a minor risk at his age, so driving home drowsy after nights is acceptable", "c": false, "r": "Incorrect. Accidents are the leading cause of disability and death in this age group, as printed."}], "tp": "Health Promotion: follow ChooseMyPlate, fluids, no smoking or drugs, little or no alcohol, optimal weight, daily exercise, sleep, stress reduction, leisure. Framework: Maslow."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "A 58-year-old woman reports hot flashes, night sweats, palpitations, and irregular periods, and asks about hormone therapy. Which teaching is most complete?", "opts": [{"t": "Therapy can ease menopause discomfort, but stroke, breast and endometrial cancer risks need review", "c": true, "r": "Correct. Benefits and risks are weighed individually; printed risks include stroke, two cancers, and higher blood pressure. Framework: safety first, balanced medication teaching."}, {"t": "Therapy is risk-free at small doses, so she should start it before her next scheduled visit", "c": false, "r": "Incorrect. Small estrogen doses are the printed form, but the printed risks still require individual review."}, {"t": "Therapy protects bone only, so her hot flashes and night sweats will need a separate drug plan", "c": false, "r": "Incorrect. Relieving the complications and discomfort of low estrogen is the therapy's printed purpose."}, {"t": "Therapy should be refused outright, because it has no benefit the chapter recognizes at all", "c": false, "r": "Incorrect. The chapter credits possible reduction of osteoporosis and atherosclerosis and heart disease risk."}], "tp": "Calcium in this stage: 1,200 mg daily for postmenopausal women not taking estrogen replacement. Framework: safety first."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "A 68-year-old man cannot hear the nurse's high-pitched voice but hears low tones, and wax fills his ear canal. Which action should the nurse take first?", "opts": [{"t": "Face him, speak clearly and slowly in lower tones, cut background noise, and flag the wax buildup", "c": true, "r": "Correct. Presbycusis affects high-pitched sounds first; cerumen buildup also rises with age. Framework: Nursing Process, communication matched to the sensory change."}, {"t": "Shout each instruction from the doorway so the sound reaches him across the room reliably", "c": false, "r": "Incorrect. Table 24.4 says do not shout; face the individual and speak in lower tones instead."}, {"t": "Add brighter lighting and larger print, because his main sensory change is in the lens of the eye", "c": false, "r": "Incorrect. Those are vision interventions for presbyopia; this presentation is hearing, not vision."}, {"t": "Tell him hearing changes are untreatable, so family should write every message for him from now", "c": false, "r": "Incorrect. Hearing aids are encouraged when available, and cerumen is a treatable contributor here."}], "tp": "Presbycusis interventions: speak clearly, slowly, face the person, lower tones, control background noise. Framework: Nursing Process.", "kt": ["Presbycusis"]});
+
+BANK.push({"cat": CF, "type": "single", "stem": "An 82-year-old restricts fluids to 900 mL daily because she fears incontinence, and now reports constipation and dizziness. Which action should the nurse take first?", "opts": [{"t": "Review her intake against the fifteen hundred milliliter daily minimum and plan ways to reach it", "c": true, "r": "Correct. The printed minimum is 1,500 mL per day; fear of incontinence and lack of thirst drive restriction. Framework: Nursing Process, intake below the printed minimum with symptoms."}, {"t": "Support her restriction, because less fluid protects an older adult from embarrassing accidents", "c": false, "r": "Incorrect. Restriction is the risk, not the plan; the chapter names the fear itself as the problem."}, {"t": "Advise doubling fluid only on days she feels dizzy, then returning to nine hundred milliliters", "c": false, "r": "Incorrect. The need is a steady daily minimum, not symptom-day doubling after dizziness occurs."}, {"t": "Tell her constipation is unrelated to fluids, so only a laxative needs to be added to her plan", "c": false, "r": "Incorrect. GI guidance for older adults starts with ensuring adequate fluid intake, as printed."}], "tp": "Older-adult fluids: minimum 1,500 mL daily. Five or six small meals beat three large ones for the aging GI system. Framework: Nursing Process."});
+
+BANK.push({"cat": CF, "type": "multi", "stem": "A nurse plans fall prevention for an 86-year-old with dim vision, slowed reactions, and a cluttered hallway. Which actions should the nurse include? Select all that apply.", "opts": [{"t": "Remove scatter rugs and excess clutter, install handrails on stairs and grab bars in the bathroom", "c": true, "r": "Correct. Those are printed Safety Alert tips for the older adult at home and in care settings."}, {"t": "Use night-lights, keep a cane or walker handy, and fit shoes and clothing properly for walking", "c": true, "r": "Correct. Night-lights, a handy walker or cane, and properly fitting shoes are printed safety tips."}, {"t": "Teach caution when moving from lying flat to standing, and allow enough time without rushing", "c": true, "r": "Correct. Position-change caution and not rushing are printed tips tied to balance and posture changes."}, {"t": "Keep rooms dim so the older adult rests more, because bright light raises the risk of falling", "c": false, "r": "Incorrect. Night-lights and more diffuse lighting are the printed direction, not dimmer rooms."}, {"t": "Move the cane to a closet between uses, so the hallway stays completely clear of all objects", "c": false, "r": "Incorrect. The tip is to keep a walker or cane handy, within reach when it is needed for moving."}, {"t": "Encourage hurrying through transfers to build balance, because practice speed prevents falls", "c": false, "r": "Incorrect. The printed tip is the opposite: allow enough time, do not rush or hurry the older adult."}], "tp": "Falls can cost an older adult independence and self-esteem after a long immobilization. Framework: safety first."});
+
+BANK.push({"cat": CF, "type": "order", "stem": "Place the nurse's actions for an older adult with new hearing difficulty in the best order.", "items": [{"t": "Face the individual and reduce background noise in the room", "r": "First: set the conditions Table 24.4 names before speaking."}, {"t": "Speak clearly and slowly in lower tones, without shouting", "r": "Second: deliver the message in the form presbycusis best receives."}, {"t": "Check whether wax buildup is contributing to the hearing loss", "r": "Third: increased cerumen buildup is a printed hearing change to identify."}, {"t": "Encourage use of a hearing aid if one is available to the patient", "r": "Last in this set: the printed ongoing support after communication is adjusted."}], "tp": "Hearing row of Table 24.4: face, do not shout, lower tones, control noise, hearing aids. Framework: Nursing Process."});
+
+BANK.push({"cat": CF, "type": "dropdown", "stem": "A nurse reviews three older adults. Complete each plan using the chapter guidance. [[0]] [[1]] [[2]]", "blanks": [{"o": [{"t": "Forgetting breakfast but recalling youth clearly: reassure and keep mental engagement", "c": true, "r": "Correct. Benign forgetfulness fits recent-memory decline with remote memory preserved; engagement helps."}, {"t": "Forgetting breakfast but recalling youth clearly: chart as dementia and restrict activities", "c": false, "r": "Incorrect. Benign forgetfulness is far more common than pathologic forgetfulness."}, {"t": "Forgetting breakfast but recalling youth clearly: stop all puzzles and reading to rest the brain", "c": false, "r": "Incorrect. Puzzles, reading, gardening and cooking help maintain cognitive functioning."}]}, {"o": [{"t": "Thin fragile skin with lost fat padding: inspect daily and change position frequently", "c": true, "r": "Correct. Table 24.4 skin care is daily inspection, frequent position change, mild soap and lotion."}, {"t": "Thin fragile skin with lost fat padding: wash with hot water and scrub to improve circulation", "c": false, "r": "Incorrect. Wash with water and mild soap, rinse thoroughly and pat dry; skin is fragile."}, {"t": "Thin fragile skin with lost fat padding: leave in one position to avoid friction injury", "c": false, "r": "Incorrect. Frequent position change is the printed intervention for this skin change."}]}, {"o": [{"t": "Slowed thyroid activity on the annual review: plan yearly physical with thyroid testing", "c": true, "r": "Correct. The endocrine row recommends an annual physical examination with thyroid function testing."}, {"t": "Slowed thyroid activity on the annual review: test thyroid function once every ten years", "c": false, "r": "Incorrect. The printed interval is annual, with the yearly physical examination."}, {"t": "Slowed thyroid activity on the annual review: skip testing because hormone decline is untreatable", "c": false, "r": "Incorrect. The table directs annual testing; decline is monitored, not ignored."}]}], "tp": "Older-adult screening: yearly influenza and pneumococcal vaccines, annual physical with thyroid testing. Framework: Nursing Process."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "CASE STUDY 1 of 6 \u2014 RECOGNIZE CUES: Which finding in Mrs. Alvarez's presentation should the nurse identify as a priority cue?", "opts": [{"t": "Her fluid intake of eight hundred milliliters yesterday, well below the daily minimum for her age", "c": true, "r": "Correct. The printed minimum is 1,500 mL daily; low intake plus a fall and dizziness risk makes this a priority cue. Framework: Nursing Process, recognize cues against a printed normal."}, {"t": "Her detailed memory of her wedding fifty-five years ago, which shows her remote memory is intact", "c": false, "r": "Incorrect. Preserved remote memory is expected; it is not the priority cue in this presentation."}, {"t": "Her use of reading glasses, which every older adult in her age group eventually needs at home", "c": false, "r": "Incorrect. Vision change matters for safety, but the sharply low fluid intake is the priority cue here."}, {"t": "Her bruise on the hip from the fall, which is expected after any fall without a fracture found", "c": false, "r": "Incorrect. The bruise needs monitoring, but it does not outrank a fluid intake half the daily minimum."}], "tp": "Case framework: Nursing Process, recognize cues. Recent memory loss with preserved remote memory is benign forgetfulness.", "grp": "case1", "scen": "CASE STUDY \u2014 Mrs. Alvarez, 79, lives alone since her husband died last year. She was admitted after a fall at home in a dim hallway; X-rays show no fracture, but she has a large bruise on her hip. She forgets what she ate for breakfast yet describes her wedding 55 years ago in detail. She asks the nurse to speak up because high voices are hard to hear, wears reading glasses that no longer seem strong enough, and her skin over the sacrum is thin and pale. Her intake yesterday was 800 mL because she limits fluids to avoid getting up at night. She tells the nurse she has stopped attending her bridge club and mostly stays home alone."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "CASE STUDY 2 of 6 \u2014 ANALYZE CUES: Which explanation best links Mrs. Alvarez's fall to her sensory changes?", "opts": [{"t": "Dim vision in a dark hallway plus balance and posture changes raised her fall risk at home", "c": true, "r": "Correct. Diminished sight and posture or balance changes expose the older person to falls, as printed. Framework: Nursing Process, analyze cues by linking findings to the event."}, {"t": "Her hearing loss for high voices caused the fall, because she could not hear the floor creak", "c": false, "r": "Incorrect. Presbycusis affects communication; the fall link printed is sight plus posture and balance."}, {"t": "Her preserved remote memory caused the fall, because older memories distract older drivers", "c": false, "r": "Incorrect. Benign forgetfulness does not explain a hallway fall; sensory and balance changes do."}, {"t": "Her bridge club attendance caused the fall, because social activity tires older adults badly", "c": false, "r": "Incorrect. She stopped attending; activity supports adjustment to aging rather than causing falls."}], "tp": "Case framework: Nursing Process, analyze cues. Falls can force long immobilization, costing independence and self-esteem.", "grp": "case1", "scen": "CASE STUDY \u2014 Mrs. Alvarez, 79, lives alone since her husband died last year. She was admitted after a fall at home in a dim hallway; X-rays show no fracture, but she has a large bruise on her hip. She forgets what she ate for breakfast yet describes her wedding 55 years ago in detail. She asks the nurse to speak up because high voices are hard to hear, wears reading glasses that no longer seem strong enough, and her skin over the sacrum is thin and pale. Her intake yesterday was 800 mL because she limits fluids to avoid getting up at night. She tells the nurse she has stopped attending her bridge club and mostly stays home alone."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "CASE STUDY 3 of 6 \u2014 PRIORITIZE HYPOTHESES: Which problem should the nurse rank first for Mrs. Alvarez today?", "opts": [{"t": "Risk for another fall with injury, driven by vision change, balance change, and low fluid intake", "c": true, "r": "Correct. Three printed fall drivers converge in one patient, and a repeat fall risks fracture and immobilization. Framework: safety first, prioritize the hypothesis with the greatest harm potential."}, {"t": "Social withdrawal since her husband's death, which will shape her long-term adjustment to aging", "c": false, "r": "Incorrect. Withdrawal matters and fits widowhood, but it does not outrank an active, multi-cause fall risk."}, {"t": "Possible hearing aid need, which affects how well she follows conversation during group activities", "c": false, "r": "Incorrect. Hearing support is planned care, ranked below preventing another injurious fall today."}, {"t": "Need for a new bridge club schedule, which would restore her weekly social routine at home soon", "c": false, "r": "Incorrect. Social planning is later work; the first hypothesis to act on is repeat fall risk."}], "tp": "Case framework: safety first. Widowhood brings decline in social contacts and shared plans, addressed after safety.", "grp": "case1", "scen": "CASE STUDY \u2014 Mrs. Alvarez, 79, lives alone since her husband died last year. She was admitted after a fall at home in a dim hallway; X-rays show no fracture, but she has a large bruise on her hip. She forgets what she ate for breakfast yet describes her wedding 55 years ago in detail. She asks the nurse to speak up because high voices are hard to hear, wears reading glasses that no longer seem strong enough, and her skin over the sacrum is thin and pale. Her intake yesterday was 800 mL because she limits fluids to avoid getting up at night. She tells the nurse she has stopped attending her bridge club and mostly stays home alone."});
+
+BANK.push({"cat": CF, "type": "multi", "stem": "CASE STUDY 4 of 6 \u2014 GENERATE SOLUTIONS: Which solutions should the nurse include in Mrs. Alvarez's plan? Select all that apply.", "opts": [{"t": "Install night-lights and grab bars, remove scatter rugs, and keep her cane within easy reach", "c": true, "r": "Correct. Those are the printed Safety Alert solutions for an older adult with fall risk at home."}, {"t": "Build fluids toward the daily minimum with scheduled drinks, instead of restricting for the night", "c": true, "r": "Correct. Reaching 1,500 mL daily counters the incontinence-fear restriction driving her low intake."}, {"t": "Inspect her sacral skin daily, change her position often, and use lotion to restore skin moisture", "c": true, "r": "Correct. Thin, pale, fragile skin gets daily inspection, frequent repositioning and moisture, as printed."}, {"t": "Advise her to stay in bed most of the day, because rest prevents falls better than any equipment", "c": false, "r": "Incorrect. Exercise maintains fitness, strength, flexibility and balance; bed rest works against all four."}, {"t": "Dim the hallway lights at night so she sleeps better and wakes less often during the night", "c": false, "r": "Incorrect. Night-lights are the printed solution; dim hallways contributed to this patient's fall."}, {"t": "Restrict fluids further after dinner, because nighttime voiding is her main stated worry at home", "c": false, "r": "Incorrect. Her intake is already half the minimum; further restriction deepens the problem found."}], "tp": "Case framework: Nursing Process, generate solutions from Table 24.4 and the Safety Alert.", "grp": "case1", "scen": "CASE STUDY \u2014 Mrs. Alvarez, 79, lives alone since her husband died last year. She was admitted after a fall at home in a dim hallway; X-rays show no fracture, but she has a large bruise on her hip. She forgets what she ate for breakfast yet describes her wedding 55 years ago in detail. She asks the nurse to speak up because high voices are hard to hear, wears reading glasses that no longer seem strong enough, and her skin over the sacrum is thin and pale. Her intake yesterday was 800 mL because she limits fluids to avoid getting up at night. She tells the nurse she has stopped attending her bridge club and mostly stays home alone."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "CASE STUDY 5 of 6 \u2014 TAKE ACTION: Which action should the nurse take first when Mrs. Alvarez gets up to walk to the bathroom?", "opts": [{"t": "Stay with her, cue her to rise slowly from lying flat, and make sure her cane and shoes are in place", "c": true, "r": "Correct. Caution going from lying flat to standing, a handy cane, and properly fitting shoes are printed tips. Framework: safety first, act on the immediate transfer risk first."}, {"t": "Ask her to walk quickly while she feels steady, so the transfer finishes before dizziness can start", "c": false, "r": "Incorrect. The printed rule is do not rush or hurry; speed during a transfer raises fall risk."}, {"t": "Lower the bed to its flat position and leave, because independence in transfers must be protected", "c": false, "r": "Incorrect. Leaving a known fall-risk patient alone mid-transfer removes the safety support she needs."}, {"t": "Give her a full glass of water to carry with her, so she can work on fluids during the walk there", "c": false, "r": "Incorrect. Carrying a glass divides attention and a hand from the cane during a risky transfer."}], "tp": "Case framework: safety first. Exercise benefits include social contact and less anxiety, depression and insomnia.", "grp": "case1", "scen": "CASE STUDY \u2014 Mrs. Alvarez, 79, lives alone since her husband died last year. She was admitted after a fall at home in a dim hallway; X-rays show no fracture, but she has a large bruise on her hip. She forgets what she ate for breakfast yet describes her wedding 55 years ago in detail. She asks the nurse to speak up because high voices are hard to hear, wears reading glasses that no longer seem strong enough, and her skin over the sacrum is thin and pale. Her intake yesterday was 800 mL because she limits fluids to avoid getting up at night. She tells the nurse she has stopped attending her bridge club and mostly stays home alone."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "CASE STUDY 6 of 6 \u2014 EVALUATE OUTCOMES: Which outcome shows Mrs. Alvarez's plan is working one week later?", "opts": [{"t": "She walks to the bathroom without a fall, drinks near the daily minimum, and her sacral skin stays intact", "c": true, "r": "Correct. No repeat fall, intake near 1,500 mL, and intact skin measure the three problems the plan targeted. Framework: Nursing Process, evaluate outcomes against the original cues."}, {"t": "She reports her remote memory is sharper, although her fluid intake and hallway setup are unchanged", "c": false, "r": "Incorrect. Remote memory was never the problem; the targeted outcomes are falls, fluids and skin."}, {"t": "She has stopped getting up at night entirely by drinking almost nothing after the morning hours", "c": false, "r": "Incorrect. That outcome is reached by fluid restriction, the behavior the plan was built to reverse."}, {"t": "She no longer needs her cane indoors, because she has memorized the hallway in one week of practice", "c": false, "r": "Incorrect. Removing the cane reintroduces the fall risk; the cane stays handy in the working plan."}], "tp": "Case framework: Nursing Process, evaluate outcomes. Successful aging keys include pleasurable activities, positive self-image, optimism and planned exercise.", "grp": "case1", "scen": "CASE STUDY \u2014 Mrs. Alvarez, 79, lives alone since her husband died last year. She was admitted after a fall at home in a dim hallway; X-rays show no fracture, but she has a large bruise on her hip. She forgets what she ate for breakfast yet describes her wedding 55 years ago in detail. She asks the nurse to speak up because high voices are hard to hear, wears reading glasses that no longer seem strong enough, and her skin over the sacrum is thin and pale. Her intake yesterday was 800 mL because she limits fluids to avoid getting up at night. She tells the nurse she has stopped attending her bridge club and mostly stays home alone."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A 6-month-old is drooling, irritable, and has red swollen gums, and her first lower teeth are erupting. Which teaching should the nurse give first?", "opts": [{"t": "Signs can start three to four weeks before a tooth appears, and wiping the gums supports oral care", "c": true, "r": "Correct. Teething begins near 6 months with the two lower central incisors; signs precede eruption by weeks. Framework: Nursing Process, normal-finding teaching."}, {"t": "Every fever in this period comes from teething, so fevers never need any further evaluation now", "c": false, "r": "Incorrect. The chapter warns against blaming every fever on teething; other causes stay in view."}, {"t": "Dental visits can wait until all twenty primary teeth erupt, near the end of the third year", "c": false, "r": "Incorrect. The first dental visit is at the first tooth, and no later than the first birthday."}, {"t": "She should now have about sixteen teeth, so the two erupting teeth signal a dental delay here", "c": false, "r": "Incorrect. About 6 to 8 teeth are expected at 12 months and about 16 teeth at 24 months."}], "tp": "Dentition: 20 teeth by 30 months. Oral hygiene for young infants is clear water sips plus gum wiping and massage. Framework: Nursing Process."});
+
+BANK.push({"cat": CC, "type": "multi", "stem": "Parents of a defiant 2-year-old ask how to discipline consistently. Which principles should the nurse teach? Select all that apply.", "opts": [{"t": "Apply rules uniformly, follow through on what is said, and reinforce acceptable behavior positively", "c": true, "r": "Correct. Consistency, follow-through and positive reinforcement are printed Box 24.9 discipline principles."}, {"t": "Administer any consequence promptly and in a nonhostile manner right after the incident occurs", "c": true, "r": "Correct. Promptness with a nonhostile manner is a printed principle in the toddler discipline box."}, {"t": "Prevent problems by removing temptation, and model the behavior the child is expected to copy", "c": true, "r": "Correct. Prevention by removing temptation and positive modeling are printed discipline principles."}, {"t": "Offer a choice even when only one course of action is acceptable, so the toddler feels in control", "c": false, "r": "Incorrect. Choices are offered only when either choice is acceptable to the caregiver, as printed."}, {"t": "Delay consequences until the evening, so the toddler has time to connect them with the behavior", "c": false, "r": "Incorrect. Consequences are given immediately after the incident, not hours later in the evening."}, {"t": "Use shame after accidents, because feeling foolish teaches a toddler to control urges much faster", "c": false, "r": "Incorrect. Shame fosters shame and doubt; praise success and ignore accidents instead, as printed."}], "tp": "Box 24.9: consistency, follow-through, positive modeling, promptness, trust, prevention, reinforcement. Framework: Nursing Process."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A 5-year-old at the 96th percentile for BMI plays indoors all afternoon while adults model snack-heavy habits. Which plan should the nurse teach first?", "opts": [{"t": "Increase physical activity and model healthy eating, because activity is the best weight tool for children", "c": true, "r": "Correct. The chapter states the best way to get children to lose weight is to increase physical activity. Framework: health promotion, family modeling over child-only restriction."}, {"t": "Put the child on a strict adult diet plan, because percentile category matters more than activity", "c": false, "r": "Incorrect. Inactivity is named as possibly as responsible as overeating; activity leads the plan here."}, {"t": "Wait until adolescence to act, because overweight preschoolers usually outgrow the percentile alone", "c": false, "r": "Incorrect. Overweight infants and children track toward obesity; control of weight prevents later issues."}, {"t": "Blame the child for food choices at the visit, so embarrassment motivates a change in habits now", "c": false, "r": "Incorrect. Children often adopt adult eating habits; modeling, not blame, is the chapter direction."}], "tp": "BMI at or above the 95th percentile is obese. Model good eating, provide healthy food, encourage activity. Framework: health promotion."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A 9-year-old cries after failing a spelling test and says he is bad at everything in school this year. Which response should the nurse teach his parents first?", "opts": [{"t": "Praise effort and use encouragement and rewards, because outside feedback shapes his self-concept", "c": true, "r": "Correct. Industry versus inferiority turns on feedback; competent versus incompetent self-concept is built here. Framework: Maslow, esteem building in the school-age stage."}, {"t": "Compare his grades with a classmate who passed, so he can see the standard he needs to reach soon", "c": false, "r": "Incorrect. Comparison feeds inferiority; praise, encouragement and rewards are the printed direction."}, {"t": "Remove all school projects for the term, because avoiding failure protects his self-concept best", "c": false, "r": "Incorrect. Industry grows through supported attempts at competence, not through removing every task."}, {"t": "Tell him feelings about school do not matter until adolescence, when identity work finally begins", "c": false, "r": "Incorrect. This stage sets feelings of inferiority or confidence; the feedback window is right now."}], "tp": "Teachers and caregivers establish social relationships and reinforce effort positively. Framework: Maslow."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A 16-year-old in a growth spurt eats about 1,800 calories daily, skips protein foods, and is losing energy for sports. Which teaching should the nurse give first?", "opts": [{"t": "Raise intake toward peak-growth needs and get twelve to sixteen percent of intake from protein foods", "c": true, "r": "Correct. Males may need up to 3,600 calories daily at peak growth, with protein at 12% to 16% of intake. Framework: Nursing Process, intake matched to the growth-spurt demand."}, {"t": "Keep intake near eighteen hundred calories, because adult calorie needs apply once puberty begins", "c": false, "r": "Incorrect. Adolescent needs exceed adult needs; fewer calories are needed only after adolescence ends."}, {"t": "Cut protein further so carbohydrate can supply all the energy needed during the growth spurt", "c": false, "r": "Incorrect. Protein needs are increased during rapid growth, not cut, as printed in the chapter."}, {"t": "Add calcium only after growth stops, because skeletal growth finishes before the spurt begins", "c": false, "r": "Incorrect. Calcium need rises for skeletal growth during the spurt, alongside iron and zinc needs."}], "tp": "Minerals in adolescence: calcium for skeleton, iron for blood cell mass, zinc for skeletal and muscle tissue. Framework: Nursing Process."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "A 61-year-old postmenopausal woman takes no estrogen, eats little dairy, and has lost height over two years. Which plan should the nurse teach first?", "opts": [{"t": "Aim for twelve hundred milligrams of calcium daily and weight-bearing activity such as walking", "c": true, "r": "Correct. Postmenopausal women without estrogen need 1,200 mg of calcium daily; walking aids calcium use. Framework: health promotion, bone protection while prevention can still work."}, {"t": "Aim for one thousand milligrams of calcium daily, the amount printed for premenopausal women", "c": false, "r": "Incorrect. That is the premenopausal figure; her printed target without estrogen is 1,200 mg daily."}, {"t": "Avoid walking and swimming, because activity speeds the disk thinning that shortens her height", "c": false, "r": "Incorrect. Walking, swimming, golf and tennis are stress-reducing and enhance calcium utilization."}, {"t": "Start hormone therapy on her own schedule, because its benefits clearly outweigh every risk listed", "c": false, "r": "Incorrect. Hormone therapy risks and benefits are evaluated individually with the provider, not self-started."}], "tp": "Height loss in this stage comes from thinning intervertebral disks; osteoporosis makes bone porous and fragile. Framework: health promotion."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "A 45-year-old reports words blur at reading distance unless he holds pages farther away, while distance vision stays clear. Which action fits first?", "opts": [{"t": "Arrange an eye examination, because loss of near accommodation near age forty fits this change", "c": true, "r": "Correct. Presbyopia from loss of lens elasticity makes the near point recede, usually seen by about age 40. Framework: Nursing Process, matching a sensory change to its printed pattern."}, {"t": "Arrange a hearing evaluation first, because all sensory loss at this age begins in the ear canal", "c": false, "r": "Incorrect. Hearing loss is presbycusis, a different change; this complaint is near-vision blurring."}, {"t": "Reassure him the change proves total vision failure is near, so reading should be stopped at work", "c": false, "r": "Incorrect. Presbyopia is a normal midlife change managed with correction, not total vision failure."}, {"t": "Tell him annual thyroid testing will correct the blur, because endocrine change causes this sign", "c": false, "r": "Incorrect. Thyroid testing is part of older-adult screening, not the response to an accommodation change."}], "tp": "Presbyopia is the eye change; presbycusis is the ear change. Sensory changes begin around age 40, more often in men for hearing. Framework: Nursing Process.", "kt": ["Presbyopia"]});
+
+BANK.push({"cat": CF, "type": "single", "stem": "An 84-year-old with an egg allergy history and a past severe vaccine reaction asks about yearly shots. Which action should the nurse take first?", "opts": [{"t": "Have her check with her physician before immunization, given the allergy and prior severe reaction", "c": true, "r": "Correct. Those exact histories are the printed cautions before pneumococcal and influenza immunization. Framework: safety first, screening before a preventive intervention."}, {"t": "Give both vaccines today and observe her afterward, because yearly vaccines override all cautions", "c": false, "r": "Incorrect. The chapter names her exact history as a reason to check with the physician first."}, {"t": "Skip all future vaccines permanently, because a past reaction removes every vaccine from her plan", "c": false, "r": "Incorrect. The printed step is a physician check before immunization, not an automatic lifetime ban."}, {"t": "Give only the influenza vaccine today, because egg allergy matters solely for the pneumococcal shot", "c": false, "r": "Incorrect. The caution is printed for immunization in this population without splitting it that way."}], "tp": "Older adults: pneumococcal and influenza vaccines yearly, with the allergy and reaction check first. Framework: safety first."});
+
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 24: Lifespan Development</h1>';
+  h += '<div class="sub">Brutal mode | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

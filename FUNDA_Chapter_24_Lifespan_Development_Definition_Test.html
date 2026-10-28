@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 24 - Lifespan Development - Definition Practice Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Growth, Families and Stress";
+var CB = "Erikson, Piaget and Language";
+var CC = "Infancy and Toddler";
+var CD = "Preschool and School Age";
+var CE = "Adolescence and Early Adulthood";
+var CF = "Middle, Late Adulthood and Aging";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 8,
+  "types": {
+   "single": 6,
+   "multi": 2
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 7,
+  "types": {
+   "single": 7
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 6,
+  "types": {
+   "single": 5,
+   "multi": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 6,
+  "types": {
+   "single": 5,
+   "multi": 1
+  }
+ },
+ CF: {
+  "name": CF,
+  "count": 8,
+  "types": {
+   "single": 7,
+   "multi": 1
+  }
+ }
+};
+
+BANK.push({"cat": CA, "type": "single", "stem": "Which statement best distinguishes growth from development?", "opts": [{"t": "Growth is an increase in size, while development is function changing from simple to complex", "c": true, "r": "Correct. Growth is size; development is function and gradual change, simple to complex, in an orderly sequence."}, {"t": "Growth is function changing over time, while development is only an increase in body size", "c": false, "r": "Incorrect. That reverses the two terms; size belongs to growth and function to development."}, {"t": "Growth and development are the same process and both stop once a child reaches school age", "c": false, "r": "Incorrect. They are related but distinct, and development continues across the whole lifespan."}, {"t": "Growth follows a set sequence, while development happens in a random order for each person", "c": false, "r": "Incorrect. Development is orderly and sequential, although its rate is highly individual."}], "tp": "Growth = size. Development = function, simple to complex, lifelong and orderly. Rate is individual.", "kt": ["Development", "Growth"]});
+
+BANK.push({"cat": CA, "type": "single", "stem": "An infant controls the head and trunk before controlling the hands and feet. Which pattern is this?", "opts": [{"t": "Cephalocaudal development, in which growth and control proceed from the head downward", "c": true, "r": "Correct. Head-to-toe is cephalocaudal; the infant head is large compared with the rest of the body."}, {"t": "Proximodistal development, in which growth proceeds from the center outward to the limbs", "c": false, "r": "Incorrect. Center-outward is proximodistal, a different directional pattern than head-to-toe."}, {"t": "Sensorimotor development, in which learning occurs through senses and motor activity only", "c": false, "r": "Incorrect. Sensorimotor is a Piaget cognitive stage, not a directional pattern of body growth."}, {"t": "Psychosocial development, in which a task is resolved at each stage across the lifespan", "c": false, "r": "Incorrect. That describes Erikson stages, not the head-to-toe direction of physical growth."}], "tp": "Cephalocaudal = head to toe. Proximodistal = center outward.", "kt": ["Cephalocaudal", "Proximodistal"]});
+
+BANK.push({"cat": CA, "type": "single", "stem": "Which statement about life expectancy is accurate?", "opts": [{"t": "It estimates years a person will probably live from averages of people with similar traits", "c": true, "r": "Correct. Life expectancy is a probability estimate from similar groups; an exact span cannot be predicted."}, {"t": "It states the exact number of years a newborn will live if no accident occurs in childhood", "c": false, "r": "Incorrect. A newborn's exact years cannot be predicted; only estimates from group averages are made."}, {"t": "It has fallen steadily in the United States since sanitation and immunizations first spread", "c": false, "r": "Incorrect. It rose sharply since the early 1900s with sanitation, medications, immunizations and nutrition."}, {"t": "It is the same for every population group, because income and geography do not affect it", "c": false, "r": "Incorrect. It differs by group and geography; higher-income households live about 3 to 7 years longer."}], "tp": "Life expectancy in 2019 as printed: men 76.3 years, women 81.4 years; females outlive males by about 5 years.", "kt": ["Life expectancy"]});
+
+BANK.push({"cat": CA, "type": "single", "stem": "Which statement about teratogens is accurate?", "opts": [{"t": "Drugs, alcohol, viruses, and cigarette smoke can interfere with normal prenatal development", "c": true, "r": "Correct. Those are the named teratogens; cigarette smoke raises the incidence of low-birth-weight babies."}, {"t": "Teratogens act only after birth, when the newborn first meets agents in the outside world", "c": false, "r": "Incorrect. Teratogens interfere with prenatal development, before birth, in the unborn child."}, {"t": "Teratogens explain nearly all unfavorable pregnancy outcomes in every pregnant population", "c": false, "r": "Incorrect. The chapter attributes a possible 5% to 25% of unfavorable outcomes to teratogens."}, {"t": "Inherited diseases such as Tay-Sachs are caused when a mother is exposed to cigarette smoke", "c": false, "r": "Incorrect. Tay-Sachs is an inherited abnormality, not a result of a teratogen exposure."}], "tp": "Teratogens: drugs, alcohol, viruses, cigarette smoke. Possible 5% to 25% of unfavorable outcomes.", "kt": ["Teratogen"]});
+
+BANK.push({"cat": CA, "type": "single", "stem": "Which statement about sex determination is accurate?", "opts": [{"t": "The ovum always carries an X, so a Y from the fertilizing sperm produces a boy and an X a girl", "c": true, "r": "Correct. The ovum always gives X; the sperm carries X or Y, and that decides the sex of the child."}, {"t": "The ovum carries either an X or a Y, so the mother alone decides the sex of the future child", "c": false, "r": "Incorrect. The ovum always carries X; variation comes from the sperm, which carries X or Y."}, {"t": "Each parent contributes 46 chromosomes, so the child ends up with a total of 92 chromosomes", "c": false, "r": "Incorrect. Each parent contributes one of each pair, for a total of 46 chromosomes in 23 pairs."}, {"t": "Identical twins can have different chromosome combinations, because environment alters them", "c": false, "r": "Incorrect. Identical twins share the exact combination of chromosomes, called the karyotype."}], "tp": "46 chromosomes, 23 pairs. Ovum = X always; sperm = X or Y.", "kt": ["Zygote"]});
+
+BANK.push({"cat": CA, "type": "single", "stem": "A household includes parents, their children, and a grandmother who shares responsibilities. Which family type is this?", "opts": [{"t": "Extended family, because relatives beyond the nuclear unit live in the same household there", "c": true, "r": "Correct. Extended family is the nuclear family plus additional members living in the same household."}, {"t": "Nuclear family, because any household built around parents and children counts as nuclear", "c": false, "r": "Incorrect. Once grandparents or other relatives join the household, the type is extended family."}, {"t": "Blended family, because children from earlier marriages have been combined in one household", "c": false, "r": "Incorrect. A blended family combines children from previous marriages after parents remarry."}, {"t": "Grandfamily, because the grandmother alone heads the household and raises the grandchildren", "c": false, "r": "Incorrect. In a grandfamily the grandparents head the household; here the parents are present."}], "tp": "Nuclear = parents and children alone. Extended = nuclear plus other relatives in the household.", "kt": ["Extended family", "Nuclear family"]});
+
+BANK.push({"cat": CA, "type": "multi", "stem": "Which qualities belong to a functional family, as listed in the chapter? Select all that apply.", "opts": [{"t": "A sense of commitment toward promoting the well-being of every member of the family unit", "c": true, "r": "Correct. Commitment to members' well-being is one of the 12 printed qualities of functional families."}, {"t": "Effective communication between individuals and a positive outlook during difficult times", "c": true, "r": "Correct. Effective communication and a positive outlook are both on the Box 24.3 quality list."}, {"t": "Flexibility to adapt to changes, with a variety of coping techniques available for problems", "c": true, "r": "Correct. Flexibility, varied coping techniques and varied resources are printed functional qualities."}, {"t": "Strict rigid rules enforced by one parent, with little openness to any outside influence", "c": false, "r": "Incorrect. That describes the autocratic pattern, not a quality on the functional family list."}, {"t": "One adult making most decisions alone while other adults simply carry out those decisions", "c": false, "r": "Incorrect. Single-person dominance describes patriarchal or matriarchal patterns, not Box 24.3."}, {"t": "Keeping the same family roles unchanged even after births, deaths, or divorces occur later", "c": false, "r": "Incorrect. Families must rearrange roles when circumstances change; rigidity is a risk sign."}], "tp": "Box 24.3: commitment, appreciation, quality time, purpose, harmony, communication, values, coping, problem solving, positive outlook, flexibility, resources."});
+
+BANK.push({"cat": CA, "type": "multi", "stem": "Which findings are listed as common signs of stress in children? Select all that apply.", "opts": [{"t": "Mood swings, acting-out behavior, and a change in eating or sleeping patterns at home", "c": true, "r": "Correct. Mood swings, acting out and changed eating or sleeping are printed Box 24.4 signs."}, {"t": "Frequent physical complaints such as headaches or other unexplained somatic symptoms", "c": true, "r": "Correct. Frequent unexplained physical complaints are a printed sign of stress in children."}, {"t": "Excessive clinging to parents, thumb sucking, bedwetting, or return to earlier behavior", "c": true, "r": "Correct. Clinging, thumb sucking, bedwetting and regression to earlier behavior are listed."}, {"t": "Steady weight gain, longer sleep, and a new interest in playing with unfamiliar children", "c": false, "r": "Incorrect. Those are not on the stress sign list; stress changes eating and sleeping patterns."}, {"t": "Advanced vocabulary, early toilet control, and finishing homework well ahead of schedule", "c": false, "r": "Incorrect. Early achievement is not a stress sign; regression to earlier behavior is the sign."}, {"t": "Quiet compliance with every rule and no questions asked about a new school or routine", "c": false, "r": "Incorrect. Stress surfaces as behavior change; quiet compliance alone is not a listed sign."}], "tp": "Box 24.4 stress signs: mood swings, acting out, eating/sleeping change, somatic complaints, clinging, thumb sucking, bedwetting, regression."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "An infant whose basic needs are met consistently learns to trust caregivers. Which Erikson task is this?", "opts": [{"t": "Basic trust versus mistrust, the task of infancy from birth to about one year of age here", "c": true, "r": "Correct. Infancy is trust versus mistrust; responsive care for nourishment, warmth and contact builds trust."}, {"t": "Autonomy versus shame and doubt, the task of toddlerhood from about one to three years", "c": false, "r": "Incorrect. Autonomy is the toddler task, built on self-sufficiency in toileting, feeding and walking."}, {"t": "Initiative versus guilt, the task of the preschool years from about four to six years old", "c": false, "r": "Incorrect. Initiative is preschool; infants are working on trust, not on undertaking adult-like activities."}, {"t": "Industry versus inferiority, the task of school age from about seven to eleven years old", "c": false, "r": "Incorrect. Industry is about competence and productivity at school age, long after infancy ends."}], "tp": "Erikson: infant = trust vs mistrust. Unmet needs in infancy lead to mistrust.", "kt": ["Basic trust vs. mistrust"]});
+
+BANK.push({"cat": CB, "type": "single", "stem": "A 2-year-old insists on feeding herself and says no often. Which Erikson task fits best?", "opts": [{"t": "Autonomy versus shame and doubt, as the toddler learns self-sufficiency in daily skills", "c": true, "r": "Correct. The toddler task is autonomy; toileting, feeding, walking and talking build self-sufficiency."}, {"t": "Initiative versus guilt, as the preschool child tries activities beyond limits set for her", "c": false, "r": "Incorrect. Initiative belongs to preschool; this child's age and self-feeding fit the toddler task."}, {"t": "Identity versus role confusion, as the adolescent works out sexual and career identities", "c": false, "r": "Incorrect. Identity is the adolescent task, not a task of a 2-year-old learning self-care skills."}, {"t": "Intimacy versus isolation, as the young adult seeks companionship and love with a partner", "c": false, "r": "Incorrect. Intimacy is young adulthood; a toddler's negativism is normal autonomy behavior instead."}], "tp": "Toddler = autonomy vs shame and doubt. The word no gives the toddler a sense of control."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "Which pairing of Erikson task and stage is correct?", "opts": [{"t": "Industry versus inferiority with school age, when a child works to feel competent and productive", "c": true, "r": "Correct. School-age children eagerly learn to be competent and productive, or feel inferior at tasks."}, {"t": "Initiative versus guilt with school age, when a child works to feel competent and productive", "c": false, "r": "Incorrect. Initiative versus guilt is the preschool task; school age is industry versus inferiority."}, {"t": "Generativity versus stagnation with adolescence, when a teen works out a personal identity", "c": false, "r": "Incorrect. Generativity is middle adulthood; adolescence is identity versus role confusion instead."}, {"t": "Ego integrity versus despair with middle age, when an adult reviews a whole life for meaning", "c": false, "r": "Incorrect. Ego integrity versus despair is late adulthood, not middle adulthood as stated here."}], "tp": "School age = industry vs inferiority. Feedback from others shapes competent versus incompetent self-concept."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "Which behavior shows Piaget's preoperational thought?", "opts": [{"t": "A 4-year-old centers on one aspect of an object and sees the world only from her own view", "c": true, "r": "Correct. Preoperational thought is egocentric, centers on a single aspect, and uses symbols and trial and error."}, {"t": "A 9-year-old sorts objects by two traits at once and explains a cause-and-effect sequence", "c": false, "r": "Incorrect. Focusing on more than one task and cause-and-effect fit concrete operational thought."}, {"t": "A 15-year-old reasons through a hypothetical problem with a systematic scientific method", "c": false, "r": "Incorrect. Systematic abstract problem solving is formal operational thought, from about age 12 on."}, {"t": "A 6-month-old learns that a toy still exists after it is hidden completely under a blanket", "c": false, "r": "Incorrect. Object permanence develops in the sensorimotor stage, from birth to about 2 years."}], "tp": "Preoperational, 2 to 7 years: egocentric, single-aspect centering, symbols, present-tense time.", "kt": ["Egocentrism"]});
+
+BANK.push({"cat": CB, "type": "single", "stem": "Which behavior shows concrete operational thought?", "opts": [{"t": "A 9-year-old classifies objects, follows cause and effect, and takes another child's viewpoint", "c": true, "r": "Correct. Concrete operations, 7 to 11 years, bring logical operations, classification and other viewpoints."}, {"t": "A 4-year-old insists a taller glass must hold more, judging only by the height of the liquid", "c": false, "r": "Incorrect. Centering on one aspect is preoperational thinking, not concrete operational thought."}, {"t": "A 13-year-old debates an ethical question by weighing ideas that may never actually happen", "c": false, "r": "Incorrect. Abstract and hypothetical reasoning is formal operational thought, not concrete thought."}, {"t": "A 1-year-old uses senses and movement alone to learn about objects placed within her reach", "c": false, "r": "Incorrect. Learning through senses and motor activity alone is the sensorimotor stage of infancy."}], "tp": "Concrete operations, 7 to 11: logical, classification, cause-and-effect, still tied to concrete perceptions."});
+
+BANK.push({"cat": CB, "type": "single", "stem": "A toddler says up to be picked up, using one word for a whole message. Which term fits?", "opts": [{"t": "Holophrase, a one-word sentence used at one to two years to convey a complete message here", "c": true, "r": "Correct. Holophrases are one-word sentences such as up that carry a complete message at ages 1 to 2."}, {"t": "Telegraphic speech, a two-word phrase that omits articles and pronouns, such as mommy milk", "c": false, "r": "Incorrect. Telegraphic speech is two-word phrases; a single word carrying a message is a holophrase."}, {"t": "Egocentrism, a way of thinking in which the world is seen only from the child's own viewpoint", "c": false, "r": "Incorrect. Egocentrism is a thinking pattern of the preoperational stage, not a one-word utterance."}, {"t": "Jargon, the unintelligible babbling speech that peaks in an infant at about eighteen months", "c": false, "r": "Incorrect. Jargon is unintelligible; this single word carries a clear, complete intended message."}], "tp": "Holophrase = one word, whole message. Telegraphic speech = two-word phrases with small words omitted.", "kt": ["Holophrase", "Telegraphic speech"]});
+
+BANK.push({"cat": CB, "type": "single", "stem": "Which child needs an evaluation for possible hearing loss or a speech problem?", "opts": [{"t": "A 3-year-old who is not talking at all yet, despite normal play with other children at home", "c": true, "r": "Correct. A child not talking by age 3 needs physician evaluation for hearing loss or speech disturbance."}, {"t": "A 2-year-old who uses two-word phrases and has a vocabulary of roughly three hundred words", "c": false, "r": "Incorrect. Two-word phrases and about 300 words match the printed Table 24.3 norm for age 2 years."}, {"t": "A 3-year-old whose speech is about three quarters clear to a listener who is unfamiliar", "c": false, "r": "Incorrect. At age 3, speech that is 70% to 80% clear matches the printed intelligibility range."}, {"t": "A 4-year-old who still distorts some sounds such as r, l, and s while speaking in sentences", "c": false, "r": "Incorrect. Some distortion of those sounds is still expected at ages 4 to 5 in the printed table."}], "tp": "Not talking by age 3 = evaluate for hearing loss or pathologic speech disturbance. Table 24.3 norms decide the rest."});
+
+BANK.push({"cat": CB, "type": "multi", "stem": "Which statements about language development are accurate? Select all that apply.", "opts": [{"t": "Language and thinking are interdependent, and the brain's language ability grows with use", "c": true, "r": "Correct. The chapter states language and thinking are interdependent and ability grows with use in infancy."}, {"t": "Speech needs intact respiration, speech mechanism, articulation, hearing, and stimulation", "c": true, "r": "Correct. The printed requirements include respiratory, cortex, articulation, auditory, intellect and stimulation."}, {"t": "All children pass through the same language sequence unless abnormal conditions are present", "c": true, "r": "Correct. Table 24.3 sequence is the same for all children unless abnormal conditions interfere."}, {"t": "Girls and later-born children always develop language faster than boys and firstborn children", "c": false, "r": "Incorrect. As printed, girls advance faster than boys and firstborns earlier than later-born children."}, {"t": "A child learns six to ten new words every day during the first year of life after birth", "c": false, "r": "Incorrect. Six to ten words per day is printed for ages 2 to 6 years, not for the first year."}, {"t": "Vocabulary reaches eight thousand words by age two, then grows slowly through age six", "c": false, "r": "Incorrect. The text prints about 200 words at age 2 and 8,000 to 14,000 words by age 6 years."}], "tp": "Two printed vocabulary series disagree: text 200 at 2 yr and 8,000-14,000 at 6 yr; Table 24.3 about 300 at 2 yr and 3,000 at 6-7 yr. Know both as printed."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "Which weight pattern is expected in a healthy infant?", "opts": [{"t": "Birth weight doubles by four to six months and has tripled by one year of age on average", "c": true, "r": "Correct. Doubling by 4 to 6 months and tripling by 1 year are the printed infant weight landmarks."}, {"t": "Birth weight doubles by two months and has tripled by about four months of age on average", "c": false, "r": "Incorrect. Those landmarks come later: double by 4 to 6 months and triple by the first birthday."}, {"t": "Birth weight stays nearly flat for six months, then doubles suddenly near the first birthday", "c": false, "r": "Incorrect. Infants gain about one and a half pounds per month until 5 months, a rapid early gain."}, {"t": "Birth weight triples by six months, then returns toward double by one year of age on average", "c": false, "r": "Incorrect. Weight does not fall back; the pattern is double by 4 to 6 months, triple by 1 year."}], "tp": "Length rises about 1 inch per month for the first 6 months and about 50% by 12 months."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "Why is an infant's apical pulse counted for a full minute?", "opts": [{"t": "Infants show wide variations in rate, volume, and rhythm, so a shorter count can be inaccurate", "c": true, "r": "Correct. Wide variation in rate, volume and rhythm makes a full-minute apical count necessary in infants."}, {"t": "Infant pulses are too faint to feel at the wrist, so the apical site is the only site available", "c": false, "r": "Incorrect. The reason printed is variation in rate, volume and rhythm, not inability to feel a pulse."}, {"t": "An infant's heart rate changes only during feeding, so the count must cover a full feeding cycle", "c": false, "r": "Incorrect. Variation is a general feature of infancy, not something limited to feeding periods."}, {"t": "A full minute is counted because infant heart rates are slower than those of older children", "c": false, "r": "Incorrect. Infant rates are faster, about 120 beats/min at 2 months, not slower than older children."}], "tp": "At 2 months the average apical rate is about 120 beats/min. Count infants for a full minute."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "Which statement about sudden infant death syndrome is accurate?", "opts": [{"t": "It causes sudden death with no warning signs, and its incidence peaks at two to three months", "c": true, "r": "Correct. SIDS, formerly crib death, peaks 2 to 3 months after birth with no identifiable warning signs."}, {"t": "It usually follows several days of fever and poor feeding that warn caregivers death is near", "c": false, "r": "Incorrect. SIDS produces sudden, abrupt death with no identifiable warning signs beforehand."}, {"t": "It occurs most often near the first birthday, when infants begin walking and climbing stairs", "c": false, "r": "Incorrect. The printed peak is 2 to 3 months after birth, well before the first birthday period."}, {"t": "It is prevented mainly by stomach sleeping, which keeps the infant airway clear during sleep", "c": false, "r": "Incorrect. The Safety Alert's first rule is back to sleep; stomach sleeping is the trap answer."}], "tp": "SIDS Safety Alert: back to sleep, no smoke exposure, no soft bedding, ventilated room, breast-feed if possible, checkups, pacifier, vaccinations, no bed wedges.", "kt": ["SIDS"]});
+
+BANK.push({"cat": CC, "type": "single", "stem": "Which feeding guidance matches the chapter for the first six months?", "opts": [{"t": "Exclusive breastfeeding is recommended for the first six months and continued for the first year", "c": true, "r": "Correct. The AAP recommendation printed is exclusive breastfeeding for 6 months, continued for the first year."}, {"t": "Solid foods should start at two months so the infant learns tastes before six months of age", "c": false, "r": "Incorrect. Breast milk or formula is the only food needed until 6 months; solids come after that point."}, {"t": "Formula-fed infants need extra water and juice daily during the first months to gain weight well", "c": false, "r": "Incorrect. Proper amounts of formula alone support normal gain; juice is not needed in early infancy."}, {"t": "Night feedings should stop in the first week so the infant learns to sleep through the night", "c": false, "r": "Incorrect. The breast-fed baby should have at least two feedings during the night in the early weeks."}], "tp": "Adequacy: four to six wet diapers per day by day four, and at least two to three seedy stools daily while breast-feeding."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "Which rule governs introducing solid foods to an infant?", "opts": [{"t": "Introduce only one new food at a time and allow several days between each new food offered", "c": true, "r": "Correct. One new food at a time, with days between, lets caregivers recognize an allergy to a food."}, {"t": "Introduce several new foods on the same day so the infant can show a taste preference early", "c": false, "r": "Incorrect. Mixing introductions hides which food caused a reaction; foods are added one at a time."}, {"t": "Start with fruits and vegetables, then add cereals once the infant accepts sweet tastes well", "c": false, "r": "Incorrect. The printed order is cereals first, then fruits and vegetables next in the sequence."}, {"t": "Mix foods together from the start so the infant cannot refuse an unfamiliar taste or texture", "c": false, "r": "Incorrect. Foods are not mixed, so the infant can develop interest in each taste and texture."}], "tp": "Solids: one at a time, days apart, cereals first. Never leave an infant alone while eating."});
+
+BANK.push({"cat": CC, "type": "single", "stem": "Which statement about toilet training readiness is accurate?", "opts": [{"t": "Physiologic and psychological maturity for training is not reached until eighteen to twenty-four months", "c": true, "r": "Correct. Neuromuscular development, communication, and clothing skills are all required before training."}, {"t": "Most children are ready for toilet training at about twelve months if training is kept consistent", "c": false, "r": "Incorrect. Maturity for training is not reached until 18 to 24 months, later than twelve months."}, {"t": "Bladder control, including at night, is complete before bowel control is achieved by a toddler", "c": false, "r": "Incorrect. Bowel control comes first; nighttime bladder control follows daytime bladder control."}, {"t": "Punishing accidents speeds readiness, because shame motivates a toddler to try harder at training", "c": false, "r": "Incorrect. Punishment fosters shame and doubt, which are not healthy personality traits in Erikson's frame."}], "tp": "Toilet training: bowel first, daytime bladder next, nighttime last. Praise success, ignore accidents.", "kt": ["Toilet training"]});
+
+BANK.push({"cat": CC, "type": "single", "stem": "A toddler drinks more than 24 ounces of milk a day and eats few solids. Which problem can follow?", "opts": [{"t": "A full stomach lowers appetite for solid foods, and too few solids can lead to iron deficiency", "c": true, "r": "Correct. More than 24 oz of milk a day fills the stomach, cuts solid intake, and can cause iron deficiency."}, {"t": "Excess milk speeds solid food intake, so the toddler gains too much weight from eating solids", "c": false, "r": "Incorrect. The problem is the opposite: milk displaces solids and appetite for them falls."}, {"t": "Milk above that amount blocks toilet training, because the toddler cannot sense bladder urges", "c": false, "r": "Incorrect. Milk excess is a nutrition and iron problem in the chapter, not a toilet readiness problem."}, {"t": "Too much milk causes bottle-mouth syndrome, because sugar in milk is held against the teeth", "c": false, "r": "Incorrect. Bottle-mouth syndrome comes from sugar left on teeth, often from a night bottle, not milk volume."}], "tp": "Toddler servings: 1 tablespoon of each solid food per year of age; two cups from the dairy group daily."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A preschooler wished a sibling would disappear, then the sibling was hospitalized. Why might she feel guilty?", "opts": [{"t": "Magical thinking makes her believe her wish had the power to make the bad event happen now", "c": true, "r": "Correct. Preoperational magical thoughts can make a child feel powerful and responsible when a wished event occurs."}, {"t": "Concrete operations make her reason abstractly about every possible cause of the hospital stay", "c": false, "r": "Incorrect. Concrete operations come at school age; this preschooler is in preoperational thought."}, {"t": "Industry versus inferiority makes her compare her hospital skills unfavorably with her peers", "c": false, "r": "Incorrect. Industry is the school-age task; guilt from a wish fits preschool magical thinking instead."}, {"t": "Formal operations make her test moral hypotheses about illness in a systematic scientific way", "c": false, "r": "Incorrect. Formal operations begin in adolescence, not in the preschool period described here."}], "tp": "Preschool: magical thinking, black-and-white absolutes, vivid imagination. Fears include dark, pain, abandonment, monsters."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "A child's BMI plots at the 97th percentile for age and gender. Which category applies?", "opts": [{"t": "Obese, because a BMI at or above the ninety-fifth percentile falls in the obese category here", "c": true, "r": "Correct. As printed, at or above the 95th percentile is obese; 85th to below 95th is overweight."}, {"t": "Overweight, because any BMI above the eighty-fifth percentile stays in the overweight category", "c": false, "r": "Incorrect. Overweight stops below the 95th percentile; at or above it, the category is obese."}, {"t": "Healthy weight, because percentile charts only become meaningful once a child reaches age ten", "c": false, "r": "Incorrect. The CDC percentile categories printed apply to children by same gender and age group."}, {"t": "Underweight, because a high percentile number signals a low amount of body fat for the age", "c": false, "r": "Incorrect. The percentile direction is reversed here; underweight is below the 5th percentile."}], "tp": "BMI percentiles: overweight 85th to below 95th; obese at or above 95th."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "Why is a lazy eye patched on the good eye in a young preschooler?", "opts": [{"t": "Patching the good eye strengthens the lazy eye, and correction is necessary to prevent blindness", "c": true, "r": "Correct. Corrective patching of the good eye strengthens the lazy eye and prevents blindness, as printed."}, {"t": "Patching the good eye rests both eyes equally, so vision returns to normal without further care", "c": false, "r": "Incorrect. The patch works by forcing the lazy eye to work, not by resting both eyes equally."}, {"t": "Patching is a vision test that shows whether the child has reached twenty thirty acuity by age four", "c": false, "r": "Incorrect. Patching is a corrective measure for amblyopia, not the yearly vision acuity check."}, {"t": "Patching the lazy eye itself blocks light so the good eye can take over all visual work alone", "c": false, "r": "Incorrect. The good eye is patched, not the lazy eye, so the weaker eye is forced to strengthen."}], "tp": "Preschool vision: 20/30 by age 4, yearly checks. Vision in the younger preschooler is farsighted.", "kt": ["Amblyopia"]});
+
+BANK.push({"cat": CD, "type": "single", "stem": "Which statement matches the CDC definition of bullying printed in the chapter?", "opts": [{"t": "Unwanted aggressive behavior by a youth who is not a sibling, with a power imbalance, repeated", "c": true, "r": "Correct. The CDC definition requires unwanted aggression, a non-sibling youth, power imbalance, and repetition."}, {"t": "Any single argument between two siblings at home that ends with one child crying afterward", "c": false, "r": "Incorrect. The definition excludes siblings and requires repetition or likely repetition of the behavior."}, {"t": "Friendly teasing between equals that both children enjoy and can stop at any time they wish", "c": false, "r": "Incorrect. Bullying is unwanted and involves a power imbalance; enjoyed, equal teasing does not fit."}, {"t": "A teacher assigning extra homework to a student who repeatedly disrupts the class lesson plan", "c": false, "r": "Incorrect. That is discipline by an adult, not unwanted aggression by another youth with imbalance."}], "tp": "Bullying forms: physical, verbal, relational, cyber. In 2015, 20% of high school students reported bullying on school property."});
+
+BANK.push({"cat": CD, "type": "multi", "stem": "Which findings are listed as signs of troubled childhood behavior? Select all that apply.", "opts": [{"t": "Problems getting along with peers, social isolation, and poor performance at school lately", "c": true, "r": "Correct. Peer problems, social isolation and poor school performance are on the Box 24.15 list."}, {"t": "Outbursts of uncontrolled behavior, bullying tendencies, and frequent teasing of other children", "c": true, "r": "Correct. Uncontrolled outbursts, bullying tendencies and frequent victimizing or teasing are listed."}, {"t": "Violence toward pets, preoccupation with weapons, and talk of threatening revenge on others", "c": true, "r": "Correct. Violence to pets, weapon preoccupation and threatening or revenge talk are printed signs."}, {"t": "Collecting and hoarding treasured objects and asking to be paid for small jobs around home", "c": false, "r": "Incorrect. Collecting and willing work for small jobs are normal school-age behaviors in the chapter."}, {"t": "Needing privacy and a place of one's own for belongings during the school-age years at home", "c": false, "r": "Incorrect. Privacy and a place for belongings are a normal part of school-age development."}, {"t": "Viewing four hours of television daily, which the chapter reports as the average for children", "c": false, "r": "Incorrect. Four hours is the printed average viewing time, not a Box 24.15 troubled-behavior sign."}], "tp": "Box 24.15: peer problems, authority difficulty, outbursts, bullying, isolation, poor school performance, pet violence, weapon preoccupation, threats."});
+
+BANK.push({"cat": CD, "type": "single", "stem": "Which rule is taught to children about a found gun?", "opts": [{"t": "Stop, do not touch the gun at all, leave the area, and report the gun to an adult right away", "c": true, "r": "Correct. The printed child rules are stop, do not touch, leave the area, and report the gun to an adult."}, {"t": "Pick up the gun carefully by the barrel and carry it to the nearest adult in the building", "c": false, "r": "Incorrect. Children are taught never to touch a gun, real or toy, and to leave the area instead."}, {"t": "Check whether the gun is loaded, then put it back exactly where it was found on the shelf", "c": false, "r": "Incorrect. Handling the gun to check it violates the do-not-touch rule taught to children."}, {"t": "Hide the gun somewhere safer, then tell an adult about it at the end of the school day", "c": false, "r": "Incorrect. The child leaves the area and reports it; moving or hiding the gun means touching it."}], "tp": "Adult gun rules: never store ammunition with the gun, lock gun and ammunition in separate places, lock cleaning supplies."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "Which statement about adolescent growth is accurate?", "opts": [{"t": "Adolescence is the second major period of rapid growth, and females grow about two to eight inches", "c": true, "r": "Correct. Females grow 2 to 8 inches and gain 15 to 55 pounds; males grow 4 to 12 inches, gaining 15 to 65 pounds."}, {"t": "Adolescence is the slowest growth period, because growth plates close at the start of puberty", "c": false, "r": "Incorrect. Adolescence is the second major rapid growth period, beginning at puberty, not the slowest."}, {"t": "Males and females grow the same amount, because puberty affects both sexes in identical ways", "c": false, "r": "Incorrect. The printed ranges differ: males grow and gain more than females during adolescence."}, {"t": "Growth in adolescence is measured mainly by head circumference, as it was during infancy years", "c": false, "r": "Incorrect. Head circumference is an infancy measure; adolescent growth is height and weight change."}], "tp": "Menarche signals adolescence in females; sperm production signals it in males.", "kt": ["Menarche"]});
+
+BANK.push({"cat": CE, "type": "single", "stem": "A previously sad adolescent suddenly seems cheerful and gives away prized possessions. How is this read?", "opts": [{"t": "The sudden swing can signal a decision to carry out a suicide plan and must be taken seriously", "c": true, "r": "Correct. A sudden change from extreme sadness to manic behavior can signal a decision to act on a suicide plan."}, {"t": "The swing shows depression has resolved, so the family can relax its watchfulness from now on", "c": false, "r": "Incorrect. The chapter warns this swing can signal a suicide decision; it is not proof of recovery."}, {"t": "Giving away possessions is a normal sign of generativity, the developmental task of this stage", "c": false, "r": "Incorrect. Generativity is middle adulthood; giving away possessions is a printed suicide-risk indicator."}, {"t": "Mood swings are always normal in adolescence, so no change in behavior needs a second look", "c": false, "r": "Incorrect. Mood swings are common, but this specific sudden swing plus giving away possessions is a warning."}], "tp": "Box 24.18 depression and suicide signs: appetite and sleep change, sadness, poor concentration, lost interest, talk of suicide, preoccupation with death, giving away possessions."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "Why is the iron need about equal in adolescent boys and girls, despite boys' greater muscle mass?", "opts": [{"t": "Girls lose additional iron through menstruation, which balances the boys' greater muscle mass need", "c": true, "r": "Correct. Boys have greater muscle mass, but girls lose iron in menstruation, so the iron need is equivalent."}, {"t": "Boys lose iron through rapid height growth at exactly the same rate girls lose it in menses", "c": false, "r": "Incorrect. The printed balance is boys' muscle mass against girls' menstrual iron loss, not growth loss."}, {"t": "Both sexes need less iron in adolescence, because blood volume stops expanding at puberty now", "c": false, "r": "Incorrect. Iron need rises for expansion of blood cell mass during rapid adolescent growth."}, {"t": "Girls absorb dietary iron twice as well as boys, which makes their total requirement identical", "c": false, "r": "Incorrect. The chapter gives menstrual loss as the balancing factor, not a difference in absorption."}], "tp": "Adolescent minerals: calcium for skeletal growth, iron for blood cell mass, zinc for skeletal and muscle tissue. Protein 12% to 16% of intake."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "Which statement fits early adulthood, from twenty to forty years?", "opts": [{"t": "The body reaches its optimal functioning, with strength, energy, and endurance peaking in the mid-twenties", "c": true, "r": "Correct. In the middle 20s most body functions are fully developed and strength, energy and endurance peak."}, {"t": "The body declines steadily from age twenty, so peak performance is actually reached in adolescence", "c": false, "r": "Incorrect. Early adulthood is the physical peak; decline in height begins between ages 30 and 45 years."}, {"t": "Most body functions finish developing near age forty, at the very end of the early adult stage", "c": false, "r": "Incorrect. Functions are fully developed by the middle 20s, not at the end of the stage at age 40."}, {"t": "Accidents are a minor cause of harm in this group, well behind chronic disease at these ages", "c": false, "r": "Incorrect. Accidents are the leading cause of disability and death in the early adult age group."}], "tp": "Intimacy versus isolation is the young adult Erikson task. Sleep: 7 to 9 hours of restorative sleep."});
+
+BANK.push({"cat": CE, "type": "single", "stem": "Which screening schedule matches the chapter for early and middle adult women?", "opts": [{"t": "Mammogram yearly from forty-five to fifty-four, with an option to begin at forty to forty-four", "c": true, "r": "Correct. As printed from the ACS: option at 40 to 44, yearly at 45 to 54, then yearly or every other year at 55+."}, {"t": "Mammogram every other year from age thirty, then yearly only after symptoms first appear later", "c": false, "r": "Incorrect. The printed schedule offers a start at 40 to 44 and yearly screening at 45 to 54 years."}, {"t": "Mammogram yearly from age twenty, because early adulthood is when breast cancer risk peaks", "c": false, "r": "Incorrect. The printed ACS schedule begins with an option at 40 to 44, not yearly from age twenty."}, {"t": "Mammogram once at age fifty, with no routine screening needed on any schedule after that visit", "c": false, "r": "Incorrect. Screening continues: yearly at 45 to 54 and a provider-patient decision at 55 and older."}], "tp": "Prostate screening discussion: age 50 for most men, age 45 for African Americans or family history before 65. Test is PSA with or without DRE."});
+
+BANK.push({"cat": CE, "type": "multi", "stem": "Which statements by an adolescent indicate an understanding of safe sex teaching? Select all that apply.", "opts": [{"t": "Abstinence is the safest sexual practice, and a latex condom is the best protection from infection", "c": true, "r": "Correct. The Safety Alert prints abstinence as safest and latex condoms as the best protection from infection."}, {"t": "A condom should be inspected for tears before use and not stored where excessive heat can damage it", "c": true, "r": "Correct. Inspecting for tears and avoiding heat exposure during storage are printed condom rules."}, {"t": "Sexual relations should be avoided with a partner who has genital lesions or unusual discharge present", "c": true, "r": "Correct. Avoiding partners with lesions or unusual discharge is a printed safe-sex guideline."}, {"t": "Knowing a partner for a few weeks removes the need to ask about that partner's sexual history first", "c": false, "r": "Incorrect. The teaching is to be familiar with the partner and ask about sexual history before relations."}, {"t": "A condom can be stored on a hot dashboard, because heat improves the flexibility of the latex material", "c": false, "r": "Incorrect. Storage and exposure to excessive heat are to be avoided for condoms, as printed."}, {"t": "Oral sexual relations carry no risk of HIV infection, so no precautions are needed for that activity", "c": false, "r": "Incorrect. The chapter states HIV risk is increased with oral sexual relations, not absent from them."}], "tp": "Safe sex: abstinence safest, know the partner and history, latex condom, leave space at the end, hold the upper end on withdrawal."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "Which findings fit perimenopause, the menopausal transition?", "opts": [{"t": "Irregular menstrual periods, hot flashes, palpitations, night sweats, and jittery irritability", "c": true, "r": "Correct. Those are the printed perimenopause signs as estrogen and progesterone production declines gradually."}, {"t": "Loss of reproductive ability in the male, with decreased libido and body hair over several years", "c": false, "r": "Incorrect. That describes the male climacteric; men do not lose the ability to reproduce with age."}, {"t": "A sudden stop to all menstrual periods in a single month, with no transition period at all", "c": false, "r": "Incorrect. Menopause is gradual, taking about 5 years to complete; perimenopause is the transition."}, {"t": "New growth of bone density and muscle mass, as hormone levels rise steadily through the forties", "c": false, "r": "Incorrect. Hormones decline in this stage; bone mass decreases and calcium is lost after menopause."}], "tp": "Menopause takes about 5 years. Calcium: 1,000 mg/day premenopausal, 1,200 mg/day postmenopausal without estrogen replacement.", "kt": ["Perimenopause"]});
+
+BANK.push({"cat": CF, "type": "single", "stem": "Which statement about hormone replacement therapy is balanced and accurate?", "opts": [{"t": "It may relieve menopause discomfort and lower bone loss, but it raises stroke and cancer risks", "c": true, "r": "Correct. HRT is thought to reduce osteoporosis and heart risk, but raises stroke, endometrial and breast cancer risk."}, {"t": "It relieves menopause discomfort with no serious risks, so every woman should take it routinely", "c": false, "r": "Incorrect. Printed risks include stroke, endometrial cancer, breast cancer and raised blood pressure."}, {"t": "It is used only to treat hot flashes and has no relationship to bone density at any dosage used", "c": false, "r": "Incorrect. HRT is also thought to reduce osteoporosis, one of its printed possible benefits in the chapter."}, {"t": "Its risks and benefits never need individual review, because the dose is the same for all women", "c": false, "r": "Incorrect. The chapter states risks and benefits must be evaluated on an individual basis for each woman."}], "tp": "HRT: small estrogen doses for menopause complications. Risks and benefits are evaluated individually."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "An older adult forgets breakfast details but recalls distant past events clearly. Which interpretation fits?", "opts": [{"t": "This is benign forgetfulness, because recent memory declines earlier while remote memory is preserved", "c": true, "r": "Correct. Short-term memory declines earlier and faster; remote memory stays detailed, and benign forgetfulness is common."}, {"t": "This is proof of a pathologic memory disease, because any forgetting in old age signals dementia", "c": false, "r": "Incorrect. Benign forgetfulness is far more common than pathologic forgetfulness in older adults."}, {"t": "This shows general intelligence has been lost, because memory and intelligence decline together", "c": false, "r": "Incorrect. General intelligence remains intact and memory skills are preserved with good health, as printed."}, {"t": "This pattern means remote memory fails first, so clear recall of the past is the worrying sign", "c": false, "r": "Incorrect. The direction is reversed: recent memory declines first, remote memory is preserved longer."}], "tp": "Staying mentally engaged with puzzles, reading, gardening and cooking helps maintain cognitive functioning.", "kt": ["Benign forgetfulness"]});
+
+BANK.push({"cat": CF, "type": "single", "stem": "Which criticism of disengagement theory is printed in the chapter?", "opts": [{"t": "It is not universal, is not seen in all cultural groups, and ignores many active older adults", "c": true, "r": "Correct. The printed criticism is exactly that: not universal, not in all cultures, and no room for active adults."}, {"t": "It claims older adults should stay fully active, which most older adults find impossible to do", "c": false, "r": "Incorrect. Staying active is the activity theory; disengagement claims withdrawal is natural instead."}, {"t": "It says adjustment depends on coping built earlier in life, which cannot be measured in studies", "c": false, "r": "Incorrect. Earlier coping and keeping earlier roles describe the continuity theory, not disengagement."}, {"t": "It blames free radicals for cell damage, which has never been observed in laboratory research", "c": false, "r": "Incorrect. Free radicals belong to a biologic theory of aging, not to the disengagement criticism."}], "tp": "Disengagement = natural withdrawal. Activity = stay active, adjust better. Continuity = keep earlier roles and coping."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "Which statement matches the free radical theory of aging?", "opts": [{"t": "Highly reactive components from unstable atoms damage cells and let cellular waste accumulate inside", "c": true, "r": "Correct. Free radicals damage cells, waste accumulates, and diffusion across membranes is interfered with."}, {"t": "The immune system loses the ability to tell self from nonself and makes antibodies against itself", "c": false, "r": "Incorrect. Antibodies against the self describe the autoimmunity theory of aging, not free radicals."}, {"t": "Aging is set by how much wear and tear the body takes as it responds to injuries over a lifetime", "c": false, "r": "Incorrect. Wear and tear from injury and body abuse describe the wear-and-tear theory of aging instead."}, {"t": "Aging follows a hereditary program, because family members tend to share similar life expectancies", "c": false, "r": "Incorrect. Family similarity in lifespan supports the genetic theory, not the free radical theory."}], "tp": "Antioxidants named as possibly slowing free radical damage: selenium and vitamins A, C, and E."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "An older adult's hearing loss makes high-pitched sounds hardest to hear. Which term and response fit?", "opts": [{"t": "Presbycusis, so the nurse speaks clearly and slowly in lower tones while facing the older adult", "c": true, "r": "Correct. Presbycusis is progressive loss for high-pitched sounds; speak clearly, face the person, use lower tones."}, {"t": "Presbyopia, so the nurse enlarges print and adds diffuse lighting for all written instructions", "c": false, "r": "Incorrect. Presbyopia is the vision change from lens elasticity loss; this finding is a hearing change."}, {"t": "Presbycusis, so the nurse shouts from the doorway to make sure the message carries across the room", "c": false, "r": "Incorrect. The table says do not shout; face the individual, speak slowly and control background noise."}, {"t": "Presbyopia, so the nurse encourages a hearing aid evaluation and checks for cerumen buildup first", "c": false, "r": "Incorrect. Cerumen and hearing aids belong to the hearing row; presbyopia is an eye and lens change."}], "tp": "Presbyopia = eyes, accommodation loss near age 40. Presbycusis = ears, high-pitched sounds first.", "kt": ["Presbycusis", "Presbyopia"]});
+
+BANK.push({"cat": CF, "type": "multi", "stem": "Which changes are normal age-related changes in the older adult? Select all that apply.", "opts": [{"t": "Loss of vessel elasticity with higher blood pressure and a heart that returns to rest more slowly", "c": true, "r": "Correct. Table 24.4 prints loss of elasticity, narrowed vessels, higher pressure and slower return to rest."}, {"t": "Thinner, paler, less elastic skin with loss of subcutaneous fat, making skin more prone to injury", "c": true, "r": "Correct. Those integumentary changes are printed, with skin more fragile and prone to injury."}, {"t": "Fewer kidney cells, less renal blood flow, and a bladder with less elasticity and smaller capacity", "c": true, "r": "Correct. Urinary changes printed include fewer kidney cells, less filtration and reduced bladder capacity."}, {"t": "A stronger cough reflex and larger alveoli that raise the maximum breathing capacity with age", "c": false, "r": "Incorrect. Aging brings a weaker cough reflex, smaller alveoli and reduced breathing capacity instead."}, {"t": "Faster reaction time and greater tactile sensitivity, so burns become less likely in old age", "c": false, "r": "Incorrect. Reaction time slows and tactile and pain sensitivity decrease, raising burn and injury risk."}, {"t": "More saliva, faster peristalsis, and a larger stomach capacity that improve digestion with age", "c": false, "r": "Incorrect. Saliva and gastric capacity decrease and peristalsis slows in the aging GI system."}], "tp": "Table 24.4: inspect skin daily, encourage coughing and deep breathing, observe for urinary infection and adverse drug reactions."});
+
+BANK.push({"cat": CF, "type": "single", "stem": "Which statement fits the developmental task of middle adulthood in Erikson's theory?", "opts": [{"t": "Generativity versus stagnation, guiding the next generation through parenting, mentoring, or creative work", "c": true, "r": "Correct. Generativity is the impulse to foster the younger generation; stagnation is inactivity and lack of productivity."}, {"t": "Intimacy versus isolation, forming a close bond by sharing deepest hopes and concerns with a partner", "c": false, "r": "Incorrect. Intimacy versus isolation is the young adult task, earlier than middle adulthood in the sequence."}, {"t": "Ego integrity versus despair, reviewing a completed life to find it meaningful and whole overall", "c": false, "r": "Incorrect. Ego integrity versus despair is the late adulthood task, the final Erikson stage in the table."}, {"t": "Identity versus role confusion, deciding on sexual, ethnic, and career identities for adult life", "c": false, "r": "Incorrect. Identity versus role confusion is the adolescent task, resolved before young adulthood begins."}], "tp": "Middle adulthood in Table 24.2 is printed as 46 to 65 years, while the stage list prints 40 to 65 years. Learn task pairs cold."});
+
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 24: Lifespan Development - Definition Practice Test</h1>';
+  h += '<div class="sub">Definition practice test | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

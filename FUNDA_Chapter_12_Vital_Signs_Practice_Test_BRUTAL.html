@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 12 - Vital Signs - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.ddrow{border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;background:#fff}
+.ddlabel{font-size:15px;font-weight:600;margin-bottom:6px}
+.ddrow select{display:block}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Vital Signs Basics and Temperature";
+var CB = "Fever, Temperature Measurement, and Stethoscope";
+var CC = "Pulse and Apical Pulse";
+var CD = "Respirations and Oxygen Saturation";
+var CE = "Blood Pressure, Height and Weight";
+var CATS = [CA, CB, CC, CD, CE];
+var KEYTERMS = [];
+var BLUEPRINT = {
+ CA: {
+  "name": CA,
+  "count": 7,
+  "types": {
+   "single": 6,
+   "dropdown": 1
+  }
+ },
+ CB: {
+  "name": CB,
+  "count": 9,
+  "types": {
+   "single": 7,
+   "multi": 1,
+   "order": 1
+  }
+ },
+ CC: {
+  "name": CC,
+  "count": 10,
+  "types": {
+   "single": 6,
+   "multi": 2,
+   "order": 1,
+   "matrix": 1
+  }
+ },
+ CD: {
+  "name": CD,
+  "count": 8,
+  "types": {
+   "single": 5,
+   "multi": 1,
+   "dropdown": 1,
+   "matrix": 1
+  }
+ },
+ CE: {
+  "name": CE,
+  "count": 14,
+  "types": {
+   "single": 9,
+   "multi": 2,
+   "order": 1,
+   "dropdown": 1,
+   "matrix": 1
+  }
+ }
+};
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A newly admitted patient's first vital signs are T 99.1 F oral, P 88, R 18, BP 128/82. Two hours later the nurse finds T 100.8 F, P 96, R 22, BP 134/84 and the patient says he feels 'funny.' Which of the following actions should the nurse take first?",
+  opts: [ O("Compare the new set with the admission baseline, assess for a cause, and report the significant change", true, "Correct. Framework: Nursing Process/ADPIE. The baseline at initial contact is the comparison point; verify and communicate significant changes and assess when the patient reports feeling funny or different."), O("Chart the second set as the new baseline and reassess at the next routine four-hour round", false, "Incorrect. A rising set with a vague distress report is a trigger to assess and report now, not to relabel it a baseline."), O("Give a tepid sponge bath first, then decide whether the change is worth reporting later", false, "Incorrect. Interventions are documented, but assessment and reporting of a significant change come before comfort measures alone."), O("Repeat only the blood pressure, because temperature and pulse changes rarely matter together", false, "Incorrect. A temperature rise alters the other signs together - here pulse and respirations rose with it, as the chapter predicts.") ],
+  tp: "Framework: Nursing Process/ADPIE - baseline comparison, assess the change, report it. A 1 degree F rise can add about 4 beats/min to pulse." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A postoperative patient is 2 hours out of surgery. Orders allow vital signs every 4 hours, but the patient is restless, pale, and his dressing has fresh bleeding. Pulse is 118, BP 96/58. Which action should the nurse take?",
+  opts: [ O("Take a full set of vital signs now and more frequently, and report the change to the provider", true, "Correct. Framework: stable vs unstable, safety first. A condition change - hemorrhage signs with tachycardia and falling BP - requires more frequent signs and immediate reporting, regardless of the routine interval."), O("Wait for the next ordered four-hour check, because changing frequency requires a new order first", false, "Incorrect. Postoperative or worsening patients need signs every 5-10 minutes until stable; the routine order does not block reassessment."), O("Document the bleeding and encourage fluids, then reassess when the provider makes rounds", false, "Incorrect. Restlessness, pallor, tachycardia, and a falling BP with bleeding are hemorrhage cues that need immediate action."), O("Take only the temperature, because bleeding most often presents first as a rising temperature", false, "Incorrect. With hemorrhage, temperature usually decreases while pulse and respirations increase and BP falls.") ],
+  tp: "Framework: stable vs unstable - worsening condition overrides the routine schedule. Hemorrhage: BP down, pulse/RR up, temperature down." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A nurse takes an oral temperature in a warm, humid room right after a patient finished a hot meal and gets 100.2 F. The patient feels well, pulse 78, respirations 16. Which action is most appropriate?",
+  opts: [ O("Control the influencing factors, wait 20 to 30 minutes after the meal, and retake the oral temperature", true, "Correct. Framework: Nursing Process/ADPIE, assessment accuracy. Hot food and a warm humid room distort oral readings; wait 20-30 min after intake before measuring."), O("Report a fever immediately, because any oral reading above 100.4 is near enough to act upon", false, "Incorrect. 100.2 is below the 100.4 fever threshold and was taken under conditions known to falsify the reading."), O("Start tepid sponging and give acetaminophen as a precaution before repeating the reading", false, "Incorrect. Treating an unverified, factor-distorted reading reverses the assessment sequence."), O("Switch to a rectal temperature at once, because rectal readings are unaffected by any factor", false, "Incorrect. A distorted oral reading is first repeated under controlled conditions; site change is used if indicated after repeating.") ],
+  tp: "Framework: Nursing Process/ADPIE - remove known distortions first (wait 20-30 min after hot/cold intake or smoking), then repeat." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "A school-age child (age 8) has HR 92, RR 23, and systolic BP 96. A nursing student says all three are abnormal for a child. Which response is correct?",
+  opts: [ O("All three fall within the Table 12.1 school-age ranges: HR 65 to 105, RR 22 to 24, systolic 90 to 100", true, "Correct. Framework: Nursing Process/ADPIE, age-based assessment. School-age (6-10 yr) normals are HR 65-105, RR 22-24, systolic 90-100, diastolic 60-64."), O("The heart rate is too slow, because a child of 8 should still have a rate of 120 to 160", false, "Incorrect. 120-160 is the neonate heart rate range, not the school-age range."), O("The respiratory rate is too fast, because children should breathe at the adult rate of 12 to 20", false, "Incorrect. The adult RR is 12-20; the school-age range printed is 22-24, so 23 is normal."), O("The systolic pressure is too low, because a child of 8 should read at least 130 systolic", false, "Incorrect. 130-140 systolic is the older adult row as printed; school-age systolic is 90-100.") ],
+  tp: "Framework: Nursing Process/ADPIE - interpret every value against the age row in Table 12.1, never the adult row." });
+
+BANK.push({ cat: CA, type: "single", kt: [],
+  stem: "An older adult living alone is found in a cold apartment in winter. Oral temperature is 95.4 F, pulse 58, respirations 11. He is slow to answer but arousable. Which interpretation is most accurate?",
+  opts: [ O("This is a subnormal temperature needing warming measures and provider notification, not dismissal as normal aging", true, "Correct. Framework: safety first. The chapter notes 95 F is not unusual for some older patients in cold weather, but hypothermia is still abnormal - warm, cover, remove wet clothing, encourage warm liquids, and report."), O("This is the expected normal for an older adult in winter, so no action or follow-up is needed", false, "Incorrect. 'Not unusual' is not 'normal and safe' - subnormal temperature still gets warming interventions and reporting."), O("This is a fever equivalent in an older adult, so remove coverings and limit his activity at once", false, "Incorrect. Covering removal and activity limits are fever interventions; this patient's temperature is low, not high."), O("This reading must be an error, because adult temperature can never fall below 97 degrees F", false, "Incorrect. The normal range is 97-99.6, but hypothermia by definition falls below it and death is a risk below 93.2 F.") ],
+  tp: "Framework: safety first - older adult 95 F in cold weather is a known pattern AND still hypothermia care: blankets, dry clothes, warm liquids, report." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A patient with pneumonia has T 102.6 F, flushed warm skin, glassy eyes, headache, thirst, pulse 112, and respirations 24. Which of the following actions should the nurse take first?",
+  opts: [ O("Repeat the temperature to confirm it, assess for infection sites, and monitor at least every 4 hours", true, "Correct. Framework: Nursing Process/ADPIE. Repeat an abnormal reading, assess related data and possible infection sites (lungs, urine, throat, ears), and monitor at least every 4 hours while abnormal."), O("Give acetaminophen and recheck in the morning, because fever is a defense that needs no monitoring", false, "Incorrect. Fever is a defense, but a temperature of 102.6 with systemic signs still needs confirmation, site assessment, and q4h monitoring."), O("Cover the patient with extra blankets to support the chill phase until the fever breaks alone", false, "Incorrect. For elevated temperature the chapter directs removing or reducing external coverings and keeping linens dry - the opposite action."), O("Restrict all oral fluids until the temperature falls, to avoid adding heat to the body system", false, "Incorrect. The chapter directs increasing oral fluids if not contraindicated, and assessing added fluid needs.") ],
+  tp: "Framework: Nursing Process/ADPIE - confirm, assess infection sites, monitor q4h, uncover, rest, fluids, acetaminophen as ordered." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A patient's temperature chart shows: day 1 spike to 103 F then 98.4 F, day 2 spike to 102.8 F then 98.6 F, day 3 spike to 103.1 F. Which fever pattern does this show?",
+  opts: [ O("An intermittent pattern, because the temperature returns to normal values between daily spikes", true, "Correct. Intermittent fevers rise and fall, normal or subnormal in the morning and spiking in the afternoon."), O("A remittent pattern, because the temperature returns to normal values between daily spikes", false, "Incorrect. Remittent fevers fluctuate but do NOT return to normal until the patient is well - the classic swapped pair."), O("A constant pattern, because the temperature returns to normal values between daily spikes", false, "Incorrect. A constant fever remains elevated consistently and fluctuates very little."), O("A hypothermic pattern, because morning values in the 98s show the fever has resolved fully", false, "Incorrect. Morning normals between spikes are part of the intermittent pattern, not resolution or hypothermia.") ],
+  tp: "Pattern trap: returning to normal between spikes = intermittent. Never returning to normal until well = remittent. Staying up = constant." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A febrile infant is disoriented during a temperature of 104.8 F, and the parent reports a brief convulsion at home. Which concern drives the nurse's priority action?",
+  opts: [ O("Temperatures exceeding 105 F can damage normal body cells, and febrile children may convulse", true, "Correct. Framework: safety first, acute vs chronic. The chapter warns that temperatures over 105 F (40.5 C) can damage cells, and Box 12.5 lists disorientation, confusion, and convulsions in infants and children."), O("Fever at this level is purely protective, so the only action needed is oral hygiene teaching", false, "Incorrect. Oral hygiene is a comfort measure for prolonged fever, not the priority at 104.8 approaching the cell-damage threshold."), O("The convulsion proves the temperature was taken incorrectly, so retake it rectally and discharge", false, "Incorrect. Febrile convulsions in infants and children are a listed fever manifestation, not proof of measurement error."), O("The disorientation is expected with any fever, so fluids alone are the complete intervention", false, "Incorrect. Fluids help, but disorientation plus convulsion plus near-105 temperature requires provider notification and close monitoring.") ],
+  tp: "Framework: safety first - fever >100.4 is fever; >105 risks cell damage. Febrile infants/children may have confusion or convulsions." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A comatose patient needs a temperature. The nurse also notes a rectal tumor in the chart history for another patient on the unit. Which site plan is correct?",
+  opts: [ O("Use a non-oral site for the comatose patient, and avoid the rectal site for the patient with a rectal tumor", true, "Correct. Framework: safety first. Oral temperature is not attempted on comatose or disoriented patients; rectal is contraindicated with rectal disorders such as tumor or hemorrhoids or after rectal surgery."), O("Use the oral site for the comatose patient, and the rectal site for the patient with a tumor", false, "Incorrect. Both choices violate the chapter's site contraindications."), O("Use the rectal site for both patients, because rectal readings are always the most reliable", false, "Incorrect. Rectal is argued more reliable when oral cannot be obtained, but it is contraindicated for the tumor patient."), O("Use the oral site for both patients, because oral measurement never requires any cooperation", false, "Incorrect. Oral measurement requires the patient to hold the probe with lips closed - impossible for a comatose patient.") ],
+  tp: "Framework: safety first - site selection is a contraindication check: no oral if comatose/disoriented/infant, no rectal after rectal surgery or with rectal disorder." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A nurse takes a rectal temperature on an adult. Which technique is correct?",
+  opts: [ O("Glove, position in Sims with upper leg flexed, lubricate the red probe, insert 1.5 inches, and hold it throughout", true, "Correct. Rectal technique: Sims position, red rectal probe, lubricated tip, 1.5 inches in an adult, held the whole time, never forced."), O("Position supine, use the blue probe dry, insert 3 inches, and leave it while charting the pulse", false, "Incorrect. Blue is for oral/axillary, lubrication is required, adult depth is 1.5 inches, and the probe is held throughout."), O("Force the probe past resistance, because an inadequate insertion gives a falsely low reading", false, "Incorrect. The chapter is explicit: never force the thermometer; remove it and consider an alternative method."), O("Insert the probe without gloves, because the rectal area is considered a clean body site", false, "Incorrect. Gloves are worn for rectal measurement; there is a risk of body fluid exposure.") ],
+  tp: "Rectal technique: gloves, Sims, red probe, lubricate, 1.5 inches adult, hold throughout, never force." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A tympanic reading is 96.9 F on a patient who just came in from winter cold and wears a hearing aid in that ear. The patient looks flushed. Which action should the nurse take?",
+  opts: [ O("Remove the hearing aid, let the patient be indoors at least 10 minutes, replace the cover, and repeat the reading", true, "Correct. Framework: Nursing Process/ADPIE, measurement accuracy. Box 12.7: be indoors at least 10 min, remove hearing aids, assess after 10 min out of the cold; if a reading seems too low, replace the cover and repeat."), O("Chart 96.9 F as hypothermia and begin warming blankets before any other assessment step", false, "Incorrect. Acting on a reading taken under known distorting conditions skips the chapter's repeat procedure."), O("Switch ears and take the reading immediately, because ear temperature equalizes in seconds", false, "Incorrect. The environmental wait is 10 minutes, and the hearing-aid ear needs the aid removed first."), O("Add 1 degree to the reading and chart 97.9 F, because tympanic readings run low in winter", false, "Incorrect. Readings are never adjusted by arithmetic; the procedure is repeated under correct conditions.") ],
+  tp: "Framework: Nursing Process/ADPIE - tympanic accuracy needs 10 min indoors, hearing aid out, clean intact cover/lens, tug pinna up/back adult, down/back child." });
+
+BANK.push({ cat: CB, type: "multi", kt: [],
+  stem: "A nurse is preparing to measure temperatures on a busy unit. Which actions are correct? Select all that apply.",
+  opts: [ O("Wait 20 to 30 minutes after a patient drinks iced water before taking an oral temperature", true, "Correct. Hot/cold intake and smoking require a 20-30 minute wait before an oral reading."), O("Ensure a dry forehead before a temporal artery scan, sweeping the probe to behind the earlobe", true, "Correct. Temporal technique requires a dry forehead and a flush sweep ending just behind the earlobe."), O("Tug the ear pinna upward and back for an adult and down and back for a child for tympanic use", true, "Correct. Pinna direction differs by age exactly as stated in the skill."), O("Use the axillary site when the most accurate possible reading is the priority for this patient", false, "Incorrect. Axillary is the least accurate method; it is chosen for safety/non invasiveness, not accuracy."), O("Use a mercury glass thermometer from an old supply cart because it needs no probe cover at all", false, "Incorrect. Experts no longer recommend mercury-containing thermometers; facilities have discontinued them.") ],
+  tp: "Measurement accuracy set: 20-30 min wait, dry forehead for temporal, pinna up/back adult vs down/back child, axillary least accurate, no mercury." });
+
+BANK.push({ cat: CB, type: "single", kt: [],
+  stem: "A nurse cannot hear heart sounds clearly. The tubing is 26 inches long, the earpieces point away from her face, and the room is noisy. Which correction set is right?",
+  opts: [ O("Use 12 to 18 inch tubing, point earpieces toward the face following the ear canal, and quiet the room", true, "Correct. Framework: Nursing Process/ADPIE, equipment accuracy. Longer tubing decreases sound transmission; earpieces follow the canal pointing toward the face; nurse and patient stay quiet during auscultation."), O("Keep the long tubing for comfort, press the bell firmly into the chest, and talk through the sounds", false, "Incorrect. Firm bell pressure creates a diaphragm effect and loses low sounds; talking adds extraneous noise."), O("Clean the tubing with alcohol, drape it around the neck, and tap the diaphragm to test the bell side", false, "Incorrect. Alcohol dries and cracks the material, neck draping next to skin is discouraged, and tapping tests which side is active - not a fix for these problems."), O("Switch to the bell for high-pitched sounds, because the bell is the flat disk side of the chest piece", false, "Incorrect. The diaphragm is the flat disk for high-pitched sounds; the bell is bowl-shaped for low-pitched sounds.") ],
+  tp: "Framework: Nursing Process/ADPIE - stethoscope setup: tubing 12-18 in, earpieces toward face, quiet room, diaphragm firm/high, bell light/low." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "A patient resting in bed has a radial pulse of 118, regular, 2+. He took his beta-blocker this morning and has no pain, fever, or bleeding noted. Which action should the nurse take first?",
+  opts: [ O("Assess for related causes - recent exercise, low blood pressure, fever, oxygenation, dehydration - and report the rate", true, "Correct. Framework: Nursing Process/ADPIE. Box 12.10 for a pulse above normal: assess related data (exercise, low BP, elevated temperature, inadequate oxygenation, dehydration) and observe for dyspnea, chest pain, syncope, or edema."), O("Withhold the next beta-blocker dose, because a fast pulse proves the drug is not working at all", false, "Incorrect. Withholding decisions follow provider evaluation; beta-blockers lower rate, so tachycardia on one calls for cause assessment, not automatic withholding."), O("Chart the rate as expected, because any pulse under 120 at rest is considered a normal finding", false, "Incorrect. Over 100 is tachycardia by definition and must be assessed and reported, not normalized."), O("Take an apical pulse for 15 seconds to confirm, then document whichever rate is lower overall", false, "Incorrect. An irregular or abnormal pulse is assessed apically for a full minute; cherry-picking the lower number falsifies the record.") ],
+  tp: "Framework: Nursing Process/ADPIE - tachycardia workup per Box 12.10: exercise? low BP? fever? oxygenation? dehydration? plus perfusion symptoms." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "A patient on digoxin and a beta-blocker has a radial pulse of 52, irregular, and says he feels dizzy. Which of the following actions should the nurse take first?",
+  opts: [ O("Assess the apical pulse for a full minute and hold related medication pending provider evaluation as indicated", true, "Correct. Framework: safety first. Box 12.10 for a pulse below normal: assess apically, check for digoxin, beta-blockers, and antidysrhythmics; it is sometimes necessary to withhold medication pending provider evaluation. Apical assessment is essential with digoxin and an irregular radial pulse."), O("Encourage the patient to walk the hallway to bring the rate up, then recheck it after exercise", false, "Incorrect. Exercising a dizzy, bradycardic, irregular patient risks a fall and syncope; assessment comes first."), O("Document bradycardia as an expected drug effect and give the next doses on schedule as ordered", false, "Incorrect. Dizziness plus irregular bradycardia on digoxin is exactly the combination the chapter flags for apical assessment and possible withholding."), O("Palpate both carotid pulses firmly to get the most accurate rate before calling the provider", false, "Incorrect. Both carotids are never palpated simultaneously - pressure can occlude blood supply to the brain.") ],
+  tp: "Framework: safety first - bradycardia + digoxin/beta-blocker + symptoms: apical 60 s, assess meds, withhold pending provider evaluation, report." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "Two nurses count simultaneously for 1 minute with the same watch: apical 96, radial 84. What does this finding mean, and what is the priority?",
+  opts: [ O("A pulse deficit of 12 exists, signaling faulty pumping or a peripheral vascular issue; report it", true, "Correct. Framework: Nursing Process/ADPIE. 96 - 84 = 12, well over the more-than-two rule; a deficit signifies the heart is not pumping effectively to distribute blood, often seen in atrial fibrillation."), O("No deficit exists, because any difference under 15 beats is counted as measurement variation", false, "Incorrect. The chapter cutoff is more than two beats, not fifteen; 12 is a clear deficit."), O("A pulse deficit of 84 exists, because the radial rate itself is the deficit value to report", false, "Incorrect. The deficit is the difference between the two rates (12), not either rate alone."), O("The counts must be repeated sequentially by one nurse, because simultaneous counting is invalid", false, "Incorrect. Simultaneous counting by two nurses with the same watch for 1 full minute is exactly the required method.") ],
+  tp: "Framework: Nursing Process/ADPIE - deficit = apical minus radial, simultaneous, same watch, 60 s; >2 = deficit exists." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "A nurse cannot palpate a patient's dorsalis pedis pulse after surgery. The foot is cool and pale compared with the other foot. Which action should the nurse take first?",
+  opts: [ O("Perform a complete assessment of all peripheral pulses and use a Doppler to verify blood flow", true, "Correct. Framework: safety first, ABCs/circulation. Box 12.10: weak or difficult pulses get a complete peripheral assessment and Doppler verification; observe for pallor/cyanosis, coldness, and LOC change distal to the pulse, and notify the provider if circulation is inadequate."), O("Chart the pulse as absent and reassess at the next routine vital sign round in four hours", false, "Incorrect. A cool, pale foot with an impalpable pulse is a perfusion problem now, not a routine recheck."), O("Apply firm pressure over the artery for a full minute to try to force a palpable beat", false, "Incorrect. Excess pressure obliterates a pulse; gentle pressure and Doppler verification are the correct technique."), O("Elevate the foot above heart level and apply heat until the pulse becomes easy to palpate", false, "Incorrect. Neither maneuver is in the chapter's abnormal-pulse interventions, and heat on a poorly perfused foot is unsafe.") ],
+  tp: "Framework: safety first - impalpable pulse pathway: full peripheral assessment, Doppler, distal perfusion signs, provider notification if inadequate." });
+
+BANK.push({ cat: CC, type: "single", kt: [],
+  stem: "A student counts a patient's pulse with her thumb for 30 seconds, pressing firmly, and gets 140. The patient is resting and comfortable. Which correction is needed?",
+  opts: [ O("Recount for 60 seconds with the pads of the index and middle fingers using only slight pressure", true, "Correct. Framework: Nursing Process/ADPIE, technique accuracy. The thumb has its own pulse, firm pressure obliterates the artery, and the skill requires a full 60-second count with finger pads."), O("Accept 140, because a thumb count overestimates by a known amount that can be subtracted off", false, "Incorrect. There is no correction factor; the count is simply repeated with correct technique."), O("Recount with the thumb but for a full minute, because duration was the only error in technique", false, "Incorrect. The thumb itself is an error source - it has its own pulse - regardless of duration."), O("Switch to counting respirations instead, because a resting comfortable patient cannot be tachycardic", false, "Incorrect. Resting tachycardia is possible and must be measured correctly, not assumed away.") ],
+  tp: "Framework: Nursing Process/ADPIE - pulse technique: finger pads not thumb, slight pressure, full 60 seconds, note rate/rhythm/volume." });
+
+BANK.push({ cat: CC, type: "multi", kt: [],
+  stem: "A nurse assesses a patient whose pulse is weak and irregular. Which actions does Box 12.10 support? Select all that apply.",
+  opts: [ O("Assess the apical pulse for a full minute, because the pulse is weak and irregular today", true, "Correct. Box 12.10 directs a full-minute apical assessment for a weak or irregular pulse."), O("Observe for pallor or cyanosis, coldness of the extremity, and any change in level of consciousness", true, "Correct. Those are the altered tissue perfusion signs Box 12.10 lists."), O("Look for causes of decreased cardiac output such as hemorrhage, hypovolemia, or heart damage", true, "Correct. Box 12.10 lists hemorrhage, hypovolemia, and heart muscle damage as causes of diminished peripheral pulses."), O("Expect the provider may order an electrocardiogram or a 24-hour heart monitor for this patient", true, "Correct. The box notes the provider will sometimes order an ECG or 24-h monitor for a weak or irregular pulse."), O("Palpate both carotid pulses at once to judge whether the irregularity is present centrally", false, "Incorrect. Both carotids are never palpated simultaneously, whatever the rhythm question.") ],
+  tp: "Box 12.10 abnormal pulse set: full peripheral assessment, Doppler, perfusion signs, cardiac-output causes, apical 60 s, possible ECG/monitor." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "A postoperative patient who had abdominal surgery is breathing 9 times per minute, shallowly, and is difficult to arouse after opioid medication. Which of the following actions should the nurse take first?",
+  opts: [ O("Report the rate immediately and intervene - this rate with shallow breathing likely needs immediate intervention", true, "Correct. Framework: ABCs, safety first. Box 12.12: rates less than 10 or more than 30, with shallow slow respirations (hypoventilation), likely necessitate immediate intervention; opioids depress respirations and post-surgical hypoventilation is a named pattern."), O("Encourage deep breathing hourly and recheck tomorrow, because shallow breathing after surgery is expected", false, "Incorrect. Deep breathing hurts after abdominal surgery and hypoventilation can follow it - but a rate of 9 with poor arousability is an emergency, not a teaching moment alone."), O("Count the respirations again while telling the patient to breathe normally for the measurement", false, "Incorrect. Telling the patient changes the rate, and recounting delays intervention for a rate already in the danger range."), O("Document hypoventilation and lower the head of the bed flat so the patient can rest more deeply", false, "Incorrect. A flat position limits chest expansion; dyspneic or hypoventilating patients are positioned for comfort and ventilation, head elevated.") ],
+  tp: "Framework: ABCs - RR 9 + shallow + opioid + poor arousal = hypoventilation needing immediate intervention and reporting." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "A patient with anxiety is breathing 32 times per minute, deeply, and reports tingling and lightheadedness during an emotional crisis. Which pattern and response fit?",
+  opts: [ O("Hyperventilation - ventilation exceeds metabolic needs with increased rate, volume, and depth; stay with and assess the patient", true, "Correct. Framework: Nursing Process/ADPIE. Hyperventilation occurs during emotional trauma with rate, volume, and depth increased; stress/anxiety is a listed cause of increased rate and depth."), O("Hypoventilation - ventilation exceeds metabolic needs, so slow the patient by limiting fresh air intake", false, "Incorrect. Hypoventilation is insufficient ventilation with low rate and depressed depth - the opposite pattern."), O("Kussmaul respirations - a pattern tied to emotional trauma with periods of apnea between breaths", false, "Incorrect. Kussmaul is rapid, deep, labored breathing without the apnea alternation, and apnea is not described here."), O("Cheyne-Stokes respirations - alternating apnea and deep breathing seen in terminal illness patterns", false, "Incorrect. No apneic periods are described; the sustained fast deep pattern in emotional crisis is hyperventilation.") ],
+  tp: "Framework: Nursing Process/ADPIE - pattern naming from data: sustained fast + deep + emotional trigger = hyperventilation." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "A nurse counts respirations while a patient watches the clock and announces, 'I will breathe slowly for you.' The count is 10. The earlier pulse-time count, unnoticed, was 18. Which value and principle are correct?",
+  opts: [ O("Use the unnoticed count of 18, because a patient who knows respirations are counted may alter them", true, "Correct. Framework: Nursing Process/ADPIE, measurement validity. The best time to assess respirations is immediately after the pulse, fingertips in pulse position, while the patient is unaware."), O("Use the announced count of 10, because the patient cooperated fully with the measurement request", false, "Incorrect. Cooperation here is the problem - conscious control changes the rate the nurse is trying to measure."), O("Average the two counts to 14, because averaging cancels the error in either single measurement", false, "Incorrect. Averaging a valid count with a distorted count produces a distorted result; the chapter's method is the unnoticed count."), O("Discard both counts and estimate the rate from the pulse, using the chapter ratio for respirations", false, "Incorrect. No such ratio exists in the chapter; respirations are counted directly for 60 seconds.") ],
+  tp: "Framework: Nursing Process/ADPIE - count respirations right after the pulse, unnoticed, 60 seconds; never average away a known distortion." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "A pulse oximeter shows 89% on a patient with dark nail polish, cold hands, and a reading taken 3 seconds after probe placement. The patient is pink and speaking in full sentences. Which action should the nurse take first?",
+  opts: [ O("Remove the polish, warm the site or change finger, wait 15 to 30 seconds for a consistent reading, and compare with a manual pulse", true, "Correct. Framework: Nursing Process/ADPIE, measurement validity. Nail polish, cold hands, and a too-quick reading all falsify oximetry; correct the factors, wait for a consistent reading, and verify the oximeter pulse against a manual pulse."), O("Report 89% as the saturation and start oxygen at once, because device numbers outrank appearance", false, "Incorrect. Three known interference factors are present; the chapter's procedure is to fix them and obtain a consistent, verified reading."), O("Chart 89% but note the patient looks well, and recheck the saturation at the next daily round", false, "Incorrect. Charting a known-invalid number, even with a note, puts a false value in the record and delays a valid one."), O("Move the probe to the same finger on the other hand without removing polish and read it at once", false, "Incorrect. Changing hands alone leaves polish and the too-quick reading problem uncorrected.") ],
+  tp: "Framework: Nursing Process/ADPIE - SpO2 validity: no polish/artificial nails, warm site, 15-30 s consistent reading, manual-pulse cross-check. Normal 95-100%." });
+
+BANK.push({ cat: CD, type: "single", kt: [],
+  stem: "A patient with heart failure and ascites is dyspneic at a respiratory rate of 28 with cyanotic nail beds and restlessness. Which action should the nurse take first?",
+  opts: [ O("Assess him in his position of comfort, allow about 30 minutes of rest after any repositioning, and report the abnormal rate", true, "Correct. Framework: ABCs, safety first. Box 12.12: dyspneic patients with heart failure, ascites, or late pregnancy are assessed in the position of comfort; repositioning raises work of breathing, so allow about 30 min rest before reassessment; cyanosis and restlessness signal inadequate oxygenation and are reported, with oxygen as ordered."), O("Lay him flat at once for a full examination, because flat positioning gives the truest respiratory rate", false, "Incorrect. Lying flat limits chest expansion and raises the work of breathing in a dyspneic patient."), O("Reposition him upright and recount immediately, because the first count after moving is most accurate", false, "Incorrect. Counts right after repositioning reflect the work of moving; the box allows about 30 minutes of rest first."), O("Document dyspnea as anxiety and offer a sedative, because restlessness explains the fast rate fully", false, "Incorrect. Cyanotic nail beds plus dyspnea plus restlessness are related signs of abnormal respirations, not a diagnosis of anxiety.") ],
+  tp: "Framework: ABCs - dyspnea care per Box 12.12: position of comfort, 30 min rest after repositioning, report, oxygen as ordered." });
+
+BANK.push({ cat: CD, type: "multi", kt: [],
+  stem: "A nurse assesses a patient with abnormal respirations. Which findings does Box 12.12 list as related signs? Select all that apply.",
+  opts: [ O("Cyanotic nail beds, lips, or mucous membranes noted during the respiratory assessment", true, "Correct. Cyanosis of nail beds, lips, or mucous membranes is a listed related sign."), O("Restlessness, irritability, confusion, dyspnea, and shortness of breath in the patient", true, "Correct. Those mental-status and breathing findings are listed related signs."), O("A productive cough or abnormal breath sounds heard during the respiratory assessment", true, "Correct. Productive cough and abnormal breath sounds are listed related signs."), O("An obstructed airway or stridorous, snoring respirations observed in the patient", true, "Correct. Obstructed airway and stridorous respirations are listed related signs and factors."), O("A strong appetite, warm dry skin, and a request to walk to the bathroom independently", false, "Incorrect. None of those are respiratory distress signs; appetite is a fever-related item (anorexia) in Box 12.5.") ],
+  tp: "Box 12.12 related signs: cyanosis, restlessness/confusion, dyspnea/SOB, productive cough, abnormal breath sounds, obstructed airway/stridor." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "A nurse uses a child-size cuff on a large adult arm and gets 168/98. The patient's last manual reading with a correct cuff was 128/80. Which action should the nurse take?",
+  opts: [ O("Retake the pressure with a cuff about 40% of the arm circumference, placed 1 to 2 inches above the antecubital space", true, "Correct. Framework: Nursing Process/ADPIE, measurement validity. A too-small cuff gives a falsely high reading; the correct cuff width is about 40% of the circumference, centered over the brachial artery 1-2 inches above the antecubital space, arm at heart level."), O("Report hypertensive crisis, because 168/98 with any cuff still proves the pressure is rising", false, "Incorrect. Crisis in Table 12.4 is systolic over 180 and/or diastolic over 120, and this reading came from a known-invalid cuff size."), O("Retake it on the forearm with the same small cuff, because forearm placement corrects for arm size", false, "Incorrect. Forearm readings cannot substitute for upper arm and differed by as much as 33 mm Hg in the cited study."), O("Average 168/98 with 128/80 and chart the result, because averaging removes the cuff-size error", false, "Incorrect. Averaging does not remove a systematic cuff error; the measurement is repeated correctly.") ],
+  tp: "Framework: Nursing Process/ADPIE - small cuff = falsely HIGH, large cuff = falsely LOW. Correct: width ~40%, 1-2 in above antecubital, arm at heart level." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "During a first blood pressure assessment, sounds are heard immediately when the cuff is inflated to 120. Which action is correct?",
+  opts: [ O("Release the pressure completely, wait 60 seconds, then reinflate to 30 mm Hg above where sounds were first heard", true, "Correct. Framework: Nursing Process/ADPIE, auscultatory gap technique. Sounds at once mean the inflation target was too low; deflate fully, wait 60 seconds, reinflate 30 mm Hg higher. Palpating the radial pulse first sets the target and prevents underestimating systolic."), O("Keep listening and record 120 as the systolic, because the first sound heard is always systolic", false, "Incorrect. Sounds heard immediately signal a missed range - possibly an auscultatory gap - and recording 120 underestimates systolic pressure."), O("Inflate the cuff higher while it is still partly inflated, adding pressure until sounds disappear", false, "Incorrect. A partially deflated cuff is uncomfortable and inaccurate; the cuff is fully released and the arm rested."), O("Switch to the other arm and average the two readings, because a gap affects both arms equally", false, "Incorrect. The gap is managed by palpation-guided inflation on the same measurement, not by averaging arms.") ],
+  tp: "Framework: Nursing Process/ADPIE - sounds at once: deflate fully, wait 60 s, reinflate 30 mm Hg higher. Gap can span 40 mm Hg." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "Orthostatic readings are: supine 140/80, sitting 132/72, standing 108/60, and the patient reports lightheadedness on standing. Which interpretation and action are correct?",
+  opts: [ O("Orthostatic hypotension is present - a 32 systolic and 20 diastolic drop - so assist him back and report the findings", true, "Correct. Framework: safety first, fall prevention. The chapter defines orthostatic hypotension as a drop of 25 systolic and 10 diastolic on position change; 140 to 108 is a 32-point systolic drop with symptoms, so terminate, assist supine, report, and teach assistance with getting up."), O("No orthostatic change is present, because both standing values remain above 100 systolic overall", false, "Incorrect. The definition is the size of the drop (25/10), not whether the final value crosses 100."), O("Orthostatic hypotension is present only if the pulse falls, so check whether the pulse dropped first", false, "Incorrect. The chapter definition is blood-pressure based; symptoms plus this drop already meet it."), O("Repeat the standing reading three times until a higher value appears, then chart the highest one", false, "Incorrect. Repeating until a better number appears falsifies the assessment and keeps a symptomatic patient standing unsafely.") ],
+  tp: "Framework: safety first - orthostatic = drop 25 systolic / 10 diastolic (chapter values). With symptoms: stop, supine, report, assistance for rising." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "A patient's initial assessment shows right arm BP 142/88 and left arm BP 118/76. Which action should the nurse take?",
+  opts: [ O("Use the right arm, which had the higher reading, for subsequent readings and report the difference over 10 mm Hg", true, "Correct. Framework: Nursing Process/ADPIE. Box 12.16: measure both arms initially, use the higher arm afterward; a difference over 10 mm Hg can indicate aortic stenosis or arterial occlusion in the lower-pressure arm."), O("Use the left (lower) arm for subsequent readings, because lower readings are safer to trend over time", false, "Incorrect. Subsequent readings use the arm with the higher pressure, not the lower one."), O("Average the two arms and chart 130/82 as the official initial blood pressure for this patient", false, "Incorrect. A 24-point systolic difference is itself a finding to report, not a pair of numbers to average away."), O("Repeat both arms with an electronic device, because manual differences of this size are always error", false, "Incorrect. A real difference over 10 mm Hg is clinically meaningful; electronic devices also have their own inappropriateness list.") ],
+  tp: "Framework: Nursing Process/ADPIE - both arms initially, normal difference 5-10, >10 = possible stenosis/occlusion, trend the higher arm." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "A patient arrives trembling uncontrollably, with an irregular heart rate and seizures precautions in place. The automatic BP device keeps alarming with inconsistent values. Which action is correct?",
+  opts: [ O("Take the blood pressure manually with a sphygmomanometer and stethoscope instead of the electronic device", true, "Correct. Framework: Nursing Process/ADPIE, device selection. Box 12.17: electronic measurement is inappropriate with arrhythmias, excessive tremors, irregular heart rate, seizures, shivering, obesity of the extremity, peripheral vascular obstruction, or inability to cooperate."), O("Tighten the electronic cuff and keep cycling it until two identical readings appear in a row", false, "Incorrect. Movement, tremor, and irregular rhythm defeat the microphone/sensor; repeating cycles does not fix the method."), O("Use a stationary public-place machine in the lobby, because those devices average out tremors", false, "Incorrect. Stationary machines are less reliable, varying 5-10 mm Hg or more from manual readings, and are not a clinical substitute."), O("Estimate the pressure from the pulse strength, because a bounding pulse proves a high pressure", false, "Incorrect. Pulse volume is not a blood pressure measurement; pressure is measured in mm Hg with proper equipment.") ],
+  tp: "Framework: Nursing Process/ADPIE - Box 12.17 electronic-BP exclusions: arrhythmia, tremors, seizures, shivering, obese extremity, vascular obstruction, uncooperative, older adults." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "A patient on diuretic therapy gains 2.2 lb overnight. Weights were taken at 7 a.m. after voiding on the same scale in a gown both days. Which interpretation is correct?",
+  opts: [ O("The gain reflects about 1 liter of retained fluid, because 1 kg or 2.2 lb of weight equals 1 L of fluid", true, "Correct. Framework: Nursing Process/ADPIE, fluid assessment. Because the weights were standardized (morning, after voiding, same scale, same clothing), the 1 kg change can be read as about 1 L of fluid - significant for a patient on diuretics or with heart, liver, or kidney disease."), O("The gain reflects about 2 liters of retained fluid, because each pound equals a liter of fluid", false, "Incorrect. The chapter ratio is 1 L = 1 kg (2.2 lb), so 2.2 lb is 1 L, not 2 L."), O("The gain cannot be interpreted, because daily weights never reflect fluid changes in any patient", false, "Incorrect. Daily weights in diuretic therapy and fluid-retention diseases are tracked precisely because they reflect fluid change."), O("The gain reflects tissue growth, because fluid changes always take at least a week to appear", false, "Incorrect. A significant overnight change points to fluid, and a significant weight loss frequently points to underlying disease.") ],
+  tp: "Framework: Nursing Process/ADPIE - standardized daily weights: 1 kg (2.2 lb) = 1 L fluid. Same time, scale, clothing; morning after voiding, before breakfast." });
+
+BANK.push({ cat: CE, type: "single", kt: [],
+  stem: "A clinic patient reports smoking a cigarette and drinking coffee in the waiting room 10 minutes ago. His first BP today is 146/92. Which action should the nurse take first?",
+  opts: [ O("Wait 30 minutes after the caffeine and smoking before assessing, then retake the blood pressure", true, "Correct. Framework: Nursing Process/ADPIE, measurement validity. Caffeine and smoking cause false elevations, so the skill directs waiting 30 minutes before assessment."), O("Diagnose hypertension from this single reading, because it is above the 140/90 threshold today", false, "Incorrect. Hypertension is not diagnosed on one random elevated reading; it requires averaged readings on at least two subsequent visits - and this reading is factor-distorted."), O("Retake the pressure immediately three times and chart the lowest of the three as the result", false, "Incorrect. Immediate repeats do not remove the caffeine/smoking effect, and charting the lowest is not the chapter method."), O("Ask the patient to hold his breath during the next reading to counteract the caffeine effect", false, "Incorrect. Breath-holding is not a chapter technique; talking during measurement is itself noted to raise readings.") ],
+  tp: "Framework: Nursing Process/ADPIE - wait 30 min after caffeine/smoking for BP; hypertension diagnosis needs averaged readings on 2+ visits, never one random reading." });
+
+BANK.push({ cat: CE, type: "multi", kt: [],
+  stem: "Which patients should NOT have an electronic blood pressure device used, per Box 12.17? Select all that apply.",
+  opts: [ O("A patient with an irregular heart rate whose rhythm varies from beat to beat today", true, "Correct. Irregular heart rate and arrhythmias are listed electronic-device exclusions."), O("A patient who is shivering and having excessive tremors after arriving from the cold", true, "Correct. Shivering and excessive tremors are listed exclusions."), O("A patient having seizures, whose arm movements cannot be minimized during readings", true, "Correct. Seizures and inability to cooperate to minimize arm motion are listed exclusions."), O("A patient with peripheral vascular obstruction from clots and narrowed vessels in the arm", true, "Correct. Peripheral vascular obstruction is a listed exclusion."), O("A calm adult with a regular rhythm who can keep the arm still at heart level today", false, "Incorrect. That patient is an appropriate candidate for an electronic device with programmed alarm limits.") ],
+  tp: "Box 12.17 manual-BP list: arrhythmias, tremors, seizures, shivering, obese extremity, vascular obstruction, uncooperative, older adults." });
+
+BANK.push({ cat: CB, type: "order", kt: [],
+  stem: "Place the steps for obtaining an oral temperature with an electronic thermometer in the correct order.",
+  items: [ { t: "Perform hand hygiene, identify the patient by band, explain the procedure, and provide privacy", r: "First steps for every temperature method: hand hygiene, identification, explanation, privacy, and assessing factors that influence temperature." }, { t: "Determine whether the patient had hot or cold food or drink or smoked, and wait 20 to 30 minutes if so", r: "Intake and smoking distort oral readings (iced water by 2.2-2.6 degrees F as printed), so this check precedes insertion." }, { t: "Place the probe in a disposable cover and insert it into the posterior sublingual pocket, lips closed", r: "Correct placement in the posterior sublingual pocket with lips closed gives the oral reading." }, { t: "Wait for the audible signal, remove and eject the cover, and read and write down the display", r: "The reading is recorded from the display before the probe returns to its holder." }, { t: "Return the unit to its charging base, assist the patient to comfort, perform hand hygiene, and document", r: "Completion: compare with baseline and age norms, document on the flow sheet, and report abnormal findings." } ],
+  tp: "Framework: Nursing Process/ADPIE - oral temperature sequence: prepare and screen factors, place sublingual, read on signal, document and compare." });
+
+BANK.push({ cat: CE, type: "order", kt: [],
+  stem: "Place the steps for obtaining orthostatic blood pressure measurements (Box 12.14) in the correct order.",
+  items: [ { t: "Measure blood pressure in both arms and select the arm with the highest systolic reading", r: "Both arms are measured first and the higher arm is used for all subsequent orthostatic measurements." }, { t: "With the cuff left in place, assist the patient to sitting and obtain the pressure after 1 to 3 minutes", r: "The sitting reading follows 1-3 minutes in position, cuff left in place." }, { t: "With the cuff left in place, assist the patient to standing and obtain the pressure in that position", r: "Standing readings follow; orthostatic hypotension is usually detectable within 1 minute of standing." }, { t: "Stop and assist the patient to supine at once if dizziness or weakness occurs at any point", r: "Orthostatic symptoms terminate the measurement - safety first - with the patient returned to supine." }, { t: "Record the pressure in each position with symptoms and report orthostatic findings to the provider", r: "Example charting: 140/80 supine, 132/72 sitting, 108/60 standing, with symptoms noted and reported." } ],
+  tp: "Framework: safety first - orthostatics are not delegated; stop for symptoms, record every position, report, and teach assistance with rising." });
+
+BANK.push({ cat: CC, type: "order", kt: [],
+  stem: "Place the steps for locating the apical pulse (Skill 12.3) in the correct order.",
+  items: [ { t: "Clean the stethoscope earpieces and diaphragm and position the patient supine or sitting, chest exposed", r: "Preparation: cleaned stethoscope, privacy, and exposure of the sternum and left chest." }, { t: "Palpate the angle of Louis just below the suprasternal notch and find the second intercostal space", r: "The angle of Louis is the landmark that starts the count of intercostal spaces." }, { t: "Move down the intercostal spaces to the fifth and across to the left midclavicular line to find the PMI", r: "The point of maximal impulse sits at the fifth intercostal space at the left midclavicular line." }, { t: "Place the stethoscope over the PMI and count the lub-dub cycles for a full 60 seconds", r: "Each lub-dub is one cardiac cycle; the apical rate is counted for 60 seconds." }, { t: "Write down the rate, perform hand hygiene, document it, and report any abnormal rate found", r: "Completion of the skill: document on the flow sheet and follow up abnormal rates." } ],
+  tp: "Framework: Nursing Process/ADPIE - apical landmark chain: angle of Louis, 2nd ICS, down to 5th ICS, left MCL, PMI, count 60 s." });
+
+BANK.push({ cat: CA, type: "dropdown", kt: [],
+  stem: "A nurse reviews four readings. Complete each interpretation: A neonate with HR 140 and RR 48 is [[0]]. An adult with oral T 99.8 F taken 5 minutes after iced water is [[1]]. An older adult (Table 12.1) with BP 136/92 is [[2]].",
+  blanks: [ { o: [ O("Within the neonate ranges of HR 120 to 160 and RR 36 to 60", true, "Correct. Table 12.1 neonate: HR 120-160, RR 36-60, so both values are in range."), O("Tachycardic and tachypneic by the adult ranges of 100 and 20", false, "Incorrect. Adult cutoffs do not apply to a neonate; use the neonate row."), O("Bradycardic and bradypneic by the toddler ranges in the table", false, "Incorrect. The toddler row is HR 90-120 and RR 20-30; this patient is a neonate.") ] }, { o: [ O("Unreliable until retaken 20 to 30 minutes after the iced water", true, "Correct. Iced water shifts oral readings by 2.2-2.6 degrees F as printed; wait 20-30 min."), O("A confirmed fever, because it is above the oral normal of 98.6", false, "Incorrect. The reading was taken under a known distorting factor and is also below the 100.4 fever line."), O("A confirmed normal, because it falls inside 97 to 99.6 degrees", false, "Incorrect. A factor-distorted reading confirms nothing until it is repeated correctly.") ] }, { o: [ O("Within the older adult row as printed, 130 to 140 over 90 to 95", true, "Correct. Table 12.1 prints older adult BP as 130-140 systolic and 90-95 diastolic - kept as printed."), O("Stage 2 hypertension by the adult row of 100 to 120 over 70 to 80", false, "Incorrect. The question asks for the Table 12.1 older adult row, which prints these higher values."), O("Hypotensive by the older adult row, because both numbers are low", false, "Incorrect. 136/92 sits inside the printed older adult range, not below it.") ] } ],
+  tp: "Framework: Nursing Process/ADPIE - read every value against its own age row and its measurement conditions. Older adult BP trap is as-printed 130-140/90-95." });
+
+BANK.push({ cat: CD, type: "dropdown", kt: [],
+  stem: "Complete the respiratory assessment plan: After hallway exercise, wait [[0]] before counting. Count each chest rise for [[1]] with the head of the bed at [[2]].",
+  blanks: [ { o: [ O("5 to 10 minutes, because exercise raises rate and depth", true, "Correct. The respiratory skill waits 5-10 min after activity."), O("20 to 30 minutes, the wait used after hot or cold intake", false, "Incorrect. 20-30 min is the oral-temperature wait, not the post-activity respiratory wait."), O("30 minutes, the wait used after caffeine or smoking for BP", false, "Incorrect. 30 min belongs to blood pressure after caffeine/smoking.") ] }, { o: [ O("60 seconds, right after the pulse while the patient is unaware", true, "Correct. Count a full 60 seconds immediately after the pulse, fingers in pulse position."), O("15 seconds multiplied by four, announced clearly to the patient", false, "Incorrect. Announcing changes breathing, and the skill counts 60 seconds."), O("30 seconds doubled, while the patient breathes on command", false, "Incorrect. Commanded breathing is not the resting rate the skill measures.") ] }, { o: [ O("45 to 60 degrees, which promotes full ventilation in comfort", true, "Correct. Sitting or supine with head of bed 45-60 degrees if tolerated."), O("Flat at 0 degrees, which gives the fullest chest expansion", false, "Incorrect. Lying flat limits full chest expansion and should be avoided."), O("90 degrees at all times, even for a patient in abdominal pain", false, "Incorrect. Dyspneic patients are assessed in the position of comfort; forced positioning raises work of breathing.") ] } ],
+  tp: "Framework: Nursing Process/ADPIE - respiratory waits and positions: 5-10 min rest, 60 s unnoticed count, head of bed 45-60 degrees." });
+
+BANK.push({ cat: CE, type: "dropdown", kt: [],
+  stem: "Complete the blood pressure plan: Inflate the cuff to [[0]]. The cuff sits [[1]] and sounds are first heard at [[2]].",
+  blanks: [ { o: [ O("30 mm Hg above the point where the palpated radial pulse disappeared", true, "Correct. Palpation sets the target: inflate 30 mm Hg above radial disappearance."), O("Exactly the patient's last systolic value charted on the prior shift", false, "Incorrect. The target comes from today's palpated disappearance point, not an old chart value."), O("200 mm Hg for every adult, regardless of the palpated pulse point found", false, "Incorrect. A fixed 200 target ignores the palpation step and can miss an auscultatory gap or overinflate.") ] }, { o: [ O("1 to 2 inches above the antecubital space, centered over the brachial artery, arm at heart level", true, "Correct. Cuff placement: bare arm, palm up, 1-2 inches above the antecubital space, centered on the brachial artery."), O("Directly over the antecubital space, centered over the radial artery, arm hanging below the bed", false, "Incorrect. The cuff centers on the brachial artery above the fossa, with the arm supported at heart level."), O("Over the patient's gown sleeve at mid-forearm, with the arm raised above the level of the heart", false, "Incorrect. Forearm placement cannot substitute for upper arm, and clothing under the cuff distorts readings.") ] }, { o: [ O("The systolic pressure - the first audible Korotkoff sound (phase 1, a sharp thump)", true, "Correct. The first audible sound is systolic; the point sound disappears is diastolic."), O("The diastolic pressure - the first audible Korotkoff sound (phase 5, silence)", false, "Incorrect. Phase 5 silence is the end of the sequence, not the first sound."), O("The pulse pressure - the difference calculated before any sound is heard at all", false, "Incorrect. Pulse pressure is calculated after both readings (systolic minus diastolic, 40 at 120/80).") ] } ],
+  tp: "Framework: Nursing Process/ADPIE - BP technique chain: palpate, inflate +30, cuff 1-2 in above fossa over brachial, first sound = systolic." });
+
+BANK.push({ cat: CC, type: "matrix", kt: [],
+  stem: "For each pulse finding, select the correct volume grade on the chapter scale (Table 12.3).",
+  cols: ["1+ Thready", "3+ Normal", "4+ Bounding"],
+  rows: [ { t: "A pulse difficult to feel, not palpable when only slight pressure is applied", a: 0, r: "1+ thready: difficult to feel and lost with slight pressure." }, { t: "A pulse easily felt, but not palpable when moderate pressure is applied", a: 1, r: "3+ normal: easily felt, not palpable under moderate pressure." }, { t: "A pulse that feels full and springlike even under moderate pressure applied", a: 2, r: "4+ bounding: full and springlike even under moderate pressure." }, { t: "A resting adult pulse the nurse documents as the expected, healthy strength", a: 1, r: "3+ is the normal pulse grade on the 0 to 4+ scale." } ],
+  tp: "Pulse volume scale: 0 absent, 1+ thready, 2+ weak, 3+ normal, 4+ bounding. Document per agency policy." });
+
+BANK.push({ cat: CD, type: "matrix", kt: [],
+  stem: "For each breathing description, select the correct respiratory pattern name.",
+  cols: ["Cheyne-Stokes", "Kussmaul", "Sighing"],
+  rows: [ { t: "Alternating periods of apnea and deep rapid breathing in a terminally ill patient", a: 0, r: "Cheyne-Stokes: apnea alternating with deep rapid breathing, noted in critically or terminally ill patients." }, { t: "Rapid, deep, labored breathing that continues without apneic periods", a: 1, r: "Kussmaul: rapid, deep, labored breathing (Figure 12.8)." }, { t: "A frequently interspersed deeper breath among regular comfortable breaths", a: 2, r: "Sighing: frequently interspersed deeper breath; occasional sighing is normal and aerates all alveoli." }, { t: "Apneic periods that lengthen as the patient approaches death", a: 0, r: "As printed, in Cheyne-Stokes the period of apnea increases as death goes on." } ],
+  tp: "Pattern sorting: Cheyne-Stokes = apnea cycles, Kussmaul = rapid deep labored, sighing = occasional deeper breath (normal)." });
+
+BANK.push({ cat: CE, type: "matrix", kt: [],
+  stem: "For each blood pressure value set (Table 12.4, AHA categories as printed), select the correct category.",
+  cols: ["Elevated", "Stage 1", "Stage 2 / Crisis range"],
+  rows: [ { t: "Systolic 124 and diastolic 76 on a routine adult screening reading", a: 0, r: "Elevated: systolic 120-129 AND diastolic less than 80." }, { t: "Systolic 136 and diastolic 78 on a routine adult screening reading", a: 1, r: "Stage 1: systolic 130-139 OR diastolic 80-89 - the systolic alone qualifies." }, { t: "Systolic 118 and diastolic 92 on a routine adult screening reading", a: 2, r: "Stage 2: diastolic 90 or higher qualifies even with a normal systolic." }, { t: "Systolic 186 and diastolic 118, with emergency care needed per the table", a: 2, r: "Hypertensive crisis: systolic greater than 180 and/or diastolic greater than 120 in the table's crisis row - grouped here at the top of the scale; 186 systolic meets the crisis threshold and needs emergency care." } ],
+  tp: "Table 12.4: Normal <120/<80, Elevated 120-129/<80, Stage 1 130-139 or 80-89, Stage 2 140+ or 90+, Crisis >180 and/or >120." });
+
+BANK.push({ cat: CC, type: "multi", kt: [], grp: "case1", scen: "CASE STUDY - Mr. Alvarez, 74, is admitted after a fall at home. Admission vitals: T 98.9 F oral, P 88 regular 3+, R 18, BP 138/84 right arm, SpO2 97%. He takes digoxin and a beta-blocker. On day 2 the nurse finds him dizzy after standing: radial pulse 54 and irregular, respirations 10 and shallow, BP standing 104/62 (supine was 138/82), SpO2 94% with nail polish on. He says, 'The room spun when I got up.' His morning weight is up 2.2 lb on the same scale, same gown, after voiding.",
+  stem: "CASE STUDY 1 of 6 - RECOGNIZE CUES: Which findings in Mr. Alvarez's day-2 assessment require follow-up? Select all that apply.",
+  opts: [ O("A radial pulse of 54 that is irregular in a patient taking digoxin and a beta-blocker", true, "Correct. Bradycardia plus irregularity on digoxin/beta-blocker therapy is a cue requiring apical assessment and follow-up."), O("Respirations of 10 per minute that are shallow, at the edge of the intervention range", true, "Correct. A rate of 10 with shallow breathing approaches the Box 12.12 less-than-10 intervention threshold and signals hypoventilation risk."), O("A standing BP of 104/62 after a supine 138/82, with dizziness reported on standing up", true, "Correct. That is a 34-point systolic drop - over the chapter's 25-point orthostatic threshold - with symptoms."), O("An SpO2 of 94% obtained over nail polish, which may not be a valid saturation reading", true, "Correct. Nail polish prevents accurate oximetry; 94% under polish is a cue about measurement validity as well as oxygenation."), O("A morning weight up 2.2 lb taken on the same scale in the same gown after voiding today", true, "Correct. Standardized weights make the 2.2 lb (1 kg) gain interpretable as about 1 L of fluid - a real cue, not noise."), O("An admission pulse documented as regular and 3+, which is an abnormal volume grade", false, "Incorrect. 3+ is the normal pulse volume grade and the admission rhythm was regular.") ],
+  tp: "Case framework: Nursing Process/ADPIE, recognize cues - bradycardia/irregularity, borderline RR, orthostatic drop with symptoms, invalid SpO2 conditions, standardized weight gain." });
+
+BANK.push({ cat: CC, type: "single", kt: [], grp: "case1", scen: "CASE STUDY - Mr. Alvarez, 74, is admitted after a fall at home. Admission vitals: T 98.9 F oral, P 88 regular 3+, R 18, BP 138/84 right arm, SpO2 97%. He takes digoxin and a beta-blocker. On day 2 the nurse finds him dizzy after standing: radial pulse 54 and irregular, respirations 10 and shallow, BP standing 104/62 (supine was 138/82), SpO2 94% with nail polish on. He says, 'The room spun when I got up.' His morning weight is up 2.2 lb on the same scale, same gown, after voiding.",
+  stem: "CASE STUDY 2 of 6 - ANALYZE CUES: Two nurses count simultaneously for 1 minute with the same watch: apical 62, radial 54. How should the nurse analyze this result?",
+  opts: [ O("A pulse deficit of 8 exists, showing some heartbeats are not reaching the wrist effectively", true, "Correct. Framework: Nursing Process/ADPIE. 62 - 54 = 8, more than two, so a deficit exists; it signifies faulty pumping or a peripheral vascular issue, often seen when the heart does not distribute blood effectively."), O("No deficit exists, because both rates are bradycardic and deficits require a fast apical rate", false, "Incorrect. The deficit rule is the difference between simultaneous counts, whatever the rate range."), O("A pulse deficit of 54 exists, because the radial rate is the number that failed to arrive fully", false, "Incorrect. The deficit is the difference (8), not the radial rate itself."), O("The result is invalid, because pulse deficits are counted sequentially by a single nurse alone", false, "Incorrect. Simultaneous counting by two nurses with the same watch for 1 full minute is the required method.") ],
+  tp: "Case framework: Nursing Process/ADPIE - deficit = apical minus radial, simultaneous, >2 = deficit exists." });
+
+BANK.push({ cat: CE, type: "single", kt: [], grp: "case1", scen: "CASE STUDY - Mr. Alvarez, 74, is admitted after a fall at home. Admission vitals: T 98.9 F oral, P 88 regular 3+, R 18, BP 138/84 right arm, SpO2 97%. He takes digoxin and a beta-blocker. On day 2 the nurse finds him dizzy after standing: radial pulse 54 and irregular, respirations 10 and shallow, BP standing 104/62 (supine was 138/82), SpO2 94% with nail polish on. He says, 'The room spun when I got up.' His morning weight is up 2.2 lb on the same scale, same gown, after voiding.",
+  stem: "CASE STUDY 3 of 6 - PRIORITIZE HYPOTHESES: Which problem is the nurse's priority for Mr. Alvarez right now?",
+  opts: [ O("Fall and injury risk from orthostatic hypotension with bradycardia, dizziness, and a pulse deficit", true, "Correct. Framework: safety first, stable vs unstable. He has already fallen once, now has a 34-point systolic drop with symptoms, bradycardia on rate-lowering drugs, and a deficit - injury prevention outranks routine monitoring tasks."), O("Knowledge deficit about pulse oximetry, because his saturation was measured over nail polish", false, "Incorrect. The polish is a measurement problem to fix, not the priority problem; his circulation and fall risk are."), O("Excess fluid volume as the main problem, because his standardized weight rose by 2.2 pounds", false, "Incorrect. A 1 L fluid gain matters and is assessed, but symptomatic orthostasis with bradycardia is the immediate safety threat."), O("Anxiety about falling, because he reported that the room spun when he stood up this morning", false, "Incorrect. 'Room spun' is vertigo from the pressure drop - a physiologic cue - not primarily an anxiety report.") ],
+  tp: "Case framework: safety first - symptomatic orthostatic hypotension + bradycardia + prior fall = injury risk first." });
+
+BANK.push({ cat: CE, type: "multi", kt: [], grp: "case1", scen: "CASE STUDY - Mr. Alvarez, 74, is admitted after a fall at home. Admission vitals: T 98.9 F oral, P 88 regular 3+, R 18, BP 138/84 right arm, SpO2 97%. He takes digoxin and a beta-blocker. On day 2 the nurse finds him dizzy after standing: radial pulse 54 and irregular, respirations 10 and shallow, BP standing 104/62 (supine was 138/82), SpO2 94% with nail polish on. He says, 'The room spun when I got up.' His morning weight is up 2.2 lb on the same scale, same gown, after voiding.",
+  stem: "CASE STUDY 4 of 6 - GENERATE SOLUTIONS: Which actions should the nurse include in Mr. Alvarez's plan? Select all that apply.",
+  opts: [ O("Assist him back to supine when symptoms occur, report orthostatic findings, and teach him to get assistance rising", true, "Correct. Box 12.14: terminate for symptoms, assist supine, report findings, and instruct the patient to obtain assistance getting out of bed."), O("Assess the apical pulse for a full minute and review digoxin and beta-blocker effects on his rate", true, "Correct. Box 12.10: a pulse below normal gets a full-minute apical assessment and review of digoxin, beta-blockers, and antidysrhythmics, with medication sometimes withheld pending provider evaluation."), O("Remove the nail polish, obtain a consistent 15 to 30 second oximeter reading, and compare its pulse with a manual pulse", true, "Correct. That corrects all three oximetry validity problems in his day-2 reading."), O("Teach him to rise slowly from lying to sitting to standing to prevent a sudden drop in pressure", true, "Correct. The chapter's immediate teaching for orthostatic change is rising slowly through each position."), O("Delegate his next orthostatic blood pressure series to assistive personnel to save nursing time", false, "Incorrect. Orthostatic measurement requires critical thinking and ongoing judgment and is not delegated.") ],
+  tp: "Case framework: Nursing Process/ADPIE - plan: supine for symptoms, report, apical 60 s + med review, valid SpO2 technique, slow rising, no delegation of orthostatics." });
+
+BANK.push({ cat: CE, type: "single", kt: [], grp: "case1", scen: "CASE STUDY - Mr. Alvarez, 74, is admitted after a fall at home. Admission vitals: T 98.9 F oral, P 88 regular 3+, R 18, BP 138/84 right arm, SpO2 97%. He takes digoxin and a beta-blocker. On day 2 the nurse finds him dizzy after standing: radial pulse 54 and irregular, respirations 10 and shallow, BP standing 104/62 (supine was 138/82), SpO2 94% with nail polish on. He says, 'The room spun when I got up.' His morning weight is up 2.2 lb on the same scale, same gown, after voiding.",
+  stem: "CASE STUDY 5 of 6 - TAKE ACTION: Mr. Alvarez rings to get up to the bathroom and stands before help arrives, then grabs the bedrail saying he is dizzy. Which of the following actions should the nurse take first?",
+  opts: [ O("Assist him back to a supine position at once and terminate any standing measurement or activity", true, "Correct. Framework: safety first, ABCs. Box 12.14: if orthostatic symptoms such as dizziness or weakness occur, terminate the measurement/activity and assist the patient to a supine position - before documentation, teaching, or further readings."), O("Finish a standing blood pressure quickly while he holds the rail, to complete the data series", false, "Incorrect. Completing a series never outranks a symptomatic patient who may fall; the box directs stopping."), O("Walk him to the bathroom with one arm for support, because lying down will drop his pressure more", false, "Incorrect. Ambulation during symptomatic orthostasis risks the fall the plan exists to prevent."), O("Leave him standing while you get a second nurse, because two nurses are required for pulse counts", false, "Incorrect. Two nurses are required for a simultaneous pulse-deficit count, not for rescuing a dizzy standing patient - assist him down first.") ],
+  tp: "Case framework: safety first - symptomatic orthostasis: stop, supine, then report and reassess." });
+
+BANK.push({ cat: CA, type: "single", kt: [], grp: "case1", scen: "CASE STUDY - Mr. Alvarez, 74, is admitted after a fall at home. Admission vitals: T 98.9 F oral, P 88 regular 3+, R 18, BP 138/84 right arm, SpO2 97%. He takes digoxin and a beta-blocker. On day 2 the nurse finds him dizzy after standing: radial pulse 54 and irregular, respirations 10 and shallow, BP standing 104/62 (supine was 138/82), SpO2 94% with nail polish on. He says, 'The room spun when I got up.' His morning weight is up 2.2 lb on the same scale, same gown, after voiding.",
+  stem: "CASE STUDY 6 of 6 - EVALUATE OUTCOMES: Later, Mr. Alvarez rises slowly with assistance. Supine BP 134/80, sitting 130/76, standing 128/74, no dizziness; apical and radial both 68, regular. Which evaluation is correct?",
+  opts: [ O("Outcomes are met: the standing drop is now 6 systolic and 6 diastolic, under the 25 and 10 thresholds, with no symptoms and no deficit", true, "Correct. Framework: Nursing Process/ADPIE, evaluation. Orthostatic hypotension needs a 25 systolic / 10 diastolic drop; 6/6 with no symptoms, matched apical-radial rates, and a regular rhythm shows the interventions worked."), O("Outcomes are not met, because any drop at all on standing proves orthostatic hypotension persists", false, "Incorrect. Small position changes are normal - arms alone normally differ by 5-10 mm Hg; the chapter thresholds are 25 and 10."), O("Outcomes cannot be evaluated, because orthostatic readings require a different arm for each position", false, "Incorrect. The same higher arm is used throughout, which is what makes the positions comparable."), O("Outcomes are met only if his standing pressure equals his supine pressure exactly, with zero change", false, "Incorrect. Exact equality is not the standard; staying within the chapter's drop thresholds without symptoms is.") ],
+  tp: "Case framework: Nursing Process/ADPIE - evaluate against the printed thresholds: 25 systolic / 10 diastolic, symptoms absent, deficit resolved." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 12: Vital Signs</h1>';
+  h += '<div class="sub">Brutal mode | Cooper, Foundations of Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var b, sel, j, bo, segs = q.stem.split(/\[\[\d+\]\]/), cTail, cHead, ctxTxt;
+    h += '<div class="stem">' + q.stem.replace(/\[\[\d+\]\]/g, '______') + '</div>';
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      cTail = (segs[b] || '').split(/[;.]/); cTail = cTail[cTail.length - 1].replace(/\s+/g, ' ').trim();
+      cHead = (segs[b + 1] || '').split(/[;.]/)[0].replace(/\s+/g, ' ').trim();
+      ctxTxt = (cTail + ' ______ ' + cHead).trim();
+      h += '<div class="ddrow"><div class="ddlabel">Blank ' + (b + 1) + ' \u2014 ' + ctxTxt + '</div>' + sel + '</div>';
+    }
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>
