@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 13 - Sensory System - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK (AP Ch 13 — sit) ============ */
+/* Herlihy, Anatomy & Physiology, Chapter 13: Sensory System. Built from the audited study guide content only. */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Pain and the General Senses";
+var CB = "Sensory Receptors and Sensation";
+var CC = "Smell and Taste";
+var CD = "Eye Anatomy and Accessory Structures";
+var CE = "Glaucoma, Pupils, and Eye Reflexes";
+var CF = "Vision: Light, Refraction, and Pathway";
+var CG = "Ear, Hearing, and Balance";
+var CATS = [CA, CB, CC, CD, CE, CF, CG];
+var KEYTERMS = ["nociceptor","referred pain","projection","phantom limb pain","spinothalamic tract","olfaction","anosmia","gustation","proprioception","conjunctivitis","ptosis","lacrimal apparatus","floaters","papilledema","suppression amblyopia","miosis","presbyopia","diabetic retinopathy","retrolental fibroplasia","corneal reflex","photopupillary reflex","accommodation","otitis media","eustachian tube","cerumen","vestibular apparatus","glaucoma","mydriasis","PERRLA"];
+var BLUEPRINT = {
+  CA: { name: CA, count: 4, types: {"single":4} },
+  CB: { name: CB, count: 3, types: {"multi":2,"single":1} },
+  CC: { name: CC, count: 3, types: {"single":2,"multi":1} },
+  CD: { name: CD, count: 6, types: {"multi":1,"single":4,"order":1} },
+  CE: { name: CE, count: 11, types: {"single":7,"dropdown":1,"multi":2,"matrix":1} },
+  CF: { name: CF, count: 6, types: {"single":6} },
+  CG: { name: CG, count: 5, types: {"single":4,"matrix":1} }
+};
+BANK.push({ cat: CA, type: "single", kt: ["nociceptor"], stem: "A patient with diabetes mellitus and peripheral neuropathy is found with a large blister on his heel from new shoes; he says he never felt it. Which teaching is the priority for this patient?", opts: [
+    O("Inspect both feet daily and never walk barefoot, because damaged pain sensation lets injuries go unnoticed until they infect.", true, "Diabetic neuropathy distorts pain sensation, so a blister can expand, infect, and turn gangrenous unnoticed - daily inspection replaces the missing alarm. Framework: prevention beats rescue when the warning system itself is broken."),
+    O("Soak the feet in hot water each evening to restore circulation and speed up the return of normal sensation to the feet.", false, "Hot soaks risk burns in a foot that cannot feel temperature extremes, and soaking does not restore damaged nerves; the danger is unnoticed injury, not poor soaking habits."),
+    O("Massage the heel firmly several times a day to break up the blister and stimulate the pain receptors back to work.", false, "Pressure on damaged tissue worsens injury; receptors damaged by neuropathy are not reawakened by massage, and the blister needs protection, not pressure."),
+    O("Wear tighter shoes so the pressure is felt more clearly and the patient can notice problems sooner.", false, "Ill-fitting shoes caused this injury; tighter shoes add pressure and friction to tissue whose warning system is already unreliable.")
+  ], tp: "ANSWER KEY — Correct answer: Inspect both feet daily and never walk barefoot, because damaged pain sensation lets injuries go unnoticed until they infect.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CA, type: "single", kt: ["referred pain"], stem: "A 58-year-old patient in the emergency department reports an aching pain that began in his left shoulder and now runs down his left arm into his fourth and fifth fingers. He is pale and anxious. Which action should the nurse take first?", opts: [
+    O("Treat the report as possible heart pain, keep the patient resting, and obtain cardiac monitoring and provider evaluation immediately.", true, "Visceral pain from the heart shares sensory pathways with the shoulder and left arm, so this pattern is read as cardiac until proven otherwise; rest lowers the heart's oxygen demand while evaluation starts."),
+    O("Apply a heating pad to the shoulder and reassess the pain in one hour to see whether it behaves like a muscle strain.", false, "Waiting an hour on a classic referred cardiac pattern gambles with ischemic heart muscle; the pain of a heart attack is driven by oxygen deprivation of cardiac muscle, and restoring blood flow is time-critical."),
+    O("Massage the arm and shoulder and encourage the patient to move the arm through its full range of motion.", false, "Movement increases oxygen demand and does nothing for visceral pain sharing the arm's pathways; the pattern points away from a simple muscle problem."),
+    O("Give the patient his prescribed antacid and chart the pain as indigestion, since it is aching rather than crushing.", false, "Aching quality does not exclude the heart as the source; referred pain is defined by the mismatch between where pain is felt and where it originates.")
+  ], tp: "ANSWER KEY — Correct answer: Treat the report as possible heart pain, keep the patient resting, and obtain cardiac monitoring and provider evaluation immediately.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CA, type: "single", kt: ["projection","phantom limb pain"], stem: "Two days after a below-knee amputation, a patient tells the nurse, 'My missing foot throbs all night - I know it sounds crazy.' Which response is best?", opts: [
+    O("'The pain is real. The severed nerve endings keep signaling the brain, which projects the feeling back to where the leg was; it usually fades as the nerves heal.'", true, "Phantom limb pain is projection at work: severed nerve endings keep sending sensory information to the parietal lobe, and the brain projects it back to the missing limb. It is real, common, and usually diminishes with healing."),
+    O("'That cannot be pain, because the foot is gone and there are no receptors left to fire. Try to think about something else and it should pass within a few days.'", false, "Dismissing the report denies a documented phenomenon; the brain experiences the sensation even though the limb is absent, and the patient needs explanation, not contradiction."),
+    O("'Throbbing in a missing limb usually means the stump is infected or healing badly, so I will notify the surgeon to examine it and possibly reopen it.'", false, "Phantom pain is an expected projection effect, not a sign that mandates reopening the stump; stump infection is judged by stump findings, not by projected pain."),
+    O("'The feeling means the nerves were permanently damaged during the surgery, and this pain will likely stay at the same level for the rest of your life.'", false, "For most amputees the pain diminishes as the severed nerves heal, although a phantom presence often remains; declaring it permanent is inaccurate and hopeless.")
+  ], tp: "ANSWER KEY — Correct answer: 'The pain is real. The severed nerve endings keep signaling the brain, which projects the feeling back to where the leg was; it usually fades as the nerves heal.'. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CA, type: "single", kt: ["spinothalamic tract"], stem: "A patient with severe right-lower-quadrant pain is guarding and rates the pain 9 of 10. The provider has not yet examined him, and appendicitis is suspected. He begs for 'the strong pain shot right now.' Which action is most appropriate?", opts: [
+    O("Assess and document the pain fully and notify the provider promptly, explaining that masking the pain before the cause is found can delay needed surgery.", true, "RLQ pain is a valuable diagnostic clue for appendicitis; relieving pain without finding the cause can delay surgery until the appendix ruptures and causes life-threatening peritonitis. Prompt assessment and provider notification protect the diagnostic value of the pain."),
+    O("Give the full prescribed opioid dose immediately, because an unrelieved 9-of-10 pain score always outranks diagnostic concerns.", false, "The score is real and must be addressed, but the chapter's warning is specific: pain relief that erases the clue before evaluation can delay the appendectomy this patient may need."),
+    O("Tell the patient pain medicine is not allowed for abdominal pain and offer him an ice pack and a darkened room instead.", false, "Pain is not simply 'not allowed'; the nursing move is rapid assessment and provider involvement in the decision, not a blanket refusal with comfort measures only."),
+    O("Give half the dose, document the pain as improved, and let the provider examine him at the next scheduled rounds.", false, "Partial masking plus delayed examination keeps both harms: the clue is blunted and the surgical decision waits on a routine schedule.")
+  ], tp: "ANSWER KEY — Correct answer: Assess and document the pain fully and notify the provider promptly, explaining that masking the pain before the cause is found can delay needed surgery.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "multi", kt: ["olfaction","anosmia"], stem: "A patient recovering from a head injury has lost his sense of smell. Which safety teaching points should the nurse include? Select all that apply.", opts: [
+    O("Install smoke and gas detectors and check them monthly, since you cannot rely on smelling smoke or leaking gas.", true, "Smell is a protective warning sense for smoke and gas; with olfaction gone, devices must do the warning work instead."),
+    O("Ask a family member to check expiration dates and sniff stored food, because spoiled food will not warn you.", true, "Spoiled food is normally caught by smell; without it, another person's nose or strict date-checking must substitute before eating."),
+    O("Taste each cleaning chemical before using it to be sure it is the right product.", false, "Tasting chemicals is itself dangerous; labels and storage discipline, not taste, identify household chemicals safely."),
+    O("Keep the stove burners on low at all times so any leak stays too small to matter.", false, "Leaving burners on creates the very gas hazard the patient can no longer detect; appliances belong off when not in use."),
+    O("Ventilate the kitchen and bathroom well, since harsh fumes will not register as strongly as before.", true, "Harsh odors normally trigger both smell and trigeminal warning; a patient without smell loses the early cue to leave or ventilate a space.")
+  ], tp: "ANSWER KEY — Correct answer: Install smoke and gas detectors and check them monthly, since you cannot rely on smelling smoke or leaking gas.; Ask a family member to check expiration dates and sniff stored food, because spoiled food will not warn you.; Ventilate the kitchen and bathroom well, since harsh fumes will not register as strongly as before.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["olfaction"], stem: "A nurse is assessing cranial nerve I in a patient after a facial injury. Which technique is correct?", opts: [
+    O("With the patient's eyes closed, present a familiar odor such as vanilla to each nostril and ask him to identify it.", true, "CN I assessment is odor identification - an intact olfactory nerve identifies a presented scent such as vanilla, tested as the chapter describes."),
+    O("Ask the patient to taste a drop of vanilla extract and name the flavor he detects on his tongue.", false, "Taste is gustation, carried by CN VII, IX, and X; identifying a flavor on the tongue does not test the olfactory nerve."),
+    O("Shine a light in each eye and watch whether the pupils constrict equally and at the same speed.", false, "That tests the photopupillary reflex (CN II in, CN III out), a pupil assessment - not the sense of smell."),
+    O("Whisper numbers behind the patient and ask him to repeat them back accurately.", false, "Whisper testing screens hearing and CN VIII; it says nothing about the olfactory pathway to the temporal and frontal lobes.")
+  ], tp: "ANSWER KEY — Correct answer: With the patient's eyes closed, present a familiar odor such as vanilla to each nostril and ask him to identify it.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["olfaction"], stem: "A nurse entering a patient's room notices the patient's breath has a distinctly fruity, acetone-like odor. The patient is a known diabetic who has been vomiting and breathing rapidly. Which action is most appropriate?", opts: [
+    O("Check the patient's blood glucose and notify the provider, treating the breath odor as a cue of diabetic ketoacidosis.", true, "The chapter names acetone breath as a diagnostic smell of diabetic ketoacidosis; combined with vomiting and rapid breathing, it demands glucose data and provider notification."),
+    O("Offer the patient a mint and document that his breath odor is consistent with poor oral hygiene.", false, "Masking the odor discards a recognized diagnostic cue; acetone breath in a diabetic is a metabolic warning, not a hygiene note."),
+    O("Encourage the patient to eat a full meal right away to settle his stomach and clear the odor.", false, "Feeding before assessing glucose in a vomiting patient with a ketoacidosis cue risks worsening hyperglycemia and aspiration; assessment comes first."),
+    O("Reassure the patient that fruity breath is a normal side effect of his diabetes medicines.", false, "Acetone breath is listed as a diagnostic odor for ketoacidosis, not a benign drug effect; reassurance would delay the response the cue requires.")
+  ], tp: "ANSWER KEY — Correct answer: Check the patient's blood glucose and notify the provider, treating the breath odor as a cue of diabetic ketoacidosis.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "multi", kt: ["gustation"], stem: "A patient receiving radiation therapy for head and neck cancer reports that 'food tastes like cardboard' and she is losing weight. Which nursing actions are appropriate? Select all that apply.", opts: [
+    O("Assess her weight trend and oral intake and involve the dietitian in planning appealing, nutrient-dense meals.", true, "Drugs and radiation often change or destroy taste, and the loss of taste affects appetite and nutrition - intake and weight must be tracked and supported."),
+    O("Suggest she season food more boldly and eat with others, since taste and smell together shape appetite.", true, "Taste and smell are interpreted together in the cortex as one combined sensation, so aroma, seasoning, and a social setting can partially compensate for dulled taste buds."),
+    O("Tell her the taste change means the radiation is failing and she should stop treatment until taste returns.", false, "Taste alteration is an expected effect of cancer treatment on taste receptors, not evidence of treatment failure; stopping therapy is not the nurse's call to suggest."),
+    O("Advise her to stop eating solid food and switch entirely to plain water until her taste comes back.", false, "Abandoning intake worsens the nutrition problem the teaching exists to prevent; the goal is more acceptable calories, not fewer."),
+    O("Document the taste change and report continued weight loss to the provider.", true, "A lost or altered sense of taste that is costing weight is reportable assessment data, part of monitoring the treatment's effects.")
+  ], tp: "ANSWER KEY — Correct answer: Assess her weight trend and oral intake and involve the dietitian in planning appealing, nutrient-dense meals.; Suggest she season food more boldly and eat with others, since taste and smell together shape appetite.; Document the taste change and report continued weight loss to the provider.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "single", kt: ["proprioception"], stem: "A nurse is teaching a preterm infant's parents about kangaroo care before discharge. Which statement by a parent indicates correct understanding?", opts: [
+    O("'Holding our baby skin-to-skin inside my shirt will calm her, help keep her warm, and help her feed better.'", true, "Kangaroo care - skin-to-skin contact in the parent's blouse or shirt - calms the preterm infant, stabilizes temperature, and improves feeding; touch is the first sensory system to develop and is essential to thriving."),
+    O("'Too much holding will spoil her, so we should limit touching to feeding times only.'", false, "The chapter reverses this: an infant who is not touched does not thrive ('failure to thrive'). Touch sustains growth and development rather than spoiling it."),
+    O("'Touch matters mainly after she is a year old, when she can understand that we love her.'", false, "Touch is the FIRST sensory system to develop in the fetus and is needed from the start; its importance does not wait for understanding."),
+    O("'We should wear gloves for all contact until she reaches her full-term due date.'", false, "Skin-to-skin contact is the point of kangaroo care; routine gloving would remove the tactile stimulation the technique is built on.")
+  ], tp: "ANSWER KEY — Correct answer: 'Holding our baby skin-to-skin inside my shirt will calm her, help keep her warm, and help her feed better.'. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "multi", kt: ["conjunctivitis"], stem: "A school nurse is teaching parents during an outbreak of 'pink eye' in a kindergarten class. Which statements should the nurse include? Select all that apply.", opts: [
+    O("Conjunctivitis is highly contagious, so hand hygiene and not sharing towels or pillows matter.", true, "Pink eye is a highly contagious bacterial or viral inflammation of the conjunctiva - hygiene is the control measure, especially where young children make hygiene hard to maintain."),
+    O("The redness comes from dilated blood vessels in the conjunctiva itself.", true, "The conjunctiva is very vascular; its bloodshot appearance is from dilated vessels - the same vessels 'get the red out' drops constrict."),
+    O("Children with pink eye should share eyedrops so the whole class is treated at once.", false, "Sharing drops spreads the very infection being treated; contagious conditions call for individual medication and strict hygiene."),
+    O("Pink eye means the cornea is infected and vision loss is expected in most cases.", false, "Conjunctivitis is inflammation of the conjunctiva, the membrane over the lids and sclera - it does not cover or infect the cornea, and expected vision loss is not part of the picture."),
+    O("Allergies and irritation can also cause the conjunctiva to inflame, not only infection.", true, "The chapter lists irritation and allergies alongside bacterial and viral infection as causes of conjunctivitis.")
+  ], tp: "ANSWER KEY — Correct answer: Conjunctivitis is highly contagious, so hand hygiene and not sharing towels or pillows matter.; The redness comes from dilated blood vessels in the conjunctiva itself.; Allergies and irritation can also cause the conjunctiva to inflame, not only infection.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["ptosis"], stem: "During an assessment a nurse notes that a patient's upper eyelid droops and cannot be raised completely, giving him a 'sleepy look,' while the other lid opens fully. This finding is documented as:", opts: [
+    O("Ptosis of the eyelid", true, "Ptosis is the lid that cannot be raised completely - the drooping 'sleepy look' - a levator problem, found one lid at a time here."),
+    O("Lid lag from thyroid overactivity", false, "Lid lag is the opposite direction: an overactive thyroid pulls the upper lid too HIGH, exposing white sclera above the iris."),
+    O("A stye (hordeolum) infection", false, "A stye is an infected lid-margin follicle - red, swollen, and painful - not a painless failure of the lid to rise."),
+    O("Conjunctivitis (pink eye)", false, "Conjunctivitis inflames the conjunctiva with dilated vessels and discharge; it does not paralyze the lid's lifting muscle.")
+  ], tp: "ANSWER KEY — Correct answer: Ptosis of the eyelid. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "order", kt: ["lacrimal apparatus"], stem: "The nurse is reviewing tear flow with a patient who has a blocked tear duct. Place the structures in the order tears travel through them.", items: [{"t":"Lacrimal gland","r":"Tears are secreted by the lacrimal gland, which sits in the upper lateral part of the orbit."},{"t":"Lacrimal ducts","r":"Tears leave the gland through the lacrimal ducts and wash across the surface of the eye toward the nose."},{"t":"Lacrimal puncta","r":"Tears drain through the small openings called the lacrimal puncta at the inner eye."},{"t":"Lacrimal canal","r":"From the puncta, tears pass into the lacrimal canals on their way down."},{"t":"Nasolacrimal duct","r":"The nasolacrimal duct finally empties into the nasal cavity; tears normally reach the back of the throat and are swallowed."}], tp: "ANSWER KEY — Correct answer: the sequence: 1. Lacrimal gland 2. Lacrimal ducts 3. Lacrimal puncta 4. Lacrimal canal 5. Nasolacrimal duct. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["floaters"], stem: "A patient calls the clinic: 'I've always had a couple of little spots drifting in my vision, but since yesterday there are suddenly dozens.' Which response is most appropriate?", opts: [
+    O("Arrange for the patient to be seen immediately today, because a sudden increase in floaters can signal a retinal tear.", true, "Usual floaters are harmless particles in the vitreous, but a sudden appearance or increase may indicate a hole or tear in the retina - which often precedes retinal detachment and demands immediate professional attention."),
+    O("Reassure the patient that floaters are always harmless and suggest he rest his eyes and call back in a month.", false, "Reassurance fits the OLD, stable pattern of floaters; the change - sudden and numerous - is exactly the exception the chapter flags as dangerous."),
+    O("Suggest over-the-counter 'get the red out' drops to clear the spots from his field of vision.", false, "Those drops constrict conjunctival vessels for surface redness; they do nothing for particles drifting inside the vitreous humor."),
+    O("Ask the patient to monitor whether the spots move when he blinks, and document the call as routine.", false, "Documentation without escalation misses the time-sensitive point: a retinal tear can progress to detachment, so monitoring at home is not the plan.")
+  ], tp: "ANSWER KEY — Correct answer: Arrange for the patient to be seen immediately today, because a sudden increase in floaters can signal a retinal tear.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["papilledema"], stem: "A patient with a head injury is examined with an ophthalmoscope, and the optic disc is seen bulging forward. The nurse recognizes this finding as papilledema and understands it most likely indicates:", opts: [
+    O("Increased intracranial pressure from the swelling injured brain", true, "As the brain swells, rising intracranial pressure pushes the optic disc forward - the 'choked disc' of papilledema - making the eyes a window on brain pressure after head injury."),
+    O("Raised intraocular pressure from blocked drainage of aqueous humor", false, "That mechanism is glaucoma - pressure inside the EYEBALL; papilledema is the optic disc bulging under pressure from the BRAIN side."),
+    O("A vitamin A deficiency that has starved the retina of rhodopsin", false, "Vitamin A deficiency causes night blindness through rod chemistry; it does not push the optic disc forward."),
+    O("An infection of the conjunctiva spreading backward into the eye", false, "Conjunctivitis stays at the surface membrane; the bulging disc reflects intracranial pressure transmitted to the disc.")
+  ], tp: "ANSWER KEY — Correct answer: Increased intracranial pressure from the swelling injured brain. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["suppression amblyopia"], stem: "The parents of a 4-year-old with a 'lazy eye' ask why treatment cannot wait until she is older. Which explanation by the nurse is correct?", opts: [
+    O("The brain is suppressing the weak eye's image; if that is not corrected early, that eye can become permanently nonfunctional.", true, "When the eyes do not focus together, the occipital lobe takes one eye's input and suppresses the other's; uncorrected, the suppressed eye loses vision - suppression amblyopia - which is common, preventable, and time-limited for treatment."),
+    O("The weak eye muscles will tear if the eye keeps trying to move, so rest now prevents a painful injury later.", false, "The danger is not muscle tearing; it is cortical suppression - the brain discarding the eye's signal until the vision itself is lost."),
+    O("Waiting is fine as long as she wears glasses by the time she starts high school.", false, "The chapter is explicit that treatment must begin EARLY; waiting years forfeits the window in which the loss is preventable."),
+    O("The condition is only cosmetic, so the timing of treatment is a family preference with no medical stakes.", false, "A 'lazy' eye left alone becomes blind in that eye - a functional loss, not a cosmetic issue.")
+  ], tp: "ANSWER KEY — Correct answer: The brain is suppressing the weak eye's image; if that is not corrected early, that eye can become permanently nonfunctional.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["miosis"], stem: "A postoperative patient who received morphine has pupils documented as 'pinpoint.' The nurse correctly interprets this finding as:", opts: [
+    O("Intense miosis - opioids constrict the pupils even beyond normal light-driven constriction.", true, "Opioids such as morphine cause miosis so intense the pupils are described as pinpoint; it is a drug effect on pupil size that the assessor must factor into the neurologic check."),
+    O("Mydriasis - the pupils have dilated widely in reaction to the surgical pain.", false, "Mydriasis is dilation (radial muscle, sympathetic); pinpoint describes the extreme opposite - constriction."),
+    O("A failed photopupillary reflex showing the oculomotor nerve has been damaged.", false, "Pinpoint pupils after morphine are the chapter's named drug effect; a damaged CN III would more typically leave a pupil unable to constrict, not pinpoint."),
+    O("Evidence that the antimuscarinic eyedrops from surgery are still working.", false, "Antimuscarinic drops DILATE the pupil (mydriasis and cycloplegia); they cannot explain a pinpoint pupil.")
+  ], tp: "ANSWER KEY — Correct answer: Intense miosis - opioids constrict the pupils even beyond normal light-driven constriction.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: ["presbyopia"], stem: "A 47-year-old patient laughs that 'my arms have gotten shorter' because she now holds her newspaper at arm's length to read it. Which explanation should the nurse give?", opts: [
+    O("With age the lens loses its ability to change shape, so focusing on close objects weakens - this is presbyopia, often evident after 40.", true, "Presbyopia: the aging lens stiffens, accommodation for near objects fades, and print drifts to arm's length - the chapter's own example, expected after age 40."),
+    O("Her eye has become nearsighted, focusing light in front of the retina, and it will keep worsening every year.", false, "Nearsightedness blurs DISTANT vision (focus in front of the retina); this patient's problem is near focus, and it is a lens-flexibility loss, not a focus-position error."),
+    O("The pupils have enlarged with age and are letting in too much light for close work.", false, "Aging pupils actually stay SMALLER (iris muscles grow less efficient); enlarged pupils are not the presbyopia mechanism."),
+    O("Her tear glands have dried the cornea, so print looks blurred until she blinks it clear.", false, "Dry eyes do occur with aging (less active lacrimal glands), but the arm's-length reading pattern is specifically the lens losing accommodation.")
+  ], tp: "ANSWER KEY — Correct answer: With age the lens loses its ability to change shape, so focusing on close objects weakens - this is presbyopia, often evident after 40.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: ["diabetic retinopathy"], stem: "A patient with long-standing diabetes mellitus asks why she needs regular retinal examinations even though her vision 'seems fine.' Which response is best?", opts: [
+    O("Over time, retinal vessels develop tiny aneurysms that can rupture and bleed; the scar tissue that follows can replace retinal tissue and end in blindness, so changes must be caught early.", true, "Diabetic retinopathy: microaneurysms rupture -> bleeding -> scar tissue replaces retina -> blindness. The damage builds before symptoms warn her, which is exactly why scheduled examinations matter."),
+    O("The examinations are mainly to check whether her glasses prescription has changed as she ages and to update her lenses before the old ones strain her eyes.", false, "Refraction checks change lenses; the retinal exam hunts vessel damage and bleeding that glasses cannot correct."),
+    O("Diabetes dries out the lacrimal glands year by year, and the examiner checks the surface of the cornea for ulcers and scarring at each annual visit.", false, "Dry eyes from less active lacrimal glands are an aging change; the named diabetic eye threat in the chapter is retinal vessel disease."),
+    O("Her optic disc needs watching because diabetes commonly pushes it forward against the retina, the same way pressure from a head injury would.", false, "A bulging disc (papilledema) signals raised intracranial pressure, not diabetes; the diabetic disc/retina risk is microaneurysm and scarring.")
+  ], tp: "ANSWER KEY — Correct answer: Over time, retinal vessels develop tiny aneurysms that can rupture and bleed; the scar tissue that follows can replace retinal tissue and end in blindness, so changes must be caught early.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: ["retrolental fibroplasia"], stem: "A nurse is caring for a preterm infant born at 30 weeks' gestation who is receiving oxygen therapy. Which understanding guides the nurse's monitoring?", opts: [
+    O("Very high oxygen concentrations can constrict the developing retinal vessels, starving the retina and causing blindness, so oxygen is given with great care in preemies under 32 weeks.", true, "Retrolental fibroplasia (retinopathy of prematurity): high O2 constricts developing retinal vessels, the deprived retina dies, and fibrous tissue replaces it - blindness caused by the therapy itself if concentrations run too high."),
+    O("Oxygen is dangerous to preemies mainly because it dries out the cornea, and the dry surface then ulcerates and scars over the pupil.", false, "The corneal surface must stay moist, but the oxygen catastrophe named for preemies is retinal - vessel constriction and a fibrous retrolental membrane."),
+    O("The infant's pupils cannot constrict against the bright incubator lights, so high oxygen levels must be kept low to protect them.", false, "Pupil constriction is the photopupillary reflex and is unrelated to oxygen dosing; the risk runs through the retinal blood vessels."),
+    O("Excess oxygen suppresses the image from one eye in the brain, causing a lazy eye that cannot be corrected once the child is older.", false, "Suppression amblyopia comes from unfocused eyes and cortical suppression, not from oxygen; the O2 disorder is retrolental fibroplasia.")
+  ], tp: "ANSWER KEY — Correct answer: Very high oxygen concentrations can constrict the developing retinal vessels, starving the retina and causing blindness, so oxygen is given with great care in preemies under 32 weeks.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: [], stem: "A patient's Snellen chart result is documented as 20/200. The patient asks what that means. Which explanation is correct?", opts: [
+    O("'You see at 20 feet what a person with normal vision sees at 200 feet - that level is considered legally blind.'", true, "Snellen fractions compare the patient's distance vision to normal: 20/200 is severely impaired vision and is the chapter's stated legal-blindness line."),
+    O("'Your vision is twice as good as normal, since 200 is a larger number than the usual 20.'", false, "The second number is the distance at which a NORMAL eye reads the same line; a bigger second number means worse, not better, vision."),
+    O("'It means you read the chart correctly 20 times out of 200 attempts during the test.'", false, "The fraction is a distance comparison (patient's 20 feet vs normal eye's distance for that line), not a count of attempts."),
+    O("'You need glasses only for reading, because the test measures near vision at 20 inches.'", false, "The Snellen chart is read at 20 FEET and measures distance acuity; near-vision problems are a different assessment (and presbyopia's territory).")
+  ], tp: "ANSWER KEY — Correct answer: 'You see at 20 feet what a person with normal vision sees at 200 feet - that level is considered legally blind.'. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["corneal reflex"], stem: "A nurse touches a wisp of cotton lightly to a patient's cornea and notes there is no blink and no tearing. Knowing the corneal reflex arc, the nurse understands the sensory limb of this reflex is carried by:", opts: [
+    O("The ophthalmic branch of the trigeminal nerve (CN V)", true, "CN V's ophthalmic branch supplies the sensory fibers of the corneal surface; the information is interpreted as pain in the parietal lobe. The motor limb (tearing and blinking) is CN VII - absent response can sit in either limb."),
+    O("The optic nerve (CN II) leaving the retina", false, "CN II is the afferent limb of the LIGHT reflex (photopupillary); the corneal surface is sensed by trigeminal fibers, not retinal ones."),
+    O("The oculomotor nerve (CN III) within the iris", false, "CN III carries the parasympathetic motor fibers for pupil constriction and most eye movement - not sensation from the cornea."),
+    O("The facial nerve (CN VII) and its motor fibers", false, "CN VII is the MOTOR limb here - it produces the tearing and blinking. The question asks for the sensory limb, which is CN V.")
+  ], tp: "ANSWER KEY — Correct answer: The ophthalmic branch of the trigeminal nerve (CN V). DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["photopupillary reflex"], stem: "A nurse shines a penlight into a patient's right eye. The right pupil constricts, and the left pupil constricts as well even though no light was directed at it. The nurse documents this as:", opts: [
+    O("A normal direct and consensual response - the left pupil 'consents' to constrict with the stimulated eye.", true, "Consensual constriction is expected: when the photopupillary reflex fires in one eye, the other pupil constricts too; both responses are assessed in an eye examination."),
+    O("An abnormal finding suggesting the light has damaged the left retina.", false, "The left pupil's constriction is a normal reflex partnership, not damage; damage would more likely show as a pupil that fails to respond."),
+    O("Evidence that the patient's sympathetic fibers are overactive on the left side.", false, "Sympathetic activity DILATES pupils (radial muscle); a constricting left pupil is parasympathetic work via CN III - the normal reflex."),
+    O("A sign the patient is developing pinpoint pupils from an opioid overdose.", false, "Pinpoint pupils are a resting drug effect of opioids; a pupil that constricts briskly to light (with its partner) is demonstrating a healthy reflex.")
+  ], tp: "ANSWER KEY — Correct answer: A normal direct and consensual response - the left pupil 'consents' to constrict with the stimulated eye.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: ["accommodation"], stem: "A nurse tests a patient's near response by moving a pencil from arm's length to 6 inches in front of the patient's eyes. Which set of changes is expected as the pencil comes close?", opts: [
+    O("The lens becomes fatter, the pupils constrict, and the eyes converge toward the nose.", true, "Accommodation's trio: ciliary contraction makes the lens fatter (bending light more acutely for near focus), accompanied by pupillary constriction and convergence - all three work together to focus both eyes on one near object."),
+    O("The lens becomes thinner, the pupils dilate, and the eyes drift slightly outward.", false, "That set describes distance viewing: a thinner lens bends light less, and dilation belongs to dim light/distance - the exact opposite of the near response."),
+    O("The lens stays the same shape, but the cornea increases its curvature to bend the light.", false, "The cornea's refraction cannot change; the LENS is the structure that changes its shape and refracting power."),
+    O("The vitreous humor shifts forward, pushing the lens against the cornea for near focus.", false, "The vitreous is a gel that holds the retina in place; it plays no role in focusing - ciliary muscle and lens do that work.")
+  ], tp: "ANSWER KEY — Correct answer: The lens becomes fatter, the pupils constrict, and the eyes converge toward the nose.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: [], stem: "A patient newly diagnosed with a cataract asks the nurse why his vision keeps dimming even though 'the back of my eye is healthy.' Which explanation is correct?", opts: [
+    O("The clouded lens blocks light from reaching the retina, so the photoreceptors are never stimulated even though they work.", true, "Every structure on the light pathway must stay transparent; a cataract clouds the lens, light cannot reach the rods and cones, and vision fails at the doorway rather than at the retina."),
+    O("The cataract has destroyed the rods and cones, so the retina can no longer respond to light.", false, "The patient's premise is right - his retina is healthy; the failure is light delivery (a blocked pathway), not receptor destruction."),
+    O("The lens clouding raises the pressure inside his eye, which is crushing the optic nerve.", false, "Raised intraocular pressure from blocked aqueous drainage is glaucoma; a cataract is an opacity problem on the light path, not a pressure problem."),
+    O("His optic nerve has stopped carrying impulses to the occipital lobe because of the cloudy lens.", false, "The visual pathway beyond the eye is intact; impulses are never generated because light never reaches the photoreceptors in the first place.")
+  ], tp: "ANSWER KEY — Correct answer: The clouded lens blocks light from reaching the retina, so the photoreceptors are never stimulated even though they work.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: [], stem: "A patient arrives in the emergency department after a chemical splash injury to the left eye, and the eye must be immobilized after irrigation while awaiting the ophthalmologist. Which action is correct?", opts: [
+    O("Cover BOTH eyes loosely, because the eyes move together and covering only the injured one cannot rest it.", true, "The eyes move as a coordinated pair - when one moves, the other moves. Immobilizing an injured eye therefore requires covering both, usually with a loose covering, until the ophthalmologist treats it."),
+    O("Patch the injured eye firmly and instruct the patient to keep the good eye open for balance.", false, "A lone patch fails: the open eye keeps moving and drags the injured eye with it, and firm pressure on an injured globe adds harm."),
+    O("Have the patient hold the injured eye shut with his own hand during transport.", false, "Hand pressure is uncontrolled and tiring, and it still does not stop the paired movement of the eyes; loose bilateral covering does."),
+    O("Instill antimuscarinic drops in the injured eye to paralyze it completely still.", false, "Antimuscarinic drops paralyze accommodation and dilate the pupil - they do not stop the extrinsic muscles that move the eyeball in its orbit.")
+  ], tp: "ANSWER KEY — Correct answer: Cover BOTH eyes loosely, because the eyes move together and covering only the injured one cannot rest it.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: ["otitis media"], stem: "The mother of a 2-year-old patient asks the nurse why her toddler has had three middle ear infections this winter when adults rarely get them. Which explanation is correct?", opts: [
+    O("A child's eustachian tube is shorter and more horizontal, so nasal drainage from a cold easily reaches the middle ear; the tube lengthens and verticalizes with growth.", true, "Otitis media follows the plumbing: a sniffle forces drainage from the throat region into the short, horizontal child tube and middle ear. As the tube grows longer and more vertical, bacteria enter less easily - children 'outgrow' the infections."),
+    O("Toddlers produce far more cerumen than adults do, and the packed wax traps bacteria against the eardrum until the middle ear becomes infected.", false, "Cerumen protects the canal and can blunt the drum's vibration if packed, but it is not the reason middle ear infections cluster in toddlers."),
+    O("A child's ossicles are still fused together at this age, so infected fluid cannot drain past them and collects inside the middle ear.", false, "Fused ossicles are a vibration-transmission problem (hearing loss), not the infection route; the route is the eustachian tube from the throat."),
+    O("The tympanic membrane is much thinner in young children, so bacteria from the canal pass straight through it into the middle ear.", false, "Infections reach the middle ear from the throat via the eustachian tube, not by crossing the eardrum from outside.")
+  ], tp: "ANSWER KEY — Correct answer: A child's eustachian tube is shorter and more horizontal, so nasal drainage from a cold easily reaches the middle ear; the tube lengthens and verticalizes with growth.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: ["eustachian tube"], stem: "A patient reports sharp ear pain during an airplane's descent and asks the nurse why it happens. Which explanation is correct?", opts: [
+    O("Cabin pressure changed faster than air could pass through the eustachian tube, so unequal pressure stretched the eardrum and stimulated its pain receptors.", true, "The eustachian tube equalizes pressure across the tympanic membrane; when pressures stay unequal the membrane bulges or depresses, stretches, and fires pain receptors - the takeoff/landing ear pain of the chapter."),
+    O("The descent vibrated the ossicles so violently that the stapes bruised the oval window membrane, and that injury produced the sharp pain.", false, "Descent pain is a pressure problem at the drum, not a vibration injury deep in the middle ear."),
+    O("Cold cabin air hardened the cerumen and pressed it against the eardrum, and the pressure of the packed wax caused the pain.", false, "Wax against the drum blunts hearing; the sharp pain of descent follows membrane stretch from unequal air pressure."),
+    O("Fluid from the inner ear leaked through the oval window into the middle ear during the pressure change and irritated its lining.", false, "Perilymph and endolymph stay within the inner ear labyrinths; descent pain involves middle-ear air pressure and the eardrum.")
+  ], tp: "ANSWER KEY — Correct answer: Cabin pressure changed faster than air could pass through the eustachian tube, so unequal pressure stretched the eardrum and stimulated its pain receptors.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "matrix", kt: [], stem: "A nurse is sorting four patients' hearing problems by where the hearing chain fails. Match each finding to the failure point it represents.", cols: ["Drum cannot vibrate","Ossicle transmission diminished","Organ of Corti / CN VIII impaired","Auditory cortex injured"], rows: [{"t":"A cerumen plug lodged firmly against the tympanic membrane","a":0,"r":"Wax against the drum blunts its vibration, so the vibration is never handed to the ossicles in the first place."},{"t":"Middle ear bones fused together after chronic disease","a":1,"r":"Fused ossicles transmit less vibration - the book's 'bone conduction hearing loss' wording for a middle-ear transmission failure."},{"t":"A factory worker with years of unprotected loud-noise exposure","a":2,"r":"Chronic loud noise damages the organ of Corti/CN VIII - nerve conduction deafness, the same class as ototoxic drug damage and presbycusis."},{"t":"A stroke patient whose temporal lobe cortex was destroyed","a":3,"r":"With receptors and nerve intact, deafness can still result from injury to the primary auditory cortex of the temporal lobe."}], tp: "ANSWER KEY — Correct answer: the matches: A cerumen plug lodged firmly against the tympanic membrane -> Drum cannot vibrate; Middle ear bones fused together after chronic disease -> Ossicle transmission diminished; A factory worker with years of unprotected loud-noise exposure -> Organ of Corti / CN VIII impaired; A stroke patient whose temporal lobe cortex was destroyed -> Auditory cortex injured. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: ["cerumen"], stem: "A 6-year-old is brought in with a bean lodged in his ear canal, inserted yesterday. The parent asks whether the nurse can 'just dig it out with tweezers.' Which response is most appropriate?", opts: [
+    O("Explain that objects must never be inserted into the canal - the bean absorbs moisture and swells, so removal belongs to the provider with proper instruments and visualization.", true, "The chapter's safety rule is absolute: never insert objects into the ear canal - sharp or digging tools can damage the tympanic membrane, and a bean swells with moisture over time, wedging itself tighter and making removal harder."),
+    O("Agree, and use a cotton-tipped applicator to work the bean gently toward the canal opening, where it can then be grasped and lifted out.", false, "Applicators remove very little and tend to push material deeper against the eardrum - the same error as digging, with the same membrane risk."),
+    O("Irrigate the canal forcefully with warm water to float the bean out quickly, repeating the flush until the canal is completely clear.", false, "Water is exactly what makes a bean swell; adding moisture enlarges the obstruction the parent is worried about."),
+    O("Reassure the parent that objects placed in a child's canal almost always work themselves out within a few days, so no visit is needed unless pain starts.", false, "A swelling bean becomes MORE difficult to remove with time, not less; watchful waiting is the wrong direction for this object.")
+  ], tp: "ANSWER KEY — Correct answer: Explain that objects must never be inserted into the canal - the bean absorbs moisture and swells, so removal belongs to the provider with proper instruments and visualization.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: ["vestibular apparatus"], stem: "A patient with an inner ear infection reports severe dizziness, nausea, and vomiting whenever she turns her head. Which nursing action takes priority?", opts: [
+    O("Protect her from falls: keep her seated or in bed with assistance for any position change or ambulation.", true, "Vestibular dysfunction produces vertigo, nausea, and vomiting from conflicting balance signals; a patient who cannot trust her balance is a fall risk first, so assisted movement and a protected environment lead the plan."),
+    O("Encourage her to walk the hallway frequently to retrain the semicircular canals as quickly as possible.", false, "Unassisted hallway walking during active vertigo invites the fall the nurse is supposed to prevent; retraining comes after safety, not instead of it."),
+    O("Dim the room completely and remove her glasses so her eyes stop sending signals that conflict.", false, "Vision is one of the balance inputs - many patients, especially the elderly, rely HEAVILY on visual input; removing glasses and light removes her best remaining balance aid."),
+    O("Restrict all head movement with a firm cervical collar until the infection resolves.", false, "The problem is signaling conflict inside the vestibular apparatus, not neck instability; a collar is not the chapter's answer and unnecessary immobilization adds harm.")
+  ], tp: "ANSWER KEY — Correct answer: Protect her from falls: keep her seated or in bed with assistance for any position change or ambulation.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "multi", kt: [], stem: "A nurse is planning care for an 84-year-old patient using this chapter's expected aging changes in the senses. Which assessment findings should the nurse expect as normal aging rather than new disease? Select all that apply.", opts: [
+    O("Pupils that remain somewhat constricted because the iris muscles are less efficient", true, "Aging change 5 in the chapter: iris muscles weaken, so older pupils usually stay somewhat smaller - an expected finding, not a drug effect to chase."),
+    O("Drier eyes that are more prone to irritation and bacterial infection", true, "Aging change 6: lacrimal glands become less active, so eyes dry out and susceptibility to infection and irritation rises."),
+    O("Loss of high-pitched sounds and consonants such as s, sh, and f", true, "Aging change 3: cumulative hair-cell damage after 60 thins hearing from the top - high pitches and the consonants ch, f, g, s, sh, t, th, z go first."),
+    O("A sudden shower of new floaters reported this morning", false, "A sudden increase in floaters is the chapter's red flag for a possible retinal tear - new and urgent at any age, never filed under normal aging."),
+    O("Gradual fading of taste and smell that began around age 50", true, "Aging change 2: taste and smell begin their gradual decline around 50 - expected, and a nutrition/safety teaching point rather than a sudden-loss workup.")
+  ], tp: "ANSWER KEY — Correct answer: Pupils that remain somewhat constricted because the iris muscles are less efficient; Drier eyes that are more prone to irritation and bacterial infection; Loss of high-pitched sounds and consonants such as s, sh, and f; Gradual fading of taste and smell that began around age 50. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "dropdown", kt: ["glaucoma","mydriasis"], stem: "Complete the nurse's teaching statement for a patient with glaucoma: 'You must check before taking any drug that dilates the pupil, because dilation [[0]] the drainage of aqueous humor, which [[1]] the pressure inside your eye and can speed up damage to the [[2]].'", blanks: [{ o: [O("diminishes", true, "Dilation narrows the drainage route for aqueous humor - the chapter's exact warning: mydriasis diminishes drainage."), O("improves", false, "If dilation improved drainage it would treat glaucoma; in fact it does the opposite and is the hazard."), O("bypasses", false, "Dilation does not reroute fluid around the canals; it reduces the outflow the canals can carry.")] }, { o: [O("raises", true, "Trapped aqueous humor accumulates, so intraocular pressure climbs - the defining danger of glaucoma."), O("lowers", false, "Lowered pressure is what drainage achieves; blocked drainage raises pressure, not lowers it."), O("stabilizes", false, "Pressure does not hold steady when outflow falls behind production; it rises.")] }, { o: [O("retina and optic nerve", true, "Sustained pressure compresses the choroid, chokes the retina's blood supply, and damages the optic nerve - ending in blindness."), O("lens and cornea", false, "The lens clouds in cataract and the cornea scars by injury; glaucoma's pressure victims are the retina and optic nerve."), O("iris and ciliary muscle", false, "The iris and ciliary muscle are the machinery of pupil size and focus, not the structures destroyed by the pressure.")] }], tp: "ANSWER KEY — Correct answer: Blank 1: diminishes; Blank 2: raises; Blank 3: retina and optic nerve. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "multi", kt: ["glaucoma"], grp: "case1", scen: "CASE STUDY — Mrs. Alvarez, 74 years old, has glaucoma in both eyes and is admitted to a medical unit with pneumonia. Her chart shows: intraocular pressure elevated at her last eye visit; home medicines include a miotic eyedrop. New orders today include (1) an antidepressant noted for antimuscarinic effects, to start tonight, and (2) a dilated eye examination tomorrow morning using antimuscarinic eyedrops. On assessment her pupils are 3 mm, equal, round, and reactive; she mentions her vision seems 'a little hazier than last month.' Vital signs: BP 128/76, pulse 84, respirations 18, temperature 99.1°F.", stem: "CASE STUDY 1 of 6 - RECOGNIZE CUES: Which findings in Mrs. Alvarez's presentation require focused follow-up before tonight's new medicines are given? Select all that apply.", opts: [
+    O("Her glaucoma diagnosis with previously elevated intraocular pressure", true, "Glaucoma is the lens through which every pupil-active drug order must be read: pressure is already her weak point."),
+    O("The new antidepressant's noted antimuscarinic effects", true, "Antimuscarinic effects mean mydriasis; in a glaucoma patient that cuts aqueous drainage and can push pressure higher."),
+    O("The order for antimuscarinic dilating drops tomorrow morning", true, "Dilation is the direct mechanical threat to her drainage; a routine exam step becomes a risk event in a glaucoma patient."),
+    O("Her report that vision seems 'a little hazier than last month'", true, "New or worsening vision change in a glaucoma patient is reportable assessment data - retinal/optic damage is the end point being guarded against."),
+    O("Her temperature of 99.1°F and pulse of 84", false, "These fit her pneumonia picture and do not change the eye-drug risk; they are not the cues that gate tonight's medicines.")
+  ], tp: "ANSWER KEY — Correct answer: Her glaucoma diagnosis with previously elevated intraocular pressure; The new antidepressant's noted antimuscarinic effects; The order for antimuscarinic dilating drops tomorrow morning; Her report that vision seems 'a little hazier than last month'. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "matrix", kt: ["mydriasis","miosis"], grp: "case1", scen: "CASE STUDY — Mrs. Alvarez, 74 years old, has glaucoma in both eyes and is admitted to a medical unit with pneumonia. Her chart shows: intraocular pressure elevated at her last eye visit; home medicines include a miotic eyedrop. New orders today include (1) an antidepressant noted for antimuscarinic effects, to start tonight, and (2) a dilated eye examination tomorrow morning using antimuscarinic eyedrops. On assessment her pupils are 3 mm, equal, round, and reactive; she mentions her vision seems 'a little hazier than last month.' Vital signs: BP 128/76, pulse 84, respirations 18, temperature 99.1°F.", stem: "CASE STUDY 2 of 6 - ANALYZE CUES: Match each agent or event in Mrs. Alvarez's care to its effect on pupil size and her glaucoma risk.", cols: ["Dilates pupil - raises pressure risk","Constricts pupil","No direct pupil effect"], rows: [{"t":"Atropine-type antimuscarinic eyedrops for tomorrow's exam","a":0,"r":"Antimuscarinic drops block the circular muscle: mydriasis plus cycloplegia - which is exactly why they endanger her drainage."},{"t":"Her home miotic eyedrop","a":1,"r":"Miotic agents constrict the pupil - the named opposite class to the mydriatics threatening her pressure."},{"t":"The new antidepressant with antimuscarinic effects","a":0,"r":"A systemic drug with antimuscarinic effects inherits the eyedrop's hazard: mydriasis that diminishes aqueous drainage."},{"t":"Morphine, if ordered for her pleuritic pain","a":1,"r":"Opioids cause intense miosis - pinpoint pupils - a constricting effect, though it would cloud her pupil assessment."}], tp: "ANSWER KEY — Correct answer: the matches: Atropine-type antimuscarinic eyedrops for tomorrow's exam -> Dilates pupil - raises pressure risk; Her home miotic eyedrop -> Constricts pupil; The new antidepressant with antimuscarinic effects -> Dilates pupil - raises pressure risk; Morphine, if ordered for her pleuritic pain -> Constricts pupil. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["glaucoma"], grp: "case1", scen: "CASE STUDY — Mrs. Alvarez, 74 years old, has glaucoma in both eyes and is admitted to a medical unit with pneumonia. Her chart shows: intraocular pressure elevated at her last eye visit; home medicines include a miotic eyedrop. New orders today include (1) an antidepressant noted for antimuscarinic effects, to start tonight, and (2) a dilated eye examination tomorrow morning using antimuscarinic eyedrops. On assessment her pupils are 3 mm, equal, round, and reactive; she mentions her vision seems 'a little hazier than last month.' Vital signs: BP 128/76, pulse 84, respirations 18, temperature 99.1°F.", stem: "CASE STUDY 3 of 6 - PRIORITIZE HYPOTHESES: Which nursing action should come first?", opts: [
+    O("Hold the dilating-drop plan and the antimuscarinic antidepressant, and contact the prescriber and ophthalmologist before either is given.", true, "The chapter's immediate intervention for glaucoma is to question and hold any pupil-dilating (mydriatic or antimuscarinic) order and notify the prescriber - pressure already elevated plus two dilating agents is the top hypothesis to act on."),
+    O("Give both medicines as ordered, then measure her pupils every hour to catch any pressure rise early.", false, "Monitoring after the fact accepts the harm mechanism: once dilation cuts drainage, pressure climbs - the safe move is to stop the collision before it happens."),
+    O("Give the antidepressant tonight but skip only the eyedrops, since eyedrops act directly on the eye.", false, "Antimuscarinic effect is antimuscarinic effect by any route; the antidepressant carries the same mydriasis warning the chapter gives for commonly used antidepressants."),
+    O("Ask Mrs. Alvarez whether she wants the eye examination, and follow her preference about the drops.", false, "Patient preference matters, but the safety conflict must be escalated to prescriber/ophthalmologist first - her choice should be informed by that consultation, not substituted for it.")
+  ], tp: "ANSWER KEY — Correct answer: Hold the dilating-drop plan and the antimuscarinic antidepressant, and contact the prescriber and ophthalmologist before either is given.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "multi", kt: ["PERRLA"], grp: "case1", scen: "CASE STUDY — Mrs. Alvarez, 74 years old, has glaucoma in both eyes and is admitted to a medical unit with pneumonia. Her chart shows: intraocular pressure elevated at her last eye visit; home medicines include a miotic eyedrop. New orders today include (1) an antidepressant noted for antimuscarinic effects, to start tonight, and (2) a dilated eye examination tomorrow morning using antimuscarinic eyedrops. On assessment her pupils are 3 mm, equal, round, and reactive; she mentions her vision seems 'a little hazier than last month.' Vital signs: BP 128/76, pulse 84, respirations 18, temperature 99.1°F.", stem: "CASE STUDY 4 of 6 - GENERATE SOLUTIONS: While the orders are being reviewed, which nursing actions belong in Mrs. Alvarez's plan of care? Select all that apply.", opts: [
+    O("Assess and document pupil size and reactivity (PERRLA) before any pupil-active drug is administered.", true, "The chapter's assessment rule: pupil size and reactivity are assessed before any drug that can dilate the pupil is given - her 3 mm reactive baseline is already charted for comparison."),
+    O("Review her full medication list for other antimuscarinic drugs before they are administered.", true, "The medication-list review for antimuscarinic agents - including common antidepressants - is a named priority assessment in glaucoma care."),
+    O("Teach her to check whether any future new drug has pupil-dilating effects before taking it.", true, "Patient education in the chapter: check every new drug - including antidepressants - for antimuscarinic, pupil-dilating effects."),
+    O("Tell her the hazier vision is expected at her age and needs no follow-up unless it suddenly worsens.", false, "Vision changes in a glaucoma patient are to be reported and assessed promptly - retinal damage does not reverse, so 'expected at her age' is the wrong disposition."),
+    O("Confirm with the ophthalmologist whether tomorrow's examination truly requires dilation before drops are instilled.", true, "Routine dilation plans are checked against the glaucoma history with the ophthalmologist before drops are given - a named 'next' intervention in the chapter.")
+  ], tp: "ANSWER KEY — Correct answer: Assess and document pupil size and reactivity (PERRLA) before any pupil-active drug is administered.; Review her full medication list for other antimuscarinic drugs before they are administered.; Teach her to check whether any future new drug has pupil-dilating effects before taking it.; Confirm with the ophthalmologist whether tomorrow's examination truly requires dilation before drops are instilled.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["glaucoma"], grp: "case1", scen: "CASE STUDY — Mrs. Alvarez, 74 years old, has glaucoma in both eyes and is admitted to a medical unit with pneumonia. Her chart shows: intraocular pressure elevated at her last eye visit; home medicines include a miotic eyedrop. New orders today include (1) an antidepressant noted for antimuscarinic effects, to start tonight, and (2) a dilated eye examination tomorrow morning using antimuscarinic eyedrops. On assessment her pupils are 3 mm, equal, round, and reactive; she mentions her vision seems 'a little hazier than last month.' Vital signs: BP 128/76, pulse 84, respirations 18, temperature 99.1°F.", stem: "CASE STUDY 5 of 6 - TAKE ACTION: The nurse calls the prescriber about the two orders. Which statement best carries the clinical concern?", opts: [
+    O("'Mrs. Alvarez has glaucoma. Both orders dilate the pupil, which reduces aqueous drainage and can raise her pressure further - can we review them before either is given?'", true, "The message names the diagnosis, the shared mechanism (mydriasis -> less drainage -> higher pressure), and asks for review of BOTH orders - the complete safety communication."),
+    O("'Mrs. Alvarez is quite anxious about her eye examination tomorrow and would like to postpone it until her pneumonia has completely cleared.'", false, "Framing the call as patient anxiety hides the pharmacologic collision; the prescriber needs the drug-disease mechanism, not a scheduling preference."),
+    O("'Her pupils are 3 mm, equal, and reactive this morning, so both of the new medicines should be safe to start tonight as ordered.'", false, "A normal baseline does not neutralize the hazard - the chapter's rule is to question dilating orders in glaucoma patients BEFORE administration, not to clear them with one good assessment."),
+    O("'I have already given the antidepressant, but I held the eyedrops, because drops act directly on the eye and seemed riskier.'", false, "Giving one dilating agent while holding the other keeps half the risk and reports it after the fact; both orders needed review before either was given.")
+  ], tp: "ANSWER KEY — Correct answer: 'Mrs. Alvarez has glaucoma. Both orders dilate the pupil, which reduces aqueous drainage and can raise her pressure further - can we review them before either is given?'. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["glaucoma"], grp: "case1", scen: "CASE STUDY — Mrs. Alvarez, 74 years old, has glaucoma in both eyes and is admitted to a medical unit with pneumonia. Her chart shows: intraocular pressure elevated at her last eye visit; home medicines include a miotic eyedrop. New orders today include (1) an antidepressant noted for antimuscarinic effects, to start tonight, and (2) a dilated eye examination tomorrow morning using antimuscarinic eyedrops. On assessment her pupils are 3 mm, equal, round, and reactive; she mentions her vision seems 'a little hazier than last month.' Vital signs: BP 128/76, pulse 84, respirations 18, temperature 99.1°F.", stem: "CASE STUDY 6 of 6 - EVALUATE OUTCOMES: The prescriber switches the antidepressant to one without antimuscarinic effects, and the ophthalmologist performs a modified examination without dilating drops. Which outcome best shows the plan protected Mrs. Alvarez?", opts: [
+    O("Her pupils remain at their 3 mm reactive baseline, she reports no further haziness, and her follow-up intraocular pressure is no higher than her previous reading.", true, "Evaluation closes the loop on the mechanism: no dilation occurred, no new vision change appeared, and the pressure - the variable the whole case guarded - stayed controlled."),
+    O("Her pneumonia temperature normalizes by discharge and her breathing eases, showing the medication changes worked as intended.", false, "Fever resolution evaluates the pneumonia treatment, not the eye-safety plan; the case's success must be measured at the eye and its pressure."),
+    O("She states she is pleased that the eye examination was shorter and less uncomfortable than she had expected it to be.", false, "Satisfaction is welcome but does not evaluate the clinical risk; pressure and vision findings are the outcome data for this problem."),
+    O("Her pupils measure 6 mm and react sluggishly at discharge, which the nurse charts as an expected effect of her new medicines.", false, "New dilation with sluggish reactivity after the plan was supposed to PREVENT dilation signals the hazard slipped through - the opposite of the intended outcome.")
+  ], tp: "ANSWER KEY — Correct answer: Her pupils remain at their 3 mm reactive baseline, she reports no further haziness, and her follow-up intraocular pressure is no higher than her previous reading.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 13: Sensory System</h1>';
+  h += '<div class="sub">Brutal mode | Herlihy, Anatomy & Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

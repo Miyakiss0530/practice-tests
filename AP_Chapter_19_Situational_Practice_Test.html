@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 19 - Functions of the Blood Vessels - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK (SITUATIONAL / BRUTAL MODE) ============ */
+/* Herlihy Chapter 19: Functions of the Blood Vessels — brutal situational items plus one NGN case (grp NGN19). */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Blood Pressure Assessment and Interpretation";
+var CB = "Cardiac Output, Resistance, and Vessel Tone";
+var CC = "Reflex Responses and Positional Changes";
+var CD = "Capillary Forces, Edema, and Organ Perfusion";
+var CE = "Redistribution, Temperature, Aging, and Exercise";
+var CATS = [CA, CB, CC, CD, CE];
+var KEYTERMS = ["blood pressure", "pulse pressure", "mean arterial blood pressure", "white coat hypertension", "cardiac output", "systemic vascular resistance", "vasodilation", "vasoconstriction", "baroreceptor reflex", "postural hypotension", "reflex tachycardia", "carotid sinus syncope", "Valsalva maneuver", "oncotic pressure", "filtration", "edema", "pulmonary edema", "ischemia"];
+var BLUEPRINT = {"Blood Pressure Assessment and Interpretation": {"name": "Blood Pressure Assessment and Interpretation", "count": 8, "types": {"single": 8}}, "Cardiac Output, Resistance, and Vessel Tone": {"name": "Cardiac Output, Resistance, and Vessel Tone", "count": 6, "types": {"single": 5, "multi": 1}}, "Reflex Responses and Positional Changes": {"name": "Reflex Responses and Positional Changes", "count": 14, "types": {"single": 10, "order": 1, "multi": 2, "matrix": 1}}, "Capillary Forces, Edema, and Organ Perfusion": {"name": "Capillary Forces, Edema, and Organ Perfusion", "count": 7, "types": {"single": 6, "multi": 1}}, "Redistribution, Temperature, Aging, and Exercise": {"name": "Redistribution, Temperature, Aging, and Exercise", "count": 7, "types": {"single": 6, "multi": 1}}};
+BANK.push({ cat: CA, type: "single", kt: ["white coat hypertension", "blood pressure"], stem: "A clinic client sits down and the first reading is 158/94 mm Hg. The client says, \"I get nervous the minute I see that cuff.\" Which action should the nurse take next?", opts: [O("Seat the client quietly for several minutes, then record the pressure a second or third time.", true, "A first high reading in an anxious client may reflect the setting itself; the chapter directs repeating the recording after the patient has relaxed before any conclusion is drawn."), O("Chart the reading as the client's baseline and schedule a hypertension workup from this visit.", false, "Diagnosis and treatment are never based on a single recording, and an anxious first reading is exactly the pattern that must be rechecked."), O("Tell the client the reading proves the arteries are already damaged and damage cannot be reversed.", false, "Nothing has been proven by one reading, and frightening the client will raise the next reading further."), O("Repeat the measurement immediately while asking the client questions to take the client's mind off it.", false, "Talking during a recording corrupts it, and an immediate repeat gives no time for the client to relax.")], tp: "One anxious reading is a reason to recheck properly, never a reason to diagnose. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CA, type: "single", kt: ["blood pressure"], stem: "A student nurse measures a blood pressure with an oversized cuff while the client sits on the exam table with legs dangling and chats with a family member. Which statement by the instructor is correct?", opts: [O("\"Redo it: proper cuff size, seated with feet on the floor, and no talking during the reading.\"", true, "All three corrections come straight from the chapter's technique rules: cuff size, seated position with feet down, and silence during the recording."), O("\"The technique was acceptable, because minor details rarely change a blood pressure value.\"", false, "The chapter notes that over 90% of clinic recordings in one study violated proper procedure — details are the measurement."), O("\"Redo it standing, because a standing reading is always the most accurate one to chart.\"", false, "The chapter's specified position is sitting with feet on the floor, not standing."), O("\"Keep the chatting, because a relaxed conversation lowers the reading to its true value.\"", false, "The chapter states the person should not be talking during the recording, however relaxed it feels.")], tp: "Technique is not decoration: cuff, seat, feet, silence. [Framework: Safety First]" });
+BANK.push({ cat: CA, type: "single", kt: ["blood pressure", "pulse pressure"], stem: "A client's serial readings are 118/74, 116/72, and 114/70 mm Hg. Which interpretation should the nurse document?", opts: [O("The client is normotensive, with all readings below 120 systolic and below 80 diastolic.", true, "Every reading sits under the chapter's normal adult limits of less than 120 and less than 80."), O("The client is hypertensive, because the systolic values are all above the 110 mm Hg cutoff.", false, "The chapter's normal systolic limit is less than 120, not 110; these readings fall inside normal."), O("The client is hypotensive, because the diastolic values are all below the 80 mm Hg cutoff.", false, "A diastolic below 80 is part of a normal reading, not evidence that pressure is too low."), O("The client has a pulse pressure problem, because each reading's two numbers are far apart.", false, "The gaps of about 44 mm Hg match the chapter's own normal worked example of 116/72.")], tp: "Judge a reading against the chapter limits — under 120 and under 80 is normal, and a gap near 44 is expected. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CA, type: "single", kt: ["blood pressure"], stem: "A 2-year-old's blood pressure is measured at 95/65 mm Hg, and a parent asks why it is so much lower than the parent's own 118/76 mm Hg. Which response by the nurse is correct?", opts: [O("\"95/65 is the normal reading for a 2-year-old; blood pressure values vary with age, gender, and size.\"", true, "The chapter gives 95/65 as normal for a 2-year-old and states readings vary with age, gender, and size."), O("\"Your child is hypotensive and in early shock, so we need to repeat this reading every 15 minutes.\"", false, "95/65 is the chapter's stated normal for this age; labeling it shock would alarm the family without cause."), O("\"Children and adults share the same normal values, so this reading was probably taken incorrectly.\"", false, "Values differ by age and size; the child's reading is normal for a child even though it is below adult values."), O("\"Your child's vessels are failing to constrict, and the provider will likely start a vasopressor today.\"", false, "Nothing in a normal age-appropriate reading supports vessel failure or a pressure-raising drug.")], tp: "Use the right ruler for the age: 95/65 is normal at 2 years. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CA, type: "single", kt: ["mean arterial blood pressure"], stem: "An ICU client's blood pressure is 90/60 mm Hg. The team is most concerned about whether the organs are actually being perfused. Which calculated value should the nurse report as the pressure the organs \"feel\"?", opts: [O("The mean arterial pressure: two-thirds of 60 plus one-third of 90, which equals 70 mm Hg.", true, "The organs are perfused by the mean arterial pressure, calculated as 2/3 diastolic plus 1/3 systolic — here, 40 plus 30 equals 70."), O("The pulse pressure: 90 minus 60, which equals 30 mm Hg, reported as the perfusion pressure.", false, "30 mm Hg is the pulse pressure, the gap between the numbers; the organs feel the mean arterial pressure instead."), O("The systolic pressure alone: 90 mm Hg, reported because organs are perfused only at the peak.", false, "Perfusion tracks the weighted mean, not the brief systolic peak, which is why diastole is weighted twice."), O("The diastolic pressure alone: 60 mm Hg, reported because organs rest during diastole.", false, "Diastole carries the heavier weight in the formula, but the reported value is the full weighted mean of 70.")], tp: "Organs feel the mean, not the peak: weight diastole twice, systole once. [Framework: ABCs]" });
+BANK.push({ cat: CA, type: "single", kt: ["blood pressure"], stem: "A client with a long history of uncontrolled elevated blood pressure reports a sudden severe headache and slurred speech, and the right arm is weak. Which interpretation should guide the nurse's first response?", opts: [O("A vessel may have ruptured in the brain; this is an emergency needing immediate provider notification and monitoring.", true, "The chapter ties chronically elevated pressure to vessel rupture, and a ruptured brain vessel is a major cause of stroke with loss of speech and paralysis."), O("The findings are expected with high readings and will resolve once the client rests quietly for an hour.", false, "New speech loss and one-sided weakness are stroke findings, not expected effects to observe through."), O("The findings suggest the pressure has fallen too low, so the nurse should lay the client flat and recheck later.", false, "This history and presentation point to rupture from elevated pressure, not to a low-pressure event."), O("The findings are unrelated to blood pressure, so the nurse should finish routine vitals on the other clients first.", false, "Delay loses brain; rupture in the brain is the chapter's named catastrophic outcome of elevated pressure.")], tp: "Elevated pressure plus new neuro deficits is a stroke picture until proven otherwise — move first. [Framework: ABCs]" });
+BANK.push({ cat: CA, type: "single", kt: ["blood pressure"], stem: "A client's blood pressure has fallen steadily over two hours to 78/48 mm Hg. The skin is cool, the client is restless, and urine output has nearly stopped. Which statement best captures the nurse's priority concern?", opts: [O("Blood flow to the vital organs is falling, the client is in shock, and without immediate treatment the client may die.", true, "The chapter states the hypotension picture directly: too-low pressure cuts flow to vital organs, the person is in shock, and untreated shock can kill."), O("The falling pressure is protective, because lower pressure rests the heart and lets the organs recover on their own.", false, "Pressure this low starves organs of flow; rest for the heart is not what a shock picture delivers."), O("The main concern is vessel rupture, because low pressure stretches weakened arterial walls until they burst.", false, "Rupture is the danger of pressure that is too high; the danger here is failing organ perfusion."), O("The findings can be rechecked at the next routine round, because restlessness and low output are minor changes.", false, "Restlessness, cool skin, and vanishing urine output beside a falling pressure form an unstable, deteriorating picture.")], tp: "Too low is as lethal as too high: falling pressure means falling organ flow. [Framework: Stable vs Unstable]" });
+BANK.push({ cat: CB, type: "single", kt: ["cardiac output"], stem: "A client's monitor shows the heart rate fall from 88 to 52 beats/min while the volume ejected with each beat also decreases after a new medication. What should the nurse expect to happen to the blood pressure, and why?", opts: [O("It should fall, because both determinants of cardiac output have moved in the downward direction.", true, "Cardiac output is set by heart rate and stroke volume; when both decline, output declines, and pressure follows output down."), O("It should rise, because a slower heart fills longer and always ejects enough to raise the pressure.", false, "The stem states ejected volume fell as well; a decline in both rate and volume lowers output rather than raising it."), O("It should stay unchanged, because heart rate and stroke volume do not influence blood pressure.", false, "Heart rate and stroke volume are exactly what determine cardiac output, one of the two factors in the pressure equation."), O("It should rise sharply, because the vessels sense a slow heart and constrict without any nerve signal.", false, "Vessel constriction is driven through reflex pathways; the direct, expected effect of falling output is falling pressure.")], tp: "Rate down plus volume down equals output down — and pressure follows output. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CB, type: "single", kt: ["cardiac output"], stem: "During exercise testing, a client's ventricular contraction becomes noticeably stronger, ejecting more blood with each beat while the rate stays the same. Which outcome should the nurse anticipate?", opts: [O("Stroke volume rises, cardiac output rises, and blood pressure rises with the increased output.", true, "Stronger contraction ejects more per beat; with rate unchanged, the greater stroke volume raises output and therefore pressure."), O("Stroke volume falls, cardiac output falls, and blood pressure falls with the decreased output.", false, "A stronger contraction ejects more, not less; every step in this chain runs the wrong direction."), O("Stroke volume rises, but cardiac output falls, because the heart ejects its volume less often now.", false, "Rate stayed the same by the stem, so a larger volume per beat can only increase total output."), O("Blood pressure falls, because stronger contraction empties the ventricles and leaves them depleted.", false, "Ejecting more per beat raises the volume entering the arteries each minute; depletion is not the chapter's model.")], tp: "Stronger squeeze, more per beat, more output, higher pressure. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CB, type: "single", kt: ["vasodilation", "systemic vascular resistance"], stem: "A client receives a medication whose main effect is relaxing the smooth muscle of the arterioles. Thirty minutes later the blood pressure has fallen from 142/88 to 118/76 mm Hg. Which explanation should the nurse give the client?", opts: [O("\"The medicine widened your small arteries, so resistance fell and the pressure behind it fell too.\"", true, "Relaxed arteriolar muscle widens diameter, lowers systemic vascular resistance, and lowers blood pressure — removing the nozzle, in the chapter's analogy."), O("\"The medicine narrowed your small arteries, so resistance rose and the pressure behind it fell too.\"", false, "Narrowing raises resistance and raises pressure; the fall here followed widening, not narrowing."), O("\"The medicine worked by shrinking your blood volume, so there was less fluid for the heart to pump.\"", false, "The drug's stated action is on arteriolar muscle and diameter; volume change is a different, slower mechanism."), O("\"The medicine slowed your heart's pacemaker, so fewer beats per minute lowered the pressure.\"", false, "Rate is part of cardiac output, but this drug acted on vessel diameter and resistance, per the stem.")], tp: "Wider arterioles, lower resistance, lower pressure. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CB, type: "single", kt: ["systemic vascular resistance", "vasoconstriction"], stem: "In report, a nurse says a client's pressure rose after widespread arteriolar narrowing. A student asks which term in the pressure equation changed. Which answer is correct?", opts: [O("Systemic vascular resistance rose, because narrowed arterioles offer more resistance to flow.", true, "Arteriolar diameter is the main determinant of systemic vascular resistance, and blood pressure equals output times resistance."), O("Cardiac output rose, because narrowed arterioles force the heart to eject a larger stroke volume.", false, "The change described is in the vessels, not the heart; narrowing raises the resistance term of the equation."), O("Pulse pressure rose, because narrowed arterioles widen the gap between systolic and diastolic values.", false, "Pulse pressure is a calculated gap in one reading, not a term in the equation that determines pressure."), O("Mean arterial pressure rose first, and the higher mean then caused the arterioles to narrow.", false, "This reverses cause and effect: the narrowing came first and raised resistance, which raised the pressure.")], tp: "Diameter changes live in the resistance term of the equation. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CB, type: "single", kt: ["systemic vascular resistance"], stem: "A client with obesity asks why weight is part of the blood pressure plan when the heart \"seems fine.\" Which teaching response is most accurate?", opts: [O("\"Extra fat adds miles of vessels and releases hormones that narrow vessels, so resistance and pressure climb.\"", true, "The chapter gives both mechanisms: added vessel length and fat-secreted constricting hormones each raise systemic vascular resistance."), O("\"Extra fat lowers resistance so much that the heart must push harder, and that extra effort raises pressure.\"", false, "Fat raises resistance rather than lowering it; the pressure climb follows the raised resistance."), O("\"Weight only matters because heavier clients need a larger cuff, and the wrong cuff reads falsely high.\"", false, "Cuff size affects measurement accuracy, but the chapter's obesity mechanism is real added resistance, not artifact."), O("\"Extra fat blocks pressure sensing in the neck, so the brainstem keeps ordering the pressure higher.\"", false, "Blocked sensing is not the chapter's obesity mechanism; vessel length and constricting hormones are.")], tp: "Teach the mechanism, not just the scale: more vessels plus constricting hormones equals higher resistance. [Framework: Maslow]" });
+BANK.push({ cat: CB, type: "multi", kt: ["systemic vascular resistance"], stem: "A nurse reviews factors that are raising a hypertensive client's pressure. Which factors act by raising systemic vascular resistance? Select all that apply.", opts: [O("Arteriolar smooth muscle contracting so the vessel diameter becomes smaller.", true, "Contraction narrows diameter, and narrower arterioles raise systemic vascular resistance."), O("Excess fat tissue adding miles of additional blood vessels to the circulation.", true, "Greater total vessel length is the chapter's obesity route to higher resistance."), O("Hormones secreted by fat tissue that narrow or constrict the blood vessels.", true, "The chapter names fat-secreted constricting hormones as a second obesity route to higher resistance."), O("Arteriolar smooth muscle relaxing so the vessel diameter becomes wider.", false, "Relaxation widens diameter and lowers resistance; it belongs on the pressure-lowering side."), O("A falling heart rate that reduces the volume of blood ejected each minute.", false, "Rate acts through cardiac output, the other term of the equation, not through resistance.")], tp: " Sort each factor into the right side of the equation: diameter, length, and constricting hormones are resistance. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CC, type: "single", kt: ["postural hypotension"], stem: "A client who received a vein-dilating medication stands up quickly to walk to the bathroom and reports feeling faint and dizzy. Which action should the nurse take first?", opts: [O("Assist the client back to a lying or sitting position and check the blood pressure before any walking.", true, "Blood pooled in dilated veins has cut venous return and output, so the brain is underperfused on standing; getting the client back down and checking pressure comes first."), O("Encourage the client to keep walking, because movement will squeeze the leg veins and fix the problem.", false, "Walking a faint client risks a fall and injury; the chapter's lesson for this chain is to rise slowly and in stages, not to push through dizziness."), O("Have the client stand still for ten minutes so the vessels can adjust to the upright position.", false, "Standing still keeps blood pooled in the veins and the brain underperfused — the opposite of a safe response to faintness."), O("Give the client a large glass of water and recheck the pressure at the next scheduled round.", false, "A scheduled recheck delays assessment of an active, symptomatic pressure drop happening right now.")], tp: "Faint on standing after a vein-dilating drug: get the client down, then measure. [Framework: Safety First]" });
+BANK.push({ cat: CC, type: "order", kt: ["postural hypotension"], stem: "A client on a vein-dilating drug is found pale and dizzy after standing. Place the events that produced this episode in the order in which they occurred.", items: [{t: "The drug dilates the veins and blood pools in the venous system", r: "First: venodilation starts the chain by pooling blood in the veins."}, {t: "Less blood returns to the heart, so venous return falls", r: "Second: pooled blood cannot return, so venous return decreases."}, {t: "The myocardium contracts less forcefully as filling falls (Starling effect)", r: "Third: with less filling, contraction weakens by the Starling effect."}, {t: "Cardiac output falls and blood pressure falls with it", r: "Fourth: weaker contraction lowers output, and pressure follows output."}, {t: "The client stands quickly and too little blood reaches the brain", r: "Last: standing on top of the lowered output leaves the brain underperfused, causing dizziness and fainting."}], tp: "Pool, return less, contract less, output less, brain less — in that order. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CC, type: "single", kt: ["postural hypotension"], stem: "An 84-year-old client is starting a new blood pressure medication. Which teaching should the nurse emphasize to prevent a fall at home?", opts: [O("\"Change positions in stages: lie, then sit, then stand slowly, and sit back down if you feel dizzy.\"", true, "The chapter's direct nursing lesson is to get up slowly, moving from lying to sitting to upright, and aging blunts the reflexes that protect against the drop."), O("\"Stand up quickly in the morning, because a fast change gives your reflexes a helpful workout.\"", false, "Rapid standing is the trigger for the dizzy, faint, falling sequence — especially with age-slowed baroreceptors."), O("\"Skip your morning dose whenever you plan to be active, so the medicine cannot lower your pressure.\"", false, "Skipping prescribed doses is not the chapter's teaching; staged position change is the safety strategy."), O("\"Hold onto furniture and keep walking through any dizziness until it passes on its own.\"", false, "Walking through dizziness courts the fall the teaching is meant to prevent; the client should sit or lie back down.")], tp: "Age-slowed reflexes plus a new pressure drug equals staged rising, every time. [Framework: Safety First]" });
+BANK.push({ cat: CC, type: "single", kt: ["reflex tachycardia"], stem: "Shortly after a sublingual nitroglycerin dose, a client with a damaged heart reports worse chest pain. Vitals: BP fell from 138/84 to 96/58 mm Hg, heart rate rose from 76 to 118 beats/min. Which interpretation should the nurse act on?", opts: [O("The drug-driven pressure fall triggered a compensatory rate surge that is overburdening the damaged heart.", true, "This is the chapter's named danger: the reflex rate increase after a drug-caused pressure drop can overburden a damaged heart, causing angina and additional myocardial damage."), O("The rising heart rate shows the nitroglycerin is working, so the worsening chest pain can be observed.", false, "A rate of 118 with worsening pain in a damaged heart is the harm pattern, not a sign of success to observe."), O("The falling pressure proves the chest pain was caused by hypertension, which has now been corrected.", false, "Pain worsened as pressure fell and rate climbed; the picture fits reflex overburdening, not a corrected cause."), O("The vital signs are unrelated to the medication, because nitroglycerin does not affect blood pressure.", false, "The chapter uses nitroglycerin as its very example of a drug causing a sudden pressure decline.")], tp: "Rate surge plus worse pain after a pressure-dropping drug in a damaged heart is a red-flag pattern, not a coincidence. [Framework: Acute vs Chronic]" });
+BANK.push({ cat: CC, type: "single", kt: ["carotid sinus syncope"], stem: "A client faints in a barber's chair immediately after the neck is shaved and a tight collar is fastened. The pulse is slow and the skin is pale. Which explanation fits this event?", opts: [O("Pressure over the carotid sinus fooled the brainstem into reading pressure as high, so it lowered pressure until the client fainted.", true, "External pressure activates the baroreceptors, the medulla falsely interprets a pressure elevation, and its corrective signals drop real pressure enough to cause syncope."), O("Pressure over the carotid sinus blocked all blood flow to the brain, and the faint is purely a plumbing blockage.", false, "The chapter's mechanism is a false reflex signal, not a mechanical blockage of flow by the collar."), O("The shaving stimulated the vagus nerve in the skin of the neck, which directly stopped the heart's pacemaker.", false, "The signal runs from the carotid sinus baroreceptors through the reflex arc; the medulla's misreading drives the event."), O("The tight collar raised the true blood pressure so high that a vessel in the brain suddenly ruptured.", false, "Rupture would produce stroke findings, and this client fainted with a slow pulse — the reflex lowered pressure.")], tp: "A faint triggered by neck pressure is a false-alarm reflex, not a blockage or a rupture. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CC, type: "single", kt: ["Valsalva maneuver"], stem: "A client with coronary artery disease is constipated after surgery and is straining hard at stool. Which action should the nurse take?", opts: [O("Intervene to stop the straining and arrange a stool softener or laxative as prescribed for this client.", true, "Straining is the Valsalva pattern the chapter warns can trigger a fatal dysrhythmia in coronary disease — and it notes the event might have been prevented by a stool softener or laxative."), O("Encourage the client to bear down harder and finish quickly, so the episode is over sooner.", false, "Harder straining intensifies the forced exhalation against closed airways that drives the dangerous reflex burst."), O("Tell the client straining is harmless, because bowel function has no connection to the heart.", false, "The chapter calls a heart attack while straining at stools a rather common occurrence in this population."), O("Leave the client alone for privacy and assess the outcome at the next routine vital-sign round.", false, "Privacy does not outweigh an active, known cardiac risk unfolding behind the bathroom door.")], tp: "In coronary disease, constipation is a cardiac issue: stop the strain, soften the stool. [Framework: Safety First]" });
+BANK.push({ cat: CC, type: "single", kt: ["baroreceptor reflex"], stem: "A hemorrhaging client's pressure drops abruptly. Within minutes the heart rate climbs, the contractions feel stronger, and the extremities cool as vessels narrow. Which statement explains these changes?", opts: [O("They are sympathetic responses driven by the pressure reflex, raising output and resistance to restore pressure.", true, "Many signs in this picture are the sympathetic arm of the baroreceptor reflex at work — faster SA node firing, stronger contraction, and arteriolar constriction — prolonged by adrenal epinephrine and norepinephrine."), O("They are parasympathetic responses, because the vagus nerve speeds the heart whenever pressure falls.", false, "The vagal arm slows the heart and answers a pressure rise; a pressure fall is answered sympathetically."), O("They are signs that the reflex has failed, because a working reflex would keep the rate slow and steady.", false, "A fast rate and narrowed vessels are the reflex working, not failing — failure would leave pressure unrestored."), O("They are caused by the natriuretic peptides, which the heart releases to constrict vessels in a crisis.", false, "ANP and BNP lower pressure by dilating vessels and shrinking volume — the opposite direction from this picture.")], tp: "Cool limbs, racing strong heart, falling pressure: read it as sympathetic compensation, not reflex failure. [Framework: ABCs]" });
+BANK.push({ cat: CC, type: "single", kt: ["baroreceptor reflex"], stem: "A client's pressure spikes suddenly during a painful procedure. Moments later the heart rate slows noticeably even though no rate-slowing drug was given. Which mechanism best explains the slowing?", opts: [O("The pressure surge triggered a vagal discharge that slowed the SA node and reduced cardiac output.", true, "A sudden rise activates the reflex's parasympathetic arm: vagal stimulation decreases heart rate, which decreases output and pressure."), O("The pressure surge triggered sympathetic firing that slowed the SA node to protect the heart.", false, "Sympathetic firing speeds the SA node; slowing after a surge is the vagal arm's signature."), O("The painful procedure exhausted the pacemaker cells, so the rate fell until they could recover.", false, "Pacemaker exhaustion is not the chapter's mechanism; the slowing is an organized reflex response."), O("The arterioles dilated so widely that the heart no longer needed to beat as often each minute.", false, "Vessel dilation accompanies this response, but the rate change itself is driven by vagal discharge to the heart.")], tp: "Surge up, vagus out, rate down. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CD, type: "single", kt: ["pulmonary edema", "filtration"], stem: "A client with heart failure has gained weight rapidly, has crackles in both lungs, and is struggling to breathe while lying flat. Which process is producing the lung findings?", opts: [O("Retained volume has raised filtration pressure, pushing excess water out of the lung capillaries into the tissue spaces.", true, "Heart failure brings hypervolemia; the expanded volume raises capillary filtration pressure, filtration outruns reabsorption, and excess fluid in the lungs impairs oxygenation."), O("Lost albumin has lowered oncotic pressure, pulling water out of the lung capillaries into the tissue spaces.", false, "Protein loss is the nephrotic mechanism; this stem gives volume retention from a failing heart, which acts through filtration pressure."), O("Blocked lymph vessels in the chest are trapping the normal leftover fluid inside the lung tissue.", false, "Lymph blockage is the tumor-compression mechanism and produces a swollen limb pattern, not this bilateral lung picture."), O("Dilated capillary pores are leaking protein that holds water in the lungs after a thermal injury.", false, "Leaky pores with leaked protein describe a severe burn; no burn appears in this stem.")], tp: "Breathing first: match the edema to its mechanism — here, volume up means filtration pressure up. [Framework: ABCs]" });
+BANK.push({ cat: CD, type: "single", kt: ["edema", "oncotic pressure"], stem: "A client with extensive burns develops rapidly worsening swelling across the burned areas during the first day. Which finding in the client's labs and assessment fits the mechanism behind this swelling?", opts: [O("Plasma protein is escaping through dilated capillary pores, weakening the pull that returns water to the blood.", true, "Thermal injury dilates the pores so water and protein escape; less protein inside lowers oncotic pressure and reabsorption, while leaked protein holds water in the tissues."), O("Plasma protein is rising inside the capillaries, strengthening the pull that returns water to the blood.", false, "Protein is leaking out, not accumulating in; a stronger inward pull would reduce swelling, not worsen it."), O("Blood volume is expanding from heart failure, raising the pressure that pushes water out of the capillaries.", false, "That is the heart-failure mechanism; this client's driver is pore dilation and protein leak after thermal injury."), O("Albumin is being lost in large amounts in the urine, lowering the protein level inside the capillaries.", false, "Urinary albumin loss is nephrotic syndrome; the burn loses protein directly through the injured capillary walls.")], tp: "Same swelling, different leak: burns lose protein through the wall, not through the urine. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CD, type: "single", kt: ["edema", "oncotic pressure"], stem: "A client with nephrotic syndrome has marked swelling of the face and legs. Labs show large amounts of albumin in the urine and a low plasma albumin level. Which chain explains the swelling?", opts: [O("Urinary albumin loss lowers plasma protein, the inward pull at the venous end weakens, and water stays in the tissues.", true, "Albuminuria produces hypoalbuminemia; lower plasma oncotic pressure means less reabsorption, so filtered water remains in the interstitium as edema."), O("Urinary albumin loss raises plasma protein, the outward push at the arterial end strengthens, and water floods the tissues.", false, "Albumin in the urine means less albumin in the plasma, and the failing force is the inward oncotic pull, not a stronger outward push."), O("The kidneys retain extra volume, filtration pressure climbs in every capillary, and water is forced into the tissues.", false, "Volume-driven filtration is the heart-failure chain; the labs here point to protein loss as the driver."), O("Albumin in the urine plugs the lymphatic channels, so the leftover tissue fluid has no route back to the blood.", false, "Plugged lymphatics belong to the compression story; nothing here describes lymph blockage.")], tp: "Read the labs into the chain: protein out in urine, pull down, water stays out. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CD, type: "single", kt: ["edema"], stem: "A client with a large pelvic tumor presents with one grossly swollen thigh and leg while the other leg is normal. Which explanation should the nurse give?", opts: [O("\"The tumor is pressing on the lymph vessels, so the fluid they normally return is collecting in that leg.\"", true, "The lymphatics normally return the leftover 15% of filtered fluid; compression impairs that drainage and fluid accumulates in the interstitium of the drained region."), O("\"The tumor is pressing on an artery, so extra blood is being pumped into that leg faster than it can leave.\"", false, "The chapter's tumor mechanism is lymph compression, and arterial inflow pressure is not the collecting force described."), O("\"The tumor has lowered the protein level in your blood, so water is leaking out in both of your legs.\"", false, "Low protein would swell both legs; this swelling is one-sided, matching a local drainage block."), O("\"The tumor is making the heart fail, and the extra blood volume is settling into the lowest leg.\"", false, "Heart-failure edema follows expanded volume and filtration pressure, and would not single out one thigh and leg.")], tp: "One-sided swelling points to a local drainage problem; system-wide causes swell both sides. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CD, type: "single", kt: ["ischemia"], stem: "A client's foot has a poorly healing sore, the toes are painful and dusky, and the skin at the tips is breaking down. Which assessment conclusion is most consistent with these findings?", opts: [O("Blood flow to the tissue is impaired and the tissue is oxygen-deprived, with damage progressing toward gangrene.", true, "This is the chapter's ischemia picture: impaired flow and oxygen deprivation produce tissue damage and pain, and can end in gangrene."), O("Blood flow to the tissue is excessive, and the tissue damage is caused by too much oxygen delivery.", false, "Painful, dusky, breaking-down tissue signals too little delivery, not too much."), O("The findings are a normal part of aging skin and need only routine moisturizing and observation.", false, "Pain, duskiness, and breakdown together describe threatened tissue, not a cosmetic aging change."), O("The findings show the capillaries are exchanging too efficiently, washing nutrients away from the cells.", false, "Exchange cannot wash nutrients away from cells it is failing to reach; delivery itself is impaired here.")], tp: "Pain plus damage plus poor flow is the ischemia triad the chapter warns about — escalate, do not moisturize and watch. [Framework: ABCs]" });
+BANK.push({ cat: CD, type: "multi", kt: ["filtration"], stem: "A nurse is teaching a client how substances move between the capillaries and the cells. Which statements are correct? Select all that apply.", opts: [O("Oxygen and nutrients move out of the capillary into the tissue spaces for the cells to take up and use.", true, "Delivery is the outward half of capillary exchange: oxygen, water, electrolytes, and nutrients such as glucose leave for the cells."), O("Carbon dioxide produced by the cells moves into the tissue fluid and then into the blood in the capillary.", true, "Pickup is the inward half: cellular waste such as carbon dioxide diffuses out of the cell, through the interstitium, and into the capillary blood."), O("The blood within the capillaries carries collected waste onward to organs such as the kidneys and lungs.", true, "The chapter completes the loop: capillary blood delivers waste to the organs of excretion, including the kidneys and lungs."), O("Plasma proteins such as albumin move freely out through the capillary pores along with the water.", false, "Albumin is too large for the pores and normally remains inside the capillaries — that trapping creates oncotic pressure."), O("Substances cross the capillary wall mainly by being pumped against their concentration gradients.", false, "Diffusion, movement downhill from high to low concentration, is the primary process; no pumping is described.")], tp: "Out with the goods, in with the waste, proteins stay home. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CD, type: "single", kt: ["oncotic pressure"], stem: "A client asks why so much of the fluid that leaves the capillaries does not simply stay in the tissues. Which response is most accurate?", opts: [O("\"Most of it is pulled back in at the far end of the capillary, and lymph vessels return the small remainder.\"", true, "About 85% is reabsorbed at the venous end under oncotic pressure, and the lymphatic vessels return the remaining 15% to the circulation."), O("\"Most of it evaporates through the skin before it can collect anywhere in the tissue spaces.\"", false, "Recovery is by venous-end reabsorption and lymphatic return, not evaporation through the skin."), O("\"The cells drink nearly all of it within seconds, so almost none is left in the tissue spaces.\"", false, "Cells take up what they use, but the chapter's recovery routes are capillary reabsorption and lymph drainage."), O("\"It does stay in the tissues permanently, and everyone's tissues slowly swell with age as a result.\"", false, "Fluid that stays is edema, a failure of the balance — not the normal fate of filtered fluid.")], tp: "85 back by the capillary, 15 back by lymph: that split is why blocked lymph swells a limb. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CE, type: "single", stem: "A healthy client trains for a marathon. During a hard run, which pattern of blood flow should the nurse expect?", opts: [O("Flow to the working skeletal muscles climbs sharply while flow through the kidneys and abdomen drops sharply.", true, "Strenuous exercise redirects flow: skeletal muscle rises from 20% to 71% of total flow while kidney and abdomen each fall to 3.5%."), O("Flow to the working skeletal muscles drops sharply while flow through the kidneys and abdomen climbs sharply.", false, "That pattern is the reverse of redistribution; working muscle is the tissue whose share climbs in exercise."), O("Flow to every organ rises by the same percentage, because redistribution keeps all shares equal.", false, "Redistribution means shares change unequally — muscle gains precisely because kidney and abdominal shares fall."), O("Flow to the skin drops sharply, because all extra flow is reserved for the working skeletal muscles.", false, "Skin flow actually rises slightly, from 9% to 11%, to carry heat away during exercise.")], tp: "Exercise is a trade: muscle takes the flow, gut and kidneys give it up, skin takes a little extra for heat. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CE, type: "single", kt: ["vasodilation"], stem: "A client exercising outdoors on a hot day has a flushed face and feels overheated. Which response by the vessels is producing the flush and helping the client?", opts: [O("Skin vessels have widened, bringing warm blood to the surface so heat can radiate away from the skin.", true, "With exercise and temperature elevation the vessels dilate, surface flow increases, and heat radiates from the flushed skin, lowering body temperature."), O("Skin vessels have narrowed, trapping warm blood at the surface so it can cool in the outside air.", false, "Narrowed skin vessels divert blood deep to conserve heat — the cold response, and the opposite of a flush."), O("Skin capillaries have leaked plasma into the tissues, and the swelling is what makes the face look red.", false, "Leakage produces edema, not a heat-losing flush; the flush is increased surface blood flow."), O("The vessels have redirected all skin flow to the kidneys, and the redness is a sign of failing cooling.", false, "Kidney flow falls during exercise, and skin flow rises; the flush signals cooling at work, not failing.")], tp: "Flushed skin in the heat is the radiator open, not a problem to fix. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CE, type: "single", kt: ["vasoconstriction"], stem: "A client stands outside in freezing weather without gloves. The fingers look pale and feel cold. Which vessel response explains the appearance, and what is its purpose?", opts: [O("Skin vessels have narrowed, diverting warm blood into deeper tissues so the body conserves its heat.", true, "Cold triggers constriction of skin vessels, moving warm blood away from the surface into deeper parts of the body to conserve heat."), O("Skin vessels have widened, flooding the surface with warm blood so the fingers stay warm in the cold.", false, "Widening is the heat-losing response; in freezing weather it would waste core heat, and the fingers here are pale, not flushed."), O("Skin capillaries have stopped exchanging, sealing the fingers off until the weather warms up again.", false, "Exchange continues; the pale, cold appearance comes from diverted flow, not sealed capillaries."), O("Veins in the fingers have pooled extra blood, and the pooling is what makes them look pale and cold.", false, "Pooling blood would look full and dusky, and the chapter attributes the cold response to constriction of skin vessels.")], tp: "Cold equals constrict and conserve; heat equals dilate and dump. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CE, type: "single", kt: ["edema", "postural hypotension"], stem: "An older adult reports new ankle swelling by evening, dizziness when rising, and a recent varicose vein diagnosis. Which teaching best connects these findings to the chapter's aging changes?", opts: [O("\"Aging vessels leak more easily, vein valves weaken, and pressure sensors dull — so rise slowly and report worsening swelling.\"", true, "All three findings map to named aging changes: increased capillary permeability raises edema, vein wall and valve changes favor varicose veins, and less sensitive baroreceptors slow positional adjustment."), O("\"These are unrelated problems, because aging affects only the heart and never the blood vessels themselves.\"", false, "The chapter calls the circulatory system one of the systems most affected by age, with changes throughout the vessels."), O("\"The swelling and dizziness mean the vessels have become too elastic, so pressure falls whenever you sit still.\"", false, "Aging arteries become stiffer and less elastic, not more elastic; the dizziness follows dulled baroreceptors."), O("\"Varicose veins in older adults come from arteries thickening, so only arterial checks are needed from now on.\"", false, "Varicose veins follow changes in vein walls and valves; dismissing venous assessment misses the client's own diagnosis.")], tp: "One aging story explains all three complaints — teach the pattern, not three separate lectures. [Framework: Safety First]" });
+BANK.push({ cat: CE, type: "single", kt: ["vasodilation"], stem: "A hypertensive client asks whether regular exercise can really change the medication plan. Which response is most accurate?", opts: [O("\"Yes — exercise lowers pressure through vessel widening, and some exercising clients need lower drug doses.\"", true, "The chapter states exercise lowers blood pressure by mechanisms causing peripheral vasodilation, and exercising hypertensive persons can often reduce their medication dosage."), O("\"No — exercise raises vessel resistance for hours afterward, so doses usually have to be increased.\"", false, "Exercise's lasting effect in the chapter is pressure lowering through vasodilation, not a resistance-driven increase."), O("\"Only if you also stop your medication first, because exercise and these drugs cannot be used together.\"", false, "The chapter pairs exercise with reduced dosage under care, never with stopping medication first."), O("\"Exercise only helps the heart muscle itself and has no effect on the vessels or the pressure.\"", false, "The chapter credits exercise with vasodilation, plaque prevention, and improved venous and lymph drainage.")], tp: "Exercise is a pressure intervention in its own right — dose changes follow it, with the provider. [Framework: Maslow]" });
+BANK.push({ cat: CE, type: "multi", stem: "A nurse teaches a client with early varicose veins about the benefits of regular walking. Which benefits does the chapter support? Select all that apply.", opts: [O("Walking promotes drainage of blood from the large veins in the legs, lowering venous pressure there.", true, "The chapter states exercise promotes drainage of blood from the large leg veins, diminishing venous pressure."), O("Walking impedes the formation of varicose veins and hemorrhoids by keeping leg venous pressure down.", true, "Lower venous pressure from better drainage is the chapter's stated route to impeding varicose veins and hemorrhoids."), O("Walking enhances drainage of tissue fluid by the vascular and lymphatic vessels.", true, "Enhanced tissue-fluid drainage by both vessel systems is one of the chapter's listed exercise effects."), O("Walking prevents arterial plaque buildup, helping maintain tissue perfusion throughout the body.", true, "Preventing plaque buildup and atherosclerosis, and so preserving perfusion, is another listed exercise benefit."), O("Walking makes the baroreceptors more sensitive, so dizziness on standing disappears permanently.", false, "The chapter does not claim exercise restores baroreceptor sensitivity; aging-related dulling is presented as a lasting change.")], tp: "Walking pays the legs back four ways: venous drainage, lower venous pressure, fluid drainage, and cleaner arteries. [Framework: Maslow]" });
+BANK.push({ cat: CE, type: "single", stem: "A sedentary client with stiffening arteries asks why the provider is concerned about the heart when the problem is in the vessel walls. Which explanation is correct?", opts: [O("\"Stiffer, thicker arterial walls raise your pressure, and the higher pressure makes the heart work harder.\"", true, "The chapter pairs the two consequences of arterial stiffening: blood flow to organs falls and blood pressure rises, increasing the work of the heart."), O("\"Stiffer arterial walls lower your pressure, and the heart weakens because it has too little work to do.\"", false, "Stiffening raises pressure and cardiac work; a workload-starved heart is not the chapter's concern."), O("\"The vessel walls do not matter to the heart at all, because the two are separate body systems.\"", false, "Pressure is the product of the heart and the vessels together; vessel change is cardiac workload change."), O("\"Thickened walls protect the heart by absorbing pressure, so the concern is only about your kidneys.\"", false, "The raised pressure strains the heart directly, and it also damages kidneys and retina — the concern is wider, not narrower.")], tp: "Stiff pipes, higher pressure, harder-working pump — one system, not two. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CA, type: "single", stem: "A post-procedure client is scheduled for a vessel repair in which a balloon-tipped catheter will be used to reconstruct the narrowed vessel. The client asks what will happen during the procedure. Which response is most accurate?", opts: [O("\"A balloon-tipped catheter will be guided into the vessel to repair and reconstruct the narrowed segment.\"", true, "That matches the chapter's description of the repair: a balloon-tipped catheter is inserted, or the vessel is reconstructed, to repair the blood vessel."), O("\"A needle will be inserted into a vein to give fluids, and no catheter will enter the vessel at all.\"", false, "Needle access into a vein describes intravenous access; this procedure repairs the vessel with a catheter or reconstruction."), O("\"The narrowed segment will be removed and the vessel left open so blood can find its own new path.\"", false, "The repair restores the vessel itself; leaving it open and hoping for a new path is not the described procedure."), O("\"A cuff will be inflated on the arm until sounds appear, and those sounds will guide the repair.\"", false, "Cuff inflation and sounds describe blood pressure measurement, not a catheter-based vessel repair.")], tp: "Match the client's scheduled procedure to what will actually happen in the vessel. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CC, type: "multi", kt: ["reflex tachycardia"], grp: "NGN19", stem: "<b>NGN Case Study — Chapter 19</b><br>Mr. R., 67 years old, has coronary artery disease and a previously damaged heart muscle. At 10:00 he reports chest pain rated 6/10. Vitals before treatment: BP 138/84 mm Hg, HR 76 beats/min, respirations 18/min. He is given sublingual nitroglycerin as prescribed. At 10:15 he calls out that the chest pain is now 8/10 and he feels dizzy and wants to get up to walk to the bathroom. Repeat vitals: BP 94/56 mm Hg, HR 122 beats/min, respirations 22/min. His skin is pale and cool.<br><b>Question 1 of 6 (Recognize Cues).</b> Which findings are relevant cues that require follow-up? Select all that apply.", opts: [O("Blood pressure fell from 138/84 to 94/56 mm Hg after the dose.", true, "A sudden pressure fall after nitroglycerin is the trigger cue for the whole reflex sequence."), O("Heart rate rose from 76 to 122 beats/min after the dose.", true, "The rate surge is the reflex answer to the pressure fall and the finding that endangers his damaged heart."), O("Chest pain increased from 6/10 to 8/10 after the dose.", true, "Worsening pain alongside the rate surge signals the tachycardia overburdening the damaged heart."), O("The client wants to get up and walk to the bathroom now.", true, "A dizzy client with a fallen pressure who stands risks the pooled-blood, low-return faint and a fall."), O("Respirations are 22/min, changed from 18/min at baseline.", false, "A mild rate change accompanies distress but is not a cue in the chapter's reflex sequence for this event."), O("The client is 67 years old and has coronary artery disease.", false, "Age and history are background context; the cues requiring follow-up are the changes after the dose.")], tp: "Recognize the change cluster: pressure down, rate up, pain up, dizzy and wanting to stand. [Framework: ABCs]" });
+BANK.push({ cat: CC, type: "matrix", kt: ["baroreceptor reflex"], grp: "NGN19", stem: "<b>NGN Case Study — Chapter 19</b><br>Mr. R., 67 years old, has coronary artery disease and a previously damaged heart muscle. At 10:00 he reports chest pain rated 6/10. Vitals before treatment: BP 138/84 mm Hg, HR 76 beats/min, respirations 18/min. He is given sublingual nitroglycerin as prescribed. At 10:15 he calls out that the chest pain is now 8/10 and he feels dizzy and wants to get up to walk to the bathroom. Repeat vitals: BP 94/56 mm Hg, HR 122 beats/min, respirations 22/min. His skin is pale and cool.<br><b>Question 2 of 6 (Analyze Cues).</b> Match each cue with the mechanism that best explains it.", cols: ["Sensed pressure fall, sympathetic answer", "Venous pooling with falling return", "Expected drug effect, no reflex involved"], rows: [{t: "Heart rate climbed to 122 beats/min within minutes of the pressure fall", a: 0, r: "The baroreceptors sense the fall and the sympathetic answer speeds the SA node — the rate surge is reflex-driven."}, {t: "Skin became pale and cool as the pressure fell", a: 0, r: "Cool, pale skin fits sympathetic vasoconstriction narrowing the arterioles to raise resistance and support pressure."}, {t: "Dizziness appeared when the client tried to rise after the dose", a: 1, r: "Dilated veins pool blood, venous return falls, output falls, and standing leaves too little blood reaching the brain."}, {t: "Chest pain worsened as the heart rate climbed", a: 0, r: "The reflex rate surge overburdens his damaged heart, producing more angina — a reflex consequence, not a benign drug effect."}], tp: "Analyze each cue back to its mechanism before choosing any action. [Framework: Nursing Process/ADPIE]" });
+BANK.push({ cat: CC, type: "single", kt: ["reflex tachycardia"], grp: "NGN19", stem: "<b>NGN Case Study — Chapter 19</b><br>Mr. R., 67 years old, has coronary artery disease and a previously damaged heart muscle. At 10:00 he reports chest pain rated 6/10. Vitals before treatment: BP 138/84 mm Hg, HR 76 beats/min, respirations 18/min. He is given sublingual nitroglycerin as prescribed. At 10:15 he calls out that the chest pain is now 8/10 and he feels dizzy and wants to get up to walk to the bathroom. Repeat vitals: BP 94/56 mm Hg, HR 122 beats/min, respirations 22/min. His skin is pale and cool.<br><b>Question 3 of 6 (Prioritize Hypotheses).</b> Which problem poses the greatest immediate risk to this client?", opts: [O("The compensatory rate surge is overburdening the damaged heart and worsening the myocardial injury.", true, "The chapter's stated danger for exactly this drug-and-reflex pairing: the tachycardia can overburden a damaged heart, causing angina and additional myocardial damage."), O("The client will become dehydrated because nitroglycerin removes fluid volume from the circulation.", false, "The drug changed vessel diameter and pressure, not body fluid volume; dehydration is not this picture."), O("A vessel will rupture because the blood pressure is now too high for the arterial walls to hold.", false, "His pressure fell to 94/56; rupture is the danger of pressure that is too high, not of this fall."), O("The client will develop pedal swelling because blood is now collecting in the veins of the feet.", false, "Venous pooling here threatens brain perfusion and the heart, not a slow fluid-collection swelling of the feet.")], tp: "Prioritize the hypothesis that injures the heart now over problems that are absent or slow. [Framework: ABCs]" });
+BANK.push({ cat: CC, type: "multi", grp: "NGN19", stem: "<b>NGN Case Study — Chapter 19</b><br>Mr. R., 67 years old, has coronary artery disease and a previously damaged heart muscle. At 10:00 he reports chest pain rated 6/10. Vitals before treatment: BP 138/84 mm Hg, HR 76 beats/min, respirations 18/min. He is given sublingual nitroglycerin as prescribed. At 10:15 he calls out that the chest pain is now 8/10 and he feels dizzy and wants to get up to walk to the bathroom. Repeat vitals: BP 94/56 mm Hg, HR 122 beats/min, respirations 22/min. His skin is pale and cool.<br><b>Question 4 of 6 (Generate Solutions).</b> Which actions should the nurse include in the plan for this client right now? Select all that apply.", opts: [O("Keep the client in bed and do not allow him to stand or walk to the bathroom unassisted.", true, "With pressure down, veins dilated, and dizziness present, standing invites the low-return faint and a fall; bed rest removes that trigger."), O("Recheck the blood pressure and heart rate with proper technique and compare with the 10:00 values.", true, "Trending properly measured values shows whether the reflex is restoring pressure or the fall is deepening."), O("Report the pressure fall, rate surge, and worsening chest pain to the provider promptly.", true, "Worsening pain with a rate of 122 in a damaged heart is the chapter's danger pattern and needs provider awareness now."), O("Encourage the client to walk the hallway to work the pooled blood back toward the heart.", false, "Walking a dizzy, hypotensive client risks collapse; movement therapy is not the answer to an active faint risk."), O("Give a second nitroglycerin dose immediately to bring the chest pain under control.", false, "The first dose drove the pressure fall that triggered the harmful rate surge; repeating it without provider direction deepens the trigger.")], tp: "Generate solutions that remove the fall trigger, measure the trend, and escalate the heart danger. [Framework: Safety First]" });
+BANK.push({ cat: CC, type: "single", grp: "NGN19", stem: "<b>NGN Case Study — Chapter 19</b><br>Mr. R., 67 years old, has coronary artery disease and a previously damaged heart muscle. At 10:00 he reports chest pain rated 6/10. Vitals before treatment: BP 138/84 mm Hg, HR 76 beats/min, respirations 18/min. He is given sublingual nitroglycerin as prescribed. At 10:15 he calls out that the chest pain is now 8/10 and he feels dizzy and wants to get up to walk to the bathroom. Repeat vitals: BP 94/56 mm Hg, HR 122 beats/min, respirations 22/min. His skin is pale and cool.<br><b>Question 5 of 6 (Take Action).</b> The client is swinging his legs over the side of the bed, insisting he can make it to the bathroom. Which action should the nurse take first?", opts: [O("Stop him from standing, assist him back to a lying position, and stay with him while help is called.", true, "First means preventing the imminent faint and fall: pooled blood, low return, and low pressure make standing the immediate danger, ahead of any other task."), O("Walk beside him to the bathroom so he is supervised if he becomes dizzy on the way.", false, "Supervised walking still puts a dizzy client with a pressure of 94/56 upright — the exact posture that completes the faint."), O("Finish charting the 10:15 vitals first, then return to help him once the record is complete.", false, "Documentation never outranks an unfolding fall; chart after the client is safe and lying down."), O("Offer him a urinal only after he has tried standing, so his independence is respected first.", false, "Trying standing first is the harm itself; offer the urinal now, while he is still safely in bed.")], tp: "First action = block the fall. Everything else happens with the client lying down. [Framework: Safety First]" });
+BANK.push({ cat: CC, type: "single", grp: "NGN19", stem: "<b>NGN Case Study — Chapter 19</b><br>Mr. R., 67 years old, has coronary artery disease and a previously damaged heart muscle. At 10:00 he reports chest pain rated 6/10. Vitals before treatment: BP 138/84 mm Hg, HR 76 beats/min, respirations 18/min. He is given sublingual nitroglycerin as prescribed. At 10:15 he calls out that the chest pain is now 8/10 and he feels dizzy and wants to get up to walk to the bathroom. Repeat vitals: BP 94/56 mm Hg, HR 122 beats/min, respirations 22/min. His skin is pale and cool.<br><b>Question 6 of 6 (Evaluate Outcomes).</b> Thirty minutes later, which set of findings best shows the client's condition is improving?", opts: [O("BP 124/78 mm Hg, HR 84 beats/min, chest pain 2/10, and no dizziness while lying in bed.", true, "Pressure recovering toward baseline, rate settling from its surge, pain easing, and dizziness gone together show the reflex storm passing and the heart no longer overburdened."), O("BP 88/52 mm Hg, HR 128 beats/min, chest pain 8/10, and dizziness whenever the head is raised.", false, "Every value has worsened: deeper pressure fall, faster rate, unchanged severe pain, and ongoing dizziness."), O("BP 126/80 mm Hg, HR 124 beats/min, chest pain 7/10, and the client asking to walk again.", false, "Pressure alone looks better, but the persisting rate surge and near-unchanged pain mean the heart is still overburdened."), O("BP 118/74 mm Hg, HR 86 beats/min, chest pain 6/10, and new swelling of both feet and ankles.", false, "Rate and pressure improved, but pain is back only to its starting level and new bilateral swelling is an unrelated new finding, not recovery.")], tp: "Evaluate the whole cluster, not one number: pressure, rate, pain, and dizziness must all move the right way. [Framework: Nursing Process/ADPIE]" });
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 19: Functions of the Blood Vessels</h1>';
+  h += '<div class="sub">Brutal mode | Herlihy, Anatomy & Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

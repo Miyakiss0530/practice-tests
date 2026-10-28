@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 16 - Anatomy of the Heart - Definition Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK (AP Ch 16 — def) ============ */
+/* Herlihy, Anatomy & Physiology, Chapter 16: Anatomy of the Heart. Built from the audited study guide content only. */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Heart Coverings, Layers, and Pericardium";
+var CB = "Chambers, Septa, and Great Vessels";
+var CC = "Heart Valves and Heart Sounds";
+var CD = "Blood Flow and Coronary Circulation";
+var CE = "Conduction System and ECG";
+var CATS = [CA, CB, CC, CD, CE];
+var KEYTERMS = ["endocardium","myocardium","epicardium","pericardial space","pericarditis","cardiac tamponade","pulmonary circulation","systemic circulation","ventricular hypertrophy","atrioventricular valves","semilunar valves","chordae tendineae","papillary muscles","stenosis","incompetent valve","S1","S2","coronary arteries","angina","myocardial infarction","cardiac enzymes","troponin","AV node","pacemaker","automaticity","P wave","QRS complex","T wave","pacemaker potential","great vessels","pericardium","apex of the heart","precordium"];
+var BLUEPRINT = {
+  CA: { name: CA, count: 5, types: {"single":5} },
+  CB: { name: CB, count: 4, types: {"single":3,"matrix":1} },
+  CC: { name: CC, count: 4, types: {"single":4} },
+  CD: { name: CD, count: 4, types: {"order":1,"single":2,"dropdown":1} },
+  CE: { name: CE, count: 6, types: {"order":1,"single":4,"matrix":1} }
+};
+BANK.push({ cat: CA, type: "single", kt: ["endocardium","myocardium","epicardium"], stem: "Which statement correctly orders and describes the heart's three layers?", opts: [
+    O("Endocardium inside (smooth lining), myocardium in the middle (thickest, the pumping muscle), epicardium outside (thin).", true, "Inside-out is the only safe order: lining, muscle, skin. The myocardium's thickness is the giveaway middle layer - it does the pumping."),
+    O("Epicardium inside, myocardium in the middle, endocardium outside forming the pericardium.", false, "The two outer/inner names are swapped: epi- sits OUTSIDE (and forms the visceral pericardium); endo- lines the INSIDE."),
+    O("Myocardium inside lining the chambers, endocardium as the thick middle muscle, epicardium outside.", false, "The muscle cannot line the chambers - blood must glide over a smooth ENDOcardium; the thick contracting layer is the MYOcardium in the middle."),
+    O("All three layers are the same thickness, differing only in their names and positions.", false, "The myocardium is explicitly the THICKEST of the three - thickness is part of the definition set, reflecting its work.")
+  ], tp: "ANSWER KEY — Correct answer: Endocardium inside (smooth lining), myocardium in the middle (thickest, the pumping muscle), epicardium outside (thin).. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CA, type: "single", kt: ["pericardial space"], stem: "Which statement about the pericardial space is correct?", opts: [
+    O("It lies between the visceral and parietal pericardium and holds 10-30 mL of serous fluid so the membranes slide with little friction.", true, "The space, its borders, its volume, and its purpose (friction-free beating) are the chapter's four facts - the fluid is a lubricant, not a cushion of blood."),
+    O("It lies inside the left ventricle and holds the blood that is waiting to be pumped into the aorta.", false, "The pericardial space is OUTSIDE the heart chambers entirely, between the sac's two membranes; chamber blood never enters it normally."),
+    O("It is normally filled with 200 to 300 mL of blood, which nourishes the myocardium as it beats.", false, "The volume is 10-30 mL of serous FLUID, and the myocardium is nourished by the coronary arteries, not by sac fluid."),
+    O("It is the narrow space between the outer fibrous pericardium and the surface of the diaphragm.", false, "The fibrous layer anchors the sac OUTSIDE; the fluid space is between the two serous layers (visceral and parietal).")
+  ], tp: "ANSWER KEY — Correct answer: It lies between the visceral and parietal pericardium and holds 10-30 mL of serous fluid so the membranes slide with little friction.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CA, type: "single", kt: ["pericarditis","cardiac tamponade"], stem: "Which chain correctly links the three pericardial conditions of this chapter?", opts: [
+    O("Pericarditis (inflamed membranes) can produce a pericardial effusion (excess fluid), whose compression of the heart becomes cardiac tamponade.", true, "Inflammation -> secretion -> accumulation -> squeeze: the sac cannot stretch, the heart cannot relax and fill, output fails - the chapter's what-if chain in order."),
+    O("Cardiac tamponade develops first and causes pericarditis, which then scars the membranes into a pericardial effusion.", false, "The arrow of causation runs the other way: tamponade is the END state of the chain, not its trigger."),
+    O("A pericardial effusion is simply the normal 10 to 30 mL of lubricating fluid, and tamponade is another name for that same fluid.", false, "10-30 mL is the NORMAL content of the space; an effusion is EXCESS fluid, and tamponade is the life-threatening compression that can follow."),
+    O("Pericarditis, pericardial effusion, and cardiac tamponade are three unrelated conditions that happen to share one anatomy word.", false, "They are stages of one mechanism - membrane inflammation, fluid response, mechanical consequence.")
+  ], tp: "ANSWER KEY — Correct answer: Pericarditis (inflamed membranes) can produce a pericardial effusion (excess fluid), whose compression of the heart becomes cardiac tamponade.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "single", kt: ["pulmonary circulation","systemic circulation"], stem: "Which statement correctly assigns the two circulations?", opts: [
+    O("Pulmonary circulation runs right heart -> lungs -> left heart; systemic circulation runs left heart -> body -> right heart, and is the larger circuit.", true, "The double pump's two loops: the right pump serves the lungs (gas exchange), the left serves everything else - which is why the left ventricle is the thick-walled workhorse."),
+    O("Pulmonary circulation runs left heart -> lungs -> right heart; systemic circulation runs right heart -> body -> left heart.", false, "Both loops are reversed: the RIGHT heart receives unoxygenated body blood and sends it to the lungs; the LEFT launches the systemic loop."),
+    O("Both circulations begin together at the right heart, and they differ from each other only in vessel size.", false, "Each loop has its own pump: right for pulmonary, left for systemic - one organ, two pumps beating as one."),
+    O("The systemic circulation is the smaller of the two circuits because it serves only the upper half of the body.", false, "Systemic serves ALL organs of the body and is explicitly the LARGER of the two circulations.")
+  ], tp: "ANSWER KEY — Correct answer: Pulmonary circulation runs right heart -> lungs -> left heart; systemic circulation runs left heart -> body -> right heart, and is the larger circuit.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "matrix", kt: [], stem: "Match each chamber to the blood it handles and the vessel route it owns.", cols: ["Receives unoxygenated blood from the venae cavae","Pumps unoxygenated blood to the lungs","Receives oxygenated blood from four pulmonary veins","Pumps oxygenated blood into the aorta"], rows: [{"t":"Right atrium","a":0,"r":"The thin-walled right receiver: SVC from the upper body, IVC from the lower body."},{"t":"Right ventricle","a":1,"r":"The right pump: through the pulmonic valve and pulmonary trunk to the pulmonary arteries."},{"t":"Left atrium","a":2,"r":"The left receiver: four pulmonary veins deliver the freshly oxygenated blood (plus the appendage in its wall)."},{"t":"Left ventricle","a":3,"r":"The thickest-walled pump: through the aortic valve into the aorta for the systemic circuit."}], tp: "ANSWER KEY — Correct answer: the matches: Right atrium -> Receives unoxygenated blood from the venae cavae; Right ventricle -> Pumps unoxygenated blood to the lungs; Left atrium -> Receives oxygenated blood from four pulmonary veins; Left ventricle -> Pumps oxygenated blood into the aorta. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "single", kt: ["ventricular hypertrophy"], stem: "A patient with years of uncontrolled hypertension develops left ventricular hypertrophy. Which mechanism explains it?", opts: [
+    O("High aortic pressure forces the left ventricle to pump harder to eject blood; the overworked muscle enlarges and will eventually weaken and fail if it stays high.", true, "The chapter's worked example verbatim: workload -> hypertrophy -> (untreated) failure. The mirror image is RV hypertrophy from pulmonary artery hypertension."),
+    O("Hypertension gradually thins the ventricular wall until it balloons outward under the arterial pressure.", false, "The response to chronic pressure work is THICKENING (hypertrophy), not thinning and ballooning."),
+    O("The left atrium enlarges first under the backed-up pressure and stretches the ventricle open in a passive, flabby way.", false, "The hypertrophy is the VENTRICLE's own muscle response to its ejection workload against aortic pressure."),
+    O("Ventricular hypertrophy is a birth defect present from childhood that causes the hypertension in the first place.", false, "Causality runs pressure -> hypertrophy in the chapter's example; the enlargement is acquired from overwork.")
+  ], tp: "ANSWER KEY — Correct answer: High aortic pressure forces the left ventricle to pump harder to eject blood; the overworked muscle enlarges and will eventually weaken and fail if it stays high.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["atrioventricular valves","semilunar valves"], stem: "Which grouping of the four valves is correct?", opts: [
+    O("AV (entrance) valves: tricuspid and mitral. Semilunar (exit) valves: pulmonic and aortic.", true, "Entrances guard atrium-to-ventricle flow (with chordae/papillary support); exits guard ventricle-to-artery flow with half-moon cusps. Position names the family."),
+    O("AV valves: pulmonic and aortic. Semilunar valves: tricuspid and mitral.", false, "The families are swapped: the semilunar pair sits at the arterial exits; the AV pair sits between the chambers."),
+    O("AV valves: tricuspid and aortic. Semilunar valves: mitral and pulmonic.", false, "A mixed pairing - the aortic valve is semilunar and the mitral is AV; each family is side-consistent (right pair, left pair)."),
+    O("All four valves are AV valves, and 'semilunar' describes their cusps' shape only.", false, "Semilunar is a functional family (the exit valves), not merely a shape adjective for all four.")
+  ], tp: "ANSWER KEY — Correct answer: AV (entrance) valves: tricuspid and mitral. Semilunar (exit) valves: pulmonic and aortic.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["chordae tendineae","papillary muscles"], stem: "When the ventricles contract, what keeps the AV valve cusps from blowing back through into the atria?", opts: [
+    O("The papillary muscles contract and pull the chordae tendineae taut, holding the pressure-closed cusps in place.", true, "The umbrella mechanism: pressure pushes the cusps shut, and the chordae-papillary rigging stops them inverting into the atria - the chapter's storm-blown umbrella image."),
+    O("The cusps are glued shut by fibrin strands for the duration of each contraction.", false, "Fibrin is the clot protein; valve closure is mechanical (pressure) and restraint is tendinous - no clotting is involved in a normal beat."),
+    O("The semilunar valves close first and their suction holds the AV cusps down.", false, "Semilunar closure happens at relaxation (S2) and plays no role in restraining AV cusps during contraction."),
+    O("The atria contract at the same moment and push the cusps back down into the ventricles.", false, "Atria and ventricles do NOT contract simultaneously - the conduction system's AV delay sequences them precisely so filling precedes ejection.")
+  ], tp: "ANSWER KEY — Correct answer: The papillary muscles contract and pull the chordae tendineae taut, holding the pressure-closed cusps in place.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["stenosis","incompetent valve"], stem: "Which pairing of valve defect to consequence is correct?", opts: [
+    O("Stenosis: the narrowed valve forces the pumping chamber to work harder. Incompetence: the leaky valve makes the chamber pump the same blood again.", true, "The two failures are mirror loads: pressure work (push through a small hole) vs volume work (re-pump the leak). Both end in chamber damage over time."),
+    O("Stenosis: blood leaks backward through the narrowed valve. Incompetence: the valve cannot open fully at all.", false, "The definitions are swapped: stenosis = cannot OPEN (narrowed), incompetence = cannot CLOSE (leaky)."),
+    O("Both defects lower the pumping chamber's workload substantially, which is why they are tolerated for many years.", false, "Both RAISE workload - that is precisely why 'stenotic and leaky valves damage the heart' over time."),
+    O("Stenosis affects only the semilunar valves, and incompetence affects only the atrioventricular valves.", false, "Either family can fail either way; the chapter's worked example is an incompetent AORTIC (semilunar) valve.")
+  ], tp: "ANSWER KEY — Correct answer: Stenosis: the narrowed valve forces the pumping chamber to work harder. Incompetence: the leaky valve makes the chamber pump the same blood again.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["S1","S2"], stem: "Which statement about the heart sounds is correct?", opts: [
+    O("S1 is the AV valves closing at the start of ventricular contraction, heard best at the apex; S2 is the semilunar valves closing at the start of relaxation, heard best at the base.", true, "Sounds are valve closures, and the listening posts match the anatomy: AV action is apical, semilunar action is basal - the chapter's two paired facts."),
+    O("S1 ('lubb') is the semilunar valves closing at the start of ventricular contraction, best heard at the base; S2 ('dupp') is the AV valves closing, best heard at the apex.", false, "Both the valve assignment and the locations are swapped - S1 opens the sequence with the AV closure that starts contraction."),
+    O("S1 and S2 are the sounds made by the atria and the ventricles as they contract, in that order.", false, "Muscle contraction is not the sound source; the sounds are vibrations from valve CLOSURE."),
+    O("S1 is a sound heard only when a murmur is present, and S2 is the one normal sound of the heart.", false, "S1 and S2 are the normal lubb-dupp of every beat; a murmur is an ADDITIONAL abnormal sound from a faulty valve.")
+  ], tp: "ANSWER KEY — Correct answer: S1 is the AV valves closing at the start of ventricular contraction, heard best at the apex; S2 is the semilunar valves closing at the start of relaxation, heard best at the base.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "order", kt: [], stem: "Place the stations of blood flow through the heart in the order blood visits them.", items: [{"t":"Right atrium receives blood from the superior and inferior venae cavae","r":"The trip starts with unoxygenated blood entering the right receiving chamber."},{"t":"Through the tricuspid valve into the right ventricle","r":"The right AV (entrance) valve passes blood into the right pump."},{"t":"Through the pulmonic valve into the pulmonary trunk and arteries to the lungs","r":"The right exit valve launches the pulmonary circulation, where CO2 is shed and O2 picked up."},{"t":"Through four pulmonary veins into the left atrium","r":"Oxygenated blood returns to the left receiving chamber."},{"t":"Through the mitral valve into the left ventricle","r":"The left AV valve passes blood into the body's strongest pump."},{"t":"Through the aortic valve into the aorta for the systemic circulation","r":"The left exit valve launches the systemic loop to all organs."}], tp: "ANSWER KEY — Correct answer: the sequence: 1. Right atrium receives blood from the superior and inferior venae cavae 2. Through the tricuspid valve into the right ventricle 3. Through the pulmonic valve into the pulmonary trunk and arteries to the lungs 4. Through four pulmonary veins into the left atrium 5. Through the mitral valve into the left ventricle 6. Through the aortic valve into the aorta for the systemic circulation. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["coronary arteries"], stem: "Which statement about the myocardium's blood supply is correct?", opts: [
+    O("The blood flowing through the chambers does not nourish the myocardium; the coronary arteries, arising just past the aortic valve, do that job.", true, "The chapter's opening paradox of Topic 16: the pump is perfused by its own crown of arteries off the ascending aorta - chamber blood is cargo, not supply."),
+    O("The myocardium absorbs the oxygen it needs directly from the blood passing through the ventricles.", false, "If that were true, coronary arteries would be unnecessary; the chapter states chamber blood does NOT nourish the muscle."),
+    O("The coronary arteries branch off from the pulmonary trunk before the blood reaches the lungs.", false, "They arise from the base of the ASCENDING AORTA - they need fully oxygenated systemic blood, not pulmonary-trunk blood."),
+    O("The right coronary artery supplies the whole left ventricle, and the left coronary artery supplies the right side.", false, "Each side feeds its own: right coronary to the right heart (plus SA/AV nodes), left coronary (LAD + circumflex) to the left heart and septum.")
+  ], tp: "ANSWER KEY — Correct answer: The blood flowing through the chambers does not nourish the myocardium; the coronary arteries, arising just past the aortic valve, do that job.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["angina","myocardial infarction"], stem: "Which pairing of coronary event to mechanism is correct?", opts: [
+    O("Angina: a partially occluded artery diminishes flow and oxygen - pain. MI: a ruptured plaque completely blocks flow and the deprived cells die.", true, "Partial vs complete is the chapter's dividing line: ischemia with pain (angina, often exertional, relieved by rest/nitroglycerin) versus occlusion with necrosis (infarction)."),
+    O("Angina: the artery blocks completely but only briefly. MI: the artery narrows partially and stays narrowed for years.", false, "Duration is swapped for degree: angina is the PARTIAL narrowing story; MI is the COMPLETE blockage with cell death."),
+    O("Both conditions are caused by vessel spasm alone, and they differ only in how long each spasm happens to last.", false, "Spasm is one contributor to diminished flow; the chapter's MI mechanism is the ruptured platelet-containing plaque completing the occlusion."),
+    O("Angina pain means that myocardial cells have already died in the territory the artery supplies.", false, "Pain without death is angina's definition zone (ischemia); death of cells is what converts the story to infarction - hence 'time is muscle.'")
+  ], tp: "ANSWER KEY — Correct answer: Angina: a partially occluded artery diminishes flow and oxygen - pain. MI: a ruptured plaque completely blocks flow and the deprived cells die.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "dropdown", kt: ["cardiac enzymes","troponin"], stem: "Complete the statement about diagnosing a heart attack: 'When myocardial cells die, they leak [[0]] and the protein [[1]] into the blood; plasma elevations of these are indicative of [[2]].'", blanks: [{ o: [O("cardiac enzymes (CPK, AST, LDH)", true, "The chapter's enzyme trio: creatine phosphokinase, aspartate aminotransferase, and lactic dehydrogenase all spill from necrotic cells."), O("coronary sinus drainage fluid", false, "The coronary sinus is a drainage vein, not a leaked diagnostic substance."), O("pericardial sac fluid", false, "Pericardial fluid belongs to the sac story (effusion/tamponade); MI diagnosis reads leaked CELL contents in plasma.")] }, { o: [O("troponin", true, "Troponin is the regulatory myocardial protein that joins the enzymes in the leak - the chapter lists all four as MI-indicative."), O("fibrinogen", false, "Fibrinogen is a clotting protein from the blood chapter; it is not a myocardial leak marker."), O("hemoglobin", false, "Hemoglobin leaks in HEMOLYSIS (RBC destruction), not from dead heart muscle.")] }, { o: [O("myocardial infarction", true, "Elevated CPK, AST, LDH, and troponin are the chapter's stated laboratory indication of MI - dead cells are the source."), O("angina pectoris", false, "Angina is ischemia WITHOUT cell death, so nothing leaks; enzyme elevation is exactly what angina lacks and MI has."), O("pericarditis, early stage", false, "Pericarditis is diagnosed in this chapter by pain and the friction rub, not by leaked enzymes.")] }], tp: "ANSWER KEY — Correct answer: Blank 1: cardiac enzymes (CPK, AST, LDH); Blank 2: troponin; Blank 3: myocardial infarction. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "order", kt: [], stem: "Place the stations of the cardiac impulse pathway in conduction order.", items: [{"t":"SA node - the impulse originates in the upper posterior wall of the right atrium","r":"The pacemaker fires first; every normal beat starts here."},{"t":"Atrial conducting fibers - the impulse spreads through both atria","r":"Atrial spread makes both atria contract and delivers the signal onward to the AV node."},{"t":"AV node - the impulse slows, delaying ventricular activation","r":"The delay is functional: relaxed ventricles get time to fill during atrial contraction."},{"t":"Bundle of His - the impulse enters the interventricular septum","r":"The only bridge from atria to ventricles in the conduction pathway."},{"t":"Right and left bundle branches - the impulse divides down the septum","r":"The bundle splits to serve both ventricles."},{"t":"Purkinje fibers - the impulse races through the ventricular myocardium","r":"Rapid distribution produces the coordinated ventricular contraction that ejects blood."}], tp: "ANSWER KEY — Correct answer: the sequence: 1. SA node - the impulse originates in the upper posterior wall of the right atrium 2. Atrial conducting fibers - the impulse spreads through both atria 3. AV node - the impulse slows, delaying ventricular activation 4. Bundle of His - the impulse enters the interventricular septum 5. Right and left bundle branches - the impulse divides down the septum 6. Purkinje fibers - the impulse races through the ventricular myocardium. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["AV node"], stem: "Which statement about the AV node is correct?", opts: [
+    O("It slows the cardiac impulse on its way to the bundle of His, delaying ventricular activation so the ventricles can fill during atrial contraction.", true, "Both of the AV node's chapter jobs: it is the path from atrial fibers into the His system, AND the brake that makes filling possible - the P-R interval is this delay on paper."),
+    O("It is the heart's normal pacemaker, firing 60 to 100 times per minute to set the rate for the whole heart.", false, "That is the SA node's profile; the AV node is the slower backup (40-60) and the delay station, not the rate-setter."),
+    O("It is the valve between the right atrium and the right ventricle, also called the tricuspid valve.", false, "The chapter's explicit caution: do not confuse the AV NODE (electrical, floor of right atrium) with the AV VALVE (mechanical, chamber entrance)."),
+    O("It speeds the impulse up so that the ventricles contract at exactly the same moment as the atria do.", false, "Simultaneous contraction would defeat filling; the node's whole purpose is the DELAY between atrial and ventricular activation.")
+  ], tp: "ANSWER KEY — Correct answer: It slows the cardiac impulse on its way to the bundle of His, delaying ventricular activation so the ventricles can fill during atrial contraction.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "matrix", kt: ["pacemaker"], stem: "Match each pacemaker site to the rate at which it fires when it runs the heart.", cols: ["60-100 per minute","40-60 per minute","30-40 per minute"], rows: [{"t":"SA node (the normal pacemaker)","a":0,"r":"The fastest intrinsic rate wins: the SA node sets 60-100/min (average 72) and is the pace car of the heart."},{"t":"AV node (first backup)","a":1,"r":"When the SA node fails, the AV node takes over more slowly at 40-60/min (nodal rhythm often 40-50)."},{"t":"Ventricular pacemaker cells (last resort)","a":2,"r":"In complete heart block the ventricles drive themselves at only 30-40/min - too slow for adequate output, hence artificial pacemakers."}], tp: "ANSWER KEY — Correct answer: the matches: SA node (the normal pacemaker) -> 60-100 per minute; AV node (first backup) -> 40-60 per minute; Ventricular pacemaker cells (last resort) -> 30-40 per minute. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["automaticity"], stem: "A transplanted heart beats without any nerve connection to the recipient's brain. Which property of cardiac tissue explains this?", opts: [
+    O("Automaticity: pacemaker cells generate their own electrical signal with no help from extrinsic nerves.", true, "The heart fires itself - the signal arises automatically in the SA node; nerves (sympathetic/parasympathetic) only speed or slow the intrinsic rhythm via the pacemaker potential's slope."),
+    O("Rhythmicity: the heart's ability to conduct impulses from the brain at a regular rate.", false, "Rhythmicity is regular firing, but it does not require the brain - and the definition given here invents a brain source the chapter denies."),
+    O("The pericardium's serous fluid carries electrical signals from the spinal cord to the heart.", false, "Pericardial fluid is a lubricant in a sac; it carries no signals, and the heart needs no spinal delivery to beat."),
+    O("The coronary arteries deliver an electrical charge with each pulse of blood.", false, "Coronary arteries deliver oxygenated BLOOD; the impulse is generated in the conduction tissue itself.")
+  ], tp: "ANSWER KEY — Correct answer: Automaticity: pacemaker cells generate their own electrical signal with no help from extrinsic nerves.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["P wave","QRS complex","T wave"], stem: "Which ECG matching is correct?", opts: [
+    O("P wave = atrial depolarization; QRS complex = ventricular depolarization; T wave = ventricular repolarization.", true, "The three deflections in order: atria fire (P), ventricles fire (QRS - depolarization precedes and triggers contraction), ventricles reset (T)."),
+    O("P wave = ventricular depolarization; QRS = atrial depolarization; T wave = atrial repolarization.", false, "The chambers are swapped between P and QRS: P belongs to the ATRIA (the smaller first event), QRS to the ventricles."),
+    O("P wave = the AV node's delay; QRS = atrial contraction; T wave = ventricular contraction.", false, "The delay is the P-R INTERVAL, not the P wave; and the deflections are ELECTRICAL events (depolarization/repolarization), with contraction following them."),
+    O("All three deflections reflect ventricular events at different speeds.", false, "The P wave is atrial - the tracing covers both chamber pairs, which is why its sequence can be timed and judged.")
+  ], tp: "ANSWER KEY — Correct answer: P wave = atrial depolarization; QRS complex = ventricular depolarization; T wave = ventricular repolarization.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["pacemaker potential"], stem: "Which statement about the SA node cell's electrical behavior is correct?", opts: [
+    O("It has no stable resting potential: from -60 mV it spontaneously depolarizes to its -40 mV threshold and fires, over and over - the pacemaker potential.", true, "The Ramp It Up mechanism: the pacemaker cell cannot rest, so rhythm is its default state; the SLOPE of that spontaneous climb sets the rate (sympathetic steepens, vagal flattens)."),
+    O("It rests at a stable resting potential of -60 mV until a nerve impulse arriving from the brain stimulates it to fire.", false, "Needing an external stimulus is exactly what pacemaker cells do NOT do - that is automaticity's whole point."),
+    O("It fires only when the AV node sends it a return signal after each completed ventricular beat.", false, "The direction of command runs SA -> AV, never the reverse in normal rhythm; the SA node's faster slope is why it leads."),
+    O("Its threshold potential is +20 mV, and it repolarizes back down to -40 mV between one beat and the next.", false, "The numbers are shuffled: -60 mV is the momentary rest, -40 mV the threshold, +20 mV the full depolarization peak of a stimulated cell.")
+  ], tp: "ANSWER KEY — Correct answer: It has no stable resting potential: from -60 mV it spontaneously depolarizes to its -40 mV threshold and fires, over and over - the pacemaker potential.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "single", kt: ["great vessels"], stem: "Which set lists only vessels that attach directly to the heart (the great vessels), with their correct chamber partners?", opts: [
+    O("Venae cavae into the right atrium, pulmonary trunk out of the right ventricle, four pulmonary veins into the left atrium, aorta out of the left ventricle.", true, "Five names, five attachments: two in on the right, one out on the right, four veins in on the left (counted as one vessel group), one out on the left - the complete great-vessel map."),
+    O("Venae cavae into the left atrium, pulmonary trunk out of the left ventricle, pulmonary veins into the right atrium, aorta out of the right ventricle.", false, "Every attachment is side-swapped: the cavae and pulmonary veins are ATRIAL inputs on opposite sides from those stated, and the exits belong to the other ventricles."),
+    O("Coronary arteries into the myocardium, coronary sinus into the right atrium, venae cavae, and the aorta.", false, "The coronary vessels serve the heart WALL, not the through-flow; the great vessels are the through-flow attachments (cavae, pulmonary trunk/veins, aorta)."),
+    O("Pulmonary arteries into the left atrium and pulmonary veins out of the right ventricle.", false, "Pulmonary arteries carry blood AWAY from the right ventricle to the lungs; pulmonary veins RETURN blood to the left atrium - directions reversed here.")
+  ], tp: "ANSWER KEY — Correct answer: Venae cavae into the right atrium, pulmonary trunk out of the right ventricle, four pulmonary veins into the left atrium, aorta out of the left ventricle.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CA, type: "single", kt: ["pericardium"], stem: "Which statement correctly builds the pericardium from the heart outward?", opts: [
+    O("Epicardium (visceral pericardium) on the heart, folding back into the parietal pericardium, which attaches to the outer fibrous pericardium that anchors the heart.", true, "One continuous serous sheet folds at the top: visceral layer = epicardium; its reflection = parietal layer; outside that, the fibrous anchor to diaphragm and great vessels."),
+    O("The fibrous pericardium lies on the heart, then the epicardium, and then the parietal pericardium on the outside.", false, "The fibrous layer is the OUTERMOST anchor, not the layer touching the heart; the heart's own surface layer is the epicardium."),
+    O("The parietal pericardium lies on the heart, the visceral pericardium outside it, and the fibrous pericardium in the middle.", false, "Visceral means organ-side (on the heart); parietal means wall-side - the names encode their positions and are swapped here."),
+    O("The pericardium is a single simple membrane, and the epicardium is a completely separate sac located inside it.", false, "There are three layers in the chapter's build (epicardium/visceral, parietal, fibrous), and the epicardium IS the visceral pericardium - not a separate sac.")
+  ], tp: "ANSWER KEY — Correct answer: Epicardium (visceral pericardium) on the heart, folding back into the parietal pericardium, which attaches to the outer fibrous pericardium that anchors the heart.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CA, type: "single", kt: ["apex of the heart","precordium"], stem: "A nurse is preparing to auscultate and place ECG electrodes. Which location facts from this chapter apply?", opts: [
+    O("Two-thirds of the heart lies left of the sternal midline; the apex sits at the fifth intercostal space; the precordium is the chest wall over the heart.", true, "The address set: left-of-midline bulk, base at the 2nd rib, apex at the 5th intercostal space - the surface anatomy that heart sounds, electrodes, and CPR all depend on."),
+    O("The heart sits exactly centered behind the sternum, with its apex located at the level of the second rib.", false, "Centered is wrong (two-thirds LEFT) and the 2nd rib is the BASE's level; the apex is down at the fifth intercostal space."),
+    O("The apex is the upper flat portion at the level of the second rib, and the base is the pointed lower end.", false, "Base and apex are swapped: base = upper/flat (2nd rib), apex = lower/pointed (5th space)."),
+    O("The precordium is the fibrous sac that surrounds and protects the heart inside the chest cavity.", false, "The precordium is the SURFACE area of chest wall over the heart; the internal sac is the pericardium - a classic sound-alike swap.")
+  ], tp: "ANSWER KEY — Correct answer: Two-thirds of the heart lies left of the sternal midline; the apex sits at the fifth intercostal space; the precordium is the chest wall over the heart.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 16: Anatomy of the Heart</h1>';
+  h += '<div class="sub">Definition test | Herlihy, Anatomy & Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

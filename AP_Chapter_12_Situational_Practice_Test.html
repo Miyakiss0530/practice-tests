@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 12 - Autonomic Nervous System - Situational Practice Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK — SITUATIONAL (BRUTAL) ============ */
+/* Herlihy Chapter 12: Autonomic Nervous System — situational items only, facts from the audited study guide. */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "ANS Overview and Reflexes";
+var CB = "Autonomic Drug Terminology";
+var CC = "Autonomic Neurons and Outflow";
+var CD = "Autonomic Receptors";
+var CE = "Fibers Transmitters and Termination";
+var CF = "Parasympathetic Division";
+var CG = "Sympathetic Division";
+var CATS = [CA, CB, CC, CD, CE, CF, CG];
+var KEYTERMS = ["Autonomic dysreflexia", "Dual innervation", "Vasomotor tone", "Acetylcholinesterase", "Reuptake", "Muscarinic receptors", "Agonist", "Antagonist", "Vagus nerve", "Thoracolumbar outflow"];
+var BLUEPRINT = {};
+
+/* ---------- DIVISIONS ---------- */
+BANK.push({ cat: CG, type: "multi", kt: ["Sympathetic nervous system"],
+  stem: "A patient is startled by a near-miss car accident. Within seconds her heart pounds, her palms sweat, her pupils widen, and her mouth feels dry. Which statements explain these findings? Select all that apply.",
+  opts: [
+    O("The sympathetic division — the fight-or-flight division — has been activated by the stress/threat.", true, "Sympathetic activation is the body's stress response; the findings are its classic outward signs."),
+    O("Catecholamines such as norepinephrine and epinephrine are activating adrenergic receptors on her organs.", true, "Adrenergic receptors are activated by NE, epinephrine, and dopamine — the catecholamines."),
+    O("Beta1 receptor activation in the heart is contributing to the pounding, rapid heartbeat.", true, "Beta1 = heart (one heart) — activation speeds and strengthens the heartbeat."),
+    O("The parasympathetic division is dominant right now, slowing her heart so blood can be conserved.", false, "Parasympathetic (feed-and-breed) dominates in quiet, nonstressful conditions — the opposite of this scene."),
+    O("Acetylcholinesterase is flooding her synapses, and the excess ACh is driving the response.", false, "AChE DESTROYS ACh; it does not drive sympathetic activation.")
+  ],
+  tp: "Fight-or-flight = sympathetic + catecholamines + adrenergic receptors (beta1 = heart). Feed-and-breed = parasympathetic, dominant at rest. Framework: system identification from findings." });
+BANK.push({ cat: CF, type: "single", kt: ["Parasympathetic nervous system", "Vagus nerve"],
+  stem: "After a large meal, a healthy patient feels sleepy; his heart rate is slow, pupils are small, and digestion is active. Which statement explains this state?",
+  opts: [
+    O("The parasympathetic division — the feed-and-breed division — is dominant in this quiet, nonstressful state, with the vagus nerve carrying most of its fibers.", true, "Parasympathetic dominance at rest: slow heart, active digestion; CN X (vagus) carries over 80% of parasympathetic fibers. Framework: system identification from findings."),
+    O("The sympathetic division is dominant, because digestion requires the same energy as the fight-or-flight response.", false, "Sympathetic activation diverts from digestion during threat; it does not dominate a restful post-meal state."),
+    O("Both divisions are switched off after eating, which is why the heart slows and the gut speeds up on its own.", false, "Autonomic tone means the ANS fires continuously at a low level; it never switches off — dominance shifts."),
+    O("The vagus nerve has been inhibited by the meal, allowing the heart to slow down while digestive activity increases on its own.", false, "The slow heart and active gut are vagal (parasympathetic) EFFECTS — the vagus is active, not inhibited.")
+  ],
+  tp: "Parasympathetic = feed-and-breed, dominant at rest; vagus carries >80% of its fibers. Autonomic tone = never fully off. Framework: system identification." });
+BANK.push({ cat: CA, type: "single", kt: ["Dual innervation"],
+  stem: "A student asks why the bladder can empty in a coordinated way if organs receive both ANS divisions. Which explanation uses the bladder correctly?",
+  opts: [
+    O("Dual innervation can be cooperative: in the bladder, one division contracts the bladder muscle while the outlet sphincter relaxes, so the two effects work together to promote urination.", true, "Dual innervation is usually antagonistic, but the bladder shows the cooperative pattern — wall contracts, sphincter relaxes, one coordinated result. Framework: concept application with exception handling."),
+    O("Dual innervation is always antagonistic, so the bladder wall and its sphincter must both contract at the same time to empty.", false, "If both contracted together, urine could not leave; the bladder is the guide's cooperative example."),
+    O("The bladder receives only parasympathetic fibers, which is why urination is considered a purely rest-and-digest function with no sympathetic role at all.", false, "The bladder has dual innervation; coordination comes from how the two divisions' effects combine."),
+    O("Dual innervation means each organ is served by two separate spinal cords, one carrying each division's signals independently to the organ.", false, "Dual innervation means one organ receives fibers from BOTH divisions — not two cords.")
+  ],
+  tp: "Dual innervation: mostly antagonistic, sometimes cooperative — bladder wall contracts + sphincter relaxes = urination. Framework: concept application." });
+BANK.push({ cat: CA, type: "single", kt: ["Vasomotor tone"],
+  stem: "A patient receives a drug that blocks sympathetic outflow. His blood pressure falls. Which principle explains the drop?",
+  opts: [
+    O("Blood vessels are held in continuous partial constriction by sympathetic vasomotor tone; blocking sympathetic firing removes that constriction, so vessels dilate and pressure falls.", true, "Vasomotor tone = sympathetically maintained vessel constriction; remove it and vessels dilate, dropping BP. Framework: tone-mechanism reasoning."),
+    O("Blood vessels are held open by parasympathetic vasomotor tone; blocking the sympathetic system lets that tone collapse the vessels.", false, "Vasomotor tone is SYMPATHETIC, and it constricts rather than holds vessels open."),
+    O("The drug blocked the baroreceptors in the vessel walls, so the blood-pressure reflex could no longer sense or respond to the pressure change.", false, "Baroreceptors start the BP reflex; the pressure fell because vessel constriction (tone) was removed, not because sensing failed."),
+    O("The drug dissolved the catecholamines circulating in the blood, and without them the heart stopped pumping effectively against resistance.", false, "The heart is not described as stopping; the mechanism is loss of vasomotor constriction in the vessels.")
+  ],
+  tp: "Vasomotor (sympathetic) tone = continuous vessel constriction. Block sympathetic → dilation → BP falls. Baroreceptors = pressure sensors that start the reflex. Framework: tone-mechanism reasoning." });
+
+/* ---------- DRUG TERMINOLOGY / RECEPTORS ---------- */
+BANK.push({ cat: CB, type: "single", kt: ["Sympathomimetic", "Sympatholytic"],
+  stem: "A medication order reads: 'Give the sympatholytic agent.' A second order for another patient reads: 'Give the vagomimetic agent.' Which pair of actions should the nurse expect from these two drugs?",
+  opts: [
+    O("The sympatholytic inhibits sympathetic activation; the vagomimetic mimics parasympathetic (vagal) activity.", true, "-Mimetic = mimics; -lytic = inhibits/blocks. Sympatholytic blocks sympathetic; vagomimetic copies the vagus/parasympathetic. Framework: terminology decoding."),
+    O("The sympatholytic mimics sympathetic activation; the vagomimetic slows parasympathetic (vagal) activity.", false, "Both are swapped: -lytic inhibits (not mimics), and the drug that slows vagal activity is a vagolytic, not a vagomimetic."),
+    O("The sympatholytic inhibits parasympathetic activation; the vagomimetic mimics sympathetic activity.", false, "The division names are crossed: sympatho- refers to sympathetic, vago- to the vagus/parasympathetic."),
+    O("Both drugs activate their named systems, because all autonomic drug suffixes describe activation.", false, "-Lytic specifically means inhibiting; only -mimetic describes activation-like effects.")
+  ],
+  tp: "-Mimetic = mimics; -lytic = inhibits. Sympathomimetic/sympatholytic (sympathetic), vagomimetic/vagolytic (parasympathetic). Framework: terminology decoding." });
+BANK.push({ cat: CD, type: "single", kt: ["Agonist", "Antagonist"],
+  stem: "A patient with asthma receives albuterol, a beta2-adrenergic agonist, and his breathing eases as his airways open. Which chain of events explains the result?",
+  opts: [
+    O("The agonist activates beta2 receptors on the bronchioles, producing the receptor's response — bronchodilation.", true, "Agonist = activates the receptor → the table's response happens. Beta2 (lungs) activation dilates airways. Framework: receptor pharmacology (agonist → response)."),
+    O("The agonist blocks beta2 receptors on the bronchioles, preventing the constriction signal from reaching them.", false, "Blocking is an ANTAGONIST's job; this drug is an agonist and activates the receptors."),
+    O("The agonist activates beta1 receptors in the heart, and the stronger heartbeat pushes more air through the lungs.", false, "Beta1 = heart; the airway receptors are beta2 ('two lungs'). The benefit is bronchodilation, not cardiac output."),
+    O("The agonist destroys acetylcholinesterase in the airways, so acetylcholine can relax the bronchiole muscles.", false, "AChE is a cholinergic-synapse enzyme; albuterol works on adrenergic beta2 receptors.")
+  ],
+  tp: "Agonist = response happens; antagonist = response prevented. Beta1 = heart (1), beta2 = lungs (2). Framework: receptor pharmacology." });
+BANK.push({ cat: CD, type: "single", kt: ["Antagonist"],
+  stem: "A hypertensive patient is prescribed an alpha1-adrenergic blocker. At the next visit his blood pressure has decreased. Which explanation should the nurse give?",
+  opts: [
+    O("Alpha1 receptors in blood vessels normally cause vasoconstriction; blocking them lets the vessels dilate, so pressure falls.", true, "Alpha1 = vessels squeeze (raises BP); an alpha1 antagonist prevents that response → dilation → lower BP. Framework: receptor pharmacology (antagonist → response prevented)."),
+    O("Alpha1 receptors in the heart normally slow the rate; blocking them speeds the heart and lowers the pressure.", false, "Alpha1's listed site is blood vessels, not heart rate; heart rate is beta1 territory."),
+    O("The blocker activates alpha1 receptors more strongly, and the exhausted vessels relax afterward.", false, "A blocker (antagonist) prevents receptor activation; it does not over-activate receptors."),
+    O("The blocker destroys norepinephrine in the blood, so no catecholamine remains to act anywhere.", false, "NE is terminated locally by reuptake, MAO, and COMT — a receptor blocker works at the receptor, not by destroying transmitter.")
+  ],
+  tp: "Alpha1 activation = vasoconstriction (used for shock/low BP). Alpha1 BLOCKER → dilation → BP down. Framework: receptor pharmacology." });
+BANK.push({ cat: CD, type: "single", kt: ["Atropine"],
+  stem: "Before general anesthesia, a patient receives atropine. The nurse knows anesthesia can cause sustained vagal discharge with a significant drop in heart rate. Which statement explains atropine's protective role?",
+  opts: [
+    O("Atropine blocks muscarinic receptors, preventing excessive parasympathetic (vagal) activity from slowing the heart.", true, "Cases 3 and 7 in the guide pair here: excess vagal/muscarinic activity slows the heart; atropine (antimuscarinic) blocks that effect. Framework: receptor pharmacology applied to a clinical risk."),
+    O("Atropine activates muscarinic receptors, strengthening the vagus so the heart rate stays controlled during anesthesia.", false, "Activating muscarinic receptors would slow the heart MORE — the opposite of protection."),
+    O("Atropine blocks beta1 receptors in the heart, preventing sympathetic stimulation from raising the heart rate.", false, "The danger described is vagal (parasympathetic) slowing, not sympathetic excess; atropine is antimuscarinic."),
+    O("Atropine destroys acetylcholinesterase, so acetylcholine builds up and speeds the heart back to normal.", false, "Destroying AChE would raise ACh activity at muscarinic receptors and slow the heart further.")
+  ],
+  tp: "Vagal excess → muscarinic activation → bradycardia. Atropine blocks muscarinic receptors (also the post-MI vagal-slowing case). Framework: receptor pharmacology." });
+BANK.push({ cat: CB, type: "single", kt: ["Muscarinic receptors"],
+  stem: "A postoperative patient cannot urinate. Reviewing his medications, the nurse notes several anticholinergic drugs. Which explanation connects the drugs to the retention?",
+  opts: [
+    O("Anticholinergic drugs block the cholinergic signaling that contracts the bladder wall and relaxes its sphincter, so coordinated emptying fails.", true, "Bladder emptying needs muscarinic-driven contraction of the wall plus sphincter relaxation (the guide's Case 5: postoperative retention from anticholinergics; bethanechol, a muscarinic agonist, does the reverse). Framework: mechanism-to-side-effect reasoning."),
+    O("Anticholinergic drugs overstimulate the bladder, so it contracts constantly and cannot fill enough to trigger voiding.", false, "Anticholinergics BLOCK cholinergic effects; retention comes from too little bladder contraction, not constant contraction."),
+    O("Anticholinergic drugs block the baroreceptors, so the bladder can no longer sense when it is full.", false, "Baroreceptors sense blood pressure, not bladder fullness; the retention mechanism is blocked bladder-wall contraction."),
+    O("Anticholinergic drugs destroy the vagus nerve's endings, permanently removing the bladder's ability to contract and empty.", false, "The drugs block receptors temporarily; they do not destroy nerves.")
+  ],
+  tp: "Anticholinergic → bladder wall can't contract + sphincter can't relax → retention. Muscarinic agonist (bethanechol) reverses it. Framework: mechanism-to-side-effect reasoning." });
+
+/* ---------- NEURONS / TERMINATION ---------- */
+BANK.push({ cat: CC, type: "single", kt: ["Thoracolumbar outflow", "Craniosacral outflow"],
+  stem: "A student maps the two ANS outflows on a diagram. Which pairing is correct?",
+  opts: [
+    O("Sympathetic = thoracolumbar outflow (T1–L2, with the paravertebral chain ganglia); parasympathetic = craniosacral outflow (brain stem and sacrum).", true, "Sympathetic fibers exit at T1–L2 (thoracolumbar) to the chain ganglia; parasympathetic fibers exit from the brain stem and sacrum (craniosacral). Framework: structural classification."),
+    O("Sympathetic = craniosacral outflow (brain stem and sacrum); parasympathetic = thoracolumbar outflow (T1–L2).", false, "The outflows are reversed: sympathetic is thoracolumbar, parasympathetic is craniosacral."),
+    O("Both divisions use the thoracolumbar outflow, and they are separated only by which transmitter they release.", false, "Only the sympathetic division is thoracolumbar; the parasympathetic is craniosacral."),
+    O("Sympathetic fibers exit through the four cranial nerves; parasympathetic fibers exit through the sympathetic chain.", false, "Four cranial nerves carry PARASYMPATHETIC fibers; the chain (paravertebral ganglia) is sympathetic.")
+  ],
+  tp: "Thoracolumbar (T1–L2) = sympathetic + chain ganglia + adrenal medulla. Craniosacral = parasympathetic (4 cranial nerves incl. vagus + sacral). Framework: structural classification." });
+BANK.push({ cat: CE, type: "multi", kt: ["Reuptake", "Acetylcholinesterase"],
+  stem: "A nurse compares how the two autonomic transmitters are switched off. Which statements are correct? Select all that apply.",
+  opts: [
+    O("Acetylcholine is quickly degraded in the synapse by acetylcholinesterase, so its effects are short-lived.", true, "AChE rapidly destroys ACh — ACh's effects are brief."),
+    O("Most norepinephrine is terminated by reuptake into the adrenergic nerve terminal, where it can be reused.", true, "Reuptake is NE's main off-switch and recycles the transmitter."),
+    O("Excess NE inside the terminal is degraded by monoamine oxidase (MAO), and washed-away NE is degraded by COMT in surrounding tissues.", true, "NE has three fates: reuptake/reuse, MAO (inside terminal), COMT (distal tissues)."),
+    O("Because NE is recycled rather than instantly destroyed, its effects are more prolonged than ACh's.", true, "The duration contrast is explicit in the guide: ACh short-lived, NE more prolonged."),
+    O("Acetylcholine is terminated mainly by reuptake into the cholinergic terminal for reuse.", false, "Reuptake belongs to NE; ACh is destroyed by AChE in the synapse.")
+  ],
+  tp: "ACh off-switch: AChE (fast → short effects). NE off-switches: reuptake (main) + MAO + COMT (→ prolonged effects). Framework: compare/contrast mechanisms." });
+BANK.push({ cat: CC, type: "order", kt: ["Preganglionic fiber", "Ganglion"],
+  stem: "Place the signal path of a sympathetic response in order, from the spinal cord to the effector organ.",
+  items: [
+    { t: "Neuron 1 leaves the cord in the thoracolumbar outflow (T1–L2)", r: "Sympathetic signals start in the T1–L2 cord levels." },
+    { t: "The preganglionic fiber reaches a paravertebral (chain) ganglion and releases ACh onto nicotinic receptors", r: "At every autonomic ganglion, neuron 1 is cholinergic and the relay receptor is nicotinic (NN)." },
+    { t: "Neuron 2's postganglionic fiber travels to the effector organ", r: "After the relay, the postganglionic fiber carries the signal onward." },
+    { t: "The postganglionic fiber releases norepinephrine onto alpha or beta receptors of the effector", r: "Sympathetic postganglionic fibers are adrenergic — NE onto alpha/beta receptors ends the path." }
+  ],
+  tp: "Sympathetic path: T1–L2 → preganglionic ACh → chain ganglion (NN) → postganglionic NE → alpha/beta effector. Framework: pathway sequencing." });
+
+/* ---------- NGN CASE STUDY (grp) ---------- */
+var CASE12 = "CASE12";
+var CASESTEM = "CASE — A 30-year-old with quadriplegia from a high cervical spinal cord injury is in a rehabilitation unit. The nurse finds the urinary catheter tubing kinked under the patient's leg and the bladder visibly distended. The patient's blood pressure reads 198/110, up from a baseline of 110/70, and the patient reports feeling 'pressure everywhere.' The provider is being notified. ";
+BANK.push({ cat: CG, type: "multi", grp: CASE12, kt: ["Autonomic dysreflexia"],
+  stem: CASESTEM + "Which findings are the most significant cues in this presentation? Select all that apply.",
+  opts: [
+    O("Blood pressure of 198/110, far above the patient's baseline of 110/70.", true, "A pressure surge of this size in a quadriplegic patient is the emergency cue — massive sympathetic discharge is driving vasoconstriction."),
+    O("A kinked urinary catheter with a visibly distended bladder.", true, "The distended bladder is the trigger stimulus; the kink explains why the bladder filled."),
+    O("The patient's high cervical cord injury with quadriplegia.", true, "Dysreflexia occurs in high cervical cord injury — the population cue that makes this diagnosis possible."),
+    O("The patient's report of feeling 'pressure everywhere.'", true, "The subjective report corroborates the pressure emergency and should not be dismissed."),
+    O("The patient is 30 years old and in a rehabilitation unit.", false, "Age and location are context, not significant cues for this emergency.")
+  ],
+  tp: "NGN — Recognize cues: high cervical injury + distended bladder (kinked catheter) + BP surge = autonomic dysreflexia pattern. Framework: NGN (recognize cues)." });
+BANK.push({ cat: CG, type: "single", grp: CASE12, kt: ["Autonomic dysreflexia", "Thoracolumbar discharge"],
+  stem: CASESTEM + "Which mechanism best analyzes what is happening?",
+  opts: [
+    O("Bladder signals reach the cord and trigger a massive thoracolumbar (sympathetic) discharge with no counterweight, driving pressure dangerously high.", true, "Autonomic dysreflexia = out-of-control sympathetic activity: the distended bladder sets off the thoracolumbar outflow, and firing continues while the bladder stays distended. Framework: NGN (analyze cues)."),
+    O("The parasympathetic division is over-firing through the vagus nerve, and the excess vagal activity is raising the pressure.", false, "Vagal (parasympathetic) activity slows and calms; the runaway division here is sympathetic."),
+    O("The baroreceptors have ruptured, so the blood-pressure reflex is firing randomly in both divisions at once.", false, "Baroreceptors start the BP reflex; they do not rupture, and the discharge is sympathetic only."),
+    O("Acetylcholinesterase has stopped working, so acetylcholine is building up at every synapse and raising the pressure.", false, "AChE failure is not the mechanism; the trigger is bladder distension driving sympathetic outflow.")
+  ],
+  tp: "NGN — Analyze cues: distended bladder → massive thoracolumbar sympathetic discharge → pressure emergency. Framework: NGN (analyze cues)." });
+BANK.push({ cat: CG, type: "single", grp: CASE12, kt: ["Autonomic dysreflexia"],
+  stem: CASESTEM + "Which risk makes this the nurse's highest-priority problem?",
+  opts: [
+    O("Severe, uncontrolled hypertension from the sympathetic surge, which will continue as long as the bladder remains distended.", true, "The firing continues while the stimulus remains — sustained severe hypertension is the priority threat. Framework: NGN (prioritize) / Maslow safety."),
+    O("Urinary retention discomfort, which will become distressing over the next several hours if untreated.", false, "Discomfort is real but minor next to a pressure of 198/110; the danger is the hypertension, not the full bladder itself."),
+    O("Dehydration, because the blocked catheter prevents the nurse from measuring urine output accurately.", false, "Output measurement is a documentation issue, not the life-threat in this scene."),
+    O("Parasympathetic rebound, in which the blood pressure will suddenly fall too low on its own.", false, "No rebound is described; without removing the stimulus the pressure stays dangerously high.")
+  ],
+  tp: "NGN — Prioritize: the pressure emergency itself, sustained by the unrelieved trigger. Framework: NGN (prioritize hypotheses)." });
+BANK.push({ cat: CG, type: "single", grp: CASE12, kt: ["Autonomic dysreflexia"],
+  stem: CASESTEM + "Which intervention directly treats the cause of this emergency?",
+  opts: [
+    O("Remove the stimulus: unkink the catheter and drain the distended bladder, which ends the discharge and lowers the blood pressure.", true, "The guide's stated immediate treatment: remove the stimulus (the distended bladder) — empty the bladder, end the emergency. Framework: NGN (generate solutions) — treat the cause."),
+    O("Give a beta2 agonist so the bronchioles dilate and more oxygen reaches the tissues during the crisis.", false, "Beta2 agonists treat asthma airways; they do nothing about a bladder-triggered sympathetic surge."),
+    O("Give atropine to block the muscarinic receptors that are driving the sympathetic discharge in this crisis.", false, "Atropine blocks vagal/muscarinic effects (e.g., bradycardia); the discharge here is sympathetic and trigger-driven."),
+    O("Restrict the patient's fluids for the rest of the shift so the bladder cannot refill and trigger another episode.", false, "Fluid restriction does not empty the bladder that is already distended and driving the emergency now.")
+  ],
+  tp: "NGN — Generate solutions: remove the stimulus → discharge stops → BP falls. Framework: NGN (generate solutions)." });
+BANK.push({ cat: CG, type: "single", grp: CASE12, kt: ["Autonomic dysreflexia"],
+  stem: CASESTEM + "Which action should the nurse take first?",
+  opts: [
+    O("Unkink the catheter and ensure the bladder drains, while monitoring the blood pressure closely.", true, "First action = remove the trigger and watch the pressure respond; this treats the cause immediately. Framework: nursing process / NGN (take action)."),
+    O("Complete a full cranial nerve assessment to establish the patient's neurological baseline.", false, "A routine CN screen never comes before relieving a pressure emergency's trigger."),
+    O("Document the blood pressure and recheck it at the next scheduled vital-sign round.", false, "Waiting for the next round leaves the stimulus — and the discharge — in place; act now."),
+    O("Teach the patient the difference between the sympathetic and parasympathetic divisions.", false, "Teaching is for after the emergency is controlled, not during it.")
+  ],
+  tp: "NGN — Take action: unkink/drain first, monitor BP. Framework: NGN (take action) / treat the cause." });
+BANK.push({ cat: CG, type: "single", grp: CASE12, kt: ["Autonomic dysreflexia"],
+  stem: CASESTEM + "Which finding best evaluates that the intervention worked?",
+  opts: [
+    O("The bladder is drained and the blood pressure falls back toward the patient's baseline of 110/70.", true, "Removing the stimulus ends the discharge, so pressure returning toward baseline directly evaluates success. Framework: NGN (evaluate outcomes)."),
+    O("The patient's urine output for the shift totals at least 500 mL by the end of the day.", false, "Total output is a routine measure; the emergency is evaluated by the pressure response now."),
+    O("The patient can state the names of both autonomic divisions and their nicknames.", false, "Patient knowledge does not evaluate resolution of a pressure emergency."),
+    O("The patient's heart rate rises above 100 as the sympathetic system recovers.", false, "A rising heart rate is not the goal; falling pressure toward baseline is.")
+  ],
+  tp: "NGN — Evaluate outcomes: bladder empty + BP back toward baseline = emergency resolved. Framework: NGN (evaluate outcomes)." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 12: Autonomic Nervous System — Situational Practice Test</h1>';
+  h += '<div class="sub">Brutal mode | Herlihy, Anatomy &amp; Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

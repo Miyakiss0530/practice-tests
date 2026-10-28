@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 - Introduction to the Human Body - ATI Practice Test (Brutal Mode) (Herlihy)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK (HARD / BRUTAL MODE) ============ */
+/* Herlihy Ch 1 Situational Practice Test — BRUTAL vignettes + one unfolding NGN case study (grp NGN1, 6 linked questions). */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Foundations & Levels of Organization";
+var CB = "Organ Systems";
+var CC = "Homeostasis & Anatomical Position";
+var CD = "Relative Positions & Planes";
+var CE = "Regional Terms";
+var CF = "Body Cavities, Quadrants & Regions";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = ["abdominopelvic-cavity", "allergens", "anatomical-position", "anatomy", "antecubital", "anterior", "axillary", "bone-marrow", "buccal", "cardiac-muscle", "cell", "central", "cephalic", "cranial-cavity", "distal", "endocrine-system", "four-quadrants", "frontal-coronal-plane", "function", "homeostasis", "homeostatic-mechanisms", "hormones", "immune-system", "inguinal", "integumentary-system", "lateral", "medial", "mediastinum", "midsagittal-section", "nervous-system", "organ-systems", "organs", "patellar", "pathophysiology", "pedal", "pericardial-cavity", "physiology", "plantar", "pleural-cavities", "popliteal", "posterior", "proximal", "respiratory-system", "sagittal-plane", "skeletal-muscle", "skeletal-system", "smooth-muscle", "spinal-vertebral-cavity", "structure", "superficial", "thoracic-cavity", "tissues", "transverse-plane", "urinary-system", "vascular-smooth-muscle", "ventral"];
+var BLUEPRINT = {
+  CA: { name: CA, count: 5, types: { "multi": 1, "order": 1, "single": 3 } },
+  CB: { name: CB, count: 9, types: { "dropdown": 1, "matrix": 1, "multi": 1, "single": 6 } },
+  CC: { name: CC, count: 5, types: { "multi": 1, "single": 4 } },
+  CD: { name: CD, count: 6, types: { "dropdown": 1, "matrix": 1, "single": 4 } },
+  CE: { name: CE, count: 5, types: { "multi": 1, "order": 1, "single": 3 } },
+  CF: { name: CF, count: 11, types: { "dropdown": 2, "multi": 3, "single": 6 } },
+};
+
+BANK.push({ cat: CA, type: "single", kt: ["structure"], stem: "A patient asks why a heart valve that is built too stiffly makes her short of breath with activity. Which explanation by the nurse is correct?", opts: [
+    O("The way a part is built decides the job it can do, so a stiff valve cannot move blood the way a normally built valve does", true, "Structure and function are closely related — the chapter's anchor idea: a part's build decides the job it can do, like the heart walls built for pumping."),
+    O("The stiffness matters only because of her age, since a part's build has no real effect on the job that the part performs", false, "This denies the chapter's core link — shape is never random decoration; on any test, a structure's build is a clue to its function."),
+    O("Her breathing problem is unrelated to the valve, because each body part works alone with no effect on any other system", false, "Systems work together — the circulatory problem shows up as a breathing complaint precisely because transport and intake systems are linked."),
+    O("A stiff valve is a labeling problem only, and her symptoms will resolve once the chart uses a more accurate valve name", false, "Symptoms follow failed function, not wording — renaming a structure does not restore the job its build can no longer perform.")
+  ], tp: "ANSWER KEY — Correct answer: The way a part is built decides the job it can do, so a stiff valve cannot move blood the way a normally built valve does. DETAILED RATIONALE — Form fits the job: hand built for grasping, heart walls built for pumping — a changed build means a changed job. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["anatomy", "physiology", "pathophysiology"], stem: "A nursing student is reviewing a patient's chart and must sort three notes: a description of the shape of a joint, a description of what that joint does, and a note about joint disease after years of improper use. Which sorting is correct?", opts: [
+    O("Shape of the joint belongs with anatomy, what it does belongs with physiology, and the disease note belongs with pathophysiology", true, "Anatomy = structure, physiology = function, pathophysiology = consequences of improper functioning (disease) — the three boxes every term sorts into."),
+    O("Shape of the joint belongs with physiology, what it does belongs with anatomy, and the disease note belongs with physiology as well", false, "This swaps the first two boxes — anatomy names structure and physiology names function; they are not interchangeable terms."),
+    O("All three notes belong with pathophysiology, because any note written about a patient in a hospital chart concerns disease", false, "Only the disease note is pathophysiology; structure and function notes keep their own sciences even when charted on a patient."),
+    O("The disease note belongs with anatomy, because disease changes the shape of a joint and anatomy covers anything structural", false, "Disease is filed under pathophysiology — the consequences of improper functioning — even when it later changes a structure.")
+  ], tp: "ANSWER KEY — Correct answer: Shape of the joint belongs with anatomy, what it does belongs with physiology, and the disease note belongs with pathophysiology. DETAILED RATIONALE — Sort every word: structure (anatomy), function (physiology), gone-wrong (pathophysiology). The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "order", kt: ["cell"], stem: "A patient asks how something as small as a molecule can affect her whole body. Place the levels of organization in the correct order, from smallest to largest, to build the nurse's explanation.", items: [
+    { t: "Atoms", r: "Atoms are the smallest level — molecules are built from atoms." },
+    { t: "Molecules", r: "Molecules are built from atoms and are used to build the larger molecules." },
+    { t: "Macromolecules", r: "Macromolecules are the larger molecules, the level just below the cell." },
+    { t: "Cells", r: "Cells are the basic unit of life — the level where living starts." },
+    { t: "Tissues", r: "Tissues are specialized groups of cells performing specific functions." },
+    { t: "Organs", r: "Organs are several tissue types working together." },
+    { t: "Organ systems", r: "Organ systems are several organs working together." },
+    { t: "Human organism", r: "The human organism is the whole person — all systems together." }
+  ], tp: "ANSWER KEY — Correct answer: Atoms → Molecules → Macromolecules → Cells → Tissues → Organs → Organ systems → Human organism. DETAILED RATIONALE — Each level adds 'several of the level below, working together'; the cell is the basic unit of life. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — evaluation of learning: a correct statement proves understanding; a misconception names what to reteach." });
+
+BANK.push({ cat: CA, type: "single", kt: ["function"], stem: "A patient with a fractured wrist cannot grip a cup. The nurse explains the problem to the patient. Which statement uses the chapter's structure–function examples correctly?", opts: [
+    O("The hand is built for grasping, so a break in its structure takes away the job that its shape normally lets it perform", true, "The hand is the chapter's grasping example — built for grasping, so damaged structure means lost function, the pair asked together on tests."),
+    O("The hand is built for pumping, so the fracture mainly threatens the blood supply rather than the patient's grip strength", false, "Pumping belongs to the heart walls, not the hand — misassigning the chapter's examples reverses the structure–function pairing."),
+    O("Grip comes from the tail-like balance structures, so the nurse should assess the patient's balance before the wrist injury", false, "The monkey's tail is the chapter's animal example of a structure shaped by use — it has nothing to do with a human hand injury."),
+    O("The fracture is only a function problem, because breaks change what a part does without changing how the part is built", false, "A fracture changes the BUILD first; the lost grip follows from the changed structure — the two are always asked as a pair.")
+  ], tp: "ANSWER KEY — Correct answer: The hand is built for grasping, so a break in its structure takes away the job that its shape normally lets it perform. DETAILED RATIONALE — Hand = grasping, heart walls = pumping, monkey's tail = animal example of form shaped by use. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "multi", kt: ["tissues", "organs", "organ-systems"], stem: "A patient is learning how her body is organized after a new diagnosis. Which statements by the nurse are correct? Select all that apply.", opts: [
+    O("Your organs are built from several tissue types working together", true, "Correct — an organ is several tissue types together, which is what separates organs from tissues."),
+    O("Your organ systems are built from several organs working together", true, "Correct — a system is several organs working together, one level below the whole organism."),
+    O("The cell is the basic unit where living starts in your body", true, "Correct — only one level is named the basic unit of life: the cell."),
+    O("A tissue is made of several organs grouped by location", false, "Reversed — tissues are groups of CELLS; organs, not tissues, sit above them in the chain."),
+    O("An organ system is a single organ with several tissue types", false, "That describes an ORGAN, not a system — a system needs several organs working together.")
+  ], tp: "ANSWER KEY — Correct answer: Your organs are built from several tissue types working together; Your organ systems are built from several organs working together; The cell is the basic unit where living starts in your body. DETAILED RATIONALE — Tissues = groups of cells; organs = several tissue types; systems = several organs; organism = whole person. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["bone-marrow", "skeletal-system"], stem: "A patient's laboratory report shows a low blood cell count, and the provider plans to examine the tissue that makes most blood cells. Which system should the nurse expect to be assessed?", opts: [
+    O("The skeletal system, with attention to the marrow inside the patient's bones", true, "Bone marrow produces most blood cells, and marrow belongs to the skeletal system — bones, joints, and cartilage — not to the heart or vessels."),
+    O("The circulatory system, with attention to the patient's heart as the maker of cells", false, "The heart pumps blood; it does not make it. Filing blood-cell production under the heart is the chapter's named trap."),
+    O("The muscular system, with attention to the patient's largest skeletal muscles", false, "Muscles move the skeleton, pump blood, or move fluids — none of the three muscle types produces blood cells."),
+    O("The lymphatic system, with attention to the patient's largest lymph nodes", false, "The lymphatic system handles fluid balance and defense; blood-cell production belongs to bone marrow in the skeletal system.")
+  ], tp: "ANSWER KEY — Correct answer: The skeletal system, with attention to the marrow inside the patient's bones. DETAILED RATIONALE — Marrow makes most blood cells and marrow = skeletal system. The heart transports blood; it does not produce it. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["endocrine-system", "hormones"], stem: "A patient is being evaluated for slow growth, a change in metabolism, and a water-balance problem, all traced to chemical messengers in her blood. Which system is the nurse documenting?", opts: [
+    O("The endocrine system, whose glands secrete the chemical messengers involved", true, "Hormones are chemical substances secreted by endocrine glands, and those glands regulate growth, reproduction, metabolism, and water balance."),
+    O("The nervous system, whose nerves secrete the chemical messengers involved", false, "The nervous system works through nerve signals — sensory in, motor out. Hormones belong to the endocrine system only."),
+    O("The circulatory system, whose vessels manufacture the chemical messengers", false, "Blood TRANSPORTS materials to all cells; the vessels do not secrete hormones — glands of the endocrine system do."),
+    O("The urinary system, whose kidneys are the glands described in this scenario", false, "The kidneys excrete waste as urine and control water, electrolyte, and acid–base balance — they are not the hormone-secreting glands meant here.")
+  ], tp: "ANSWER KEY — Correct answer: The endocrine system, whose glands secrete the chemical messengers involved. DETAILED RATIONALE — Hormones = endocrine only. The endocrine four: growth, reproduction, metabolism, water balance. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "matrix", kt: ["respiratory-system", "urinary-system"], stem: "A nurse is matching each patient problem to the system whose job covers it. Match each system with its correct job.", cols: ["Brings oxygen in and removes carbon dioxide; helps regulate acid–base balance", "Excretes waste as urine; controls water, electrolyte, and acid–base balance", "Breaks food into absorbable substances and eliminates unabsorbed material as waste", "Transports nutrients and oxygen to all cells and waste to the organs of excretion"], rows: [
+    { t: "Respiratory system", a: 0, r: "Lungs and conducting structures bring O2 in and remove CO2, with a key role in acid–base balance." },
+    { t: "Urinary system", a: 1, r: "Kidneys and other urinary structures excrete waste as urine and control water, electrolyte, and acid–base balance." },
+    { t: "Digestive system", a: 2, r: "The digestive system ingests food, breaks it into absorbable substances, and eliminates unabsorbed waste." },
+    { t: "Circulatory system", a: 3, r: "Blood, heart, and vessels transport nutrients and oxygen to cells and waste to the organs of excretion." }
+  ], tp: "ANSWER KEY — Correct answer: Respiratory → oxygen in / carbon dioxide out + acid–base; Urinary → urine + water, electrolyte, acid–base; Digestive → absorbable substances; Circulatory → transport to cells and to excretion organs. DETAILED RATIONALE — Acid–base is the shared job: respiratory AND urinary both regulate it — giving it to only one system is the trap. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["immune-system", "allergens"], stem: "A patient who was stung by a bee develops a reaction, and the nurse explains that the same body system that fights germs also reacted to the venom. Which statement is correct?", opts: [
+    O("The immune system protects against pathogens, allergens such as bee venom, and the body's own abnormal cells", true, "Those are the immune system's three targets in the guide — bee venom is named as an allergen example alongside pollen."),
+    O("The reaction came from the lymphatic system alone, because the immune system only reacts to living germs", false, "Both systems defend, and the immune system's targets are wider than germs — allergens and abnormal cells are on its list too."),
+    O("The venom reaction is a circulatory problem, because anything carried in the blood is handled only by that system", false, "Blood is the transport medium; defense against allergens belongs to the immune system, which is widely distributed in the body."),
+    O("A venom reaction cannot involve defense systems, because those systems shut down when a substance is not a germ", false, "The immune system reacts to allergens by design — pollen and bee venom are the chapter's own allergen examples.")
+  ], tp: "ANSWER KEY — Correct answer: The immune system protects against pathogens, allergens such as bee venom, and the body's own abnormal cells. DETAILED RATIONALE — Immune targets, all three: pathogens, allergens (pollen, bee venom), abnormal (cancer) cells. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["respiratory-system", "urinary-system"], stem: "A patient's blood gas report shows an acid–base problem, and the student nurse insists only the lungs can correct it. Which correction by the nurse is right?", opts: [
+    O("Both the respiratory system and the urinary system regulate acid–base balance, so either one may be involved here", true, "The guide gives acid–base to BOTH systems — lungs through breathing and kidneys through urine — one balance, two systems."),
+    O("The student is right, because the urinary system controls water balance but has no role at all in acid–base balance", false, "The urinary system controls water, electrolyte, AND acid–base balance — dropping the third item is the trap in this option."),
+    O("Neither system regulates it, because acid–base balance is maintained by the digestive system breaking down food acids", false, "The digestive system breaks food into absorbable substances; acid–base regulation belongs to respiratory and urinary systems."),
+    O("Only the endocrine system regulates it, because its glands regulate every balance problem found in the blood", false, "Endocrine glands regulate growth, reproduction, metabolism, and water balance — acid–base is not on that list of four.")
+  ], tp: "ANSWER KEY — Correct answer: Both the respiratory system and the urinary system regulate acid–base balance, so either one may be involved here. DETAILED RATIONALE — Shared job: respiratory + urinary both regulate acid–base balance. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "multi", kt: ["nervous-system"], stem: "A patient steps on a sharp object and pulls her foot back before she is fully aware of it. Which statements about the control loop are correct? Select all that apply.", opts: [
+    O("Sense organs picked up sensory information and sent it toward the brain and spinal cord", true, "Correct — the loop starts with sensory information in, toward the brain and spinal cord that interpret it."),
+    O("The brain and spinal cord interpreted the information before any response was sent out", true, "Correct — interpretation by the brain and spinal cord is the middle step of the nervous loop."),
+    O("Motor signals were sent out from the center to produce the withdrawal response", true, "Correct — motor signals out produce the response, completing the loop the chapter traces."),
+    O("Glands released hormones that carried the withdrawal message to the leg muscles", false, "Hormones are the ENDOCRINE system's messengers — this fast loop ran on nerve signals, not gland secretions."),
+    O("The response was limited to a reflex, so thinking and emotion played no possible role", false, "The nervous system is not shrunk to reflexes — the chapter also credits it with thinking and emotion.")
+  ], tp: "ANSWER KEY — Correct answer: Sense organs picked up sensory information and sent it toward the brain and spinal cord; The brain and spinal cord interpreted the information before any response was sent out; Motor signals were sent out from the center to produce the withdrawal response. DETAILED RATIONALE — Nervous loop in order: sensory in → brain/spinal cord interpret → motor out → response. Hormones = endocrine, not this loop. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["vascular-smooth-muscle"], stem: "A patient's chart notes narrowing of a blood vessel wall, which slowed the movement of blood through that vessel. Which muscle is documented as working in that wall?", opts: [
+    O("Vascular smooth muscle, the kind found in blood vessel walls that moves blood", true, "The guide names vascular smooth muscle as the smooth muscle in vessel walls — the kind that moves blood through the vessels."),
+    O("Cardiac muscle, the kind found in vessel walls wherever blood pressure is highest", false, "Cardiac muscle is found ONLY in the heart — it never appears in vessel walls at any pressure."),
+    O("Skeletal muscle, the kind attached to the outside of vessels to squeeze them", false, "Skeletal muscle is attached to the skeleton and moves the skeleton; it is not the muscle of vessel walls."),
+    O("Smooth muscle cannot be involved, because smooth muscle only works inside the heart chambers", false, "Reversed — smooth muscle works in organs and tubes, and the heart chambers are the home of cardiac muscle only.")
+  ], tp: "ANSWER KEY — Correct answer: Vascular smooth muscle, the kind found in blood vessel walls that moves blood. DETAILED RATIONALE — Vessel walls = vascular smooth muscle. Cardiac = only in the heart. Skeletal = attached to the skeleton. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "dropdown", kt: ["skeletal-muscle", "cardiac-muscle", "smooth-muscle"], stem: "For each patient finding, choose the muscle type at work.<br><br>The patient's heart is pumping blood with each beat<br>[[0]]<br><br>The patient lifts an arm by moving the skeleton<br>[[1]]<br><br>Fluid is moving through a tube in one of the patient's organs<br>[[2]]", blanks: [
+    { o: [O("Cardiac muscle", true, "Cardiac muscle is found only in the heart and pumps blood — this finding can only be cardiac."), O("Skeletal muscle", false, "Skeletal muscle moves the skeleton and maintains posture; it does not pump blood in the heart."), O("Smooth muscle", false, "Smooth muscle moves fluids in organs and tubes; the pumping heart is cardiac muscle.")] },
+    { o: [O("Skeletal muscle", true, "Skeletal muscle is attached to the skeleton and moves the skeleton — lifting an arm is its job."), O("Cardiac muscle", false, "Cardiac muscle is found only in the heart; it cannot lift the patient's arm."), O("Smooth muscle", false, "Smooth muscle works in organs and tubes moving fluids, not in moving the skeleton.")] },
+    { o: [O("Smooth muscle", true, "Smooth muscle in organs and tubes moves fluids — exactly the job described in this finding."), O("Cardiac muscle", false, "Cardiac muscle is found only in the heart; it does not move fluid through organ tubes."), O("Skeletal muscle", false, "Skeletal muscle moves the skeleton and maintains posture; fluid movement in tubes is smooth muscle.")] }
+  ], tp: "ANSWER KEY — Correct answer: Blank 1: Cardiac muscle; Blank 2: Skeletal muscle; Blank 3: Smooth muscle. DETAILED RATIONALE — Three muscle types, three addresses: skeletal on the skeleton, cardiac only in the heart, smooth in organs and tubes. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — assessment and analysis before implementation." });
+
+BANK.push({ cat: CB, type: "single", kt: ["integumentary-system"], stem: "A patient with thinning skin asks why her skin also helps her sense touch and control temperature. Which reply by the nurse is correct?", opts: [
+    O("The skin covers the body, regulates temperature, and contains structures for sensation, all as one system", true, "That is the integumentary system's full job list in the guide — cover, temperature regulation, and sensation structures, with hair and nails."),
+    O("Sensation and temperature are handled by the bones under the skin, and the skin itself only provides a covering", false, "Bones form the framework and marrow; sensation structures and temperature regulation belong to the integumentary system itself."),
+    O("The skin only covers the body, and any feeling in it comes from muscles contracting directly under its surface", false, "Muscles move and pump; the guide credits the skin system itself with structures for sensation and with regulating temperature."),
+    O("Temperature control belongs to the hair and nails alone, while the skin surface plays no part in that job", false, "Hair and nails are parts of the same system, but the job list belongs to the integumentary system as a whole, skin included.")
+  ], tp: "ANSWER KEY — Correct answer: The skin covers the body, regulates temperature, and contains structures for sensation, all as one system. DETAILED RATIONALE — Integumentary = skin, hair, nails: covers body, regulates temperature, structures for sensation. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CC, type: "single", kt: ["homeostasis"], stem: "A patient in a room kept at 100°F asks why his temperature is still 98.6°F, and a patient in a 60°F room has the same reading. Which explanation is correct?", opts: [
+    O("His body maintains a stable internal environment despite the changing external environment around him", true, "That is homeostasis in the chapter's own temperature example — about 98.6°F (37°C) whether the room is 100°F or 60°F."),
+    O("The thermometer must be wrong, because body temperature always matches the temperature of the room exactly", false, "Matching the room would mean the internal environment is NOT held stable — the two identical readings show the mechanism working."),
+    O("His temperature stayed normal because he drank several liters of water while sitting in the heated room", false, "Water intake is the chapter's separate example (cell water at 2, 3, or 4 L/day) — it does not explain the temperature reading."),
+    O("A stable reading shows his body has stopped responding to the environment and no mechanisms are at work", false, "Stable does not mean inactive — homeostatic mechanisms are actively maintaining that steady internal state.")
+  ], tp: "ANSWER KEY — Correct answer: His body maintains a stable internal environment despite the changing external environment around him. DETAILED RATIONALE — Homeostasis: stable inside while outside changes — temperature near 98.6°F at room temperatures of 100°F or 60°F. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CC, type: "single", kt: ["homeostatic-mechanisms"], stem: "A patient's blood sugar is within normal limits the morning after a very large holiday dinner, and again after a 6-hour fast. The nurse teaches that a problem would begin when which event occurs?", opts: [
+    O("When the mechanisms holding the internal environment steady fail and an imbalance develops into dysfunction", true, "Homeostatic imbalance leads to disease or dysfunction — the chapter's definition of how illness starts, after either the dinner or the fast."),
+    O("When the patient eats a large meal, because any large intake by itself is the definition of a health problem", false, "The dinner itself is the chapter's NORMAL example — blood sugar stayed within normal limits afterward, so intake alone is not imbalance."),
+    O("When the sugar reading changes at all between two checks, because a healthy internal state never varies", false, "Stable does not mean frozen at one number — values stay within normal limits while the outside conditions change."),
+    O("When the patient fasts for six hours, because fasting always pushes the internal environment out of balance", false, "The 6-hour fast is the chapter's second normal example — sugar stayed within normal limits after it as well.")
+  ], tp: "ANSWER KEY — Correct answer: When the mechanisms holding the internal environment steady fail and an imbalance develops into dysfunction. DETAILED RATIONALE — Normal: sugar in limits after a Thanksgiving dinner OR a 6-hour fast. Illness starts at homeostatic imbalance → disease/dysfunction. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CC, type: "multi", kt: ["homeostasis"], stem: "Which patient findings are examples of homeostasis at work? Select all that apply.", opts: [
+    O("A patient's temperature stays about 98.6°F in a room kept at 100°F", true, "Correct — temperature held near 98.6°F despite a hot external environment is the chapter's first example."),
+    O("A patient's cell water stays stable on days he drinks 2 L and days he drinks 4 L", true, "Correct — cell water stays stable whether intake is 2, 3, or 4 L/day, per the chapter's water example."),
+    O("A patient's blood sugar stays within normal limits after a 6-hour fast", true, "Correct — sugar within normal limits after a fast is the chapter's third homeostatic example."),
+    O("A patient's room temperature rises and falls with the weather outside", false, "That is the EXTERNAL environment changing — homeostasis describes the internal environment being held steady."),
+    O("A patient's appetite grows larger at a holiday meal than at breakfast", false, "Meal size is an intake behavior, not an internal value held steady by homeostatic mechanisms.")
+  ], tp: "ANSWER KEY — Correct answer: A patient's temperature stays about 98.6°F in a room kept at 100°F; A patient's cell water stays stable on days he drinks 2 L and days he drinks 4 L; A patient's blood sugar stays within normal limits after a 6-hour fast. DETAILED RATIONALE — The three printed examples: temperature (100°F/60°F room), cell water (2–4 L/day), blood sugar (big dinner / 6-hour fast). The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CC, type: "single", kt: ["anatomical-position"], stem: "A nurse must document the direction of a finding on a patient who is lying on her side in bed. Which approach follows the chapter's rule?", opts: [
+    O("Describe the finding as if the patient were standing erect, face forward, arms at her sides, palms forward", true, "All anatomical terms describe the body AS IF in anatomical position — erect, face forward, arms at sides, toes and palms forward — no matter the real pose."),
+    O("Describe the finding from the side-lying pose, because directions must match how the patient is actually lying", false, "Directions read from the patient's real pose are invalid — the reference pose is the only valid frame for direction terms."),
+    O("Describe the finding with palms facing the thighs, because that is how the patient's hands rest while lying down", false, "In anatomical position the palms are directed FORWARD — palms at the thighs is the named trap for this pose."),
+    O("Skip the reference pose for bedside patients, because it only applies to bodies being studied in a laboratory", false, "The pose is the standard reference for every location and direction term in the chapter, including bedside documentation.")
+  ], tp: "ANSWER KEY — Correct answer: Describe the finding as if the patient were standing erect, face forward, arms at her sides, palms forward. DETAILED RATIONALE — Anatomical position has 5 features: erect, face forward, arms at sides, toes forward, palms forward — and it governs every direction term. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CC, type: "single", kt: ["homeostasis", "pathophysiology"], stem: "A patient's temperature mechanism has failed after an illness and his internal temperature will not return to its normal range. How does the chapter classify this state?", opts: [
+    O("A homeostatic imbalance, which is the state the chapter links directly to disease or dysfunction in the body", true, "Homeostasis failing IS pathophysiology in this chapter — imbalance leads to disease or dysfunction, by the book's definition."),
+    O("A normal variation, because a stable internal environment is expected to drift away from its range over time", false, "Drifting out of range and staying there is the opposite of homeostasis — the internal environment is supposed to be held steady."),
+    O("A problem of anatomy only, because temperature is a structural feature that is set when the body is first built", false, "Temperature holding is a function maintained by mechanisms; its failure is a function problem — pathophysiology, not anatomy."),
+    O("An external environment problem, because only conditions outside the body can be described as out of balance", false, "Imbalance is defined on the INTERNAL environment — the outside changing is normal and is what the mechanisms work against.")
+  ], tp: "ANSWER KEY — Correct answer: A homeostatic imbalance, which is the state the chapter links directly to disease or dysfunction in the body. DETAILED RATIONALE — Homeostatic imbalance → disease or dysfunction. Stable inside is the normal; failure of that stability is illness. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["anterior", "posterior"], stem: "A nurse is charting a patient's chest finding and writes two comparisons for the heart. Which pair of statements can both be true at once?", opts: [
+    O("The heart is anterior to the spinal cord, and the heart is posterior to the breastbone", true, "Both are the chapter's own examples — one structure takes different labels depending on the comparison structure used."),
+    O("The heart is superior to the spinal cord, and the heart is inferior to the breastbone", false, "The heart/spinal cord and heart/breastbone pairs are front–back comparisons (anterior/posterior), not above–below ones."),
+    O("The heart is medial to the spinal cord, and the heart is lateral to the breastbone", false, "Medial/lateral judge distance from the midline (nose vs ears) — they do not describe these front–back heart comparisons."),
+    O("The heart is proximal to the spinal cord, and the heart is distal to the breastbone", false, "Proximal/distal are judged from a limb's point of attachment to the trunk (elbow/wrist/fingers) — not used for these heart comparisons.")
+  ], tp: "ANSWER KEY — Correct answer: The heart is anterior to the spinal cord, and the heart is posterior to the breastbone. DETAILED RATIONALE — One structure, two labels: heart anterior to spinal cord, posterior to breastbone — the label depends on the comparison. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["proximal", "distal"], stem: "A patient has injuries at the elbow, wrist, and fingers of the same arm. Which charting statement is correct?", opts: [
+    O("The elbow is proximal to the wrist, and the fingers are distal to the wrist", true, "Proximal = nearer the point of attachment to the trunk; distal = farther from it — elbow → wrist → fingers runs proximal to distal."),
+    O("The wrist is proximal to the elbow, and the fingers are proximal to the wrist", false, "Both are reversed — moving away from the trunk (elbow to wrist to fingers) moves DISTAL, not proximal."),
+    O("The elbow is distal to the wrist because it is closer to the center of the body", false, "Proximal/distal are judged from the point of attachment to the trunk, NOT from the body's center — that shortcut is the trap."),
+    O("The fingers are proximal to the wrist because they are the smallest part of the arm", false, "Size does not set the label — distance from the trunk attachment does, and the fingers are the farthest point named.")
+  ], tp: "ANSWER KEY — Correct answer: The elbow is proximal to the wrist, and the fingers are distal to the wrist. DETAILED RATIONALE — Anchor chain: elbow proximal to wrist; wrist proximal to fingers; fingers distal to wrist. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["midsagittal-section"], stem: "An imaging order for a patient requests a cut at the midline that produces two equal halves. Which order wording is correct?", opts: [
+    O("A midsagittal section, because the cut is at the midline and produces equal halves", true, "Midsagittal requires BOTH conditions: at the midline AND equal halves — any other sagittal cut is just sagittal."),
+    O("A sagittal section, because every cut dividing right from left is named the same way", false, "Plain 'sagittal' misses the defining detail — a midline cut with equal halves earns the specific name midsagittal."),
+    O("A frontal section, because a cut producing two matching halves must run front to back", false, "The frontal (coronal) plane divides anterior from posterior portions — it does not produce right and left halves."),
+    O("A transverse section, because equal halves are produced by the horizontal cut as well", false, "Transverse is horizontal and divides upper from lower portions — it cannot produce right and left halves.")
+  ], tp: "ANSWER KEY — Correct answer: A midsagittal section, because the cut is at the midline and produces equal halves. DETAILED RATIONALE — Midsagittal = sagittal + midline + EQUAL halves. Coronal = crown (frontal); transverse = horizontal cross section. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "matrix", kt: ["sagittal-plane", "frontal-coronal-plane", "transverse-plane"], stem: "A nurse reading a patient's imaging report must match each plane named in the report with what it divides. Match each plane with its division.", cols: ["Divides the body into right and left portions", "Divides the body into anterior and posterior portions", "Divides the body into upper and lower portions"], rows: [
+    { t: "Sagittal plane", a: 0, r: "The sagittal plane is the lengthwise cut dividing right and left portions." },
+    { t: "Frontal (coronal) plane", a: 1, r: "The frontal plane — coronal, like a crown — divides anterior (ventral) from posterior (dorsal)." },
+    { t: "Transverse plane", a: 2, r: "The transverse plane is the horizontal cut — a cross section — dividing superior from inferior." }
+  ], tp: "ANSWER KEY — Correct answer: Sagittal → right/left; Frontal (coronal) → anterior/posterior; Transverse → upper/lower. DETAILED RATIONALE — Planes reuse the direction pairs: sagittal splits the two lateral sides, frontal splits anterior/posterior, transverse splits superior/inferior. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["medial", "lateral"], stem: "A nurse documents a patient's facial injuries: a cut on the nose and a cut on one ear. Which statement is correct?", opts: [
+    O("The nose is medial to the ears, and the ears are lateral to the nose", true, "Medial = toward the midline and lateral = away from it — the nose and ears are the chapter's own medial/lateral example."),
+    O("The nose is lateral to the ears, and the ears are medial to the nose", false, "Reversed — the nose sits nearer the midline than the ears, so the nose is medial and the ears are lateral."),
+    O("The nose is proximal to the ears, and the ears are distal to the nose", false, "Proximal/distal are judged from a limb's point of attachment to the trunk — they are not the pair for midline comparisons."),
+    O("The nose is superficial to the ears, and the ears are deep to the nose", false, "Superficial/deep judge distance from the surface (skin vs bone) — they do not describe position relative to the midline.")
+  ], tp: "ANSWER KEY — Correct answer: The nose is medial to the ears, and the ears are lateral to the nose. DETAILED RATIONALE — Nose medial to ears; ears lateral to nose — judged from the midline, in anatomical position. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "dropdown", kt: ["ventral", "superficial", "central"], stem: "For each patient finding, choose the correct relative-position term.<br><br>A rash covering the patient's belly side<br>[[0]]<br><br>A scrape that involves only the patient's skin surface<br>[[1]]<br><br>The patient's brain and spinal cord, as one central system<br>[[2]]", blanks: [
+    { o: [O("Ventral", true, "Ventral is the front, belly side — ventral = anterior, the opposite of dorsal."), O("Dorsal", false, "Dorsal is the back side, like a shark's dorsal fin — not the belly side in this finding."), O("Lateral", false, "Lateral means away from the midline — it does not name the front surface of the trunk.")] },
+    { o: [O("Superficial", true, "Superficial means on or near the surface — the skin is superficial to muscle in the chapter's example."), O("Deep", false, "Deep means away from the surface — bones are deep to the skin, the opposite of this scrape."), O("Central", false, "Central means in the center of the body — it does not describe a surface-level injury.")] },
+    { o: [O("Central nervous system", true, "Brain plus spinal cord form the central nervous system — the nerves form the peripheral system."), O("Peripheral nervous system", false, "The peripheral nervous system is formed by the NERVES — brain and spinal cord are central."), O("Endocrine system", false, "The endocrine system is glands secreting hormones — it is not the brain and spinal cord.")] }
+  ], tp: "ANSWER KEY — Correct answer: Blank 1: Ventral; Blank 2: Superficial; Blank 3: Central nervous system. DETAILED RATIONALE — Ventral = anterior (belly), dorsal = posterior (back). Superficial = surface, deep = away from surface. CNS = brain + spinal cord; nerves = peripheral. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — assessment and analysis before implementation." });
+
+BANK.push({ cat: CE, type: "single", kt: ["patellar", "popliteal"], stem: "A patient points to pain at the front of her knee after a fall, and another patient reports pain directly behind the knee. Which charting is correct?", opts: [
+    O("Chart the first patient's pain as patellar and the second patient's pain as popliteal", true, "Patellar is the FRONT of the knee over the kneecap (anterior list); popliteal is the BACK of the knee (posterior list) — a flipped pair."),
+    O("Chart the first patient's pain as popliteal and the second patient's pain as patellar", false, "Exactly swapped — popliteal is behind the knee and patellar is in front over the kneecap."),
+    O("Chart both patients' pain as femoral, because both areas belong to the same leg segment", false, "Femoral names the THIGH — neither the front nor the back of the knee is charted as femoral."),
+    O("Chart the first patient's pain as pedal and the second patient's pain as plantar", false, "Pedal is the foot and plantar is the sole of the foot — both terms belong below the knee entirely.")
+  ], tp: "ANSWER KEY — Correct answer: Chart the first patient's pain as patellar and the second patient's pain as popliteal. DETAILED RATIONALE — Knee pair: patellar = front, popliteal = back. Femoral = thigh; pedal = foot; plantar = sole. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "single", kt: ["antecubital"], stem: "A nurse is preparing to draw blood from the bend at the front of a patient's elbow. Which term should be charted for the site?", opts: [
+    O("Antecubital, because the site is the front of the elbow", true, "Antecubital is defined in the anterior list as the front of the elbow — the standard charting term for this draw site."),
+    O("Brachial, because any site on the arm takes the arm's regional name", false, "Brachial names the ARM as a whole — the front of the elbow has its own, more specific term: antecubital."),
+    O("Axillary, because the draw site is on the upper part of the patient's arm", false, "Axillary names the ARMPIT — a different site, higher than the front of the elbow."),
+    O("Digital, because the blood sample is handled with the nurse's fingers", false, "Digital names the fingers and toes of the PATIENT — it does not name a site at the front of the elbow.")
+  ], tp: "ANSWER KEY — Correct answer: Antecubital, because the site is the front of the elbow. DETAILED RATIONALE — Antecubital = front of elbow. Brachial = arm, axillary = armpit, digital = fingers and toes. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "multi", kt: ["axillary", "inguinal", "buccal"], stem: "A nurse is charting locations from a patient's head-to-toe assessment. Which charting statements are correct? Select all that apply.", opts: [
+    O("A finding in the patient's armpit is charted as axillary", true, "Correct — axillary names the armpit in the anterior regional list."),
+    O("A finding where the thigh meets the trunk is charted as inguinal", true, "Correct — inguinal is where the thigh meets the trunk; the groin."),
+    O("A finding in the cheek, between gum and cheek, is charted as buccal", true, "Correct — buccal is the cheek; the buccal cavity is the space between gum and cheek."),
+    O("A finding on the fleshy side between ribs and hip is charted as lumbar", false, "That side area is the FLANK — lumbar is the BACK region between the ribs and the hips."),
+    O("A finding on the back of the patient's head is charted as cephalic", false, "The back of the head is OCCIPITAL — cephalic names the head generally, on the anterior list.")
+  ], tp: "ANSWER KEY — Correct answer: A finding in the patient's armpit is charted as axillary; A finding where the thigh meets the trunk is charted as inguinal; A finding in the cheek, between gum and cheek, is charted as buccal. DETAILED RATIONALE — Axillary = armpit, inguinal = groin, buccal = cheek. Flank (side) vs lumbar (back) and occipital (back of head) are the traps. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "single", kt: ["pedal", "plantar"], stem: "During a foot examination, a patient has a blister on the sole of the foot and swelling across the whole foot. Which charting pair is correct?", opts: [
+    O("Chart the blister as plantar and the swelling of the whole foot as pedal", true, "Plantar is the sole of the foot and pedal is the foot itself — the pair the chapter warns not to swap."),
+    O("Chart the blister as pedal and the swelling of the whole foot as plantar", false, "Swapped — pedal names the whole foot, so the sole-specific blister must be plantar, not pedal."),
+    O("Chart both findings as digital, because the foot ends in the patient's toes", false, "Digital names fingers and toes specifically — it covers neither the sole nor the whole foot."),
+    O("Chart the blister as patellar, because it lies on a weight-bearing surface", false, "Patellar is the front of the knee over the kneecap — a knee term, not a foot term at all.")
+  ], tp: "ANSWER KEY — Correct answer: Chart the blister as plantar and the swelling of the whole foot as pedal. DETAILED RATIONALE — Pedal = foot; plantar = sole of foot. Plantar is printed in the chapter's ANTERIOR list — learn it where the book puts it. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "order", kt: ["cephalic"], stem: "A nurse performs a head-to-toe assessment on a patient. Place these regional assessment stops in the correct head-to-toe order, from first to last.", items: [
+    { t: "Cephalic — the head", r: "Cephalic (head) is the top stop in a head-to-toe sequence." },
+    { t: "Cervical — the neck", r: "Cervical (neck) follows the head as the assessment moves downward." },
+    { t: "Sternal — the middle of the chest over the breastbone", r: "Sternal (mid-chest) comes after the neck and before the abdomen." },
+    { t: "Umbilical — the navel", r: "Umbilical (navel) is the abdominal stop below the chest." },
+    { t: "Femoral — the thigh", r: "Femoral (thigh) is below the trunk stops in the sequence." },
+    { t: "Patellar — the front of the knee", r: "Patellar (front of knee) follows the thigh as the assessment descends." },
+    { t: "Pedal — the foot", r: "Pedal (foot) is the last, lowest stop in the head-to-toe order." }
+  ], tp: "ANSWER KEY — Correct answer: Cephalic → Cervical → Sternal → Umbilical → Femoral → Patellar → Pedal. DETAILED RATIONALE — Drill regional terms in body order, head to toe — the test points at a body area, not at an alphabetical list. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — evaluation of learning: a correct statement proves understanding; a misconception names what to reteach." });
+
+BANK.push({ cat: CF, type: "single", kt: ["cranial-cavity", "spinal-vertebral-cavity"], stem: "A patient with a head injury is told the injured organ sits in the same continuous space as the spinal cord. Which explanation is correct?", opts: [
+    O("The brain sits in the cranial cavity and the cord in the spinal cavity, and together they form one continuous space", true, "The two dorsal divisions — cranial (brain, in the skull) and spinal (cord, surrounded by vertebrae) — form ONE continuous space, not two sealed boxes."),
+    O("The brain and cord are separated by a solid wall, because each dorsal division is a sealed box of its own", false, "That is the chapter's named trap — cranial and spinal cavities are continuous with each other, holding the whole central nervous system."),
+    O("The brain sits in the ventral cavity, which is the larger space at the front of the patient's body", false, "The ventral cavity holds chest and abdominopelvic organs; the brain is dorsal, toward the back, in the cranial cavity."),
+    O("The cord sits in the thoracic cavity, because the spine runs behind the chest organs along the back", false, "The cord sits in the SPINAL (vertebral) cavity surrounded by vertebrae — the thoracic cavity holds the chest organs in front of it.")
+  ], tp: "ANSWER KEY — Correct answer: The brain sits in the cranial cavity and the cord in the spinal cavity, and together they form one continuous space. DETAILED RATIONALE — Dorsal cavity = cranial + spinal, one continuous space, holding brain + spinal cord (the whole CNS). The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["pericardial-cavity", "mediastinum"], stem: "A patient's family asks exactly where the heart sits, and the nurse gives the most precise answer. Which statement is most precise?", opts: [
+    O("The heart sits in the pericardial cavity, which lies within the mediastinum, inside the thoracic cavity", true, "The full three-level address: heart → pericardial cavity → within the mediastinum → within the thoracic cavity, above the diaphragm."),
+    O("The heart sits in the thoracic cavity, and no more precise location can be given for it in the chest", false, "Stopping at 'thoracic cavity' is the chapter's trap — the pericardial cavity within the mediastinum is the precise home."),
+    O("The heart sits in the mediastinum, in the same open space that holds both of the patient's lungs", false, "The lungs are NOT in the mediastinum — each sits in its own pleural cavity on either side of that central partition."),
+    O("The heart sits in the pleural cavity, which is the central space between the patient's two lungs", false, "Pleural cavities hold the LUNGS, right and left; the central partition is the mediastinum, and the heart's sac-space is pericardial.")
+  ], tp: "ANSWER KEY — Correct answer: The heart sits in the pericardial cavity, which lies within the mediastinum, inside the thoracic cavity. DETAILED RATIONALE — Heart's address has three levels: pericardial cavity → mediastinum → thoracic cavity. Lungs flank it in pleural cavities. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "multi", kt: ["mediastinum"], stem: "A nurse is reviewing the contents of the mediastinum on a patient's chest imaging report. Which items belong there? Select all that apply.", opts: [
+    O("The heart, sitting inside its pericardial cavity", true, "Correct — the heart is a mediastinum content, held in the pericardial cavity within that partition."),
+    O("The thymus gland, located within the central partition", true, "Correct — the thymus gland is one of the five mediastinum contents listed in the guide."),
+    O("Parts of the esophagus and parts of the trachea", true, "Correct — parts of both tubes pass through the mediastinum, per the guide's list of five."),
+    O("The large blood vessels attached to the heart", true, "Correct — the large vessels attached to the heart complete the guide's five-item list."),
+    O("The right lung and the left lung, taken together", false, "The lungs occupy most of the thoracic space but sit OUTSIDE the mediastinum, each in its own pleural cavity.")
+  ], tp: "ANSWER KEY — Correct answer: The heart, sitting inside its pericardial cavity; The thymus gland, located within the central partition; Parts of the esophagus and parts of the trachea; The large blood vessels attached to the heart. DETAILED RATIONALE — Mediastinum contents, all 5: heart, thymus gland, parts of esophagus, parts of trachea, large vessels attached to the heart. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["pleural-cavities", "thoracic-cavity"], stem: "A patient's chest report states that the lungs occupy most of the space inside the rib cage. Which statement matches the report?", opts: [
+    O("Each lung fills its own pleural cavity on either side of the central partition in the chest", true, "Layout: mediastinum in the middle; right and left lungs in pleural cavities on either side — and the lungs occupy most of the thoracic space."),
+    O("Both lungs share one large cavity in the center of the chest with the heart and thymus gland", false, "The center is the mediastinum (heart, thymus, tube parts, large vessels) — the lungs are separated into right and left pleural cavities."),
+    O("The lungs sit below the diaphragm, because they need the larger space of the lower trunk cavity", false, "Below the diaphragm is the abdominopelvic cavity; the lungs sit in the thoracic cavity ABOVE the diaphragm, inside the rib cage."),
+    O("Each lung sits inside the mediastinum, which expands to hold them along with the heart", false, "The chapter's trap — lungs are never inside the mediastinum; they flank it on either side in their own cavities.")
+  ], tp: "ANSWER KEY — Correct answer: Each lung fills its own pleural cavity on either side of the central partition in the chest. DETAILED RATIONALE — Thoracic layout: lungs occupy most of the space, each in a pleural cavity flanking the mediastinum; cavity floor is the diaphragm. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "dropdown", kt: ["thoracic-cavity", "abdominopelvic-cavity"], stem: "For each patient finding, choose the correct cavity or division.<br><br>The cavity holding the patient's lungs and heart, above the diaphragm<br>[[0]]<br><br>The cavity holding the patient's bladder, below the diaphragm<br>[[1]]<br><br>The larger of the two major cavities, toward the patient's front<br>[[2]]", blanks: [
+    { o: [O("Thoracic cavity", true, "The thoracic cavity sits above the diaphragm in the rib cage and holds the lungs and heart."), O("Abdominopelvic cavity", false, "The abdominopelvic cavity is BELOW the diaphragm — it cannot hold the lungs or heart."), O("Cranial cavity", false, "The cranial cavity is inside the skull and contains the brain, not the chest organs.")] },
+    { o: [O("Pelvic part of the abdominopelvic cavity", true, "The bladder sits in the pelvic cavity — the lower portion of the abdominopelvic cavity, below the diaphragm."), O("Thoracic cavity", false, "The thoracic cavity is above the diaphragm; the bladder is a pelvic organ below it."), O("Spinal cavity", false, "The spinal cavity contains the spinal cord, surrounded by vertebrae — not the bladder.")] },
+    { o: [O("Ventral cavity", true, "The ventral cavity is toward the front (anterior) and is the LARGER of the two major cavities."), O("Dorsal cavity", false, "The dorsal cavity is toward the back and is the SMALLER of the two — making it the big one is the trap."), O("Pleural cavity", false, "A pleural cavity holds one lung — it is a side space within the thoracic cavity, not a major cavity.")] }
+  ], tp: "ANSWER KEY — Correct answer: Blank 1: Thoracic cavity; Blank 2: Pelvic part of the abdominopelvic cavity; Blank 3: Ventral cavity. DETAILED RATIONALE — Diaphragm is the dividing floor: thoracic above, abdominopelvic below (abdominal upper, pelvic lower). Ventral = front and larger; dorsal = back and smaller. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — assessment and analysis before implementation." });
+
+BANK.push({ cat: CF, type: "multi", kt: ["four-quadrants"], grp: "NGN1", scen: "CASE STUDY — Exhibit: A 20-year-old patient reports abdominal pain rated 8/10 that is now located in the lower right abdomen. Vital signs: temperature 101.0°F (38.3°C), pulse 104, respirations 18, BP 118/76. The patient also reports nausea and has eaten nothing since the pain began. The nurse is facing the patient while assessing the abdomen. Allergies: none known.", stem: "NGN Case — Step 1, Recognize Cues: Which findings in the exhibit require follow-up? Select all that apply.", opts: [
+    O("Pain rated 8/10 located in the lower right abdomen", true, "Correct — severe pain in this location is the cue the whole case turns on and must be followed up."),
+    O("Temperature of 101.0°F (38.3°C) recorded in the exhibit", true, "Correct — this is above the homeostatic normal of about 98.6°F (37°C) and is a relevant cue."),
+    O("Pulse of 104 beats per minute recorded in the exhibit", true, "Correct — a pulse of 104 alongside pain and fever is a cue that requires follow-up and monitoring."),
+    O("Blood pressure of 118/76 mmHg recorded in the exhibit", false, "This reading is not a concerning cue in this exhibit — it does not require follow-up on its own."),
+    O("Respirations of 18 per minute recorded in the exhibit", false, "This reading is not a concerning cue in this exhibit — attention belongs on the pain, temperature, and pulse."),
+    O("Allergies listed as none known in the patient chart", false, "A 'none known' allergy entry is chart background, not a cue requiring follow-up in this situation.")
+  ], tp: "ANSWER KEY — Correct answer: Pain rated 8/10 located in the lower right abdomen; Temperature of 101.0°F (38.3°C) recorded in the exhibit; Pulse of 104 beats per minute recorded in the exhibit. DETAILED RATIONALE — Relevant cues cluster: RLQ pain 8/10 + temperature 101.0°F + pulse 104. Normal-range readings and background entries are not follow-up cues. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["four-quadrants"], grp: "NGN1", scen: "CASE STUDY — Exhibit: A 20-year-old patient reports abdominal pain rated 8/10 that is now located in the lower right abdomen. Vital signs: temperature 101.0°F (38.3°C), pulse 104, respirations 18, BP 118/76. The patient also reports nausea and has eaten nothing since the pain began. The nurse is facing the patient while assessing the abdomen. Allergies: none known.", stem: "NGN Case — Step 2, Analyze Cues: The nurse links the pain location to the chapter's clinical alert. Which analysis is correct?", opts: [
+    O("Pain in the right lower quadrant should make an alert nurse think of appendicitis", true, "That is the book's own clinical alert — RLQ pain → think appendicitis — charted in quadrant language from the patient's point of view."),
+    O("Pain in the right lower quadrant should be charted as a thoracic cavity problem", false, "Quadrants refer ONLY to the abdominopelvic cavity, never the thoracic cavity — this analysis misfiles the pain entirely."),
+    O("The pain should be named from the nurse's left and right, since the nurse is facing the patient", false, "Quadrants are named from the PATIENT's point of view — facing the patient, the patient's right appears on the nurse's left."),
+    O("The pain location is the hypogastric region, because all lower abdominal pain is central", false, "Hypogastric is the bottom-CENTER region; this pain is in the right LOWER QUADRANT, a side location, not the center.")
+  ], tp: "ANSWER KEY — Correct answer: Pain in the right lower quadrant should make an alert nurse think of appendicitis. DETAILED RATIONALE — Book alert: RLQ pain → think appendicitis. Quadrants are abdominopelvic only and named from the patient's point of view. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["four-quadrants"], grp: "NGN1", scen: "CASE STUDY — Exhibit: A 20-year-old patient reports abdominal pain rated 8/10 that is now located in the lower right abdomen. Vital signs: temperature 101.0°F (38.3°C), pulse 104, respirations 18, BP 118/76. The patient also reports nausea and has eaten nothing since the pain began. The nurse is facing the patient while assessing the abdomen. Allergies: none known.", stem: "NGN Case — Step 3, Prioritize: Which nursing action should the nurse take first?", opts: [
+    O("Report the right lower quadrant pain, fever, and pulse to the provider promptly", true, "The clustered cues match the chapter's appendicitis alert — escalation to the provider comes first, before routine documentation or teaching."),
+    O("Teach the patient the names of all nine abdominopelvic regions at the bedside", false, "Region teaching is useful later, but it does not act on an alert-level finding — the priority is reporting the cues that were recognized."),
+    O("Document the pain as routine and reassess it at the end of the shift", false, "An 8/10 RLQ pain with fever and a pulse of 104 is not a routine, end-of-shift item — delay is the unsafe choice here."),
+    O("Reassure the patient that lower abdominal pain is never a cause for concern", false, "False reassurance contradicts the chapter's own alert — RLQ pain is exactly the pain an alert nurse acts on.")
+  ], tp: "ANSWER KEY — Correct answer: Report the right lower quadrant pain, fever, and pulse to the provider promptly. DETAILED RATIONALE — Priority order: recognize the alert cue cluster → escalate to the provider → then document fully and reassess. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Safety and escalation — act on the priority finding first, then document and reassess." });
+
+BANK.push({ cat: CF, type: "multi", kt: ["four-quadrants"], grp: "NGN1", scen: "CASE STUDY — Exhibit: A 20-year-old patient reports abdominal pain rated 8/10 that is now located in the lower right abdomen. Vital signs: temperature 101.0°F (38.3°C), pulse 104, respirations 18, BP 118/76. The patient also reports nausea and has eaten nothing since the pain began. The nurse is facing the patient while assessing the abdomen. Allergies: none known.", stem: "NGN Case — Step 4, Generate Solutions: Which actions belong in the nurse's plan? Select all that apply.", opts: [
+    O("Document the pain location using the patient's right and left, not the nurse's", true, "Correct — quadrant language is written from the patient's point of view, even when the nurse faces the patient."),
+    O("Monitor the patient's temperature, pulse, and pain rating on reassessment", true, "Correct — the recognized cues (fever, pulse 104, pain 8/10) must be trended, not recorded once and dropped."),
+    O("Report any worsening of the right lower quadrant pain to the provider", true, "Correct — escalation continues after the first report; worsening of an alert-location pain is reportable."),
+    O("Chart the pain in the left lower quadrant because that is how it appears to the nurse", false, "That is the mirror trap — facing the patient, the patient's RLQ appears on the nurse's LEFT but is still charted as the patient's right."),
+    O("Apply the nine-region map to the patient's chest to describe the pain fully", false, "Quadrants and regions describe the abdominopelvic cavity ONLY — applying them to the chest is a charting error.")
+  ], tp: "ANSWER KEY — Correct answer: Document the pain location using the patient's right and left, not the nurse's; Monitor the patient's temperature, pulse, and pain rating on reassessment; Report any worsening of the right lower quadrant pain to the provider. DETAILED RATIONALE — Plan: chart from the patient's point of view, trend the cue cluster, keep escalating changes — and keep quadrant language in the abdominopelvic cavity. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "dropdown", kt: ["four-quadrants", "abdominopelvic-cavity"], grp: "NGN1", scen: "CASE STUDY — Exhibit: A 20-year-old patient reports abdominal pain rated 8/10 that is now located in the lower right abdomen. Vital signs: temperature 101.0°F (38.3°C), pulse 104, respirations 18, BP 118/76. The patient also reports nausea and has eaten nothing since the pain began. The nurse is facing the patient while assessing the abdomen. Allergies: none known.", stem: "NGN Case — Step 5, Take Action: Complete the chart note for this patient.<br><br>Pain is located in the<br>[[0]]<br><br>This location belongs to the<br>[[1]]<br><br>The location is named from the point of view of the<br>[[2]]", blanks: [
+    { o: [O("Right lower quadrant (RLQ)", true, "The exhibit places the pain in the lower right abdomen — the RLQ, from the patient's point of view."), O("Left lower quadrant (LLQ)", false, "That is the mirror-image error — the side the nurse SEES on her left is the patient's right."), O("Right upper quadrant (RUQ)", false, "The pain is in the LOWER abdomen — upper-quadrant charting misplaces it above the quadrant cross.")] },
+    { o: [O("Abdominopelvic cavity", true, "Quadrants belong to the abdominopelvic cavity below the diaphragm — the only cavity mapped this way."), O("Thoracic cavity", false, "The thoracic cavity is above the diaphragm and is never described with quadrants."), O("Dorsal cavity", false, "The dorsal cavity holds the brain and spinal cord — it has no quadrants and holds no abdominal organs.")] },
+    { o: [O("Patient", true, "Quadrants are named from the PATIENT's point of view — the standing rule for every quadrant entry."), O("Nurse facing the patient", false, "The facing nurse is the mirror image — naming from her view flips right and left in the chart."), O("Provider reading the chart", false, "The reader's viewpoint does not set the names — the patient's own right and left do.")] }
+  ], tp: "ANSWER KEY — Correct answer: Blank 1: Right lower quadrant (RLQ); Blank 2: Abdominopelvic cavity; Blank 3: Patient. DETAILED RATIONALE — RLQ + abdominopelvic cavity + patient's point of view — the three facts that make the chart note correct. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — assessment and analysis before implementation." });
+
+BANK.push({ cat: CF, type: "single", kt: ["four-quadrants"], grp: "NGN1", scen: "CASE STUDY — Exhibit: A 20-year-old patient reports abdominal pain rated 8/10 that is now located in the lower right abdomen. Vital signs: temperature 101.0°F (38.3°C), pulse 104, respirations 18, BP 118/76. The patient also reports nausea and has eaten nothing since the pain began. The nurse is facing the patient while assessing the abdomen. Allergies: none known.", stem: "NGN Case — Step 6, Evaluate Outcomes: A second nurse, facing the patient, reviews the chart and says the RLQ entry must be wrong because the pain appears on her left side. Which evaluation is correct?", opts: [
+    O("The chart entry is correct — facing the patient, the patient's right lower quadrant appears on the viewer's left", true, "That is the book's mirror rule: the patient facing you is your mirror image, so the patient's RLQ correctly appears on YOUR left."),
+    O("The chart must be corrected to LLQ, because the viewer's left side is the side that gets charted", false, "Charting the viewer's side is the exact error the rule prevents — quadrants are named from the patient's point of view."),
+    O("Both entries are acceptable, because either viewpoint may be used if it is used consistently", false, "There is one standard: the patient's point of view. Consistency with the wrong viewpoint is still wrong charting."),
+    O("The entry should be changed to a nine-region name, because quadrants cannot be used for pain", false, "Quadrant language is health-history language — 'pain in the RLQ' is exactly how the appendicitis alert gets charted.")
+  ], tp: "ANSWER KEY — Correct answer: The chart entry is correct — facing the patient, the patient's right lower quadrant appears on the viewer's left. DETAILED RATIONALE — Mirror rule: facing the patient, the patient's RLQ appears on YOUR left — and is still charted RLQ. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 1: Introduction to the Human Body — Situational Practice Test</h1>';
+  h += '<div class="sub">Brutal mode | Herlihy, Anatomy &amp; Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

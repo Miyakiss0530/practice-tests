@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 15 - Blood - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK (AP Ch 15 — sit) ============ */
+/* Herlihy, Anatomy & Physiology, Chapter 15: Blood. Built from the audited study guide content only. */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Blood Composition and Hematocrit";
+var CB = "Hemopoiesis and Bone Marrow";
+var CC = "Red Blood Cells and Hemoglobin";
+var CD = "Anemia, Sickle Cell, and Jaundice";
+var CE = "White Cells, Platelets, and Blood Counts";
+var CF = "Hemostasis, Thrombosis, and Embolism";
+var CG = "Blood Types, Transfusion, and Rh";
+var CATS = [CA, CB, CC, CD, CE, CF, CG];
+var KEYTERMS = ["hematocrit","bone marrow biopsy","myelosuppression","polycythemia vera","therapeutic phlebotomy","reticulocyte","cyanosis","erythropoietin","secondary polycythemia","iron deficiency anemia","sickle cell disease","jaundice","hyperbilirubinemia","kernicterus","leukopenia","band cells","petechiae","thrombocytopenia","hemostasis","deep vein thrombosis","Coumadin","agglutination","universal donor","erythroblastosis fetalis","sensitized","phototherapy"];
+var BLUEPRINT = {
+  CA: { name: CA, count: 2, types: {"single":2} },
+  CB: { name: CB, count: 3, types: {"single":2,"multi":1} },
+  CC: { name: CC, count: 5, types: {"single":5} },
+  CD: { name: CD, count: 5, types: {"single":5} },
+  CE: { name: CE, count: 3, types: {"single":3} },
+  CF: { name: CF, count: 5, types: {"dropdown":1,"single":4} },
+  CG: { name: CG, count: 9, types: {"single":5,"multi":3,"matrix":1} }
+};
+BANK.push({ cat: CA, type: "single", kt: ["hematocrit"], stem: "A patient admitted with severe gastroenteritis and dehydration has a hematocrit of 54% (normal for a man: 40%-50%). His RBC count is unchanged from last year's physical. Which interpretation is correct?", opts: [
+    O("His blood volume has shrunk, so the same number of RBCs makes up a larger percentage - the high Hct is a volume problem, not extra red cells.", true, "The ratio trap in its classic form: Hct is a percentage, dehydration diminishes the denominator (plasma volume), and the chapter is explicit that this elevation 'represents not an increase in RBCs, but a decrease in blood volume.'"),
+    O("His bone marrow has overproduced RBCs in response to the illness, and he now has polycythemia.", false, "His RBC count is documented as unchanged; marrow overproduction (polycythemia vera) would raise the COUNT, not just the percentage."),
+    O("The laboratory has likely mixed up his sample, because Hct and RBC count must always rise together.", false, "They usually move together, but the ratio can separate from the count whenever volume shifts - that is the chapter's central caution about this test."),
+    O("His spleen has released stored RBCs into the circulation to compensate for the fluid losses.", false, "The spleen removes old RBCs; it is not a storage vault that tops up the count, and the count here never changed.")
+  ], tp: "ANSWER KEY — Correct answer: His blood volume has shrunk, so the same number of RBCs makes up a larger percentage - the high Hct is a volume problem, not extra red cells.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CA, type: "single", kt: ["hematocrit"], stem: "A patient with heart failure and marked fluid overload has a hematocrit of 33%. Her RBC count is normal. The provider calls this 'dilutional anemia.' Which explanation should the nurse give the patient?", opts: [
+    O("Your red cell number is normal, but the extra fluid in your blood dilutes them, so the percentage reads low.", true, "Expanded blood volume lowers the Hct without lowering the RBC count - the mirror image of the dehydration trap, and the chapter's own term for it."),
+    O("Your heart failure has destroyed red blood cells, and the marrow cannot replace them fast enough.", false, "Destruction is hemolysis; here the count is normal - nothing was destroyed, only diluted."),
+    O("Your kidneys have stopped making erythropoietin because of the fluid overload.", false, "EPO failure is the anemia of chronic RENAL failure; this patient's kidneys and counts are fine - volume is the variable."),
+    O("Your plasma proteins have fallen, so the blood sample separated incorrectly in the centrifuge.", false, "Albumin affects fluid balance generally, but the dilutional Hct is a straightforward volume-ratio effect, not a lab artifact.")
+  ], tp: "ANSWER KEY — Correct answer: Your red cell number is normal, but the extra fluid in your blood dilutes them, so the percentage reads low.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "single", kt: ["bone marrow biopsy"], stem: "A patient scheduled for a bone marrow biopsy is anxious, picturing 'major surgery on my hip.' Which explanation is most accurate?", opts: [
+    O("A needle is inserted into the red bone marrow at the iliac crest (hip bone); a sample is aspirated and studied microscopically for cell numbers and types.", true, "The chapter's procedure description exactly: needle, iliac crest, aspiration, microscopic analysis of production (numbers, types, and developmental stages) - the direct inspection of the blood-cell factory."),
+    O("The surgeon will remove a small section of the hip bone so that the marrow inside it can be weighed and measured directly.", false, "No bone is removed or weighed; it is a needle aspiration of marrow, not an excision."),
+    O("The test samples the lymph nodes under the arm, because they make most of the blood cells in an adult body.", false, "Lymphatic tissue is the minor hemopoietic site; the biopsy targets red bone marrow, usually at the iliac crest."),
+    O("The biopsy measures how quickly your blood is able to clot inside the marrow spaces of the hip bone.", false, "Clotting is a plasma/platelet cascade story; the biopsy reads cell PRODUCTION, not coagulation speed.")
+  ], tp: "ANSWER KEY — Correct answer: A needle is inserted into the red bone marrow at the iliac crest (hip bone); a sample is aspirated and studied microscopically for cell numbers and types.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "multi", kt: ["myelosuppression"], stem: "A patient receiving cytotoxic chemotherapy has these new findings: temperature 100.9°F, bleeding gums, and exhaustion with a hemoglobin well below baseline. Which nursing actions follow from this chapter's marrow physiology? Select all that apply.", opts: [
+    O("Protect the patient from infection sources - with leukopenia, even a common cold can be fatal.", true, "The chapter's starkest warning: the leukopenic patient may die from a common cold, so infection protection leads the plan for the WBC line."),
+    O("Watch for and report bleeding, because the platelet line is failing along with the others.", true, "Thrombocytopenia travels with the package (one stem cell, three lines): bleeding gums are its announcement, and hemorrhage is the risk."),
+    O("Treat the anemia findings as part of the same marrow failure (aplastic-type picture), not a separate disease.", true, "Cytotoxic drugs depress the marrow; RBC failure alongside the other two lines is the expected package - aplastic anemia is its RBC face."),
+    O("Reassure the patient that only the white cells are affected by chemotherapy, so the bleeding is unrelated.", false, "One stem cell makes all three lines - reassurance that splits the package misses the marrow physiology entirely."),
+    O("Track all three counts (RBCs, WBCs, platelets) as one trend rather than reacting to a single line.", true, "The chapter's monitoring rule: marrow failure rarely announces itself in a single line, so the trend of all three counts is the surveillance target.")
+  ], tp: "ANSWER KEY — Correct answer: Protect the patient from infection sources - with leukopenia, even a common cold can be fatal.; Watch for and report bleeding, because the platelet line is failing along with the others.; Treat the anemia findings as part of the same marrow failure (aplastic-type picture), not a separate disease.; Track all three counts (RBCs, WBCs, platelets) as one trend rather than reacting to a single line.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CB, type: "single", kt: ["polycythemia vera","therapeutic phlebotomy"], stem: "A patient with polycythemia vera has a ruddy, beet-red face and complains of a heavy, aching head. The provider orders therapeutic phlebotomy. Which explanation of the treatment is correct?", opts: [
+    O("Removing blood removes excess red cells and volume, thinning the over-thick blood that burdens his heart and clotting system.", true, "Vera = hyperactive marrow flooding the blood; viscosity rises, the heart strains, and clotting is overwhelmed - phlebotomy is the chapter's named countermeasure for excess RBCs, iron, and volume."),
+    O("Removing blood forces the spleen to release younger, more flexible red cells to replace the old ones.", false, "The spleen destroys old RBCs rather than releasing replacements; the benefit here is simple subtraction of excess cells and volume."),
+    O("The procedure removes the defective stem cells so the marrow can restart with healthy ones.", false, "A blood draw cannot extract marrow stem cells; the hyperactive marrow remains, which is why phlebotomy is repeated management, not a cure."),
+    O("Removing blood lowers his white cell count so his infection risk returns to normal.", false, "His danger is the RBC excess and viscosity, not WBCs; phlebotomy targets red cell mass and volume.")
+  ], tp: "ANSWER KEY — Correct answer: Removing blood removes excess red cells and volume, thinning the over-thick blood that burdens his heart and clotting system.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["reticulocyte"], stem: "Three days after a gastrointestinal hemorrhage, a patient's reticulocyte count is 5% (normal 0.5%-1.5%). Which conclusion should the nurse draw?", opts: [
+    O("His bone marrow is responding appropriately - blood loss has stimulated production, and immature RBCs are being released early.", true, "The chapter's gauge reading: the more severe the loss, the greater the marrow activity and the more reticulocytes are 'prematurely added' because they have no time to mature in the marrow."),
+    O("His marrow is failing, because a healthy marrow would keep the count inside the normal range at all times.", false, "Failure reads LOW on this gauge (as in myelosuppression); a high count under blood loss is the marrow succeeding, loudly."),
+    O("He has developed polycythemia vera as a direct complication of the gastrointestinal bleed this week.", false, "Vera is autonomous marrow overproduction with a high total RBC mass; this patient is anemic and replacing losses - opposite situations."),
+    O("The count indicates his iron stores are now completely exhausted and that production has stopped entirely.", false, "Production demonstrably has NOT stopped - a 5% reticulocyte count is production at speed; iron deficiency is read from the smear (microcytic, hypochromic) and story.")
+  ], tp: "ANSWER KEY — Correct answer: His bone marrow is responding appropriately - blood loss has stimulated production, and immature RBCs are being released early.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["cyanosis"], stem: "A furnace repairman is found in a basement, confused and complaining of headache. His skin is strikingly cherry red. Which interpretation should guide the nurse?", opts: [
+    O("Do not be reassured by the red color: carbon monoxide binds the iron of hemoglobin, making blood cherry red while carrying no oxygen - he can be red AND hypoxemic.", true, "The chapter's deceptive pairing: CO occupies the O2 site on heme, the blood looks bright cherry red, and the tissues starve - color and oxygenation have come apart, and the exposure history (furnace, enclosed space) completes the picture."),
+    O("The cherry-red color proves his blood is well oxygenated, so his confusion and headache must come from another cause entirely.", false, "That is exactly the trap this poisoning sets: red here means CO-loaded, not O2-loaded."),
+    O("His redness indicates polycythemia vera, which is causing his headache because his blood has become too thick.", false, "Vera's ruddy face is chronic and marrow-driven; an acute furnace exposure with confusion and headache is the CO story."),
+    O("He is cyanotic from the cold basement air, and simply warming him will resolve both the color and the symptoms.", false, "Cyanosis is BLUE-red from deoxygenated blood; this patient is cherry RED - the opposite color with the more sinister cause.")
+  ], tp: "ANSWER KEY — Correct answer: Do not be reassured by the red color: carbon monoxide binds the iron of hemoglobin, making blood cherry red while carrying no oxygen - he can be red AND hypoxemic.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["cyanosis"], stem: "A nurse at a ski lodge notices a skier whose fingers look blue after an hour outdoors in freezing wind, but the patient feels well and her lips are pink. Which mechanism explains the blue fingers?", opts: [
+    O("Cold constricts the cutaneous vessels, slowing blood flow so the tissues extract more O2, leaving the local blood darker blue-red.", true, "The chapter's stated exception: cold-induced vasoconstriction slows flow, O2 has extra time to diffuse out, and the skin looks cyanotic without a primary oxygen problem - the well patient with pink lips fits."),
+    O("Her hemoglobin has frozen in the capillaries and can no longer carry oxygen to the fingers.", false, "Hemoglobin does not freeze in living tissue; the mechanism is flow slowing and extra extraction, not frozen protein."),
+    O("She has developed sudden hypoxemia and needs emergency oxygen before anything else.", false, "Systemic hypoxemia would blue the lips too and make her feel ill; localized cold blueness with a well patient is the chapter's benign exception (still assessed, not panicked over)."),
+    O("Carbon monoxide from her ski lodge has bound her hemoglobin, turning her fingers blue.", false, "CO turns blood cherry RED, not blue; the color alone rules that mechanism out.")
+  ], tp: "ANSWER KEY — Correct answer: Cold constricts the cutaneous vessels, slowing blood flow so the tissues extract more O2, leaving the local blood darker blue-red.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["erythropoietin"], stem: "A patient with chronic renal failure is anemic despite adequate iron, B12, and folate. Which explanation identifies the missing piece?", opts: [
+    O("His failing kidneys underproduce erythropoietin, so his marrow never receives the signal to make RBCs.", true, "The anemia of chronic renal failure is a SIGNAL anemia: raw materials are present, the marrow is capable, but the kidney hormone that orders production has faded with kidney function."),
+    O("His kidneys are filtering his red blood cells out into the urine faster than the marrow can replace them.", false, "RBCs are far too large to pass vessel walls or filters; renal anemia is hormonal (EPO), not a leak."),
+    O("Uremia has suppressed his marrow the way cytotoxic drugs do, destroying the stem cells.", false, "Marrow suppression is a real anemia mechanism (aplastic), but the chapter assigns renal-failure anemia specifically to EPO deficiency."),
+    O("His liver has stopped storing iron, so hemoglobin synthesis has no raw material.", false, "The stem states his raw materials are adequate; the missing element is the EPO signal from the kidney.")
+  ], tp: "ANSWER KEY — Correct answer: His failing kidneys underproduce erythropoietin, so his marrow never receives the signal to make RBCs.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CC, type: "single", kt: ["secondary polycythemia"], stem: "A healthy patient moves from sea level to a mountain town at 8,000 feet. Months later his RBC count and hematocrit are moderately elevated. Which assessment conclusion is correct?", opts: [
+    O("This is secondary polycythemia - an expected adaptation: mild hypoxemia at altitude stimulates EPO, and the marrow makes more RBCs.", true, "The chapter pairs altitude with emphysema as the two EPO-driven polycythemias: the marrow is healthy and obeying a hormone signal created by thinner air."),
+    O("This is polycythemia vera, and he needs therapeutic phlebotomy before his heart is burdened.", false, "Vera is autonomous marrow disease; an altitude newcomer with an EPO story has the secondary, adaptive form - the label changes the management."),
+    O("This is a laboratory error caused by dehydration, and the values should be repeated after hydration.", false, "Dehydration raises the Hct ratio with a NORMAL count; here the count itself rose over months - true increased production, not concentration."),
+    O("His kidneys have begun to fail, and the extra RBCs are a compensation for lost EPO.", false, "Kidney failure LOWERS EPO and causes anemia - the exact opposite pairing of organ and hormone.")
+  ], tp: "ANSWER KEY — Correct answer: This is secondary polycythemia - an expected adaptation: mild hypoxemia at altitude stimulates EPO, and the marrow makes more RBCs.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["iron deficiency anemia"], stem: "A 24-year-old patient who diets rigorously, has heavy menstrual periods, and recently delivered a baby has small, pale RBCs on her smear. Which interpretation fits the chapter's pattern?", opts: [
+    O("Iron deficiency anemia: microcytic, hypochromic cells from inadequate hemoglobin synthesis, in exactly the chapter's named at-risk group.", true, "Young women - rigorous dieting, menstrual blood loss, and the fetal demands of pregnancy - are the chapter's profile, and small pale cells are iron deficiency's smear signature (iron-rich foods are also costly, the low-income route)."),
+    O("Vitamin B12 deficiency: the cells are small and pale because B12 was missing during their formation in the marrow.", false, "B12 deficiency makes MACROcytic (large) cells - the smear vocabulary separates the two deficiencies by size alone."),
+    O("Aplastic anemia: her bone marrow has failed under the physical strain of the recent pregnancy and delivery.", false, "Marrow failure drops ALL lines and shows a low reticulocyte count; her picture is a single missing raw material with a classic risk story."),
+    O("Anemia of renal failure: her kidneys stopped sending their hormonal signal at some point during the pregnancy.", false, "EPO anemia needs kidney failure in the story; nothing here implicates her kidneys, and the smear pattern is iron's.")
+  ], tp: "ANSWER KEY — Correct answer: Iron deficiency anemia: microcytic, hypochromic cells from inadequate hemoglobin synthesis, in exactly the chapter's named at-risk group.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["sickle cell disease"], stem: "A child patient with sickle cell disease arrives in the clinic with severe pain in the legs and hands, and the tissues beyond the painful areas look poorly perfused. Which assessment focus takes priority for the nurse?", opts: [
+    O("Perfusion and oxygenation of the tissues downstream of the blockages - sickled cells are jamming the small vessels and starving tissue.", true, "The disease's emergency is mechanical: rigid sickle-shaped cells block flow, and the chapter's consequences are decreased oxygenation and cell death - so distal perfusion/oxygenation is the assessment that tracks the threat."),
+    O("The total RBC count, to confirm whether the marrow has overproduced red cells again during this episode.", false, "Overproduction is polycythemia's story; sickle cell counts do not explain a crisis - the vessel blockage does."),
+    O("The reticulocyte count, to determine whether this pain is being caused by sudden marrow failure.", false, "Marrow failure (aplastic) is painless suppression; crisis pain is ischemic tissue downstream of sickled blockages."),
+    O("The bilirubin level, because hemolysis is the main danger that this disease presents in a crisis.", false, "Hemolysis and jaundice belong to other stories in this chapter; sickle cell disease as presented here kills tissue by BLOCKAGE, not by cell destruction bookkeeping.")
+  ], tp: "ANSWER KEY — Correct answer: Perfusion and oxygenation of the tissues downstream of the blockages - sickled cells are jamming the small vessels and starving tissue.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["jaundice","hyperbilirubinemia"], stem: "A patient develops jaundice after a hemolytic episode in which many RBCs were destroyed. The serum bilirubin fractions return. Which pattern fits?", opts: [
+    O("The indirect (unconjugated) fraction is elevated - breakdown is producing bilirubin faster than the liver can process it.", true, "Prehepatic logic: hemolysis floods the system with unconjugated bilirubin (the indirect reading); the liver and ducts are innocent - the jam is BEFORE the liver, which is why this is hemolytic jaundice."),
+    O("The direct (conjugated) fraction is elevated, because the bile duct is blocked by a gallstone.", false, "A blocked duct is the POSThepatic station with conjugated bilirubin backing up - but this patient's story is hemolysis, not obstruction."),
+    O("Both fractions are normal, and the yellow color must be from his diet.", false, "Jaundice IS hyperbilirubinemia made visible; a hemolytic episode raises the total, carried on the indirect side."),
+    O("Only the total matters here, because the fractions never identify the cause of jaundice.", false, "The chapter is explicit: the total tells intensity only - the FRACTIONS identify the cause/station.")
+  ], tp: "ANSWER KEY — Correct answer: The indirect (unconjugated) fraction is elevated - breakdown is producing bilirubin faster than the liver can process it.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["kernicterus"], stem: "A nurse is assessing a 2-day-old newborn patient whose jaundice is deepening rapidly and who is feeding poorly. A grandparent says, 'All babies turn a little yellow - it goes away.' Which response reflects the chapter's priorities?", opts: [
+    O("Mild jaundice is common and resolves, but severe or rapidly deepening jaundice is urgent: excess bilirubin can stain and damage the baby's brain (kernicterus).", true, "The chapter holds both truths: physiologic jaundice is mild and self-limited, while severe hyperbilirubinemia in the neonate risks kernicterus - bilirubin brain damage with impaired mental development - so depth and speed change the response entirely."),
+    O("The grandparent is right - newborn jaundice never needs any treatment, no matter how deep the yellow color becomes.", false, "That absolute is the dangerous version of a half-truth; the chapter names phototherapy precisely because severe cases must be treated."),
+    O("The jaundice only needs treatment if it is still present when the baby is seen at her routine 2-week checkup.", false, "Kernicterus risk runs on the newborn's clock, not the checkup calendar; rapid deepening at day 2 is the act-now pattern."),
+    O("The poor feeding is unrelated to the jaundice, because bilirubin affects only the color of the baby's skin.", false, "In the severe newborn picture the stakes are the BRAIN, and poor feeding travels with a sick, increasingly jaundiced infant - not a cosmetic issue.")
+  ], tp: "ANSWER KEY — Correct answer: Mild jaundice is common and resolves, but severe or rapidly deepening jaundice is urgent: excess bilirubin can stain and damage the baby's brain (kernicterus).. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CD, type: "single", kt: ["kernicterus"], stem: "A provider orders a sulfa antibiotic for a 6-week-old infant who is jaundiced. Which action should the nurse take?", opts: [
+    O("Question the order: sulfa drugs displace bilirubin from albumin in young infants, freeing it to enter tissues and the brain - kernicterus risk.", true, "The chapter's drug caution, verbatim in mechanism: bilirubin rides tightly bound to albumin; sulfa binds the albumin, the freed bilirubin enters tissues, and the infant's immature blood-brain barrier lets it reach the CNS. Sulfa is contraindicated under 2 months."),
+    O("Give the drug, because treating the infection takes priority over what is only a mild skin color change.", false, "The 'skin color change' is bilirubin with a brain destination once displaced; the chapter flags this exact combination as contraindicated."),
+    O("Give the drug but schedule phototherapy afterward to remove whatever extra bilirubin appears in the skin.", false, "Phototherapy breaks down bilirubin in the SKIN; it does not undo sulfa's displacement of bilirubin into tissues and brain. Prevention (questioning the order) is the move."),
+    O("Ask the parent to sign a consent form acknowledging the jaundice before the first dose of the drug is given.", false, "Consent paperwork does not neutralize a contraindicated drug-mechanism pair; the order itself is the problem to raise.")
+  ], tp: "ANSWER KEY — Correct answer: Question the order: sulfa drugs displace bilirubin from albumin in young infants, freeing it to enter tissues and the brain - kernicterus risk.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["leukopenia"], stem: "A chemotherapy patient's WBC count is 1,800 (normal 5,000-10,000). Her roommate offers to bring her visiting cousin, who 'just has a little cold.' Which response is correct?", opts: [
+    O("Decline the visit: in leukopenia a common cold can kill, because the WBCs that would fight it are missing.", true, "The chapter's exact warning - the leukopenic person is more prone to infection and 'may die from a common cold.' Visitor screening is infection protection, not rudeness."),
+    O("Allow the visit but ask the cousin to sit across the room from the patient.", false, "Distance games do not substitute for the missing neutrophils; the chapter's framing makes the cold itself the threat to exclude."),
+    O("Allow the visit, because her WBCs spend most of their time in the tissues anyway.", false, "Tissue migration is normal WBC behavior, but her PRODUCTION is suppressed - there are too few cells anywhere, blood or tissue."),
+    O("Postpone all visitors until her platelet count recovers next week.", false, "The infection risk belongs to the WBC line (leukopenia), not the platelet line; the stated count is the white count.")
+  ], tp: "ANSWER KEY — Correct answer: Decline the visit: in leukopenia a common cold can kill, because the WBCs that would fight it are missing.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["band cells"], stem: "A postoperative patient's total WBC count is 9,600 (within normal limits), but the differential shows bands markedly increased. Which interpretation is correct?", opts: [
+    O("Infection is indicated: the prominent bands are a 'shift to the left' - the marrow is rushing immature neutrophils out.", true, "The differential can indict infection when the total cannot: production so rapid that maturation time is inadequate pushes band cells into prominence, and the chapter states a left shift indicates infection."),
+    O("The normal total rules out infection, so the bands can be disregarded as a lab variation.", false, "That reads the census and ignores the roster; the chapter's point of the differential is WHICH cells are present, and bands are the tell."),
+    O("The bands mean her marrow is shutting down and she is becoming leukopenic.", false, "Bands are evidence of accelerated PRODUCTION (the opposite of shutdown); leukopenia is a low count story."),
+    O("The bands are immature PLATELETS released early, signaling a bleeding risk instead.", false, "Band cells are immature NEUTROPHILS (staff-shaped nuclei); platelets have no band stage in the differential.")
+  ], tp: "ANSWER KEY — Correct answer: Infection is indicated: the prominent bands are a 'shift to the left' - the marrow is rushing immature neutrophils out.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CE, type: "single", kt: ["petechiae","thrombocytopenia"], stem: "A patient with a platelet count of 40,000 (normal 150,000-450,000) has pinpoint hemorrhages under the skin of her forearms and oozing at a venipuncture site. Which nursing priority follows?", opts: [
+    O("Bleeding precautions and close monitoring for hemorrhage - thrombocytopenia's danger is potentially lethal bleeding.", true, "Petechiae are thrombocytopenia's visible signature, and the chapter pairs the deficiency with 'potentially lethal bleeding episodes' - so bleeding surveillance and precautions lead."),
+    O("Infection precautions, because a low platelet count weakens the patient's immune response to bacteria.", false, "Immunity belongs to the WBC line; platelets protect against BLEEDING. Matching the precaution to the wrong line leaves the real risk unguarded."),
+    O("Oxygen monitoring, because her tissues are not receiving enough oxygen without enough platelets circulating.", false, "Oxygen carriage is the RBC/hemoglobin line; platelets neither carry nor deliver oxygen."),
+    O("Reassurance that petechiae are a harmless skin rash that will fade on its own within a few days.", false, "Petechiae are hemorrhages - blood outside vessels under the skin - in a patient whose counts predict more of them; 'harmless rash' is the one reading the chapter forbids.")
+  ], tp: "ANSWER KEY — Correct answer: Bleeding precautions and close monitoring for hemorrhage - thrombocytopenia's danger is potentially lethal bleeding.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "dropdown", kt: ["hemostasis"], stem: "Complete the nurse's explanation of how a small cut stops bleeding: 'First the injured vessel goes into [[0]], narrowing to slow the flow. Then platelets become sticky and form a [[1]]. Finally, the clotting cascade builds a net of [[2]] that traps cells and seals the opening.'", blanks: [{ o: [O("spasm, narrowing the vessel", true, "Vascular spasm is event 1: smooth muscle contraction narrows the vessel and decreases flow - in the smallest vessels it can stop bleeding alone."), O("retraction, shrinking the clot", false, "Retraction happens AFTER a clot forms (the clot shrinking); the first response to injury is spasm."), O("fibrinolysis, dissolving the clot", false, "Fibrinolysis is the END of the story (clot dissolution), not the first response.")] }, { o: [O("platelet plug", true, "Event 2: activated platelets adhere to the torn lining and to each other, diminishing bleeding - explicitly 'not yet a clot.'"), O("thrombus", false, "A thrombus is a clot inside an UNBROKEN vessel - the pathological event, not the healing plug at an injury."), O("blood clot", false, "The clot is event 3's product (the fibrin net); the plug precedes and prepares for it.")] }, { o: [O("fibrin", true, "Stage III of the cascade: thrombin-activated fibrinogen forms fibrin fibers - the net that traps RBCs and platelets into a clot."), O("albumin", false, "Albumin is a plasma protein for fluid balance; it builds no part of the clot's framework."), O("hemoglobin", false, "Hemoglobin is the RBC's oxygen carrier; trapped RBCs bring it along, but it is not the net's material.")] }], tp: "ANSWER KEY — Correct answer: Blank 1: spasm, narrowing the vessel; Blank 2: platelet plug; Blank 3: fibrin. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: ["deep vein thrombosis"], stem: "A patient took a 15-hour nonstop flight yesterday and mentioned a dull ache in his left calf. Today he develops sudden shortness of breath and chest pain. Which interpretation and action are correct?", opts: [
+    O("A deep vein thrombosis from the long immobility likely threw an embolus to his lungs - treat as an emergency and get help immediately.", true, "The chapter's named killer itinerary: stagnant blood in the deep leg veins during long immobility -> thrombus -> embolus -> pulmonary vessels blocked, 'often causes sudden death.' The calf ache was the setup; the chest is the landing."),
+    O("The chest pain is most likely muscle strain from carrying luggage, and the calf ache is unrelated.", false, "Splitting the story into two coincidences ignores the chapter's signature sequence - leg clot first, lung catastrophe second."),
+    O("He is having a panic attack from travel stress; reassure him and recheck in an hour.", false, "Sudden dyspnea after a DVT setup is an embolus until proven otherwise; an hour of reassurance is the fatal delay this chapter warns about."),
+    O("The calf ache suggests thrombocytopenia, and the chest pain means he is bleeding internally.", false, "Thrombocytopenia (too few platelets) causes bleeding, not traveling clots; this patient's problem is clot FORMATION in stagnant veins.")
+  ], tp: "ANSWER KEY — Correct answer: A deep vein thrombosis from the long immobility likely threw an embolus to his lungs - treat as an emergency and get help immediately.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: ["Coumadin"], stem: "A patient on Coumadin (target INR 2-3) proudly reports she has started eating large spinach salads daily 'to be healthy.' Her INR has fallen to 1.3. Which explanation and teaching are correct?", opts: [
+    O("Spinach is rich in vitamin K, which reverses Coumadin's effect - her anticoagulation has been quietly canceled by the diet change.", true, "The chapter's diet warning in its own case: Coumadin works by cutting the liver's vitamin K use for prothrombin; a vitamin K load restores prothrombin, shortens the PT, and drops the INR below protection - clot risk returns, and vitamin K intake must follow the prescriber's direction consistently."),
+    O("Spinach thins the blood even further than the drug does, so her dose is now far too strong and she is at serious risk for bleeding.", false, "Direction reversed: vitamin K OPPOSES Coumadin. Her INR FELL (less anticoagulation) - the danger is clotting, not bleeding."),
+    O("The large salads have diluted her blood volume with extra water, lowering the INR by simple dilution of the circulating drug.", false, "The chapter insists anticoagulants do not work by dilution and neither do salads; the mechanism is vitamin K chemistry at the liver."),
+    O("Her INR fell because spinach sharply increased her platelet count beyond what the Coumadin dose can possibly control.", false, "Coumadin does not act on platelets at all (that is the antiplatelet group, e.g., aspirin); its lever is prothrombin via vitamin K.")
+  ], tp: "ANSWER KEY — Correct answer: Spinach is rich in vitamin K, which reverses Coumadin's effect - her anticoagulation has been quietly canceled by the diet change.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: ["Coumadin"], stem: "A patient on Coumadin has an INR of 5.4 and new bleeding from the gums when brushing. Which interpretation and action are correct?", opts: [
+    O("He is over-anticoagulated: too much Coumadin effect means too little prothrombin - report the bleeding and the INR promptly.", true, "The other failure direction of the same drug: excessive hypoprothrombinemia puts the person at risk for bleeding, which is why the chapter mandates regular PT/INR monitoring - 5.4 with bleeding gums is the report-now combination."),
+    O("The INR is finally in its safest range, and bleeding from the gums is an expected, harmless effect of the drug.", false, "The target band is 2 to 3; 5.4 is far above it, and bleeding on an anticoagulant is the named danger, never 'harmless.'"),
+    O("His platelets must have fallen sharply, because bleeding from the gums is always a platelet-count problem.", false, "Gum bleeding here rides the drug's mechanism (prothrombin lack), and Coumadin does not lower platelets; the INR is the relevant number and it is high."),
+    O("He should eat a large spinach salad tonight to bring his INR back down by tomorrow morning on his own.", false, "Vitamin K does oppose Coumadin, but self-prescribing a food 'dose' for an actively bleeding patient replaces a provider decision with a salad; report first.")
+  ], tp: "ANSWER KEY — Correct answer: He is over-anticoagulated: too much Coumadin effect means too little prothrombin - report the bleeding and the INR promptly.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CF, type: "single", kt: [], stem: "A patient with an acute stroke caused by a blood clot is given a fibrinolytic (TPA). The family asks what the drug actually does. Which explanation is correct?", opts: [
+    O("It activates plasminogen into plasmin, which dissolves the clot that has already formed - a 'clot buster.'", true, "Fibrinolytics are the third drug group: they do not prevent clots (anticoagulants/antiplatelets) - they remove existing ones through the body's own fibrinolysis machinery, revolutionizing clot-caused heart and brain attacks."),
+    O("It prevents the platelets from sticking together so that no new clot can form anywhere in the body.", false, "That is the antiplatelet group's job (aspirin); TPA's distinction is dissolving formed clots."),
+    O("It blocks the liver's use of vitamin K so the liver stops making prothrombin entirely.", false, "That is Coumadin's mechanism - slow prevention chemistry, useless for dissolving the clot already blocking this patient's brain vessel."),
+    O("It acts as an antithrombin agent, neutralizing thrombin throughout the circulating blood.", false, "Antithrombin action is heparin's description; the fibrinolytic's endpoint is plasmin dissolving fibrin.")
+  ], tp: "ANSWER KEY — Correct answer: It activates plasminogen into plasmin, which dissolves the clot that has already formed - a 'clot buster.'. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: ["agglutination"], stem: "Midway through a transfusion of type B blood, a type A patient develops back pain, chills, and dark urine. The unit's cross-match is being rechecked. Which action should the nurse take first?", opts: [
+    O("Stop the transfusion - her anti-B antibodies are agglutinating the donor cells, and hemolysis can liberate hemoglobin, causing kidney failure and death.", true, "The worked example from the chapter made real: type B into type A is incompatible (B antigen meets anti-B), the reaction chain is agglutination -> hemolysis -> free hemoglobin -> kidney failure; removing the incompatible blood is the first move."),
+    O("Slow the infusion rate and observe for 15 more minutes to see whether the symptoms settle down or pass on their own.", false, "Slowing still delivers incompatible cells into an active hemolytic reaction; the chapter's stakes (kidney failure, death) do not permit a watchful drip."),
+    O("Finish the unit quickly, because stopping midway wastes blood that the lab has already typed and cross-matched for her.", false, "A reaction in progress outranks blood conservation; cross-matching is a screen, not a guarantee that overrides the patient's symptoms."),
+    O("Give an antihistamine and continue the unit, since chills during a transfusion are usually a mild allergic response.", false, "Back pain + dark urine (free hemoglobin) is the hemolytic signature, not simple allergy; treating it as mild allergy continues the lethal infusion.")
+  ], tp: "ANSWER KEY — Correct answer: Stop the transfusion - her anti-B antibodies are agglutinating the donor cells, and hemolysis can liberate hemoglobin, causing kidney failure and death.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: ["universal donor"], stem: "An emergency patient with unknown blood type needs blood immediately, and the blood bank sends type O. The family asks why that type is safe for anyone. Which explanation is correct?", opts: [
+    O("Type O red cells carry neither the A nor the B antigen, so no recipient's plasma antibodies have anything to attack.", true, "The universal donor logic: agglutination needs an antigen-antibody pair; O cells present neither target, so all four groups can receive them."),
+    O("Type O blood contains no antibodies, so it cannot react with the patient's cells.", false, "Type O plasma actually carries BOTH anti-A and anti-B antibodies; its safety comes from its CELLS' missing antigens (and transfusion practice centers on the donor cells)."),
+    O("Type O is safe because it is the rarest type and therefore the most carefully screened.", false, "Type O is the MOST common type (AB is least common); frequency has nothing to do with its compatibility."),
+    O("Type O cells are smaller and pass through the kidneys without releasing hemoglobin.", false, "Cell size and kidney passage are not the mechanism; antigen absence is. Hemolysis danger comes from antibody attack, not dimensions.")
+  ], tp: "ANSWER KEY — Correct answer: Type O red cells carry neither the A nor the B antigen, so no recipient's plasma antibodies have anything to attack.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "multi", kt: [], stem: "A nurse is teaching a group of older adults about blood and aging from this chapter. Which statements should the nurse include? Select all that apply.", opts: [
+    O("Blood volume and composition stay constant with age, so most blood lab values remain normal.", true, "Aging point 1: the blood itself barely changes; abnormal values in an older adult usually point at OTHER organ systems."),
+    O("Red bone marrow decreases with age, so older persons form new blood cells more slowly and recover more slowly from bleeding.", true, "Aging point 2: total cell numbers stay normal, but replacement speed falls - the bleeding-recovery consequence matters clinically."),
+    O("WBC activity declines with age, so the response to infection rises more slowly.", true, "Aging point 3: the WBC response still comes, just slower - fever/infection pictures in the elderly can lag."),
+    O("Receiving blood from a younger donor can delay the recipient's aging.", false, "The chapter calls this claim a scam outright - young blood does not delay aging."),
+    O("Fasting glucose and serum lipids typically rise with age because of changes in the blood itself.", false, "The rises are real (glucose up; lipids up 25%-50% after 55) but the chapter attributes them to insulin/metabolic changes, NOT to changes in the blood or blood-forming organs.")
+  ], tp: "ANSWER KEY — Correct answer: Blood volume and composition stay constant with age, so most blood lab values remain normal.; Red bone marrow decreases with age, so older persons form new blood cells more slowly and recover more slowly from bleeding.; WBC activity declines with age, so the response to infection rises more slowly.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "multi", kt: ["erythroblastosis fetalis"], grp: "case1", scen: "CASE STUDY - Mrs. Delgado, Rh-negative (O-), has just delivered her second baby, a boy who is Rh-positive like her first child. The nurse's notes show that after her first delivery three years ago, no RhoGAM was documented. At 18 hours of age, the newborn's skin and sclerae are noticeably yellow, and the jaundice has deepened over the last 6 hours. The baby is slightly pale and feeding poorly. A total serum bilirubin has been drawn and is pending. The baby's blood type is O+.", stem: "CASE STUDY 1 of 6 - RECOGNIZE CUES: Which findings in this newborn's presentation require focused follow-up? Select all that apply.", opts: [
+    O("Jaundice present at 18 hours of age and deepening over 6 hours", true, "Early, visibly deepening jaundice is not the mild physiologic pattern - in this Rh setup it signals hemolysis producing bilirubin faster than the newborn can clear it."),
+    O("The mother is Rh-negative and the baby is Rh-positive", true, "That pairing is the precondition for the entire disease: her immune system can make anti-Rh antibodies against his cells."),
+    O("No RhoGAM was documented after the mother's first delivery", true, "The missed prevention is the cue that sensitization was allowed to happen - the first pregnancy's exposure went unblocked."),
+    O("The baby looks slightly pale and is feeding poorly", true, "Pallor fits the anemia half of hemolysis (RBCs being destroyed), and poor feeding travels with a significantly jaundiced newborn - both are follow-up cues."),
+    O("The baby's blood type is O, the most common blood type", false, "Type O is common and is not itself a risk cue here; the Rh factor - not the ABO letter - drives this case.")
+  ], tp: "ANSWER KEY — Correct answer: Jaundice present at 18 hours of age and deepening over 6 hours; The mother is Rh-negative and the baby is Rh-positive; No RhoGAM was documented after the mother's first delivery; The baby looks slightly pale and is feeding poorly. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "matrix", kt: ["sensitized"], grp: "case1", scen: "CASE STUDY - Mrs. Delgado, Rh-negative (O-), has just delivered her second baby, a boy who is Rh-positive like her first child. The nurse's notes show that after her first delivery three years ago, no RhoGAM was documented. At 18 hours of age, the newborn's skin and sclerae are noticeably yellow, and the jaundice has deepened over the last 6 hours. The baby is slightly pale and feeding poorly. A total serum bilirubin has been drawn and is pending. The baby's blood type is O+.", stem: "CASE STUDY 2 of 6 - ANALYZE CUES: Match each event in Mrs. Delgado's history to its role in this baby's illness.", cols: ["Sensitized the mother","Is destroying this baby's RBCs","Did not cause harm"], rows: [{"t":"During the first delivery, fetal Rh-positive blood crossed into the mother's circulation","a":0,"r":"That first exposure met her immune system and stimulated anti-Rh antibody production - she became sensitized then, silently."},{"t":"Anti-Rh antibodies from the mother crossed the placenta into this baby","a":1,"r":"In the second pregnancy her antibodies enter the fetus/newborn and attack his Rh-positive RBCs - agglutination and hemolysis follow."},{"t":"The first baby, also Rh-positive, was born healthy and stayed well","a":2,"r":"The first-exposure rule: the first Rh-positive baby is usually delivered uneventfully - the antibodies did not exist yet during that pregnancy."},{"t":"The baby's RBCs are being broken down faster than normal (hemolysis)","a":1,"r":"The destruction produces both halves of the picture: anemia (pallor) and hyperbilirubinemia (jaundice)."}], tp: "ANSWER KEY — Correct answer: the matches: During the first delivery, fetal Rh-positive blood crossed into the mother's circulation -> Sensitized the mother; Anti-Rh antibodies from the mother crossed the placenta into this baby -> Is destroying this baby's RBCs; The first baby, also Rh-positive, was born healthy and stayed well -> Did not cause harm; The baby's RBCs are being broken down faster than normal (hemolysis) -> Is destroying this baby's RBCs. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: ["kernicterus"], grp: "case1", scen: "CASE STUDY - Mrs. Delgado, Rh-negative (O-), has just delivered her second baby, a boy who is Rh-positive like her first child. The nurse's notes show that after her first delivery three years ago, no RhoGAM was documented. At 18 hours of age, the newborn's skin and sclerae are noticeably yellow, and the jaundice has deepened over the last 6 hours. The baby is slightly pale and feeding poorly. A total serum bilirubin has been drawn and is pending. The baby's blood type is O+.", stem: "CASE STUDY 3 of 6 - PRIORITIZE HYPOTHESES: The bilirubin result is still pending. Which nursing priority leads while the team waits?", opts: [
+    O("Close surveillance of the jaundice's depth and the baby's status with prompt reporting - rising bilirubin in a newborn threatens the brain (kernicterus).", true, "Prioritization here is about the organ at risk: bilirubin staining of brain tissue causes impaired mental development, and the chapter calls kernicterus the preventable tragedy - deepening jaundice in an 18-hour-old is a monitor-and-escalate picture, not a wait-and-see one."),
+    O("Reassure the mother that all second babies develop this jaundice and it resolves without any treatment.", false, "Physiologic jaundice is mild and late; early, deepening, hemolysis-driven jaundice in a sensitized mother's baby is the chapter's emergency pattern."),
+    O("Encourage extra oral feedings of sterile water to flush the bilirubin out through the baby's kidneys.", false, "Bilirubin exits via bile into the intestines and feces, not by water flushing through kidneys; dilution is not the treatment pathway."),
+    O("Wait for the bilirubin result before examining the baby again, to avoid unnecessary handling of a newborn.", false, "The result will quantify what the eyes already show; surveillance (depth of jaundice, feeding, pallor) must run DURING the wait, not start after it.")
+  ], tp: "ANSWER KEY — Correct answer: Close surveillance of the jaundice's depth and the baby's status with prompt reporting - rising bilirubin in a newborn threatens the brain (kernicterus).. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "multi", kt: ["phototherapy"], grp: "case1", scen: "CASE STUDY - Mrs. Delgado, Rh-negative (O-), has just delivered her second baby, a boy who is Rh-positive like her first child. The nurse's notes show that after her first delivery three years ago, no RhoGAM was documented. At 18 hours of age, the newborn's skin and sclerae are noticeably yellow, and the jaundice has deepened over the last 6 hours. The baby is slightly pale and feeding poorly. A total serum bilirubin has been drawn and is pending. The baby's blood type is O+.", stem: "CASE STUDY 4 of 6 - GENERATE SOLUTIONS: Which actions belong in this newborn's plan of care? Select all that apply.", opts: [
+    O("Begin phototherapy as ordered - ultraviolet light breaks down the bilirubin deposited in the skin so it can be eliminated.", true, "Phototherapy is the chapter's named newborn treatment: the 'sunbathing' baby under lights in the Isolette is this therapy in progress."),
+    O("Trend the serum bilirubin and the visible depth of jaundice (skin, sclerae, mucous membranes) together.", true, "The intensity of jaundice reflects the plasma bilirubin level; tracking both the lab and the three look-places measures whether hemolysis is outpacing clearance."),
+    O("Review any medication order for sulfa drugs and flag them - sulfa is contraindicated in young infants because it frees bilirubin from albumin.", true, "The chapter's medication vigilance: displaced bilirubin enters tissues and the CNS - in a baby already hyperbilirubinemic, a sulfa order is a hard stop."),
+    O("Support the parents with the explanation that this was preventable and that future pregnancies need RhoGAM protection for the mother.", true, "Teaching closes the case's loop: sensitization is preventable (RhoGAM during pregnancy and within 72 hours after delivery), and this family needs that plan for any future pregnancy."),
+    O("Request a transfusion of type O-negative blood now to replace the destroyed cells before levels return.", false, "The case data do not establish a transfusion indication, and O-negative is the universal-donor product for emergencies - the chapter's treatments here are phototherapy, monitoring, and prevention; transfusing ahead of the bilirubin result and provider assessment skips the case's own steps.")
+  ], tp: "ANSWER KEY — Correct answer: Begin phototherapy as ordered - ultraviolet light breaks down the bilirubin deposited in the skin so it can be eliminated.; Trend the serum bilirubin and the visible depth of jaundice (skin, sclerae, mucous membranes) together.; Review any medication order for sulfa drugs and flag them - sulfa is contraindicated in young infants because it frees bilirubin from albumin.; Support the parents with the explanation that this was preventable and that future pregnancies need RhoGAM protection for the mother.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: [], grp: "case1", scen: "CASE STUDY - Mrs. Delgado, Rh-negative (O-), has just delivered her second baby, a boy who is Rh-positive like her first child. The nurse's notes show that after her first delivery three years ago, no RhoGAM was documented. At 18 hours of age, the newborn's skin and sclerae are noticeably yellow, and the jaundice has deepened over the last 6 hours. The baby is slightly pale and feeding poorly. A total serum bilirubin has been drawn and is pending. The baby's blood type is O+.", stem: "CASE STUDY 5 of 6 - TAKE ACTION: The nurse updates the provider about the newborn. Which report best carries the clinical concern?", opts: [
+    O("'Rh-negative mother, second baby, no RhoGAM after the first delivery. He is 18 hours old, deeply jaundiced, pale, and feeding poorly - I suspect hemolytic disease of the newborn.'", true, "The report assembles the mechanism (sensitized mother, second Rh-positive baby), the two output findings (jaundice deepening early, pallor), and the named concern - everything the provider needs to act on the bilirubin result the moment it lands."),
+    O("'The baby looks somewhat yellow this morning, which the family tells me also happened with their first child a few years ago.'", false, "The first child looking yellow would have been the mild pattern if anything; the report strips out the Rh history, the missing RhoGAM, and the speed - the three facts that make this dangerous."),
+    O("'His bilirubin level is still pending at the laboratory, so there is nothing meaningful to report until that result comes back.'", false, "Clinical findings precede their lab confirmation in every escalation; the visible deepening jaundice IS reportable data now."),
+    O("'I have already started phototherapy on my own initiative and will call you only if the jaundice has not faded by tomorrow morning.'", false, "Initiating therapy without an order and deferring the report by a day both invert the escalation; the provider hears about a kernicterus-risk baby immediately.")
+  ], tp: "ANSWER KEY — Correct answer: 'Rh-negative mother, second baby, no RhoGAM after the first delivery. He is 18 hours old, deeply jaundiced, pale, and feeding poorly - I suspect hemolytic disease of the newborn.'. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+BANK.push({ cat: CG, type: "single", kt: [], grp: "case1", scen: "CASE STUDY - Mrs. Delgado, Rh-negative (O-), has just delivered her second baby, a boy who is Rh-positive like her first child. The nurse's notes show that after her first delivery three years ago, no RhoGAM was documented. At 18 hours of age, the newborn's skin and sclerae are noticeably yellow, and the jaundice has deepened over the last 6 hours. The baby is slightly pale and feeding poorly. A total serum bilirubin has been drawn and is pending. The baby's blood type is O+.", stem: "CASE STUDY 6 of 6 - EVALUATE OUTCOMES: After 24 hours of phototherapy, which outcome best shows the plan is working?", opts: [
+    O("The serum bilirubin is falling, the visible jaundice is lightening, and the baby is feeding more vigorously.", true, "Evaluation reads the same variables that defined the crisis: bilirubin trend down, jaundice intensity (which mirrors plasma levels) receding, and the baby behaving like a recovering newborn rather than a sick one."),
+    O("The baby's blood type has converted to Rh-negative under the lights.", false, "Phototherapy breaks down bilirubin in the skin; it changes no one's blood type - a category error, not an outcome."),
+    O("The mother received RhoGAM today, so this baby's jaundice should now resolve.", false, "RhoGAM prevents FUTURE sensitization events for the mother; it does not treat the current baby's hemolysis or bilirubin. Timing and target both matter."),
+    O("The baby's skin looks more yellow under the phototherapy lights, which the nurse charts as expected progress.", false, "Deepening yellow means rising bilirubin - the failure direction; under the lights the assessment still tracks lightening skin and falling levels as the goals.")
+  ], tp: "ANSWER KEY — Correct answer: The serum bilirubin is falling, the visible jaundice is lightening, and the baby is feeding more vigorously.. DETAILED RATIONALE — undefined The option-by-option feedback explains why the correct choice works and why each distractor fails. PRIORITY FRAMEWORK — undefined" });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 15: Blood</h1>';
+  h += '<div class="sub">Brutal mode | Herlihy, Anatomy & Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

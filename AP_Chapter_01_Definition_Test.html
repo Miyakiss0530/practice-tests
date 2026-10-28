@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 - Introduction to the Human Body - Definition Test (Herlihy)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK (HARD / BRUTAL MODE) ============ */
+/* Herlihy Ch 1 Definition Test — ABCD single-best + SATA + dropdown items testing definitions/meanings. */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Foundations & Levels of Organization";
+var CB = "Organ Systems";
+var CC = "Homeostasis & Anatomical Position";
+var CD = "Relative Positions & Planes";
+var CE = "Regional Terms";
+var CF = "Body Cavities, Quadrants & Regions";
+var CATS = [CA, CB, CC, CD, CE, CF];
+var KEYTERMS = ["anatomical-position", "anatomy", "antecubital", "buccal", "cardiac-muscle", "cell", "circulatory-system", "dorsal-cavity", "epigastric-region", "frontal-coronal-plane", "homeostasis", "homeostatic-mechanisms", "hormones", "hypogastric-region", "immune-system", "integumentary-system", "lymphatic-system", "macromolecules", "medial", "mediastinum", "midsagittal-section", "organ-systems", "organs", "patellar", "pathophysiology", "pericardial-cavity", "physiology", "plantar", "popliteal", "proximal", "respiratory-system", "sagittal-plane", "skeletal-system", "smooth-muscle", "superior", "tissues", "transverse-plane", "umbilical-region", "umbilicus", "urinary-system", "ventral", "ventral-cavity", "viscera"];
+var BLUEPRINT = {
+  CA: { name: CA, count: 10, types: { "multi": 2, "single": 8 } },
+  CB: { name: CB, count: 13, types: { "multi": 3, "single": 10 } },
+  CC: { name: CC, count: 4, types: { "multi": 1, "single": 3 } },
+  CD: { name: CD, count: 11, types: { "dropdown": 1, "multi": 2, "single": 8 } },
+  CE: { name: CE, count: 6, types: { "dropdown": 1, "multi": 1, "single": 4 } },
+  CF: { name: CF, count: 12, types: { "dropdown": 1, "multi": 3, "single": 8 } },
+};
+
+BANK.push({ cat: CB, type: "single", kt: ["integumentary-system"], stem: "Which statement correctly defines Integumentary system?", opts: [
+    O("Skin, hair, and nails; covers the body, regulates temperature, and has structures for sensation", true, "Correct — that statement matches the guide's definition of Integumentary system word for word in meaning."),
+    O("Skin, hair, and nails; covers the body, regulates temperature, and has structures for sensation", false, "That statement defines Integumentary system, not Integumentary system — close in wording, wrong in pairing."),
+    O("The center region, around the umbilicus (navel), between the epigastric and hypogastric regions", false, "That statement defines Umbilical region, not Integumentary system — close in wording, wrong in pairing."),
+    O("The larger major cavity toward the front; divided into the thoracic and abdominopelvic cavities", false, "That statement defines Ventral cavity, not Integumentary system — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Skin, hair, and nails; covers the body, regulates temperature, and has structures for sensation. DETAILED RATIONALE — Integumentary system = Skin, hair, and nails; covers the body, regulates temperature, and has structures for sensation. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["lymphatic-system"], stem: "Which statement correctly defines Lymphatic system?", opts: [
+    O("Lymph nodes, lymphatic vessels, and lymph; keeps fluid balance and defends against pathogens and foreign material", true, "Correct — that statement matches the guide's definition of Lymphatic system word for word in meaning."),
+    O("Blood, heart, and blood vessels; transports nutrients and oxygen to all cells and waste to the organs of excretion", false, "That statement defines Circulatory system, not Lymphatic system — close in wording, wrong in pairing."),
+    O("Lymph nodes, lymphatic vessels, and lymph; keeps fluid balance and defends against pathogens and foreign material", false, "That statement defines Lymphatic system, not Lymphatic system — close in wording, wrong in pairing."),
+    O("The cavity below the diaphragm — abdominal cavity above, pelvic cavity below — mapped as 4 quadrants and 9 regions", false, "That statement defines Abdominopelvic cavity, not Lymphatic system — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Lymph nodes, lymphatic vessels, and lymph; keeps fluid balance and defends against pathogens and foreign material. DETAILED RATIONALE — Lymphatic system = Lymph nodes, lymphatic vessels, and lymph; keeps fluid balance and defends against pathogens and foreign material. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["macromolecules"], stem: "Which statement correctly defines Macromolecules?", opts: [
+    O("Substances like pollen and bee venom that the immune system reacts to", false, "That statement defines Allergens, not Macromolecules — close in wording, wrong in pairing."),
+    O("The word part meaning 'staying,' as in homeostasis — staying the same", false, "That statement defines Stasis, not Macromolecules — close in wording, wrong in pairing."),
+    O("The larger molecules, built from molecules, which are built from atoms", false, "That statement defines Macromolecules, not Macromolecules — close in wording, wrong in pairing."),
+    O("The larger molecules, built from molecules, which are built from atoms", true, "Correct — that statement matches the guide's definition of Macromolecules word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: The larger molecules, built from molecules, which are built from atoms. DETAILED RATIONALE — Macromolecules = The larger molecules, built from molecules, which are built from atoms. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["pathophysiology"], stem: "Which statement correctly defines Pathophysiology?", opts: [
+    O("The study of the consequences of improper functioning — disease", false, "That statement defines Pathophysiology, not Pathophysiology — close in wording, wrong in pairing."),
+    O("The study of the function of the body — what the structures do", false, "That statement defines Physiology, not Pathophysiology — close in wording, wrong in pairing."),
+    O("Above; closer to the head — the head is superior to the chest", false, "That statement defines Superior, not Pathophysiology — close in wording, wrong in pairing."),
+    O("The study of the consequences of improper functioning — disease", true, "Correct — that statement matches the guide's definition of Pathophysiology word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: The study of the consequences of improper functioning — disease. DETAILED RATIONALE — Pathophysiology = The study of the consequences of improper functioning — disease. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CC, type: "single", kt: ["homeostatic-mechanisms"], stem: "Which statement correctly defines Homeostatic mechanisms?", opts: [
+    O("The smallest level of organization, from which molecules are built", false, "That statement defines Atom, not Homeostatic mechanisms — close in wording, wrong in pairing."),
+    O("The smooth muscle in blood vessel walls — the kind that moves blood", false, "That statement defines Vascular smooth muscle, not Homeostatic mechanisms — close in wording, wrong in pairing."),
+    O("The mechanisms that maintain the body's stable internal environment", false, "That statement defines Homeostatic mechanisms, not Homeostatic mechanisms — close in wording, wrong in pairing."),
+    O("The mechanisms that maintain the body's stable internal environment", true, "Correct — that statement matches the guide's definition of Homeostatic mechanisms word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: The mechanisms that maintain the body's stable internal environment. DETAILED RATIONALE — Homeostatic mechanisms = The mechanisms that maintain the body's stable internal environment. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["ventral"], stem: "Which statement correctly defines Ventral?", opts: [
+    O("Where the thigh meets the trunk; the groin", false, "That statement defines Inguinal, not Ventral — close in wording, wrong in pairing."),
+    O("Anterior — toward the front, the belly side", false, "That statement defines Ventral, not Ventral — close in wording, wrong in pairing."),
+    O("Anterior — toward the front, the belly side", true, "Correct — that statement matches the guide's definition of Ventral word for word in meaning."),
+    O("Muscle found only in the heart; pumps blood", false, "That statement defines Cardiac muscle, not Ventral — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Anterior — toward the front, the belly side. DETAILED RATIONALE — Ventral = Anterior — toward the front, the belly side. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "multi", stem: "Which statements about the levels of organization are correct? Select all that apply.", opts: [
+    O("The cell is the basic unit of life — the level where living starts", true, "Correct — the guide names the cell as the one level called the basic unit of life."),
+    O("Tissues are specialized groups of cells performing specific functions", true, "Correct — that is the guide's definition of tissues, one level above cells."),
+    O("An organ is a single tissue type working alone", false, "An organ is SEVERAL tissue types working together — a single tissue type is just a tissue."),
+    O("An organ system is several organs working together", true, "Correct — several organs working together form an organ system, below the whole organism."),
+    O("Macromolecules are smaller than the molecules they are built from", false, "Macromolecules are the LARGER molecules, built from molecules, which are built from atoms."),
+    O("The human organism is one level below the organ systems", false, "The organism is the whole person — the highest level, built from all the organ systems.")
+  ], tp: "ANSWER KEY — Correct answer: The cell is the basic unit of life — the level where living starts; Tissues are specialized groups of cells performing specific functions; An organ system is several organs working together. DETAILED RATIONALE — Chain: atoms → molecules → macromolecules → cells → tissues → organs → organ systems → organism; the cell is the basic unit of life. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["physiology"], stem: "Which statement correctly defines Physiology?", opts: [
+    O("Above; closer to the head — the head is superior to the chest", false, "That statement defines Superior, not Physiology — close in wording, wrong in pairing."),
+    O("The study of the consequences of improper functioning — disease", false, "That statement defines Pathophysiology, not Physiology — close in wording, wrong in pairing."),
+    O("The study of the function of the body — what the structures do", false, "That statement defines Physiology, not Physiology — close in wording, wrong in pairing."),
+    O("The study of the function of the body — what the structures do", true, "Correct — that statement matches the guide's definition of Physiology word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: The study of the function of the body — what the structures do. DETAILED RATIONALE — Physiology = The study of the function of the body — what the structures do. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["proximal"], stem: "Which statement correctly defines Proximal?", opts: [
+    O("Nearer the point of attachment to the trunk — the elbow is proximal to the wrist", true, "Correct — that statement matches the guide's definition of Proximal word for word in meaning."),
+    O("The navel — the center landmark for the umbilical region and the quadrant cross", false, "That statement defines Umbilicus, not Proximal — close in wording, wrong in pairing."),
+    O("Fleshy area along each side between the lower ribs and the top of the hip bones", false, "That statement defines Flank, not Proximal — close in wording, wrong in pairing."),
+    O("Nearer the point of attachment to the trunk — the elbow is proximal to the wrist", false, "That statement defines Proximal, not Proximal — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Nearer the point of attachment to the trunk — the elbow is proximal to the wrist. DETAILED RATIONALE — Proximal = Nearer the point of attachment to the trunk — the elbow is proximal to the wrist. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["medial"], stem: "Which statement correctly defines Medial?", opts: [
+    O("A sagittal cut at the midline producing equal halves", false, "That statement defines Midsagittal section, not Medial — close in wording, wrong in pairing."),
+    O("Toward the midline — the nose is medial to the ears", true, "Correct — that statement matches the guide's definition of Medial word for word in meaning."),
+    O("Away from the surface — bones are deep to the skin", false, "That statement defines Deep, not Medial — close in wording, wrong in pairing."),
+    O("Toward the midline — the nose is medial to the ears", false, "That statement defines Medial, not Medial — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Toward the midline — the nose is medial to the ears. DETAILED RATIONALE — Medial = Toward the midline — the nose is medial to the ears. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["circulatory-system"], stem: "Which statement correctly defines Circulatory system?", opts: [
+    O("Blood, heart, and blood vessels; transports nutrients and oxygen to all cells and waste to the organs of excretion", false, "That statement defines Circulatory system, not Circulatory system — close in wording, wrong in pairing."),
+    O("Lymph nodes, lymphatic vessels, and lymph; keeps fluid balance and defends against pathogens and foreign material", false, "That statement defines Lymphatic system, not Circulatory system — close in wording, wrong in pairing."),
+    O("Blood, heart, and blood vessels; transports nutrients and oxygen to all cells and waste to the organs of excretion", true, "Correct — that statement matches the guide's definition of Circulatory system word for word in meaning."),
+    O("The cavity below the diaphragm — abdominal cavity above, pelvic cavity below — mapped as 4 quadrants and 9 regions", false, "That statement defines Abdominopelvic cavity, not Circulatory system — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Blood, heart, and blood vessels; transports nutrients and oxygen to all cells and waste to the organs of excretion. DETAILED RATIONALE — Circulatory system = Blood, heart, and blood vessels; transports nutrients and oxygen to all cells and waste to the organs of excretion. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "dropdown", kt: ["epigastric-region", "umbilical-region", "hypogastric-region"], stem: "For each central abdominopelvic region, choose the correct name.<br><br>Top-center region, below the breastbone over the stomach<br>[[0]]<br><br>Center region around the navel<br>[[1]]<br><br>Bottom-center region below the navel region<br>[[2]]", blanks: [
+    { o: [O("Epigastric region", true, "Epigastric is top-center: epi = upon, gastric = stomach, below the breastbone."), O("Umbilical region", false, "The umbilical region is the CENTER region around the navel, not the top-center one."), O("Hypogastric region", false, "Hypogastric is the BOTTOM-center region below the umbilical region.")] },
+    { o: [O("Umbilical region", true, "The umbilical region is the center region around the umbilicus, the navel."), O("Epigastric region", false, "Epigastric is the TOP-center region over the stomach, above the umbilical region."), O("Hypogastric region", false, "Hypogastric is the BOTTOM-center region below the umbilical region.")] },
+    { o: [O("Hypogastric region", true, "Hypogastric is bottom-center: hypo = below, below the umbilical region."), O("Umbilical region", false, "The umbilical region is the CENTER region around the navel, not the bottom-center one."), O("Epigastric region", false, "Epigastric is the TOP-center region over the stomach, above the umbilical region.")] }
+  ], tp: "ANSWER KEY — Correct answer: Blank 1: Epigastric region; Blank 2: Umbilical region; Blank 3: Hypogastric region. DETAILED RATIONALE — The three central regions run top to bottom: epigastric, umbilical, hypogastric — do not swap the top and bottom pair. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — assessment and analysis before implementation." });
+
+BANK.push({ cat: CE, type: "single", kt: ["buccal"], stem: "Which statement correctly defines Buccal?", opts: [
+    O("Another name for a horizontal (transverse) cut", false, "That statement defines Cross section, not Buccal — close in wording, wrong in pairing."),
+    O("Cheek; the cavity between the gum and the cheek", true, "Correct — that statement matches the guide's definition of Buccal word for word in meaning."),
+    O("Chemical substances secreted by endocrine glands", false, "That statement defines Hormones, not Buccal — close in wording, wrong in pairing."),
+    O("Cheek; the cavity between the gum and the cheek", false, "That statement defines Buccal, not Buccal — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Cheek; the cavity between the gum and the cheek. DETAILED RATIONALE — Buccal = Cheek; the cavity between the gum and the cheek. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "single", kt: ["popliteal"], stem: "Which statement correctly defines Popliteal?", opts: [
+    O("Sole of the foot", false, "That statement defines Plantar, not Popliteal — close in wording, wrong in pairing."),
+    O("Back of the knee", true, "Correct — that statement matches the guide's definition of Popliteal word for word in meaning."),
+    O("Fingers and toes", false, "That statement defines Digital, not Popliteal — close in wording, wrong in pairing."),
+    O("Back of the head", false, "That statement defines Occipital, not Popliteal — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Back of the knee. DETAILED RATIONALE — Popliteal = Back of the knee. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["umbilicus"], stem: "Which statement correctly defines Umbilicus?", opts: [
+    O("The navel — the center landmark for the umbilical region and the quadrant cross", true, "Correct — that statement matches the guide's definition of Umbilicus word for word in meaning."),
+    O("Nearer the point of attachment to the trunk — the elbow is proximal to the wrist", false, "That statement defines Proximal, not Umbilicus — close in wording, wrong in pairing."),
+    O("Fleshy area along each side between the lower ribs and the top of the hip bones", false, "That statement defines Flank, not Umbilicus — close in wording, wrong in pairing."),
+    O("The navel — the center landmark for the umbilical region and the quadrant cross", false, "That statement defines Umbilicus, not Umbilicus — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The navel — the center landmark for the umbilical region and the quadrant cross. DETAILED RATIONALE — Umbilicus = The navel — the center landmark for the umbilical region and the quadrant cross. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["hormones"], stem: "Which statement correctly defines Hormones?", opts: [
+    O("The whole person — all the organ systems together", false, "That statement defines Human organism, not Hormones — close in wording, wrong in pairing."),
+    O("Cheek; the cavity between the gum and the cheek", false, "That statement defines Buccal, not Hormones — close in wording, wrong in pairing."),
+    O("Chemical substances secreted by endocrine glands", false, "That statement defines Hormones, not Hormones — close in wording, wrong in pairing."),
+    O("Chemical substances secreted by endocrine glands", true, "Correct — that statement matches the guide's definition of Hormones word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: Chemical substances secreted by endocrine glands. DETAILED RATIONALE — Hormones = Chemical substances secreted by endocrine glands. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "dropdown", kt: ["sagittal-plane", "frontal-coronal-plane", "transverse-plane"], stem: "For each cut, choose the correct plane.<br><br>A cut dividing the body into right and left portions<br>[[0]]<br><br>A cut dividing the body into front and back portions<br>[[1]]<br><br>A horizontal cut dividing the body into upper and lower portions<br>[[2]]", blanks: [
+    { o: [O("Sagittal plane", true, "The sagittal plane is the lengthwise cut dividing right from left portions."), O("Frontal plane", false, "The frontal (coronal) plane divides front from back, not right from left."), O("Transverse plane", false, "The transverse plane is horizontal and divides upper from lower portions.")] },
+    { o: [O("Frontal plane", true, "The frontal (coronal) plane divides anterior from posterior portions."), O("Sagittal plane", false, "The sagittal plane divides right from left, not front from back."), O("Transverse plane", false, "The transverse plane is horizontal and divides upper from lower portions.")] },
+    { o: [O("Transverse plane", true, "The transverse plane is the horizontal cut — also called a cross section."), O("Sagittal plane", false, "The sagittal plane is a lengthwise cut dividing right from left portions."), O("Frontal plane", false, "The frontal (coronal) plane divides front from back, not upper from lower.")] }
+  ], tp: "ANSWER KEY — Correct answer: Blank 1: Sagittal plane; Blank 2: Frontal plane; Blank 3: Transverse plane. DETAILED RATIONALE — Sagittal = right/left, frontal (coronal) = front/back, transverse = top/bottom (horizontal, cross section). The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — assessment and analysis before implementation." });
+
+BANK.push({ cat: CC, type: "single", kt: ["homeostasis"], stem: "Which statement correctly defines Homeostasis?", opts: [
+    O("Away from the center — vessels spread peripherally and the nerves form the peripheral nervous system", false, "That statement defines Peripheral, not Homeostasis — close in wording, wrong in pairing."),
+    O("In the center — the heart is located centrally; brain and spinal cord form the central nervous system", false, "That statement defines Central, not Homeostasis — close in wording, wrong in pairing."),
+    O("The body's ability to maintain a stable internal environment despite a changing external environment", false, "That statement defines Homeostasis, not Homeostasis — close in wording, wrong in pairing."),
+    O("The body's ability to maintain a stable internal environment despite a changing external environment", true, "Correct — that statement matches the guide's definition of Homeostasis word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: The body's ability to maintain a stable internal environment despite a changing external environment. DETAILED RATIONALE — Homeostasis = The body's ability to maintain a stable internal environment despite a changing external environment. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "multi", stem: "Which statements about transport and defense are correct? Select all that apply.", opts: [
+    O("The circulatory system carries nutrients and oxygen to all cells", true, "Correct — blood carries nutrients and oxygen TO cells and waste TO excretion organs."),
+    O("The lymphatic system helps keep fluid balance in the body", true, "Correct — fluid balance is one of the lymphatic system's two jobs in the guide."),
+    O("The immune system protects against the body's own abnormal cells", true, "Correct — immune targets are pathogens, allergens, and abnormal (cancer) cells."),
+    O("The immune system is one organ shown in the chapter's system figure", false, "The immune system is widely distributed and is NOT shown in Fig. 1.3 — it has no single organ."),
+    O("The lymphatic system has no defense role and only drains fluid", false, "The lymphatic system also DEFENDS against pathogens and foreign material — it is not just drainage.")
+  ], tp: "ANSWER KEY — Correct answer: The circulatory system carries nutrients and oxygen to all cells; The lymphatic system helps keep fluid balance in the body; The immune system protects against the body's own abnormal cells. DETAILED RATIONALE — Circulatory = transport both ways. Lymphatic = fluid balance + defense. Immune = pathogens, allergens, abnormal cells; widely distributed, not in Fig. 1.3. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "multi", stem: "Which statements about the thoracic cavity are correct? Select all that apply.", opts: [
+    O("The mediastinum is the partition dividing the thoracic cavity in two", true, "Correct — the mediastinum is the central partition between the two compartments."),
+    O("The pericardial cavity lies within the mediastinum and holds the heart", true, "Correct — heart → pericardial cavity → within the mediastinum → within the thoracic cavity."),
+    O("Each lung sits in its own pleural cavity on either side of the mediastinum", true, "Correct — right and left pleural cavities flank the mediastinum, one around each lung."),
+    O("The lungs are located inside the mediastinum with the heart", false, "The lungs sit on EITHER SIDE of the mediastinum in pleural cavities — never inside it."),
+    O("The thoracic cavity lies below the diaphragm under the rib cage", false, "The thoracic cavity sits ABOVE the diaphragm, surrounded by the rib cage.")
+  ], tp: "ANSWER KEY — Correct answer: The mediastinum is the partition dividing the thoracic cavity in two; The pericardial cavity lies within the mediastinum and holds the heart; Each lung sits in its own pleural cavity on either side of the mediastinum. DETAILED RATIONALE — Thoracic cavity: above diaphragm, mediastinum in the middle (heart in pericardial cavity, thymus, parts of esophagus/trachea, large vessels), lungs in pleural cavities on either side. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["skeletal-system"], stem: "Which statement correctly defines Skeletal system?", opts: [
+    O("Bones, joints, and cartilage; the framework that protects and supports organs, allows movement, and whose marrow produces most blood cells", true, "Correct — that statement matches the guide's definition of Skeletal system word for word in meaning."),
+    O("The smaller major cavity toward the back; its cranial and spinal divisions form one continuous space holding brain and spinal cord", false, "That statement defines Dorsal cavity, not Skeletal system — close in wording, wrong in pairing."),
+    O("Bones, joints, and cartilage; the framework that protects and supports organs, allows movement, and whose marrow produces most blood cells", false, "That statement defines Skeletal system, not Skeletal system — close in wording, wrong in pairing."),
+    O("Widely distributed and not shown in Fig. 1.3; protects against pathogens, allergens, and the body's own abnormal (cancer) cells", false, "That statement defines Immune system, not Skeletal system — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Bones, joints, and cartilage; the framework that protects and supports organs, allows movement, and whose marrow produces most blood cells. DETAILED RATIONALE — Skeletal system = Bones, joints, and cartilage; the framework that protects and supports organs, allows movement, and whose marrow produces most blood cells. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["pericardial-cavity"], stem: "Which statement correctly defines Pericardial cavity?", opts: [
+    O("The cavity within the mediastinum that contains the heart", false, "That statement defines Pericardial cavity, not Pericardial cavity — close in wording, wrong in pairing."),
+    O("The cavity within the mediastinum that contains the heart", true, "Correct — that statement matches the guide's definition of Pericardial cavity word for word in meaning."),
+    O("The organs and structures that make reproduction possible", false, "That statement defines Reproductive system, not Pericardial cavity — close in wording, wrong in pairing."),
+    O("Specialized groups of cells performing specific functions", false, "That statement defines Tissues, not Pericardial cavity — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The cavity within the mediastinum that contains the heart. DETAILED RATIONALE — Pericardial cavity = The cavity within the mediastinum that contains the heart. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CC, type: "single", kt: ["anatomical-position"], stem: "Which statement correctly defines Anatomical position?", opts: [
+    O("Ingests food and breaks it into absorbable substances; unabsorbed material is eliminated as waste", false, "That statement defines Digestive system, not Anatomical position — close in wording, wrong in pairing."),
+    O("Standing erect, face forward, arms at the sides, with toes and palms of the hands directed forward", false, "That statement defines Anatomical position, not Anatomical position — close in wording, wrong in pairing."),
+    O("RUQ, LUQ, RLQ, and LLQ — named from the patient's point of view, for the abdominopelvic cavity only", false, "That statement defines Four quadrants, not Anatomical position — close in wording, wrong in pairing."),
+    O("Standing erect, face forward, arms at the sides, with toes and palms of the hands directed forward", true, "Correct — that statement matches the guide's definition of Anatomical position word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: Standing erect, face forward, arms at the sides, with toes and palms of the hands directed forward. DETAILED RATIONALE — Anatomical position = Standing erect, face forward, arms at the sides, with toes and palms of the hands directed forward. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "multi", stem: "Which statements about the control systems are correct? Select all that apply.", opts: [
+    O("The nervous system receives sensory information and sends motor signals out", true, "Correct — sensory in, brain and spinal cord interpret, motor signals out, then a response."),
+    O("The endocrine system works through hormones secreted by glands", true, "Correct — hormones are chemical substances secreted by endocrine glands."),
+    O("Endocrine glands regulate growth, reproduction, metabolism, and water balance", true, "Correct — those are the four things the guide lists for endocrine regulation."),
+    O("The nervous system secretes hormones into the blood to regulate the body", false, "Hormones belong to the ENDOCRINE system only — the nervous system works through nerve signals."),
+    O("The nervous system is limited to reflexes and plays no role in emotion", false, "The chapter also credits the nervous system with thinking and emotion, not reflexes alone.")
+  ], tp: "ANSWER KEY — Correct answer: The nervous system receives sensory information and sends motor signals out; The endocrine system works through hormones secreted by glands; Endocrine glands regulate growth, reproduction, metabolism, and water balance. DETAILED RATIONALE — Nervous = nerve signals, sensory in and motor out, plus thinking and emotion. Endocrine = hormones regulating growth, reproduction, metabolism, water balance. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["superior"], stem: "Which statement correctly defines Superior?", opts: [
+    O("Above; closer to the head — the head is superior to the chest", true, "Correct — that statement matches the guide's definition of Superior word for word in meaning."),
+    O("Below; closer to the feet — the chest is inferior to the head", false, "That statement defines Inferior, not Superior — close in wording, wrong in pairing."),
+    O("Above; closer to the head — the head is superior to the chest", false, "That statement defines Superior, not Superior — close in wording, wrong in pairing."),
+    O("Near the lower region of the spinal column — the tailbone end", false, "That statement defines Caudal, not Superior — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Above; closer to the head — the head is superior to the chest. DETAILED RATIONALE — Superior = Above; closer to the head — the head is superior to the chest. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CC, type: "multi", stem: "Which statements correctly describe homeostasis? Select all that apply.", opts: [
+    O("Body temperature stays about 98.6°F whether the room is hot or cold", true, "Correct — temperature is held near 98.6°F (37°C) in a 100°F room or a 60°F room."),
+    O("Cell water stays stable whether a person drinks 2, 3, or 4 liters a day", true, "Correct — the guide's water example holds cell water stable across that intake range."),
+    O("Blood sugar stays within normal limits after a large meal or a fast", true, "Correct — blood sugar stays normal after a Thanksgiving dinner or a 6-hour fast."),
+    O("Homeostasis means the external environment stops changing", false, "The OUTSIDE keeps changing; homeostasis holds the INSIDE steady despite those changes."),
+    O("A homeostatic imbalance has no effect on health or on body function at all", false, "Homeostatic imbalance leads to disease or dysfunction — that is how illness starts.")
+  ], tp: "ANSWER KEY — Correct answer: Body temperature stays about 98.6°F whether the room is hot or cold; Cell water stays stable whether a person drinks 2, 3, or 4 liters a day; Blood sugar stays within normal limits after a large meal or a fast. DETAILED RATIONALE — Homeostasis = stable internal environment despite a changing external one; imbalance = disease or dysfunction. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["respiratory-system"], stem: "Which statement correctly defines Respiratory system?", opts: [
+    O("Lymph nodes, lymphatic vessels, and lymph; keeps fluid balance and defends against pathogens and foreign material", false, "That statement defines Lymphatic system, not Respiratory system — close in wording, wrong in pairing."),
+    O("The top-center region, below the breastbone and over the stomach area — epi means upon, gastric means stomach", false, "That statement defines Epigastric region, not Respiratory system — close in wording, wrong in pairing."),
+    O("Lungs and conducting structures; brings oxygen in, removes carbon dioxide, and helps regulate acid–base balance", true, "Correct — that statement matches the guide's definition of Respiratory system word for word in meaning."),
+    O("Lungs and conducting structures; brings oxygen in, removes carbon dioxide, and helps regulate acid–base balance", false, "That statement defines Respiratory system, not Respiratory system — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Lungs and conducting structures; brings oxygen in, removes carbon dioxide, and helps regulate acid–base balance. DETAILED RATIONALE — Respiratory system = Lungs and conducting structures; brings oxygen in, removes carbon dioxide, and helps regulate acid–base balance. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["sagittal-plane"], stem: "Which statement correctly defines Sagittal plane?", opts: [
+    O("Substances like pollen and bee venom that the immune system reacts to", false, "That statement defines Allergens, not Sagittal plane — close in wording, wrong in pairing."),
+    O("The lengthwise cut that divides the body into right and left portions", true, "Correct — that statement matches the guide's definition of Sagittal plane word for word in meaning."),
+    O("The word part meaning 'staying,' as in homeostasis — staying the same", false, "That statement defines Stasis, not Sagittal plane — close in wording, wrong in pairing."),
+    O("The lengthwise cut that divides the body into right and left portions", false, "That statement defines Sagittal plane, not Sagittal plane — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The lengthwise cut that divides the body into right and left portions. DETAILED RATIONALE — Sagittal plane = The lengthwise cut that divides the body into right and left portions. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "multi", stem: "Which statements about anatomy, physiology, and pathophysiology are correct? Select all that apply.", opts: [
+    O("Anatomy is the study of the structure of the body", true, "Correct — anatomy = structure; the word comes from the Greek meaning 'to dissect.'"),
+    O("Physiology is the study of the function of the body", true, "Correct — physiology = function: what the structures do."),
+    O("Pathophysiology studies the consequences of improper functioning", true, "Correct — pathophysiology is what happens when function goes wrong: disease."),
+    O("Anatomy and physiology are two names for the same study", false, "They are NOT interchangeable — anatomy names structure and physiology names function."),
+    O("Disease is defined as a structure with an unusual shape", false, "Disease is the consequence of improper FUNCTIONING — a function problem, not a shape label.")
+  ], tp: "ANSWER KEY — Correct answer: Anatomy is the study of the structure of the body; Physiology is the study of the function of the body; Pathophysiology studies the consequences of improper functioning. DETAILED RATIONALE — Anatomy = structure, physiology = function, pathophysiology = consequences of improper functioning (disease). The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["urinary-system"], stem: "Which statement correctly defines Urinary system?", opts: [
+    O("The cavity below the diaphragm — abdominal cavity above, pelvic cavity below — mapped as 4 quadrants and 9 regions", false, "That statement defines Abdominopelvic cavity, not Urinary system — close in wording, wrong in pairing."),
+    O("Blood, heart, and blood vessels; transports nutrients and oxygen to all cells and waste to the organs of excretion", false, "That statement defines Circulatory system, not Urinary system — close in wording, wrong in pairing."),
+    O("Kidneys and other urinary structures; excretes waste as urine and controls water, electrolyte, and acid–base balance", true, "Correct — that statement matches the guide's definition of Urinary system word for word in meaning."),
+    O("Kidneys and other urinary structures; excretes waste as urine and controls water, electrolyte, and acid–base balance", false, "That statement defines Urinary system, not Urinary system — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Kidneys and other urinary structures; excretes waste as urine and controls water, electrolyte, and acid–base balance. DETAILED RATIONALE — Urinary system = Kidneys and other urinary structures; excretes waste as urine and controls water, electrolyte, and acid–base balance. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "single", kt: ["antecubital"], stem: "Which statement correctly defines Antecubital?", opts: [
+    O("Front of the elbow", false, "That statement defines Antecubital, not Antecubital — close in wording, wrong in pairing."),
+    O("Fingers and toes", false, "That statement defines Digital, not Antecubital — close in wording, wrong in pairing."),
+    O("Front of the elbow", true, "Correct — that statement matches the guide's definition of Antecubital word for word in meaning."),
+    O("Shoulder blade area", false, "That statement defines Scapular, not Antecubital — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Front of the elbow. DETAILED RATIONALE — Antecubital = Front of the elbow. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "multi", stem: "Which statements about relative positions are correct? Select all that apply.", opts: [
+    O("The head is superior to the chest and the chest is inferior to the head", true, "Correct — superior is closer to the head and inferior is closer to the feet."),
+    O("The nose is medial to the ears and the ears are lateral to the nose", true, "Correct — medial is toward the midline and lateral is away from the midline."),
+    O("The elbow is proximal to the wrist and the wrist is distal to the elbow", true, "Correct — proximal and distal are judged from the point of attachment to the trunk."),
+    O("Ventral means the back side and dorsal means the belly side", false, "Swapped — ventral = anterior (belly side) and dorsal = posterior (back), like a shark's dorsal fin."),
+    O("Bones are superficial to the skin because they lie under it", false, "Bones are DEEP to the skin; the skin is superficial because it is on or near the surface.")
+  ], tp: "ANSWER KEY — Correct answer: The head is superior to the chest and the chest is inferior to the head; The nose is medial to the ears and the ears are lateral to the nose; The elbow is proximal to the wrist and the wrist is distal to the elbow. DETAILED RATIONALE — Pairs: superior/inferior, anterior/posterior, medial/lateral, proximal/distal, superficial/deep, central/peripheral — judged in anatomical position. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["dorsal-cavity"], stem: "Which statement correctly defines Dorsal cavity?", opts: [
+    O("Widely distributed and not shown in Fig. 1.3; protects against pathogens, allergens, and the body's own abnormal (cancer) cells", false, "That statement defines Immune system, not Dorsal cavity — close in wording, wrong in pairing."),
+    O("Brain, spinal cord, nerves, and sense organs; senses, interprets, and sends motor signals, and handles thinking and emotion", false, "That statement defines Nervous system, not Dorsal cavity — close in wording, wrong in pairing."),
+    O("The smaller major cavity toward the back; its cranial and spinal divisions form one continuous space holding brain and spinal cord", true, "Correct — that statement matches the guide's definition of Dorsal cavity word for word in meaning."),
+    O("The smaller major cavity toward the back; its cranial and spinal divisions form one continuous space holding brain and spinal cord", false, "That statement defines Dorsal cavity, not Dorsal cavity — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The smaller major cavity toward the back; its cranial and spinal divisions form one continuous space holding brain and spinal cord. DETAILED RATIONALE — Dorsal cavity = The smaller major cavity toward the back; its cranial and spinal divisions form one continuous space holding brain and spinal cord. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "multi", stem: "Which statements about the major body cavities are correct? Select all that apply.", opts: [
+    O("The ventral cavity is larger than the dorsal cavity", true, "Correct — the front (ventral) cavity is the larger of the two major cavities."),
+    O("The cranial and spinal cavities form one continuous space", true, "Correct — together they form one continuous space holding brain and spinal cord."),
+    O("The dorsal cavity is divided into cranial and spinal cavities", true, "Correct — those are the two dorsal divisions, surrounded by skull and vertebrae."),
+    O("The thoracic cavity is a division of the dorsal cavity", false, "The thoracic cavity belongs to the VENTRAL cavity, with the abdominopelvic cavity."),
+    O("Viscera is the name for organs outside the body cavities", false, "Viscera are the organs located INSIDE the body's cavities — the opposite of this statement.")
+  ], tp: "ANSWER KEY — Correct answer: The ventral cavity is larger than the dorsal cavity; The cranial and spinal cavities form one continuous space; The dorsal cavity is divided into cranial and spinal cavities. DETAILED RATIONALE — Dorsal (back, smaller) = cranial + spinal, one continuous space. Ventral (front, larger) = thoracic + abdominopelvic. Viscera = organs inside cavities. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["cell"], stem: "Which statement correctly defines Cell?", opts: [
+    O("The basic unit of life — the level where living starts", false, "That statement defines Cell, not Cell — close in wording, wrong in pairing."),
+    O("Part of the skeletal system, along with bones and joints", false, "That statement defines Cartilage, not Cell — close in wording, wrong in pairing."),
+    O("The basic unit of life — the level where living starts", true, "Correct — that statement matches the guide's definition of Cell word for word in meaning."),
+    O("Away from the midline — the ears are lateral to the nose", false, "That statement defines Lateral, not Cell — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The basic unit of life — the level where living starts. DETAILED RATIONALE — Cell = The basic unit of life — the level where living starts. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["viscera"], stem: "Which statement correctly defines Viscera?", opts: [
+    O("The organs located inside the body's cavities", true, "Correct — that statement matches the guide's definition of Viscera word for word in meaning."),
+    O("The organs located inside the body's cavities", false, "That statement defines Viscera, not Viscera — close in wording, wrong in pairing."),
+    O("Muscle found only in the heart; pumps blood", false, "That statement defines Cardiac muscle, not Viscera — close in wording, wrong in pairing."),
+    O("Another name for a horizontal (transverse) cut", false, "That statement defines Cross section, not Viscera — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The organs located inside the body's cavities. DETAILED RATIONALE — Viscera = The organs located inside the body's cavities. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["anatomy"], stem: "Which statement correctly defines Anatomy?", opts: [
+    O("Several tissue types working together", false, "That statement defines Organs, not Anatomy — close in wording, wrong in pairing."),
+    O("The study of the structure of the body", true, "Correct — that statement matches the guide's definition of Anatomy word for word in meaning."),
+    O("The study of the structure of the body", false, "That statement defines Anatomy, not Anatomy — close in wording, wrong in pairing."),
+    O("The consequence of improper functioning", false, "That statement defines Disease, not Anatomy — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The study of the structure of the body. DETAILED RATIONALE — Anatomy = The study of the structure of the body. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "multi", stem: "Which statements about regional terms are correct? Select all that apply.", opts: [
+    O("Patellar names the front of the knee and popliteal names the back", true, "Correct — patellar is anterior over the kneecap; popliteal is its posterior partner."),
+    O("Antecubital names the front of the elbow and axillary names the armpit", true, "Correct — both are anterior-surface terms from the chapter's list."),
+    O("Pedal names the foot and plantar names the sole of the foot", true, "Correct — pedal = foot; plantar = sole, and plantar is printed in the anterior list."),
+    O("Buccal names the neck region below the jaw, on the front surface", false, "Buccal is the CHEEK — the cavity between gum and cheek. The neck is cervical."),
+    O("Occipital names the front of the head above the eyes, near the forehead", false, "Occipital is the BACK of the head — it is a posterior-surface term, not an anterior one.")
+  ], tp: "ANSWER KEY — Correct answer: Patellar names the front of the knee and popliteal names the back; Antecubital names the front of the elbow and axillary names the armpit; Pedal names the foot and plantar names the sole of the foot. DETAILED RATIONALE — Regional pairs to lock in: patellar/popliteal, pedal/plantar, buccal (cheek) vs cervical (neck), occipital = back of head. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["frontal-coronal-plane"], stem: "Which statement correctly defines Frontal (coronal) plane?", opts: [
+    O("The cut that divides the body into anterior (ventral) and posterior (dorsal) portions", false, "That statement defines Frontal (coronal) plane, not Frontal (coronal) plane — close in wording, wrong in pairing."),
+    O("The cut that divides the body into anterior (ventral) and posterior (dorsal) portions", true, "Correct — that statement matches the guide's definition of Frontal (coronal) plane word for word in meaning."),
+    O("Broken down small enough for the body to take in — the digestive system's end product", false, "That statement defines Absorbable, not Frontal (coronal) plane — close in wording, wrong in pairing."),
+    O("The reference line that medial (toward it) and lateral (away from it) are judged from", false, "That statement defines Midline, not Frontal (coronal) plane — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The cut that divides the body into anterior (ventral) and posterior (dorsal) portions. DETAILED RATIONALE — Frontal (coronal) plane = The cut that divides the body into anterior (ventral) and posterior (dorsal) portions. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["ventral-cavity"], stem: "Which statement correctly defines Ventral cavity?", opts: [
+    O("The larger major cavity toward the front; divided into the thoracic and abdominopelvic cavities", false, "That statement defines Ventral cavity, not Ventral cavity — close in wording, wrong in pairing."),
+    O("The center region, around the umbilicus (navel), between the epigastric and hypogastric regions", false, "That statement defines Umbilical region, not Ventral cavity — close in wording, wrong in pairing."),
+    O("The larger major cavity toward the front; divided into the thoracic and abdominopelvic cavities", true, "Correct — that statement matches the guide's definition of Ventral cavity word for word in meaning."),
+    O("Skin, hair, and nails; covers the body, regulates temperature, and has structures for sensation", false, "That statement defines Integumentary system, not Ventral cavity — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The larger major cavity toward the front; divided into the thoracic and abdominopelvic cavities. DETAILED RATIONALE — Ventral cavity = The larger major cavity toward the front; divided into the thoracic and abdominopelvic cavities. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["immune-system"], stem: "Which statement correctly defines Immune system?", opts: [
+    O("Brain, spinal cord, nerves, and sense organs; senses, interprets, and sends motor signals, and handles thinking and emotion", false, "That statement defines Nervous system, not Immune system — close in wording, wrong in pairing."),
+    O("Widely distributed and not shown in Fig. 1.3; protects against pathogens, allergens, and the body's own abnormal (cancer) cells", true, "Correct — that statement matches the guide's definition of Immune system word for word in meaning."),
+    O("Widely distributed and not shown in Fig. 1.3; protects against pathogens, allergens, and the body's own abnormal (cancer) cells", false, "That statement defines Immune system, not Immune system — close in wording, wrong in pairing."),
+    O("The smaller major cavity toward the back; its cranial and spinal divisions form one continuous space holding brain and spinal cord", false, "That statement defines Dorsal cavity, not Immune system — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Widely distributed and not shown in Fig. 1.3; protects against pathogens, allergens, and the body's own abnormal (cancer) cells. DETAILED RATIONALE — Immune system = Widely distributed and not shown in Fig. 1.3; protects against pathogens, allergens, and the body's own abnormal (cancer) cells. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "single", kt: ["patellar"], stem: "Which statement correctly defines Patellar?", opts: [
+    O("How a part of the body is built", false, "That statement defines Structure, not Patellar — close in wording, wrong in pairing."),
+    O("Front of the knee over the kneecap", false, "That statement defines Patellar, not Patellar — close in wording, wrong in pairing."),
+    O("Anterior trunk just below the ribs", false, "That statement defines Abdominal, not Patellar — close in wording, wrong in pairing."),
+    O("Front of the knee over the kneecap", true, "Correct — that statement matches the guide's definition of Patellar word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: Front of the knee over the kneecap. DETAILED RATIONALE — Patellar = Front of the knee over the kneecap. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["smooth-muscle"], stem: "Which statement correctly defines Smooth muscle?", opts: [
+    O("Toward the front, the belly side — the heart is anterior to the spinal cord", false, "That statement defines Anterior, not Smooth muscle — close in wording, wrong in pairing."),
+    O("Muscle in organs and tubes; moves fluids, and its vascular form moves blood", true, "Correct — that statement matches the guide's definition of Smooth muscle word for word in meaning."),
+    O("Disease-causing agents that the lymphatic and immune systems defend against", false, "That statement defines Pathogens, not Smooth muscle — close in wording, wrong in pairing."),
+    O("Muscle in organs and tubes; moves fluids, and its vascular form moves blood", false, "That statement defines Smooth muscle, not Smooth muscle — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Muscle in organs and tubes; moves fluids, and its vascular form moves blood. DETAILED RATIONALE — Smooth muscle = Muscle in organs and tubes; moves fluids, and its vascular form moves blood. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "multi", stem: "Which statements about the abdominopelvic regions are correct? Select all that apply.", opts: [
+    O("The epigastric region is the top-center region over the stomach area", true, "Correct — epi = upon, gastric = stomach; it sits below the breastbone, over the stomach."),
+    O("The hypogastric region is the bottom-center region below the umbilical region", true, "Correct — hypo = below; hypogastric is the lowest of the three central regions."),
+    O("The hypochondriac regions lie on either side of the epigastric region", true, "Correct — hypochondriac regions flank the epigastric region, overlying the lower ribs."),
+    O("The iliac regions are also called the inguinal regions", true, "Correct — the guide states the iliac regions are also called inguinal regions."),
+    O("The nine regions can also be used to map the thoracic cavity", false, "Quadrants and the nine regions refer ONLY to the abdominopelvic cavity, never the thoracic cavity.")
+  ], tp: "ANSWER KEY — Correct answer: The epigastric region is the top-center region over the stomach area; The hypogastric region is the bottom-center region below the umbilical region; The hypochondriac regions lie on either side of the epigastric region; The iliac regions are also called the inguinal regions. DETAILED RATIONALE — Central regions top→bottom: epigastric, umbilical, hypogastric. Side regions: hypochondriac, lumbar, iliac (= inguinal). Abdominopelvic cavity only. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["hypogastric-region"], stem: "Which statement correctly defines Hypogastric region?", opts: [
+    O("The endocrine system's organs — they secrete substances such as hormones", false, "That statement defines Glands, not Hypogastric region — close in wording, wrong in pairing."),
+    O("The bottom-center region, below the umbilical region — hypo means below", true, "Correct — that statement matches the guide's definition of Hypogastric region word for word in meaning."),
+    O("The bottom-center region, below the umbilical region — hypo means below", false, "That statement defines Hypogastric region, not Hypogastric region — close in wording, wrong in pairing."),
+    O("The larger molecules, built from molecules, which are built from atoms", false, "That statement defines Macromolecules, not Hypogastric region — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The bottom-center region, below the umbilical region — hypo means below. DETAILED RATIONALE — Hypogastric region = The bottom-center region, below the umbilical region — hypo means below. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["midsagittal-section"], stem: "Which statement correctly defines Midsagittal section?", opts: [
+    O("Toward the midline — the nose is medial to the ears", false, "That statement defines Medial, not Midsagittal section — close in wording, wrong in pairing."),
+    O("A sagittal cut at the midline producing equal halves", true, "Correct — that statement matches the guide's definition of Midsagittal section word for word in meaning."),
+    O("A sagittal cut at the midline producing equal halves", false, "That statement defines Midsagittal section, not Midsagittal section — close in wording, wrong in pairing."),
+    O("The basic unit of life — the level where living starts", false, "That statement defines Cell, not Midsagittal section — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: A sagittal cut at the midline producing equal halves. DETAILED RATIONALE — Midsagittal section = A sagittal cut at the midline producing equal halves. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["epigastric-region"], stem: "Which statement correctly defines Epigastric region?", opts: [
+    O("The cavity extending down from the cranial cavity, surrounded by bony vertebrae; it contains the spinal cord", false, "That statement defines Spinal (vertebral) cavity, not Epigastric region — close in wording, wrong in pairing."),
+    O("The top-center region, below the breastbone and over the stomach area — epi means upon, gastric means stomach", false, "That statement defines Epigastric region, not Epigastric region — close in wording, wrong in pairing."),
+    O("Lungs and conducting structures; brings oxygen in, removes carbon dioxide, and helps regulate acid–base balance", false, "That statement defines Respiratory system, not Epigastric region — close in wording, wrong in pairing."),
+    O("The top-center region, below the breastbone and over the stomach area — epi means upon, gastric means stomach", true, "Correct — that statement matches the guide's definition of Epigastric region word for word in meaning.")
+  ], tp: "ANSWER KEY — Correct answer: The top-center region, below the breastbone and over the stomach area — epi means upon, gastric means stomach. DETAILED RATIONALE — Epigastric region = The top-center region, below the breastbone and over the stomach area — epi means upon, gastric means stomach. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "single", kt: ["transverse-plane"], stem: "Which statement correctly defines Transverse plane?", opts: [
+    O("One of the three balances the urinary system controls, along with water and acid–base balance", false, "That statement defines Electrolytes, not Transverse plane — close in wording, wrong in pairing."),
+    O("The horizontal cut that divides the body into upper (superior) and lower (inferior) portions", true, "Correct — that statement matches the guide's definition of Transverse plane word for word in meaning."),
+    O("The horizontal cut that divides the body into upper (superior) and lower (inferior) portions", false, "That statement defines Transverse plane, not Transverse plane — close in wording, wrong in pairing."),
+    O("Skin, hair, and nails; covers the body, regulates temperature, and has structures for sensation", false, "That statement defines Integumentary system, not Transverse plane — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The horizontal cut that divides the body into upper (superior) and lower (inferior) portions. DETAILED RATIONALE — Transverse plane = The horizontal cut that divides the body into upper (superior) and lower (inferior) portions. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CD, type: "multi", stem: "Which statements about the planes of the body are correct? Select all that apply.", opts: [
+    O("The sagittal plane divides the body into right and left portions", true, "Correct — sagittal is the lengthwise cut splitting right from left."),
+    O("The frontal plane is also called the coronal plane", true, "Correct — coronal = crown; the frontal cut divides front from back."),
+    O("The transverse plane is a horizontal cut dividing upper from lower", true, "Correct — transverse is horizontal and is also called a cross section."),
+    O("Any sagittal cut at any point is called a midsagittal section", false, "Midsagittal requires a cut at the midline producing EQUAL halves — other sagittal cuts are just sagittal."),
+    O("The frontal plane divides the body into right and left portions", false, "Right from left is the SAGITTAL plane; frontal divides anterior from posterior portions.")
+  ], tp: "ANSWER KEY — Correct answer: The sagittal plane divides the body into right and left portions; The frontal plane is also called the coronal plane; The transverse plane is a horizontal cut dividing upper from lower. DETAILED RATIONALE — Sagittal = right/left, frontal (coronal) = front/back, transverse = top/bottom; midsagittal = equal halves only. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "single", kt: ["cardiac-muscle"], stem: "Which statement correctly defines Cardiac muscle?", opts: [
+    O("Muscle found only in the heart; pumps blood", true, "Correct — that statement matches the guide's definition of Cardiac muscle word for word in meaning."),
+    O("Anterior — toward the front, the belly side", false, "That statement defines Ventral, not Cardiac muscle — close in wording, wrong in pairing."),
+    O("Muscle found only in the heart; pumps blood", false, "That statement defines Cardiac muscle, not Cardiac muscle — close in wording, wrong in pairing."),
+    O("Where the thigh meets the trunk; the groin", false, "That statement defines Inguinal, not Cardiac muscle — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Muscle found only in the heart; pumps blood. DETAILED RATIONALE — Cardiac muscle = Muscle found only in the heart; pumps blood. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["tissues"], stem: "Which statement correctly defines Tissues?", opts: [
+    O("Specialized groups of cells performing specific functions", true, "Correct — that statement matches the guide's definition of Tissues word for word in meaning."),
+    O("The cavity within the mediastinum that contains the heart", false, "That statement defines Pericardial cavity, not Tissues — close in wording, wrong in pairing."),
+    O("The organs and structures that make reproduction possible", false, "That statement defines Reproductive system, not Tissues — close in wording, wrong in pairing."),
+    O("Specialized groups of cells performing specific functions", false, "That statement defines Tissues, not Tissues — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Specialized groups of cells performing specific functions. DETAILED RATIONALE — Tissues = Specialized groups of cells performing specific functions. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["organs"], stem: "Which statement correctly defines Organs?", opts: [
+    O("Several tissue types working together", true, "Correct — that statement matches the guide's definition of Organs word for word in meaning."),
+    O("The study of the structure of the body", false, "That statement defines Anatomy, not Organs — close in wording, wrong in pairing."),
+    O("Several tissue types working together", false, "That statement defines Organs, not Organs — close in wording, wrong in pairing."),
+    O("The consequence of improper functioning", false, "That statement defines Disease, not Organs — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Several tissue types working together. DETAILED RATIONALE — Organs = Several tissue types working together. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CB, type: "multi", stem: "Which statements about the three muscle types are correct? Select all that apply.", opts: [
+    O("Skeletal muscle is attached to the skeleton and maintains posture", true, "Correct — skeletal muscle moves the skeleton and maintains posture, per the muscle table."),
+    O("Cardiac muscle is found only in the heart and pumps blood", true, "Correct — the chapter is exact: cardiac muscle is found only in the heart."),
+    O("Smooth muscle is found in organs and tubes and moves fluids", true, "Correct — smooth muscle works in organs and tubes; vascular smooth muscle moves blood."),
+    O("Cardiac muscle is also found in the walls of blood vessels", false, "Vessel walls hold VASCULAR SMOOTH muscle, not cardiac muscle — cardiac is only in the heart."),
+    O("Skeletal muscle pumps blood through the vessels", false, "Pumping blood is cardiac muscle's job; skeletal muscle moves the skeleton and holds posture.")
+  ], tp: "ANSWER KEY — Correct answer: Skeletal muscle is attached to the skeleton and maintains posture; Cardiac muscle is found only in the heart and pumps blood; Smooth muscle is found in organs and tubes and moves fluids. DETAILED RATIONALE — Skeletal = attached to skeleton, posture; cardiac = only in the heart, pumps blood; smooth = organs and tubes, moves fluids. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CF, type: "single", kt: ["mediastinum"], stem: "Which statement correctly defines Mediastinum?", opts: [
+    O("Bones, joints, and cartilage; the framework that protects and supports organs, allows movement, and whose marrow produces most blood cells", false, "That statement defines Skeletal system, not Mediastinum — close in wording, wrong in pairing."),
+    O("The central partition dividing the thoracic cavity into two compartments; it holds the heart, thymus, parts of the esophagus and trachea, and large vessels attached to the heart", true, "Correct — that statement matches the guide's definition of Mediastinum word for word in meaning."),
+    O("The central partition dividing the thoracic cavity into two compartments; it holds the heart, thymus, parts of the esophagus and trachea, and large vessels attached to the heart", false, "That statement defines Mediastinum, not Mediastinum — close in wording, wrong in pairing."),
+    O("The smaller major cavity toward the back; its cranial and spinal divisions form one continuous space holding brain and spinal cord", false, "That statement defines Dorsal cavity, not Mediastinum — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: The central partition dividing the thoracic cavity into two compartments; it holds the heart, thymus, parts of the esophagus and trachea, and large vessels attached to the heart. DETAILED RATIONALE — Mediastinum = The central partition dividing the thoracic cavity into two compartments; it holds the heart, thymus, parts of the esophagus and trachea, and large vessels attached to the heart. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CA, type: "single", kt: ["organ-systems"], stem: "Which statement correctly defines Organ systems?", opts: [
+    O("Several organs working together", false, "That statement defines Organ systems, not Organ systems — close in wording, wrong in pairing."),
+    O("How a part of the body is built", false, "That statement defines Structure, not Organ systems — close in wording, wrong in pairing."),
+    O("Several organs working together", true, "Correct — that statement matches the guide's definition of Organ systems word for word in meaning."),
+    O("The job a body part performs", false, "That statement defines Function, not Organ systems — close in wording, wrong in pairing.")
+  ], tp: "ANSWER KEY — Correct answer: Several organs working together. DETAILED RATIONALE — Organ systems = Several organs working together. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Clinical Judgment (NCSBN) — recognize cues, analyze cues, and act on the analysis." });
+
+BANK.push({ cat: CE, type: "dropdown", kt: ["patellar", "popliteal", "plantar"], stem: "For each body area, choose the correct regional term.<br><br>Front of the knee over the kneecap<br>[[0]]<br><br>Back of the knee<br>[[1]]<br><br>Sole of the foot<br>[[2]]", blanks: [
+    { o: [O("Patellar", true, "Patellar is the front of the knee over the kneecap — an anterior-surface term."), O("Popliteal", false, "Popliteal is the BACK of the knee — the posterior partner, not the front."), O("Femoral", false, "Femoral names the thigh, not the front of the knee over the kneecap.")] },
+    { o: [O("Popliteal", true, "Popliteal is the back of the knee — the posterior partner of patellar."), O("Patellar", false, "Patellar is the FRONT of the knee — this item asks for the back of the knee."), O("Gluteal", false, "Gluteal names the buttocks, not the area behind the knee.")] },
+    { o: [O("Plantar", true, "Plantar is the sole of the foot, as printed in the chapter's anterior list."), O("Pedal", false, "Pedal names the whole foot — the sole specifically is plantar."), O("Digital", false, "Digital names the fingers and toes, not the sole of the foot.")] }
+  ], tp: "ANSWER KEY — Correct answer: Blank 1: Patellar; Blank 2: Popliteal; Blank 3: Plantar. DETAILED RATIONALE — Patellar (front of knee) and popliteal (back of knee) are a flipped pair; pedal is the whole foot while plantar is only the sole. The option-by-option feedback explains why each distractor is wrong. PRIORITY FRAMEWORK — Nursing Process — assessment and analysis before implementation." });
+
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 1: Introduction to the Human Body — Definition Test</h1>';
+  h += '<div class="sub">Definition Test | Herlihy, Anatomy &amp; Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

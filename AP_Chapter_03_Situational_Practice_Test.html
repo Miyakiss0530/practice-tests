@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3 - Cells - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK (SITUATIONAL / BRUTAL - HERLIHY A&P CHAPTER 3: CELLS) ============ */
+/* Second/third-order clinical vignettes only, plus one unfolding NGN case (grp NGN1,
+   6 linked questions: recognize -> analyze -> prioritize -> generate -> take action -> evaluate).
+   Facts only from the verified guide. No option defines or glosses a key term. */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Membrane Transport in Clinical Care";
+var CB = "Tonicity, IV Fluids and Swelling";
+var CC = "Organelles, Immobility and Aging";
+var CD = "Cell Cycle, Tumors and Drug Therapy";
+var CE = "NGN Case Study: Cerebral Edema";
+var CATS = [CA, CB, CC, CD, CE];
+var KEYTERMS = ["diffusion","facilitated diffusion","osmosis","filtration","phagocytosis","exocytosis","isotonic","hypotonic","hypertonic","hemolysis","mannitol","lysosomes","cilia","microvilli","mitochondria","mitosis","G0 phase","metastasis","apoptosis","necrosis"];
+var BLUEPRINT = {
+  CA: { name: CA, count: 8, types: { single: 6, multi: 1, dropdown: 1 } },
+  CB: { name: CB, count: 8, types: { single: 6, multi: 2 } },
+  CC: { name: CC, count: 7, types: { single: 6, multi: 1 } },
+  CD: { name: CD, count: 7, types: { single: 5, multi: 1, dropdown: 1 } },
+  CE: { name: CE, count: 6, types: { single: 4, multi: 2 } }
+};
+
+/* ---------- MEMBRANE TRANSPORT IN CLINICAL CARE ---------- */
+BANK.push({ cat: CA, type: "single",
+  stem: "A client with pneumonia has an alveolar oxygen level higher than the oxygen level in the surrounding capillary blood, and a blood carbon dioxide level higher than the alveolar level. Which statement predicts gas movement correctly?",
+  opts: [
+    O("Oxygen moves from the alveolus into the blood while carbon dioxide moves from the blood into the alveolus, each following its own concentration difference", true, "Correct - each gas follows its own gradient downhill: oxygen is more concentrated in the alveolus, carbon dioxide is more concentrated in the blood, so they cross in opposite directions at the same time."),
+    O("Oxygen and carbon dioxide both move from the alveolus into the blood together, because gases always travel in the same direction across the same membrane surface", false, "Gases do not travel as a pair; each moves by its own concentration difference, and here the two gradients point in opposite directions."),
+    O("Carbon dioxide moves from the alveolus into the blood while oxygen moves from the blood into the alveolus, because waste gases pull fresh gases behind them as they cross", false, "The directions are reversed: oxygen enters the blood because the alveolus holds more of it, and carbon dioxide leaves the blood for the same reason in reverse."),
+    O("Neither gas moves until the client takes a supplemental oxygen breath, because gas exchange across the alveolar membrane requires an input of energy to get started", false, "This exchange is passive and continuous; it runs on concentration differences alone and needs no energy input or triggering breath.")
+  ],
+  tp: "ANSWER KEY: Oxygen alveolus-to-blood, carbon dioxide blood-to-alveolus, simultaneously. DETAILED RATIONALE: One membrane, two independent gradients, two opposite directions - the paired-travel, reversed-direction, and energy-required options each break the gradient rule. PRIORITY FRAMEWORK: Concentration Gradient - predict each substance's direction separately, from its own high side." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A student nurse watches a white blood cell surround and take in a bacterium at a wound site and asks why the bacterium could not simply cross the membrane the way glucose does. Which explanation by the nurse is correct?",
+  opts: [
+    O("The bacterium is a solid particle too large to cross by the usual routes, so the membrane must surround and engulf it to bring it inside the cell", true, "Correct - engulfing handles particles too large for diffusion routes; the white blood cell takes the bacterium in whole, and lysosomes then kill it."),
+    O("The bacterium is a liquid droplet, so the membrane must first dissolve it in the lipid layer before any part of it can enter the white blood cell", false, "A bacterium is a solid particle, not a droplet, and solids are engulfed whole - nothing here dissolves in the lipid layer."),
+    O("The bacterium carries the wrong charge for the membrane pores, so the cell spends ATP to widen the pores until the bacterium can squeeze through them", false, "Pores pass water and small dissolved substances; no pore widening admits a whole bacterium - size, not charge, forces engulfing."),
+    O("The bacterium could have crossed like glucose, but the white blood cell engulfs it only because engulfing is faster than waiting for it to diffuse inward", false, "Speed is not the issue; a particle this large has no diffusion route at all, so engulfing is the only way in.")
+  ],
+  tp: "ANSWER KEY: The bacterium is too large for diffusion routes and must be engulfed. DETAILED RATIONALE: Droplet, pore-charge, and speed explanations misidentify the barrier - particle size is what removes every passive route and requires engulfing. PRIORITY FRAMEWORK: Structure-Function - match the cargo's size to the only mechanism that can move it." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Pancreatic cells synthesize a protein, wrap it in membrane, and release it for use outside the pancreas. A client asks how the finished protein leaves the cell. Which sequence should the nurse describe?",
+  opts: [
+    O("The protein is built at the ribosomes, finished and wrapped by the Golgi apparatus, then carried in a vesicle that fuses with the cell membrane and expels it", true, "Correct - build (ribosomes/rough ER), finish and wrap (Golgi into a secretory vesicle), then the vesicle fuses with the membrane and the protein is expelled - the chapter's own pancreatic example."),
+    O("The protein is built by the Golgi apparatus, finished at the ribosomes, then dissolved in the lipid layer of the membrane so it can seep slowly out of the cell", false, "The build/finish order is reversed and proteins do not seep through lipid; ribosomes build first, the Golgi finishes, and exit is by vesicle fusion."),
+    O("The protein is wrapped by a lysosome, carried to the nucleus for inspection, then pushed out through a nuclear pore into the fluid surrounding the whole pancreas", false, "Lysosomes digest rather than wrap exports, the nucleus inspects nothing, and nuclear pores serve the nucleus - export uses a vesicle at the cell membrane."),
+    O("The protein leaves by drifting from high concentration inside the cell to low concentration outside the cell, crossing the bare membrane without any wrapping at all", false, "Unwrapped drifting describes simple diffusion of small substances; a finished protein product exits packaged, by vesicle fusion with the membrane.")
+  ],
+  tp: "ANSWER KEY: Ribosomes build, Golgi wraps, vesicle fuses and expels. DETAILED RATIONALE: Reversed order, lysosome/nucleus detours, and unwrapped drifting each break the printed protein line or its exit step. PRIORITY FRAMEWORK: Nursing Process (sequence) - trace the product through every station in order before answering." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A nurse is teaching a client about how cells move substances. One of the client's cells already contains a large amount of potassium, and still more potassium will be moved into this cell from the surrounding fluid, where potassium is scarce. Which conclusion is correct?",
+  opts: [
+    O("This movement can only happen with an input of ATP energy, because the potassium is being moved toward the side that already holds more of it", true, "Correct - moving a substance from low concentration to high concentration is uphill work; the chapter's pump example is exactly this potassium situation, and it costs ATP."),
+    O("This movement will happen on its own with no energy cost, because potassium always drifts toward whichever side of the membrane holds less of it at the time", false, "Drifting toward the side holding less is downhill diffusion - the opposite direction from the one described, where potassium moves toward the fuller side."),
+    O("This movement will be carried out by a helper molecule at no energy cost, because helper molecules specialize in moving substances into cells that are already full", false, "A helper molecule only speeds a downhill trip; it cannot carry a substance uphill into an already-full cell - that requires a pump and ATP."),
+    O("This movement is impossible under any conditions, because a cell that already holds a large amount of a substance can never accept any more of that same substance", false, "It is not impossible - it is expensive; with ATP invested, the pump moves additional potassium in against the gradient.")
+  ],
+  tp: "ANSWER KEY: Uphill into an already-full cell requires a pump and ATP. DETAILED RATIONALE: Free drift and helper options both describe downhill-only processes, and impossibility ignores the pump; direction relative to the gradient decides the energy cost. PRIORITY FRAMEWORK: Concentration Gradient - if the destination side is fuller, budget ATP before predicting movement." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "During a client's circulation assessment, the nurse reviews a capillary model: blood pressure is higher inside the vessel than in the surrounding tissue space, and water and dissolved substances are observed leaving the blood through tiny pores in the capillary wall. Which interpretation is correct?",
+  opts: [
+    O("Pressure inside the capillary is pushing water and dissolved substances out through the pores into the tissue spaces", true, "Correct - this is the chapter's capillary picture: a thin wall with many little pores, and pressure pushing fluid and solute out into the tissues, like the syringe-with-holes model."),
+    O("Water is being pulled out of the capillary toward leaked protein in the tissue, while dissolved substances remain trapped inside the blood by the capillary wall", false, "Protein pulling water describes swelling after tissue injury; here the stated driver is pressure, and dissolved substances leave WITH the water through the pores."),
+    O("Water and dissolved substances are drifting out because their concentration is lower in the tissue than in the blood, and pressure plays no role in this movement", false, "Concentration drift is diffusion; the stem gives a pressure difference and pore flow, which is the pressure-driven mechanism, not a concentration one."),
+    O("The vessel wall cells are spending ATP to pump water and dissolved substances uphill into the tissue, working against the pressure inside the capillary itself", false, "No ATP is spent and nothing moves uphill; the movement is passive, driven by the higher pressure inside the vessel.")
+  ],
+  tp: "ANSWER KEY: Capillary pressure pushes water and solute out through the pores. DETAILED RATIONALE: Protein-pull, concentration-drift, and ATP-pump options name three other mechanisms; the pressure difference plus pores in the stem identify this one. PRIORITY FRAMEWORK: Terminology Precision in application - identify the driving force given in the data before naming the process." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A client asks the nurse why two prescribed drugs behave differently in the body: one is lipid soluble and the other is water soluble. Which prediction about the lipid-soluble drug is correct?",
+  opts: [
+    O("It can dissolve in the lipid portion of cell membranes, so its distribution through the body differs from that of the water-soluble drug", true, "Correct - the chapter's pharmacology link: drugs are classified as lipid soluble or water soluble, and solubility determines distribution throughout the body; lipid-soluble substances cross the lipid layer directly."),
+    O("It must wait for a membrane pore large enough to admit it, because no substance of any kind can pass through the lipid portion of the membrane itself", false, "Lipid-soluble substances are precisely the ones that DO dissolve through the lipid portion; pores are the route for water and water-soluble substances."),
+    O("It will be engulfed by cell membranes before entering any cell, because lipid-soluble substances are always taken in as wrapped particles by the cell surface", false, "Engulfing is reserved for particles too large for other routes; a dissolved lipid-soluble drug crosses the lipid layer directly, unwrapped."),
+    O("It behaves exactly like the water-soluble drug in the body, because solubility is a laboratory property that has no effect on how a drug is distributed at all", false, "The chapter states the opposite: solubility determines distribution, so the two drugs predictably behave differently.")
+  ],
+  tp: "ANSWER KEY: Lipid-soluble drugs dissolve through the lipid layer, and solubility shapes distribution. DETAILED RATIONALE: Pore-waiting, engulfing, and no-effect options deny the membrane's two-route design or the chapter's printed pharmacology link. PRIORITY FRAMEWORK: Structure-Function - predict a substance's route from its solubility before predicting its spread." });
+
+BANK.push({ cat: CA, type: "multi",
+  stem: "A nurse reviews four client scenarios. Which scenarios describe passive transport? Select all that apply.",
+  opts: [
+    O("Perfume scent spreading across a room until it can be smelled evenly everywhere in the room.", true, "Correct - the chapter's own diffusion picture: movement from high to low concentration with no energy spent."),
+    O("Glucose being carried across a membrane by a helper molecule, moving toward the side with less glucose.", true, "Correct - helper-assisted movement that stays downhill is still passive; no ATP is spent."),
+    O("Water leaving a capillary for the tissue spaces because pressure inside the vessel is higher.", true, "Correct - pressure-driven movement through the pores is passive; the pressure, not the cell's ATP, does the work."),
+    O("A cell taking in additional potassium from fluid where potassium is scarce, concentrating it further.", false, "Moving potassium toward the fuller side is uphill pump work that requires ATP - active, not passive."),
+    O("A pancreatic cell expelling finished protein as a vesicle fuses with its membrane.", false, "Expelling products by vesicle fusion is an active mechanism requiring energy input.")
+  ],
+  tp: "ANSWER KEY: Scent spreading, helper-carried glucose downhill, and pressure-driven capillary flow. DETAILED RATIONALE: Both false scenarios spend cellular energy - uphill potassium pumping and vesicle expulsion - while the three correct ones run on gradients or pressure alone. PRIORITY FRAMEWORK: Concentration Gradient - audit the energy: if ATP is spent, the process is not passive." });
+
+BANK.push({ cat: CA, type: "dropdown",
+  stem: "A client scenario is given for each row. Choose the transport process that fits it.<br><br>Oxygen crossing from an alveolus into the blood<br>[[0]]<br><br>A white blood cell taking in a whole bacterium<br>[[1]]<br><br>Fluid leaving a capillary under pressure<br>[[2]]<br><br>A cell expelling a finished protein product<br>[[3]]",
+  blanks: [
+    { o: [O("Simple downhill movement along a concentration difference", true, "Oxygen crosses because the alveolus holds more of it than the blood - a downhill concentration trip with no help and no ATP."),
+           O("Engulfing of a particle by the surrounding cell membrane", false, "Engulfing is for large particles; oxygen is a small lipid-soluble gas that crosses directly."),
+           O("Expulsion of contents when a vesicle fuses with the membrane", false, "Expulsion moves products OUT of a cell; oxygen here moves INTO the blood across the alveolar membrane.")] },
+    { o: [O("Engulfing of a particle by the surrounding cell membrane", true, "A whole bacterium is far too large for pores or lipid crossing, so the white blood cell surrounds and engulfs it."),
+           O("Simple downhill movement along a concentration difference", false, "A bacterium cannot drift across a membrane down a gradient; its size removes that route entirely."),
+           O("Pushing of fluid through pores by a pressure difference", false, "Pressure pushes water and small dissolved substances through pores; it cannot push a whole bacterium into a cell.")] },
+    { o: [O("Pushing of fluid through pores by a pressure difference", true, "Capillary pressure pushes water and dissolved substances out through the wall's pores into the tissue spaces."),
+           O("Engulfing of a particle by the surrounding cell membrane", false, "Nothing is engulfed at the capillary wall; fluid is pushed through pores by pressure."),
+           O("Expulsion of contents when a vesicle fuses with the membrane", false, "No vesicle is involved; capillary fluid leaves by pressure-driven flow through pores.")] },
+    { o: [O("Expulsion of contents when a vesicle fuses with the membrane", true, "Finished protein leaves the pancreatic cell when its membrane-bound vesicle fuses with the cell membrane and releases it."),
+           O("Simple downhill movement along a concentration difference", false, "A packaged protein product does not drift bare across the membrane; it exits by vesicle fusion."),
+           O("Pushing of fluid through pores by a pressure difference", false, "Pressure filtration moves water and small solutes; it does not deliver a wrapped protein product out of a cell.")] }
+  ],
+  tp: "ANSWER KEY: Oxygen - downhill gradient; bacterium - engulfing; capillary fluid - pressure through pores; protein - vesicle expulsion. DETAILED RATIONALE: Each scenario carries its own signature - a gradient, an oversized particle, a pressure difference, or a packaged product - and each wrong option belongs to a different scenario in the same set. PRIORITY FRAMEWORK: Structure-Function - read the cargo and the driving force, then name the process." });
+
+/* ---------- TONICITY, IV FLUIDS AND SWELLING ---------- */
+BANK.push({ cat: CB, type: "single",
+  stem: "A newly hired nurse prepares to hang a bag labeled sterile water for a client's intravenous infusion. The experienced nurse intervenes. Which explanation should the experienced nurse give first?",
+  opts: [
+    O("Pure water must not be given intravenously, because water would rush into the red blood cells and burst them", true, "Correct - pure water is the chapter's hypotonic example; given IV it sends water into RBCs until they lyse, so the bag must not hang."),
+    O("Pure water must not be given intravenously, because it would pull water out of the red blood cells and shrivel them", false, "Pulling water out and shriveling cells is the hypertonic pattern; pure water is more dilute than the cell, so water moves IN, not out."),
+    O("Pure water is safe intravenously if it is infused very slowly, because the kidneys can remove the extra water as it arrives", false, "Rate does not change what the fluid does at the red cell membrane; the chapter's rule is that pure water is not administered IV at all."),
+    O("Pure water is safe intravenously if the client is dehydrated, because thirsty cells absorb the water before it can do any harm", false, "Dehydration does not protect red cells from a hypotonic infusion; the bursting risk is the reason for the blanket rule.")
+  ],
+  tp: "ANSWER KEY: Stop the infusion - pure water bursts red blood cells. DETAILED RATIONALE: The shriveling option reverses the water direction, and the slow-rate and dehydration options invent exceptions the chapter does not allow. PRIORITY FRAMEWORK: Safety First - prevent hemolysis; tonicity of anything entering a vein is verified before it hangs." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A client with increased pressure inside the skull from brain swelling is ordered an intravenous hypertonic solution. The family asks how a fluid in the vein can shrink swelling in the brain. Which explanation is correct?",
+  opts: [
+    O("The solution makes the blood more concentrated than the brain tissue, so water is drawn out of the tissue into the blood and the swelling decreases", true, "Correct - the chapter's printed example (mannitol): hypertonic blood pulls water out of swollen brain tissue by osmosis, and cerebral edema decreases."),
+    O("The solution makes the blood more dilute than the brain tissue, so extra water leaves the blood and dilutes the pressure building inside the skull", false, "Dilute blood would send water TOWARD the tissue, worsening swelling; the ordered solution works because it is more concentrated, not more dilute."),
+    O("The solution is pumped directly into the brain tissue by the infusion, where it absorbs the extra fluid that has collected around the injured cells", false, "The fluid stays in the bloodstream; it works across the tissue boundary by drawing water out, not by entering the brain to soak fluid up."),
+    O("The solution blocks the membrane pores of the brain cells, so no more water can enter them while the body slowly removes the swelling on its own", false, "No pore blocking is involved; water leaves the tissue because the blood side has become the more concentrated side.")
+  ],
+  tp: "ANSWER KEY: Concentrated blood draws water out of the swollen brain. DETAILED RATIONALE: Dilution reverses the gradient the wrong way, direct-entry misplaces the fluid, and pore-blocking invents a mechanism - water follows the concentrated side. PRIORITY FRAMEWORK: ABCs / Safety - in cerebral edema, move water out of the brain first; the gradient is the treatment." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A client receives several liters of normal saline (0.9% NaCl) intravenously for fluid loss. The client asks why this fluid does not swell or shrink the red blood cells the way plain water would. Which response is correct?",
+  opts: [
+    O("This fluid matches the concentration inside the cells, so water does not shift in either direction on balance and the cells keep their normal size", true, "Correct - normal saline is one of the chapter's printed isotonic solutions; matching concentration means no net water movement and no change in RBC size."),
+    O("This fluid is saltier than the inside of the cells, but the salt cannot cross the membrane, so the cells are protected from any change in their size", false, "A fluid saltier than the cell interior would pull water OUT and shrink the cells; normal saline protects size by matching, not exceeding, the interior."),
+    O("This fluid is weaker than the inside of the cells, but the red cell membranes are strong enough to resist the water that tries to enter them from it", false, "A weaker fluid sends water in until cells burst - membrane strength does not rescue them; normal saline is not weaker than the cell interior."),
+    O("This fluid contains glucose that coats the red blood cells, and the coating keeps water from crossing their membranes in either direction while it infuses", false, "No coating exists in this explanation; normal saline works by equal concentration, and glucose coating plays no part in the chapter's account.")
+  ],
+  tp: "ANSWER KEY: Matching concentration means no net water shift and stable cell size. DETAILED RATIONALE: Saltier and weaker options describe the two harmful tonicity patterns, and the coating option invents a barrier; equality is the whole mechanism. PRIORITY FRAMEWORK: Safety - choose fluids that hold cell volume steady when the goal is volume replacement." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A client twists an ankle. Within an hour the tissues around the joint are visibly swollen. The nurse explains that injured tissue has leaked protein into the tissue space. Which sequence completes the explanation?",
+  opts: [
+    O("The leaked protein stays trapped in the tissue space, water moves toward the protein, and the added water swells the tissue", true, "Correct - the chapter's edema sequence: injury leaks protein, the confined protein acts on the water, water diffuses toward it, and the tissue swells."),
+    O("The leaked protein draws water out of the tissue space into the blood, and the loss of that water makes the tissue appear swollen", false, "Water loss would shrink tissue, not swell it; the direction is into the tissue space, toward the trapped protein."),
+    O("The leaked protein is pumped back into the cells by ATP-driven pumps, and the energy released by the pumping heats and swells the tissue", false, "No pumping or heating is in the chapter's account; the protein remains in the tissue space and water follows it passively."),
+    O("The leaked protein blocks the capillary pores, so fluid that would normally leave the tissue is trapped behind the blocked vessel wall", false, "Blocked pores are not the mechanism given; swelling comes from water moving toward the protein already in the tissue space.")
+  ],
+  tp: "ANSWER KEY: Trapped protein pulls water in and the tissue swells. DETAILED RATIONALE: Reversed direction, invented pumping, and blocked pores each replace the printed sequence - leak, confine, water follows, swelling. PRIORITY FRAMEWORK: Nursing Process (assessment) - explain swelling by its mechanism so expected edema is not mistaken for a new injury." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A client with a head injury has a blood clot inside the skull. The provider warns the family that the clot may keep enlarging for a time even though the bleeding has stopped. Which explanation supports the warning?",
+  opts: [
+    O("Components of the clot attract water, so water keeps moving into the clot and enlarging it, pressing on the surrounding brain tissue", true, "Correct - the chapter's clot example: osmotically active clot components draw water in, the clot grows after bleeding stops, and inside the skull that growth presses on brain tissue."),
+    O("Components of the clot keep splitting in two, so the clot grows by cell division until the space inside the skull is completely filled", false, "A clot is not growing by mitosis; its enlargement here is water accumulation, not cell division producing new clot cells."),
+    O("Components of the clot push water out into the brain, so the brain tissue around the clot swells while the clot itself stays the same size", false, "The water moves INTO the clot, enlarging the clot itself; surrounding tissue is compressed by the growing clot, not swollen by expelled water."),
+    O("Components of the clot dissolve the skull lining, so the clot spreads outward into spaces where there is more room for it to keep expanding", false, "No dissolving of lining is described; the danger is a water-swollen clot expanding inside a closed skull and pressing on brain tissue.")
+  ],
+  tp: "ANSWER KEY: Water moves into the clot and enlarges it against the brain. DETAILED RATIONALE: Division, outward water movement, and lining dissolution misstate the mechanism; trapped active particles drawing water inward is the printed danger. PRIORITY FRAMEWORK: ABCs / Safety - a growing intracranial mass is a neuro emergency pattern; expect deterioration and monitor closely." });
+
+BANK.push({ cat: CB, type: "multi",
+  stem: "The nurse prepares intravenous fluids for four clients. Which fluids are appropriate as isotonic choices from the chapter's printed list? Select all that apply.",
+  opts: [
+    O("Normal saline (0.9% NaCl) for a client needing volume replacement.", true, "Correct - normal saline is printed as an isotonic solution and is frequently administered intravenously."),
+    O("5% dextrose in water (D5W) for a client needing an isotonic infusion.", true, "Correct - 5% D/W is printed alongside normal saline as an isotonic IV solution."),
+    O("Ringer solution for a client needing an isotonic infusion.", true, "Correct - Ringer solution completes the chapter's printed isotonic trio."),
+    O("Sterile water for a client needing an isotonic infusion.", false, "Sterile (pure) water is hypotonic and is NOT administered intravenously because of hemolysis."),
+    O("A very concentrated salt solution for a client needing an isotonic infusion.", false, "A very concentrated salt solution is the chapter's hypertonic example; it pulls water out of cells and is not isotonic.")
+  ],
+  tp: "ANSWER KEY: Normal saline, D5W, and Ringer solution. DETAILED RATIONALE: The printed isotonic list has exactly three members; sterile water fails as hypotonic and concentrated salt fails as hypertonic. PRIORITY FRAMEWORK: Safety - verify tonicity against the printed list before any IV fluid hangs." });
+
+BANK.push({ cat: CB, type: "multi",
+  stem: "Red blood cells are placed in three different solutions in a laboratory demonstration. Which outcomes should the nurse predict? Select all that apply.",
+  opts: [
+    O("In a solution more dilute than the cell interior, the cells take in water and burst.", true, "Correct - dilute surroundings send water into the cells until they lyse."),
+    O("In a solution more concentrated than the cell interior, the cells lose water and shrink.", true, "Correct - concentrated surroundings pull water out of the cells, and they crenate."),
+    O("In a solution matching the cell interior, the cells keep their size with no net water shift.", true, "Correct - matched concentration means no net movement and stable cell volume."),
+    O("In a solution more dilute than the cell interior, the cells lose water and shrink.", false, "Dilute surroundings push water INTO the cells (bursting); shrinking belongs to concentrated surroundings."),
+    O("In a solution matching the cell interior, the cells slowly take in water and burst.", false, "A matching solution produces no net movement; bursting requires a dilute (hypotonic) surrounding.")
+  ],
+  tp: "ANSWER KEY: Dilute - burst; concentrated - shrink; matching - unchanged. DETAILED RATIONALE: The two false options attach each outcome to the wrong surrounding; water direction, set by relative concentration, decides every outcome. PRIORITY FRAMEWORK: Concentration Gradient - state the surrounding's concentration first, then predict the cell's fate." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A client asks why the nurse is concerned about a strong salt solution being mixed incorrectly for an infusion. The nurse explains what the error could do to red blood cells passing through the vein. Which statement is correct?",
+  opts: [
+    O("Water would leave the red blood cells for the stronger surrounding fluid, and the cells would shrink and lose their normal function", true, "Correct - a too-concentrated surrounding pulls water out of RBCs; the shrunken cells' function is impaired, just as bursting impairs it in the opposite error."),
+    O("Water would rush into the red blood cells from the stronger surrounding fluid, and the cells would swell until their membranes burst open", false, "Water rushing in and bursting belongs to a too-WEAK surrounding; a stronger surrounding pulls water the other way, out of the cells."),
+    O("Salt would pour into the red blood cells through their membranes, and the added salt would poison the cells from the inside within minutes", false, "The chapter's harm runs through water movement, not salt flooding; the solute stays outside and the water is what shifts."),
+    O("Nothing would happen to the red blood cells, because their membranes adjust the internal concentration to match any surrounding fluid instantly", false, "Red cell membranes do not instantly re-balance concentration; mismatched surroundings shrink or burst the cells and impair function.")
+  ],
+  tp: "ANSWER KEY: A too-strong surrounding pulls water out; cells shrink and function is impaired. DETAILED RATIONALE: Bursting is the weak-solution error, salt-poisoning misstates what moves, and instant adjustment denies the membrane's limits. PRIORITY FRAMEWORK: Safety - mixing errors change tonicity, and tonicity errors damage red cells in either direction." });
+
+/* ---------- ORGANELLES, IMMOBILITY AND AGING ---------- */
+BANK.push({ cat: CC, type: "single",
+  stem: "A client has been on strict bed rest for 3 weeks after a fracture. The nurse notes visible loss of muscle bulk in the client's legs and plans care. Which explanation and action pair is correct?",
+  opts: [
+    O("Enzymes inside the muscle cells are breaking down the contractile proteins of the inactive muscle, so the nurse should prioritize getting the client moving as early as allowed", true, "Correct - the chapter ties disuse wasting to lysosomal breakdown of contractile protein in inactive muscle (retired athletes, bedridden persons); early mobility within orders counters the cause."),
+    O("The muscle cells have run out of ATP because bed rest stops the mitochondria from working, so the nurse should prioritize a high-carbohydrate diet to restart energy production", false, "Wasting here is protein breakdown by lysosomal enzymes in inactive muscle, not mitochondria shutting down; diet does not substitute for restoring activity."),
+    O("The muscle cells have entered a resting phase and stopped dividing, so the nurse should reassure the client that the lost bulk will return on its own without any change in care", false, "Muscle cells do not divide to maintain bulk in the first place, and disuse wasting does not self-correct while inactivity continues - mobility is the countermeasure."),
+    O("The muscle cells are being removed by programmed death faster than they are replaced, so the nurse should prioritize medications that block the cell death program in the legs", false, "The chapter attributes disuse wasting to lysosomal breakdown of contractile protein, not to an overdrive of programmed death, and no such blocking action is the nursing priority.")
+  ],
+  tp: "ANSWER KEY: Lysosomal breakdown of inactive-muscle protein; prioritize early mobility. DETAILED RATIONALE: ATP failure, rest-phase reassurance, and death-program blocking misname the mechanism or the response; printed cause and printed at-risk groups point to activity. PRIORITY FRAMEWORK: Nursing Process (intervention) - treat the mechanism: inactive muscle is digested, so restore activity as allowed." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A nurse reviews a client's tissue study: liver tissue is packed with far more mitochondria per cell than bone tissue. The client asks what this difference predicts. Which answer by the nurse is correct?",
+  opts: [
+    O("The liver cells work much harder metabolically, and the number of mitochondria rises with how hard a cell works, while bone cells work less and carry fewer", true, "Correct - the chapter's number rule: more metabolically active cell, more mitochondria; the liver is its busy example and bone its quiet one."),
+    O("The liver cells are larger, and mitochondria count is set only by cell size, so any large cell in any tissue will always show the same high count as the liver", false, "The chapter ties the count to metabolic activity, not size; a large but quiet cell does not earn a liver-level count."),
+    O("The bone cells are older, and mitochondria disappear completely from cells as they age, so old bone cells normally contain no mitochondria at all in their cytoplasm", false, "Aging reduces mitochondria numbers and efficiency - it does not empty cells of them, and the liver-bone contrast is about activity, not age."),
+    O("The liver cells are preparing to divide, and mitochondria multiply only during division, so the high count simply shows that more liver cells are dividing at this moment", false, "Mitochondria counts reflect ongoing energy demand, not a division event; division preparation is the work of interphase and centrioles.")
+  ],
+  tp: "ANSWER KEY: Mitochondria count follows metabolic activity - liver high, bone low. DETAILED RATIONALE: Size, total age loss, and division timing each replace the printed rule; activity is the variable the chapter names. PRIORITY FRAMEWORK: Structure-Function - infer a cell's workload from its energy equipment." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A client who smokes a pack of cigarettes daily has had a lingering chest cold with thick mucus for 3 weeks. Which teaching point addresses the mechanism behind the slow clearing?",
+  opts: [
+    O("Smoking damages the hairlike projections that sweep mucus and trapped material up the air passages toward the throat, so the normal clearing benefit is lost", true, "Correct - the chapter's smoking point: cilia move mucus and trapped dust/dirt toward the throat for coughing or swallowing, and cigarette smoking damages them, removing that benefit."),
+    O("Smoking thickens the folds of the airway membrane, and the extra surface area traps mucus faster than the throat can possibly clear it during a normal cold", false, "Absorbing folds are microvilli of digestive-type cells; airway clearing is done by sweeping cilia, and smoking's harm is to those cilia."),
+    O("Smoking stops the white blood cells in the airways from engulfing bacteria, so mucus builds up because the bacteria in it are never removed by the cells", false, "Engulfing bacteria is phagocytosis, a defense that continues; the clearing failure described is mechanical - damaged cilia cannot sweep mucus upward."),
+    O("Smoking paralyzes the tail-like structure on airway cells, and without that single structure the cells themselves can no longer move along the airway walls", false, "The single tail moves the sperm cell itself; airway cells do not travel - their many short cilia move substances across their surface, and those are what smoking damages.")
+  ],
+  tp: "ANSWER KEY: Damaged cilia lose the mucus-sweeping benefit. DETAILED RATIONALE: Folds, engulfing, and the single tail assign the failure to microvilli, phagocytosis, and the flagellum; the airway's clearing crew is the cilia. PRIORITY FRAMEWORK: Patient Education - teach the mechanism the client can act on: protect the sweeping structures by not smoking." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A client recovering from bowel surgery asks why the small intestine absorbs fluid and digested food so efficiently compared with a smooth tube. Which explanation is correct?",
+  opts: [
+    O("Its lining cells carry millions of tiny folds that multiply the surface area, so far more water and dissolved food products can be absorbed across them", true, "Correct - the chapter's microvilli example: digestive tract cells bear millions of accordion-like folds, and folding increases surface area and therefore absorption."),
+    O("Its lining cells sweep fluid along with wavelike motions, and the sweeping motion forces water and food products through the membrane into the blood", false, "Wavelike sweeping moves substances across a surface (cilia's job in the airways); intestinal absorption rests on folded surface area, not sweeping force."),
+    O("Its lining cells have extra-thick membranes with oversized pores, so large volumes of fluid pour through the pores whenever pressure rises in the bowel", false, "Pore size limits passage rather than multiplying it; the intestine's advantage in the chapter is folded surface, not oversized pores."),
+    O("Its lining cells contain far more energy-producing organelles than other cells, and the extra energy pumps the water and food products across the membrane", false, "Extra mitochondria mark hard-working cells generally, but the chapter credits the intestine's absorption to its millions of folds and surface area.")
+  ],
+  tp: "ANSWER KEY: Millions of membrane folds multiply absorbing surface. DETAILED RATIONALE: Sweeping, oversized pores, and energy pumping describe other structures' tricks; absorption scales with surface area, and folds create it. PRIORITY FRAMEWORK: Structure-Function - when a question asks why a surface absorbs well, look for added area first." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A couple is evaluated for infertility. Testing shows the husband's sperm are produced in normal numbers but most cannot swim. Which cellular structure is implicated, and what does it normally do?",
+  opts: [
+    O("The single long tail of the sperm, which normally propels the sperm cell itself through fluid so it can reach the egg", true, "Correct - the sperm's tail is the chapter's flagellum example: a single, long, whiplike structure that moves the cell itself; if it fails, the cell cannot swim."),
+    O("The hairlike projections covering the sperm, which normally sweep mucus and debris out of the way so the sperm can pass through cleanly", false, "Short hairlike projections sweep substances across a cell's surface; sperm are moved by one long tail, not propelled by sweeping hairs."),
+    O("The folds on the sperm's membrane, which normally absorb nutrients from the surrounding fluid to give the sperm energy for its journey", false, "Membrane folds increase absorption for stationary absorbing cells; they do not propel a sperm, and propulsion is the deficit described."),
+    O("The paired rods inside the sperm, which normally pull its contents apart so the sperm can divide into two swimming cells during its journey", false, "Paired rods form the spindle for dividing cells; a mature sperm is not dividing en route - it is swimming, on its tail.")
+  ],
+  tp: "ANSWER KEY: The sperm's single tail - the structure that moves the cell itself. DETAILED RATIONALE: Sweeping hairs, absorbing folds, and division rods belong to cilia, microvilli, and centrioles; locomotion of the whole cell is the flagellum's one job. PRIORITY FRAMEWORK: Structure-Function - a lost motion points to the structure built for that exact motion." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A client with a spinal cord injury asks why the damaged nerve cells are not expected to replace themselves by dividing, the way skin replaces itself. Which explanation is correct?",
+  opts: [
+    O("Neurons have no centrioles, and cells without centrioles are incapable of division, so the lost neurons cannot be replaced by division of the remaining ones", true, "Correct - neurons head the chapter's no-centriole list (with mature RBCs and both muscle cell types); without centrioles there is no spindle and no division."),
+    O("Neurons have no nucleus, and a cell without a nucleus cannot copy its genetic information, so division is impossible once the cell has matured fully", false, "Neurons do have nuclei - the nucleus-free cell is the mature red blood cell; the neuron's barrier is missing centrioles, not a missing nucleus."),
+    O("Neurons rest permanently in a phase they can never leave, while skin cells rest in a phase they leave every few days, and that difference explains everything", false, "Resting phases can be re-entered after days, weeks, or years; the chapter's stated reason neurons cannot divide is the absence of centrioles."),
+    O("Neurons are too long to divide, because a cell that measures up to 4 feet cannot pinch its membrane in two without destroying the signal pathway it carries", false, "Length is a striking fact about nerve cells, but it is not the chapter's reason; the named barrier is structural - no centrioles, no division.")
+  ],
+  tp: "ANSWER KEY: No centrioles means no division for neurons. DETAILED RATIONALE: The nucleus-free claim borrows the RBC's trait, the rest-phase claim ignores re-entry, and the length claim invents a barrier - the printed list decides it. PRIORITY FRAMEWORK: Terminology Precision in application - use the chapter's named no-division list, not a plausible-sounding substitute." });
+
+BANK.push({ cat: CC, type: "multi",
+  stem: "An 82-year-old client asks why healing and stamina are slower than at age 40. Which explanations match the chapter's aging changes? Select all that apply.",
+  opts: [
+    O("Cells become larger and their capacity to divide and reproduce decreases with age.", true, "Correct - larger cells with reduced division capacity are on the chapter's printed As You Age list."),
+    O("Mitochondria and lysosomes are present in reduced numbers, and cells function less efficiently.", true, "Correct - reduced numbers of both organelles, with less efficient function, are printed aging changes."),
+    O("Built-in repair of minor cellular damage declines as a person ages.", true, "Correct - declining repair of minor damage is on the printed aging list."),
+    O("Chromosomes clump, shrink, and fragment as a person ages.", true, "Correct - chromosome clumping, shrinking, and fragmenting are printed aging changes."),
+    O("Cells gain extra centrioles with age and begin dividing faster than in youth.", false, "Aging reduces division capacity; nothing in the chapter gives aging cells extra division equipment or speed.")
+  ],
+  tp: "ANSWER KEY: Larger cells, less division, fewer mitochondria/lysosomes, less repair, chromosome clumping. DETAILED RATIONALE: Four options restate the printed aging list; the false one reverses the division trend that the whole list describes. PRIORITY FRAMEWORK: Nursing Process (assessment) - expect slower healing in aging tissue and plan surveillance accordingly." });
+
+/* ---------- CELL CYCLE, TUMORS AND DRUG THERAPY ---------- */
+BANK.push({ cat: CD, type: "single",
+  stem: "A client receiving methotrexate is told the drug works during one specific phase of the cell cycle. The nurse reviews the cycle to explain why timing of doses matters. In which phase does this drug act, and what happens in that phase?",
+  opts: [
+    O("It acts in the phase when the cell duplicates its chromosomes, so the drug strikes cells while they are copying their DNA for division", true, "Correct - methotrexate is the chapter's printed S phase-specific drug, and S phase is when chromosomes are duplicated."),
+    O("It acts in the phase when the cell rests outside the cycle, so the drug strikes cells while they are dormant and not preparing to divide", false, "A resting-phase drug would contradict the chapter: phase-specific drugs act in a cycling phase, and methotrexate is named as S phase-specific."),
+    O("It acts in the phase when chromatids line up in the center of the cell, so the drug strikes cells while their chromosomes are on display", false, "Central alignment is metaphase of the M phase; the chapter names methotrexate as S phase-specific, not M phase-specific."),
+    O("It acts equally in every phase of the cycle, so the timing of doses relative to cell division makes no difference to how it works", false, "Acting at any phase describes phase-NONSPECIFIC drugs; methotrexate is the chapter's example of the phase-specific kind.")
+  ],
+  tp: "ANSWER KEY: Methotrexate is S phase-specific - it strikes during DNA duplication. DETAILED RATIONALE: Resting-phase, metaphase, and all-phase options describe G0, M phase, and nonspecific drugs; the chapter pins this drug to S. PRIORITY FRAMEWORK: Safety - phase-specific drugs only work on cells passing through that phase; timing is part of the dose." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Two clients begin chemotherapy. Client A's tumor contains many actively cycling cells; Client B's tumor contains mostly resting cells. Which prediction follows from the chapter?",
+  opts: [
+    O("Client A's tumor should respond better, because anticancer drugs are more active against cycling cells than against resting cells", true, "Correct - the chapter states anticancer drugs work hardest on cycling cells, so tumors with many cycling cells respond best to chemotherapy."),
+    O("Client B's tumor should respond better, because resting cells cannot repair drug damage, while cycling cells repair it as they divide", false, "The chapter gives the advantage to cycling cells; resting cells are LESS affected by these drugs, not more vulnerable to them."),
+    O("Both tumors should respond identically, because anticancer drugs act at any phase of the cycle with exactly the same strength in all cells", false, "Equal action at any phase describes only the nonspecific drug class; overall, drug activity is greater against cycling than resting cells."),
+    O("Neither tumor should respond at all, because anticancer drugs can only kill cells that have completely stopped dividing for good", false, "This inverts the chapter: the drugs prefer cycling targets, and permanently stopped cells are the hardest, not the only, targets.")
+  ],
+  tp: "ANSWER KEY: The tumor rich in cycling cells responds better. DETAILED RATIONALE: Resting-vulnerable, identical-response, and stopped-cells-only options each contradict the printed rule that cycling cells are the better targets. PRIORITY FRAMEWORK: Nursing Process (evaluation) - predict drug response from the tumor's cycling fraction before judging a regimen a failure." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A client on chemotherapy develops mouth sores and diarrhea, and asks why a drug aimed at the tumor is injuring the mouth and gut. Which explanation is most accurate?",
+  opts: [
+    O("The lining of the digestive tract is replaced every few days, so its cells are constantly cycling - the very state these drugs attack most strongly", true, "Correct - the chapter gives the gut lining one of the fastest replacement rates and states the drugs hit cycling cells hardest; the side effects land where normal cells cycle fastest."),
+    O("The drug collects in the mouth and gut because those tissues have no blood supply, so it sits against the lining at full strength for days at a time", false, "The mouth and gut are well supplied with blood; the vulnerability is their rapid cycling, not pooling from absent circulation."),
+    O("The lining of the digestive tract rests outside the cell cycle, so the drug cannot reach its cells and the sores come from an unrelated infection instead", false, "Resting cells are the ones these drugs affect LEAST; the gut lining's problem is the opposite - it cycles constantly."),
+    O("The drug was designed to attack any cell containing a nucleus, and mouth and gut cells are the only normal cells in the body that contain one", false, "Nearly all cells have nuclei (the mature RBC is the exception); selectivity here follows cycling speed, not nucleus possession.")
+  ],
+  tp: "ANSWER KEY: Fast-cycling gut lining is collateral damage of cycle-active drugs. DETAILED RATIONALE: Pooling, resting-lining, and nucleus-only explanations misstate the tissue's state; replacement every few days means constant cycling, and cycling is the target. PRIORITY FRAMEWORK: Safety - anticipate toxicity in the body's fast-cycling normal tissues (gut, marrow, skin) during chemotherapy." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A liver biopsy report describes many poorly differentiated cells that do not resemble normal liver cells. The client asks what this finding suggests. Which response is correct?",
+  opts: [
+    O("Cells that fail to differentiate or specialize are characteristic of cancer cells, so this finding is a warning sign the provider will pursue", true, "Correct - the chapter's biopsy red flag: poorly differentiated cells in a liver tumor, failing to resemble normal liver cells, are characteristic of cancer."),
+    O("Poorly differentiated cells are simply young liver cells that have not finished maturing, so the finding is expected and needs no further follow-up", false, "In a tumor biopsy this pattern is not normal maturation; failure to differentiate is printed as a cancer characteristic and must be pursued."),
+    O("Poorly differentiated cells indicate the liver is producing stem cells correctly, because stem cells and tumor cells are the same kind of cell", false, "Stem cells are normal and controlled; cancer cells are defined in part by this failure to specialize - equating the two dismisses a red flag."),
+    O("Poorly differentiated cells mean the tissue sample was taken from the wrong site, because liver cells always resemble each other under the microscope", false, "Normal liver cells do resemble each other - which is exactly why a sample full of non-resembling cells is significant, not a sampling error.")
+  ],
+  tp: "ANSWER KEY: Failure to differentiate is characteristic of cancer - pursue it. DETAILED RATIONALE: Normal maturation, stem-cell equivalence, and wrong-site claims each neutralize the chapter's named biopsy warning sign. PRIORITY FRAMEWORK: Safety - treat poorly differentiated cells on a report as a red flag until the provider rules otherwise." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A client receives a positive Pap smear result and says she feels fine and will 'deal with it next year.' Which nursing response is the priority?",
+  opts: [
+    O("Explain that the test can catch cancer in its early stages, when cure rates are very high, and help her arrange prompt follow-up now", true, "Correct - the chapter's Pap smear point: a positive result can indicate early cancer, and early detection carries a very high cure rate - delay spends that advantage."),
+    O("Agree that waiting is reasonable, because a positive result on this test usually returns to normal on its own without any follow-up at all", false, "A positive result is a cancer warning until evaluated; reassurance that it self-resolves discards the early-detection benefit the test exists for."),
+    O("Tell her the result proves she has advanced cancer, so she should prepare her family for the worst outcome before any further testing is done", false, "A positive smear indicates possible early change, not proven advanced cancer; overstating it causes harm and is factually wrong."),
+    O("Suggest she repeat the test herself in a few months and only contact the provider if the second result also comes back positive", false, "Self-managed repeat testing delays the microscopic evaluation and follow-up the positive result already calls for now.")
+  ],
+  tp: "ANSWER KEY: Prompt follow-up - early detection carries a very high cure rate. DETAILED RATIONALE: Waiting, overstating, and self-retesting each waste or distort the test's purpose; the priority is timely evaluation of a possible early cancer. PRIORITY FRAMEWORK: Safety / Early Detection - act while the finding is early; delay is the harm." });
+
+BANK.push({ cat: CD, type: "multi",
+  stem: "A client with a new cancer diagnosis asks how cancer cells spread through the body. Which statements should the nurse include? Select all that apply.",
+  opts: [
+    O("They can send out clawlike extensions that invade the tissue surrounding the original tumor.", true, "Correct - local invasion by clawlike extensions is one of the chapter's two spread routes."),
+    O("They can detach from the original tumor and travel to establish growth at secondary sites.", true, "Correct - detachment from the primary site to secondary sites is the second route - metastasis."),
+    O("They characteristically fail to stop cycling and rest, so they keep dividing and proliferating.", true, "Correct - inability to stop cycling and enter the resting phase is characteristic of cancer cells and fuels their growth."),
+    O("They spread by completing a programmed death sequence that scatters their parts to new sites.", false, "Programmed death removes cells; it does not spread them - spreading is by invasion and detachment."),
+    O("They spread only when a biopsy or surgery physically carries them to a new location.", false, "Spread is a property of the cancer cells themselves (invasion and detachment), not only a result of procedures.")
+  ],
+  tp: "ANSWER KEY: Clawlike invasion, detachment to secondary sites, and failure to stop cycling. DETAILED RATIONALE: Programmed death eliminates cells rather than spreading them, and procedure-only spread denies the cells' own two printed routes. PRIORITY FRAMEWORK: Patient Education - teach both spread routes so the client understands why staging searches the whole body." });
+
+BANK.push({ cat: CD, type: "dropdown",
+  stem: "For each client finding, choose the process it best illustrates.<br><br>Heart muscle cells die after being deprived of oxygen for too long during a heart attack<br>[[0]]<br><br>The body removes old, unnecessary cells on schedule while replacing a million cells per second<br>[[1]]<br><br>A tumor's cells detach and appear in a distant organ months after the original lump is removed<br>[[2]]",
+  blanks: [
+    { o: [O("Death of cells injured so severely that they die", true, "Oxygen deprivation for too long is a printed cause of injury death - cells die because they were severely injured."),
+           O("Programmed, scheduled death of old or unhealthy cells", false, "Scheduled removal is the body's tidy program; death after prolonged oxygen loss is injury, not scheduling."),
+           O("Spreading of cancer cells to a distant secondary site", false, "Nothing here spreads; heart cells die in place after oxygen deprivation.")] },
+    { o: [O("Programmed, scheduled death of old or unhealthy cells", true, "Removing old, unnecessary, and unhealthy cells on schedule, balanced against a million replacements per second, is the printed program."),
+           O("Death of cells injured so severely that they die", false, "No injury is described; this is routine, scheduled turnover of healthy tissue."),
+           O("Spreading of cancer cells to a distant secondary site", false, "Turnover in place is not spread; no cancer cells or distant sites are involved.")] },
+    { o: [O("Spreading of cancer cells to a distant secondary site", true, "Detachment from a primary tumor with later growth at a distant site is the chapter's picture of spread - metastasis."),
+           O("Programmed, scheduled death of old or unhealthy cells", false, "Appearing and growing in a distant organ is the opposite of scheduled death."),
+           O("Death of cells injured so severely that they die", false, "The distant cells are alive and growing; injury death describes cells dying, not relocating.")] }
+  ],
+  tp: "ANSWER KEY: Oxygen-deprived heart cells - injury death; scheduled turnover - programmed death; distant tumor growth - spread. DETAILED RATIONALE: Cause separates the two deaths (injury versus program), and only the third finding involves cells relocating and growing elsewhere. PRIORITY FRAMEWORK: Terminology Precision in application - ask first: injured, scheduled, or spreading?" });
+
+/* ---------- NGN CASE STUDY: CEREBRAL EDEMA (grp NGN1, 6 linked questions) ---------- */
+BANK.push({ cat: CE, type: "multi", grp: "NGN1",
+  scen: "CASE STUDY - Unfolding case (1 of 6). Client: 54-year-old admitted after a fall with a head injury. Exhibit: CT shows a blood clot inside the skull with surrounding brain swelling. Vitals: BP 158/92, HR 58, RR 14, T 37.1 C. Neuro checks over 4 hours: client was alert and conversational on admission, now drowsy, slow to answer, pupils equal but sluggish. Provider note: bleeding has stopped; watch for clot enlargement and worsening swelling. Orders include an intravenous hypertonic solution (mannitol) available if neuro status worsens.",
+  stem: "NGN Case - Recognize Cues: Which findings from the exhibit are concerning cues that require the nurse's attention? Select all that apply.",
+  opts: [
+    O("Change from alert and conversational to drowsy and slow to answer over 4 hours.", true, "Correct - a declining level of responsiveness after head injury is a key cue of worsening brain swelling and pressure."),
+    O("Pupils equal but sluggish.", true, "Correct - sluggish pupils alongside declining responsiveness add to the picture of worsening intracranial swelling."),
+    O("Blood clot inside the skull with surrounding brain swelling on CT.", true, "Correct - the clot plus swelling inside a closed skull is the structural cue behind the client's decline."),
+    O("Temperature of 37.1 C.", false, "This temperature is unremarkable and is not a cue of worsening brain swelling in this exhibit."),
+    O("Provider note that the bleeding has stopped.", false, "Stopped bleeding is reassuring as far as it goes - but it does not end the danger, because the clot can still enlarge by drawing in water.")
+  ],
+  tp: "ANSWER KEY: Declining responsiveness, sluggish pupils, and clot with swelling on CT. DETAILED RATIONALE: The temperature is normal and stopped bleeding, while reassuring, does not remove the osmotic danger - the three correct cues all track rising pressure inside the skull. PRIORITY FRAMEWORK: Nursing Process (assessment) / ABCs - recognize the deterioration trend first; a single normal value does not cancel a worsening neuro trend." });
+
+BANK.push({ cat: CE, type: "single", grp: "NGN1",
+  scen: "CASE STUDY - Unfolding case (2 of 6). Same client, 6 hours after admission: bleeding remains stopped, but repeat neuro checks show the client is harder to arouse, and the provider states the clot appears larger on repeat imaging. Exhibit reminder: blood clot inside the skull, surrounding brain swelling, BP 160/94, HR 56, RR 12. Mannitol (intravenous hypertonic solution) is ordered to begin now.",
+  stem: "NGN Case - Analyze Cues: Which explanation best accounts for the clot enlarging even though the bleeding has stopped?",
+  opts: [
+    O("Components within the clot attract water, so water keeps moving into the clot and enlarging it, increasing pressure on the brain tissue around it", true, "Correct - the chapter's clot analysis: osmotically active components draw water in, the clot grows after bleeding stops, and inside the skull the growing clot presses on brain tissue."),
+    O("Cells within the clot are dividing without resting, so the clot is growing the way a tumor grows, adding new cells hour by hour inside the skull", false, "A clot is not a tumor and does not grow by uncontrolled division; its enlargement here is water accumulation drawn toward its components."),
+    O("Water is leaving the clot for the surrounding brain, so the brain tissue is swelling while the clot itself stays exactly the same size as before", false, "The direction is reversed: water moves INTO the clot, enlarging the clot; the surrounding tissue suffers from pressure, not from absorbing the clot's water."),
+    O("Protein leaking from injured vessels is collecting beside the clot, and that separate pool of fluid, not the clot, is what imaging shows as larger", false, "Leaked protein does draw water in injured tissue generally, but the provider's finding is the clot itself enlarging - its own components are the water-attracting material.")
+  ],
+  tp: "ANSWER KEY: Water drawn into the clot enlarges it against the brain. DETAILED RATIONALE: Division-growth borrows the cancer pattern, the reversed option flips the water direction, and the separate-pool option moves the finding off the clot; the printed mechanism is water following the clot's active components. PRIORITY FRAMEWORK: Concentration Gradient - analyze which side attracts the water before predicting which structure grows." });
+
+BANK.push({ cat: CE, type: "single", grp: "NGN1",
+  scen: "CASE STUDY - Unfolding case (3 of 6). Same client: now difficult to arouse, responds slowly to voice, pupils sluggish. BP 162/95, HR 55, RR 12. The mannitol infusion is ready. The client's spouse is at the bedside asking questions, and routine evening medications are also due.",
+  stem: "NGN Case - Prioritize Hypotheses: Which nursing priority should guide the nurse's next actions for this client?",
+  opts: [
+    O("Act on the worsening brain swelling now, because the expanding clot and swelling are pressing on brain tissue and threatening further neurologic injury", true, "Correct - declining arousal with a growing intracranial clot and swelling is the priority problem; every other task waits behind the threat to the brain."),
+    O("Complete the spouse's teaching about head injury recovery first, because a calm and informed family is required before any infusion can be started safely", false, "Family teaching matters but cannot outrank a deteriorating neurologic status; the infusion and monitoring come first, teaching follows."),
+    O("Give the routine evening medications first, because keeping the medication schedule on time prevents the complications the client is now beginning to show", false, "Routine medications do not treat the swelling driving this decline; schedule-keeping is a lower priority than the active intracranial problem."),
+    O("Reassess in 1 hour before acting, because the bleeding has stopped and the nurse judges the client stable enough to wait until the next scheduled check", false, "Stopped bleeding does not mean stable - the clot grows osmotically and the client is already harder to arouse; waiting spends the treatment window.")
+  ],
+  tp: "ANSWER KEY: Treat the worsening brain swelling as the priority problem now. DETAILED RATIONALE: Teaching, routine medications, and watchful waiting are all legitimate tasks ranked below an actively worsening neurologic status inside a closed skull. PRIORITY FRAMEWORK: ABCs / Safety - airway-brain threats first; prioritize the problem that is injuring the client now." });
+
+BANK.push({ cat: CE, type: "multi", grp: "NGN1",
+  scen: "CASE STUDY - Unfolding case (4 of 6). Same client: mannitol ordered and ready. The nurse is planning the care bundle for the next several hours. Current status: difficult to arouse, BP 160/94, HR 56, RR 12, pupils sluggish.",
+  stem: "NGN Case - Generate Solutions: Which planned actions are appropriate for this client? Select all that apply.",
+  opts: [
+    O("Start the ordered intravenous hypertonic solution (mannitol) as prescribed.", true, "Correct - the ordered hypertonic solution makes the blood the more concentrated side, drawing water out of the swollen brain tissue."),
+    O("Perform frequent neurologic checks and report further decline in arousal or pupil response.", true, "Correct - the trend in arousal and pupils is how worsening or improving pressure declares itself; close monitoring is part of the plan."),
+    O("Notify the provider promptly of any further decline in responsiveness.", true, "Correct - escalation is built into the plan because the clot can keep enlarging even with treatment underway."),
+    O("Start an intravenous infusion of sterile water to dilute the blood and flush the clot.", false, "Sterile water is never given intravenously - it bursts red blood cells - and diluting the blood would drive water toward the brain, worsening swelling."),
+    O("Encourage the client to drink large volumes of water to stay hydrated during treatment.", false, "Adding free water works against the goal of drawing water out of brain tissue, and a difficult-to-arouse client cannot safely drink large volumes.")
+  ],
+  tp: "ANSWER KEY: Mannitol as ordered, frequent neuro checks, and prompt escalation of decline. DETAILED RATIONALE: Both water options push water the wrong way - one by a forbidden IV fluid, one by mouth in a client who is hard to arouse; the correct bundle treats, monitors, and escalates. PRIORITY FRAMEWORK: Nursing Process (planning) - generate solutions that move water OUT of the brain and detect change early." });
+
+BANK.push({ cat: CE, type: "single", grp: "NGN1",
+  scen: "CASE STUDY - Unfolding case (5 of 6). Same client: the nurse has verified the mannitol order, the client's identity, and the IV line. The spouse asks the nurse to wait until the family arrives in 30 minutes before starting 'the strong fluid.' The client remains difficult to arouse.",
+  stem: "NGN Case - Take Action: Which action should the nurse take?",
+  opts: [
+    O("Start the mannitol infusion now as ordered, explaining to the spouse that the swelling is worsening and the treatment works by drawing water out of the brain", true, "Correct - the ordered treatment addresses an active, worsening problem; delay for visitors spends the window, and the spouse still receives an explanation as care proceeds."),
+    O("Hold the infusion until the family arrives, because a hypertonic fluid should only be started when the whole family understands and agrees to the plan", false, "Family understanding is valuable but is not a precondition that outranks worsening brain swelling; the explanation can continue while the infusion runs."),
+    O("Substitute normal saline for the mannitol until the family arrives, because an isotonic fluid will shrink the brain swelling just as well in the meantime", false, "An isotonic fluid produces no net water shift and will not draw water out of brain tissue; substituting it abandons the ordered mechanism."),
+    O("Give the mannitol only if the client becomes fully unresponsive, because the fluid is reserved for clients who have lost all response to voice and touch", false, "Waiting for total unresponsiveness waits for worse injury; the order is active now because decline is already documented.")
+  ],
+  tp: "ANSWER KEY: Start the ordered mannitol now, with explanation as care proceeds. DETAILED RATIONALE: Family-delay, isotonic substitution, and wait-for-unresponsiveness each postpone or replace the one intervention that reverses the water shift causing the decline. PRIORITY FRAMEWORK: Nursing Process (implementation) / Safety - when the problem is actively worsening, the ordered time-critical action comes first." });
+
+BANK.push({ cat: CE, type: "single", grp: "NGN1",
+  scen: "CASE STUDY - Unfolding case (6 of 6). Same client, 2 hours after the mannitol infusion: the nurse repeats the neurologic assessment to evaluate the treatment. Admission trend for comparison: alert on admission, then drowsy, then difficult to arouse before treatment.",
+  stem: "NGN Case - Evaluate Outcomes: Which finding best indicates that the treatment is having the intended effect?",
+  opts: [
+    O("The client is easier to arouse, answers questions more promptly, and the pupils respond more briskly than before the infusion", true, "Correct - reversal of the decline trend is the intended effect: water drawn out of brain tissue reduces swelling and pressure, and arousal and pupil response improve."),
+    O("The client remains difficult to arouse but the blood pressure has risen further, showing the fluid is now circulating at full strength", false, "Persistent difficult arousal means the brain problem persists, and rising pressure readings do not substitute for neurologic improvement as the outcome that matters."),
+    O("The client has produced a large volume of pale urine, which by itself proves the swelling inside the skull has resolved completely", false, "Urine output alone cannot prove the brain outcome; the evaluation target is the neurologic trend the treatment was given to reverse."),
+    O("The client reports a headache for the first time since admission, which proves the brain tissue has finished swelling and is now recovering", false, "A new headache in a head-injury client is a symptom to assess and report, not proof of recovery; improved arousal is the recovery signal.")
+  ],
+  tp: "ANSWER KEY: Improved arousal, prompter answers, and brisker pupils. DETAILED RATIONALE: Blood pressure, urine volume, and a new headache do not measure the brain outcome; the treatment succeeds when the neurologic trend that triggered it reverses. PRIORITY FRAMEWORK: Nursing Process (evaluation) - judge the treatment by the cue trend it was meant to change, not by convenient side numbers." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 3: Cells — Situational Practice Test</h1>';
+  h += '<div class="sub">Brutal mode | Herlihy, Anatomy &amp; Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

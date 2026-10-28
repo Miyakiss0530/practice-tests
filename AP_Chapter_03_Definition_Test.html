@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3 - Cells - Definition Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK (DEFINITION TEST - HERLIHY A&P CHAPTER 3: CELLS) ============ */
+/* Definitions/meanings of the chapter's concepts: single-best ABCD + SATA, plus
+   row-format dropdowns, one matrix, one ordering item. Facts only from the verified guide. */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Cell Basics and Membrane";
+var CB = "Nucleus, Cytoplasm and Organelles";
+var CC = "Transport and Tonicity";
+var CD = "Cell Cycle, Mitosis and Differentiation";
+var CE = "Growth, Death and Cancer Concepts";
+var CATS = [CA, CB, CC, CD, CE];
+var KEYTERMS = ["cell","cytology","cell membrane","selectively permeable","nucleus","chromatin","mitochondria","cristae","ribosomes","Golgi apparatus","lysosomes","microvilli","cilia","flagellum","diffusion","osmosis","isotonic","hypotonic","hypertonic","hemolysis","mitosis","cytokinesis","G0 phase","differentiation","stem cells","apoptosis","necrosis","metastasis"];
+var BLUEPRINT = {
+  CA: { name: CA, count: 9, types: { single: 7, multi: 1, dropdown: 1 } },
+  CB: { name: CB, count: 13, types: { single: 9, multi: 2, dropdown: 1, matrix: 1 } },
+  CC: { name: CC, count: 13, types: { single: 10, multi: 2, dropdown: 1 } },
+  CD: { name: CD, count: 9, types: { single: 7, dropdown: 1, order: 1 } },
+  CE: { name: CE, count: 6, types: { single: 4, multi: 2 } }
+};
+
+/* ---------- CELL BASICS AND MEMBRANE ---------- */
+BANK.push({ cat: CA, type: "single", kt: ["cell"],
+  stem: "What is the definition of a cell?",
+  opts: [
+    O("The structural and functional unit of all living matter, the level from which all other levels are built", true, "Correct - the guide defines the cell exactly this way; it is both the structure and the working unit of living matter."),
+    O("The smallest particle of an element that can exist alone, carrying the chemical properties of that element", false, "That describes an atom, a chemical level below the cell; atoms are not alive and are not the unit of living matter."),
+    O("A group of similar cells working together at one job, forming the second level of body organization", false, "That describes a tissue, which is built FROM cells; a tissue is a level above the cell, not the cell itself."),
+    O("The gel-like fluid found inside a cell but outside its nucleus, holding the cytosol and the organelles", false, "That is the cytoplasm, a part inside the cell; the cell is the whole living unit, not one of its contents.")
+  ],
+  tp: "ANSWER KEY: The structural and functional unit of all living matter. DETAILED RATIONALE: The cell is the basic living unit; atoms sit below it, tissues are built from it, and cytoplasm is only one part inside it. PRIORITY FRAMEWORK: Levels of Organization - place the term on the correct level before choosing." });
+
+BANK.push({ cat: CA, type: "single", kt: ["cytology"],
+  stem: "What does the term cytology mean?",
+  opts: [
+    O("The study of cellular structure and function", true, "Correct - cytology is the study of how cells are built and how they work."),
+    O("The study of body tissues and their layers", false, "That is histology, the study of tissues; cytology works one level lower, at the single cell."),
+    O("The pinching division of a cell into two cells", false, "That is cytokinesis, the final split of the cytoplasm; its similar sound is the trap in this item."),
+    O("The fluid medium inside the cell, called cytosol", false, "Cytosol is the fluid the organelles float in; cytology is a field of study, not a substance.")
+  ],
+  tp: "ANSWER KEY: The study of cellular structure and function. DETAILED RATIONALE: Cytology studies cells; histology studies tissues, cytokinesis is a division event, and cytosol is a fluid - three sound-alike traps. PRIORITY FRAMEWORK: Terminology Precision - separate the study, the process, and the substance." });
+
+BANK.push({ cat: CA, type: "single", kt: ["selectively permeable"],
+  stem: "A membrane described as selectively permeable is one that:",
+  opts: [
+    O("Chooses which substances are allowed to enter or leave the cell", true, "Correct - selective permeability is the membrane's chief function: it selects what crosses."),
+    O("Allows every substance to cross freely in both directions at will", false, "A freely open barrier would select nothing; the membrane is a gatekeeper, not an open door."),
+    O("Blocks every substance from crossing until the cell begins dividing", false, "The membrane never seals completely; exchange continues throughout the cell's life, including division."),
+    O("Lets water cross in one direction only, from inside toward outside", false, "Water crosses through pores in either direction as conditions dictate; direction is not fixed one-way.")
+  ],
+  tp: "ANSWER KEY: Chooses which substances are allowed to enter or leave the cell. DETAILED RATIONALE: 'Selectively' is the key word - the membrane chooses; it is neither fully open nor fully closed, and it does not fix water to one direction. PRIORITY FRAMEWORK: Terminology Precision - the qualifier word carries the meaning." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement correctly describes the composition of the cell membrane?",
+  opts: [
+    O("Primarily phospholipids and protein, with a small amount of carbohydrate, the phospholipids in two layers", true, "Correct - the lipid bilayer is phospholipid plus protein as the main ingredients, with a little carbohydrate."),
+    O("Primarily carbohydrate and protein, with a small amount of phospholipid, the proteins arranged in two layers", false, "The main ingredients are reversed here: phospholipids, not carbohydrates, form the bulk and the double layer."),
+    O("A single layer of phospholipids with no protein, coated on the outside by a thick layer of carbohydrate", false, "The phospholipids form TWO layers, and membrane proteins are essential - they support, bind, and form pores."),
+    O("Primarily protein fibers and microtubules, with phospholipids filling only the small spaces between them", false, "Microtubules belong to the cytoskeleton inside the cell; they are not the membrane's main building material.")
+  ],
+  tp: "ANSWER KEY: Primarily phospholipids and protein, small amount of carbohydrate, phospholipids in two layers. DETAILED RATIONALE: Bilayer means two phospholipid layers; protein is a main ingredient, carbohydrate is minor, and microtubules are cytoskeleton, not membrane. PRIORITY FRAMEWORK: Structure-Function - name the parts in their printed order and proportion." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which pairing of substance and membrane route is correct?",
+  opts: [
+    O("Oxygen dissolves in the lipid portion; sodium and chloride must pass through the membrane pores", true, "Correct - lipid-soluble oxygen and carbon dioxide dissolve through the lipid layer, while water and charged substances use the pores."),
+    O("Oxygen must pass through the membrane pores; sodium and chloride dissolve in the lipid portion", false, "The routes are swapped: charged substances cannot penetrate the lipid layer, and oxygen does not need a pore."),
+    O("Oxygen and sodium both dissolve in the lipid portion; only pure water must pass through the pores", false, "Sodium is charged and water-soluble, so it cannot dissolve in lipid; it travels with water through the pores."),
+    O("Oxygen and sodium both pass through the membrane pores; only carbon dioxide dissolves in the lipid", false, "Carbon dioxide is lipid-soluble like oxygen; grouping oxygen with the pore route misclassifies a lipid-soluble gas.")
+  ],
+  tp: "ANSWER KEY: Oxygen dissolves in lipid; sodium and chloride use the pores. DETAILED RATIONALE: Two sieves decide the route - solubility and pore size. Lipid-soluble gases dissolve through; water and charged ions cannot penetrate lipid and must use pores. PRIORITY FRAMEWORK: Structure-Function - solubility decides the route across the membrane." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Which statement about cell size and shape is correct according to the chapter?",
+  opts: [
+    O("A single nerve cell may measure 4 feet in length, while a red blood cell is tiny and Frisbee-shaped to bend through vessels", true, "Correct - the chapter's anchor contrast: nerve cells can be extremely long for signaling, and the RBC's bendable disc shape fits squeezing through tiny vessels."),
+    O("All cells are microscopic and nearly identical in size, differing only in the number of organelles each one contains inside", false, "The chapter stresses that cells vary considerably in size, shape, and function - a nerve cell 4 feet long disproves 'all cells are tiny.'"),
+    O("The red blood cell is the longest cell in the body, and its rigid shape lets it push through vessels without bending at all", false, "The RBC is tiny and bends precisely because it is flexible; length belongs to the nerve cell, not the red blood cell."),
+    O("Cell shape is decorative and unrelated to function, since every cell performs the same jobs regardless of its size or form", false, "Structure and function are closely related in this chapter - shape fits the job, from the RBC's disc to the nerve cell's length.")
+  ],
+  tp: "ANSWER KEY: Nerve cell up to 4 feet; RBC tiny and Frisbee-shaped. DETAILED RATIONALE: Size and shape vary by job - length for rapid long-distance signals, a bendable disc for squeezing through vessels. The distractors deny variation, swap the two cells, or deny the structure-function rule. PRIORITY FRAMEWORK: Structure-Function - match each cell's form to the work it performs." });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "Membrane proteins perform which set of functions?",
+  opts: [
+    O("Structural support, binding sites for hormones, and pores that form channels for water and dissolved substances", true, "Correct - these are the three protein jobs printed in the guide: support, hormone binding sites, and pore channels."),
+    O("Production of ATP, synthesis of ribosomes, and digestion of waste material that collects inside the aging cell", false, "ATP production belongs to mitochondria, ribosome synthesis to the nucleolus, and waste digestion to lysosomes - not membrane proteins."),
+    O("Storage of the genetic code, copying of chromosomes, and pulling of chromatids to opposite ends of the cell", false, "Genetic storage belongs to the nucleus and chromatin, and chromatid pulling belongs to the spindle - none are membrane protein roles."),
+    O("Folding to increase surface area, sweeping mucus across the surface, and propelling the cell through fluid media", false, "Folding describes microvilli, sweeping describes cilia, and propelling describes the flagellum - surface projections, not membrane proteins.")
+  ],
+  tp: "ANSWER KEY: Support, hormone binding sites, and pore channels. DETAILED RATIONALE: Each distractor set steals jobs from other structures - mitochondria/nucleolus/lysosomes, nucleus/spindle, or microvilli/cilia/flagellum. PRIORITY FRAMEWORK: Structure-Function - keep each structure's job list separate." });
+
+BANK.push({ cat: CA, type: "multi",
+  stem: "Which statements about the cell membrane are correct? Select all that apply.",
+  opts: [
+    O("It is also called the plasma membrane.", true, "Correct - cell membrane and plasma membrane are two names for the same structure."),
+    O("It separates intracellular material from extracellular material.", true, "Correct - holding the cell together, it forms the boundary between inside and outside material."),
+    O("It holds the cell together physically.", true, "Correct - the guide lists physically holding the cell together among the membrane's roles."),
+    O("It allows water and charged ions to dissolve directly through its lipid layer.", false, "Water and charged substances such as sodium and chloride CANNOT penetrate the lipid layer; they must use the pores."),
+    O("It contains the cell's genetic information and controls protein synthesis.", false, "Genetic information and control of protein synthesis belong to the nucleus, not the membrane.")
+  ],
+  tp: "ANSWER KEY: Plasma membrane name, inside/outside separation, and holding the cell together. DETAILED RATIONALE: The two false statements assign the membrane a route it does not allow (lipid penetration by water and ions) and a job it does not hold (genetic control, which is the nucleus). PRIORITY FRAMEWORK: Structure-Function - credit the membrane only with its printed roles." });
+
+BANK.push({ cat: CA, type: "dropdown",
+  stem: "For each substance, choose the route it uses to cross the cell membrane.<br><br>Oxygen<br>[[0]]<br><br>Sodium<br>[[1]]<br><br>Carbon dioxide<br>[[2]]<br><br>Water<br>[[3]]",
+  blanks: [
+    { o: [O("Dissolves in the lipid portion of the membrane", true, "Oxygen is lipid-soluble, so it dissolves in the lipid portion and crosses directly."),
+           O("Flows through the protein pores of the membrane", false, "Oxygen does not need the pores; as a lipid-soluble gas it dissolves through the lipid layer.")] },
+    { o: [O("Flows through the protein pores of the membrane", true, "Sodium is charged and water-soluble; it cannot penetrate lipid and must use the pores."),
+           O("Dissolves in the lipid portion of the membrane", false, "Charged substances cannot dissolve in the lipid layer; sodium crosses through the pores.")] },
+    { o: [O("Dissolves in the lipid portion of the membrane", true, "Carbon dioxide, like oxygen, is lipid-soluble and dissolves through the lipid portion."),
+           O("Flows through the protein pores of the membrane", false, "Carbon dioxide is a lipid-soluble gas; the pore route is for water and water-soluble substances.")] },
+    { o: [O("Flows through the protein pores of the membrane", true, "Water is water-soluble and cannot penetrate the lipid layer, so it flows through the pores."),
+           O("Dissolves in the lipid portion of the membrane", false, "Water cannot dissolve in or penetrate the lipid layer; its route is through the pores.")] }
+  ],
+  tp: "ANSWER KEY: Oxygen - lipid; sodium - pores; carbon dioxide - lipid; water - pores. DETAILED RATIONALE: Lipid-soluble gases dissolve through the bilayer; water and charged, water-soluble substances are blocked by lipid and must use protein pores. PRIORITY FRAMEWORK: Structure-Function - solubility sorts every substance into its one correct route." });
+
+/* ---------- NUCLEUS, CYTOPLASM AND ORGANELLES ---------- */
+BANK.push({ cat: CB, type: "single", kt: ["nucleus"],
+  stem: "What is the definition of the nucleus?",
+  opts: [
+    O("The control center of the cell, containing the genetic information and controlling all protein synthesis", true, "Correct - the nucleus holds the genetic information and runs all protein synthesis."),
+    O("The gel located inside the cell but outside the nucleus, which contains the cytosol and the organelles", false, "That is the cytoplasm; the nucleus is one of the two compartments, not the gel surrounding it."),
+    O("The site of ATP production, folded inside so that the cell can make most of the energy the body spends", false, "That describes the mitochondria; the nucleus controls, it does not generate the cell's energy supply."),
+    O("A stack of flattened sacs that finishes protein, wraps it in membrane, and packages the protein for export", false, "That is the Golgi apparatus; it finishes protein the nucleus directed, but it holds no genetic information.")
+  ],
+  tp: "ANSWER KEY: The control center holding genetic information and controlling protein synthesis. DETAILED RATIONALE: Cytoplasm is the surrounding gel, mitochondria make ATP, and the Golgi packages protein - only the nucleus stores the code and directs synthesis. PRIORITY FRAMEWORK: Structure-Function - control belongs to the structure holding the code." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which cell is the chapter's named exception to the rule that adult cells have a nucleus?",
+  opts: [
+    O("The mature red blood cell, which has no nucleus at all", true, "Correct - most adult cells have one nucleus; the mature RBC is the only exception the chapter names, with none."),
+    O("The mature nerve cell, which has no nucleus at all", false, "Nerve cells do have a nucleus; their division limit comes from lacking centrioles, not from lacking a nucleus."),
+    O("The mature sperm cell, which has no nucleus at all", false, "The sperm carries a nucleus with its genetic contribution; the chapter names only the mature RBC as nucleus-free."),
+    O("The mature bone cell, which has no nucleus at all", false, "Bone cells are nucleated; the chapter uses them as the low-mitochondria example, not the no-nucleus example.")
+  ],
+  tp: "ANSWER KEY: The mature red blood cell. DETAILED RATIONALE: One nucleus is the rule for most adult cells and zero is the mature RBC exception; nerve, sperm, and bone cells keep their nuclei. PRIORITY FRAMEWORK: Terminology Precision - exceptions are tested exactly as printed, one cell only." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "What is the function of the nucleolus?",
+  opts: [
+    O("It synthesizes ribosomes, which move through the nuclear pores into the cytoplasm for protein synthesis", true, "Correct - the 'little nucleus' makes ribosomes (and RNA), which exit through the nuclear pores to run protein synthesis."),
+    O("It stores the strands of DNA that carry the genetic code and coil into chromosomes when the cell divides", false, "DNA storage describes chromatin; the nucleolus builds ribosomes, it does not store the genetic code itself."),
+    O("It produces most of the cell's ATP along folded membranes, supplying energy for the work of the whole cell", false, "ATP production belongs to the mitochondria at the cristae; the nucleolus has no energy-producing role."),
+    O("It digests worn-out organelles and intracellular waste, keeping the inside of the cell clean and orderly", false, "House cleaning and digestion belong to the lysosomes; the nucleolus builds ribosomes for the protein line.")
+  ],
+  tp: "ANSWER KEY: It synthesizes ribosomes that exit through the nuclear pores. DETAILED RATIONALE: Chromatin stores DNA, mitochondria produce ATP, and lysosomes digest waste - the nucleolus's single printed job is ribosome synthesis. PRIORITY FRAMEWORK: Structure-Function - one structure, one defining job; resist sound-alike swaps." });
+
+BANK.push({ cat: CB, type: "single", kt: ["chromatin"],
+  stem: "Which statement correctly relates chromatin and chromosomes?",
+  opts: [
+    O("They are the same DNA: tangled filaments called chromatin in a nondividing cell, coiled tight as chromosomes in a dividing cell", true, "Correct - chromatin and chromosomes are two states of one substance, loose threads at rest and tight coils during division."),
+    O("They are two different substances: chromatin carries the genetic code, while chromosomes are made only of protein and carry none", false, "Chromosomes are not a separate protein substance; they are chromatin itself, coiled - the DNA is present in both states."),
+    O("Chromatin is found only in dividing cells, while chromosomes are found only in cells that have permanently stopped dividing", false, "The timing is reversed: chromatin is the nondividing form and chromosomes appear when the cell divides."),
+    O("Chromatin is the fluid filling the nucleus, while chromosomes are the small bodies floating freely within that nuclear fluid", false, "The nuclear fluid is nucleoplasm; chromatin is the DNA strands themselves, not the fluid they sit in.")
+  ],
+  tp: "ANSWER KEY: Same DNA in two states - loose chromatin at rest, coiled chromosomes in division. DETAILED RATIONALE: The distractors invent a second substance, reverse the timing, or confuse chromatin with nucleoplasm. PRIORITY FRAMEWORK: Terminology Precision - same material, different state; state changes with division." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement correctly distinguishes cytoplasm from cytosol?",
+  opts: [
+    O("The cytoplasm includes the cytosol plus the organelles; the cytosol alone is just the fluid medium of the cell", true, "Correct - cytoplasm is the whole gel region outside the nucleus; cytosol is only its fluid part, in which organelles are suspended."),
+    O("The cytosol includes the cytoplasm plus the organelles; the cytoplasm alone is just the fluid medium of the cell", false, "The inclusion is reversed: cytosol is a component OF the cytoplasm, not the container of it."),
+    O("The cytoplasm and the cytosol are two names for exactly the same fluid, and organelles float in the nucleus instead", false, "They are not identical, and organelles are suspended in the cytosol within the cytoplasm - never inside the nucleus."),
+    O("The cytoplasm is the fluid inside the nucleus, while the cytosol is the gel found outside the cell membrane entirely", false, "Both terms describe material inside the cell; the nuclear fluid is nucleoplasm and outside material is extracellular.")
+  ],
+  tp: "ANSWER KEY: Cytoplasm = cytosol plus organelles; cytosol = the fluid alone. DETAILED RATIONALE: The trap options reverse the part-whole relationship, declare the terms identical, or move both fluids to the wrong compartments. PRIORITY FRAMEWORK: Terminology Precision - part versus whole decides this pair every time." });
+
+BANK.push({ cat: CB, type: "single", kt: ["mitochondria"],
+  stem: "What is the definition of mitochondria?",
+  opts: [
+    O("Tiny, slipper-shaped organelles that produce most of the body's energy, ATP, and are called the power plants of the cell", true, "Correct - mitochondria are the ATP-producing power plants; busier cells carry more of them."),
+    O("Membranous sacs filled with powerful enzymes that digest intracellular waste, damaged organelles, and ingested bacteria", false, "That defines lysosomes, the clean-up sacs; mitochondria produce energy rather than digesting waste."),
+    O("A network of membrane channels through which newly synthesized protein and other substances flow within the cytoplasm", false, "That defines the endoplasmic reticulum; its channels move substances, they do not generate ATP."),
+    O("Threadlike filaments and tubules that hold the cell's shape, anchor its organelles, and assist in cellular movement", false, "That defines the cytoskeleton; it scaffolds the cell but produces no energy at all.")
+  ],
+  tp: "ANSWER KEY: Slipper-shaped power plants producing most ATP. DETAILED RATIONALE: Lysosomes digest, the ER channels, and the cytoskeleton scaffolds - only mitochondria are defined by ATP production. PRIORITY FRAMEWORK: Structure-Function - energy production is the mitochondria's defining job." });
+
+BANK.push({ cat: CB, type: "single", kt: ["cristae"],
+  stem: "What are cristae?",
+  opts: [
+    O("The folds of the inner mitochondrial membrane, where the enzymes for ATP production are located", true, "Correct - the inner membrane is folded into cristae, and the ATP enzymes sit along those folds."),
+    O("The accordion-like folds of the cell membrane that increase surface area for absorption of fluid", false, "Membrane folds for absorption are microvilli; cristae are inside the mitochondria, not on the cell surface."),
+    O("The two identical strands of DNA that make up each chromosome pair during the first phase of mitosis", false, "Paired DNA strands are chromatids; cristae are membrane folds and contain no chromosomes."),
+    O("The paired, rod-shaped microtubules that form the spindle apparatus used during division of the cell", false, "Rod-shaped microtubule pairs are centrioles; cristae belong to the mitochondria's inner membrane.")
+  ],
+  tp: "ANSWER KEY: Folds of the inner mitochondrial membrane holding the ATP enzymes. DETAILED RATIONALE: Microvilli fold the cell surface, chromatids are DNA strands, and centrioles are division rods - cristae are the mitochondria's internal folds. PRIORITY FRAMEWORK: Terminology Precision - 'folds' appears in two terms; location separates them." });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "Which statement correctly distinguishes free ribosomes from fixed ribosomes?",
+  opts: [
+    O("Free ribosomes float in the cytosol and make protein used within the cell; fixed ribosomes attach to the ER and make protein for export", true, "Correct - free means within-cell use; fixed (on the rough ER) means the protein will be exported."),
+    O("Free ribosomes attach to the ER and make protein for export; fixed ribosomes float in the cytosol and make protein used within the cell", false, "The destinations are swapped: attachment to the ER marks protein for export, floating marks protein for home use."),
+    O("Free ribosomes make only lipids and steroids; fixed ribosomes make only glycogen for the liver and the skeletal muscle cells to store", false, "Neither ribosome type makes lipids, steroids, or glycogen - those are smooth ER products; both ribosome types make protein."),
+    O("Free ribosomes are found only in dividing cells; fixed ribosomes are found only in cells that have dropped out of the cycle to rest", false, "Ribosome position is about protein destination, not division status; both types work in ordinary nondividing cells.")
+  ],
+  tp: "ANSWER KEY: Free = protein used within the cell; fixed = protein exported. DETAILED RATIONALE: The classic trap swaps the destinations; the other options assign ribosomes the smooth ER's products or a division rule that does not exist. PRIORITY FRAMEWORK: Terminology Precision - free stays home, fixed ships out." });
+
+BANK.push({ cat: CB, type: "single", kt: ["Golgi apparatus"],
+  stem: "What does the Golgi apparatus do?",
+  opts: [
+    O("It finishes and packages protein for export, wrapping it in membrane that pinches off as a secretory vesicle", true, "Correct - the Golgi is the finishing and shipping step: final touches, then a pinched-off vesicle carries protein out."),
+    O("It builds protein from the start on its surface ribosomes, then sends the raw protein backward to the endoplasmic reticulum", false, "Protein is built at the ribosomes and travels the ER first; the Golgi only finishes what arrives - nothing travels backward to the ER."),
+    O("It synthesizes lipids, steroids, and glycerides, and stores glycogen for the liver and skeletal muscle cells of the body", false, "Lipid, steroid, and glycogen synthesis belong to the smooth ER; the Golgi handles finished protein, not those products."),
+    O("It produces the ribosomes used in protein synthesis, then ships those ribosomes out through the pores of the nuclear membrane", false, "Ribosome production belongs to the nucleolus inside the nucleus; the Golgi packages protein, not ribosomes.")
+  ],
+  tp: "ANSWER KEY: Finishes and packages protein for export in secretory vesicles. DETAILED RATIONALE: Building starts at ribosomes on the ER, lipids belong to the smooth ER, and ribosome-making belongs to the nucleolus - the Golgi is last-step finishing only. PRIORITY FRAMEWORK: Structure-Function - follow the protein line in order: build, move, finish." });
+
+BANK.push({ cat: CB, type: "multi", kt: ["lysosomes"],
+  stem: "Which functions belong to lysosomes? Select all that apply.",
+  opts: [
+    O("Breaking down intracellular waste and debris, including damaged organelles.", true, "Correct - lysosomes perform intracellular house cleaning, removing waste and damaged organelles."),
+    O("Killing bacteria that have been ingested by the cell.", true, "Correct - the guide credits lysosomes with killing ingested bacteria as part of clean-up."),
+    O("Breaking down the contractile proteins of inactive muscle.", true, "Correct - in disuse, lysosomes break down contractile protein, as in retired athletes and bedridden persons."),
+    O("Producing ATP along their folded inner membranes.", false, "ATP production along folds (cristae) belongs to mitochondria, not lysosomes."),
+    O("Finishing and packaging protein into secretory vesicles.", false, "Finishing and packaging protein is the Golgi apparatus's job, not the lysosomes'.")
+  ],
+  tp: "ANSWER KEY: Waste breakdown, killing ingested bacteria, and breakdown of inactive-muscle protein. DETAILED RATIONALE: All three correct options are clean-up/digestion work by lysosomal enzymes; ATP production is mitochondrial and packaging is Golgi work. PRIORITY FRAMEWORK: Structure-Function - if the job is digestion, it belongs to the lysosome." });
+
+BANK.push({ cat: CB, type: "multi",
+  stem: "Which cells have no centrioles and are therefore incapable of cell division? Select all that apply.",
+  opts: [
+    O("Neurons.", true, "Correct - neurons are on the chapter's no-centriole list and cannot divide."),
+    O("Mature red blood cells.", true, "Correct - mature RBCs lack centrioles (and a nucleus) and cannot divide."),
+    O("Skeletal muscle cells.", true, "Correct - skeletal muscle cells are listed among the cells with no centrioles."),
+    O("Cardiac muscle cells.", true, "Correct - cardiac muscle cells complete the chapter's four-cell no-centriole list."),
+    O("Digestive tract lining cells.", false, "Digestive lining cells divide rapidly - they are replaced every few days, the opposite of this list.")
+  ],
+  tp: "ANSWER KEY: Neurons, mature RBCs, skeletal muscle cells, cardiac muscle cells. DETAILED RATIONALE: These four are the printed no-centriole set; digestive lining cells are the counterexample, replaced every few days because they divide constantly. PRIORITY FRAMEWORK: Terminology Precision - the four-cell list is tested exactly as printed." });
+
+BANK.push({ cat: CB, type: "dropdown",
+  stem: "For each projection, choose what it does.<br><br>Microvilli<br>[[0]]<br><br>Cilia<br>[[1]]<br><br>Flagellum<br>[[2]]",
+  blanks: [
+    { o: [O("Increase surface area so the cell absorbs more fluid and solute", true, "Microvilli are accordion-like folds; folding increases surface area and absorption."),
+           O("Sweep substances across the surface of the cell in waves", false, "Sweeping substances across the surface is the cilia's wavelike job, not the microvilli's."),
+           O("Propel the cell itself through fluid so that it can swim", false, "Propelling the cell itself is the flagellum's job; microvilli do not move the cell.")] },
+    { o: [O("Sweep substances across the surface of the cell in waves", true, "Cilia use wavelike motions to move substances - such as mucus - across the cell's surface."),
+           O("Increase surface area so the cell absorbs more fluid and solute", false, "Increasing surface area for absorption is the microvilli's folding job, not the cilia's."),
+           O("Propel the cell itself through fluid so that it can swim", false, "Cilia move substances, not the cell; the flagellum is the structure that moves the cell.")] },
+    { o: [O("Propel the cell itself through fluid so that it can swim", true, "The flagellum is the single long tail - the sperm's - that moves the cell itself."),
+           O("Sweep substances across the surface of the cell in waves", false, "Sweeping is done by the many short cilia; the flagellum is longer, thicker, and fewer in number."),
+           O("Increase surface area so the cell absorbs more fluid and solute", false, "Absorption through folding belongs to microvilli; the flagellum adds no absorbing surface.")] }
+  ],
+  tp: "ANSWER KEY: Microvilli absorb, cilia sweep, flagellum swims. DETAILED RATIONALE: Each projection has one verb - folds absorb, hairs sweep substances across the surface, and the single tail moves the cell itself. PRIORITY FRAMEWORK: Structure-Function - assign each projection its own verb and never swap them." });
+
+BANK.push({ cat: CB, type: "matrix",
+  stem: "Match each feature with the correct endoplasmic reticulum.",
+  cols: ["Has ribosomes on its surface and handles protein synthesis", "Has no ribosomes and makes lipids, steroids, and glycogen"],
+  rows: [
+    { t: "Rough endoplasmic reticulum", a: 0, r: "The rough ER is rough because ribosomes stud its surface, and it is primarily concerned with protein synthesis." },
+    { t: "Smooth endoplasmic reticulum", a: 1, r: "The smooth ER has no ribosomes; it synthesizes lipids, steroids, glycerides, and glycogen in liver and muscle." }
+  ],
+  tp: "ANSWER KEY: Rough ER - ribosomes and protein; smooth ER - no ribosomes, lipids/steroids/glycogen. DETAILED RATIONALE: Roughness IS ribosomes; a surface without ribosomes cannot run protein synthesis and instead runs lipid and steroid production. PRIORITY FRAMEWORK: Terminology Precision - the opposite pair must stay un-swapped: rough builds protein, smooth builds lipids." });
+
+/* ---------- TRANSPORT AND TONICITY ---------- */
+BANK.push({ cat: CC, type: "single",
+  stem: "What is the dividing line between passive transport and active transport?",
+  opts: [
+    O("Passive transport requires no ATP; active transport requires an input of energy in the form of ATP", true, "Correct - energy is the dividing line: passive moves downhill for free, active spends ATP to move uphill."),
+    O("Passive transport uses a helper molecule; active transport moves substances without any help at all", false, "A helper molecule (facilitated diffusion) is still passive; help is not the dividing line - ATP spending is."),
+    O("Passive transport moves only water; active transport moves only dissolved substances such as salts", false, "Both groups move water and dissolved substances; the split is by energy cost, not by what is moved."),
+    O("Passive transport occurs only in the lungs; active transport occurs only in the kidneys and the gut", false, "Both transport groups operate across cell membranes throughout the body; location does not define them.")
+  ],
+  tp: "ANSWER KEY: Passive = no ATP; active = ATP required. DETAILED RATIONALE: Helper molecules, cargo type, and body location are all traps - the only printed dividing line is whether ATP energy is spent. PRIORITY FRAMEWORK: Terminology Precision - classify transport by energy cost first." });
+
+BANK.push({ cat: CC, type: "single", kt: ["diffusion"],
+  stem: "What is the definition of diffusion?",
+  opts: [
+    O("Movement of a substance from an area of high concentration to an area of low concentration", true, "Correct - diffusion is downhill movement from higher to lower concentration, the most common transport mechanism."),
+    O("Movement of a substance from an area of low concentration to an area of high concentration", false, "That is the uphill direction of an active transport pump; diffusion never moves a substance uphill."),
+    O("Diffusion of water through a selectively permeable membrane, from more water to less water", false, "That is the definition of osmosis - diffusion's special water-only case, not diffusion itself."),
+    O("Pushing of water and dissolved substances from an area of high pressure to an area of low pressure", false, "That is filtration, driven by pressure; diffusion is driven by concentration differences.")
+  ],
+  tp: "ANSWER KEY: High concentration to low concentration. DETAILED RATIONALE: The uphill option defines a pump, the water option defines osmosis, and the pressure option defines filtration - diffusion is concentration-driven and downhill. PRIORITY FRAMEWORK: Terminology Precision - name the driving force: concentration, water, or pressure." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which statement about facilitated diffusion is correct?",
+  opts: [
+    O("A helper molecule assists the substance across the membrane, still moving from high to low concentration, with no ATP spent", true, "Correct - facilitated diffusion is passive: the helper speeds the same downhill trip (the book's example is glucose) without spending energy."),
+    O("A helper molecule carries the substance from low to high concentration, spending ATP to push it uphill against the gradient", false, "Uphill movement with ATP defines an active transport pump; facilitated diffusion never moves uphill and never spends ATP."),
+    O("A helper molecule engulfs the substance and pulls it into the cell, in the same way the cell engulfs a solid particle to eat it", false, "Engulfing describes endocytosis/phagocytosis; the facilitated-diffusion helper sits within the membrane and assists crossing."),
+    O("A helper molecule is needed only for water, which cannot cross the membrane at all without being carried the whole way across it", false, "Water crosses through membrane pores on its own; the printed facilitated-diffusion example is glucose, a dissolved substance.")
+  ],
+  tp: "ANSWER KEY: Helper-assisted, still downhill, still passive, no ATP. DETAILED RATIONALE: 'Facilitate' means to help - help changes speed, not direction or energy cost. Uphill-with-ATP is a pump and engulfing is endocytosis. PRIORITY FRAMEWORK: Terminology Precision - a helper does not make a process active; only ATP does." });
+
+BANK.push({ cat: CC, type: "single", kt: ["osmosis"],
+  stem: "What is the definition of osmosis?",
+  opts: [
+    O("Diffusion of water through a selectively permeable membrane, from an area with more water to an area with less water", true, "Correct - osmosis moves only water, toward the more concentrated side; the dissolved solute cannot cross and stays put."),
+    O("Diffusion of dissolved substances through a membrane, from an area with more solute to an area with far less solute", false, "That describes ordinary diffusion of solute; in osmosis the solute does NOT move - only the water moves."),
+    O("Movement of water against its gradient by a pump that spends ATP, pushing water from less water toward more water", false, "Osmosis is passive and spends no ATP; a pump moving water uphill would be active transport, the opposite category."),
+    O("Pushing of water and solute together through pores by pressure, from an area of high pressure to low pressure zones", false, "Pressure-driven pushing of water plus solute is filtration; osmosis is driven by water concentration across the membrane.")
+  ],
+  tp: "ANSWER KEY: Water only, through a selectively permeable membrane, toward the concentrated side. DETAILED RATIONALE: Solute movement, ATP pumping, and pressure pushing each belong to a different mechanism - diffusion, active transport, and filtration. PRIORITY FRAMEWORK: Terminology Precision - in osmosis, name what moves: water, and only water." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "In the chapter's two-compartment model (dilute glucose on side A, concentrated glucose on side B, membrane permeable only to water), what happens?",
+  opts: [
+    O("Water moves into side B, so B gains volume and becomes more dilute while A becomes more concentrated", true, "Correct - water diffuses toward the concentrated side: B's volume grows and dilutes, A's remaining solution concentrates."),
+    O("Glucose moves into side A until both sides match, while the water stays exactly where it started out", false, "The membrane is permeable only to water; glucose cannot cross, so the solute never equalizes the two sides."),
+    O("Water moves into side A, so A gains volume and becomes more dilute while B becomes more concentrated", false, "The direction is reversed: water moves toward MORE concentrated (side B, the side with less water), not away from it."),
+    O("Nothing moves at all, because a membrane that blocks glucose also blocks water from crossing it entirely", false, "A selectively permeable membrane blocks the solute while passing water - that selective passage is what drives osmosis.")
+  ],
+  tp: "ANSWER KEY: Water moves into B; B gains volume and dilutes, A concentrates. DETAILED RATIONALE: Only water can cross, and it moves toward the concentrated side; glucose movement, reversed water movement, and no movement each break one printed rule. PRIORITY FRAMEWORK: Concentration Gradient - water always follows the side with less water." });
+
+BANK.push({ cat: CC, type: "single", kt: ["isotonic"],
+  stem: "What does it mean for a solution to be isotonic to a cell?",
+  opts: [
+    O("It has the same concentration as the intracellular fluid, so there is no net movement of water and the cell keeps its size", true, "Correct - iso means same; equal concentration means no net water shift, so the red blood cell neither swells nor shrinks."),
+    O("It is more dilute than the intracellular fluid, so water moves into the cell until the cell swells and eventually bursts open", false, "That describes a hypotonic solution and hemolysis; isotonic fluid causes no net movement at all."),
+    O("It is more concentrated than the intracellular fluid, so water leaves the cell until the cell shrivels and finally crenates", false, "That describes a hypertonic solution and crenation; isotonic fluid leaves cell volume unchanged."),
+    O("It contains no solute at all, like pure water, so the cell stays in balance as long as the infusion is given very slowly", false, "Pure water is the book's hypotonic example and bursts RBCs; isotonic solutions - normal saline, D5W, Ringer - match the cell.")
+  ],
+  tp: "ANSWER KEY: Same concentration as intracellular fluid; no net water movement. DETAILED RATIONALE: Dilute-inward is hypotonic, concentrated-outward is hypertonic, and pure water is hypotonic, not isotonic. PRIORITY FRAMEWORK: Terminology Precision - judge every tonicity term against the inside of the cell." });
+
+BANK.push({ cat: CC, type: "single", kt: ["hemolysis"],
+  stem: "What is hemolysis?",
+  opts: [
+    O("The bursting of red blood cells when water rushes into them in a hypotonic solution", true, "Correct - in a hypotonic solution water moves into the RBC until the membrane bursts; this is why pure water is never given IV."),
+    O("The shrinking of red blood cells when water leaves them in a hypertonic solution", false, "Shrinking in a hypertonic solution is crenation - the opposite water direction and the opposite outcome."),
+    O("The clotting of blood inside a vessel when its osmotically active particles attract water", false, "A clot attracting water is an osmosis example from the chapter, but it is growth of a clot, not bursting of red cells."),
+    O("The programmed death of aging red blood cells after they have completed their lifespan", false, "Programmed cell death is apoptosis; hemolysis is physical bursting caused by water influx, not a death program.")
+  ],
+  tp: "ANSWER KEY: Bursting of RBCs from water rushing in, in a hypotonic solution. DETAILED RATIONALE: Crenation is shrinking, clot growth is osmosis without bursting, and apoptosis is programmed death - hemolysis is specifically hypotonic bursting. PRIORITY FRAMEWORK: Terminology Precision - pair the water direction with the cell outcome: in = burst." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Which statement correctly describes filtration?",
+  opts: [
+    O("Water and dissolved substances are pushed across the membrane from an area of high pressure to an area of low pressure", true, "Correct - filtration is the passive, pressure-driven mechanism; in the capillary, pressure pushes fluid out through the pores."),
+    O("Water and dissolved substances drift across the membrane from an area of high concentration to low concentration zones", false, "Concentration-driven drift is diffusion; filtration answers to pressure differences, not concentration differences."),
+    O("Water alone crosses the membrane toward the more concentrated solution while the dissolved substances stay confined", false, "Water alone moving toward concentration is osmosis; filtration pushes water AND dissolved substances together."),
+    O("The cell spends ATP to push water and dissolved substances uphill, from low pressure into an area of much higher pressure", false, "Filtration is passive and spends no ATP; pressure does the pushing, and flow runs high pressure to low pressure.")
+  ],
+  tp: "ANSWER KEY: Pressure pushes water and solute from high pressure to low pressure. DETAILED RATIONALE: Diffusion answers to concentration, osmosis moves water alone, and ATP spending makes a process active - filtration is passive pressure work. PRIORITY FRAMEWORK: Terminology Precision - name the driving force before naming the mechanism." });
+
+BANK.push({ cat: CC, type: "multi",
+  stem: "Which statements about tonicity are correct? Select all that apply.",
+  opts: [
+    O("Normal saline (0.9% NaCl), 5% dextrose in water, and Ringer solution are printed as isotonic IV solutions.", true, "Correct - these three are the chapter's printed isotonic IV examples, frequently given intravenously."),
+    O("Pure water is not administered intravenously because it would cause hemolysis.", true, "Correct - pure water is hypotonic; water would rush into RBCs and burst them."),
+    O("A hypertonic solution such as mannitol can draw water out of swollen brain tissue.", true, "Correct - hypertonic (hyperosmolar) blood pulls water from brain tissue, decreasing cerebral edema."),
+    O("In a hypotonic solution, a red blood cell shrinks as water diffuses out of it.", false, "Hypotonic fluid sends water INTO the cell (bursting); shrinking as water leaves is the hypertonic outcome, crenation."),
+    O("An isotonic solution causes a steady net movement of water into the cell.", false, "Isotonic means NO net movement of water - molecules may cross, but volume does not change.")
+  ],
+  tp: "ANSWER KEY: The three isotonic IV examples, the pure-water ban, and mannitol for cerebral edema. DETAILED RATIONALE: The false options swap the hypo/hyper outcomes and invent net movement in an isotonic solution, where by definition there is none. PRIORITY FRAMEWORK: Safety - tonicity errors harm red cells and brain tissue; verify direction before volume." });
+
+BANK.push({ cat: CC, type: "multi",
+  stem: "Which are the active transport mechanisms named in the chapter? Select all that apply.",
+  opts: [
+    O("Active transport pumps that move substances uphill using ATP.", true, "Correct - pumps move substances from low to high concentration at the cost of ATP, as with potassium."),
+    O("Endocytosis, in which the membrane engulfs substances into the cell.", true, "Correct - engulfing large particles by endocytosis requires energy and is an active mechanism."),
+    O("Exocytosis, in which a vesicle fuses with the membrane to expel products.", true, "Correct - exocytosis, the secretion of products such as protein out of the cell, is active."),
+    O("Facilitated diffusion, in which a helper molecule assists a substance across.", false, "Facilitated diffusion is passive - the helper speeds a downhill trip and spends no ATP."),
+    O("Filtration, in which pressure pushes water and solute through pores.", false, "Filtration is passive - capillary pressure, not cellular ATP, does the pushing.")
+  ],
+  tp: "ANSWER KEY: Pumps, endocytosis, and exocytosis - the three active mechanisms. DETAILED RATIONALE: Facilitated diffusion and filtration tempt because work visibly happens, but neither spends the cell's ATP, so both stay passive. PRIORITY FRAMEWORK: Terminology Precision - count three active mechanisms; ATP is the membership test." });
+
+BANK.push({ cat: CC, type: "dropdown",
+  stem: "For each process, choose the correct description.<br><br>Phagocytosis<br>[[0]]<br><br>Pinocytosis<br>[[1]]<br><br>Exocytosis<br>[[2]]",
+  blanks: [
+    { o: [O("Engulfing of a solid particle - cellular eating", true, "Phagocytosis (phago- = eating) is endocytosis of a solid, as when white blood cells eat bacteria."),
+           O("Engulfing of a liquid droplet - cellular drinking", false, "Engulfing liquid is pinocytosis, cellular drinking; phagocytosis takes in solids."),
+           O("Expelling of products out through the membrane", false, "Expelling products is exocytosis, movement OUT; phagocytosis moves solids IN.")] },
+    { o: [O("Engulfing of a liquid droplet - cellular drinking", true, "Pinocytosis (pin- = drinking) is endocytosis of a liquid droplet."),
+           O("Engulfing of a solid particle - cellular eating", false, "Engulfing a solid is phagocytosis; pinocytosis is reserved for liquid droplets."),
+           O("Expelling of products out through the membrane", false, "Expelling is exocytosis; pinocytosis takes liquid IN by engulfing.")] },
+    { o: [O("Expelling of products out through the membrane", true, "Exocytosis secretes products out - a vesicle fuses with the membrane and releases its contents."),
+           O("Engulfing of a solid particle - cellular eating", false, "Engulfing solids is phagocytosis, an inward process; exocytosis is the reverse, outward."),
+           O("Engulfing of a liquid droplet - cellular drinking", false, "Engulfing liquid is pinocytosis, also inward; exocytosis moves contents out of the cell.")] }
+  ],
+  tp: "ANSWER KEY: Phagocytosis - solid/eating; pinocytosis - liquid/drinking; exocytosis - expelling out. DETAILED RATIONALE: The two endocytosis forms split by cargo (solid versus liquid); exocytosis reverses the direction entirely. PRIORITY FRAMEWORK: Terminology Precision - phago eats, pino drinks, exo exits." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Why does moving additional potassium ions (K+) into a cell that already contains a large amount of K+ require an active transport pump?",
+  opts: [
+    O("Because the added K+ must move from low concentration to high concentration - uphill - which requires an input of ATP energy", true, "Correct - the book's pump example: the cell already holds abundant K+, so more can only be pumped uphill at the cost of invested energy."),
+    O("Because potassium is too large to fit through the membrane pores, so the cell must spend ATP to stretch the pores open wider", false, "Pore size limits some substances, but the chapter's stated reason for the K+ pump is the uphill gradient, not pore stretching."),
+    O("Because potassium is a liquid droplet, so it can only enter the cell by being engulfed and carried inward by the membrane itself", false, "Engulfing liquid droplets is pinocytosis for droplets at the surface; dissolved K+ ions are pumped, not engulfed."),
+    O("Because potassium moves only by osmosis, and osmosis in this direction requires the cell to spend ATP to pull the water along too", false, "Osmosis moves water, not potassium, and it is passive; K+ accumulation against its gradient is pump work requiring ATP.")
+  ],
+  tp: "ANSWER KEY: Uphill movement from low to high concentration requires ATP. DETAILED RATIONALE: Pore size, droplet engulfing, and osmosis each describe a different mechanism; the pump exists because the gradient direction demands energy. PRIORITY FRAMEWORK: Concentration Gradient - downhill is free, uphill costs ATP." });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "What does equilibrium mean in diffusion?",
+  opts: [
+    O("The point at which no further net diffusion occurs, when the substance is evenly distributed", true, "Correct - like the dye evenly spread through the glass of water, equilibrium ends NET movement, not all movement."),
+    O("The point at which every molecule stops moving and remains frozen in place throughout the solution", false, "Molecules keep moving at equilibrium; what stops is the NET drift, because distribution is already even."),
+    O("The point at which all of the substance has moved inside the cell and none remains outside it anymore", false, "Diffusion ends at even distribution, not at total transfer; 'everything inside' would be a new imbalance."),
+    O("The point at which the helper molecule stops working and facilitated diffusion changes into active transport", false, "Equilibrium applies to diffusion generally, and facilitated diffusion never converts into active transport.")
+  ],
+  tp: "ANSWER KEY: No further NET diffusion once distribution is even. DETAILED RATIONALE: Frozen molecules, total transfer, and a mechanism switch each misstate equilibrium; the key word is NET. PRIORITY FRAMEWORK: Terminology Precision - equilibrium is a balance of movement, not an absence of it." });
+
+/* ---------- CELL CYCLE, MITOSIS AND DIFFERENTIATION ---------- */
+BANK.push({ cat: CD, type: "single", kt: ["mitosis"],
+  stem: "What is the definition of mitosis?",
+  opts: [
+    O("The splitting of one mother cell into two identical daughter cells, with an exact copy of the genetic information in each", true, "Correct - identical is the key word: both daughter nuclei receive the same genetic information as the mother cell."),
+    O("The division that occurs only in sex cells, producing the gametes that will later unite during the act of fertilization", false, "Division confined to sex cells is meiosis (Chapter 26); mitosis is the growth-and-repair division of ordinary cells."),
+    O("The pinching of the cell membrane that splits the cytoplasm into two distinct cells at the very end of the division process", false, "Pinching of the cytoplasm is cytokinesis, one closing event of mitosis - not the whole division process itself."),
+    O("The resting period between divisions in which the cell carries on normal activities and prepares substances for dividing", false, "The preparation period between divisions is interphase; mitosis is the division phase that follows it.")
+  ],
+  tp: "ANSWER KEY: One mother cell splits into two identical daughter cells. DETAILED RATIONALE: Meiosis is the sex-cell division, cytokinesis is only the final pinch, and interphase is the preparation before division begins. PRIORITY FRAMEWORK: Terminology Precision - mitosis is defined by identical copies for growth and repair." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "What happens during the S phase of interphase?",
+  opts: [
+    O("The cell duplicates its chromosomes, thereby making enough DNA for two identical cells", true, "Correct - S is the synthesis phase in which chromosomes are duplicated so each daughter cell can receive a full set."),
+    O("The cell carries on only its normal activities and begins making substances needed for division later", false, "That describes G1, the first gap phase; S phase is specifically when DNA itself is duplicated."),
+    O("The cell makes the enzymes and other proteins needed for mitosis as its final preparation for dividing", false, "That describes G2, the second gap phase; enzyme and protein preparation follows DNA duplication."),
+    O("The cell splits its cytoplasm in two by pinching the membrane, forming two separate daughter cells", false, "Splitting the cytoplasm is cytokinesis at the end of mitosis, not an event of the S phase of interphase.")
+  ],
+  tp: "ANSWER KEY: The cell duplicates its chromosomes. DETAILED RATIONALE: G1 readies substances, G2 readies enzymes and proteins, and cytokinesis splits the cell - only S duplicates the DNA itself. PRIORITY FRAMEWORK: Terminology Precision - S means synthesis of DNA; keep the three interphase stages in order." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which events define prophase?",
+  opts: [
+    O("Chromosomes coil tightly and become visible, each pair shows two chromatids at a centromere, centrioles move to opposite poles, and the nuclear membrane disappears late", true, "Correct - coiling to visibility, chromatid pairs at centromeres, centrioles migrating to poles, and the late loss of the nuclear membrane are the prophase events."),
+    O("Chromatids align in a narrow central zone while spindle fibers connect the chromatids to the centrioles positioned at the two opposite poles of the dividing cell", false, "Central alignment on spindle fibers is metaphase, the phase AFTER prophase - the chromosomes are already coiled by then."),
+    O("The centromere splits and the separated chromatids are pulled toward opposite poles of the cell by the shortening fibers of the spindle apparatus inside the cell", false, "Centromere splitting and poleward pulling define anaphase; in prophase the chromatids are still joined at the centromere."),
+    O("The nuclear membrane reforms around each new set of chromosomes, the chromosomes uncoil, and the strands of chromatin reappear as the cell returns to resting form", false, "Reforming membranes and uncoiling chromosomes define telophase, the final phase - prophase does the opposite, dismantling the membrane.")
+  ],
+  tp: "ANSWER KEY: Coiling to visibility, chromatid pairs, centrioles to poles, membrane disappears late. DETAILED RATIONALE: Each distractor is a later phase in order - metaphase aligns, anaphase pulls apart, telophase rebuilds - so phase order itself eliminates them. PRIORITY FRAMEWORK: Terminology Precision - Play Me A Tune: match the event set to the first phase only." });
+
+BANK.push({ cat: CD, type: "single", kt: ["cytokinesis"],
+  stem: "What is cytokinesis?",
+  opts: [
+    O("The pinching of the cell membrane to split the cytoplasm into two distinct cells, beginning in late anaphase", true, "Correct - cytokinesis is the cytoplasm-splitting pinch; with telophase it marks the end of mitosis."),
+    O("A fifth phase of mitosis that follows telophase, in which the chromosomes coil again for the next division", false, "Cytokinesis is NOT a fifth mitosis phase - mitosis has four phases, and cytokinesis is the pinching event, not a coiling phase."),
+    O("The phase in which a daughter cell drops out of the cycle, rests, and does not undergo mitosis for a long time", false, "Dropping out to rest is the G0 phase; cytokinesis is an active splitting event during division, not a rest state."),
+    O("The duplication of the chromosomes during interphase, which makes enough DNA for the two identical daughter cells", false, "Chromosome duplication is the S phase of interphase; cytokinesis divides cytoplasm and involves no DNA copying.")
+  ],
+  tp: "ANSWER KEY: Pinching of the membrane that splits the cytoplasm in two. DETAILED RATIONALE: The fifth-phase option is the chapter's named trap; G0 is resting and S phase is copying - cytokinesis is only the pinch. PRIORITY FRAMEWORK: Terminology Precision - four phases only; cytokinesis is an event, not a phase." });
+
+BANK.push({ cat: CD, type: "single", kt: ["G0 phase"],
+  stem: "What does it mean when a cell enters the G0 phase?",
+  opts: [
+    O("The cell drops out of the cell cycle and rests; it does not undergo mitosis, though it may re-enter the cycle after days, weeks, or years", true, "Correct - G0 is the resting exit from the cycle; re-entry is possible, and inability to enter G0 at all is characteristic of cancer cells."),
+    O("The cell begins dividing continuously without resting, producing more and more cells until a visible lump or tumor is formed in the tissue", false, "Continuous division without stopping describes cancer behavior - the failure to enter G0, which is the opposite of entering it."),
+    O("The cell duplicates its chromosomes and stocks up enzymes so that it can enter the mitotic phase at the very end of its preparation period", false, "Duplication and stocking up are the S and G2 phases of interphase, stages of preparing TO divide, not of dropping out."),
+    O("The cell undergoes its programmed death sequence, dismantling itself so that its materials can be reused by the neighboring healthy cells", false, "Programmed death is apoptosis; a G0 cell is alive and resting, and it may return to the cycle later.")
+  ],
+  tp: "ANSWER KEY: The cell drops out of the cycle and rests without dividing. DETAILED RATIONALE: Continuous division is the cancer pattern (failure to enter G0), preparation is interphase work, and programmed death is apoptosis - G0 is living rest. PRIORITY FRAMEWORK: Terminology Precision - G0 means out of the cycle, alive, and able to return." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement correctly distinguishes chromatids from the centromere?",
+  opts: [
+    O("Chromatids are the two identical strands of DNA in each chromosome pair; the centromere is the point where each chromatid is attached", true, "Correct - strands versus attachment point; when the centromere splits, anaphase begins and the chromatids separate."),
+    O("The centromere is the two identical strands of DNA in each pair; chromatids are the point where each centromere strand is attached", false, "The two terms are swapped: chromatids are the strands, and the centromere is the single attachment point joining them."),
+    O("Chromatids are the spindle fibers that pull the chromosomes; the centromere is the pole toward which the fibers pull every strand", false, "Spindle fibers and poles are cytoskeleton/centriole structures; chromatids are DNA and the centromere is a point on the chromosome."),
+    O("Chromatids are the pinched halves of the cytoplasm after division; the centromere is the membrane that reforms around each nucleus", false, "Pinched cytoplasm describes cytokinesis and the reformed membrane describes telophase - neither term belongs to chromatids or centromere.")
+  ],
+  tp: "ANSWER KEY: Chromatids = the paired DNA strands; centromere = their attachment point. DETAILED RATIONALE: Swapping the pair, assigning them to spindle structures, or assigning them to cytokinesis/telophase events all break the printed definitions. PRIORITY FRAMEWORK: Terminology Precision - strand versus point: one is material, the other is a location." });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which statement about cell division rates is correct?",
+  opts: [
+    O("Digestive tract lining cells are replaced every few days and more than 2 million red blood cells are replaced every second, while certain brain nerve cells do not reproduce at all", true, "Correct - division frequency varies considerably by tissue: gut lining and RBC production are rapid, while certain neurons never reproduce."),
+    O("All body cells divide at the same steady rate, so every tissue replaces itself on the same schedule of a few days regardless of the work that the tissue performs each day", false, "The chapter states frequency varies considerably; a single universal schedule contradicts the gut-versus-neuron contrast."),
+    O("Red blood cells are replaced every few days and digestive tract lining cells are replaced every second, while skin cells are the only body cells that never reproduce at all", false, "The rates are swapped and the non-reproducing example is wrong: RBCs turn over by the millions per second, and non-reproducers are certain nerve cells."),
+    O("Nerve cells in the brain divide the fastest of all body cells because the brain must constantly replace the neurons it uses up during thinking, learning, and memory work", false, "Certain nerve cells in the brain and spinal cord do not reproduce at all - they are the chapter's no-division example, not its fastest.")
+  ],
+  tp: "ANSWER KEY: Gut lining every few days, 2 million RBCs per second, certain neurons never. DETAILED RATIONALE: A uniform rate, swapped rates, and fast-dividing neurons each contradict the chapter's printed numbers and its named non-dividing cells. PRIORITY FRAMEWORK: Terminology Precision - division rate is tissue-specific; memorize the two numbers and the exception." });
+
+BANK.push({ cat: CD, type: "dropdown",
+  stem: "For each phase, choose what happens.<br><br>Metaphase<br>[[0]]<br><br>Anaphase<br>[[1]]<br><br>Telophase<br>[[2]]",
+  blanks: [
+    { o: [O("Chromatids align in a narrow central zone on spindle fibers", true, "Metaphase is the alignment phase - chromatids line up centrally, connected by spindle fibers."),
+           O("Centromere splits and chromatids are pulled to opposite poles", false, "Splitting and pulling apart is anaphase; metaphase holds the chromatids in central alignment."),
+           O("Nuclear membrane reforms and chromosomes uncoil to chromatin", false, "Reforming and uncoiling is telophase; metaphase occurs while the membrane is still absent.")] },
+    { o: [O("Centromere splits and chromatids are pulled to opposite poles", true, "Anaphase begins the moment the centromere splits; chromatids are then pulled to opposite poles."),
+           O("Chromatids align in a narrow central zone on spindle fibers", false, "Central alignment is metaphase, the phase just before anaphase separates the chromatids."),
+           O("Nuclear membrane reforms and chromosomes uncoil to chromatin", false, "Rebuilding the membrane is telophase, which follows anaphase rather than defining it.")] },
+    { o: [O("Nuclear membrane reforms and chromosomes uncoil to chromatin", true, "Telophase returns each new cell to the interphase state - membrane reforms, chromosomes uncoil."),
+           O("Centromere splits and chromatids are pulled to opposite poles", false, "That separation event is anaphase; by telophase the chromatids have already reached the poles."),
+           O("Chromatids align in a narrow central zone on spindle fibers", false, "Alignment is metaphase; telophase is the rebuilding phase at the end of mitosis.")] }
+  ],
+  tp: "ANSWER KEY: Metaphase aligns, anaphase separates, telophase rebuilds. DETAILED RATIONALE: The three middle-to-late phases form one sequence - line up, pull apart, rebuild - and each option belongs to exactly one step of it. PRIORITY FRAMEWORK: Terminology Precision - Play Me A Tune keeps the four phases, and their events, in order." });
+
+BANK.push({ cat: CD, type: "order",
+  stem: "Place the phases of the cell cycle in the order they occur, from first to last.",
+  items: [
+    { t: "G1 phase - the cell carries on normal activities and makes substances needed for DNA and division", r: "G1 is the first gap phase of interphase: normal work plus synthesis of substances needed for DNA." },
+    { t: "S phase - the cell duplicates its chromosomes, making enough DNA for two identical cells", r: "S follows G1: chromosome duplication is the central event of interphase." },
+    { t: "G2 phase - the cell makes enzymes and other proteins needed for mitosis as final preparation", r: "G2 is the second gap phase: final preparation, then the cell enters the M phase." },
+    { t: "M phase - mitosis divides the cell through prophase, metaphase, anaphase, and telophase", r: "The M phase is mitosis itself, ending with telophase and cytokinesis." },
+    { t: "Daughter cell decision - re-enter G1 and cycle again, or drop into G0 and rest", r: "After division each daughter cell either repeats the cycle from G1 or drops out into resting G0." }
+  ],
+  tp: "ANSWER KEY: G1, then S, then G2, then M phase, then the G1-or-G0 decision. DETAILED RATIONALE: Interphase prepares in a fixed order - substances, DNA duplication, mitosis supplies - before mitosis runs, and resting in G0 is only possible after a division completes. PRIORITY FRAMEWORK: Nursing Process (sequence) - preparation must precede division; no stage can be skipped or reordered." });
+
+/* ---------- GROWTH, DEATH AND CANCER CONCEPTS ---------- */
+BANK.push({ cat: CE, type: "single", kt: ["differentiation"],
+  stem: "What does it mean for a cell to differentiate?",
+  opts: [
+    O("To specialize - to develop the characteristics of one specific cell type, such as a red blood cell, bone cell, neuron, muscle cell, or epithelial cell", true, "Correct - differentiation is specialization: identical cells switch on different enzymes and become specific cell types."),
+    O("To divide - to split into two identical daughter cells so that the total number of cells in the tissue steadily increases during growth and repair", false, "Splitting into two identical cells is mitosis; differentiation is what makes identical copies become DIFFERENT from each other."),
+    O("To die on schedule - to complete a programmed sequence that dismantles the cell once it has become old, unnecessary, or unhealthy for the body", false, "Programmed death is apoptosis; a differentiating cell is developing a specialized job, not dismantling itself."),
+    O("To spread - to detach from its original site and travel through the body until it establishes growth at a new, secondary location in distant tissue", false, "Detaching and spreading to secondary sites is metastasis, a cancer behavior - the opposite of orderly specialization.")
+  ],
+  tp: "ANSWER KEY: To specialize into one specific cell type. DETAILED RATIONALE: Dividing is mitosis, dying on schedule is apoptosis, and spreading is metastasis - differentiation alone means becoming a specialist. PRIORITY FRAMEWORK: Terminology Precision - identical cells, different jobs: that contrast is the definition." });
+
+BANK.push({ cat: CE, type: "single", kt: ["stem cells"],
+  stem: "What is the definition of stem cells?",
+  opts: [
+    O("Relatively undifferentiated, unspecialized cells whose only function is the production of additional unspecialized cells", true, "Correct - stem cells are the unspecialized reserve; each division yields one differentiating daughter and one daughter ready to divide again."),
+    O("Highly specialized cells that perform the final work of a tissue, such as carrying oxygen or contracting to produce movement", false, "Oxygen carrying and contracting are jobs of differentiated specialists (RBCs, muscle) - stem cells are defined by being unspecialized."),
+    O("Adult cells that have been fully specialized for years and can no longer produce any new cells of any type for the tissue they serve", false, "Stem cells exist precisely to keep producing new cells; a cell that can produce nothing is not functioning as a stem cell."),
+    O("Cancer cells that have failed to specialize and therefore grow without control, invading the tissue that surrounds their original site", false, "Failure to differentiate is characteristic of cancer cells, but stem cells are normal, controlled, and necessary - not malignant.")
+  ],
+  tp: "ANSWER KEY: Undifferentiated cells whose only function is producing more unspecialized cells. DETAILED RATIONALE: Specialized workers, exhausted non-producers, and cancer cells each contradict the definition - stem cells are normal, unspecialized, and productive. PRIORITY FRAMEWORK: Terminology Precision - unspecialized is the stem cell's defining trait, in health." });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "What are induced pluripotent stem cells (iPS cells)?",
+  opts: [
+    O("Adult cells coaxed by a new technique to regress to an embryonic state, then induced to specialize into a desired cell type such as bone, muscle, or blood", true, "Correct - iPS cells are reprogrammed adult cells; they can then be directed into needed cell types without using embryos."),
+    O("Embryonic cells harvested from a donor embryo, which must be destroyed so the cells can be used to grow replacement tissue for a patient who needs it", false, "That describes the older embryo-donor approach and its ethical dilemma; iPS cells specifically ELIMINATE the need to destroy an embryo."),
+    O("Cancer cells removed during a biopsy and grown in a laboratory so that their failure to differentiate can be studied under a microscope by researchers", false, "Biopsy-grown cancer cells are a study material, not iPS cells; iPS cells start as ordinary adult cells, not tumor cells."),
+    O("Stem cells taken from adult cartilage that remain inactive for years, dividing only when the joint is injured badly enough to require new cartilage growth", false, "Inactive cartilage stem cells are a natural division-rate example; iPS cells are adult cells deliberately regressed by technique.")
+  ],
+  tp: "ANSWER KEY: Adult cells regressed to an embryonic state, then induced to specialize. DETAILED RATIONALE: Embryo destruction is what iPS avoids, biopsy cancer cells are unrelated, and inactive cartilage stem cells are natural - iPS is a technique applied to adult cells. PRIORITY FRAMEWORK: Terminology Precision - 'induced' and 'adult' are the two words that define iPS." });
+
+BANK.push({ cat: CE, type: "single", kt: ["apoptosis"],
+  stem: "Which statement correctly distinguishes apoptosis from necrosis?",
+  opts: [
+    O("Apoptosis is programmed cell death that rids the body of old, unnecessary, and unhealthy cells; necrosis is death of cells injured so severely they die", true, "Correct - apoptosis is the tidy, scheduled 'cell suicide' balancing a million replacements per second; necrosis follows severe injury such as oxygen deprivation or poison."),
+    O("Apoptosis is death of cells injured by poison or radiation; necrosis is the programmed sequence the body uses to remove old and unnecessary cells", false, "The two are swapped: injury death is necrosis, and the programmed removal sequence is apoptosis."),
+    O("Apoptosis and necrosis are two names for the same process, and both occur only when a cell is deprived of oxygen for too long a period of time", false, "They are distinct processes with distinct causes; oxygen deprivation is only one of several necrosis causes and is not apoptosis."),
+    O("Apoptosis occurs only in cancer cells that fail to differentiate, while necrosis occurs only in healthy cells at the end of their normal lifespan", false, "Apoptosis is a normal process in healthy tissue turnover, and necrosis strikes injured cells of any kind - neither is confined as stated.")
+  ],
+  tp: "ANSWER KEY: Apoptosis = programmed death; necrosis = death from severe injury. DETAILED RATIONALE: Swapping the pair is the classic trap; identical-process and cancer-only claims contradict the chapter's balance of a million cells replaced per second. PRIORITY FRAMEWORK: Terminology Precision - programmed versus injured: the cause names the death." });
+
+BANK.push({ cat: CE, type: "multi",
+  stem: "Which statements about tumors and metastasis are correct? Select all that apply.",
+  opts: [
+    O("Tumors are classified as benign (noncancerous) or malignant (cancerous).", true, "Correct - the chapter classifies tumors into exactly these two groups."),
+    O("Cancer cells can invade surrounding tissue with clawlike extensions.", true, "Correct - 'cancer' means crab; clawlike invasion of nearby tissue is one spread route."),
+    O("Cancer cells can detach from the primary site and spread to secondary sites, which is called metastasis.", true, "Correct - detachment and travel to secondary sites is metastasis, the second spread route."),
+    O("Tumor means 'swelling' and refers to a lump produced by uncontrolled, disorganized growth.", true, "Correct - a tumor is the lump a patient experiences when too many cells are produced without control."),
+    O("Benign tumors spread to secondary sites more aggressively than malignant tumors.", false, "Spreading (metastasis) is the malignant pattern; benign tumors are noncancerous and do not metastasize.")
+  ],
+  tp: "ANSWER KEY: Benign/malignant classification, clawlike invasion, detachment spread as metastasis, tumor as swelling. DETAILED RATIONALE: Four statements restate the chapter's tumor facts; the false one hands the malignant behavior - spreading - to benign tumors. PRIORITY FRAMEWORK: Safety - metastasis often causes death; classify the tumor before judging its danger." });
+
+BANK.push({ cat: CE, type: "multi", kt: ["necrosis"],
+  stem: "Which are causes of necrosis named in the chapter? Select all that apply.",
+  opts: [
+    O("Being deprived of oxygen for too long.", true, "Correct - prolonged oxygen deprivation is a printed necrosis cause."),
+    O("Being poisoned.", true, "Correct - poisoning is a printed necrosis cause."),
+    O("Being damaged by bacterial toxins.", true, "Correct - bacterial toxins are a printed necrosis cause."),
+    O("The damaging effects of radiation.", true, "Correct - radiation damage completes the chapter's four-cause necrosis list."),
+    O("Completing a programmed sequence at the end of a normal lifespan.", false, "A programmed sequence is apoptosis, the scheduled death - it is not an injury cause of necrosis.")
+  ],
+  tp: "ANSWER KEY: Oxygen deprivation, poison, bacterial toxins, radiation. DETAILED RATIONALE: All four injury causes are printed as a set; the programmed-sequence option is apoptosis wearing necrosis's name. PRIORITY FRAMEWORK: Terminology Precision - necrosis requires injury; a program is never an injury." });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 3: Cells — Definition Test</h1>';
+  h += '<div class="sub">Definition test | Herlihy, Anatomy &amp; Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

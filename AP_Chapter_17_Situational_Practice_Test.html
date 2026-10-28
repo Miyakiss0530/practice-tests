@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 17 - Function of the Heart - ATI Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK ============ */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CA = "Cardiac Cycle in Action";
+var CB = "Autonomic Effects at the Bedside";
+var CC = "Output, Preload, and Afterload Decisions";
+var CD = "Heart Failure Priorities";
+var CE = "Special Situations: Stress, Age, and Exercise";
+var CATS = [CA, CB, CC, CD, CE];
+var KEYTERMS = ["diastole","vagomimetic","vagolytic","preload","afterload","ejection fraction","orthopnea","cor pulmonale","Starling's law","atrial kick"];
+var BLUEPRINT = {
+  CA: { name: CA, count: 7 },
+  CB: { name: CB, count: 9 },
+  CC: { name: CC, count: 8 },
+  CD: { name: CD, count: 14 },
+  CE: { name: CE, count: 5 }
+};
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A telemetry patient develops a sustained heart rate of 168 beats/min and reports chest pain. BP is 104/68. Which explanation should guide the nurse's first response?",
+  opts: [
+    O("Treat the rate as urgent, because shortened filling time and reduced coronary flow are now causing the pain", true, "At very high rates diastole shortens most: less blood fills the ventricles and less coronary flow reaches the myocardium, producing chest pain."),
+    O("Reassure the patient, because a faster rate always raises output and improves flow to the heart muscle itself", false, "A dramatic rate rise shortens diastole so much that cardiac function falls rather than improves."),
+    O("Treat the pain as unrelated, because coronary flow occurs in systole and is not affected by the heart rate", false, "Coronary flow occurs during diastole, so rate directly affects it."),
+    O("Encourage slow walking, because exercise will lengthen the resting phase and restore flow to the heart muscle", false, "Walking raises demand during a symptomatic tachycardia episode instead of restoring diastole.")
+  ],
+  tp: "Extreme tachycardia shortens diastole twice over — less filling and less coronary flow — so chest pain is expected, not incidental. [Framework: ABCs]" });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A student watches a monitor: the atria contract while the ventricles are relaxed and the AV valves are open. Which conclusion is correct?",
+  opts: [
+    O("This is atrial systole, and the atria are completing the filling of the relaxed ventricles", true, "In atrial systole the atria contract and pump blood into relaxed ventricles through open AV valves."),
+    O("This is ventricular systole, and the ventricles are ejecting blood into the aorta and pulmonary trunk", false, "In ventricular systole the ventricles contract; here they are relaxed."),
+    O("This is the diastolic stage, and both chambers are resting while blood flows into the atria only", false, "In the diastolic stage both chambers relax; here the atria are contracting."),
+    O("This is a conduction failure, and the AV valves should have snapped shut before the atria contracted", false, "AV valves snap shut in ventricular systole, after atrial filling is complete.")
+  ],
+  tp: "Atrial contraction with relaxed ventricles and open AV valves can only be atrial systole — stage 1 of the cycle. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A patient's heart rate rises from 70 to 140 beats/min during a fever. Which change in the cardiac cycle is the nurse most concerned about?",
+  opts: [
+    O("Diastole shortens the most, cutting both ventricular filling and the heart muscle's own blood supply", true, "As rate increases the cycle shortens and diastole — the filling and coronary-flow phase — shortens most."),
+    O("Atrial systole shortens the most, cutting the passive flow that provides most ventricular filling", false, "Passive flow occurs in diastole, and diastole is the phase that shortens most."),
+    O("Ventricular systole shortens the most, cutting the ejection of blood into the aorta and pulmonary trunk", false, "Systole is not the phase identified as shortening most as rate rises."),
+    O("The all-chambers rest period lengthens, cutting the number of ejections the heart completes each minute", false, "The rest period shortens as rate rises; it does not lengthen.")
+  ],
+  tp: "Rate up = diastole down. Protect the filling/coronary phase when you judge any tachycardia. [Framework: ABCs]" });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "A patient in atrial fibrillation has a cardiac output well below baseline despite a controlled rate. Which finding best explains the drop?",
+  opts: [
+    O("Loss of the atrial contraction that normally adds the final portion of ventricular filling each beat", true, "With atrial fibrillation the atrial-kick contribution is missing, so filling and cardiac output decline."),
+    O("Loss of the passive flow that normally occurs while the AV valves are closed during ventricular systole", false, "Passive flow occurs in diastole with the AV valves open, and it is not the lost portion here."),
+    O("Gain of an extra contraction that empties the ventricles before the semilunar valves can open each beat", false, "Atrial fibrillation removes a contribution; it does not add an extra effective contraction."),
+    O("Gain of coronary flow during a longer diastole that washes blood back out of the filling ventricles", false, "Coronary flow supplies the myocardium; it does not wash filling blood out of the ventricles.")
+  ],
+  tp: "Atrial fibrillation costs the atrial kick — about 30% of filling — so output falls even at a controlled rate. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CA, type: "multi",
+  stem: "A patient with a heart rate of 172 beats/min is pale, restless, and reports pressure-like chest pain. Which findings fit the physiology of this episode? Select all that apply.",
+  opts: [
+    O("Less blood enters the ventricles because filling time is shortened", true, "Shortened diastole leaves less time for blood to enter the ventricles."),
+    O("Less blood is pumped out because less blood was available to eject", true, "Less filling means less blood is pumped with each beat."),
+    O("Less oxygen reaches the heart muscle because coronary flow has fallen", true, "Coronary flow occurs in diastole, so a shorter diastole means less oxygen to the myocardium."),
+    O("More blood pools in the atria because the AV valves remain shut all cycle", false, "The AV valves open in diastole and atrial systole; they are not shut all cycle."),
+    O("More oxygen reaches the heart muscle because systole is now much longer", false, "Systole does not lengthen, and coronary flow occurs in diastole.")
+  ],
+  tp: "One shortened phase explains the whole picture: less filling, less ejection, less coronary oxygen. [Framework: ABCs]" });
+
+BANK.push({ cat: CA, type: "order",
+  stem: "A new nurse is tracing one heartbeat on a diagram. Place the events in the order they occur in one cardiac cycle.",
+  items: [
+    { t: "Atria contract and pump blood into the relaxed ventricles", r: "Atrial systole is first: AV valves open, ventricles relaxed and filling." },
+    { t: "Ventricles contract and blood snaps the AV valves shut", r: "Ventricular systole begins with pressure forcing the AV valves closed." },
+    { t: "Blood pushes the semilunar valves open into the great vessels", r: "Ejection follows AV closure as blood flows into the pulmonary trunk and aorta." },
+    { t: "Both chambers relax and blood flows into the atria", r: "Diastole ends the cycle with both chambers resting and the atria filling." }
+  ],
+  tp: "Fill, close, eject, rest — pressure changes drive every valve event in that sequence. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CA, type: "single",
+  stem: "During a sprint, a healthy student's heart beats faster and stronger. Which statement about the impulse behind this response is correct?",
+  opts: [
+    O("The impulse still starts in the SA node on its own; autonomic firing only tuned its rate and force upward", true, "The cardiac impulse arises in the SA node by automaticity; the ANS changes rate, conduction speed, and force."),
+    O("The impulse now starts in the vagus nerve, which fires the SA node harder to meet the demand for oxygen", false, "The vagus slows the heart, and no nerve causes the impulse itself."),
+    O("The impulse now starts in the ventricular muscle, which takes over pacing whenever oxygen demand is high", false, "The SA node remains the pacemaker; ventricular muscle does not take over in a healthy sprint."),
+    O("The impulse is unchanged, and the faster, stronger beat comes only from blood stretching the ventricles more", false, "Autonomic firing does change rate and force during a sprint; stretch is only one mechanism.")
+  ],
+  tp: "Demand changes the tuning, not the origin — the SA node always fires its own impulse. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient having a panic attack reports a racing, pounding heart and is certain it is a heart attack. Vitals: HR 128, BP 148/88, SpO2 99%. Which interpretation fits the chapter?",
+  opts: [
+    O("Excess sympathetic firing in fight-or-flight commonly produces this picture and is often mistaken for a heart attack", true, "Very anxious people can have a racing, pounding heart from excess sympathetic firing; many ER trips for this picture are panic-related."),
+    O("Excess vagal firing in fight-or-flight commonly produces this picture and is often mistaken for a heart attack", false, "Fight-or-flight is sympathetic; vagal firing slows the heart."),
+    O("Loss of automaticity in the SA node commonly produces this picture and requires immediate pacing evaluation first", false, "The SA node is firing faster, not failing to fire."),
+    O("Failure of the left ventricle commonly produces this picture and requires a pillow-count assessment first", false, "No pulmonary edema picture is described; the pattern fits sympathetic excess.")
+  ],
+  tp: "Racing, pounding heart with anxiety = sympathetic fight-or-flight until proven otherwise — still assess, never dismiss. [Framework: Stable vs Unstable]" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient in circulatory shock is tachycardic with a weak, rapid pulse. The nurse recalls that most signs of shock come from which mechanism?",
+  opts: [
+    O("Excess sympathetic firing driving rate and vessel responses across the whole circulation", true, "Most of the signs and symptoms of circulatory shock are caused by excess sympathetic firing."),
+    O("Excess vagal firing slowing the heart and dropping output across the whole circulation", false, "Vagal excess causes bradycardia and heart block, not the shock picture."),
+    O("Loss of the atrial kick removing the final portion of filling across the whole circulation", false, "Atrial-kick loss lowers output in atrial fibrillation; it is not the stated cause of shock signs."),
+    O("Failure of Starling's law removing the stretch response across the whole circulation", false, "Starling's law matches output to return; shock signs are attributed to sympathetic excess.")
+  ],
+  tp: "Shock signs are largely sympathetic signs — read tachycardia in shock as compensation, not coincidence. [Framework: ABCs]" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient with worsening heart failure is started on a drug that minimizes sympathetic effects. What is the reason for this choice?",
+  opts: [
+    O("Persistent sympathetic stimulation drives much of the progressive deterioration in heart failure", true, "Progressive deterioration in heart failure is largely caused by persistent sympathetic nerve stimulation, so some failure drugs minimize sympathetic effects."),
+    O("Persistent sympathetic stimulation is the only mechanism that strengthens a failing heart over time", false, "Persistent sympathetic activity harms the failing heart; it does not protect it."),
+    O("Persistent vagal stimulation drives much of the deterioration, and the drug blocks the vagus nerve", false, "The deterioration driver named is sympathetic, and this drug class minimizes sympathetic effects."),
+    O("Persistent vagal stimulation slows conduction, and the drug speeds conduction through the AV node", false, "Slowed conduction is a vagal issue; the stated rationale targets sympathetic deterioration.")
+  ],
+  tp: "In failure, chronic sympathetic drive is part of the disease — blocking it is treatment, not just rate control. [Framework: Acute vs Chronic]" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "After a myocardial infarction, a patient's heart rate falls to 44 beats/min with dizziness. Which mechanism should the nurse suspect first?",
+  opts: [
+    O("Excess vagal discharge slowing the SA node and conduction toward the ventricles", true, "Excess vagal discharge after a heart attack causes bradycardia and slows conduction, predisposing to heart block and lethal rhythms."),
+    O("Excess sympathetic discharge speeding the SA node and conduction toward the ventricles", false, "Sympathetic excess raises rate; this patient is bradycardic."),
+    O("Loss of venous return reducing stretch so the SA node fires at a much slower rate", false, "SA node rate is set by its rhythmic firing and autonomic tuning, not by stretch."),
+    O("Gain of the atrial kick adding beats that the monitor is failing to count at this rate", false, "The atrial kick adds filling, not uncounted beats.")
+  ],
+  tp: "Post-MI bradycardia points first to vagal excess — rate down, conduction down, block risk up. [Framework: ABCs]" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A frightened patient suddenly becomes pale and bradycardic at 38 beats/min, with BP 82/50 — a 'brady down' response. Which drug should the nurse anticipate?",
+  opts: [
+    O("Atropine, to block the vagal effects and restore the heart rate", true, "Atropine is vagolytic: it blocks vagal stimulation, increases HR, and is used to relieve bradycardia in a 'brady down' patient."),
+    O("Digoxin, to mimic the vagal effects and slow conduction further", false, "Digoxin is vagomimetic; giving it would deepen the bradycardia."),
+    O("Propranolol, to block beta1 receptors and lower the heart rate", false, "Beta1 blockade lowers rate and force — the opposite of what this patient needs."),
+    O("Epinephrine given for its muscarinic action at the SA node", false, "Epinephrine acts as a sympathomimetic/beta1 agonist, not through muscarinic action.")
+  ],
+  tp: "Brady down = vagal surge: block the vagus with atropine; never add a vagomimetic or a beta blocker. [Framework: ABCs]" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient on digoxin has a heart rate of 52 beats/min and a new slow conduction pattern. Which digoxin effect explains both findings, and what is the priority?",
+  opts: [
+    O("Its vagomimetic effect is slowing rate and conduction — hold and report before the next dose is given", true, "Digoxin mimics vagal stimulation: it decreases HR and slows the impulse from atria to ventricles, and HR must be monitored when such drugs are used."),
+    O("Its beta1 agonist effect is speeding rate and conduction — give the dose early to restore the rhythm", false, "Digoxin is not a beta1 agonist, and the rate is slow, not fast."),
+    O("Its muscarinic blocking effect is raising rate and pressure — check the blood pressure before giving it", false, "Muscarinic blockade is atropine's action and raises rate; this rate is low."),
+    O("Its negative chronotropic effect is expected and harmless — document the findings and give the dose", false, "Bradycardia below 60 with slowed conduction on a vagomimetic drug is a reportable danger, not a harmless expectation.")
+  ],
+  tp: "Digoxin has two faces: stronger contraction and vagal slowing. HR 52 plus slow conduction = hold and report. [Framework: Safety First]" });
+
+BANK.push({ cat: CB, type: "multi",
+  stem: "A patient receives a sympathomimetic drug. Which responses should the nurse expect? Select all that apply.",
+  opts: [
+    O("Heart rate increases as SA node activity increases", true, "Sympathomimetic drugs such as epinephrine and dopamine increase HR."),
+    O("Force of contraction increases in the ventricular myocardium", true, "Sympathomimetics increase contractile force."),
+    O("Conduction through the AV node and His-Purkinje system speeds up", true, "Sympathetic stimulation increases the speed of the cardiac impulse."),
+    O("Heart rate decreases as vagal tone at the SA node increases", false, "Decreased rate is a vagal effect, the opposite branch."),
+    O("Force of contraction stays unchanged because no fibers reach the ventricles", false, "Sympathetic fibers do reach the ventricular myocardium; it is vagal fibers that do not.")
+  ],
+  tp: "Sympathomimetic = the sympathetic package: rate up, speed up, force up. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A tachycardic patient (HR 142) is given a beta1-adrenergic blocker. Which combined result should the nurse expect?",
+  opts: [
+    O("Heart rate and contractile force fall, so cardiac output and blood pressure decrease", true, "Beta1 blockade in excess-sympathetic tachycardia decreases HR and force of contraction, decreasing cardiac output and blood pressure."),
+    O("Heart rate and contractile force rise, so cardiac output and blood pressure increase", false, "That is the beta1 agonist result, not blockade."),
+    O("Heart rate falls but contractile force rises, so cardiac output stays exactly unchanged", false, "Blockade lowers force as well as rate."),
+    O("Conduction speed rises but heart rate falls, so the rhythm becomes faster and irregular", false, "Beta1 blockade does not speed conduction.")
+  ],
+  tp: "Beta1 blockade reverses the whole sympathetic package — rate, force, output, and pressure all fall together. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CB, type: "single",
+  stem: "A patient with heart block receives atropine and the rate rises with better conduction. Which receptor action explains this?",
+  opts: [
+    O("Muscarinic blockade removes the inhibiting effect of acetylcholine at the SA and AV nodes", true, "Atropine blocks ACh at muscarinic receptors, relieving vagal inhibition, increasing HR, and speeding the impulse from atria to ventricles."),
+    O("Beta1 activation adds norepinephrine effect at the SA and AV nodes and ventricular muscle", false, "Atropine does not activate beta1 receptors; it blocks muscarinic receptors."),
+    O("Muscarinic activation deepens the vagal effect at the SA and AV nodes during the block", false, "Muscarinic activation slows rate and conduction — the problem, not the treatment."),
+    O("Beta1 blockade prevents sympathetic firing from reaching the SA and AV nodes at all", false, "Beta1 blockade would slow the heart further in heart block.")
+  ],
+  tp: "Atropine works by subtraction: remove the vagal brake at muscarinic receptors and rate and conduction recover. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A patient's stroke volume rises after a fluid bolus, with no drug given and no rate change. Which mechanism most likely explains the rise?",
+  opts: [
+    O("More venous return stretched the ventricle, so contraction strengthened and ejected more per beat", true, "Starling's law: more blood entering stretches the myocardium, increasing force and stroke volume, matching output to return."),
+    O("More venous return blocked beta1 receptors, so contraction strengthened and ejected more per beat", false, "Beta1 blockade weakens contraction; it does not strengthen it."),
+    O("Less venous return stretched the ventricle, so contraction strengthened and ejected more per beat", false, "Less return means less stretch and a smaller stroke volume."),
+    O("A vagal discharge slowed conduction, so contraction strengthened and ejected more per beat", false, "Vagal discharge has no effect on contractile force.")
+  ],
+  tp: "Volume in, stretch up, force up — that is Starling's law doing its beat-to-beat matching job. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "Two patients have the same end-diastolic volume. One, given digoxin, ejects far more per beat. Which concept explains the difference?",
+  opts: [
+    O("A positive inotropic effect produced by the digoxin this patient received", true, "Digoxin is the most famous positive inotropic drug: it strengthens contraction without stretching the muscle fibers."),
+    O("A negative inotropic effect produced by the digoxin this patient received", false, "A negative inotropic effect would eject less, not more."),
+    O("A positive chronotropic effect produced by the digoxin this patient received", false, "Chronotropic is about rate, and rate was not the difference described."),
+    O("A positive dromotropic effect produced by the digoxin this patient received", false, "Dromotropic is about conduction speed, not ejection force.")
+  ],
+  tp: "Same stretch, different force = inotropic effect. Digoxin, epinephrine, and sympathetic firing are positive; failure is negative. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A patient with aortic valve stenosis has a thickened, enlarged left ventricle. Which workload concept explains the enlargement?",
+  opts: [
+    O("Raised afterload from the narrowed aortic valve opening", true, "Aortic stenosis raises left-ventricular afterload; the myocardium enlarges from the extra work and will eventually fail as a pump."),
+    O("Raised preload from the narrowed aortic valve opening", false, "Preload is filling volume (EDV); stenosis is a resistance problem."),
+    O("Lowered afterload from the narrowed aortic valve opening", false, "Stenosis raises resistance; lowered afterload reduces work."),
+    O("Lowered preload from the narrowed aortic valve opening", false, "Less filling means less stretch, not hypertrophy from stenosis.")
+  ],
+  tp: "Stenosis and hypertension raise afterload; a ventricle pumping against resistance hypertrophies, then fails. [Framework: Acute vs Chronic]" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A vasodilator drug relaxes peripheral vessels in a patient with heart failure. Why does this reduce the heart's work?",
+  opts: [
+    O("Lower blood pressure decreases afterload, so the ventricle pumps against less resistance", true, "A drug that dilates peripheral vessels lowers blood pressure and decreases afterload, reducing the work of the heart."),
+    O("Lower blood pressure increases preload, so the ventricle stretches more before each beat", false, "Peripheral dilation lowers pressure and afterload; it is not a preload-increasing action."),
+    O("Higher venous pooling increases return, so the ventricle ejects a larger volume each beat", false, "Pooling in dilated veins decreases venous return, not increases it."),
+    O("Higher contractile force increases output, so the ventricle finishes each beat much sooner", false, "Vasodilation reduces resistance; it does not raise contractile force.")
+  ],
+  tp: "Dilate the periphery → pressure down → afterload down → less work for a failing ventricle. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "An echocardiogram shows an ejection fraction of 30% in a patient with fatigue and dyspnea. How should the nurse interpret this value?",
+  opts: [
+    O("It indicates a weakened, failing heart ejecting far less of its filled volume than a healthy heart", true, "A failing heart's ejection fraction can fall to about 30%, versus about 67% at rest in a healthy heart."),
+    O("It is the normal resting value, and the symptoms must come from a noncardiac cause instead", false, "Normal resting EF is about 67%, not 30%."),
+    O("It is the expected exercise value, and the symptoms reflect normal conditioning for this patient", false, "A healthy heart reaches about 90% with exercise, not 30%."),
+    O("It indicates an unusually strong heart ejecting nearly all of its filled volume with each beat", false, "30% means most of the EDV stays behind — a weak ejection, not a strong one.")
+  ],
+  tp: "EF 30% is the failing-heart anchor. Compare every EF to 67% rest and 90% exercise before judging it. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A patient with a diseased heart reports exhaustion after walking to the bathroom, though resting vitals are normal. Which concept best explains this pattern?",
+  opts: [
+    O("Little cardiac reserve remains, so output cannot rise above resting levels to meet mild exertion", true, "Cardiac reserve is the capacity to increase output above resting; a diseased heart has little and fatigues with mild exercise."),
+    O("Little venous return remains at rest, so output falls below resting levels during any movement", false, "Resting vitals are normal; the failure is in raising output, not in resting return."),
+    O("The atrial kick is absent at rest, so output cannot begin until the patient is fully upright", false, "No atrial fibrillation is described, and output clearly occurs at rest."),
+    O("The SA node fires at 90 beats/min, so no vagal reserve remains for any increase in rate", false, "90 beats/min is the unbraked SA rate, not an explanation for exertional fatigue here.")
+  ],
+  tp: "Normal at rest, exhausted on exertion = spent cardiac reserve. Judge the heart by what it can add, not just its baseline. [Framework: Stable vs Unstable]" });
+
+BANK.push({ cat: CC, type: "dropdown",
+  stem: "Complete each statement for a patient whose veins are pharmacologically constricted.<br>Effect on venous return to the heart<br>[[0]]<br>Effect on preload (end-diastolic volume)<br>[[1]]<br>Effect on stroke volume and cardiac output<br>[[2]]",
+  blanks: [
+    { o: [ O("Increases", true, "A drug that constricts the veins increases blood flow back toward the ventricles."), O("Decreases", false, "Venoconstriction raises return; venodilation lowers it."), O("No change", false, "Venoconstriction changes return directly.") ] },
+    { o: [ O("Increases", true, "More return raises the EDV, which is preload."), O("Decreases", false, "Preload falls when return falls, as with venodilation."), O("No change", false, "Preload tracks the volume delivered to the ventricle.") ] },
+    { o: [ O("Both increase", true, "Greater preload stretches the ventricle, raising stroke volume and cardiac output."), O("Both decrease", false, "That chain follows venodilation and pooling."), O("They move oppositely", false, "Stroke volume and cardiac output move together in this chain.") ] }
+  ],
+  tp: "Constrict veins → return up → preload up → stretch up → stroke volume and output up. Dilation reverses all of it. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CC, type: "single",
+  stem: "A patient with chronic hypertension asks why the heart muscle is enlarging even though blood pressure is 'just a number.' Which teaching is correct?",
+  opts: [
+    O("High pressure is resistance the left ventricle must overcome, and working against it enlarges the muscle until it can fail", true, "Systemic hypertension raises left-ventricular afterload; the myocardium hypertrophies from the workload and will eventually fail as a pump."),
+    O("High pressure stretches the left ventricle with extra filling volume, and the stretch alone enlarges the muscle over time", false, "Hypertension is a resistance (afterload) problem, not extra filling volume."),
+    O("High pressure slows conduction from the atria, and the delayed impulse enlarges the muscle as it waits to contract", false, "Slowed conduction is heart block physiology, not the hypertension mechanism."),
+    O("High pressure raises the ejection fraction to 90% at rest, and ejecting that fully enlarges the muscle over time", false, "90% is an exercise EF in a healthy heart; hypertension harms through afterload.")
+  ],
+  tp: "Teach afterload in plain words: pressure is the load the ventricle lifts every beat, and the muscle grows — then fails — under it. [Framework: Maslow]" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A patient with left-sided failure coughs up pink, frothy sputum, is cyanotic and restless, and cannot lie flat. Which action should the nurse take first?",
+  opts: [
+    O("Sit the patient up and assess breathing and oxygenation, because fluid in the lungs is impairing oxygenation now", true, "Left-sided backward failure forces fluid into the lungs (pulmonary edema); the patient must sit up to breathe, and the signs are predominantly respiratory."),
+    O("Lay the patient flat and assess the ankles for pitting edema, because venous congestion is the priority problem now", false, "Lying flat worsens orthopnea, and ankle edema is a right-sided sign — not the immediate threat."),
+    O("Measure the pillow count and document it, because the count alone determines the severity of the edema now", false, "Pillow count gauges severity, but the patient is in respiratory distress now; positioning and oxygenation come first."),
+    O("Check the neck veins for visible pulsation, because jugular distention confirms the side of failure now", false, "JVD is a right-sided backup sign; this picture is left-sided pulmonary edema.")
+  ],
+  tp: "Pink frothy sputum plus orthopnea = pulmonary edema: sit up, assess breathing first — respiratory signs mean left-sided failure. [Framework: ABCs]" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "Which assessment finding should the nurse report to the provider immediately in a patient with heart failure?",
+  opts: [
+    O("New blood-tinged, frothy sputum with restlessness and inability to lie flat", true, "Pink frothy sputum, restlessness, and orthopnea signal pulmonary edema impairing oxygenation — an immediate respiratory threat."),
+    O("Ankle edema that pits when pressed, noted at the end of a long day of sitting", false, "Pitting ankle edema is a right-sided congestion sign to monitor, not the immediate threat here."),
+    O("A pillow count that has stayed at two pillows, unchanged for the past three nights", false, "A stable pillow count is baseline information; a rising count would be the warning."),
+    O("An enlarged liver noted on palpation, unchanged from the assessment done last week", false, "Hepatomegaly is a chronic right-sided sign; unchanged, it is not the immediate report.")
+  ],
+  tp: "Report the respiratory change immediately — pulmonary edema threatens oxygenation; stable venous signs are monitored, not emergently reported. [Framework: ABCs]" });
+
+BANK.push({ cat: CD, type: "multi",
+  stem: "A patient with right-sided failure is assessed. Which findings should the nurse expect? Select all that apply.",
+  opts: [
+    O("Neck veins that visibly pulsate when the patient is examined", true, "Backup into the superior vena cava slows jugular drainage, producing jugular vein distention."),
+    O("An enlarged liver and spleen with digestive symptoms reported", true, "Blood backing into the veins draining the liver, spleen, and digestive organs causes these findings."),
+    O("Ankle swelling that keeps an indentation after thumb pressure", true, "Pitting ankle edema is a hallmark right-sided finding."),
+    O("Frothy sputum that is tinged pink when the patient coughs", false, "Pink frothy sputum is a left-sided pulmonary edema sign."),
+    O("Breathlessness that forces the patient to sleep sitting up", false, "Orthopnea is a left-sided pulmonary edema sign.")
+  ],
+  tp: "Right-sided findings are all venous backup: neck, liver, spleen, gut, ankles. Respiratory findings belong to the left side. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A central venous pressure reading returns elevated in a patient with worsening failure. What does this measurement directly reflect?",
+  opts: [
+    O("Pressure in the right atrium and superior vena cava, indicating a failing heart at this level", true, "CVP directly measures pressure in the right atrium and superior vena cava, and an elevated CVP is indicative of a failing heart."),
+    O("Pressure in the pulmonary capillaries and left atrium, indicating fluid forced into the lungs", false, "Pulmonary capillary pressure is not what a CVP catheter in the superior vena cava measures."),
+    O("The percentage of end-diastolic volume ejected, indicating the strength of each contraction", false, "That percentage is the ejection fraction, a different measure."),
+    O("The resistance in the peripheral vessels, indicating the afterload the ventricle must overcome", false, "Afterload is a resistance concept, not the right atrial pressure CVP measures.")
+  ],
+  tp: "CVP = right atrium and SVC pressure. Elevated CVP is a direct failing-heart signal, not a percentage or a resistance. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A patient with emphysema now has jugular distention, an enlarged liver, and pitting ankle edema. Which sequence best explains this development?",
+  opts: [
+    O("Chronic lung disease raised pulmonary pressure, the right ventricle hypertrophied and failed, and blood backed into the systemic veins", true, "Cor pulmonale: chronic lung disease raises pulmonary artery pressure, the right ventricle hypertrophies and often fails, backing blood into the systemic veins."),
+    O("Chronic lung disease destroyed left ventricular muscle, the left ventricle failed, and blood backed into the pulmonary capillaries first", false, "That sequence describes left failure from MI, and its signs would be respiratory."),
+    O("Chronic lung disease raised venous return, the right ventricle stretched and strengthened, and blood moved forward too quickly", false, "Starling strengthening would improve forward flow, not produce venous backup signs."),
+    O("Chronic lung disease triggered vagal discharge, the heart slowed and blocked, and blood backed into the systemic veins slowly", false, "Vagal excess causes bradycardia and heart block, not this hypertrophy-and-failure sequence.")
+  ],
+  tp: "Lung disease → pulmonary pressure → right ventricle hypertrophy → right failure → systemic venous backup. Follow the pressure backward. [Framework: Acute vs Chronic]" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A patient treated for left-sided failure improves in breathing but now develops ankle edema and jugular distention. Which teaching explains this change?",
+  opts: [
+    O("When one side of the heart fails, the other side will eventually fail as well, adding venous backup signs", true, "Right heart failure most often follows left-sided failure; when one side fails, the other will eventually fail."),
+    O("When one side of the heart fails, the other side strengthens to compensate, adding extra forward flow signs", false, "The second side eventually fails; it does not durably strengthen."),
+    O("The new signs mean the pulmonary edema has moved from the lungs into the ankles and neck veins directly", false, "Fluid does not relocate as edema from lungs to ankles; the new signs reflect right-sided backup."),
+    O("The new signs mean the treatment strengthened contraction so much that blood is now ejected backward", false, "Positive inotropic treatment strengthens forward ejection; it does not eject blood backward.")
+  ],
+  tp: "Failure spreads across the pump: left first, right follows — new venous signs after left failure fit the natural history. [Framework: Acute vs Chronic]" });
+
+BANK.push({ cat: CD, type: "single",
+  stem: "A nurse plans heart-failure treatment goals with the team. Which set matches the chapter's four aims?",
+  opts: [
+    O("Strengthen contraction, remove excess water, decrease the heart's work, and protect it from excess sympathetic activity", true, "Those are the four stated aims of heart-failure treatment."),
+    O("Strengthen contraction, add excess water, increase the heart's work, and stimulate sympathetic activity further", false, "Three of those four aims are reversed."),
+    O("Slow conduction, remove excess water, increase the heart's work, and stimulate sympathetic activity further", false, "Slowing conduction is not an aim, and work and sympathetic activity should fall, not rise."),
+    O("Strengthen contraction, remove excess water, decrease the heart's work, and block all vagal activity permanently", false, "The fourth aim is protection from excess sympathetic activity, not permanent vagal blockade.")
+  ],
+  tp: "Four aims, one direction each: stronger, drier, less work, less sympathetic drive. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CD, type: "matrix",
+  stem: "Classify each finding for the patient described as a left-sided or right-sided heart-failure sign.",
+  cols: ["Left-sided failure", "Right-sided failure"],
+  rows: [
+    { t: "Exertional dyspnea with cyanosis and restlessness", a: 0, r: "Left-sided signs are predominantly respiratory: dyspnea, cyanosis, and restlessness from pulmonary edema." },
+    { t: "Digestive symptoms with an enlarged liver and spleen", a: 1, r: "Backup into the veins draining the liver, spleen, and digestive organs is right-sided congestion." },
+    { t: "Cough producing pink, frothy sputum", a: 0, r: "Pink frothy sputum comes from fluid forced into the lungs in left-sided backward failure." },
+    { t: "Neck veins visibly pulsating on inspection", a: 1, r: "Jugular vein distention is the right-sided backup sign from the superior vena cava." }
+  ],
+  tp: "Sort by system: lungs and breathing = left; veins, liver, and ankles = right. Never swap the two patterns. [Framework: ABCs]" });
+
+/* ---------- NGN CASE STUDY (grp NGN17) ---------- */
+BANK.push({ cat: CD, type: "multi", grp: "NGN17",
+  scen: "<b>NGN Case — Mr. R., 68, admitted with worsening heart failure.</b> History: myocardial infarction 2 years ago; chronic hypertension. Today: dyspnea on exertion, cough with pink frothy sputum, SpO2 91%, HR 118, BP 142/86, RR 26. He slept on 3 pillows last night. Neck veins are not distended; ankles show no edema. He takes digoxin daily.",
+  stem: "NGN 1 of 6 — Recognize cues: Which findings require follow-up? Select all that apply.",
+  opts: [
+    O("Pink, frothy sputum with a cough and dyspnea on exertion", true, "These are pulmonary edema cues from left-sided backward failure and impair oxygenation."),
+    O("Oxygen saturation of 91% with a respiratory rate of 26", true, "Low saturation with a fast respiratory rate confirms the respiratory compromise."),
+    O("Sleeping on three pillows because he cannot lie flat", true, "Three-pillow orthopnea gauges worsening pulmonary edema severity."),
+    O("Heart rate of 118 beats/min in a patient in respiratory distress", true, "Tachycardia accompanies pulmonary edema in the chapter's sign list."),
+    O("Ankles with no edema and neck veins that are not distended", false, "Absent right-sided signs are reassuring data, not cues requiring follow-up."),
+    O("Blood pressure of 142/86 in a patient with chronic hypertension", false, "This pressure fits his chronic history and is not the acute cue in this picture.")
+  ],
+  tp: "Recognize the respiratory cluster first — every cue requiring follow-up here points to the lungs, not the veins. [Framework: ABCs]" });
+
+BANK.push({ cat: CD, type: "single", grp: "NGN17",
+  scen: "<b>NGN Case — Mr. R., 68 (continued).</b> Same admission data: pink frothy sputum, SpO2 91%, HR 118, RR 26, 3-pillow orthopnea, no JVD, no ankle edema, prior MI, chronic hypertension, on digoxin.",
+  stem: "NGN 2 of 6 — Analyze cues: Which interpretation best links these findings?",
+  opts: [
+    O("Left-sided backward failure is backing blood into the pulmonary capillaries and forcing fluid into the lungs", true, "Left failure backs blood into the left atrium, pulmonary veins, and capillaries; pooled blood raises capillary pressure and forces fluid into the lungs."),
+    O("Right-sided backward failure is backing blood into the systemic veins and forcing fluid into the ankles and neck", false, "Right-sided backup would produce JVD and ankle edema, which are absent here."),
+    O("Forward failure alone is reducing kidney filtration, and the retained salt and water explain the lung findings fully", false, "Forward failure contributes to retention, but the lung picture is specifically backward left failure."),
+    O("Vagal excess from digoxin is slowing conduction, and the slowed impulse explains the lung findings fully", false, "His rate is 118, not slow; digoxin vagal effects do not explain pulmonary edema.")
+  ],
+  tp: "Analyze by direction: backup behind the left ventricle lands in the lungs. The absent venous signs rule the right side out. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CD, type: "single", grp: "NGN17",
+  scen: "<b>NGN Case — Mr. R., 68 (continued).</b> Pulmonary edema from left-sided failure is confirmed. He remains restless, SpO2 91%, RR 26, and cannot lie flat.",
+  stem: "NGN 3 of 6 — Prioritize hypotheses: Which problem is the priority?",
+  opts: [
+    O("Impaired oxygenation from pulmonary edema, because fluid in the lungs is limiting gas exchange now", true, "Pulmonary edema impairs oxygenation of the blood; with SpO2 91%, restlessness, and orthopnea, oxygenation is the immediate priority."),
+    O("Risk of eventual right-sided failure, because the right side will fail after the left side over time", false, "That risk is real but future; it does not outrank current impaired oxygenation."),
+    O("Chronic hypertension control, because years of high pressure overworked the left ventricle to failure", false, "Hypertension is the background cause; controlling it is not the immediate priority today."),
+    O("Digestive congestion risk, because blood may later back into the veins draining the liver and spleen", false, "No digestive or hepatic signs are present, and a possible future risk ranks below a present airway problem.")
+  ],
+  tp: "Prioritize the present oxygenation problem over background causes and future risks. [Framework: ABCs]" });
+
+BANK.push({ cat: CD, type: "multi", grp: "NGN17",
+  scen: "<b>NGN Case — Mr. R., 68 (continued).</b> Priority: impaired oxygenation from pulmonary edema. Orders are being prepared; the nurse plans interventions from the chapter's treatment aims.",
+  stem: "NGN 4 of 6 — Generate solutions: Which planned actions fit the treatment aims for this patient? Select all that apply.",
+  opts: [
+    O("Position him sitting up to ease breathing while oxygenation is assessed", true, "The patient must sit up to breathe in pulmonary edema; upright positioning is his own relief measure."),
+    O("Give the positive inotropic drug as ordered to strengthen contraction", true, "Positive inotropic drugs strengthen contractile force and relieve both backward and forward failure."),
+    O("Support removal of excess water as ordered by the provider team", true, "Removing excess water is one of the four stated aims of heart-failure treatment."),
+    O("Use ordered drugs that dilate peripheral vessels to reduce his heart's work", true, "Peripheral dilation lowers blood pressure and afterload, decreasing the work of the heart."),
+    O("Lay him flat to improve venous return and raise his cardiac output", false, "Lying flat worsens orthopnea and pulmonary edema symptoms."),
+    O("Add a beta1 agonist infusion to raise his rate from 118 even higher", false, "His rate is already elevated; raising sympathetic drive further works against protecting the heart from excess sympathetic activity.")
+  ],
+  tp: "Generate solutions from the four aims: strengthen, remove water, reduce work, protect from sympathetic excess — plus sit him up. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CD, type: "single", grp: "NGN17",
+  scen: "<b>NGN Case — Mr. R., 68 (continued).</b> Before the next digoxin dose, the nurse checks his pulse: HR 54 beats/min, and he reports feeling dizzy. His breathing remains labored.",
+  stem: "NGN 5 of 6 — Take action: Which action should the nurse take first?",
+  opts: [
+    O("Hold the digoxin dose and report the rate, because digoxin's vagal effect can produce dangerous bradycardia", true, "Digoxin is vagomimetic and can cause excess vagal discharge with bradycardia below 60, heart block, and lethal rhythm risk; HR must be monitored with such drugs."),
+    O("Give the digoxin dose now, because stronger contraction is the priority for his pulmonary edema today", false, "A rate of 54 with dizziness on a vagomimetic drug is a hold-and-report situation, not a give-now situation."),
+    O("Give atropine first and then the digoxin, because the two drugs cancel each other's cardiac effects out", false, "Atropine is for relieving bradycardia as ordered; it is not a routine pairing to permit a dose that should be held."),
+    O("Recheck the pulse in one hour and give the dose if the rate is unchanged at that later check", false, "Delaying an hour leaves a symptomatic bradycardia unreported; the dose is held and reported now.")
+  ],
+  tp: "Take action on the dangerous drug effect first: hold the vagomimetic dose at HR 54 and report — do not let the failure indication override the bradycardia. [Framework: Safety First]" });
+
+BANK.push({ cat: CD, type: "single", grp: "NGN17",
+  scen: "<b>NGN Case — Mr. R., 68 (continued).</b> Two days later: he sleeps on one pillow, SpO2 97% on room air, RR 16, HR 78, sputum is clear, and he walks to the bathroom without dyspnea.",
+  stem: "NGN 6 of 6 — Evaluate outcomes: Which conclusion is correct?",
+  opts: [
+    O("The pulmonary edema has resolved and oxygenation is restored, shown by flat sleeping, clear sputum, and normal saturation", true, "One pillow means he can lie flat again; clear sputum, SpO2 97%, and exertion without dyspnea show the left-sided picture has reversed."),
+    O("The failure has shifted to the right side, shown by flat sleeping, clear sputum, and normal saturation at this visit", false, "Right-sided shift would add JVD, hepatic enlargement, and ankle edema — none are described."),
+    O("The outcomes are unchanged from admission, because pillow count and sputum do not reflect edema severity at all", false, "Pillow count directly gauges pulmonary edema severity, and both it and the sputum have normalized."),
+    O("The patient is now in forward failure, because walking without dyspnea shows the kidneys are retaining more fluid", false, "Walking without dyspnea shows improved forward output, not forward failure.")
+  ],
+  tp: "Evaluate against the admission cues one by one: pillows, sputum, saturation, and exertional dyspnea all reversed — the intervention worked. [Framework: Nursing Process/ADPIE]" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A 54-year-old whose spouse died last week presents with chest pain and dyspnea resembling a heart attack. Imaging shows the LV apex ballooning. Which teaching is correct?",
+  opts: [
+    O("This stress cardiomyopathy usually resolves in 2 to 3 weeks with no permanent damage, and the stressor must also be addressed", true, "Takotsubo cardiomyopathy follows intense sympathetic discharge after extreme stress; in most persons it resolves in 2 to 3 weeks without permanent damage."),
+    O("This stress cardiomyopathy is permanent damage from the event, and the apex will remain ballooned for the rest of her life", false, "Most cases resolve in 2 to 3 weeks with no permanent damage."),
+    O("This is a vagal reaction to grief, and treatment focuses on atropine to block the vagus and restore the heart rate", false, "The mechanism is intense sympathetic discharge and catecholamines, not vagal excess."),
+    O("This is ordinary left failure from hypertension, and treatment focuses only on lifelong afterload reduction from today", false, "The trigger, apical ballooning, and recovery pattern identify Takotsubo, not chronic hypertensive failure.")
+  ],
+  tp: "Broken heart syndrome: grief catecholamines, spasm, apical ballooning, MI-like picture, recovery in 2–3 weeks — treat symptoms and the stressor. [Framework: Acute vs Chronic]" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "An 82-year-old becomes dizzy and nearly falls when standing quickly after exertion. Which explanation should the nurse teach?",
+  opts: [
+    O("With age the heart responds more slowly and less forcefully, so exertion and position changes can drop output and cause falls", true, "Age-related decline in exercise output means exertion, sudden movements, and position changes can decrease cardiac output, causing dizziness, loss of balance, and falls."),
+    O("With age resting output falls steadily, so any movement at all will drop output further and cause falls every time", false, "Resting output shows no significant age-related decline; the problem is the response to demand and position change."),
+    O("With age the atrial kick strengthens, so extra filling on standing floods the ventricles and causes the dizziness", false, "No strengthening of the atrial kick with age is described."),
+    O("With age pacemaker cells multiply, so the heart races on standing and the racing itself causes the dizziness", false, "The number of pacemaker cells decreases with age.")
+  ],
+  tp: "Teach the older heart's real limit: slow, weak response to demand — rise slowly after exertion to prevent falls. [Framework: Safety First]" });
+
+BANK.push({ cat: CE, type: "multi",
+  stem: "A cardiac rehabilitation nurse teaches a patient why exercise is prescribed after heart failure. Which points are correct? Select all that apply.",
+  opts: [
+    O("Exercise increases contractile strength and thereby raises cardiac output and delivery of blood", true, "Exercise strengthens contraction and improves delivery throughout the body."),
+    O("Exercise increases venous return to the heart, which helps raise cardiac output further", true, "Increased venous return is one of exercise's listed cardiac benefits."),
+    O("Exercise lowers blood pressure and decreases stress hormone secretion, reducing the heart's work", true, "Both lower pressure and fewer stress hormones decrease the work of the heart."),
+    O("Exercise is a key component of cardiac rehabilitation and improves conditioning over time", true, "The chapter names exercise as a key component of cardiac rehabilitation."),
+    O("Exercise raises triglycerides and lowers HDL, which is why it must be paired with bed rest", false, "Exercise reduces triglycerides and increases HDL, the good cholesterol.")
+  ],
+  tp: "Rehab teaching: stronger, better supplied, less loaded, less stressed — exercise is treatment, not a risk to avoid. [Framework: Maslow]" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A heavy coffee drinker reports palpitations — a jumpy heart that feels like extra beats — before an exam. Which action fits the chapter?",
+  opts: [
+    O("Explain caffeine's stimulatory effect on heart rate and monitor the rate when such stimulants are used", true, "Heavy coffee drinkers often feel palpitations from caffeine's stimulatory effect, and HR must be monitored when such drugs are used."),
+    O("Explain that caffeine slows the heart through the vagus and advise extra coffee before the exam begins", false, "Caffeine stimulates; it does not slow the heart vagally."),
+    O("Advise a beta1 agonist to steady the rhythm, because agonists are used for stimulant palpitations", false, "A beta1 agonist would add sympathetic stimulation, not steady a stimulated heart."),
+    O("Advise ignoring the palpitations entirely, because drug effects on heart rate never require monitoring", false, "The chapter states HR must be monitored when rate-changing drugs are used.")
+  ],
+  tp: "Stimulant palpitations are a rate-monitoring issue: name the cause (caffeine stimulation) and watch the HR. [Framework: Safety First]" });
+
+BANK.push({ cat: CE, type: "single",
+  stem: "A conditioned athlete's resting heart rate has fallen from 72 to 56 beats/min over a season of training, with no symptoms. Which interpretation is correct?",
+  opts: [
+    O("As conditioning improves, heart rate decreases and cardiac performance improves — this is an expected training effect", true, "Exercise conditioning lowers heart rate while improving cardiac performance; an asymptomatic trained rate fits that pattern."),
+    O("Any rate below 60 beats/min is dangerous bradycardia from vagal excess and must be treated with atropine now", false, "Bradycardia as a danger sign in the chapter is tied to excess vagal discharge or digoxin in a clinical context, not asymptomatic conditioning."),
+    O("The fall in rate means cardiac reserve is exhausted, and the athlete should stop training until the rate recovers", false, "Conditioning improves performance and reserve; it does not exhaust them."),
+    O("The fall in rate means stroke volume has collapsed, and cardiac output must now be far below the normal range", false, "A stronger conditioned heart maintains output; nothing here indicates collapse.")
+  ],
+  tp: "Context decides the number: a falling resting rate with training and no symptoms is conditioning, not a vagal emergency. [Framework: Stable vs Unstable]" });
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 17: Function of the Heart</h1>';
+  h += '<div class="sub">Brutal mode | Herlihy, Anatomy & Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>

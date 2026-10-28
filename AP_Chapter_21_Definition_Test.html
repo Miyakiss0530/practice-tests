@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 21 - Immune System - ATI Definition Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CATS = ["Lines and Types of Immunity", "First and Second Lines of Defense", "Cells Involved in Immunity", "Antigens, Antibodies, and Immune Responses", "Acquired Immunity, Vaccines, and Antibody Products", "When Immunity Goes Wrong and Transplants"];
+var KEYTERMS = ["Abscess", "Acid mantle", "Acquired immunity", "Agglutination", "Allergen", "Anaphylaxis", "Antibody-mediated immunity (AMI)", "Antigen", "Antitoxins", "Antivenoms", "Booster shot", "Cell-mediated immunity (CMI)", "Chemotaxis", "Complement proteins", "Contact dermatitis", "Diapedesis", "Febrile seizures", "Fever (pyrexia)", "Genetic immunity", "Graft-versus-host disease (GVHD)", "Granulocytopenia", "Helper T cells (CD4+ T cells)", "Herd immunity", "Hyperemia", "IgA", "IgD", "IgE", "IgG", "IgM", "Immune globulin", "Immune memory", "Immunoglobulins", "Immunology", "Immunotolerance", "Inflammation", "Interferons", "Kupffer cells", "Lysozyme", "Macrophages", "Natural killer (NK) cells", "Nonspecific immunity", "Phagocytosis", "Primary response", "Pus", "Pyrogens", "Secondary response", "Severe combined immunodeficiency (SCID)", "Specificity", "Suppressor T cells", "Toxoid", "Vaccine"];
+var BLUEPRINT = {"Lines and Types of Immunity": {"name": "Lines and Types of Immunity", "count": 5, "types": {"single": 4, "multi": 1}}, "First and Second Lines of Defense": {"name": "First and Second Lines of Defense", "count": 8, "types": {"single": 7, "multi": 1}}, "Cells Involved in Immunity": {"name": "Cells Involved in Immunity", "count": 5, "types": {"single": 4, "multi": 1}}, "Antigens, Antibodies, and Immune Responses": {"name": "Antigens, Antibodies, and Immune Responses", "count": 8, "types": {"single": 7, "multi": 1}}, "Acquired Immunity, Vaccines, and Antibody Products": {"name": "Acquired Immunity, Vaccines, and Antibody Products", "count": 7, "types": {"single": 6, "multi": 1}}, "When Immunity Goes Wrong and Transplants": {"name": "When Immunity Goes Wrong and Transplants", "count": 6, "types": {"single": 5, "multi": 1}}};
+BANK.push({"cat": "Lines and Types of Immunity", "type": "single", "stem": "Which statement correctly defines nonspecific (innate) immunity?", "opts": [{"t": "It protects against many different types of foreign agents, and the body does not need to recognize the specific agent.", "c": true, "r": "Nonspecific immunity is broad: it acts against many agents without identifying the specific one, and we are born with it."}, {"t": "It hones in on one specific substance and protects against that substance but not against others.", "c": false, "r": "That is the definition of specific (adaptive) immunity, the opposite arm."}, {"t": "It develops only after a first exposure and then responds faster on every later exposure.", "c": false, "r": "A faster second response describes immune memory, a trait of specific immunity, not innate defense."}, {"t": "It is carried out only by lymphocytes and macrophages working in the third line of defense.", "c": false, "r": "Lymphocytes and macrophages are the third (specific) line; nonspecific defense is the first and second lines."}], "tp": "Nonspecific = broad, born with it, no recognition needed. Specific = one target, specificity plus memory. [Framework: Nursing Process/ADPIE]", "kt": ["Nonspecific immunity"]});
+BANK.push({"cat": "Lines and Types of Immunity", "type": "single", "stem": "Which pair of characteristics distinguishes specific immunity from nonspecific immunity?", "opts": [{"t": "Specificity and memory: it homes in on one foreign substance and responds faster and more robustly on re-exposure.", "c": true, "r": "The guide names exactly two distinguishing characteristics of specific immunity: specificity and memory."}, {"t": "Speed and strength: it reacts within minutes and destroys every type of pathogen it encounters.", "c": false, "r": "Specific immunity is not defined by minutes-fast, all-pathogen action; that breadth belongs to nonspecific defense."}, {"t": "Barriers and reflexes: it keeps pathogens out of the body with skin, mucus, sneezing, and coughing.", "c": false, "r": "Barriers and reflexes are the first line of nonspecific defense, not characteristics of specific immunity."}, {"t": "Fever and inflammation: it raises body temperature and produces redness, heat, swelling, and pain.", "c": false, "r": "Fever and inflammation are second-line nonspecific processes, not the defining traits of specific immunity."}], "tp": "Two words separate specific from nonspecific: specificity and memory. [Framework: Nursing Process/ADPIE]", "kt": ["Specificity", "Immune memory"]});
+BANK.push({"cat": "Lines and Types of Immunity", "type": "single", "stem": "A child who had measles is exposed again years later and does not become ill. Which concept from the guide explains this protection?", "opts": [{"t": "Memory: on re-exposure, memory cells are activated very quickly and produce many antibody-secreting plasma cells.", "c": true, "r": "The guide's own example: later measles exposure finds memory cells that remember the first exposure and respond before illness develops."}, {"t": "Immunotolerance: the body has learned to perceive the measles virus as part of itself.", "c": false, "r": "Immunotolerance is recognition of self; treating a virus as self would prevent a response, not protect against illness."}, {"t": "Genetic immunity: the child was born with inherited immunity to the measles virus.", "c": false, "r": "Genetic (species) immunity covers diseases of other species, not protection gained after having measles."}, {"t": "Herd immunity: enough other children are immune, so the virus never reaches this child.", "c": false, "r": "Herd immunity is indirect population protection; this child is protected by his own memory cells from the first infection."}], "tp": "Had it once, immune later = memory cells and the secondary response. Tolerance, genetic, and herd immunity are different mechanisms. [Framework: Acute vs Chronic]", "kt": ["Immune memory", "Secondary response"]});
+BANK.push({"cat": "Lines and Types of Immunity", "type": "single", "stem": "Which grouping correctly matches the three lines of defense with their members?", "opts": [{"t": "First: mechanical barriers, chemical barriers, reflexes. Second: phagocytosis, inflammation, fever, protective proteins, NK cells. Third: lymphocytes and macrophages.", "c": true, "r": "This is Fig. 21.2 exactly: lines one and two are nonspecific; line three is specific."}, {"t": "First: phagocytosis, inflammation, fever. Second: barriers, chemicals, reflexes. Third: lymphocytes and macrophages.", "c": false, "r": "The first two lines are swapped: barriers and reflexes come first; phagocytosis, inflammation, and fever are second."}, {"t": "First: barriers, chemicals, reflexes. Second: lymphocytes and macrophages. Third: phagocytosis, inflammation, fever, protective proteins.", "c": false, "r": "Lymphocytes are the third (specific) line, and the phagocyte processes are second, not third."}, {"t": "First: interferons and complement. Second: barriers, chemicals, reflexes. Third: inflammation, fever, and phagocytosis.", "c": false, "r": "Interferons and complement are second-line protective proteins; every line in this option is misplaced."}], "tp": "Lines 1-2 nonspecific, line 3 specific. Barriers first, eating/inflaming second, lymphocytes third. [Framework: Nursing Process/ADPIE]"});
+BANK.push({"cat": "Lines and Types of Immunity", "type": "multi", "stem": "Which statements about the immune system as a whole are correct according to the guide? Select all that apply.", "opts": [{"t": "It defends the body against pathogens, foreign substances such as pollens, and cancer cells.", "c": true, "r": "The guide defines the immune system's targets as pathogens, foreign substances such as pollens, and cancer cells."}, {"t": "Its study is called immunology.", "c": true, "r": "The guide states directly: the study of the immune system is called immunology."}, {"t": "It is restricted to a single organ, the thymus gland.", "c": false, "r": "The guide stresses the opposite: immunity is not restricted to a single organ or tissue and is diffusely scattered through the body."}, {"t": "Its key specific-immunity cells are the lymphocytes and the macrophages.", "c": true, "r": "B and T lymphocytes plus macrophages are named as the key cells of specific immunity."}, {"t": "It stops working once the first line of defense is breached.", "c": false, "r": "A breach of line one simply hands the fight to lines two and three; the system fights in three lines."}], "tp": "Immune system: fights pathogens, pollens, cancer cells; scattered body-wide; key specific cells are lymphocytes and macrophages. [Framework: Nursing Process/ADPIE]", "kt": ["Immunology"]});
+BANK.push({"cat": "First and Second Lines of Defense", "type": "single", "stem": "Which statement correctly describes the first line of defense?", "opts": [{"t": "Intact skin and mucous membranes block entry, supported by acid, enzymes, mucus, cilia, and reflexes such as sneezing and coughing.", "c": true, "r": "Line one is keep-them-out: mechanical barriers, chemical barriers, and reflexes."}, {"t": "Leukocytes ingest and digest any pathogen that enters, producing pus at the site of infection.", "c": false, "r": "Ingesting pathogens is phagocytosis, a second-line process that starts only after line one is penetrated."}, {"t": "Lymphocytes recognize a specific antigen and mount a targeted response against that substance alone.", "c": false, "r": "Targeted lymphocyte responses are the third line, not the first."}, {"t": "Proteins circulate in the blood and, when activated, punch holes in a bacterium's membrane.", "c": false, "r": "That describes complement proteins, part of the second line of defense."}], "tp": "First line = barriers, chemicals, reflexes. Destruction of these barriers is an invitation to invasion. [Framework: Safety First]"});
+BANK.push({"cat": "First and Second Lines of Defense", "type": "single", "stem": "What is the acid mantle, as defined in the guide?", "opts": [{"t": "An acid coating on the skin, formed by sebaceous and sweat gland secretions, that inhibits bacterial growth.", "c": true, "r": "The acid mantle is one of the skin's three defenses, alongside its intact surface and continuous sloughing."}, {"t": "A layer of mucus in the respiratory tract that traps inhaled foreign material until the cilia sweep it out.", "c": false, "r": "Mucus trapping is a respiratory chemical/mechanical defense; the acid mantle is on the skin."}, {"t": "An enzyme in tears and saliva that discourages the growth of pathogens on moist surfaces.", "c": false, "r": "That enzyme is lysozyme, a chemical barrier, not the acid mantle."}, {"t": "A cloud of bactericidal chemicals that a neutrophil secretes around itself when prompted to phagocytose.", "c": false, "r": "The bactericidal cloud is a neutrophil killing zone during phagocytosis, a second-line event."}], "tp": "Acid mantle = skin acid coating from sebaceous and sweat glands. Lysozyme is the enzyme in tears, saliva, and perspiration. [Framework: Nursing Process/ADPIE]", "kt": ["Acid mantle", "Lysozyme"]});
+BANK.push({"cat": "First and Second Lines of Defense", "type": "single", "stem": "A phagocyte squeezes between the endothelial cells of a capillary wall to reach infected tissue. The guide names this process:", "opts": [{"t": "Diapedesis: traveling neutrophils and monocytes pass through the tiny gaps in capillary walls and enter the tissue spaces.", "c": true, "r": "Diapedesis is defined exactly as this squeezing-through movement toward the infection site."}, {"t": "Chemotaxis: chemicals released by injured cells attract the phagocytes toward the injured site.", "c": false, "r": "Chemotaxis is the attraction (the scent trail); diapedesis is the physical passage through the capillary wall."}, {"t": "Agglutination: antibodies bound to antigens clump together so phagocytes can destroy them more easily.", "c": false, "r": "Agglutination is an antibody action in specific immunity, not a phagocyte movement."}, {"t": "Hyperemia: increased blood flow brings more blood, and more phagocytes, into the injured tissue.", "c": false, "r": "Hyperemia explains redness and heat in inflammation; it is not the squeezing through the capillary wall."}], "tp": "Diapedesis = squeeze through. Chemotaxis = follow the chemical scent. Do not swap the pair. [Framework: Nursing Process/ADPIE]", "kt": ["Diapedesis", "Chemotaxis"]});
+BANK.push({"cat": "First and Second Lines of Defense", "type": "single", "stem": "Which sequence correctly describes how a phagocyte destroys a pathogen?", "opts": [{"t": "Pseudopods surround the pathogen and fuse, enclosing it; a lysosome then fuses with it and releases potent enzymes that destroy it.", "c": true, "r": "The guide's mechanics: false feet enclose, lysosome fuses, enzymes destroy."}, {"t": "The phagocyte secretes antibodies that bind the pathogen, and the clumped pathogen is then filtered out by the spleen.", "c": false, "r": "Phagocytes do not secrete antibodies; plasma cells do. Phagocytosis is direct eating and enzyme digestion."}, {"t": "Complement attaches first and punches holes, and the phagocyte only disposes of the already-dead pathogen.", "c": false, "r": "Complement can enhance phagocytosis, but the phagocyte's own method is pseudopod enclosure plus lysosomal enzymes."}, {"t": "The phagocyte traps the pathogen in mucus and cilia sweep it toward the throat to be coughed up.", "c": false, "r": "Mucus and cilia are first-line respiratory barriers, not the mechanism of phagocytosis."}], "tp": "Eat it in three moves: pseudopods enclose, lysosome fuses, enzymes destroy. [Framework: Nursing Process/ADPIE]", "kt": ["Phagocytosis"]});
+BANK.push({"cat": "First and Second Lines of Defense", "type": "single", "stem": "Which pairing of an inflammation sign with its cause is correct?", "opts": [{"t": "Redness and heat result from vasodilation and increased blood flow (hyperemia); swelling results when histamine makes vessel walls leak fluid.", "c": true, "r": "The guide assigns each classic sign a mechanism: dilation/hyperemia for redness and heat, leaky walls for swelling, accumulated fluid and chemicals stimulating pain receptors for pain."}, {"t": "Redness and heat result from pus collecting under the skin; swelling results from blood vessels constricting in the injured tissue.", "c": false, "r": "Pus is dead cells and secretions, not the cause of redness; vessels dilate, not constrict, in inflammation."}, {"t": "Swelling results from pyrogens resetting the hypothalamus; pain results from complement punching holes in tissue cells.", "c": false, "r": "Pyrogens cause fever, and complement attacks bacterial membranes, not the body's own tissue cells."}, {"t": "Pain results from the walled-off abscess pressing on the skin surface; heat results from fever reaching the injured area.", "c": false, "r": "Pain comes from fluid and irritating chemicals stimulating pain receptors at the site, not from abscess pressure."}], "tp": "Sign-to-cause: red/hot = dilated vessels and hyperemia; swelling = leaky walls; pain = fluid and chemicals on pain receptors. [Framework: Nursing Process/ADPIE]", "kt": ["Inflammation", "Hyperemia"]});
+BANK.push({"cat": "First and Second Lines of Defense", "type": "multi", "stem": "Which statements about fever (pyrexia) are correct according to the guide? Select all that apply.", "opts": [{"t": "Pyrogens released by phagocytes stimulate the hypothalamus to reset the body's temperature upward.", "c": true, "r": "Fever starts when phagocyte-released pyrogens reset the hypothalamic thermostat."}, {"t": "A fever stimulates phagocytosis and decreases the ability of certain pathogens to multiply.", "c": true, "r": "Those are the guide's two stated benefits of fever."}, {"t": "Reducing a fever always shortens an infection and should be done at any elevation.", "c": false, "r": "The guide states the opposite concern: evidence suggests reducing fever prolongs an infection; only a very high fever must be reduced."}, {"t": "A very high fever must be reduced because high body temperature may cause severe, irreversible brain damage.", "c": true, "r": "That caution is stated word-for-word in the guide."}, {"t": "Seizures caused by an elevated body temperature are called febrile seizures and occur especially in children.", "c": true, "r": "Febrile (fever) seizures are the guide's named risk of high fever in children."}], "tp": "Fever helps twice (more phagocytosis, slower pathogens) but a very high fever must come down: brain damage and febrile seizures. [Framework: Safety First]", "kt": ["Fever (pyrexia)", "Pyrogens", "Febrile seizures"]});
+BANK.push({"cat": "First and Second Lines of Defense", "type": "single", "stem": "Which statement correctly defines interferons?", "opts": [{"t": "Proteins secreted by virus-infected cells that diffuse to neighboring cells and prevent viral replication there.", "c": true, "r": "Interferons are the viral alarm; they were named because they interfered with viral replication, and they also activate NK cells and macrophages."}, {"t": "Proteins that circulate in inactive form and, once activated, punch holes in a bacterium's outer membrane.", "c": false, "r": "Hole-punching describes complement proteins, not interferons."}, {"t": "Chemicals secreted by helper T cells that activate cytotoxic T cells and B cells.", "c": false, "r": "Those chemicals are cytokines, part of specific immunity."}, {"t": "Antibodies secreted by plasma cells that clump antigens together for easier phagocytosis.", "c": false, "r": "Antibodies are immunoglobulins from plasma cells; interferons come from virus-infected cells themselves."}], "tp": "Interferon = infected cell warns the neighbors and blocks viral replication. Complement = punches holes in bacteria. [Framework: Nursing Process/ADPIE]", "kt": ["Interferons", "Complement proteins"]});
+BANK.push({"cat": "First and Second Lines of Defense", "type": "single", "stem": "An abscess is best defined as:", "opts": [{"t": "A walled-off area of infected debris that restricts the spread of infection throughout the body.", "c": true, "r": "The wall the cells build around pus and debris is the abscess, and its benefit is containment."}, {"t": "The accumulation of dead phagocytes, injured cells, pathogens, and secretions at an infected site.", "c": false, "r": "That accumulation is pus; the abscess is the walled-off area built around it."}, {"t": "A surgical procedure in which infected tissue is lanced and drained to relieve pressure.", "c": false, "r": "Lancing and draining is a treatment for a large abscess, not the definition of the abscess itself."}, {"t": "The increased blood flow to injured tissue that causes the redness and heat of inflammation.", "c": false, "r": "Increased blood flow is hyperemia, an inflammation mechanism, not an abscess."}], "tp": "Pus is the debris; abscess is the wall around it. Containment is the benefit; large abscesses get lanced and drained. [Framework: Safety First]", "kt": ["Abscess", "Pus"]});
+BANK.push({"cat": "Cells Involved in Immunity", "type": "single", "stem": "According to Table 21.1, which cell is correctly matched with its function?", "opts": [{"t": "Eosinophils destroy parasites; basophils secrete histamine, leukotrienes, and heparin; neutrophils perform phagocytosis.", "c": true, "r": "All three granular leukocyte matches are exactly as Table 21.1 lists them."}, {"t": "Eosinophils secrete antibodies; basophils destroy parasites; neutrophils secrete histamine and heparin.", "c": false, "r": "Antibodies come from plasma cells; parasites are the eosinophils' target; histamine and heparin come from basophils."}, {"t": "Neutrophils remember antigens; eosinophils perform phagocytosis; basophils kill cells in cell-to-cell combat.", "c": false, "r": "Memory belongs to memory B and T cells; cell-to-cell killing belongs to cytotoxic T cells."}, {"t": "Basophils present antigens to lymphocytes; neutrophils destroy parasites; eosinophils transform into macrophages.", "c": false, "r": "Antigen presentation is a macrophage role; monocytes, not eosinophils, transform into macrophages."}], "tp": "Granular trio from Table 21.1: neutrophils eat, basophils secrete histamine/leukotrienes/heparin, eosinophils destroy parasites. [Framework: Nursing Process/ADPIE]"});
+BANK.push({"cat": "Cells Involved in Immunity", "type": "single", "stem": "Which statement about macrophages is correct?", "opts": [{"t": "They are found in almost all organs and tissues, perform phagocytosis, and present antigens to lymphocytes.", "c": true, "r": "Table 21.1 lists macrophages in almost all organs and tissues with both jobs: phagocytosis and antigen presentation."}, {"t": "They make up 70% to 80% of the blood's lymphocytes and attack antigens by cell-to-cell contact.", "c": false, "r": "The 70%-80% figure and direct attack describe T cells, not macrophages."}, {"t": "They are derived from B cells and secrete large quantities of antibodies into the blood.", "c": false, "r": "Antibody secretion is the plasma cell's job; macrophages come from monocytes."}, {"t": "They exist only inside the liver, where they are attached to the walls of the sinusoids.", "c": false, "r": "Only Kupffer cells are the liver's fixed macrophages; macrophages in general are in almost all organs and tissues."}], "tp": "Macrophages: everywhere, big eaters, and antigen presenters. Kupffer cells are just the liver's named fixed macrophages. [Framework: Nursing Process/ADPIE]", "kt": ["Macrophages", "Kupffer cells"]});
+BANK.push({"cat": "Cells Involved in Immunity", "type": "single", "stem": "Which cell pairing is correct for the helper and suppressor T cells?", "opts": [{"t": "Helper T cells secrete cytokines that activate T, B, and other cells; suppressor T cells inhibit B- and T-cell activity.", "c": true, "r": "Helper turns the response on through cytokines; suppressor dampens it and helps control the response."}, {"t": "Helper T cells kill cells in cell-to-cell combat; suppressor T cells remember antigens for a second encounter.", "c": false, "r": "Cell-to-cell killing is the cytotoxic T cell; remembering is the memory T cell."}, {"t": "Helper T cells secrete antibodies; suppressor T cells secrete cytokines that activate other cells.", "c": false, "r": "Antibodies come from plasma cells, and cytokine activation is the helper's role, not the suppressor's."}, {"t": "Helper T cells inhibit the immune response; suppressor T cells activate cytotoxic T cells with cytokines.", "c": false, "r": "The two roles are swapped: helpers activate, suppressors inhibit."}], "tp": "Helper = on switch (cytokines). Suppressor = off switch (inhibits B and T activity). Cytotoxic = killer. Memory = rememberer. [Framework: Nursing Process/ADPIE]", "kt": ["Helper T cells (CD4+ T cells)", "Suppressor T cells"]});
+BANK.push({"cat": "Cells Involved in Immunity", "type": "single", "stem": "Natural killer (NK) cells are best described as:", "opts": [{"t": "A special type of lymphocyte from lymphoid tissue that kills a variety of cells nonspecifically, including many microbes and certain cancer cells.", "c": true, "r": "NK cells are nonspecific killers that cooperate with the specific defenses."}, {"t": "Phagocytes that send out pseudopods \u2014 false feet \u2014 to engulf pathogens, then fuse a lysosome with the trapped pathogen and digest it with potent enzymes.", "c": false, "r": "That is phagocytosis by neutrophils and macrophages; NK cells kill cells but are not the guide's phagocytes."}, {"t": "Antibody-secreting cells derived from B cells, formed in the clone produced after a macrophage presents the antigen and helper T-cell cytokines activate the B cell.", "c": false, "r": "That describes plasma cells; NK cells do not secrete antibodies."}, {"t": "Cells that originate in the bone marrow, mature in the thymus gland, and then attack one specific antigen directly through cell-to-cell contact in lymphatic tissue.", "c": false, "r": "Specific, thymus-matured, cell-to-cell attack describes T cells; NK action is nonspecific."}], "tp": "NK = nonspecific lymphocyte killer of microbes and certain cancer cells; it sits in the second line. [Framework: Nursing Process/ADPIE]", "kt": ["Natural killer (NK) cells"]});
+BANK.push({"cat": "Cells Involved in Immunity", "type": "multi", "stem": "Which statements about T cells and B cells are correct? Select all that apply.", "opts": [{"t": "T cells make up 70% to 80% of the blood's lymphocytes, and B cells make up 20% to 30%.", "c": true, "r": "Those are the guide's percentages for circulating lymphocytes."}, {"t": "T cells mature in the thymus gland, which is why the T stands for thymus-derived.", "c": true, "r": "About half the lymphocytes travel to the thymus during fetal development and differentiate into T cells."}, {"t": "B cells differentiate in the fetal liver and bone marrow, and the B stands for bone.", "c": true, "r": "The guide gives B cells the bone-marrow origin for their name."}, {"t": "Both T cells and B cells originate from stem cells in the red bone marrow.", "c": true, "r": "Both lines start in bone marrow; only their maturation sites differ."}, {"t": "T cells secrete antibodies into the blood, and B cells kill by cell-to-cell contact.", "c": false, "r": "The jobs are reversed: B cells work through secreted antibodies; T cells attack directly by contact."}], "tp": "Both born in bone marrow. T matures in thymus (70-80%), B in bone (20-30%). T touches; B secretes. [Framework: Nursing Process/ADPIE]"});
+BANK.push({"cat": "Antigens, Antibodies, and Immune Responses", "type": "single", "stem": "Which statement correctly defines an antigen?", "opts": [{"t": "A substance, generally a large molecule and usually a protein, that stimulates the formation of antibodies.", "c": true, "r": "Antigen literally points to antibody generating; most antigens are proteins, a few are polysaccharides and lipids."}, {"t": "A protein secreted by plasma cells that binds to foreign substances and marks them for destruction.", "c": false, "r": "That is an antibody (immunoglobulin); an antigen is what stimulates antibody formation."}, {"t": "Any substance produced by the body itself that the immune system learns to tolerate before birth.", "c": false, "r": "Self substances are nonantigenic because of immunotolerance; antigens are the foreign substances attacked."}, {"t": "A chemical released by injured cells that attracts phagocytes to the site of an infection.", "c": false, "r": "Attracting phagocytes is chemotaxis; it is not the definition of an antigen."}], "tp": "Antigen = antibody generator. Antibody = the protein made in response. Never swap the pair. [Framework: Nursing Process/ADPIE]", "kt": ["Antigen"]});
+BANK.push({"cat": "Antigens, Antibodies, and Immune Responses", "type": "single", "stem": "Failure of immunotolerance results in which condition, as described in the guide?", "opts": [{"t": "Autoimmune disease: the immune system fails to identify self and mounts an attack against its own cells, as in rheumatoid arthritis.", "c": true, "r": "The guide ties failed self-recognition directly to autoimmune disease and names rheumatoid arthritis."}, {"t": "Anaphylaxis: the immune system overreacts to a foreign allergen with massive vasodilation and bronchoconstriction.", "c": false, "r": "Anaphylaxis is an IgE/mast-cell allergy event, not a failure to recognize self."}, {"t": "Immunodeficiency: the immune system cannot mount any defense against invading pathogens.", "c": false, "r": "In immunodeficiency the defense is absent or weak; in failed tolerance the defense is present but aimed at self."}, {"t": "Contact dermatitis: T cells accumulate in the skin after repeated exposure to a chemical.", "c": false, "r": "Contact dermatitis is a delayed allergy to an external chemical, not an attack on self."}], "tp": "Immunotolerance = self-recognition. Lose it and the attack turns inward: autoimmune disease. [Framework: Nursing Process/ADPIE]", "kt": ["Immunotolerance"]});
+BANK.push({"cat": "Antigens, Antibodies, and Immune Responses", "type": "single", "stem": "Which statement correctly contrasts cell-mediated and antibody-mediated immunity?", "opts": [{"t": "In CMI, T cells attack antigens directly through cell-to-cell contact; in AMI, B cells interact indirectly by secreting antibodies.", "c": true, "r": "Direct touch versus indirect antibodies is the guide's core contrast between the two arms."}, {"t": "In CMI, B cells secrete antibodies into the blood; in AMI, T cells kill by punching holes in membranes.", "c": false, "r": "The cell types are swapped: T cells do the direct killing, B cells do the antibody secreting."}, {"t": "CMI is a nonspecific defense, while AMI is the specific defense carried out by lymphocytes.", "c": false, "r": "Both CMI and AMI are specific (third-line) defenses; nonspecific defense is lines one and two."}, {"t": "CMI depends on memory cells, while AMI produces no memory cells and cannot respond a second time.", "c": false, "r": "Both arms produce memory cells: memory T cells in CMI and memory B cells in AMI."}], "tp": "T touches (CMI, direct). B broadcasts antibodies (AMI, indirect, humoral). Both are specific; both make memory. [Framework: Nursing Process/ADPIE]", "kt": ["Cell-mediated immunity (CMI)", "Antibody-mediated immunity (AMI)"]});
+BANK.push({"cat": "Antigens, Antibodies, and Immune Responses", "type": "single", "stem": "Which immunoglobulin is correctly matched with its guide description?", "opts": [{"t": "IgA is found primarily in exocrine secretions, and the IgA in breast milk helps the infant ward off infection.", "c": true, "r": "IgA is the secretion class: milk, tears, and gastric juice."}, {"t": "IgM is found on the surface of B cells and participates in the activation of B cells.", "c": false, "r": "The B-cell surface class is IgD; IgM is the plasma class that includes anti-A and anti-B antibodies."}, {"t": "IgE is found in plasma and tissue fluids and is particularly effective against bacteria, viruses, and toxins.", "c": false, "r": "That description belongs to IgG; IgE is the class that participates in allergic reactions."}, {"t": "IgG is the class that includes the anti-A and anti-B antibodies associated with red blood cells.", "c": false, "r": "Anti-A and anti-B are IgM antibodies; IgG is the plasma and tissue-fluid workhorse."}], "tp": "IgG plasma workhorse, IgA secretions and breast milk, IgM anti-A/anti-B, IgD on B cells, IgE allergy. [Framework: Nursing Process/ADPIE]", "kt": ["IgG", "IgA", "IgM", "IgD", "IgE"]});
+BANK.push({"cat": "Antigens, Antibodies, and Immune Responses", "type": "single", "stem": "Which statement correctly contrasts the primary and secondary immune responses?", "opts": [{"t": "The primary response develops slowly and produces few antibodies; the secondary response is quick and produces many antibodies.", "c": true, "r": "Slow-and-few versus fast-and-many is the guide's Fig. 21.5 contrast, powered by memory cells on the second exposure."}, {"t": "The primary response is quick and produces many antibodies; the secondary response develops slowly with few antibodies.", "c": false, "r": "The two responses are reversed; the second exposure is the fast, large one."}, {"t": "The primary response uses memory cells, while the secondary response must build plasma cells from the beginning.", "c": false, "r": "Memory cells are formed during the primary response and drive the secondary response."}, {"t": "The primary response is passive immunity, while the secondary response is active immunity.", "c": false, "r": "Primary and secondary describe first and second exposures within active immunity, not the active/passive split."}], "tp": "First exposure: slow, few. Second exposure: fast, many \u2014 memory cells are the reason boosters work. [Framework: Acute vs Chronic]", "kt": ["Primary response", "Secondary response"]});
+BANK.push({"cat": "Antigens, Antibodies, and Immune Responses", "type": "single", "stem": "What happens in the antigen-antibody reaction called agglutination?", "opts": [{"t": "Antibodies bind to antigens and the components clump together, making it easier for phagocytic cells to destroy the antigen.", "c": true, "r": "Agglutination is clumping that sets the antigen up for phagocytosis; alone, direct antibody attack is not very helpful."}, {"t": "Antibodies punch holes in the antigen's membrane so fluid and electrolytes rush in and burst it.", "c": false, "r": "Hole-punching and bursting describe complement action, the indirect antibody attack."}, {"t": "Antibodies dissolve the antigen directly, without any help from phagocytes or complement.", "c": false, "r": "The guide states direct attack by antibodies alone is not very helpful under normal conditions."}, {"t": "Antigens bind to antibodies on mast cells, which then release histamine and leukotrienes.", "c": false, "r": "That is the immediate allergic reaction (IgE on mast cells), not agglutination."}], "tp": "Agglutinate = clump for the phagocytes. Complement = the indirect attack that lyses. [Framework: Nursing Process/ADPIE]", "kt": ["Agglutination"]});
+BANK.push({"cat": "Antigens, Antibodies, and Immune Responses", "type": "multi", "stem": "Which statements describe what antibodies do, according to the guide? Select all that apply.", "opts": [{"t": "They bind to antigens and clump them together (agglutination), easing destruction by phagocytic cells.", "c": true, "r": "That is the direct antigen-antibody reaction described in the guide."}, {"t": "They activate complement proteins, which stimulate chemotaxis, promote agglutination, and encourage lysis of the pathogen.", "c": true, "r": "That is the indirect attack: antibody-activated complement enhances the whole response."}, {"t": "They are proteins called immunoglobulins and make up the gamma globulin fraction of plasma proteins.", "c": true, "r": "The guide defines antibodies exactly this way."}, {"t": "Each B cell interacts with many antigens and produces one general-purpose antibody for all of them.", "c": false, "r": "Each B cell interacts with a specific antigen and produces its own antibody; B cells can produce over 10 million different antibodies."}, {"t": "They squeeze through capillary walls by diapedesis to reach infected tissue.", "c": false, "r": "Diapedesis is a movement of neutrophils and monocytes, not something antibodies do."}], "tp": "Antibodies: clump directly, activate complement indirectly, are immunoglobulins, and each is specific to one antigen. [Framework: Nursing Process/ADPIE]", "kt": ["Immunoglobulins", "Agglutination"]});
+BANK.push({"cat": "Antigens, Antibodies, and Immune Responses", "type": "single", "stem": "In both T-cell and B-cell activation, which step comes immediately before the production of a clone?", "opts": [{"t": "Activation: the presented antigen binds to the lymphocyte, and helper T-cell cytokines participate in activating the cells.", "c": true, "r": "Step 3 is activation (antigen binding plus helper T cytokines); step 4 is the clone of effector and memory cells."}, {"t": "Antigen presentation: a macrophage phagocytoses the pathogen and pushes the antigen to its surface.", "c": false, "r": "Antigen presentation is step 2, one step earlier than activation."}, {"t": "Origin and seeding: the cell matures in the thymus or bone marrow and settles in lymphatic tissue.", "c": false, "r": "Origin, maturation, and seeding are step 1 of both activation sequences."}, {"t": "Destruction: cytotoxic cells punch holes in the pathogen while plasma cells secrete antibodies.", "c": false, "r": "Destruction is the effector work that follows cloning, not a step before it."}], "tp": "Four steps, both arms: origin/seeding, antigen presentation, activation, clone. [Framework: Nursing Process/ADPIE]"});
+BANK.push({"cat": "Acquired Immunity, Vaccines, and Antibody Products", "type": "single", "stem": "A vaccine is best defined as:", "opts": [{"t": "An antigen-bearing substance, such as a killed or weakened pathogen, injected to stimulate the person's own antibody production.", "c": true, "r": "Because the body makes its own antibodies, a vaccine induces active immunity."}, {"t": "A preparation of ready-made antibodies taken from a donor and injected to give immediate protection.", "c": false, "r": "Ready-made donor antibodies describe immune globulin, which conveys passive immunity."}, {"t": "An altered toxin that neutralizes the poison secreted by a pathogen but has no effect on the pathogen itself.", "c": false, "r": "That mixes two products: a toxoid is an altered toxin used as an antigen; antitoxins neutralize toxins."}, {"t": "A dose of antibodies given after exposure that stimulates the recipient to form memory cells.", "c": false, "r": "Injected antibodies do not stimulate the recipient's own production and form no memory cells; that is why passive immunity is short-lived."}], "tp": "Vaccine = antigen in, own antibodies made (active). Immune globulin = antibodies in, nothing made (passive). [Framework: Nursing Process/ADPIE]", "kt": ["Vaccine", "Immune globulin"]});
+BANK.push({"cat": "Acquired Immunity, Vaccines, and Antibody Products", "type": "single", "stem": "Which statement correctly defines a toxoid?", "opts": [{"t": "A toxin that has been altered to reduce its harmfulness but can still act as an antigen, causing active immunity.", "c": true, "r": "Diphtheria and tetanus protection in the DTP series comes from toxoids."}, {"t": "An antibody preparation that neutralizes toxins but has no effect on the pathogens themselves.", "c": false, "r": "That is an antitoxin; a toxoid is the altered toxin itself, used as the antigen."}, {"t": "A weakened live pathogen that cannot cause disease but still stimulates antibody production.", "c": false, "r": "A weakened pathogen is an attenuated pathogen, a different way to build a vaccine."}, {"t": "A booster dose of vaccine given to stimulate the secondary immune response.", "c": false, "r": "A booster is a repeat dose; a toxoid is a type of vaccine content, not a dose schedule."}], "tp": "Toxoid = altered toxin as antigen (active). Antitoxin = antibody against a toxin (passive). One letter changes the product. [Framework: Safety First]", "kt": ["Toxoid", "Antitoxins"]});
+BANK.push({"cat": "Acquired Immunity, Vaccines, and Antibody Products", "type": "single", "stem": "Which pairing of acquired immunity type with its stimulus and result is correct?", "opts": [{"t": "Naturally acquired passive: antibodies pass from mother to infant across the placenta and by breast-feeding, giving short-term protection.", "c": true, "r": "Table 21.2: maternal antibodies protect for about the first 6 months and the duration of breast-feeding, without stimulating the infant's own production."}, {"t": "Artificially acquired active: injection with gamma globulin gives long-term immunity because the body makes antibodies.", "c": false, "r": "Gamma globulin injection is artificially acquired passive immunity: short-term, and it does not stimulate antibody production."}, {"t": "Naturally acquired active: vaccination exposes the person to an antigen and produces long-term immunity.", "c": false, "r": "Vaccination is artificially acquired; natural active comes from exposure to live pathogens, such as getting the disease."}, {"t": "Artificially acquired passive: the person's own plasma cells produce antibodies that last for years.", "c": false, "r": "Passive immunity by definition uses ready-made antibodies and is short-lived; long-term self-made antibody production is active immunity."}], "tp": "Two axes: natural/artificial is how it happened; active/passive is who made the antibodies. All four combinations exist. [Framework: Nursing Process/ADPIE]", "kt": ["Acquired immunity"]});
+BANK.push({"cat": "Acquired Immunity, Vaccines, and Antibody Products", "type": "single", "stem": "The purpose of a booster shot, as defined in the guide, is to:", "opts": [{"t": "Stimulate the secondary response by administering another dose of the vaccine (antigen).", "c": true, "r": "The first dose primes with the primary response and memory cells; the booster triggers the fast, large secondary response."}, {"t": "Provide ready-made antibodies for immediate, short-term protection after an exposure.", "c": false, "r": "Ready-made antibodies describe immune globulin, not a booster dose of vaccine."}, {"t": "Suppress the immune response so a transplanted organ is not rejected.", "c": false, "r": "Suppression after transplant uses immunosuppressant drugs, not vaccine boosters."}, {"t": "Replace the primary response in a person who never formed memory cells.", "c": false, "r": "A booster works precisely because memory cells were formed by the initial exposure."}], "tp": "Prime with dose one (primary, memory cells); boost with dose two (secondary, fast and many). [Framework: Nursing Process/ADPIE]", "kt": ["Booster shot", "Primary response", "Secondary response"]});
+BANK.push({"cat": "Acquired Immunity, Vaccines, and Antibody Products", "type": "single", "stem": "Antitoxins and antivenoms are correctly described as:", "opts": [{"t": "Antitoxins contain antibodies that neutralize toxins but do not affect the pathogens; antivenoms contain antibodies against snake venom.", "c": true, "r": "Both are ready-made antibody products (passive), each aimed at a poison rather than at a living pathogen."}, {"t": "Antitoxins are altered toxins used as antigens; antivenoms are weakened venoms used to stimulate antibody production.", "c": false, "r": "That describes toxoid-style active products; antitoxins and antivenoms are themselves antibodies."}, {"t": "Antitoxins kill bacteria by punching holes in their membranes; antivenoms stimulate the recipient to make antibodies.", "c": false, "r": "Hole-punching is complement action, and these products do not stimulate the recipient's own production."}, {"t": "Antitoxins and antivenoms both provide long-term immunity because they create memory cells.", "c": false, "r": "Passive products create no memory cells and protect only briefly."}], "tp": "Anti- products are antibodies, not antigens: passive, immediate, brief, no memory. [Framework: Safety First]", "kt": ["Antitoxins", "Antivenoms"]});
+BANK.push({"cat": "Acquired Immunity, Vaccines, and Antibody Products", "type": "single", "stem": "Herd (population) immunity is best defined as:", "opts": [{"t": "When a large percentage of the population is immune to an infection, the immune members do not get it and indirectly protect those who are not immune.", "c": true, "r": "That is the guide's herd-immunity box definition, including the indirect protection of the non-immune."}, {"t": "When every member of a population has been exposed to the same pathogen and has produced an equal antibody titer against it at the same point in time.", "c": false, "r": "Herd immunity needs a large percentage immune, by any route; it does not require universal, synchronized vaccination."}, {"t": "The inherited immunity that a species is born with to the diseases of other species, such as the immunity of humans to canine heartworm and of dogs to chickenpox.", "c": false, "r": "That is genetic (species) immunity, an individual inherited trait, not a population effect."}, {"t": "The protection an infant receives when the mother's antibodies cross the placenta before birth and continue to arrive through breast-feeding afterward.", "c": false, "r": "That is naturally acquired passive immunity for one infant, not population-level protection."}], "tp": "Herd = the immune majority shields the non-immune minority indirectly. [Framework: Maslow]", "kt": ["Herd immunity", "Genetic immunity"]});
+BANK.push({"cat": "Acquired Immunity, Vaccines, and Antibody Products", "type": "multi", "stem": "Which statements about passive immunity are correct? Select all that apply.", "opts": [{"t": "It is short-lived because the recipient receives ready-made antibodies instead of making them.", "c": true, "r": "Table 21.2 lists both passive types as short-term immunity."}, {"t": "It does not stimulate the recipient's own production of antibodies.", "c": true, "r": "No stimulation of the recipient's system is the defining passive trait."}, {"t": "It includes the antibodies a mother passes to her infant across the placenta and in breast-feeding.", "c": true, "r": "That is naturally acquired passive immunity."}, {"t": "It is the type of immunity produced by vaccination with a killed or weakened pathogen.", "c": false, "r": "Vaccination produces active immunity because the body makes its own antibodies."}, {"t": "It forms memory cells that respond faster on the next exposure.", "c": false, "r": "Memory cells form only when the person's own lymphocytes respond, which is active immunity."}], "tp": "Passive = borrowed antibodies: immediate, brief, no production, no memory. Active = own antibodies: slower start, long-term, memory. [Framework: Acute vs Chronic]"});
+BANK.push({"cat": "When Immunity Goes Wrong and Transplants", "type": "single", "stem": "Which statement correctly describes the immediate-reaction allergy (immediate hypersensitivity)?", "opts": [{"t": "An allergen activates a B cell, whose plasma-cell clone secretes large amounts of IgE that bind to mast cells in body tissues.", "c": true, "r": "Those are the sensitization steps of Fig. 21.7, before any re-exposure reaction occurs."}, {"t": "Repeated skin exposure to a chemical activates T cells, which accumulate in the skin and cause eruptions about 48 hours later.", "c": false, "r": "That is the delayed-reaction allergy (contact dermatitis), a T-cell event, not the immediate IgE reaction."}, {"t": "The immune system produces antibodies against its own cells because self-recognition has failed.", "c": false, "r": "Attacking self after failed tolerance is autoimmunity, not allergy."}, {"t": "Helper T cells are destroyed, so both B- and T-cell function become severely impaired.", "c": false, "r": "Helper T-cell destruction describes HIV infection progressing toward AIDS, not an allergic reaction."}], "tp": "Immediate allergy: allergen, B-cell clone, IgE onto mast cells \u2014 then re-exposure fires it. Delayed allergy is the T-cell, 48-hour one. [Framework: Nursing Process/ADPIE]", "kt": ["Allergen", "IgE"]});
+BANK.push({"cat": "When Immunity Goes Wrong and Transplants", "type": "single", "stem": "Anaphylaxis, as defined in the guide, consists of:", "opts": [{"t": "Massive vasodilation causing a sharp drop in blood pressure, together with severe bronchoconstriction that makes breathing extremely difficult or impossible.", "c": true, "r": "Anaphylaxis hits exactly two systems: blood pressure (vasodilation) and the airway (bronchoconstriction) \u2014 which is why epinephrine is the drug."}, {"t": "A walled-off collection of pus, dead phagocytes, injured cells, pathogens, and secretions, built by tissue cells to restrict the spread of an infection through the body.", "c": false, "r": "That is an abscess, a beneficial containment structure, not a systemic allergic reaction."}, {"t": "A delayed skin eruption of redness, swelling, and inflammation appearing about 48 hours after repeated exposure of the skin to a chemical such as a detergent or poison ivy plant.", "c": false, "r": "The 48-hour skin eruption is contact dermatitis, the delayed-reaction allergy."}, {"t": "A failure of self-recognition in which the immune system produces antibodies against its own cells and tissues, as occurs in autoimmune diseases such as rheumatoid arthritis.", "c": false, "r": "Attacking self is autoimmunity; anaphylaxis is a systemic reaction to an allergen."}], "tp": "Anaphylaxis = pressure crashes plus airway closes. That pairing is the whole emergency. [Framework: ABCs]", "kt": ["Anaphylaxis"]});
+BANK.push({"cat": "When Immunity Goes Wrong and Transplants", "type": "single", "stem": "Which statement correctly defines contact dermatitis?", "opts": [{"t": "A delayed-reaction allergy, usually appearing about 48 hours after repeated skin exposure to chemicals such as detergents, poison ivy, cosmetics, and soaps.", "c": true, "r": "Contact dermatitis is the guide's delayed allergy: T cells accumulate in the skin and cause eruptions and inflammation."}, {"t": "An immediate reaction in which IgE antibodies bound to mast cells trigger a large release of histamine and leukotrienes when the allergen is encountered a second time.", "c": false, "r": "IgE and mast cells drive the immediate reaction; contact dermatitis is delayed and T-cell driven."}, {"t": "An autoimmune attack on the skin that occurs because immunotolerance has failed and the immune system no longer recognizes the skin's own cells as self.", "c": false, "r": "Autoimmunity targets self through failed self-recognition; contact dermatitis is a response to an external chemical."}, {"t": "A skin infection that develops when the skin's mechanical barrier and acid mantle are destroyed and bacteria invade the tissue spaces and multiply there.", "c": false, "r": "Barrier destruction invites infection, but contact dermatitis is an allergic (immune) reaction, not an infection."}], "tp": "Contact dermatitis = delayed (about 48 hours), T cells, skin, repeated chemical exposure. [Framework: Nursing Process/ADPIE]", "kt": ["Contact dermatitis"]});
+BANK.push({"cat": "When Immunity Goes Wrong and Transplants", "type": "single", "stem": "Which comparison of immunodeficiency disorders is correct?", "opts": [{"t": "Primary disorders are rare, such as SCID; secondary disorders are common, and the most common cause is drug-induced immune deficiency.", "c": true, "r": "The guide gives exactly this split, naming chemotherapy granulocytopenia as the drug-induced example."}, {"t": "Primary disorders are common and usually drug-induced; secondary disorders are rare and inherited.", "c": false, "r": "Frequency and cause are both reversed: primary is rare, secondary is common and often drug-induced."}, {"t": "Primary disorders result from radiation and steroid therapy; secondary disorders are present from birth.", "c": false, "r": "Radiation and steroids are listed causes of secondary deficiency; primary disorders are the inborn, rare ones."}, {"t": "Primary and secondary disorders differ only in severity, not in cause or frequency.", "c": false, "r": "The guide distinguishes them by both cause and frequency: rare/inborn versus common/acquired."}], "tp": "Primary = rare and inborn (SCID). Secondary = common, most often drug-induced (chemotherapy granulocytopenia). [Framework: Acute vs Chronic]", "kt": ["Severe combined immunodeficiency (SCID)", "Granulocytopenia"]});
+BANK.push({"cat": "When Immunity Goes Wrong and Transplants", "type": "single", "stem": "Graft-versus-host disease (GVHD) is best defined as:", "opts": [{"t": "The transplanted organ or blood rejects the host, caused in part by transplanted T cells, targeting the skin, digestive tract, and liver.", "c": true, "r": "GVHD reverses the usual direction: the graft attacks the recipient, usually in immunodeficient patients."}, {"t": "The recipient's immune system recognizes a donated organ, such as a kidney, as foreign, mounts an immune attack against it, and destroys it, so the organ is said to be rejected.", "c": false, "r": "That is host-rejects-graft rejection, the opposite direction from GVHD."}, {"t": "A pattern of repeated and serious infections that gradually overwhelm a granulocytopenic transplant patient whose immune system cannot mount a defense against pathogens.", "c": false, "r": "Overwhelming infection is the biggest clinical problem after transplant, but it is not the definition of GVHD."}, {"t": "A drug reaction in which the immunosuppressant therapy given after a transplant lowers the granulocyte count and produces a drug-induced immune deficiency.", "c": false, "r": "Drug-induced granulocytopenia is a secondary immunodeficiency, not graft tissue attacking the host."}], "tp": "Two directions: host rejects graft (usual rejection) versus graft rejects host (GVHD, transplanted T cells, skin/gut/liver). [Framework: Nursing Process/ADPIE]", "kt": ["Graft-versus-host disease (GVHD)"]});
+BANK.push({"cat": "When Immunity Goes Wrong and Transplants", "type": "multi", "stem": "Which statements about immunity in older adults are correct according to the guide? Select all that apply.", "opts": [{"t": "T-cell and B-cell function is somewhat deficient, and macrophage activity is decreased.", "c": true, "r": "The guide's aging section states depressed lymphocyte function with decreased macrophage activity."}, {"t": "Older adults are more prone to infections and recover from them more slowly.", "c": true, "r": "That consequence is stated directly in the As You Age box."}, {"t": "Older adults often have a reduced fever response to infection.", "c": true, "r": "A blunted fever response is listed and makes combating infection harder."}, {"t": "Circulating autoantibodies decrease with age, so autoimmune disease becomes less likely.", "c": false, "r": "The guide states the opposite: autoantibody levels increase, partly explaining more autoimmune disease in older adults."}, {"t": "Depressed lymphocyte function may help explain the higher incidence of cancer in older adults.", "c": true, "r": "The guide offers exactly that link between depressed lymphocyte function and cancer incidence."}], "tp": "Aging immune system: weaker T, B, and macrophage function; slower recovery; blunted fever; MORE autoantibodies; possibly more cancer. [Framework: Acute vs Chronic]"});
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { if (S.shuf) { shuffle(q.opts); } S.resp.push(-1); }
+    else if (q.type === "multi") { if (S.shuf) { shuffle(q.opts); } S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { if (S.shuf) { shuffle(q.blanks[k].o); } d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>Chapter 21: Immune System</h1>';
+  h += '<div class="sub">Brutal mode | Herlihy, Anatomy & Physiology | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>
