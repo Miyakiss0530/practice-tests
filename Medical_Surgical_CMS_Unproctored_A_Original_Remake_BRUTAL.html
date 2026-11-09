@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medical Surgical CMS Unproctored Practice A - Original Remake - Practice Test (Brutal Mode)</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+.calcinput{font-size:17px;padding:8px 10px;border-radius:8px;border:2px solid #b9a8ee;width:140px}
+.fw{background:#fdf2f8;border-left:4px solid #db2777;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+/* ============ QUESTION BANK ============ */
+/* PN Medical Surgical CMS - ORIGINAL remake: original questions on the verified core PN Med-Surg blueprint. Not ATI questions. */
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+var CATS = ["Perioperative & Postoperative Care", "Cardiovascular Disorders", "Respiratory Disorders", "Neurologic & Sensory Disorders", "Renal, Urinary & Fluid-Electrolyte Balance", "Endocrine & Metabolic Disorders", "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", "Musculoskeletal, Integumentary & Cancer Care"];
+var KEYTERMS = [];
+
+/* PN Medical Surgical CMS Unproctored Practice A — ORIGINAL remake: original questions on the verified core PN Med-Surg blueprint. Not ATI questions. */
+/* Items 1-15 */
+
+BANK.push({ cat: "Perioperative & Postoperative Care", type: "single",
+  stem: "A nurse is assisting with the care of a client who is 8 hours postoperative following abdominal surgery. The client last voided before surgery, the bladder is palpable above the symphysis pubis, and the client reports pressure and an urge to void but cannot start a stream. Which action should the nurse take first?",
+  opts: [
+    O("Encourage oral fluids and reassess the bladder in 4 hours.", false, "Adding more fluid to an already distended bladder worsens discomfort and risks bladder injury. The retention itself needs an intervention now, not more intake."),
+    O("Assist the client to sit up and attempt to void in private.", true, "An upright position, privacy, and running water support the normal voiding reflex. This simple measure often resolves early retention and is tried before catheterization."),
+    O("Insert a straight catheter to empty the bladder right away.", false, "Catheterization carries infection risk and is reserved for retention that persists after positioning, privacy, and other noninvasive measures have been tried."),
+    O("Apply a cool compress over the lower abdomen for comfort.", false, "A cool compress does not relax the sphincter or promote voiding. Warmth and upright positioning are the measures that support the voiding reflex.")
+  ],
+  fw: "Nursing process — least invasive intervention before invasive procedures",
+  tp: "Postoperative urinary retention: position upright, give privacy, run water, and have the client try to void before reaching for a catheter." });
+
+BANK.push({ cat: "Perioperative & Postoperative Care", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who is 1 day postoperative following a bowel resection. The client blows into the incentive spirometer quickly, takes a shallow breath, and does not hold the breath at the top. Which statement by the client indicates an understanding of the corrected teaching?",
+  opts: [
+    O("I will blow into the mouthpiece as hard as I can.", false, "The client inhales through the spirometer rather than blowing into it. Blowing out does not raise the indicator or expand the lungs."),
+    O("I will use it once each morning before breakfast.", false, "Using the device once a day is far too infrequent to keep the alveoli open. Sessions are repeated about every hour while the client is awake."),
+    O("I will breathe in slowly and hold for 3 to 5 seconds.", true, "A slow, deep inhalation that raises the piston, followed by a brief hold, keeps the alveoli inflated and helps prevent postoperative atelectasis and pneumonia."),
+    O("I will stop using it when I can walk to the hallway.", false, "Ambulation and spirometry work together; one does not replace the other. The device is used until the client is breathing deeply and moving well.")
+  ],
+  fw: "Patient teaching — evaluate understanding through the client's own statement",
+  tp: "Incentive spirometer: breathe IN slowly through the mouthpiece, raise the piston, hold 3 to 5 seconds, repeat about 10 times each hour while awake." });
+
+BANK.push({ cat: "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", type: "single",
+  stem: "A nurse is preparing to care for a client following a descending colon resection with colostomy placement. The nurse reviews the surgical report to confirm where the new stoma was created. At which location should the nurse expect to collect data on the stoma?",
+  opts: [
+    O("The right lower quadrant of the abdomen.", false, "The right lower quadrant is the site of the appendix and the cecum, and it is where an ileostomy or cecostomy would sit, not a descending colostomy."),
+    O("The left lower quadrant of the abdomen.", true, "The descending colon runs down the left side of the abdomen and ends in the left lower quadrant, so a descending colostomy opens at that location."),
+    O("The upper midline just below the sternum.", false, "The upper midline lies over the stomach and transverse colon region. A descending colostomy is brought out much lower and to the left side."),
+    O("The right upper quadrant near the ribs.", false, "The right upper quadrant contains the liver and gallbladder. The descending colon is on the opposite side of the abdomen from this location.")
+  ],
+  fw: "Nursing process — match the data collection site to the anatomy of the surgery",
+  tp: "Descending colon colostomy = left lower quadrant. Ileostomy = right lower quadrant. The stoma sits over the bowel segment that was resected." });
+
+BANK.push({ cat: "Cardiovascular Disorders", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has heart failure and a prescription for a low-sodium diet. The client says food tastes bland without salt and asks how to improve the flavor of meals at home. Which recommendation should the nurse make?",
+  opts: [
+    O("Switch to a salt substitute from the grocery store.", false, "Many salt substitutes replace sodium with potassium chloride. A client who may take potassium-sparing medications can develop a dangerously high potassium level."),
+    O("Season foods with lemon juice, herbs, and spices.", true, "Lemon juice, vinegar, and salt-free herbs and spices add flavor without adding sodium or potassium, so they are the safe way to make a low-sodium diet taste better."),
+    O("Rinse canned vegetables and keep using table salt.", false, "Rinsing canned vegetables lowers some sodium, but continuing to add table salt defeats the purpose of the low-sodium prescription for this client."),
+    O("Use garlic salt and onion salt instead of plain salt.", false, "Garlic salt and onion salt are still sodium salts. The seasoning powder on top does not change the sodium load these products deliver.")
+  ],
+  fw: "Patient teaching — choose the seasoning that adds flavor without sodium or potassium risk",
+  tp: "Low-sodium flavor fix: lemon, vinegar, herbs, spices. Salt substitutes hide potassium, and garlic salt and onion salt are still salt." });
+
+BANK.push({ cat: "Cardiovascular Disorders", type: "single",
+  stem: "A nurse is collecting data from a client who takes digoxin 0.25 mg daily for heart failure. The client reports nausea, loss of appetite, and seeing yellow halos around lights, and the apical pulse is 54/min. Which finding should the nurse report to the provider immediately?",
+  opts: [
+    O("The combination of visual changes and a slow pulse.", true, "Nausea, anorexia, yellow-green halos, and bradycardia together form the classic picture of digoxin toxicity. The drug is held and the provider is notified right away."),
+    O("The report of a decreased appetite at breakfast.", false, "Loss of appetite alone is nonspecific, but it gains meaning beside the visual changes and slow pulse. The full cluster, not one finding, signals toxicity."),
+    O("The need for a routine refill of the digoxin dose.", false, "A refill request is routine business. Giving more digoxin to a client showing toxicity findings would compound a potentially lethal problem."),
+    O("The client's request for an extra pillow at night.", false, "An extra pillow is a comfort preference and may reflect sleeping habits. It does not approach the urgency of toxicity signs with a pulse of 54.")
+  ],
+  fw: "Medication safety — recognize the toxicity cluster and hold, then report",
+  tp: "Digoxin toxicity cluster: nausea, anorexia, yellow or green halos, pulse under 60. Hold the dose, check the level and potassium, and report." });
+
+BANK.push({ cat: "Renal, Urinary & Fluid-Electrolyte Balance", type: "multi",
+  stem: "A nurse is caring for a client who is receiving furosemide 40 mg IV twice daily for heart failure with fluid overload. The nurse reviews the care plan to confirm which data the team will track while the medication is working. Which data should the nurse collect and monitor? Select all that apply.",
+  opts: [
+    O("Serum potassium level with each set of labs.", true, "Furosemide wastes potassium in the urine. Falling potassium raises the risk of dysrhythmias, especially in a client who may also take digoxin."),
+    O("Daily weight taken at the same time each day.", true, "Daily weight is the most reliable day-to-day measure of fluid loss. A change of about 1 kg reflects about 1 L of fluid gained or lost."),
+    O("Intake and output totals for every shift.", true, "Comparing intake with the urine output the diuretic produces shows whether the medication is moving fluid as intended and guides the next dose."),
+    O("Blood glucose before every meal and at bedtime.", false, "This client has no diabetes data in the plan. Glucose checks are not a routine monitoring item for furosemide therapy by itself."),
+    O("Pupil size and reaction to light each hour.", false, "Pupillary checks belong to neurologic monitoring. Furosemide does not change pupil responses, so hourly pupil checks are not part of this care."),
+    O("Apical pulse for a full minute before each dose.", false, "A full-minute apical pulse is the routine check before digoxin, not before furosemide. Blood pressure matters with a diuretic; this specific routine does not.")
+  ],
+  fw: "Medication safety — pair each high-alert medication with its own monitoring set",
+  tp: "Furosemide monitoring trio: potassium, daily weights, intake and output — plus blood pressure. A diuretic that wastes potassium can drop it fast." });
+
+BANK.push({ cat: "Cardiovascular Disorders", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has varicose veins and a prescription for elastic support stockings. The client plans to put the stockings on after sitting at the breakfast table each day. Which instruction should the nurse give about timing?",
+  opts: [
+    O("Apply the stockings after breakfast while seated.", false, "By the time the client has sat with the legs down, gravity has already pooled blood in the veins. Stockings applied then trap that extra fluid in the legs."),
+    O("Put the stockings on before getting out of bed.", true, "Applying stockings in bed, before the legs are lowered, compresses veins while they hold the least blood and gives support through the whole day."),
+    O("Wear the stockings only during the night shift.", false, "Support stockings work while the client is upright and active. Night wear is not the prescription and can wrinkle and bind during sleep."),
+    O("Roll the stockings down whenever the legs ache.", false, "A rolled-down band acts like a tourniquet and worsens venous return. The stocking should be smoothed out or removed fully, never rolled.")
+  ],
+  fw: "Patient teaching — time the intervention to the physiology it supports",
+  tp: "Support stockings go on in bed, before the legs come down for the day. Rolled stockings become tourniquets — smooth or remove, never roll." });
+
+BANK.push({ cat: "Cardiovascular Disorders", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has mitral valve disease and takes an anticoagulant. The nurse reviews daily activities with the client. Which statement by the client indicates an understanding of the teaching?",
+  opts: [
+    O("I will use a soft toothbrush and an electric razor.", true, "A client on anticoagulation protects against bleeding by using a soft toothbrush for the gums and an electric razor instead of a blade for shaving."),
+    O("I will take an extra dose if I notice any bruising.", false, "Bruising is a finding to report, not a reason to take more anticoagulant. Extra doses raise the bleeding risk further and are never self-prescribed."),
+    O("I will stop the medication the day before dental work.", false, "Stopping an anticoagulant around a procedure is a provider decision. Stopping on her own exposes the client with valve disease to clot formation."),
+    O("I will switch my green salads to avoid the vitamin K.", false, "The goal is a steady, consistent intake of vitamin K foods, not total avoidance. Sudden changes in intake are what destabilize the anticoagulant effect.")
+  ],
+  fw: "Patient teaching — bleeding precautions are the daily-life core of anticoagulant therapy",
+  tp: "Anticoagulant daily life: soft toothbrush, electric razor, report bruising or bleeding, keep vitamin K intake steady, never adjust the dose alone." });
+
+BANK.push({ cat: "Cardiovascular Disorders", type: "single",
+  stem: "A nurse is preparing to administer metoprolol 50 mg PO to a client who had a myocardial infarction 3 days ago. Before giving the dose, the nurse checks the chart and collects vital signs. Which finding should cause the nurse to hold the dose and notify the provider?",
+  opts: [
+    O("Blood pressure of 128/76 mm Hg and a pulse of 76/min.", false, "These values sit in a comfortable range for a client recovering from a myocardial infarction. Beta blockade at this rate and pressure is expected therapy."),
+    O("Respiratory rate of 18/min with clear breath sounds.", false, "A respiratory rate of 18 with clear lungs is an expected finding. It gives no reason to withhold a scheduled beta blocker dose."),
+    O("Apical pulse of 52/min and blood pressure of 96/60.", true, "Beta blockers slow the heart and lower blood pressure. An apical pulse below 60 with a soft pressure means the dose is held and the provider is notified."),
+    O("Temperature of 37.2 C and a report of mild fatigue.", false, "A near-normal temperature and mild fatigue are common after a myocardial infarction. Neither finding is a hold parameter for this medication.")
+  ],
+  fw: "Medication safety — check the hold parameters before the dose, not after",
+  tp: "Beta blocker hold check: apical pulse under 60 or a low blood pressure means hold the dose and notify the provider. Check before every dose." });
+
+BANK.push({ cat: "Respiratory Disorders", type: "single",
+  stem: "A nurse in a clinic is collecting data from a client with a confirmed diagnosis of pertussis who has a harsh cough and post-tussive vomiting. A coworker asks what precautions apply while the client waits for an examination room. Which response should the nurse give?",
+  opts: [
+    O("Droplet precautions, with a mask on the client.", true, "Pertussis spreads in large respiratory droplets produced by coughing. Droplet precautions and a mask on the client during transport and waiting are required."),
+    O("Airborne precautions, with a negative-pressure room.", false, "Airborne precautions with negative pressure are used for measles, tuberculosis, and varicella. Pertussis particles are larger droplets that fall quickly."),
+    O("Standard precautions alone, with no mask needed.", false, "Standard precautions do not protect against droplet spread from a coughing client with pertussis. A mask and droplet precautions are added on top."),
+    O("Contact precautions, with gloves for the visit only.", false, "Contact precautions target organisms spread by touch, such as wound drainage. Pertussis leaves the body in coughed droplets, so gloves alone miss the route.")
+  ],
+  fw: "Safety and infection control — match the precaution to the transmission route",
+  tp: "Pertussis = droplet precautions. Airborne with negative pressure belongs to tuberculosis, measles, and varicella. Match the precaution to the route." });
+
+BANK.push({ cat: "Respiratory Disorders", type: "single",
+  stem: "A nurse is reinforcing discharge teaching with a client who has chronic obstructive pulmonary disease. The client tires quickly, still smokes half a pack daily, and has not had any vaccines this year. Which teaching point should the nurse emphasize before discharge?",
+  opts: [
+    O("Use oxygen at the highest flow that feels comfortable.", false, "Oxygen in COPD is titrated to a prescribed target range, not to comfort. Uncontrolled high flow can blunt the drive to breathe in some clients."),
+    O("Receive the influenza and pneumococcal vaccines.", true, "Respiratory infections are the most common trigger of COPD exacerbations. Annual influenza vaccine and the pneumococcal vaccine protect this vulnerable client."),
+    O("Save energy by staying in bed most of the day.", false, "Prolonged bed rest deconditions the very muscles breathing depends on. Planned activity with rest periods conserves energy without losing conditioning."),
+    O("Drink a large glass of water right before sleeping.", false, "A large fluid load at bedtime increases nighttime trips and coughing for this client and does nothing to thin secretions better than daytime hydration.")
+  ],
+  fw: "Health promotion — prevent the infection that triggers the exacerbation",
+  tp: "COPD discharge bundle: influenza and pneumococcal vaccines, smoking cessation, planned activity with rest — infections trigger exacerbations." });
+
+BANK.push({ cat: "Perioperative & Postoperative Care", type: "single",
+  stem: "A nurse is assisting with the preparation of a client who is scheduled for a bronchoscopy in 1 hour. The provider's orders include nothing by mouth after midnight, and the client asks for breakfast and a drink of water. Which action should the nurse take?",
+  opts: [
+    O("Give the client clear liquids until 30 minutes before.", false, "The throat is numbed during bronchoscopy, which removes the gag reflex. Anything taken by mouth close to the procedure creates an aspiration risk."),
+    O("Keep the client nothing by mouth as prescribed.", true, "NPO status before bronchoscopy protects the airway because the topical anesthetic blunts the gag and cough reflexes during and after the procedure."),
+    O("Offer a light breakfast since the test is brief.", false, "The length of the procedure does not change the risk. A numbed throat plus stomach contents is the combination that leads to aspiration."),
+    O("Give ice chips to keep the client's mouth moist.", false, "Ice chips melt into water and count as intake. The NPO order covers ice as well as food and fluids before this procedure.")
+  ],
+  fw: "Reduction of risk — the numbed airway is the reason the stomach stays empty",
+  tp: "Bronchoscopy: NPO beforehand, and afterward nothing by mouth until the gag reflex returns. The numbed throat is the whole reason." });
+
+BANK.push({ cat: "Respiratory Disorders", type: "single",
+  stem: "A nurse is collecting data from a client with heart failure who has new shortness of breath when lying flat. Breath sounds are diminished at the right base, the right lower chest does not move well with breathing, and percussion over that area is dull. Which conclusion should the nurse draw from this data set?",
+  opts: [
+    O("The findings point to a pleural effusion on the right.", true, "Diminished breath sounds, reduced chest movement, and dullness to percussion over one base together point to fluid collected in the pleural space at that location."),
+    O("The findings point to a pneumothorax on the right.", false, "A pneumothorax produces hyperresonance on percussion from trapped air, not dullness. Dullness means something dense, like fluid, occupies the space."),
+    O("The findings point to pneumonia in the right base.", false, "Pneumonia typically brings fever, a productive cough, and crackles or bronchial sounds over the lobe. This data set describes absent sound and dullness instead."),
+    O("The findings point to asthma affecting both lungs.", false, "Asthma is a bilateral airway problem with wheezing heard throughout the chest. These findings are one-sided, silent, and dull, which fits fluid rather than airways.")
+  ],
+  fw: "Nursing process — read the combined data pattern, not a single finding",
+  tp: "Pleural effusion picture: one base, diminished breath sounds, dull percussion, reduced movement. Air above the lung sounds hollow; fluid sounds dull." });
+
+BANK.push({ cat: "Respiratory Disorders", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has obstructive sleep apnea and a new prescription for a CPAP machine. The client says the mask feels strange and he plans to use it only on weekends. Which statement should the nurse reinforce as correct use?",
+  opts: [
+    O("Use the machine only on nights before work days.", false, "Apnea events happen every night, not only before work. Skipping nights leaves the airway collapsing and the oxygen level falling on those nights."),
+    O("Wear the mask every night for the whole sleep period.", true, "CPAP holds the airway open only while it is worn. Nightly use for the full sleep period is what prevents apnea, protects oxygen levels, and improves daytime alertness."),
+    O("Turn the pressure higher when snoring gets louder.", false, "Pressure settings are prescribed and set by the provider and equipment supplier. The client does not adjust pressure based on snoring volume."),
+    O("Skip the machine when taking a sleeping pill.", false, "Sedatives relax airway muscles and can worsen apnea. That is the night the machine matters most, and the concern should be reported to the provider.")
+  ],
+  fw: "Patient teaching — adherence every night is the therapy, not an option",
+  tp: "CPAP works only while worn: every night, all night. The client never adjusts the prescribed pressure settings on his own." });
+
+BANK.push({ cat: "Perioperative & Postoperative Care", type: "single",
+  stem: "A nurse is contributing to the plan of care for a client who is 2 days postoperative with a dry, intact abdominal dressing that is due for a scheduled change. The nurse gathers supplies at the bedside. Which action by the nurse protects the wound during the change?",
+  opts: [
+    O("Open the sterile supplies after removing the old dressing with clean gloves.", false, "Opening sterile supplies after handling the soiled dressing forces contaminated hands near the sterile field. The field is prepared before the old dressing comes off."),
+    O("Clean the incision from the center outward with sterile technique.", true, "Sterile technique with cleansing that moves from the clean incision line outward carries microorganisms away from the wound instead of dragging them across it."),
+    O("Soak off the old dressing with tap water from a basin.", false, "Tap water from a basin is not sterile and introduces microorganisms to a fresh incision. Adherent dressings are moistened with sterile saline instead."),
+    O("Apply the new dressing before collecting data on the wound.", false, "Covering the wound before looking at it skips the data collection the change is designed to include. Drainage, edges, and odor are noted before redressing.")
+  ],
+  fw: "Safety and infection control — sterile technique protects the cleanest area first",
+  tp: "Dry dressing change: sterile technique, cleanse from the incision outward, and collect data on the wound before the new dressing goes on." });
+
+
+/* Items 16-30 */
+
+BANK.push({ cat: "Neurologic & Sensory Disorders", type: "single",
+  stem: "A nurse is assisting with the care of a client who has right-sided hemiparesis following a stroke. The nurse is setting up the client's grooming items so the client can participate in morning care. Which arrangement supports the client's self-care?",
+  opts: [
+    O("Place the comb in the client's right hand to exercise it.", false, "The right arm has significant weakness after this stroke. Handing the comb to that side sets the task up to fail and can cause frustration or a fall of the item."),
+    O("Comb the client's hair for her to save time in the morning.", false, "Doing the task for the client removes her chance to practice self-care. Recovery is built on the client doing what she safely can for herself."),
+    O("Give the client a comb to use with her unaffected left arm.", true, "Using the strong, unaffected arm to comb the hair lets the client complete grooming independently and safely while the weak side recovers function."),
+    O("Restrain the left arm so the right arm has to work harder.", false, "Restraining the strong arm is unsafe and distressing, and forced overuse is not part of this plan of care. Independence uses the ability the client has today.")
+  ],
+  fw: "Rehabilitation — build independence on the abilities that remain",
+  tp: "After a stroke, set up care so the unaffected side does the work the client can manage. Independence first, assistance only where strength is gone." });
+
+BANK.push({ cat: "Neurologic & Sensory Disorders", type: "single",
+  stem: "A nurse is contributing to the plan of care for a client with Parkinson disease who has a shuffling gait, a stooped posture, and a history of two near falls at home. Which intervention should the nurse recommend including in the plan?",
+  opts: [
+    O("Encourage the client to walk faster to improve balance.", false, "Rushing a client with a shuffling gait invites festination and a fall. A deliberate, steady pace with wide steps is the safer pattern to teach."),
+    O("Remove throw rugs and clutter from walking pathways.", true, "Loose rugs and clutter trip a client whose feet barely clear the floor. Clearing the pathways directly removes the hazards behind this client's near falls."),
+    O("Have the client use a wheelchair for all movement at home.", false, "Full wheelchair use for a client who can walk accelerates weakness and rigidity. Safe walking with an environment cleared of hazards preserves mobility."),
+    O("Place needed items on high shelves to encourage reaching.", false, "Reaching overhead shifts balance backward in a client with a stooped posture and poor balance. Needed items belong within easy, low reach.")
+  ],
+  fw: "Safety — remove environmental hazards for the client whose gait cannot clear them",
+  tp: "Parkinson fall safety: clear the pathways, remove throw rugs, wide steady steps, assistive device as prescribed. The environment changes because the gait cannot." });
+
+BANK.push({ cat: "Neurologic & Sensory Disorders", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has multiple sclerosis and reports that exhaustion by midday makes it hard to finish daily activities. The client's temperature and lab results are normal. Which teaching point should the nurse emphasize?",
+  opts: [
+    O("Complete all chores early in one long morning session.", false, "Pushing through in one long block deepens the fatigue the client is describing. Spreading work out with planned rests is the strategy that preserves function."),
+    O("Plan demanding tasks with rest periods in between.", true, "Fatigue in multiple sclerosis is managed by pacing — alternating activity with scheduled rest and doing demanding tasks when energy is highest during the day."),
+    O("Take a hot shower in the morning to loosen up muscles.", false, "Heat worsens symptoms in multiple sclerosis by slowing nerve conduction. Warm or cool showers are recommended instead of hot ones for this client."),
+    O("Avoid all exercise because movement uses up energy.", false, "Avoiding exercise entirely leads to deconditioning and weakness. Gentle, paced exercise with rests supports strength without draining the client's energy.")
+  ],
+  fw: "Patient teaching — pace energy across the day instead of spending it all at once",
+  tp: "MS fatigue rules: pace activities, schedule rests, avoid heat. A hot shower can temporarily worsen symptoms — warmth and cooling strategies help." });
+
+BANK.push({ cat: "Neurologic & Sensory Disorders", type: "single",
+  stem: "A nurse is caring for a client with myasthenia gravis who takes pyridostigmine three times a day. The client is scheduled for lunch in 45 minutes and reports that chewing tires his jaw. Which instruction should the nurse give about the medication?",
+  opts: [
+    O("Take the dose about 30 minutes before eating the meal.", true, "Pyridostigmine strengthens muscle contractions for a window of time after the dose. Timing it about 30 minutes before meals puts peak strength at chewing and swallowing."),
+    O("Take the dose right after finishing the meal each time.", false, "Taken after the meal, the medication peaks when eating is already done. The client would chew at his weakest, raising fatigue and aspiration risk."),
+    O("Skip the midday dose because the jaw is already tired.", false, "Skipping the dose removes the very support the tired jaw needs. The medication is what makes safe chewing possible for this client at this meal."),
+    O("Crush the dose into a full glass of milk to wash it down.", false, "A large volume of liquid taken with a weak swallow increases aspiration risk, and the dose timing matters more than the vehicle used to swallow it.")
+  ],
+  fw: "Medication safety — time the dose so peak effect meets the activity that needs it",
+  tp: "Myasthenia gravis: give the anticholinesterase about 30 minutes before meals so peak strength lands on chewing and swallowing." });
+
+BANK.push({ cat: "Neurologic & Sensory Disorders", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has glaucoma and a new prescription for timolol eye drops. The client demonstrates the instillation for the nurse. Which action by the client shows the technique needs correction?",
+  opts: [
+    O("Pressing gently on the inner corner of the eye after instilling.", false, "Gentle pressure on the inner canthus after the drop keeps the medication in the eye and limits drainage into the nose and bloodstream. This is correct technique."),
+    O("Placing the drop into the pocket of the lower eyelid.", false, "The lower lid pocket is the correct target for an eye drop. It holds the medication against the eye without touching the cornea with the bottle."),
+    O("Touching the dropper tip against the eye to aim the drop.", true, "The dropper tip must never touch the eye or lashes. Contact contaminates the bottle and can injure the cornea, so this action needs immediate correction."),
+    O("Waiting a few minutes before using the second drop.", false, "Spacing drops a few minutes apart lets the first medication absorb instead of being washed out by the second. This timing is correct technique.")
+  ],
+  fw: "Medication safety — one contamination error outweighs several correct steps",
+  tp: "Eye drops: lower lid pocket, tip never touches the eye, gentle pressure on the inner corner afterward, and a few minutes between different drops." });
+
+BANK.push({ cat: "Renal, Urinary & Fluid-Electrolyte Balance", type: "single",
+  stem: "A nurse is reinforcing dietary teaching with a client who has chronic kidney disease and a serum potassium of 5.4 mEq/L and a phosphorus of 5.8 mg/dL. The client is choosing foods for the week. Which guidance should the nurse give?",
+  opts: [
+    O("Limit foods high in potassium and phosphorus.", true, "Failing kidneys cannot excrete potassium or phosphorus. Limiting foods rich in both protects the heart from high potassium and the bones from high phosphorus."),
+    O("Add bananas and oranges to raise your energy level.", false, "Bananas and oranges are among the richest potassium sources. Adding them would push an already elevated potassium of 5.4 higher and risk dysrhythmia."),
+    O("Choose cola drinks and processed cheese for snacks.", false, "Colas and processed cheeses are loaded with phosphorus additives. These choices would raise the phosphorus level this client already struggles to control."),
+    O("Increase milk and yogurt to protect your bones.", false, "Dairy foods carry a heavy phosphorus load. In kidney disease the extra phosphorus weakens bone over time instead of protecting it as the client expects.")
+  ],
+  fw: "Patient teaching — match the diet limits to the two lab values that are high",
+  tp: "CKD diet core: restrict potassium and phosphorus when the labs run high. Bananas, oranges, cola, dairy, and processed cheese all work against those labs." });
+
+BANK.push({ cat: "Renal, Urinary & Fluid-Electrolyte Balance", type: "single",
+  stem: "A nurse is assisting with the care of a client who performs peritoneal dialysis at home. During an exchange the client shows the nurse the drained fluid, which appears cloudy instead of clear. Which action should the nurse take?",
+  opts: [
+    O("Reassure the client that cloudy fluid is expected.", false, "Drained peritoneal fluid should be clear or pale yellow. Cloudiness is never an expected variation and dismissing it delays treatment of a serious problem."),
+    O("Report the cloudy drainage to the provider promptly.", true, "Cloudy outflow is the earliest sign of peritonitis in peritoneal dialysis. It is reported promptly so the fluid can be cultured and treatment started quickly."),
+    O("Tell the client to skip the next two scheduled exchanges.", false, "Skipping exchanges allows waste and fluid to build up, and it does nothing about the infection the cloudy fluid suggests. The exchange schedule is a provider decision."),
+    O("Advise the client to add extra heparin to the next bag.", false, "Heparin in the dialysate is used for fibrin, not for cloudiness from infection, and changing the bag contents is outside the nurse's direction to the client.")
+  ],
+  fw: "ABCs and infection — treat a change in drainage character as an early infection cue",
+  tp: "Peritoneal dialysis rule: clear outflow is normal, cloudy outflow is peritonitis until proven otherwise. Report it promptly, every time." });
+
+BANK.push({ cat: "Renal, Urinary & Fluid-Electrolyte Balance", type: "single",
+  stem: "A nurse is collecting data from a client on the first postoperative day following a transurethral resection of the prostate with continuous bladder irrigation running. The nurse notes the drainage in the collection bag and the client's reports. Which finding should the nurse report to the provider?",
+  opts: [
+    O("Drainage that is light pink with a steady outflow.", false, "Light pink drainage with free flow is the expected appearance during the first day of continuous irrigation after this surgery. It needs monitoring, not an urgent report."),
+    O("Bright red drainage with clots and a slowed outflow.", true, "Bright red drainage with clots suggests arterial bleeding, and clots that slow the outflow can obstruct the bladder. Both changes are reported to the provider right away."),
+    O("A report of mild bladder spasms during the irrigation.", false, "Bladder spasms are common with a catheter and irrigation after prostate surgery and are managed with prescribed measures. Alone, they are an expected finding."),
+    O("An output total that is larger than the intake total.", false, "Output includes both the irrigating solution and urine, so output normally exceeds the irrigation intake. The difference is how urine production is estimated.")
+  ],
+  fw: "Reduction of risk — distinguish expected irrigation drainage from bleeding with obstruction",
+  tp: "After TURP with irrigation: light pink and flowing is expected. Bright red with clots and slowing outflow means bleeding plus obstruction — report it." });
+
+BANK.push({ cat: "Renal, Urinary & Fluid-Electrolyte Balance", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who is being treated for a second urinary tract infection this year. The client drinks one glass of water a day and holds urine for long stretches at work. Which statement by the client indicates an understanding of the teaching?",
+  opts: [
+    O("I will hold my urine until my bladder feels fully full.", false, "Holding urine lets bacteria multiply in a warm, full bladder. Regular emptying is one of the simplest ways to flush bacteria out of the urinary tract."),
+    O("I will drink water through the day and void regularly.", true, "Steady fluid intake and regular voiding flush bacteria from the bladder before they can multiply, which directly addresses both habits behind this client's infections."),
+    O("I will take bubble baths to keep the area extra clean.", false, "Bubble baths irritate the urethra and can introduce bacteria toward the urinary tract. Showers and gentle cleansing are the safer hygiene choice here."),
+    O("I will stop the antibiotic once the burning goes away.", false, "Symptoms often fade before the infection is cleared. Stopping early leaves surviving bacteria behind and sets up another infection or a resistant one.")
+  ],
+  fw: "Patient teaching — the client's own restatement confirms the habits that must change",
+  tp: "UTI prevention basics: drink water steadily, void regularly instead of holding, wipe front to back, and finish the full antibiotic course." });
+
+BANK.push({ cat: "Renal, Urinary & Fluid-Electrolyte Balance", type: "single",
+  stem: "A nurse is collecting data from an older adult client who takes a thiazide diuretic. Today's labs show a sodium of 128 mEq/L, and the family reports the client is newly confused and unsteady when walking. Which data should the nurse identify as the priority to report?",
+  opts: [
+    O("The new confusion paired with the low sodium value.", true, "In an older adult, hyponatremia often shows up as confusion and unsteadiness before anything else. New confusion with a sodium of 128 is the priority report because falls and worsening imbalance follow."),
+    O("The client's report of needing to void more often.", false, "Frequent voiding is an expected effect of a diuretic and is the medication doing its job. It does not carry the risk that new confusion with a low sodium carries."),
+    O("The finding that the client's skin feels warm and dry.", false, "Warm, dry skin by itself is a nonspecific finding with many mild explanations. It does not outrank a neurologic change paired with an abnormal electrolyte value."),
+    O("The client's request for a low-salt meal tray today.", false, "A meal preference is handled through dietary ordering. It is routine business and never outranks reporting a new mental status change with hyponatremia.")
+  ],
+  fw: "Prioritization — a mental status change tied to an abnormal lab value goes first",
+  tp: "Hyponatremia in an older adult often presents as confusion and unsteadiness. New confusion plus a sodium of 128 is a report-first combination." });
+
+BANK.push({ cat: "Endocrine & Metabolic Disorders", type: "multi",
+  stem: "A nurse is collecting data from a client with a new diagnosis of hyperthyroidism who has lost 4.5 kg (10 lb) in a month. The nurse documents the findings that support this diagnosis during the assessment. Which findings should the nurse expect to document? Select all that apply.",
+  opts: [
+    O("Heat intolerance with frequent sweating episodes.", true, "An overactive thyroid speeds metabolism and heat production. Heat intolerance and sweating are expected findings in this client."),
+    O("Tremor of the hands when the arms are extended.", true, "Fine hand tremors are a classic finding of hyperthyroidism, driven by the heightened response to circulating thyroid hormone."),
+    O("Restlessness with difficulty sitting still.", true, "Heightened metabolism in hyperthyroidism produces nervousness, restlessness, and irritability, which this client would be expected to show."),
+    O("Weight gain with a preference for warm rooms.", false, "Weight gain and cold intolerance belong to hypothyroidism, the opposite condition. This client is losing weight, consistent with a fast metabolism."),
+    O("Bradycardia with a heart rate near 48/min.", false, "A slow heart rate is a hypothyroid finding. Hyperthyroidism drives the heart faster, so tachycardia, not bradycardia, is expected here."),
+    O("Dry, coarse skin with thinning scalp hair.", false, "Dry coarse skin and hair changes are findings of an underactive thyroid. Hyperthyroid skin tends to be warm, smooth, and moist instead.")
+  ],
+  fw: "Nursing process — sort findings by the direction of the hormone imbalance",
+  tp: "Hyperthyroid = everything speeds up: weight loss, heat intolerance, tremor, restlessness, fast pulse. Hypothyroid findings are the mirror image." });
+
+BANK.push({ cat: "Endocrine & Metabolic Disorders", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has hypothyroidism and a new prescription for levothyroxine. The client plans to take the tablet with breakfast along with a calcium supplement. Which instruction should the nurse give?",
+  opts: [
+    O("Take the tablet with breakfast to avoid nausea.", false, "Food, especially with calcium or iron, blocks absorption of levothyroxine. Taking it with breakfast would leave the client under-replaced and still symptomatic."),
+    O("Take it in the morning on an empty stomach.", true, "Levothyroxine absorbs best on an empty stomach, so it is taken in the morning 30 to 60 minutes before food, and calcium supplements are kept several hours away."),
+    O("Take it at bedtime with the calcium supplement.", false, "Pairing the dose with calcium at any hour binds the hormone in the gut and prevents absorption. The supplement is the problem, not the time of day alone."),
+    O("Double the dose on days when you feel most tired.", false, "Levothyroxine doses are adjusted by lab results through the provider. Doubling doses on tired days risks pushing the client into a hyperthyroid state.")
+  ],
+  fw: "Medication safety — absorption conditions are part of the prescription",
+  tp: "Levothyroxine: morning, empty stomach, 30 to 60 minutes before food. Keep calcium and iron supplements hours away from the dose." });
+
+BANK.push({ cat: "Endocrine & Metabolic Disorders", type: "multi",
+  stem: "A nurse is collecting data from a client with Cushing syndrome whose cortisol level is elevated. The nurse reviews the chart and the client's appearance during the morning assessment. Which findings should the nurse expect in this client? Select all that apply.",
+  opts: [
+    O("Rounded fullness of the face with a flushed look.", true, "Excess cortisol redistributes fat to the face, producing the rounded moon face that is a hallmark finding of Cushing syndrome."),
+    O("Fat collection on the upper back between the shoulders.", true, "Cortisol excess deposits fat on the upper back as a buffalo hump while the arms and legs stay relatively thin from muscle wasting."),
+    O("Purple stretch marks across the abdomen.", true, "High cortisol weakens skin collagen, so stretching skin over central weight gain tears into purple striae across the abdomen."),
+    O("Blood glucose readings running consistently high.", true, "Cortisol raises blood glucose by driving glucose production and insulin resistance, so hyperglycemia is an expected finding in this client."),
+    O("Blood pressure readings trending below 100/60.", false, "Cortisol excess retains sodium and water and raises blood pressure. Hypertension, not hypotension, is the expected pattern in Cushing syndrome."),
+    O("Serum potassium readings running above normal.", false, "Excess cortisol wastes potassium through the kidneys. Hypokalemia, not hyperkalemia, is the electrolyte pattern expected with this condition.")
+  ],
+  fw: "Nursing process — build the expected picture from the hormone's actions",
+  tp: "Cushing picture: moon face, buffalo hump, purple striae, high glucose, high blood pressure, low potassium — all from too much cortisol." });
+
+BANK.push({ cat: "Endocrine & Metabolic Disorders", type: "single",
+  stem: "A nurse is caring for a client with Addison disease who is admitted with vomiting and diarrhea from a stomach illness. The client's blood pressure is 88/54 mm Hg, the pulse is 118/min, and the client reports severe weakness and abdominal pain. Which finding should the nurse report to the provider immediately?",
+  opts: [
+    O("The drop in blood pressure with a rising pulse.", true, "A client with Addison disease cannot mount a cortisol response to illness. Vomiting, diarrhea, hypotension, and tachycardia together signal an adrenal crisis that can collapse into shock."),
+    O("The report of abdominal pain with the vomiting.", false, "Abdominal pain fits the stomach illness and also fits a developing crisis, but by itself it is not the finding that shows the circulation is failing. The vital signs show that."),
+    O("The need to reschedule the client's morning bath.", false, "Bathing schedules are routine unit business. They never compete with a blood pressure of 88/54 in a client who cannot produce stress hormones."),
+    O("The client's request for a clear liquid meal tray.", false, "A diet request is handled through routine orders. It does not approach the urgency of circulatory collapse developing in a client with adrenal insufficiency.")
+  ],
+  fw: "Prioritization — in adrenal insufficiency, illness plus falling pressure means crisis",
+  tp: "Addisonian crisis: illness trigger, vomiting, severe weakness, hypotension with tachycardia. This client cannot make cortisol under stress — report immediately." });
+
+BANK.push({ cat: "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", type: "single",
+  stem: "A nurse is assisting with the care of a client who has cirrhosis with ascites. The client is on a low-sodium diet with a fluid restriction, and the abdominal girth has been increasing over 2 days. Which data should the nurse collect each day to track the ascites?",
+  opts: [
+    O("Daily weight and abdominal girth measurements.", true, "Daily weight and abdominal girth measured at the same marked point track fluid accumulation in ascites more reliably than any single symptom the client reports."),
+    O("Temperature taken at the start of every shift.", false, "Temperature watches for infection such as spontaneous bacterial peritonitis, but it does not measure how much ascitic fluid the client is gaining or losing."),
+    O("Capillary glucose checked before every meal.", false, "Glucose monitoring belongs to diabetes management. It gives no information about the volume of fluid collecting in this client's abdomen."),
+    O("Skin color noted during the morning assessment.", false, "Skin color may show jaundice from liver failure, which matters, but color cannot quantify fluid. Weight and girth are the measurements that track ascites.")
+  ],
+  fw: "Nursing process — measure the problem with the tool that quantifies it",
+  tp: "Ascites tracking: daily weight plus abdominal girth at a marked point, same time each day. Those two numbers show whether fluid is building or clearing." });
+
+
+/* Items 31-44 */
+
+BANK.push({ cat: "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", type: "single",
+  stem: "A nurse is collecting data from a client in the emergency department who reports severe right upper quadrant pain that spreads to the right shoulder, nausea, and vomiting after eating a fried meal. The client's temperature is 38.4 C (101.1 F). Which condition does this pain pattern most strongly suggest?",
+  opts: [
+    O("Inflammation of the gallbladder with a blocked duct.", true, "Right upper quadrant pain radiating to the right shoulder after a fatty meal, with nausea, vomiting, and fever, is the classic pattern of cholecystitis from a blocked cystic duct."),
+    O("Inflammation of the pancreas behind the stomach.", false, "Pancreatitis pain is usually epigastric and boring through to the back, often with very high enzyme levels. It does not typically travel to the right shoulder after fatty food."),
+    O("A kidney stone moving down the right ureter.", false, "Ureteral stone pain starts in the flank and radiates toward the groin, often with blood in the urine. Shoulder radiation after a fried meal points elsewhere."),
+    O("An ulcer eroding the lining of the duodenum.", false, "Duodenal ulcer pain is epigastric, often burning and relieved or triggered by food timing, but it does not radiate to the shoulder or follow a fatty meal this way.")
+  ],
+  fw: "Nursing process — pain location, radiation, and trigger name the organ",
+  tp: "Cholecystitis pattern: RUQ pain radiating to the right shoulder, after fatty food, with nausea and fever. Fat intake contracts the gallbladder against the blockage." });
+
+BANK.push({ cat: "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", type: "single",
+  stem: "A nurse is caring for a client who is receiving a unit of packed red blood cells. Fifteen minutes into the transfusion the client reports itching and feeling chilled, and the temperature has risen from 36.8 C to 38.2 C (100.8 F). Which action should the nurse take first?",
+  opts: [
+    O("Slow the transfusion rate and finish the unit.", false, "Slowing a transfusion that may be causing a reaction keeps the offending blood entering the client. A suspected reaction is never managed by simply slowing and finishing."),
+    O("Stop the transfusion and keep the line open with saline.", true, "The first action in any suspected transfusion reaction is to stop the blood, keep venous access with normal saline through new tubing, then notify the provider and the blood bank."),
+    O("Give the prescribed antihistamine and recheck in an hour.", false, "An antihistamine may be ordered after the reaction is reported, but it does not come before stopping the blood. Medication treats symptoms; stopping removes the cause."),
+    O("Add a warming blanket and continue the infusion.", false, "Chills during a transfusion are a reaction symptom, not simple room cold. Warming the client while the blood keeps running ignores the warning sign in front of the nurse.")
+  ],
+  fw: "ABCs and medication safety — stop the cause before treating the symptoms",
+  tp: "Transfusion reaction first move: STOP the blood, keep the vein open with saline and new tubing, then notify the provider and blood bank. Never just slow it." });
+
+BANK.push({ cat: "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has iron-deficiency anemia and a new prescription for oral ferrous sulfate. The client's hemoglobin is 9.2 g/dL, and she reports fatigue and pale skin. Which instruction should the nurse include in the teaching?",
+  opts: [
+    O("Take the tablet with a glass of milk each morning.", false, "Calcium in milk blocks iron absorption in the gut. Taking the supplement with milk would waste much of the dose this anemic client needs."),
+    O("Expect the stools to turn dark green or black.", true, "Unabsorbed iron darkens the stool to a dark green or black color. Warning the client ahead of time prevents her from mistaking this expected effect for bleeding."),
+    O("Stop the tablets when the fatigue starts to improve.", false, "Hemoglobin rises weeks before iron stores refill. Stopping when energy improves leaves the stores empty and the anemia ready to return."),
+    O("Take a double dose if a scheduled dose is missed.", false, "Doubling an iron dose increases nausea, constipation, and stomach pain without improving absorption. A missed dose is simply skipped, not doubled.")
+  ],
+  fw: "Patient teaching — expected effects explained in advance prevent false alarms",
+  tp: "Oral iron teaching: dark stools are expected, take with vitamin C rather than milk, and keep taking it after energy returns so the iron stores refill." });
+
+BANK.push({ cat: "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", type: "multi",
+  stem: "A nurse is contributing to the plan of care for a client receiving chemotherapy whose neutrophil count has dropped to 400/mm3. The nurse reviews the protective measures planned for the client's room and visitors. Which measures should the nurse recommend including? Select all that apply.",
+  opts: [
+    O("Keep fresh flowers and plants out of the client's room.", true, "Soil and standing water in flower vases harbor bacteria and fungi. A client with almost no neutrophils cannot fight these organisms, so live plants stay out."),
+    O("Have visitors with colds or infections postpone visiting.", true, "A mild cold in a healthy visitor can become a life-threatening infection in a neutropenic client. Screening visitors protects the client during the low count."),
+    O("Monitor the temperature and report any fever promptly.", true, "Fever may be the only sign of infection when neutrophils are too few to produce pus or inflammation. Even a low-grade fever is reported right away in this client."),
+    O("Serve fresh raw salads and unpeeled fruit at meals.", false, "Raw produce carries surface bacteria that a neutropenic client cannot handle. Cooked foods and peeled fruits are the safer choices during the low count."),
+    O("Allow the client to share a room with a client who has pneumonia.", false, "Rooming a neutropenic client beside an active respiratory infection exposes her to exactly the organisms she cannot fight. A private room is preferred."),
+    O("Encourage the client to use a shared bathroom down the hall.", false, "Shared bathrooms multiply contact with other clients' organisms. The neutropenic client should have a dedicated bathroom whenever possible.")
+  ],
+  fw: "Safety and infection control — when the immune system is absent, the environment becomes the defense",
+  tp: "Neutropenic precautions: no fresh flowers or raw produce, screen sick visitors, private room, and treat any fever as an emergency report." });
+
+BANK.push({ cat: "Musculoskeletal, Integumentary & Cancer Care", type: "single",
+  stem: "A nurse is collecting data from two clients with joint pain. One client has morning stiffness in the small joints of both hands lasting over an hour with warm, swollen joints; the other has knee pain that worsens with use and improves with rest. Which distinction should the nurse document?",
+  opts: [
+    O("The first pattern fits rheumatoid arthritis, an autoimmune disease.", true, "Rheumatoid arthritis is a systemic autoimmune condition with symmetric small-joint involvement and prolonged morning stiffness over an hour, unlike wear-and-tear joint disease."),
+    O("The first pattern fits osteoarthritis, a cartilage wear disease.", false, "Osteoarthritis stiffness is brief, usually under 30 minutes, and pain follows use of the joint. Prolonged morning stiffness with warm swollen small joints points the other way."),
+    O("Both patterns describe the same condition at different stages.", false, "These are two distinct diseases with different causes and treatments. Symmetric inflammatory small-joint disease and mechanical knee pain are not stages of one process."),
+    O("The second pattern fits rheumatoid arthritis of the large joints.", false, "Pain that worsens with use and eases with rest is the mechanical pattern of osteoarthritis. Rheumatoid pain and stiffness are worst after rest, especially in the morning.")
+  ],
+  fw: "Nursing process — stiffness duration and symmetry separate inflammation from wear",
+  tp: "RA vs OA: rheumatoid is symmetric, small joints, morning stiffness over an hour, warm and swollen. Osteoarthritis is mechanical — worse with use, better with rest, brief stiffness." });
+
+BANK.push({ cat: "Musculoskeletal, Integumentary & Cancer Care", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who has gout and a prescription for allopurinol. The client had two painful attacks in the big toe this year and drinks beer most evenings. Which statement by the client indicates an understanding of the teaching?",
+  opts: [
+    O("I will take the allopurinol only when an attack starts.", false, "Allopurinol prevents attacks by lowering uric acid production over time. It does not stop an attack already under way and must be taken daily to work."),
+    O("I will drink extra water and avoid beer from now on.", true, "Generous fluid intake helps the kidneys excrete uric acid, and beer is rich in purines that raise uric acid. Both changes support the daily allopurinol in preventing attacks."),
+    O("I will stop the medication once my toe feels normal.", false, "The medication controls uric acid only while it is taken. Stopping when the toe feels fine lets uric acid climb again and the attacks return."),
+    O("I will add organ meats to my diet for extra protein.", false, "Organ meats are among the highest purine foods and raise uric acid sharply. They work directly against the goal of gout management for this client.")
+  ],
+  fw: "Patient teaching — daily prevention, fluids, and purine avoidance work as one plan",
+  tp: "Gout teaching: allopurinol is daily prevention, not attack treatment. Drink plenty of fluids, avoid beer and organ meats, and never stop when the toe feels fine." });
+
+BANK.push({ cat: "Musculoskeletal, Integumentary & Cancer Care", type: "multi",
+  stem: "A nurse is reinforcing teaching with a client who has osteoporosis and a new prescription for a calcium supplement with vitamin D. The client is reviewing her daily routine with the nurse before discharge. Which statements by the client indicate an understanding of the teaching? Select all that apply.",
+  opts: [
+    O("I will walk for 30 minutes on most days of the week.", true, "Weight-bearing exercise such as walking stresses the bone in a way that stimulates bone building. It is a core part of osteoporosis management."),
+    O("I will take my calcium with vitamin D as prescribed.", true, "Vitamin D is required for the gut to absorb calcium. Taking the supplement as prescribed supports the mineral supply bones need to stay strong."),
+    O("I will ask my provider about programs to stop smoking.", true, "Smoking accelerates bone loss and raises fracture risk. Quitting removes one of the modifiable drivers of this client's osteoporosis."),
+    O("I will stay off my feet as much as possible to rest my bones.", false, "Bones that bear no weight lose density faster. Resting off the feet works against this client; regular weight-bearing activity is the prescription."),
+    O("I will double the calcium dose on days I skip walking.", false, "Extra calcium does not replace the bone-building stimulus of exercise, and excess doses raise the risk of kidney stones and constipation."),
+    O("I will drink cola instead of milk to limit my calories.", false, "Cola contains phosphoric acid linked to calcium loss from bone, and swapping out milk removes a dietary calcium source this client needs.")
+  ],
+  fw: "Patient teaching — select every statement that matches the bone-protection plan",
+  tp: "Osteoporosis understanding: weight-bearing walking, calcium with vitamin D, no smoking, fall prevention. Bed rest and extra calcium doses do the opposite." });
+
+BANK.push({ cat: "Musculoskeletal, Integumentary & Cancer Care", type: "single",
+  stem: "A nurse is collecting data from a client who has a new long-leg cast on the right leg applied 6 hours ago for a tibial fracture. The client reports pain that is not relieved by the prescribed analgesic, and the toes on the casted leg feel tight and look pale. Which finding should the nurse report to the provider immediately?",
+  opts: [
+    O("Pain that keeps rising despite the prescribed analgesic.", true, "Pain out of proportion and unrelieved by analgesics, with tight pale toes, is the earliest warning of compartment syndrome inside the cast. Pressure can destroy muscle and nerve within hours."),
+    O("A small amount of clear drainage on the cast surface.", false, "A small drainage spot is monitored by marking and dating its outline. It matters, but it does not carry the limb-threatening urgency of unrelieved rising pain."),
+    O("The client's report that the cast feels heavy and warm.", false, "A new plaster cast feels heavy and can feel warm while drying. Those sensations are expected in the first hours and do not signal a compartment problem."),
+    O("Itching under the cast reported by the client.", false, "Itching under a drying cast is common and is managed without inserting objects. It is an annoyance, not a sign that pressure is building inside the cast.")
+  ],
+  fw: "Prioritization — unrelieved pain inside a cast is a limb emergency, not a comfort issue",
+  tp: "Cast red flag: pain unrelieved by analgesics plus tight, pale toes means possible compartment syndrome. Report immediately — the cast may need to be split." });
+
+BANK.push({ cat: "Musculoskeletal, Integumentary & Cancer Care", type: "single",
+  stem: "A nurse is reinforcing teaching with a client who is receiving external radiation therapy to the chest. The treated skin is dry and slightly reddened, and the client asks how to care for the area at home. Which instruction should the nurse include?",
+  opts: [
+    O("Scrub the marked area daily with a washcloth and soap.", false, "Scrubbing irritates skin already injured by radiation and can wash off the treatment markings. The area is washed gently with the hand and mild soap or water alone."),
+    O("Keep the skin clean and dry and avoid heat or cold packs.", true, "Radiated skin is fragile and heals slowly. Gentle cleansing, keeping the area dry, and avoiding heating pads, ice, and sun exposure protect it during treatment."),
+    O("Apply scented lotion to the area before each treatment.", false, "Products applied before a session can interfere with treatment and irritate the skin unless the radiation team approves them. Nothing goes on the skin before treatment without approval."),
+    O("Peel off any loose skin so new skin can grow faster.", false, "Peeling radiated skin opens a route for infection in tissue that heals poorly. Loose skin is left alone and reported if it breaks down or weeps.")
+  ],
+  fw: "Patient teaching — protect tissue whose healing capacity is already reduced",
+  tp: "Radiation skin care: gentle washing, keep clean and dry, no heat, ice, sun, or unapproved lotions on the field, and never peel the skin or wash off markings." });
+
+BANK.push({ cat: "Perioperative & Postoperative Care", type: "calc",
+  stem: "A nurse is assisting with the care of a client who has a prescription for an IV piggyback medication of 50 mL to infuse over 30 minutes. At what rate should the nurse set the IV pump? (Round the answer to the nearest whole number. Use a leading zero if it applies. Do not use a trailing zero.)",
+  ans: 100, unit: "mL/hr",
+  fw: "Medication safety — verify the rate math before the infusion runs",
+  tp: "Rate = volume divided by time in hours: 50 mL divided by 0.5 hr = 100 mL/hr. Thirty minutes is half an hour, so the hourly rate is double the volume." });
+
+BANK.push({ cat: "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", type: "order",
+  stem: "A nurse is assisting a client who had a colostomy created 3 days ago to empty and change the pouching system for discharge teaching. Place the nurse's actions in the order they should be performed.",
+  items: [
+    { t: "Wash hands and gather the pouch, wafer, and measuring guide", r: "Gathering all supplies with clean hands before starting prevents breaks in the process that leave the stoma exposed and the client waiting mid-change." },
+    { t: "Empty the contents of the pouch into a measuring container", r: "Emptying the pouch while it is still attached contains the drainage and lets the output be measured before anything is removed from the skin." },
+    { t: "Remove the used wafer gently and cleanse the skin around the stoma", r: "With the drainage contained, the old system comes off and the peristomal skin is cleansed and inspected before a new barrier is applied." },
+    { t: "Measure the stoma and cut the wafer opening to fit it", r: "The wafer opening is sized to the stoma so skin stays protected. Measuring comes after the old system is off and the stoma can be seen clearly." },
+    { t: "Apply the new wafer and pouch and press gently to seal", r: "The new system goes on last, pressed into place for a complete seal that protects the skin and prevents leakage between changes." }
+  ],
+  fw: "Nursing process — contain, remove, prepare, then apply, in that sequence",
+  tp: "Pouch change order: gather supplies, empty the pouch, remove and cleanse, measure and cut, then apply and seal. Measuring before removal is impossible — the stoma must be visible." });
+
+BANK.push({ cat: "Respiratory Disorders", type: "order",
+  stem: "A nurse is collecting a sputum culture from a client who has a productive cough and a suspected lower respiratory infection, before the morning antibiotic dose. Place the nurse's actions in the order they should be performed.",
+  items: [
+    { t: "Have the client rinse the mouth with water and spit it out", r: "Rinsing with plain water clears loose oral organisms and food particles so the specimen reflects the lower airway rather than the mouth." },
+    { t: "Ask the client to take several deep breaths and cough deeply", r: "Deep breaths followed by a deep cough bring secretions up from the lower respiratory tract, which is the material the culture is meant to test." },
+    { t: "Have the client expectorate directly into the sterile container", r: "The deep cough product goes straight into the sterile container without touching its inner walls, keeping the specimen uncontaminated." },
+    { t: "Cap the container tightly and label it at the bedside", r: "Sealing and labeling at the bedside protects the specimen and prevents any mix-up with another client's sample before transport." },
+    { t: "Send the labeled specimen to the laboratory promptly", r: "Prompt delivery keeps the organisms viable for culture. A specimen left sitting at room temperature can overgrow or die off before testing." }
+  ],
+  fw: "Nursing process — specimen quality is decided by the sequence at the bedside",
+  tp: "Sputum culture order: rinse with water, deep breaths and a deep cough, expectorate into the sterile cup, cap and label, send it promptly. Culture before antibiotics when possible." });
+
+BANK.push({ cat: "Respiratory Disorders", type: "matrix",
+  scen: "<b>Exhibit — Three clients with chronic or acute breathing problems</b><br>Client 1: Long-term smoker, barrel-shaped chest, breathes through pursed lips, uses accessory muscles, losing weight.<br>Client 2: Teenager with nighttime wheezing episodes triggered by cold air and dust, symptom-free between episodes.<br>Client 3: Older adult with a temperature of 39.1 C (102.4 F), rusty-colored sputum, pleuritic chest pain, and bronchial breath sounds over the right lower lobe.",
+  stem: "For each finding, choose the condition it is most consistent with for these clients.",
+  cols: ["Emphysema", "Asthma", "Pneumonia"],
+  rows: [
+    { t: "Barrel-shaped chest with prolonged, labored exhalation", a: 0, r: "Emphysema. Trapped air from destroyed alveoli hyperinflates the chest into a barrel shape and stretches out the expiratory effort." },
+    { t: "Wheezing episodes triggered by cold air, with normal breathing between episodes", a: 1, r: "Asthma. Reversible airway narrowing produces episodic wheeze with triggers, and the client breathes normally when the episode passes." },
+    { t: "Rusty-colored sputum with a temperature of 39.1 C (102.4 F)", a: 2, r: "Pneumonia. Fever with rusty sputum reflects infection and blood-tinged exudate filling the alveoli of the affected lobe." },
+    { t: "Bronchial breath sounds heard over one consolidated lobe", a: 2, r: "Pneumonia. Consolidated lung tissue transmits breath sounds more directly, so bronchial sounds appear over the infected lobe." },
+    { t: "Nighttime symptoms that wake the client several times a week", a: 1, r: "Asthma. Nighttime worsening from airway hyperreactivity is a hallmark pattern of asthma rather than fixed structural lung damage." }
+  ],
+  fw: "Matrix judgment — match each finding to the mechanism that produces it",
+  tp: "Sorting the three: emphysema is structural air trapping, asthma is episodic and reversible, pneumonia is infection with fever and consolidation in one lobe." });
+
+BANK.push({ cat: "Gastrointestinal, Hepatic, Hematologic & Immune Disorders", type: "dropdown",
+  stem: "A nurse is reinforcing teaching with a client who had a gastrectomy 2 weeks ago and reports nausea, cramping, sweating, and diarrhea about 20 minutes after meals.<br>The pattern of symptoms most likely reflects:<br>[[0]]<br><br>The eating change the nurse should reinforce first is:<br>[[1]]",
+  blanks: [
+    { o: [
+      O("rapid entry of food into the small intestine after meals", true, "Without the stomach reservoir, a concentrated meal load rushes into the small bowel and pulls in fluid, producing dumping symptoms within about 20 to 30 minutes of eating."),
+      O("an infection of the incision spreading into the abdomen", false, "There is no fever, redness, or drainage data here, and the symptoms lock onto meals rather than running constantly. A meal-timed pattern points to a digestive mechanism."),
+      O("a blockage forming where the bowel was reconnected", false, "A blockage produces vomiting of undigested food, distention, and an inability to pass contents. This client's food moves too fast rather than not at all.")
+    ] },
+    { o: [
+      O("eating small, frequent meals and drinking fluids between meals", true, "Small meals limit the load reaching the bowel at once, and separating fluids from meals slows transit further. Together these are the core eating changes for dumping syndrome."),
+      O("drinking a large glass of sweetened juice with each meal", false, "Concentrated sweets pull even more fluid into the bowel and worsen the cramping, sweating, and diarrhea. Sugar loads are what this client must limit, not add."),
+      O("lying flat on the back immediately after finishing meals", false, "Lying flat lets the meal contents slide into the bowel even faster by gravity. Reclining slightly may be discussed, but flat positioning works against this client.")
+    ] }
+  ],
+  fw: "Clinical judgment — tie the meal-timed symptom pattern to its mechanism, then to the fix",
+  tp: "Dumping syndrome: symptoms 20 to 30 minutes after meals. Fix it with small frequent meals, fluids between meals rather than with them, and limited concentrated sweets." });
+
+
+/* ===== NGN CASE STUDY (items 45-50, grp ngn1) ===== */
+var NGN_SCEN = "<b>NGN Case — Client: 74-year-old with a history of heart failure, brought to the emergency department</b><br>Admission data: BP 168/94 mm Hg, HR 112/min, RR 28/min, Temp 37.1 C (98.8 F), SpO2 88% on room air. Weight is up 2.7 kg (6 lb) in 2 days. Crackles are heard in both lung fields. The client cannot lie flat and is coughing up pink, frothy sputum. Bilateral ankle edema is 2+. Blood glucose 118 mg/dL. The client denies chest pain. Home medications include oral furosemide, and the client reports missing several doses this week.";
+
+BANK.push({ cat: "Cardiovascular Disorders", type: "multi", grp: "ngn1",
+  scen: NGN_SCEN,
+  stem: "Case 1 of 6 — Recognize cues: Which of the following findings in this client's admission data should the nurse identify as concerning and requiring immediate follow-up? Select all that apply.",
+  opts: [
+    O("Weight gain of 2.7 kg (6 lb) in 2 days.", true, "A gain this fast in a client with heart failure is fluid, not body tissue. It is a core cue that the heart failure is decompensating."),
+    O("Crackles heard in both lung fields.", true, "Bilateral crackles mean fluid has backed up into the lungs. In this client they confirm the weight gain is showing up as pulmonary congestion."),
+    O("Pink, frothy sputum when coughing.", true, "Pink frothy sputum is a hallmark of pulmonary edema. It signals that fluid is entering the alveoli and the client's gas exchange is failing."),
+    O("Oxygen saturation of 88% on room air.", true, "A saturation of 88% shows significant hypoxemia from the fluid in the lungs. It is a concerning cue that demands immediate follow-up and oxygen."),
+    O("Temperature of 37.1 C (98.8 F).", false, "This temperature is within the expected range. It does not support infection and is not a cue requiring immediate follow-up in this case."),
+    O("Blood glucose of 118 mg/dL.", false, "A glucose of 118 mg/dL is only mildly above fasting range and is not driving this client's picture. The fluid and oxygen findings are the concerns.")
+  ],
+  fw: "Clinical judgment — recognizing cues: fluid gain, lung sounds, sputum, and saturation tell one story",
+  tp: "Case cue set: rapid weight gain, bilateral crackles, pink frothy sputum, SpO2 88%, cannot lie flat. The normal temperature and near-normal glucose are the distractors." });
+
+BANK.push({ cat: "Cardiovascular Disorders", type: "dropdown", grp: "ngn1",
+  scen: NGN_SCEN,
+  stem: "Case 2 of 6 — Analyze cues: Complete the nurse's analysis of this client's data.<br>The pattern of findings most likely indicates:<br>[[0]]<br><br>The complication the nurse should work to prevent first is:<br>[[1]]",
+  blanks: [
+    { o: [
+      O("worsening heart failure with fluid flooding the lungs", true, "Missed diuretic doses, rapid fluid weight gain, bilateral crackles, orthopnea, and pink frothy sputum together describe decompensated heart failure with pulmonary edema."),
+      O("a bacterial infection spreading through both lungs", false, "A bilateral pneumonia would be expected to bring fever and a productive infectious picture. The temperature is normal and the sputum is frothy rather than purulent."),
+      O("an allergic reaction narrowing the airways", false, "There is no allergen exposure, wheezing, rash, or swelling data here. The weight gain and missed diuretic doses point to fluid, not allergy.")
+    ] },
+    { o: [
+      O("severe oxygen failure from fluid filling the alveoli", true, "As pulmonary edema worsens, fluid fills the alveoli and gas exchange collapses. Preventing severe hypoxemia is the first complication focus in this case."),
+      O("a pressure injury from sitting upright in the chair", false, "Skin protection matters during a long stay, but it develops over days. The threat in front of the nurse is measured in minutes and sits in the lungs."),
+      O("a fall injury when the client gets up to void", false, "Falls are a real concern once diuresis starts, and supervision is planned. Still, the immediate complication to prevent is respiratory failure, not a fall.")
+    ] }
+  ],
+  fw: "Clinical judgment — analyzing cues: name the condition, then the harm it is moving toward",
+  tp: "Analysis: missed diuretic doses plus fluid cues in the lungs equals decompensated heart failure with pulmonary edema, and its next step is severe hypoxemia." });
+
+BANK.push({ cat: "Respiratory Disorders", type: "single", grp: "ngn1",
+  scen: NGN_SCEN,
+  stem: "Case 3 of 6 — Prioritize: The nurse is contributing to the plan of care for the next hour. Which goal should the nurse identify as the priority for this client?",
+  opts: [
+    O("Improve the client's oxygen level and ease the work of breathing.", true, "The client is hypoxemic with fluid in the lungs. Every other goal waits behind restoring oxygenation and reducing the work of breathing this hour."),
+    O("Teach the client the low-sodium diet before the lunch tray arrives.", false, "Diet teaching matters for long-term control, and it belongs in the plan. It cannot come before correcting a saturation of 88% in a client who cannot lie flat."),
+    O("Have the client walk the hallway to help move fluid out of the lungs.", false, "Walking a client in pulmonary edema increases oxygen demand the lungs cannot meet. Activity resumes only after breathing and saturation stabilize."),
+    O("Document the full admission assessment in the electronic record.", false, "Documentation is required, but charting the admission never outranks treating failing gas exchange in the client sitting in front of the nurse.")
+  ],
+  fw: "Prioritization — ABCs: the breathing goal outranks teaching, activity, and paperwork",
+  tp: "Priority goal in pulmonary edema is oxygenation first. Teaching, ambulation, and documentation all re-enter the plan after the client can breathe." });
+
+BANK.push({ cat: "Cardiovascular Disorders", type: "matrix", grp: "ngn1",
+  scen: NGN_SCEN + "<br><br><b>New orders:</b> Furosemide 40 mg IV now. Oxygen by nasal cannula, titrated to keep SpO2 at or above 92%. Strict intake and output. Daily weights. Low-sodium diet.",
+  stem: "Case 4 of 6 — Generate solutions: For each planned action, choose whether it is indicated or contraindicated for this client now.",
+  cols: ["Indicated", "Contraindicated"],
+  rows: [
+    { t: "Administer the furosemide 40 mg IV as prescribed", a: 0, r: "Indicated. IV furosemide removes the excess fluid through the kidneys and is the ordered drug treatment at the center of this client's plan." },
+    { t: "Position the client upright with the legs dependent", a: 0, r: "Indicated. Sitting upright with the legs down pools blood in the lower body, reduces fluid returning to the lungs, and eases breathing right away." },
+    { t: "Record strict intake and output and daily weights", a: 0, r: "Indicated. Output after the diuretic and the trend in daily weights show whether fluid is actually leaving the body as the plan intends." },
+    { t: "Encourage the client to drink extra fluids each hour", a: 1, r: "Contraindicated. This client's problem is fluid overload flooding the lungs. Pushing oral fluids adds to the very volume the team is trying to remove." },
+    { t: "Lay the client flat in bed to promote complete rest", a: 1, r: "Contraindicated. Lying flat shifts fluid into the lungs and worsens orthopnea in pulmonary edema. This client must stay upright to breathe." }
+  ],
+  fw: "Clinical judgment — generating solutions around fluid removal and upright positioning",
+  tp: "Pulmonary edema bundle: IV diuretic, sit upright with legs dependent, strict I&O and daily weights. Extra fluids and lying flat are both contraindicated." });
+
+BANK.push({ cat: "Respiratory Disorders", type: "single", grp: "ngn1",
+  scen: NGN_SCEN + "<br><br><b>Update:</b> The client is sitting in bed with the head raised partway. Over the past few minutes the breathing has become more labored, the frothy cough has increased, and the SpO2 has fallen to 86% on room air. The IV furosemide has not yet been given.",
+  stem: "Case 5 of 6 — Take action: Which action should the nurse take first for this client?",
+  opts: [
+    O("Raise the head of the bed fully upright and lower the legs.", true, "Full upright positioning with the legs dependent immediately reduces venous return to the lungs and improves lung expansion. It is the fastest action available while medications are being prepared."),
+    O("Give the client's scheduled oral morning medications now.", false, "Oral medications do not treat falling oxygen levels, and swallowing pills is unsafe in a client gasping with frothy sputum. They wait until breathing stabilizes."),
+    O("Encourage the client to lie flat so a blood pressure can be taken.", false, "Lying flat pushes more fluid into the lungs of a client whose saturation is already falling. A pressure can be taken with the client sitting upright instead."),
+    O("Obtain a full set of orthostatic vital signs in the hallway.", false, "Orthostatic measurements require position changes and standing that this client cannot tolerate. They add delay and danger without changing the immediate need to sit the client up.")
+  ],
+  fw: "ABCs — positioning is the first intervention when breathing is failing",
+  tp: "In worsening pulmonary edema, sit the client fully upright with legs dependent first. Position changes physiology in seconds, before any medication can act." });
+
+BANK.push({ cat: "Renal, Urinary & Fluid-Electrolyte Balance", type: "single", grp: "ngn1",
+  scen: NGN_SCEN + "<br><br><b>Update — 4 hours later:</b> The client received furosemide 40 mg IV. Urine output since the dose totals 900 mL. Crackles are now heard only at the lung bases, SpO2 is 94% on oxygen at 2 L/min, and RR is 20/min. New labs: potassium 3.2 mEq/L. The client reports cramps in both legs.",
+  stem: "Case 6 of 6 — Evaluate: How should the nurse interpret these findings, and what is the priority response?",
+  opts: [
+    O("Breathing improved with diuresis; report the low potassium and leg cramps.", true, "A 900 mL output, clearing crackles, and a saturation of 94% show the diuretic worked. Furosemide also wastes potassium, so a level of 3.2 with muscle cramps is reported for replacement orders."),
+    O("The client is fully recovered; stop the oxygen and the output monitoring.", false, "Crackles remain at the bases and the client still needs oxygen to hold 94%. Improvement is real but incomplete, and stopping monitoring now would miss the low potassium entirely."),
+    O("The leg cramps show the heart failure is getting worse again; give more fluids.", false, "Cramps paired with a potassium of 3.2 after a strong diuresis point to potassium loss, not worsening failure. Giving fluids would push this client back toward pulmonary edema."),
+    O("The urine output was too low; request a second diuretic dose right away.", false, "Nine hundred milliliters in 4 hours is a brisk, effective diuresis, confirmed by the clearing lungs. The finding that needs action is the potassium, not the output volume.")
+  ],
+  fw: "Evaluation — judge the outcome data against both the treatment goal and the drug's losses",
+  tp: "After furosemide, evaluate two ledgers: fluid out and lungs clearing on one side, potassium lost on the other. A K+ of 3.2 with cramps gets reported for replacement." });
+
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { shuffle(q.opts); S.resp.push(-1); }
+    else if (q.type === "multi") { shuffle(q.opts); S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "calc") { S.resp.push(""); }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { shuffle(q.blanks[k].o); d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "calc") { return r !== "" && r !== null && r !== undefined; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "calc") { var v = parseFloat(r); return (!isNaN(v) && Math.abs(v - q.ans) < 0.051) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>PN Medical Surgical CMS — Unproctored Practice A — Original Remake</h1>';
+  h += '<div class="sub">Brutal mode | PN Adult Medical-Surgical — original questions on the verified core PN Med-Surg blueprint | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order and answer choices<br><span class="small">Case-study questions stay together. Answer choices always shuffle, even when question shuffle is off.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  if (t === "calc") { return "Calculate and enter the number."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else if (q.type === "calc") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    h += '<div><input class="calcinput" type="number" step="any" inputmode="decimal" value="' + (r === "" || r === null ? "" : r) + '"' + (lock ? ' disabled' : '') + ' oninput="pickC(this.value)"> <span style="font-size:16px">' + q.unit + '</span></div>';
+    if (fb) { h += '<div class="fbx" style="margin-top:8px">Correct answer: ' + q.ans + ' ' + q.unit + '</div>'; }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+    h += '<div class="fw"><b>Priority framework:</b> ' + q.fw + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickC(v) { if (isLocked()) { return; } S.resp[S.cur] = v; updateBars(); }
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>
