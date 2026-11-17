@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OB Ch 11 — Complications After Birth: Critical Thinking Test</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+function S(cat, stem, opts, tp, extra) { var q = { cat: cat, type: "single", stem: stem, opts: opts.map(function (o) { return O(o[0], o[1], o[2]); }), tp: tp }; if (extra) { for (var k in extra) q[k] = extra[k]; } BANK.push(q); }
+function M(cat, stem, opts, tp, extra) { var q = { cat: cat, type: "multi", stem: stem, opts: opts.map(function (o) { return O(o[0], o[1], o[2]); }), tp: tp }; if (extra) { for (var k in extra) q[k] = extra[k]; } BANK.push(q); }
+var CATS = ["Postpartum Hemorrhage — Shock and First Response","Uterine Atony, Bladder, and Subinvolution","Lacerations and Hematomas — Concealed Bleeding","Postpartum Infections — Uterus, Wound, Urinary Tract, Breast","Thromboembolism — SVT, DVT, and Pulmonary Embolism","Clotting Problems and Hemorrhage Medications","Postpartum Mood Disorders — Blues, Depression, Psychosis"];
+var KEYTERMS = [];
+
+/* ================= NGN CASE 1 — postpartum hemorrhage (atony) ================= */
+var CASE_CT1 = "CASE STUDY — The Fundus That Would Not Stay Firm. Mrs. D. A., 29 years old, G5 P4, gave birth vaginally to a 4,300 g baby 50 minutes ago after a long labor augmented with oxytocin. The placenta delivered intact. She has not voided since before the birth. On assessment now: the fundus is difficult to locate; when found it is soft, above the umbilicus, and pushed to the right of midline. Lochia is heavy and rubra with several large clots; one perineal pad saturated in 25 minutes. Pulse 112, blood pressure 122/80, respirations 20. She says she feels 'a little shaky and nervous.'";
+
+S("Postpartum Hemorrhage — Shock and First Response", "CASE STUDY — The Fundus That Would Not Stay Firm. Which cluster of cues most strongly indicates that a hemorrhage is developing?", [
+  ["The soft, high, displaced fundus with heavy rubra lochia, large clots, a pad saturated in 25 minutes, a pulse of 112, and new shakiness and nervousness", true, "Every cue points the same way: a uterus that is not clamping (soft, high, displaced), loss that is heavy with large clots and faster than one pad per hour, and the earliest volume signs — a rising pulse and restlessness — while the blood pressure still looks acceptable."],
+  ["The firm, midline fundus at the umbilicus with moderate rubra lochia, a few small clots, a pulse of 84, and a mother who is resting comfortably after the birth", false, "That is the normal recovery picture — firm and midline, moderate flow, small clots only, a slow-normal postpartum pulse. It is the comparison picture, not Mrs. D. A.'s."],
+  ["A continuous bright-red trickle with a firm fundus, severe perineal pain the analgesic has not touched, and lochia that looks normal in amount and color", false, "That cluster belongs to the trauma family — a laceration trickle or a hematoma's pain pattern. Mrs. D. A.'s fundus is soft and her flow is heavy, which is a different source."],
+  ["A temperature of 38.1 °C with a tender, enlarged uterus, foul-smelling lochia, and prolonged severe cramping on the second postpartum day", false, "That is the endometritis picture, and it belongs to a later day. Her emergency at 50 minutes is bleeding, not infection."]
+], "ANSWER KEY — Correct answer: the atony cluster — soft displaced fundus, heavy clots, fast pad saturation, pulse 112, restlessness. DETAILED RATIONALE — NGN step 1 (recognize cues): hemorrhage cues sort by pattern. Tone failure shows a soft, high, hard-to-find fundus with heavy flow; volume loss announces itself in pulse and behavior before the blood pressure moves. PRIORITY FRAMEWORK — Clinical Judgment (recognize cues): read the whole pattern, not the single worst number.", { scen: CASE_CT1, grp: "CT-CASE1" });
+
+M("Postpartum Hemorrhage — Shock and First Response", "CASE STUDY — The Fundus That Would Not Stay Firm. Which findings in Mrs. D. A.'s picture are early evidence that her circulating volume is already falling? Select all that apply.", [
+  ["A pulse of 112 in a postpartum woman, when a slow pulse is the expected pattern after birth", true, "Tachycardia is usually the FIRST sign of inadequate blood volume. Postpartum mothers often run slow pulses, so a pulse over 100 means suspect shock or infection — never reassurance."],
+  ["New restlessness — she describes feeling shaky and nervous", true, "As volume falls, blood is shunted to protect the heart and brain, and the brain still gets less flow: anxiety, restlessness, and shakiness come before lethargy."],
+  ["A perineal pad saturated in 25 minutes, faster than the one-saturated-pad-per-hour ceiling for the first hours", true, "Pad speed is a volume measurement: saturating in 15 minutes to 1 hour must be reported promptly. Her rate says the loss is outpacing replacement."],
+  ["A blood pressure of 122/80, which confirms her circulating volume is still adequate", false, "The blood pressure is the trap. Pregnancy adds 1–2 L of volume, so pressure holds until it suddenly doesn't — pulse pressure narrows first, and the BP falls late."],
+  ["Rubra lochia, which is the expected color in the first hours and therefore rules out significant loss", false, "The color is expected; the AMOUNT and the large clots are the problem. Blood can also pool inside a relaxed uterus and hide the true loss."],
+  ["Large clots in the lochia, which are an expected finding in the first hours after any birth", false, "A few SMALL clots are acceptable. Large clots are not — they ride with atony bleeding and count as loss."]
+], "ANSWER KEY — Correct answers: pulse 112, new restlessness/shakiness, and a pad saturated in 25 minutes. DETAILED RATIONALE — NGN step 2 (analyze cues): the body compensates and hides shock early. Heart and respiratory rates climb first, the brain shows restlessness, and the pad rate measures the loss — while the blood pressure, the number everyone wants to trust, changes last. PRIORITY FRAMEWORK — Clinical Judgment (analyze cues) + ABCs: trend the early signs, not the late one.", { scen: CASE_CT1, grp: "CT-CASE1" });
+
+S("Uterine Atony, Bladder, and Subinvolution", "CASE STUDY — The Fundus That Would Not Stay Firm. What should the nurse do FIRST for Mrs. D. A.?", [
+  ["Massage the uterus until it becomes firm", true, "Source control comes first: the open vessels at the placental site close only when the uterus clamps down. Massage to firm is the opening move of the atony sequence in this chapter."],
+  ["Catheterize her to empty the bladder before touching the fundus", false, "The bladder matters — it is why the fundus sits high and to the right — but the bladder is emptied to KEEP the uterus firm. The sequence is massage to firm first, then empty the bladder so the firmness holds."],
+  ["Press toward the vagina to expel the pooled clots and blood", false, "Clots are expressed only AFTER the uterus is firm. Pressing on a soft uterus risks more pooling, not less."],
+  ["Weigh the saturated pad and chart the loss before intervening", false, "Quantification matters and runs alongside care, but weighing a pad does not stop bleeding. Firm the uterus first; measure as you go."]
+], "ANSWER KEY — Correct answer: massage the uterus until it is firm. DETAILED RATIONALE — NGN step 3 (prioritize hypotheses/actions): atony care has a tested order — massage to firm FIRST, clots only once firm, bladder emptied to keep it firm. Her risk stack (grand multiparity, a 4,300 g baby stretching the uterus, a long oxytocin-augmented labor, a full bladder) all converges on tone. PRIORITY FRAMEWORK — Nursing Process (assessment to intervention): stop the loss at its source before supporting measures.", { scen: CASE_CT1, grp: "CT-CASE1" });
+
+M("Postpartum Hemorrhage — Shock and First Response", "CASE STUDY — The Fundus That Would Not Stay Firm. The fundus firms with massage but softens again each time the nurse stops. Which actions should the nurse include in the plan now? Select all that apply.", [
+  ["Empty her bladder — catheterize if she cannot void — so the firmness the massage won can hold", true, "A full bladder physically blocks contraction and is displacing her uterus. Emptying it removes the driver so tone can hold; many providers pre-order catheterization so this fix is not delayed."],
+  ["Put the baby to breast so suckling releases her own oxytocin", true, "Suckling triggers the posterior pituitary to release oxytocin, which contracts the uterus — breastfeeding is a built-in uterotonic."],
+  ["Notify the provider and prepare the first-line uterotonic, a dilute oxytocin IV infusion", true, "A uterus that will not stay firm escalates up the drug ladder, and oxytocin is the first-line drug. Notification and preparation happen together."],
+  ["Keep her NPO until the provider has evaluated her", true, "Hemorrhage patients stay NPO until evaluated — repair, packing, or curettage under general anesthesia may follow, and an empty stomach is anesthesia safety."],
+  ["Keep massaging continuously for the next hour so the uterus cannot relax again", false, "Overmassage is a named trap: the uterus is a muscle, overstimulation tires it, and a tired uterus contracts worse. Massage to firm, then stop."],
+  ["Give her oral fluids and a meal to replace the volume she has lost by mouth", false, "She is NPO, and oral intake cannot replace volume at hemorrhage speed. Volume is replaced IV."]
+], "ANSWER KEY — Correct answers: empty the bladder, baby to breast, notify the provider and prepare oxytocin, and keep her NPO. DETAILED RATIONALE — NGN step 4 (generate solutions): each driver gets its matched tool — bladder (empty it), physiology (suckling oxytocin), pharmacology (first-line uterotonic), and anesthesia safety (NPO) — while the two false actions attack the problem in ways the chapter warns against. PRIORITY FRAMEWORK — Clinical Judgment (generate solutions): one tool per driver, bundle underneath.", { scen: CASE_CT1, grp: "CT-CASE1" });
+
+BANK.push({ cat: "Uterine Atony, Bladder, and Subinvolution", type: "order", stem: "CASE STUDY — The Fundus That Would Not Stay Firm. Place the nurse's actions in the correct order for Mrs. D. A.'s atony care.", items: [
+  { t: "Massage the uterus until it is firm", r: "FIRST source control: the placental-site vessels close only when the muscle clamps. Massage to firm — and stop once it is firm." },
+  { t: "Expel pooled clots and blood by pressing toward the vagina", r: "Clots are expressed only against a firm uterus; pressing on a soft one risks more pooling." },
+  { t: "Empty the bladder, catheterizing if she cannot void, so the uterus stays firm", r: "Her fundus pushed high and to the right names the full bladder. Emptying it removes the driver so the firmness holds." },
+  { t: "Give the ordered uterotonic and notify the provider that tone will not hold on its own", r: "Escalation: a uterus that re-softens needs the drug ladder and the provider in the loop." },
+  { t: "Reassess fundus, lochia, and vital signs and compare them with the starting values", r: "Evaluation closes the sequence: is the fundus holding, the flow slowing, the pulse settling?" }
+], tp: "ANSWER KEY — Correct order: massage to firm → expel clots once firm → empty the bladder to keep it firm → uterotonic and provider notification → reassess against baseline. DETAILED RATIONALE — NGN step 5 (take action): the chapter's sequence is a clinical decision — firm it, clear it, keep it firm, support it, re-judge it. PRIORITY FRAMEWORK — Clinical Judgment (take action): order is treatment, not paperwork.", scen: CASE_CT1, grp: "CT-CASE1" });
+
+S("Postpartum Hemorrhage — Shock and First Response", "CASE STUDY — The Fundus That Would Not Stay Firm. Thirty minutes into treatment the nurse reassesses Mrs. D. A. Which set of findings shows the interventions are working?", [
+  ["Fundus firm and midline at the umbilicus, lochia moderate with no new large clots, pulse down to 96, and she is calmer", true, "Every driver is answered: tone holds (firm, midline), loss has slowed (moderate flow, no new large clots), and the early volume signs are reversing (pulse settling, restlessness easing)."],
+  ["Fundus firm, but her blood pressure has fallen to 96/60 and her pulse has climbed to 124", false, "That is deterioration wearing a firm fundus. A falling BP in hemorrhage is a LATE and ominous sign, and the climbing pulse says volume is still losing."],
+  ["Fundus boggy again, but her blood pressure is unchanged at 122/80, so the picture is stable", false, "A re-softened uterus means the source is not controlled, and an unchanged BP does not clear her — pressure falls late in hypovolemia."],
+  ["Lochia has stopped completely, the fundus can no longer be felt, and she says she feels fine", false, "Absent flow is not the goal picture. Blood can pool inside a relaxed uterus and hide the loss; the expected outcome is a firm, findable fundus with moderate flow."]
+], "ANSWER KEY — Correct answer: firm midline fundus, moderate lochia without new large clots, pulse settling, restlessness easing. DETAILED RATIONALE — NGN step 6 (evaluate outcomes): improvement is measured per driver — tone, flow, and the early shock signs — against the starting values, not by any single reassuring number. PRIORITY FRAMEWORK — Clinical Judgment (evaluate outcomes): match each outcome to the intervention that was supposed to produce it.", { scen: CASE_CT1, grp: "CT-CASE1" });
+
+/* ================= Category A standalone — shock and first response ================= */
+S("Postpartum Hemorrhage — Shock and First Response", "A woman 3 hours after a vaginal birth has lost an estimated 900 mL of blood. Her pulse is 118, respirations 24, blood pressure 104/72 (baseline 128/84), skin pale and cool, and she is newly restless. Which statement about her condition is correct?", [
+  ["She is showing compensated hypovolemic shock — her pulse rose first and her pulse pressure is narrowing while her blood pressure is only beginning to fall", true, "The compensation pattern is the chapter's core shock lesson: heart and respiratory rates climb first, pulse pressure narrows (systolic falls, diastolic rises), skin turns pale and cool as blood is shunted centrally, and the brain shows restlessness — all before the BP collapses."],
+  ["She is not in shock, because her systolic pressure is still above 100 and has not yet fallen to a hypotensive level", false, "Waiting for hypotension waits for the late sign. By the time the BP cannot compensate, the loss is advanced and can become undetectable-pressure territory fast."],
+  ["Her restlessness and fast pulse are explained by pain and the excitement of the birth rather than by volume loss", false, "In a woman who has lost 900 mL, restlessness is a brain-perfusion sign until proven otherwise. Naming it excitement dismisses the earliest alarm."],
+  ["Her urine output is the first sign that will change in volume loss, and it has not been reported low, so she is still compensating fully", false, "The kidneys conserve fluid as volume falls, so output drops as part of the picture — but the pulse changes FIRST. An unreported output is not a clearance."]
+], "ANSWER KEY — Correct answer: compensated hypovolemic shock with narrowing pulse pressure. DETAILED RATIONALE — Shock signs can look mild while the body compensates, then become life-threatening suddenly; the nurse's vigilance is the early-warning system. Read the pulse, the pulse pressure, the skin, and the behavior — not the reassuring systolic. PRIORITY FRAMEWORK — ABCs / circulation: recognize compensation before it fails.");
+
+S("Postpartum Hemorrhage — Shock and First Response", "A woman after a cesarean birth has a measured blood loss of 850 mL. She is pale, her pulse is 116, and she feels faint when she sits up. How should the nurse classify and act on this picture?", [
+  ["Treat it as postpartum hemorrhage — the cesarean threshold is over 1000 mL, but her signs of hypovolemia make it a hemorrhage now", true, "The chapter pairs the cesarean number with signs and symptoms of hypovolemia. Pallor, a pulse of 116, and faintness on sitting are volume signs — the picture, not the arithmetic alone, drives the response."],
+  ["Reassure her — 850 mL is below the cesarean hemorrhage threshold, so this counts as expected surgical loss", false, "A threshold is a definition line, not a permission to ignore shock signs. Her body is already reporting the loss."],
+  ["Classify it as late postpartum hemorrhage because she is now recovering on the postpartum unit", false, "Late PPH begins after 24 hours. Location on a unit does not change the clock."],
+  ["Chart it as within normal limits and recheck her at the next routine round in 4 hours", false, "Routine rounds are for stable patients. Tachycardia with faintness after an 850 mL loss buys escalation and close trending, not a routine interval."]
+], "ANSWER KEY — Correct answer: treat as PPH — hypovolemia signs with the loss. DETAILED RATIONALE — PPH is over 500 mL after a vaginal birth and over 1000 mL after a cesarean birth, and the definition travels with the signs of hypovolemia. Pregnancy's extra 1–2 L of volume hides loss until it doesn't. PRIORITY FRAMEWORK — Assessment accuracy: classify by the patient's picture, not by one number.");
+
+S("Postpartum Hemorrhage — Shock and First Response", "A nurse is caring for a woman with early postpartum hemorrhage. Which practice gives the most accurate running total of her blood loss?", [
+  ["Weigh every perineal pad and underpad and convert the added weight, counting each gram as 1 mL of blood", true, "The chapter's measurement rule is the scale: 1 g of weight ≈ 1 mL of blood. Weighed loss is the number the team can trend and act on."],
+  ["Estimate the loss visually at each pad change and chart it as light, moderate, or heavy", false, "Visual estimates under-read blood loss, and descriptive words cannot be trended. Estimation is how a slow hemorrhage gets missed."],
+  ["Count the pads used per hour and multiply by the capacity printed on the supply package", false, "Pads are rarely saturated to a standard capacity, and blood also lands on linens and pools internally. Pad counts are a screening cue, not a measurement."],
+  ["Measure what collects in the bedpan at each voiding and add the pad count to that total", false, "Bedpan volume mixes urine with blood and misses everything on pads and linens. The weighed-pad method captures the loss where it lands."]
+], "ANSWER KEY — Correct answer: weigh pads and underpads, 1 g = 1 mL. DETAILED RATIONALE — Quantification is a hemorrhage-bundle action, not paperwork: pad weights, vital signs every 15 minutes until stable, and strict intake and output are how the team sees the trend a single glance misses. One caution from the chapter: cold-pack perineal pads absorb less than regular pads, so an estimate built on them reads low. PRIORITY FRAMEWORK — Evidence Based Practice: measure with the validated method, not the convenient one.");
+
+S("Postpartum Hemorrhage — Shock and First Response", "A woman with early postpartum hemorrhage is asking for a sandwich and juice. Which nursing action and reasoning are correct?", [
+  ["Keep her NPO — she may need general anesthesia to correct the bleeding source, and oral intake cannot replace volume at hemorrhage speed", true, "The chapter's rule: keep the hemorrhaging patient NPO until the provider evaluates her. Repair, packing, or curettage may need general anesthesia, and an empty stomach is anesthesia safety."],
+  ["Give her juice and ice chips only — clear liquids do not count against NPO status during a hemorrhage", false, "Clear liquids are still intake before possible general anesthesia. The NPO rule in hemorrhage has no juice exception."],
+  ["Give her the meal — eating and drinking will raise her blood pressure and help replace the lost volume", false, "Oral intake cannot match hemorrhage-speed loss, and a full stomach adds anesthesia risk. Volume is replaced IV."],
+  ["Keep her NPO because food in the stomach draws blood away from the uterus and worsens the bleeding", false, "The action is right but the reasoning is invented. The NPO rule exists for anesthesia safety and evaluation — teach the real reason."]
+], "ANSWER KEY — Correct answer: keep her NPO for possible general anesthesia. DETAILED RATIONALE — Severe bleeding may need the provider to examine and fix the source in the delivery or operating room. NPO status is part of hemorrhage readiness, alongside IV access, oxygen, and quantified loss. PRIORITY FRAMEWORK — Safety: protect the next intervention before it is needed.");
+
+M("Postpartum Hemorrhage — Shock and First Response", "A nurse is watching a postpartum woman for hypovolemic shock after a large blood loss. Which findings belong to the shock picture? Select all that apply.", [
+  ["Rising pulse and respiratory rates as the first response to falling volume", true, "The first compensation: move the remaining blood faster and squeeze more oxygen from each red cell. Tachycardia is usually the first sign of inadequate volume."],
+  ["Pale, cold, clammy skin and mucous membranes", true, "Blood is shunted away from 'nonessential' organs to protect the heart and brain — the skin shows the shunt."],
+  ["Growing anxiety and restlessness, progressing toward lethargy", true, "The brain's flow falls in stages: anxiety, confusion, and restlessness first, then lethargy as compensation fails."],
+  ["Falling urine output as the kidneys conserve fluid", true, "The kidneys hold fluid to defend volume, so output falls and can stop — which is why a catheter turns output into a continuous perfusion monitor."],
+  ["A widening pulse pressure as the earliest blood pressure change", false, "The pulse pressure NARROWS first — systolic falls while diastolic rises. Widening is the backwards version of the chapter's sequence."],
+  ["Warm, flushed skin from blood being shunted toward the skin surface", false, "Shunting runs the other way: away from skin and gut, toward heart and brain. Warm flushed skin argues against this picture."]
+], "ANSWER KEY — Correct answers: rising pulse and respirations, pale cold clammy skin, restlessness progressing to lethargy, and falling urine output. DETAILED RATIONALE — Hypovolemic shock is a sequence, not a snapshot: rates climb, pulse pressure narrows, skin pales and cools, behavior changes, urine falls, and only late does the blood pressure give way. PRIORITY FRAMEWORK — ABCs: know the sequence so the early links trigger action.");
+
+BANK.push({ cat: "Postpartum Hemorrhage — Shock and First Response", type: "matrix", stem: "Four postpartum women are in shock from different mechanisms. Match each woman to her shock type.", cols: ["Cardiogenic shock","Hypovolemic shock","Anaphylactic shock","Septic shock"], rows: [
+  { t: "A woman collapses after a pulmonary embolism blocks blood flow through her lungs", a: 0, r: "Cardiogenic — a pump problem: the embolism (like severe anemia, hypertension, or cardiac disease) keeps the heart from delivering." },
+  { t: "A woman bleeds heavily from uterine atony until her circulation can no longer fill", a: 1, r: "Hypovolemic — a volume problem: postpartum hemorrhage or a clotting disorder empties the system the pump depends on." },
+  { t: "A woman develops a severe allergic reaction minutes after a medication is given", a: 2, r: "Anaphylactic — an allergic reaction to a drug that was given; the trigger is the medication, not the loss." },
+  { t: "A woman with a puerperal infection deteriorates as the infection spreads through her body", a: 3, r: "Septic — driven by puerperal infection; the source is microbial, which is why containing local infection early matters." }
+], tp: "ANSWER KEY — Correct matches: embolism collapse = cardiogenic; atony bleeding = hypovolemic; drug reaction = anaphylactic; spreading puerperal infection = septic. DETAILED RATIONALE — The four shock types sort by mechanism — pump, volume, allergic, septic — and the mechanism names the first fix. In this chapter the nurse most often meets the volume type, but the sort keeps the others from being missed. PRIORITY FRAMEWORK — Assessment accuracy: mechanism first, then management." });
+
+BANK.push({ cat: "Postpartum Hemorrhage — Shock and First Response", type: "matrix", stem: "Four postpartum women are bleeding. Match each woman to the T of postpartum hemorrhage that fits her picture.", cols: ["Tone","Trauma","Tissue","Thrombin"], rows: [
+  { t: "Boggy, high fundus with heavy lochia and large clots 40 minutes after a vaginal birth", a: 0, r: "Tone — uterine atony, the most common cause of early PPH: massage to firm, empty the bladder, uterotonics." },
+  { t: "Firm fundus with a continuous bright-red trickle after a vacuum-assisted birth", a: 1, r: "Trauma — a laceration bleeding through engorged vessels while the uterus stays contracted: provider repair, not massage." },
+  { t: "Bright-red bleeding returning on day 9 after the lochia had faded, with a heavy feeling in the pelvis", a: 2, r: "Tissue — retained placental fragments keeping the uterus from sealing: uterotonics, ultrasound, curettage if bleeding continues." },
+  { t: "Oozing from IV puncture sites and pinpoint spots on her skin while the bleeding continues", a: 3, r: "Thrombin — a clotting problem: the sites do not seal. Flag it to the provider and protect the clots that form." }
+], tp: "ANSWER KEY — Correct matches: boggy + clots = Tone; firm + trickle = Trauma; day-9 red return = Tissue; oozing + pinpoint spots = Thrombin. DETAILED RATIONALE — The 4 Ts are a differential, not a slogan: one rule covers the hemorrhage chapter — find WHICH T is bleeding and fix THAT T. Fundus feel, timing, and skin findings are the discriminators. PRIORITY FRAMEWORK — Assessment to cause: the T names the fix." });
+
+S("Postpartum Hemorrhage — Shock and First Response", "Which mother's bleeding falls in the LATE postpartum hemorrhage window with its usual cause pattern?", [
+  ["A woman on day 12 whose lochia had turned pale and is now bright red again with clots — the pattern of retained fragments and subinvolution", true, "Late PPH runs from after 24 hours to 6 weeks and usually declares itself at home. Its two usual drivers are retained placental fragments and subinvolution, and its signature is red returning after the lochia had faded."],
+  ["A woman 90 minutes after birth with a boggy fundus and heavy flow — the pattern of retained fragments and subinvolution", false, "Ninety minutes is the EARLY window, and a boggy fundus with heavy flow is the tone pattern. The cause list belongs to a different clock."],
+  ["A woman 2 hours after birth with a firm fundus and a steady bright-red trickle from a cervical tear", false, "That is early-window trauma — a tear bleeding while the uterus stays firm. Neither the timing nor the cause pattern is the late one."],
+  ["A woman 30 minutes after a cesarean birth whose incision dressing is saturated and whose pulse is rising", false, "Thirty minutes after birth is early hemorrhage by definition, whatever the source. The late window starts after the first day."]
+], "ANSWER KEY — Correct answer: the day-12 mother with red bleeding returning after fading. DETAILED RATIONALE — The early/late split is the chapter's sorting rule: early bleeding is the uterus failing to clamp or a fresh injury; late bleeding is something left behind or a uterus failing to involute. Discharge teaching is the safety net precisely because late PPH declares itself at home. PRIORITY FRAMEWORK — Assessment accuracy: timing plus the 'red after fading' signature names the category and its causes.");
+
+S("Postpartum Hemorrhage — Shock and First Response", "A woman being treated for early postpartum hemorrhage has an indwelling catheter that drained 15 mL of urine in the last hour. How should the nurse interpret and use this finding?", [
+  ["It is a perfusion alarm — her kidneys are conserving fluid because volume is down, and hourly output tracks whether replacement is working", true, "In the shock bundle, strict intake and output with an indwelling catheter tracks urine output as a kidney-function and perfusion window. Falling output in a bleeding woman is hypovolemia speaking."],
+  ["It is expected — urine output normally falls to near zero for the first day after birth while the bladder recovers", false, "Postpartum bladders do the opposite — they fill, which is why distention is an atony driver. Near-zero output during hemorrhage is a shock sign, not a recovery pattern."],
+  ["It proves the catheter is blocked, because a postpartum woman always produces more urine than this in an hour", false, "Patency is worth a check, but in active hemorrhage oliguria is read as volume loss until proven otherwise. Treating it as a plumbing problem first delays the volume response."],
+  ["It is reassuring — low output shows her body is successfully holding on to fluid and compensating well", false, "Conservation is compensation, and compensation has a limit. Output that falls toward zero marks kidneys being underperfused, not a victory."]
+], "ANSWER KEY — Correct answer: a perfusion alarm — oliguria tracks falling volume and response to replacement. DETAILED RATIONALE — The hemorrhage bundle runs source control, IV fluids and blood, oxygen with saturation monitoring, vital signs every 15 minutes until stable, and strict intake and output — each element watches a different part of the same failing system. PRIORITY FRAMEWORK — ABCs / circulation: urine output is a perfusion gauge, not a bladder note.");
+
+S("Postpartum Hemorrhage — Shock and First Response", "A woman with early postpartum hemorrhage has received IV fluids, uterotonics, and one unit of blood. Which reassessment trend best shows she is responding to treatment?", [
+  ["Pulse trending down toward her baseline, urine output rising, skin warming, and restlessness easing while the fundus stays firm", true, "Response is read across the systems that failed: rate settling, kidneys releasing urine again, skin reperfusing, brain clearing, and the source staying controlled."],
+  ["Blood pressure unchanged from the reading taken when treatment started, with her pulse still at its peak", false, "Unchanged pressure with a peak pulse is a flat trend, not a response. The BP was never the early mover in either direction."],
+  ["Lochia now absent on the pad at the last check, with the fundus no longer palpable", false, "Absent flow can mean blood is pooling inside a relaxed uterus, and an unfindable fundus is an assessment alarm — not a success marker."],
+  ["She has fallen asleep, so her restlessness has resolved and her volume is recovering", false, "In the shock sequence, restlessness progresses to lethargy as perfusion worsens. New sleepiness in a bleeding woman is deterioration until assessed otherwise."]
+], "ANSWER KEY — Correct answer: pulse settling, urine rising, skin warming, restlessness easing, fundus firm. DETAILED RATIONALE — Evaluation compares each system against its own baseline from the worst point: the trend is the finding. Single reassuring values — a held BP, an empty pad, a quiet patient — are the three classic false reassurances of this chapter. PRIORITY FRAMEWORK — Clinical Judgment (evaluate outcomes): improvement is a trend across systems, not one number.");
+
+M("Postpartum Hemorrhage — Shock and First Response", "A nurse is planning assessments for four newly admitted postpartum mothers. Which mothers need the closest, most frequent fundus and lochia checks because of their hemorrhage risk? Select all that apply.", [
+  ["A mother who has given birth five times before this birth", true, "Multiparity — five or more births — is a named atony risk: a uterus stretched by many pregnancies clamps less reliably."],
+  ["A mother of twins whose uterus was stretched by two babies", true, "Overdistention is a core atony driver — twins, a large baby, or excess fluid stretch the muscle fibers that must contract."],
+  ["A mother whose long labor was augmented with oxytocin and who has not yet voided since the birth", true, "Two stacked drivers: oxytocin used in labor is on the atony risk list, and her unemptied bladder can block contraction by itself."],
+  ["A mother whose placenta was removed manually because it did not separate cleanly", true, "Manual removal raises the retained-fragment risk — fragments keep the uterus from sealing and drive later bleeding."],
+  ["A first-time mother after an uncomplicated 6-hour labor who voided 500 mL an hour after the birth", false, "Her profile carries none of the chapter's risk stack, and she has already emptied the bladder that causes trouble. Routine checks fit her."],
+  ["A mother whose fundus is firm and midline with moderate rubra lochia and no clots", false, "Those are normal findings, not risk factors. The question asks who needs closer watching because of risk — she is the comparison, not a candidate."]
+], "ANSWER KEY — Correct answers: the grand multipara, the mother of twins, the oxytocin-augmented mother who has not voided, and the mother whose placenta was manually removed. DETAILED RATIONALE — Risk recognition is a chapter objective in its own right: every factor spotted buys that mother closer, more frequent assessment. The risk list clusters around a stretched or tired uterus, drugs that relax it, a full bladder, and tissue left behind. PRIORITY FRAMEWORK — Prevention / risk stratification: assess the high-risk mother more often, before she declares herself.");
+
+/* ================= Category B standalone — atony, bladder, subinvolution ================= */
+S("Uterine Atony, Bladder, and Subinvolution", "One hour after birth, a woman's fundus feels firm but sits well above the umbilicus and off to the right. She last voided 5 hours ago. Which action and reasoning are correct?", [
+  ["Have her void or catheterize her, then reassess tone — a full bladder can make the uterus feel firm while displacing it, so tone is judged only after it is empty", true, "The chapter's bladder trap: distention pushes the uterus up and to one side, and the displaced uterus can feel firm against the full bladder. Empty the bladder first — it is also the cheapest hemorrhage prevention there is — then judge tone."],
+  ["Chart the fundus as firm and adequate — a firm uterus is a contracted uterus, and its height and position do not change that", false, "Height and position are part of the assessment, not decoration. A high, displaced fundus is the bladder's signature, and charting it away leaves an atony driver in place."],
+  ["Massage the fundus vigorously until it moves back to midline and descends to the umbilicus on its own", false, "The uterus already feels firm — massaging a contracted uterus is not the fix, and vigorous massage courts the overmassage trap. The displacement is mechanical: empty what is pushing it."],
+  ["Give the ordered uterotonic now, because a high fundus means the uterus needs pharmacologic help to contract and hold", false, "Drugs come after the fixable cause is removed. A uterotonic cannot contract a uterus around a bladder that is physically blocking it."]
+], "ANSWER KEY — Correct answer: empty the bladder, then reassess tone. DETAILED RATIONALE — A full bladder blocks contraction, can produce atony and hemorrhage by itself if left uncorrected, and fakes a firm feel while it displaces the uterus. Sequence protects the judgment: empty first, then decide whether tone is truly adequate. PRIORITY FRAMEWORK — Assessment before intervention: remove the confounder before judging the finding.");
+
+S("Uterine Atony, Bladder, and Subinvolution", "A nurse massages a boggy uterus until it firms, then keeps massaging 'to make sure it stays that way' for several more minutes. The uterus then feels softer than before. What explains this?", [
+  ["The uterus is a muscle and overstimulation tires it — overmassage worsens atony, so massage stops once the uterus is firm", true, "A named chapter trap. The fibers that clamp the placental-site vessels fatigue like any muscle; a tired uterus contracts worse than before the extra massage."],
+  ["Clots have pooled inside the uterus, and the answer is to massage harder and longer to expel them", false, "Harder and longer is the error being repeated. Pooled clots are expressed only against a firm uterus — and this one was firm before the extra massage began."],
+  ["The uterus has become resistant to touch and now needs a uterotonic before any further assessment", false, "Drug escalation is for a uterus that will not firm or hold with correct technique. Here the technique itself caused the softening."],
+  ["The bladder filled during the massage and is now blocking contraction again", false, "The bladder is always worth checking — it is the other fixable driver — but the timeline names the mechanism: firm, then softer after minutes of continued massage. That is muscle fatigue."]
+], "ANSWER KEY — Correct answer: overmassage tired the muscle and worsened the atony. DETAILED RATIONALE — The atony ladder is precise: massage until firm, never overmassage, leave a firmly contracted uterus alone, empty the bladder to keep it firm, put the baby to breast, and escalate to drugs when correct technique is not enough. PRIORITY FRAMEWORK — Safety: the right intervention at the wrong dose becomes the harm.");
+
+S("Uterine Atony, Bladder, and Subinvolution", "At a clinic visit 12 days after birth, a woman's fundus is still palpable well above where it should be, her lochia is still rubra, and she reports pelvic heaviness and unusual fatigue. Which problem does this picture name, and what drives it most often?", [
+  ["Subinvolution — the uterus is failing to return to its prepregnant state on schedule, most often because of infection or retained placental fragments", true, "The picture matches the definition and the clock: the uterus should descend about 1 cm a day and be nonpalpable by about 12 days, with lochia progressing through its phases. A high fundus, persistent rubra, heaviness, and fatigue are the stalled-return pattern."],
+  ["Normal involution — the uterus is not expected to become nonpalpable until 6 weeks, and rubra at day 12 is within the normal range", false, "Six weeks is when the placental SITE has healed, not when the fundus disappears. By about day 12 the uterus should no longer be palpable, and rubra should have progressed."],
+  ["Uterine atony — the same failure to contract that causes bleeding in the first hours after birth", false, "Atony is the first-hours event — a muscle that never clamps. This is a return that started and stalled, a different problem with different drivers."],
+  ["A new pregnancy — a palpable uterus with bleeding at day 12 means she has conceived again", false, "Nothing in the picture supports conception, and the finding set is the textbook subinvolution cluster. Reaching for a rare explanation skips the common one."]
+], "ANSWER KEY — Correct answer: subinvolution, driven most often by infection or retained fragments. DETAILED RATIONALE — Subinvolution usually declares itself after discharge, which is why discharge teaching is the safety net: fundal height higher than expected for the day, lochia rubra persisting or phases progressing too slowly, pelvic pain and heaviness, and fatigue. PRIORITY FRAMEWORK — Assessment accuracy: compare the finding against the day's expected value.");
+
+S("Uterine Atony, Bladder, and Subinvolution", "A woman with subinvolution has a blood pressure of 118/76, no fever, and an ultrasound showing retained placental fragments. Which provider plan fits the cause?", [
+  ["Methylergonovine to hold a firm contraction, with curettage to strip the retained fragments from the uterine wall", true, "Subinvolution care treats the cause: the ergot drug holds the contraction, and curettage (D&C or D&E) removes the fragments the ultrasound found. Her normal blood pressure clears the ergot's one big catch."],
+  ["Methylergonovine alone for 2 weeks, because medication always clears fragments without a procedure", false, "'Always' fails here — a firm contraction often expels fragments, but when bleeding continues or fragments persist, curettage is the named removal step."],
+  ["IV antibiotics as the only treatment, because fragments resolve once infection risk is covered", false, "Antibiotics treat the infection driver. She has no fever and a mechanical finding — fragments are tissue, and tissue is removed, not sterilized."],
+  ["Reassurance with a recheck in 6 weeks, because subinvolution corrects itself once the placental site heals", false, "Subinvolution is by definition a return that has stalled. Watching a stalled process for 6 weeks invites the late hemorrhage it produces."]
+], "ANSWER KEY — Correct answer: methylergonovine to hold contraction plus curettage for the fragments. DETAILED RATIONALE — The subinvolution plan is cause-matched: methylergonovine when contraction must be held, antibiotics when infection is the driver, curettage when fragments must come out. Her normal BP matters — the same drug would be forbidden if she were hypertensive. PRIORITY FRAMEWORK — Generate solutions matched to cause: drug for tone, procedure for tissue.");
+
+M("Uterine Atony, Bladder, and Subinvolution", "A nurse is reviewing the admission chart of a woman who has just given birth vaginally and is flagging conditions that raise her risk for uterine atony. Which conditions should be flagged? Select all that apply.", [
+  ["A uterus overdistended by a large baby, twins, or excess amniotic fluid", true, "Stretched fibers contract poorly — overdistention is a headline atony risk."],
+  ["A labor in which a uterus-relaxing (tocolytic) drug was given", true, "A uterus still under a relaxing drug's effect may not clamp after birth; the chapter lists uterus-relaxing drugs on the atony risk list."],
+  ["Five or more previous births", true, "Multiparity (5+ births) is a named risk — the much-used uterus clamps less reliably."],
+  ["A bladder that has not been emptied since the birth", true, "The fixable driver: distention alone can produce atony and hemorrhage if left uncorrected."],
+  ["A rapid labor with a firm fundus and a steady trickle of bright-red blood", false, "That is the laceration picture — rapid labor is listed as more of a laceration/hematoma risk, and the firm fundus with a trickle names trauma, not tone."],
+  ["Breastfeeding started in the first hour, with the baby suckling well", false, "Suckling is protective — it releases her own oxytocin and contracts the uterus. It belongs on the treatment list, not the risk list."]
+], "ANSWER KEY — Correct answers: overdistention, a tocolytic on board, five or more previous births, and an unemptied bladder. DETAILED RATIONALE — Atony risk clusters into a stretched uterus, a tired or much-used uterus, drugs that relax it, and the bladder that blocks it. Sorting risk by family keeps the trauma risks (rapid labor, instruments) from diluting the tone list. PRIORITY FRAMEWORK — Risk recognition: the risk list is the assessment schedule.");
+
+BANK.push({ cat: "Uterine Atony, Bladder, and Subinvolution", type: "matrix", stem: "Four postpartum mothers carry different risk factors. Match each factor to the complication family it feeds.", cols: ["Raises atony risk","Raises laceration / hematoma risk","Raises infection risk"], rows: [
+  { t: "A uterus stretched by twins", a: 0, r: "Atony — overdistention stretches the fibers that must clamp the placental-site vessels." },
+  { t: "A rapid labor", a: 1, r: "Laceration/hematoma — the chapter names rapid labor as more of a trauma risk: tissues tear and vessels injure when birth is precipitate." },
+  { t: "Cracked nipples in a breastfeeding mother", a: 2, r: "Infection — cracks are the entry point for the organisms that cause mastitis; they can be microscopic." },
+  { t: "Oxytocin used to augment a long labor", a: 0, r: "Atony — oxytocin used in labor sits on the atony risk list, alongside the tired uterus a long labor produces." }
+], tp: "ANSWER KEY — Correct matches: twins = atony; rapid labor = laceration/hematoma; cracked nipples = infection; oxytocin-augmented long labor = atony. DETAILED RATIONALE — Risk factors are family-shaped: each one buys closer assessment for ITS complication. Sorting them correctly is what turns a history into a surveillance plan. PRIORITY FRAMEWORK — Risk stratification: the factor names the watch." });
+
+BANK.push({ cat: "Uterine Atony, Bladder, and Subinvolution", type: "order", stem: "A woman's uterus will not stay firm despite massage, an empty bladder, and the baby at breast. Place the remaining steps of the atony ladder in order.", items: [
+  { t: "Start a dilute oxytocin (Pitocin) IV infusion", r: "Oxytocin is the first-line drug for atony — the ladder starts with the drug that contracts the uterus with the fewest catches." },
+  { t: "Move to an escalation uterotonic such as methylergonovine or a prostaglandin, checking her blood pressure before an ergot drug", r: "Escalation drugs come next — and the ergot carries the chapter's drug catch: it raises blood pressure, so the BP check gates it." },
+  { t: "Prepare for uterine tamponade with packing or an intrauterine balloon if the bleeding continues", r: "When drugs are not enough, pressure from inside the uterus is the next rung — tamponade presses on the bleeding surface." },
+  { t: "Prepare for the operating room for arterial intervention or, as a last resort, hysterectomy", r: "Embolization, artery ligation, and finally hysterectomy close the ladder — reserved for a uterus that answers nothing else." }
+], tp: "ANSWER KEY — Correct order: oxytocin infusion → escalation uterotonic (BP checked before an ergot) → tamponade → operating room / last-resort hysterectomy. DETAILED RATIONALE — The ladder climbs from least to most invasive, and each rung is tried before the next is mounted. Skipping rungs costs the patient either a drug catch she did not need or a uterus she did. PRIORITY FRAMEWORK — Least invasive first: escalate in order, reassessing at every rung." });
+
+/* ================= Category C — lacerations and hematomas ================= */
+S("Lacerations and Hematomas — Concealed Bleeding", "Two hours after a forceps-assisted birth, a woman's fundus is firm and midline, but a continuous trickle of bright-red blood is running and she has soaked a pad in 40 minutes. What is the most likely source, and what is the priority action?", [
+  ["A laceration of the reproductive tract — notify the provider to examine and repair it, and keep her NPO in case anesthesia is needed", true, "The signature is exact: bright-red blood in a continuous trickle while the uterus stays firm, after an instrument birth. Tears of the perineum, vagina, cervix, or periurethral area bleed profusely from pregnancy-engorged vessels, and repair is suturing — the provider's procedure, prepared for like any hemorrhage."],
+  ["Uterine atony — massage the fundus firmly and give a uterotonic, because a firm feel can be deceptive", false, "A firm, midline fundus has already answered the tone question. Massage and uterotonics contract a uterus; neither sutures a tear. Treating this as atony delays the repair while the trickle adds up."],
+  ["A hematoma forming in the tissues — apply a cold pack to the perineum and reassess her in an hour", false, "A hematoma hides: its lochia looks normal and its calling card is severe pain and pressure. Blood visibly trickling out is not collecting in the tissues."],
+  ["Normal lochia for an instrument birth — change the pad, chart the amount, and reassess at the next round", false, "A continuous trickle is never charted away: the chapter warns a slow trickle can quietly add up to as much loss as dramatic atony bleeding."]
+], "ANSWER KEY — Correct answer: laceration — notify the provider for repair and keep her NPO. DETAILED RATIONALE — Firm fundus plus bright-red trickle is the chapter's cleanest discriminator. The nurse's jobs are notification, NPO readiness, and continued quantification while the provider finds and sutures the tear. PRIORITY FRAMEWORK — Assessment to cause: the fundus feel splits tone from trauma.");
+
+S("Lacerations and Hematomas — Concealed Bleeding", "A woman 4 hours after a vaginal birth rates her perineal pain 9 out of 10. Two doses of her prescribed analgesic have not touched it. Her lochia is moderate rubra and looks normal, and her fundus is firm. She says she feels pressure 'down there' and cannot urinate. What should the nurse suspect and do?", [
+  ["A hematoma collecting in the tissues — report it promptly, apply a cold pack, and keep her NPO until the provider examines her", true, "The triad is the chapter's loudest clue: severe, poorly relieved pain, perineal or rectal pressure, and inability to void — with normal-looking lochia because the blood is collecting inside the tissues instead of draining out."],
+  ["Normal afterpains and perineal soreness — reassure her and offer the next analgesic dose an hour early", false, "Normal post-birth discomfort is mild and eased by mild analgesics. Pain that analgesics do not touch is a finding, not a comfort problem."],
+  ["A urinary tract infection — push fluids and obtain a urine specimen before reporting anything", false, "She cannot void because pressure from the collection blocks her — the pain pattern and the pressure name the hematoma first, and it is reportable now, not after a specimen."],
+  ["Uterine atony with concealed pooling — massage the fundus firmly and express the pooled blood", false, "Her fundus is firm and her lochia is normal in amount. The concealed blood here is in the tissues of the vulva or vagina, not pooled in the uterus."]
+], "ANSWER KEY — Correct answer: hematoma — report it, cold pack a small perineal one, NPO until examined. DETAILED RATIONALE — Pain out of proportion is the loudest clue in this chapter: severe unrelenting pain plus normal lochia means the blood is hiding in the tissues. Visible hematomas bulge blue-purple; deep vaginal ones cannot be seen from outside, which is why the symptom triad carries the diagnosis. PRIORITY FRAMEWORK — Safety: treat unexplained severe pain as a finding until a source is named.");
+
+S("Lacerations and Hematomas — Concealed Bleeding", "A woman with a large vaginal hematoma has normal-looking lochia, but her pulse has risen from 88 to 118, her respirations from 16 to 24, and her blood pressure has fallen from 118/76 to 100/64. Which interpretation is correct?", [
+  ["She is losing significant volume into the tissues — concealed bleeding produces the same shock progression as visible bleeding", true, "A large hematoma can hold a major volume. Her trend is the hypovolemia sequence — rates up first, pressure giving way — and the chapter is explicit that with a large hematoma, shock signs follow the concealed loss."],
+  ["Her vital signs are explained by her severe pain alone, and they will settle once the pain is treated", false, "Pain can raise a pulse, but it does not explain a falling blood pressure in a woman with a known expanding collection. The volume reading must be excluded by action, not assumed away."],
+  ["She cannot be in shock, because shock requires visible blood loss and her pads show only normal lochia", false, "That is the concealment trap in one sentence. Normal lochia does not rule out hemorrhage — the blood is in the tissues, not on the pad."],
+  ["The falling blood pressure is the first sign of her volume loss, so the loss must have just started", false, "The order is backwards: her pulse climbed from 88 to 118 first. The BP falls LATE in hypovolemia — its fall means the loss is advanced, not new."]
+], "ANSWER KEY — Correct answer: concealed volume loss with a shock trend. DETAILED RATIONALE — Hematoma surveillance is vital-sign surveillance: firm fundus, normal lochia, and hypovolemia signs anyway means suspect a large hematoma. The trend — pulse and respirations rising, pressure falling — is the same language as any hemorrhage. PRIORITY FRAMEWORK — ABCs / circulation: trend the vitals; the pad is not the patient.");
+
+S("Lacerations and Hematomas — Concealed Bleeding", "The provider confirms a large vulvar hematoma that is still expanding. Which plan should the nurse anticipate?", [
+  ["Incision and drainage of the collected clots, with the bleeding vessel ligated or the area packed, while she stays NPO", true, "Size decides hematoma management: larger ones are opened, the clots drained, and the bleeding vessel ligated or the area packed with hemostatic material. NPO and quantification run alongside, as in any hemorrhage."],
+  ["A cold pack alone, because hematomas of every size resolve on their own without a procedure", false, "SMALL hematomas usually resolve on their own. An expanding large one is a bleeding vessel with a growing collection — it gets a procedure."],
+  ["Firm fundal massage and a uterotonic, because bleeding after birth must be coming from the uterus", false, "Her uterus is not the source — the blood is collecting from injured tissue vessels. Contracting the uterus does nothing for a vulvar collection."],
+  ["Warm compresses applied hourly to speed reabsorption of the collected blood", false, "Heat is the mastitis tool. For a hematoma, cold limits bleeding; warmth would feed the collection."]
+], "ANSWER KEY — Correct answer: incision and drainage with ligation or packing, NPO, quantified loss. DETAILED RATIONALE — The hematoma ladder mirrors the atony ladder: conservative care (ice, observation) for the small and stable, procedural source control for the large or expanding. The nurse prepares the patient and tracks the volume story either way. PRIORITY FRAMEWORK — Least invasive first, escalated by size and trend: match the rung to the collection.");
+
+M("Lacerations and Hematomas — Concealed Bleeding", "Which findings, taken together, point to a postpartum hematoma rather than ordinary perineal discomfort? Select all that apply.", [
+  ["Severe perineal pain that prescribed analgesics do not relieve", true, "The lead discriminator: hematoma pain is severe and unrelenting, while normal discomfort is mild and eased by mild analgesics."],
+  ["A report of pressure in the vulva, pelvis, or rectum", true, "A growing collection presses on everything near it — pressure is the mass announcing itself."],
+  ["Inability to void despite the sensation of a full bladder", true, "Pressure from the collection can block urination; the triad of severe pain, pressure, and inability to void is the chapter's report set."],
+  ["A bulging blue-purple mass visible on the vulva", true, "The visible form of the same problem: blood collecting under the skin shows as a bulging blue-purple mass."],
+  ["Lochia that is heavier than expected and carries large clots", false, "That is the atony pattern — visible loss from an unclamped uterus. A hematoma's lochia looks normal because the blood never reaches the pad."],
+  ["Mild perineal soreness that eases after a dose of analgesic", false, "That is ordinary post-birth discomfort — the comparison picture the hematoma must be separated from."]
+], "ANSWER KEY — Correct answers: unrelieved severe pain, vulvar/pelvic/rectal pressure, inability to void, and a visible blue-purple bulge. DETAILED RATIONALE — The hematoma signature is a pain-and-pressure story with a quiet pad. Deep vaginal hematomas cannot be seen at all, so the symptom cluster — not inspection — carries the early diagnosis. PRIORITY FRAMEWORK — Recognize cues: pain out of proportion is data, not drama.");
+
+BANK.push({ cat: "Lacerations and Hematomas — Concealed Bleeding", type: "matrix", stem: "Four postpartum women are bleeding or in pain. Match each woman to the source that fits her picture.", cols: ["Uterine atony","Laceration","Hematoma","Retained fragments"], rows: [
+  { t: "Soft, high fundus; heavy lochia with large clots; bladder distention pushing the uterus to one side", a: 0, r: "Atony — the muscle is not clamping and the bladder is helping it fail: massage, empty the bladder, uterotonics." },
+  { t: "Firm fundus; continuous bright-red trickle; the birth was rapid and instruments were used", a: 1, r: "Laceration — engorged torn vessels bleed steadily while the uterus stays contracted: provider repair." },
+  { t: "Firm fundus; normal lochia; severe pain the analgesic does not touch; rectal pressure", a: 2, r: "Hematoma — the loss is concealed in the tissues; pain and pressure are the visible part." },
+  { t: "Day 10; red bleeding returns after fading; pelvic heaviness; fundus higher than expected for the day", a: 3, r: "Retained fragments — tissue left behind sloughs and bleeds in the late window: uterotonics, ultrasound, curettage." }
+], tp: "ANSWER KEY — Correct matches: soft/high/clots = atony; firm + trickle = laceration; firm + normal lochia + severe pain = hematoma; day-10 red return = retained fragments. DETAILED RATIONALE — One rule sorts the whole bleeding chapter: find which source is bleeding and fix THAT source. Fundus feel, flow pattern, pain, and timing are the four sorting questions. PRIORITY FRAMEWORK — Assessment to cause: the picture names the source, and the source names the fix." });
+
+BANK.push({ cat: "Lacerations and Hematomas — Concealed Bleeding", type: "dropdown", stem: "Complete the care plan for three postpartum patients.<br>Patient 1 — A woman with a small perineal hematoma and severe localized pain receives:<br>[[0]]<br>Patient 2 — A woman whose fundus is firm while a continuous bright-red trickle continues receives:<br>[[1]]<br>Patient 3 — A woman with a large, expanding hematoma whose pulse is climbing receives:<br>[[2]]", blanks: [
+  { o: [O("A cold pack applied to the area, which limits bleeding and numbs the pain", true, "For a small perineal hematoma an ice pack suffices — and it needs no provider order. Cold limits the bleeding while it numbs."), O("A warm pack applied to the area, which speeds reabsorption of the blood", false, "Warmth belongs to mastitis care. On a fresh hematoma, heat feeds bleeding instead of limiting it."), O("Fundal massage until the uterus firms, which stops the tissue bleeding", false, "The uterus is not the source of a perineal collection. Massage treats tone; this blood is in the tissues.")] },
+  { o: [O("Provider notification for examination and suture repair, with NPO status kept", true, "Bleeding with a firmly contracted uterus means notify the provider — repair is suturing, usually in the delivery or operating room, so she stays NPO."), O("A uterotonic infusion, because a steady trickle means the uterus is relaxing", false, "Her fundus is firm — the uterus has done its job. A trickle with a firm fundus is a tear until proven otherwise."), O("Reassurance and a pad change, because a trickle is too slow to matter", false, "The chapter's warning: a slow trickle can quietly add up to as much loss as dramatic atony bleeding.")] },
+  { o: [O("Preparation for incision and drainage, with vital signs and blood loss tracked closely", true, "Large or expanding hematomas are drained, the vessel ligated or the area packed — and a climbing pulse says the concealed loss is already costing volume."), O("Observation only, because large hematomas seal themselves once pressure builds", false, "SMALL hematomas resolve on their own. An expanding one with a climbing pulse is escalating, not sealing."), O("An ice pack alone, because procedures are reserved for uterine bleeding", false, "Procedures follow the source, not the organ. Tissue bleeding that expands gets drained like any other uncontrolled source.")] }
+], tp: "ANSWER KEY — Correct answers: small perineal hematoma = cold pack; firm fundus + trickle = provider repair with NPO; large expanding hematoma = incision and drainage with close tracking. DETAILED RATIONALE — Three bleeding pictures, three different fixes — the chapter's one rule applied three ways: find the source, match the tool. Size and trend decide how far up each ladder the nurse prepares to climb. PRIORITY FRAMEWORK — Assessment to cause: same symptom family, different source, different fix." });
+
+/* ================= NGN CASE 2 — late PPH with endometritis ================= */
+var CASE_CT2 = "CASE STUDY — The Bleeding That Came Back. Mrs. R. T., 31 years old, G3 P2, had an uncomplicated vaginal birth 9 days ago and was discharged on day 2 with lochia that had faded to pale pink. She now presents to the clinic: since yesterday her bleeding has turned bright red again, she passed two large clots this morning, and she feels pelvic heaviness, deep fatigue, and cramping worse than her afterpains were. Her fundus is higher than expected for day 9, her lochia is rubra and foul-smelling, temperature 38.4 °C, pulse 108, blood pressure 118/74. An ultrasound has been ordered.";
+
+S("Postpartum Hemorrhage — Shock and First Response", "CASE STUDY — The Bleeding That Came Back. Which finding cluster is the abnormal pattern that must be acted on today?", [
+  ["Bright-red bleeding returning after the lochia had faded, with large clots, pelvic heaviness, worsening cramps, and deep fatigue", true, "That is the late-hemorrhage signature the discharge teaching warns about: red returning after fading, clots, heaviness, and fatigue — the pattern of tissue left behind and a uterus failing to involute."],
+  ["The temperature of 38.4 °C by itself, because a single fever reading defines the whole problem", false, "The fever matters — it adds the infection family to her picture — but a lone reading does not define the emergency. The bleeding pattern is what cannot wait."],
+  ["Cramping on day 9, because afterpains should be finished and any cramp at this point is abnormal", false, "Cramping alone is not the cluster. Prolonged, severe cramping joins the pattern only alongside the bleeding, the fundus, and the fever."],
+  ["None of it — lochia color varies normally across the full 6 weeks, so day-9 changes are expected", false, "Color progressing forward is normal; color going BACKWARD — red after fading — is the chapter's named late alarm. Dismissing it wastes the early window."]
+], "ANSWER KEY — Correct answer: the returning bright-red bleeding cluster. DETAILED RATIONALE — NGN step 1 (recognize cues): late hemorrhage declares itself at home, which is why discharge teaching is the safety net. The cues sort by pattern — the reversal of lochia progression is the cue that organizes all the others. PRIORITY FRAMEWORK — Clinical Judgment (recognize cues): pattern first, panic never.", { scen: CASE_CT2, grp: "CT-CASE2" });
+
+M("Uterine Atony, Bladder, and Subinvolution", "CASE STUDY — The Bleeding That Came Back. Which problems belong on the working list for Mrs. R. T.? Select all that apply.", [
+  ["Retained placental fragments keeping the uterus from sealing its vessels", true, "Fragments are a top late-PPH driver — clots form around them and slough off days later, and a fragment keeps the placental site from closing. The ordered ultrasound is hunting exactly this."],
+  ["Subinvolution — her fundus is higher than expected for day 9 and her lochia has not progressed", true, "Both halves of the subinvolution picture are present: fundal height stalled above the day's expectation and lochia that went backward instead of progressing."],
+  ["Endometritis — fever with foul-smelling lochia and worsening cramping in a uterus that is not shrinking", true, "The most common postpartum fever source is infection of the uterine lining, and it often travels with subinvolution — the infected uterus does not shrink on schedule. Her fever, foul lochia, and severe prolonged cramping fit."],
+  ["Uterine atony of the first hours — her uterus has failed its first contraction after birth", false, "Atony is the first-hours failure to clamp. At day 9 the clock has re-sorted the causes: tissue and involution failure lead, tone of the first hours is history."],
+  ["A vaginal laceration from the birth that has been bleeding steadily ever since delivery", false, "Her bleeding FADED and then returned — a tear bleeds continuously from the start. The stop-and-return pattern belongs to fragments sloughing, not to an unrepaired tear."]
+], "ANSWER KEY — Correct answers: retained fragments, subinvolution, and endometritis. DETAILED RATIONALE — NGN step 2 (analyze cues): the late window re-sorts the differential — Tissue rises to the top, involution failure explains the fundus, and the fever/foul-lochia pair adds the infection family to the same uterus. Three problems, one organ, linked causes. PRIORITY FRAMEWORK — Clinical Judgment (analyze cues): timing re-ranks the differential.", { scen: CASE_CT2, grp: "CT-CASE2" });
+
+S("Postpartum Hemorrhage — Shock and First Response", "CASE STUDY — The Bleeding That Came Back. Two problems are active at once — bleeding and infection. Which does the nurse prioritize, and why?", [
+  ["The bleeding and volume threat — her pulse of 108 is the early sign of falling volume, and hemorrhage kills faster than infection", true, "Prioritization ranks by what kills fastest. Her blood pressure still reads 118/74, but the pulse has already announced the volume problem — and in hemorrhage, the pulse is the early warning the nurse acts on."],
+  ["The infection — the fever proves a diagnosis, while the bleeding is still only a possibility", false, "The bleeding is not a possibility; it is observed — red flow, two large clots, a saturating pattern. Fever confirms a second problem, not the first priority."],
+  ["Neither yet — repeat her vital signs in 4 hours to see which of the two problems declares itself", false, "Both problems have already declared themselves. A 4-hour watch spends the window in which uterotonics, cultures, and antibiotics work best."],
+  ["Her fatigue and comfort first — rest and analgesics will clarify how serious the rest of the picture is", false, "Comfort matters and is part of her care, but physiologic threats outrank it. Rest does not clarify a hemorrhage; measurement and treatment do."]
+], "ANSWER KEY — Correct answer: prioritize the hemorrhage/volume threat first. DETAILED RATIONALE — NGN step 3 (prioritize hypotheses): two emergencies share one patient — rank by speed of harm. Tachycardia is the early volume sign; infection care (culture, antibiotics) proceeds in the same plan but does not outrank stopping the loss. PRIORITY FRAMEWORK — Clinical Judgment (prioritize) + ABCs: circulation before comfort, bleeding before fever workup.", { scen: CASE_CT2, grp: "CT-CASE2" });
+
+M("Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", "CASE STUDY — The Bleeding That Came Back. The provider suspects infection plus retained fragments. Which orders and preparations should the nurse anticipate? Select all that apply.", [
+  ["A culture of the uterine cavity obtained before antibiotics are started", true, "Culture and sensitivity from the suspected site comes first — the sample picks the antibiotic that will actually work, and antibiotics started first can sterilize the specimen."],
+  ["IV antibiotics as the first route for a uterine infection", true, "Endometritis is treated IV first. Route follows the site: oral is the mastitis pattern, not the uterine one."],
+  ["A uterotonic, with her blood pressure checked before any ergot drug is given", true, "A firm contraction often expels retained fragments and ends the problem — and methylergonovine's catch (it raises blood pressure) makes the BP check a gate, not a courtesy."],
+  ["Preparation for curettage, including NPO status, in case the fragments must be stripped", true, "If bleeding continues after uterotonics, curettage clears clots and fragments. NPO readiness keeps the procedure from waiting on her stomach."],
+  ["Oral antibiotics started at home, because uterine infections are treated the same way as breast infections", false, "Route is site-specific: mastitis is usually oral; endometritis is IV first. Borrowing the breast's plan underdoses the uterus."],
+  ["The culture drawn after the first antibiotic dose, so treatment is not delayed by the specimen", false, "The sequence protects the information: culture first, then the drug. A post-dose culture can come back empty and leave the team guessing."]
+], "ANSWER KEY — Correct answers: uterine-cavity culture before antibiotics, IV antibiotics first, a uterotonic with the BP gate, and curettage preparation with NPO. DETAILED RATIONALE — NGN step 4 (generate solutions): every hypothesis earns a matched intervention — measure and culture the infection, contract the uterus, prepare to remove the tissue — with the hemorrhage bundle running underneath all of it. PRIORITY FRAMEWORK — Clinical Judgment (generate solutions): one tool per driver, sequence protected.", { scen: CASE_CT2, grp: "CT-CASE2" });
+
+BANK.push({ cat: "Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", type: "order", stem: "CASE STUDY — The Bleeding That Came Back. The provider's plan is confirmed: infection plus retained fragments. Place the nurse's actions in the correct order.", items: [
+  { t: "Weigh her pads, take a full set of vital signs, and assess fundus and lochia to baseline the bleeding", r: "FIRST: baseline the bleeding and the fundus before treatment — the numbers every later evaluation compares against." },
+  { t: "Obtain the uterine-cavity culture from the suspected site", r: "Culture BEFORE antibiotics — the culture picks the drug; a dose given first can sterilize the specimen." },
+  { t: "Start the ordered IV antibiotics and the uterotonic after checking her blood pressure", r: "Treatment follows the culture, and the blood pressure check is the ergot gate if that is the uterotonic ordered." },
+  { t: "Prepare her for curettage to remove the retained fragments", r: "Source removal comes once antibiotics are running and she is anesthesia-ready, NPO included." },
+  { t: "Reassess bleeding, fundus, temperature, and pulse against the baseline values", r: "Evaluation closes the loop: is the loss slowing, the fundus descending, the fever breaking, the pulse settling?" }
+], tp: "ANSWER KEY — Correct order: baseline assessment → culture → IV antibiotics and uterotonic (BP checked) → prepare for curettage → reassess against baseline. DETAILED RATIONALE — NGN step 5 (take action): the sequence protects information (culture before drug), safety (BP before an ergot), and anesthesia readiness (NPO before curettage). PRIORITY FRAMEWORK — Clinical Judgment (take action): order is a clinical decision, not paperwork.", scen: CASE_CT2, grp: "CT-CASE2" });
+
+S("Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", "CASE STUDY — The Bleeding That Came Back. At discharge after treatment, which statement by Mrs. R. T. shows she understands the teaching that protects her at home?", [
+  ["'I will call if the bleeding turns red again after it fades, and I will finish all of the antibiotic even after I feel better'", true, "Both halves of the safety net in one sentence: the late-hemorrhage warning sign she was taught to report, and the full antibiotic course — the chapter's must-teach, because stopping when symptoms fade is the infection family's classic failure."],
+  ["'I can stop the antibiotic once the fever has been gone for a day, since the curettage removed the cause'", false, "The curettage removed fragments; the antibiotic treats the infection. Feeling better is not the finish line — the full course is."],
+  ["'Red bleeding is only a problem if it soaks a pad in less than an hour, so that is the one thing I will watch for'", false, "Pad speed matters, but red RETURNING after fading is itself a report item — it was the sign that brought her in. Narrowing the watch to one threshold re-opens the gap."],
+  ["'The fragments are out now, so I do not need follow-up unless I feel faint'", false, "Follow-up verifies the uterus finished involuting and the infection cleared. Faintness is a late sign — the teaching aims far earlier than that."]
+], "ANSWER KEY — Correct answer: report red returning after fading, and finish the full antibiotic course. DETAILED RATIONALE — NGN step 6 (evaluate outcomes): understanding is proven by the safety behaviors she can state, not by her symptom story. Late complications declare themselves at home — her teaching is the monitoring system she takes with her. PRIORITY FRAMEWORK — Clinical Judgment (evaluate outcomes): teach-back on the warnings, not just the tasks.", { scen: CASE_CT2, grp: "CT-CASE2" });
+
+/* ================= Category D standalone — infections ================= */
+S("Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", "On postpartum day 3, a woman has a temperature of 38.6 °C, a tender and enlarged uterus, foul-smelling lochia, and cramping that is severe and prolonged. Her WBC is 24,000/mm³. Which conclusion and plan are correct?", [
+  ["Endometritis — obtain a uterine-cavity culture, begin IV antibiotics, and position her in Fowler's so the infected lochia drains", true, "The uterine picture is complete: tender enlarged uterus, foul lochia, prolonged severe cramping, fever. Management follows the site — culture the uterine cavity, IV antibiotics first, Fowler's position to drain infected lochia, and watch for spread."],
+  ["A urinary tract infection — obtain a clean-catch urine culture and push fluids to 3 L/day as the main treatment", false, "The urinary picture is burning, urgency, and frequency. Her findings live in the uterus — the culture, the route, and the drainage all follow the site, and this site is uterine."],
+  ["No infection — the WBC of 24,000 is the only hard value, and a day-3 fever is usually dehydration", false, "Two errors stack here: WBCs normally run 20,000–30,000/mm³ in the early postpartum period, so 24,000 neither proves nor excludes infection — and the dehydration story belongs to the first 24 hours, not day 3 with uterine signs."],
+  ["Mastitis — examine the breasts and start oral antibiotics, because breast infection is the most common postpartum fever", false, "The most common postpartum fever source is endometritis, not mastitis — and her signs are uterine, with no breast findings at all."]
+], "ANSWER KEY — Correct answer: endometritis — uterine culture, IV antibiotics first, Fowler's position. DETAILED RATIONALE — Endometritis often travels with subinvolution and declares itself after discharge, so the site sort matters: the site names the culture, the route, and the drainage. The WBC is this family's favorite trap — a normal-range count cannot clear a clinical picture. PRIORITY FRAMEWORK — Assessment to site: findings name the organ; the organ names the plan.");
+
+S("Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", "A woman's temperature is 38.2 °C on the evening of postpartum day 3 and 38.3 °C on day 4, with no localizing signs yet. Which statement is correct?", [
+  ["She meets the puerperal fever definition — 38 °C or higher after the first 24 hours on at least 2 days in the first 10 days — so a full infection assessment is required", true, "The definition is met exactly: after the first 24 hours, two days at or above 38 °C (100.4 °F), inside the first 10 days. Meeting it triggers the hunt for the site — uterus, wound, urinary tract, breast — even before localizing signs appear."],
+  ["She does not meet any fever definition until a single reading reaches 39 °C, no matter how many days it stays elevated", false, "The chapter's threshold is 38 °C with a pattern, not 39 °C once. Waiting for a higher spike waits out the definition she already meets."],
+  ["This is the expected dehydration fever, because fevers throughout the first 10 days are attributed to fluid shifts", false, "A slight elevation in the FIRST 24 hours is often dehydration. Days 3 and 4 are outside that story — and any fever still earns a check for other infection signs whenever it occurs."],
+  ["Fever cannot be assessed until the WBC result returns, because the white count is the deciding test in the postpartum period", false, "The white count cannot decide this: 20,000–30,000/mm³ is normal early postpartum. The fever definition is clinical — temperature, timing, and pattern."]
+], "ANSWER KEY — Correct answer: she meets the puerperal fever definition and needs a full infection assessment. DETAILED RATIONALE — Puerperal sepsis is one of the leading causes of maternal death worldwide, and its doorway is a defined fever that gets assessed rather than watched. Hand hygiene remains the #1 defense against spreading the infection once found. PRIORITY FRAMEWORK — Evidence Based Practice: apply the definition as written; do not raise the bar at the bedside.");
+
+S("Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", "A cesarean mother on day 4 has an incision with redness and edema, a separating suture line, purulent drainage, and a hardened area beside the incision. Which actions are correct?", [
+  ["Culture the wound drainage, begin antibiotics as ordered, and use sterile technique for wound care — and report the hardening beside the incision", true, "Wound infection care follows the family rule: culture the drainage so the drug matches the organism, antibiotics, sterile technique — and the chapter specifically flags hardening of the operative area as a finding to report."],
+  ["Seat her in a sitz bath with the incision soaking, because warm water is the wound treatment this chapter teaches", false, "Sitz baths are the PERINEAL wound measure. A cesarean incision with separation, pus, and hardening needs culture, antibiotics, and sterile technique — not a soak."],
+  ["Press the incision edges together to express the drainage, then cover it with a dry dressing", false, "Expressing drainage by hand contaminates and traumatizes the wound. Drainage is cultured and the wound is managed with sterile technique."],
+  ["Teach her that separation and drainage are expected as an incision heals and need no culture or report", false, "A separating suture line with purulent drainage is the wound-infection picture, not healing. Teaching her to ignore it sends an infection home unmonitored."]
+], "ANSWER KEY — Correct answer: culture the drainage, antibiotics, sterile technique, report the hardening. DETAILED RATIONALE — Wounds are assessed with REEDA — redness, edema, ecchymosis, discharge, approximation — and her incision fails on nearly every letter. Local infections can ascend and spread; containing the local infection before it reaches the blood is the family's standing goal. PRIORITY FRAMEWORK — Assessment to site: culture first, then the drug, with technique that adds no new organisms.");
+
+S("Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", "A postpartum woman reports burning and frequency when she voids. Her temperature is 39.4 °C with chills, and she has flank pain and nausea. How does her picture change the plan compared with simple cystitis?", [
+  ["This is pyelonephritis, not simple cystitis — the high spiking fever, chills, flank pain, and nausea move treatment to IV antibiotics first", true, "Same family, different depth. Cystitis stays low-grade with bladder symptoms; flank (costovertebral) pain with a high spiking fever, chills, and nausea/vomiting names the kidney — and the kidney infection gets IV antibiotics first."],
+  ["It is still simple cystitis — fever height does not change the site, so oral antibiotics and fluids are enough", false, "Fever height plus flank pain is exactly what changes the site. Treating a kidney infection with the bladder's plan underdoses the organ at risk."],
+  ["This is endometritis — flank pain after birth comes from the uterus, so a uterine culture replaces the urine culture", false, "Endometritis announces itself with a tender uterus and foul lochia. Her symptoms are urinary, and the flank pain localizes upward along the urinary tract, not to the uterus."],
+  ["Push fluids to 3 L/day and recheck tomorrow, because urinary infections are never emergencies after birth", false, "Fluids to 3 L/day are part of urinary care, but an ascending infection with systemic signs is how puerperal sepsis starts. Tomorrow is too late to start."]
+], "ANSWER KEY — Correct answer: pyelonephritis — urine culture, then IV antibiotics first. DETAILED RATIONALE — The urinary family's sort is by level: bladder (low-grade fever, burning, urgency, frequency) versus kidney (high spiking fever, chills, flank pain, nausea). Level names the route — oral support and fluids below, IV first above. PRIORITY FRAMEWORK — Assessment to site and severity: depth decides the drug route.");
+
+M("Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", "A breastfeeding mother is being treated for mastitis. Which teaching points should the nurse include? Select all that apply.", [
+  ["Keep breastfeeding — the milk is not contaminated, and weaning would cause engorgement and stasis that make the infection worse", true, "The chapter's loudest mastitis rule. The infection sits outside the milk ducts; stopping drainage feeds the problem. If she must pause, she pumps instead."],
+  ["Apply moist heat or a warm shower before nursing, and massage the tender area while the baby feeds", true, "Heat increases blood flow, comforts, and empties the breast more completely; massage moves milk out of the tender area while the baby nurses."],
+  ["Start the feed on the uninfected side to trigger let-down, then empty the infected breast fully", true, "Let-down started on the comfortable side gets milk moving in both breasts, so the sore side empties with less pain — and emptying fully fights the stasis that feeds mastitis."],
+  ["Wash hands before feeds, change breast pads often, and air the nipples when possible", true, "Straight from the book's patient-teaching list: hygiene at the entry point, clean pads, and air for the cracked nipples organisms slip through."],
+  ["Stop nursing on the infected side and discard that milk until the antibiotic course is finished", false, "The classic trap. The milk is not contaminated, and discarding plus not draining produces engorgement and stasis — the setup for an abscess."],
+  ["Wear the tightest supportive bra available to compress the infected area flat", false, "The bra should be supportive but NOT tight — a too-tight bra causes milk stasis. Compression is the opposite of drainage."]
+], "ANSWER KEY — Correct answers: keep breastfeeding, moist heat and massage, start on the uninfected side and empty fully, and hand hygiene with pad changes and aired nipples. DETAILED RATIONALE — Mastitis care is drainage care: antibiotics (usually oral; IV first if an abscess forms) plus milk that keeps moving. Healing also needs fuel — protein, vitamin C, and iron — and the infection typically appears at 2–3 weeks, when mothers least expect a new problem. PRIORITY FRAMEWORK — Patient teaching: the home behaviors are half the prescription.");
+
+BANK.push({ cat: "Postpartum Infections — Uterus, Wound, Urinary Tract, Breast", type: "matrix", stem: "Four postpartum women have infections at different sites. Match each woman to her infection site.", cols: ["Endometritis","Wound infection","Urinary tract infection","Mastitis"], rows: [
+  { t: "Tender, enlarged uterus with foul-smelling lochia, fever, and prolonged severe cramping on day 3", a: 0, r: "Endometritis — the most common postpartum fever source: uterine-cavity culture, IV antibiotics first, Fowler's to drain." },
+  { t: "Cesarean incision with a separating suture line, purulent drainage, and hardening of the operative area", a: 1, r: "Wound infection — culture the drainage, antibiotics, sterile technique; sitz baths are the perineal-wound counterpart." },
+  { t: "Burning, urgency, and frequency with a low-grade fever on day 4", a: 2, r: "Urinary tract infection (cystitis) — urine culture, antibiotics, fluids pushed to 3 L/day, urine-acidifying foods." },
+  { t: "One hot, red, tender area on one breast with fever and chills in the third week after birth", a: 3, r: "Mastitis — antibiotics (usually oral; IV first if an abscess forms) and continued removal of milk; never wean." }
+], tp: "ANSWER KEY — Correct matches: uterine signs = endometritis; separating purulent incision = wound infection; burning/frequency = UTI; one hot breast area at week 3 = mastitis. DETAILED RATIONALE — One family rule at every site: culture first (the culture picks the drug), antibiotics by the site's route, and keep drainage moving — lochia, urine, or milk. The site sort is the whole skill. PRIORITY FRAMEWORK — Assessment to site: the site names the culture, the route, and the drainage." });
+
+/* ================= Category E — thromboembolism ================= */
+S("Thromboembolism — SVT, DVT, and Pulmonary Embolism", "On day 3 after a cesarean birth, a woman who has mostly stayed in bed reports left leg pain. The left calf measures 3 cm larger than the right, with redness, tenderness, and edema. Dorsiflexing her foot produces no calf pain. Which conclusion is correct?", [
+  ["Suspect deep venous thrombosis and report it promptly — the circumference difference with redness, tenderness, and edema is the reportable picture", true, "The chapter's measurement rule: a leg up more than 2 cm in circumference with redness, tenderness, and edema gets reported promptly. Her risk stack — cesarean vessel injury, bed rest, and pregnancy's hypercoagulable state — sits underneath the findings."],
+  ["Rule out a clot — a negative Homans' sign means the calf pain is muscular from the birth position and needs only rest", false, "Homans' sign is NOT reliable postpartum and is not specific to clots in this period. A negative Homans' never rules out a DVT — that is the trap this question is built on."],
+  ["Suspect superficial venous thrombosis, because calf tenderness with redness is a surface-vein problem", false, "SVT is a visible, hard, reddened saphenous vein you can easily see. A measured 3 cm difference with edema is the deep picture — and depth is what carries embolism risk."],
+  ["Reassure her and recheck the leg tomorrow, because leg swelling is expected after a cesarean birth", false, "Unilateral swelling with a 3 cm difference is not 'expected swelling.' DVT is confirmed by ultrasound — which only happens if the findings are reported today."]
+], "ANSWER KEY — Correct answer: suspect DVT and report promptly; the negative Homans' sign clears nothing. DETAILED RATIONALE — Pregnancy stacks all three clot ingredients: venous stasis from the heavy uterus, vessel injury (here, cesarean), and clotting factors that stay elevated for weeks. Trust circumference, symptoms, and ultrasound — never the dorsiflexion test. PRIORITY FRAMEWORK — Evidence Based Practice: use the measurement that discriminates, not the sign that decorates.");
+
+S("Thromboembolism — SVT, DVT, and Pulmonary Embolism", "A woman has a painful, hard, reddened, warm saphenous vein visible on her lower leg. Her calf measurements are equal and she has no edema. Which treatment plan fits her problem?", [
+  ["Analgesics, local heat, and leg elevation to encourage venous drainage — no anticoagulant is used for a superficial thrombosis", true, "That is the book's SVT prescription exactly: pain relief, heat, and elevation. Anticoagulation is the layer added when the clot is DEEP."],
+  ["Subcutaneous heparin started today, because every postpartum clot is anticoagulated until it resolves", false, "'Every clot' flattens the chapter's central distinction. Depth decides the drug: SVT gets the comfort-and-drainage measures; DVT gets those PLUS heparin."],
+  ["Strict bed rest with the leg kept flat and still until the vein softens and the pain resolves", false, "Flat and still works against venous drainage. Elevation encourages return flow, and immobility is itself a clot risk in this population."],
+  ["Warfarin started today, with vitamin K kept available at the bedside in case she bleeds", false, "Warfarin is an oral anticoagulant from the deeper-disease shelf, and vitamin K is its ANTIDOTE — neither belongs in the SVT plan."]
+], "ANSWER KEY — Correct answer: analgesics, local heat, and elevation — no anticoagulant for SVT. DETAILED RATIONALE — The thromboembolism family is sorted by anatomy: the saphenous surface vein (visible, hard, warm) versus the deep system (measured swelling, embolism potential). The sort is not academic — it decides whether an anticoagulant enters her body. PRIORITY FRAMEWORK — Assessment accuracy: depth decides the drug.");
+
+S("Thromboembolism — SVT, DVT, and Pulmonary Embolism", "A woman on postpartum day 2 after a cesarean birth suddenly calls out with sharp chest pain, a cough, and difficulty breathing. Her pulse is 124, respirations 30, oxygen saturation 90%, and she seems less alert than an hour ago. What is the nurse's priority?", [
+  ["Report the findings and activate emergency help at once while sitting her up and applying oxygen — this is the pulmonary embolism picture", true, "The chapter's standing rule: dyspnea, cough, or chest pain in a postpartum patient means possible PE — report immediately. A big PE adds falling consciousness and heart-failure signs; she is already less alert."],
+  ["Complete a full head-to-toe assessment and repeat her vital signs in 15 minutes before deciding whether to report", false, "A solo workup spends the minutes the response team needs. Escalation is the first action; assessment continues alongside the response, not before it."],
+  ["Give her prescribed analgesic for the chest pain and reassess her breathing once it takes effect", false, "Treating the pain treats the messenger. Her saturation is 90% and falling alertness says the problem is oxygen delivery, not comfort."],
+  ["Help her ambulate to the bathroom, because movement will loosen the congestion in her chest", false, "Exertion in a suspected PE can worsen the picture, and walking her away from monitoring and help is the opposite of protection. She stays put."]
+], "ANSWER KEY — Correct answer: escalate at once, sit her up, apply oxygen. DETAILED RATIONALE — A clot that breaks off and lodges in the pulmonary artery is this topic's danger move (venous thrombosis complicates about 1 in 1500 pregnancies). Small PEs can be vague — palpitations, blood-streaked sputum, faintness, low-grade fever — but this presentation is the full picture. PRIORITY FRAMEWORK — ABCs: breathing threats jump every queue.");
+
+M("Thromboembolism — SVT, DVT, and Pulmonary Embolism", "A charge nurse is writing the postpartum unit's clot-prevention checklist for mothers recovering after birth. Which measures belong on the checklist? Select all that apply.", [
+  ["Early ambulation and range-of-motion exercises, continued through the weeks that clotting factors stay elevated", true, "The frontline defense: keep the blood moving. Pregnancy's hypercoagulable state lasts for weeks after birth, so flow-promoting measures continue during AND after the hospital stay."],
+  ["Teaching her not to cross her legs, because crossing impedes venous return", true, "A small habit with a mechanical reason — crossed legs compress the veins the blood must return through."],
+  ["Antiembolic stockings fitted correctly for a mother with varicose veins — never rolled or kinked", true, "Stockings help only when applied correctly; a rolled or kinked stocking makes flow worse than no stocking."],
+  ["Pneumatic compression devices or prophylactic heparin for a cesarean mother or one on prolonged bed rest", true, "The chapter's escalation for the highest-risk legs: mechanical compression or prophylactic anticoagulation when surgery or bed rest stacks the risk."],
+  ["Elevating her legs on pillows stacked to bend the leg sharply at the groin for better drainage", false, "Elevation has a geometry rule: no sharp bend at the groin and no pressure behind the knee. A sharply bent leg obstructs the return it was meant to help."],
+  ["Keeping her in bed until discharge so her legs rest and a clot cannot break loose", false, "Bed rest is a risk STACKER, not a protection — stasis is one of the three clot ingredients. The prescription is movement, not rest."]
+], "ANSWER KEY — Correct answers: early ambulation and ROM, no leg crossing, correctly fitted stockings, and compression devices or prophylactic heparin for cesarean/prolonged bed rest. DETAILED RATIONALE — Prevention is flow: movement, positioning that never kinks the return path, fitted stockings, and mechanical or drug prophylaxis for the surgical and bed-rest mothers. Even the stirrups used in birth and repair are padded so they do not press the popliteal angle. PRIORITY FRAMEWORK — Prevention: the cheapest clot is the one that never forms.");
+
+BANK.push({ cat: "Thromboembolism — SVT, DVT, and Pulmonary Embolism", type: "order", stem: "A postpartum woman develops sudden chest pain, a cough, and dyspnea, and her oxygen saturation is falling. Place the nurse's first actions in the correct order.", items: [
+  { t: "Call for emergency help and report the findings at once", r: "FIRST: PE signs are reported immediately, not watched — escalation opens the response." },
+  { t: "Sit her up and apply oxygen with saturation monitoring", r: "Position for breathing and oxygenate the blood that remains — airway and breathing support follow escalation at once." },
+  { t: "Take a full set of vital signs and assess her breathing and alertness", r: "Baseline the emergency: pulse, respirations, blood pressure, saturation, and level of consciousness — the numbers the team will trend." },
+  { t: "Keep her in bed, keep her NPO, and stay with her", r: "Exertion can worsen the picture and procedures may follow; she stays put, fasting, with the nurse at the bedside." },
+  { t: "Reassess her breathing, saturation, and alertness and report the trend", r: "Evaluation: is she stabilizing on oxygen, or declining toward heart-failure signs? The trend drives the next escalation." }
+], tp: "ANSWER KEY — Correct order: escalate at once → sit up and oxygenate → full vitals and alertness assessment → stay, no exertion, NPO → reassess and report the trend. DETAILED RATIONALE — PE care is sequenced like every emergency in this book: help first, breathing second, data third, protection throughout, and a trend to close. PRIORITY FRAMEWORK — ABCs + Clinical Judgment (take action): the order itself is a clinical decision." });
+
+BANK.push({ cat: "Thromboembolism — SVT, DVT, and Pulmonary Embolism", type: "dropdown", stem: "Complete the anticoagulation plan for three postpartum patients.<br>Patient 1 — A woman with a superficial venous thrombosis of the saphenous vein is prescribed:<br>[[0]]<br>Patient 2 — A woman with a confirmed DVT who is scheduled for a procedure with regional anesthesia has enoxaparin on her chart; the nurse must:<br>[[1]]<br>Patient 3 — A woman taking warfarin at home reports prolonged bleeding from minor cuts and bleeding gums; the antidote for warfarin overdose is:<br>[[2]]", blanks: [
+  { o: [O("Analgesics, local heat, and leg elevation — no anticoagulant", true, "SVT needs NO anticoagulant in this chapter: analgesics, local heat, and leg elevation to encourage venous drainage. Depth decides the drug."), O("Full-dose IV heparin started today", false, "Full anticoagulation is the DVT layer. Giving it for a surface-vein clot exposes her to bleeding risk the diagnosis does not justify."), O("Warfarin started today at a loading dose", false, "Warfarin belongs to the oral-anticoagulant shelf for deeper disease — and its antidote is vitamin K, a pairing that matters in Patient 3.")] },
+  { o: [O("Reconcile the drug with the anesthesia plan — LMWH is contraindicated with regional anesthesia", true, "Enoxaparin's #1 catch in this chapter: low-molecular-weight heparin is contraindicated with regional anesthesia. Longer acting, fewer doses, less lab testing — but the anesthesia plan must be reconciled first."), O("Give it as scheduled — its short action makes the timing safe", false, "Enoxaparin is LONGER acting than heparin — the premise is backwards, and the contraindication is explicit."), O("Keep her NPO and give it — fasting covers the anesthesia risk", false, "NPO addresses aspiration, not bleeding risk at a regional-anesthesia site. The drug–anesthesia conflict is the issue.")] },
+  { o: [O("Vitamin K", true, "The book's medication safety alert: the antidote for warfarin overdose is vitamin K. Her bleeding signs — prolonged bleeding from minor injuries, bleeding gums, nosebleeds, unexplained bruising — are the over-anticoagulation warnings she was taught."), O("Protamine sulfate", false, "Protamine answers heparin, not warfarin. The chapter's alert pairs warfarin with vitamin K."), O("Tranexamic acid", false, "TXA protects formed clots during hemorrhage care; it is not the warfarin antidote the book names.")] }
+], tp: "ANSWER KEY — Correct answers: SVT = analgesics, heat, elevation, no anticoagulant; enoxaparin plus regional anesthesia = contraindicated, reconcile the plans; warfarin antidote = vitamin K. DETAILED RATIONALE — Each anticoagulant in this chapter carries one catch: heparin is the DVT workhorse (subcutaneous or IV), enoxaparin's catch is the anesthesia conflict, and warfarin's is its antidote. Home teaching adds self-injection technique and a soft toothbrush. PRIORITY FRAMEWORK — Medication safety: know each drug's catch before you give it." });
+
+BANK.push({ cat: "Thromboembolism — SVT, DVT, and Pulmonary Embolism", type: "matrix", stem: "Three postpartum women have clotting problems at different depths. Match each woman to her diagnosis.", cols: ["Superficial venous thrombosis","Deep venous thrombosis","Pulmonary embolism"], rows: [
+  { t: "A painful, hard, reddened, warm saphenous vein that is easy to see on the lower leg", a: 0, r: "SVT — the surface vein itself is the finding: visible, hard, warm, painful. Treated with analgesics, heat, and elevation." },
+  { t: "Leg pain with calf tenderness and edema, the calf measuring more than 2 cm larger than the other side", a: 1, r: "DVT — deep veins from the feet to the femoral area; the measured difference with symptoms is reported promptly and confirmed by ultrasound." },
+  { t: "Sudden chest pain with a cough, dyspnea, and a falling level of consciousness", a: 2, r: "PE, the large presentation — the clot has traveled to the pulmonary artery. Report immediately." },
+  { t: "Vague shortness of breath, palpitations, blood-streaked sputum, and a low-grade fever", a: 2, r: "PE, the small presentation — vague does not mean safe. The same escalation applies while the picture is sorted." }
+], tp: "ANSWER KEY — Correct matches: visible saphenous vein = SVT; measured swollen tender leg = DVT; sudden chest picture = PE; vague breathlessness with blood-streaked sputum = PE. DETAILED RATIONALE — Depth and travel decide danger: surface (treat locally), deep (anticoagulate), traveled (emergency). The small-PE row is the one most often missed — its vagueness is the trap. PRIORITY FRAMEWORK — Assessment accuracy: anatomy of the signs names the vessel." });
+
+S("Thromboembolism — SVT, DVT, and Pulmonary Embolism", "A woman is being discharged on anticoagulant therapy, with home nursing visits arranged for blood draws and support. Which statement shows she understands the safety teaching?", [
+  ["'I will use a soft toothbrush, watch for bleeding gums and unexplained bruises, and report prolonged bleeding from minor injuries'", true, "That is the over-anticoagulation warning set from the book's home teaching, plus the soft toothbrush and trauma avoidance that go with it. She has converted the drug's risk into daily behaviors."],
+  ["'I can skip the injections on days when I feel well, because the clotting risk ends at discharge'", false, "Clotting factors stay elevated for weeks after birth — the therapy continues precisely because the risk does. Feeling well is not a stop rule."],
+  ["'Bruising is expected on this drug and never needs reporting, even when it appears with no injury'", false, "Unexplained bruising is on the report list. Bruising WITH a cause is watched; bruising without one is a warning sign."],
+  ["'I should shave with a regular razor and floss hard so small bleeds stop scaring me and my gums stay tough'", false, "The teaching runs the other way: soft toothbrush and avoiding minor trauma that could cause prolonged bleeding or a large hematoma."]
+], "ANSWER KEY — Correct answer: soft toothbrush, watch for the over-anticoagulation signs, report prolonged bleeding. DETAILED RATIONALE — Home anticoagulation teaching is safety teaching: self-injection technique, the warning signs of too much drug, and habits that prevent the minor injuries the drug turns into problems. Home visits support the therapy with clotting-study blood draws. PRIORITY FRAMEWORK — Evaluate (teach-back): understanding is proven by the precautions she can state.");
+
+/* ================= Category F — clotting problems and hemorrhage medications ================= */
+BANK.push({ cat: "Clotting Problems and Hemorrhage Medications", type: "dropdown", stem: "Complete the uterotonic plan for three postpartum patients.<br>Patient 1 — A woman with an atonic uterus right after birth receives the first-line uterotonic:<br>[[0]]<br>Patient 2 — Her uterus still will not stay firm and her blood pressure is 172/108; the nurse must:<br>[[1]]<br>Patient 3 — A woman with subinvolution and a normal blood pressure needs the uterotonic that holds a sustained contraction:<br>[[2]]", blanks: [
+  { o: [O("Dilute oxytocin given as an IV infusion", true, "Oxytocin (Pitocin) is the first-line drug for uterine atony — the same hormone suckling releases naturally, given as a dilute IV infusion after birth."), O("Methylergonovine given as the first drug tried", false, "Methylergonovine is an escalation drug, not the first line — and it carries the blood-pressure catch that Patient 2 is about to test."), O("Tranexamic acid given as a uterine contractor", false, "TXA does not contract anything — it protects formed clots from breaking down. Wrong shelf of the hemorrhage cart.")] },
+  { o: [O("Hold methylergonovine — it raises blood pressure — and use a prostaglandin option while notifying the provider", true, "The chapter's clearest drug catch: methylergonovine RAISES blood pressure and must not go to a hypertensive patient. Carboprost or misoprostol — the prostaglandins — are the escalation options that remain."), O("Give methylergonovine — the blood pressure will fall once the uterus firms", false, "The drug raises pressure whether or not the uterus responds. A pressure of 172/108 forbids it outright."), O("Give extra oxytocin boluses until the blood pressure comes down", false, "Oxytocin is not a blood-pressure treatment, and stacking boluses is not the escalation ladder the chapter builds.")] },
+  { o: [O("Methylergonovine (Methergine)", true, "In subinvolution, methylergonovine is the named drug to HOLD a firm contraction — and her normal blood pressure clears its one catch."), O("Calcium gluconate", false, "Calcium gluconate's job in this chapter is counteracting a uterus-relaxing tocolytic — it is not a uterotonic."), O("Vitamin K", false, "Vitamin K is the warfarin antidote from the clotting shelf. It has no uterine action.")] }
+], tp: "ANSWER KEY — Correct answers: first-line = dilute oxytocin IV; hypertensive atony = hold the ergot, use a prostaglandin; subinvolution with normal BP = methylergonovine. DETAILED RATIONALE — The uterotonic family does one job — contract the uterus and keep it contracted — but each member carries a catch, and the catches are the test points: oxytocin first, the ergot gated by blood pressure, the prostaglandins as the alternate route. PRIORITY FRAMEWORK — Medication safety: the patient's numbers choose the drug." });
+
+S("Clotting Problems and Hemorrhage Medications", "A woman had a vaginal birth at 08:10 and is bleeding from atony that is answering uterotonics slowly. At 10:45 the provider orders tranexamic acid. Which action is correct?", [
+  ["Give it now — tranexamic acid protects the clots that form from breaking down, and it must be given within 3 hours of the birth to keep its benefit", true, "TXA's timing is the test point: it blocks the breakdown of clots so bleeding sites can seal, and the window runs from the DELIVERY — 08:10 to 10:45 is inside it. It is given alongside the cause-specific interventions, not instead of them."],
+  ["Hold it until the bleeding stops on its own, because the drug is only a backup for surgical bleeding", false, "Holding it spends the window. TXA is an adjunct during active hemorrhage care, and its benefit expires on a clock that is already running."],
+  ["Question the order — tranexamic acid contracts the uterus, so it duplicates the uterotonics already running", false, "It does not contract the uterus at all. It protects clots — a different job that complements the uterotonics rather than duplicating them."],
+  ["Give it, but chart that its window closes 3 hours after the order was written rather than after the birth", false, "The window is anchored to the delivery, not the order. Charting the wrong anchor teaches the next nurse the wrong deadline."]
+], "ANSWER KEY — Correct answer: give it now, inside the 3-hour post-birth window. DETAILED RATIONALE — Every hemorrhage drug in this chapter carries one catch, and TXA's is a clock: within 3 hours of delivery or the benefit is gone. Recognizing which clock a drug runs on is part of medication safety. PRIORITY FRAMEWORK — Medication safety / time-critical action: know the window before you need it.");
+
+S("Clotting Problems and Hemorrhage Medications", "A woman being treated for postpartum hemorrhage now has pinpoint spots on her skin, oozing from her IV puncture sites, and urine output that has nearly stopped. What do these new findings tell the nurse?", [
+  ["A clotting problem has joined the picture — her sites are not sealing and her kidneys are underperfused, so the provider must be told at once", true, "The chapter's nursing-care line names this exact cluster: petechiae, oozing from venipuncture sites, or oliguria means think clotting problem. The bleeding is no longer only a plumbing problem — the sealing system itself is failing."],
+  ["The IV sites were placed poorly, and the skin spots are a rash from the antibiotics she received", false, "Two separate dismissals for one connected cluster. Pinpoint spots plus oozing plus oliguria in a hemorrhaging woman is a pattern, and patterns get escalated, not explained away piece by piece."],
+  ["These are expected effects of the IV fluids she received and need only routine monitoring through the shift", false, "Fluids do not cause puncture sites to ooze or skin to spot. Calling a deterioration 'expected' is how it goes unreported."],
+  ["Her uterus has finally contracted, and the oozing shows the extra volume leaving her body through the IV sites", false, "Oozing from puncture sites is blood failing to clot where it should seal — the opposite of recovery. The fundus is not even part of this finding set."]
+], "ANSWER KEY — Correct answer: a clotting problem (Thrombin) has joined the hemorrhage — flag it at once. DETAILED RATIONALE — The 4 Ts are a live differential: a hemorrhage that starts as Tone can acquire Thrombin, and the bedside announcement is unsealed puncture sites, pinpoint skin spots, and falling urine output. The nurse who reads the cluster changes the provider's plan. PRIORITY FRAMEWORK — Recognize cues: new findings re-sort the differential mid-treatment.");
+
+BANK.push({ cat: "Clotting Problems and Hemorrhage Medications", type: "matrix", stem: "Four postpartum patients need drugs from the hemorrhage and clotting shelves. Match each patient to the drug action that fits her problem.", cols: ["Oxytocin (Pitocin)","Methylergonovine (Methergine)","Tranexamic acid (TXA)","Calcium gluconate"], rows: [
+  { t: "First-line treatment for a uterus that will not contract after birth, given as a dilute IV infusion", a: 0, r: "Oxytocin — the first-line uterotonic; suckling releases the same hormone naturally." },
+  { t: "Holds a sustained contraction in subinvolution, but must never be given to a hypertensive patient", a: 1, r: "Methylergonovine — the ergot's catch is blood pressure: it raises it." },
+  { t: "Protects formed clots from breaking down, with a benefit that depends on a strict post-birth time window", a: 2, r: "TXA — within 3 hours of delivery, alongside the cause-specific interventions." },
+  { t: "Counteracts a uterus-relaxing tocolytic drug that was given during labor", a: 3, r: "Calcium gluconate — in this chapter its job is reversing the tocolytic so the uterus can contract." }
+], tp: "ANSWER KEY — Correct matches: first-line atony drug = oxytocin; sustained contraction with a hypertension ban = methylergonovine; clot protection on a clock = TXA; tocolytic reversal = calcium gluconate. DETAILED RATIONALE — Four drugs, four different jobs, four different catches. The hemorrhage cart is sorted by mechanism — contract, hold, protect clots, reverse a relaxant — and grabbing by family resemblance is the error this item hunts. PRIORITY FRAMEWORK — Medication safety: mechanism and catch, memorized as a pair." });
+
+/* ================= Category G — mood disorders ================= */
+BANK.push({ cat: "Postpartum Mood Disorders — Blues, Depression, Psychosis", type: "matrix", stem: "Three mothers are described at different points after birth. Match each mother to the mood disorder that fits her picture.", cols: ["Postpartum blues","Postpartum depression","Postpartum psychosis"], rows: [
+  { t: "Day 3: tearful, sad, anxious, appetite off, moods swinging — but she is caring for herself and the baby and knows everything around her is real", a: 0, r: "Blues — at least 50% of mothers, starting day 2–3, reality INTACT, self-resolving within about 2 weeks. Care: reassurance, rest, nutrition, and avoiding alcohol, which amplifies mood swings." },
+  { t: "Week 3: long crying spells, sleeping almost all day, lost interest in everything, panic attacks, trouble deciding anything, struggling to care for the baby — reality still intact", a: 1, r: "Depression — onset usually 2–4 weeks and NOT self-limiting. Treatment pairs antidepressants with psychotherapy; the danger is dismissal." },
+  { t: "Day 6: hyperactive and euphoric, insists the baby is dead and must be replaced, hears voices commenting on her, cannot interact appropriately with reality", a: 2, r: "Psychosis — the rarest (fewer than 3 per 1,000 births), reality LOST to hallucinations and delusions, often riding on bipolar disorder or major depression with delusions. An emergency: inpatient psychiatric treatment." }
+], tp: "ANSWER KEY — Correct matches: day-3 tearful but coping = blues; week-3 pervasive and lingering = depression; reality lost = psychosis. DETAILED RATIONALE — Two one-liners sort the family: blues RESOLVE in about 2 weeks while depression starts later (2–4 weeks) and does not lift; depression keeps reality contact, psychosis loses it. Mixing up the timelines is the classic mood trap. PRIORITY FRAMEWORK — Assessment accuracy: timing + course + reality contact name the disorder and its urgency." });
+
+S("Postpartum Mood Disorders — Blues, Depression, Psychosis", "On day 3 a mother is tearful, anxious, and doubting herself, but she is feeding and caring for her baby well and knows her fears are exaggerated. Which nursing plan fits her picture?", [
+  ["Support and encouragement, protected rest, good nutrition, and teaching her to avoid alcohol — while watching that the feelings lift within about 2 weeks", true, "That is the blues prescription: at least half of mothers get it, it starts on day 2–3, and it resolves on its own in about 2 weeks. The watch matters — feelings that persist and pervade get evaluated, not reassured away."],
+  ["Start the depression pathway today — tearfulness on day 3 always becomes postpartum depression unless antidepressants begin early", false, "'Always' is wrong: the blues are common and self-resolving. Antidepressants belong to the depression picture — later onset, lingering course — not to day-3 tearfulness with intact coping."],
+  ["Reassure her that nothing needs any follow-up, because feelings in the first 2 weeks never matter clinically", false, "That is the chapter's named dismissal trap in reverse. The blues are watched precisely because the nurse must catch the feelings that do NOT lift."],
+  ["Separate her from the baby until the tearfulness passes, so the baby is not exposed to her mood", false, "She is caring for the baby well — that is part of the blues picture. Separation would harm bonding and treat a normal adjustment as a danger it is not."]
+], "ANSWER KEY — Correct answer: support, rest, nutrition, no alcohol — with a watch on the 2-week course. DETAILED RATIONALE — Blues care is supportive, but it is not a dismissal: the nurse's eyes are the screening tool, since there is no routine formal screening. The same visit that reassures also sets the expectation — if it is not lifting, it gets evaluated. PRIORITY FRAMEWORK — Maslow / psychosocial with safety watch: support the adjustment, surveil the course.");
+
+S("Postpartum Mood Disorders — Blues, Depression, Psychosis", "At a 3-week visit, a mother reports crying most days, sleeping 14 hours yet feeling exhausted, losing interest in food, friends, and the baby, and having panic attacks. She knows her thoughts are 'not logical' but cannot shake them. Which action is correct?", [
+  ["Arrange evaluation for postpartum depression — onset at 2–4 weeks with persistent, pervasive symptoms is not the blues, and treatment pairs psychotherapy with antidepressants", true, "Every discriminator points to depression: the 2–4 week onset window, symptoms that are persistent and pervasive, impaired functioning and bonding — and reality contact intact, since she knows her thoughts are not logical."],
+  ["Reassure her this is still the baby blues and recheck her at the 6-week visit if she is not feeling better by then", false, "The blues resolve within about 2 weeks. At week 3 with pervasive symptoms, reassurance is the dismissal the chapter warns against — depression is not self-limiting."],
+  ["Treat it as psychosis and arrange emergency psychiatric admission, because she has lost touch with reality and is a danger", false, "She has NOT lost touch with reality — she can judge her own thoughts as illogical. Reality contact is the dividing line, and she is on the depression side of it. Urgent evaluation, yes; the psychosis pathway, no."],
+  ["Advise her to avoid alcohol and wait, because hormone levels settle by 6 weeks and the feelings will lift with them on their own", false, "Waiting is the blues plan applied to the wrong disorder. Depression lingers past the blues window and needs professional treatment, including for related anxiety and insomnia."]
+], "ANSWER KEY — Correct answer: professional evaluation for postpartum depression. DETAILED RATIONALE — Depression can hide behind 'tired new mom,' and thoughts of harming herself or the baby can appear in this picture — which is why the assessment explores her feelings rather than reassuring them away. Setting (outpatient or inpatient) follows severity; light therapy and exercise may help as adjuncts. PRIORITY FRAMEWORK — Safety: persistent + pervasive + impairing = evaluate, never dismiss.");
+
+S("Postpartum Mood Disorders — Blues, Depression, Psychosis", "On day 5, a mother is brought in hyperactive and euphoric. She insists her healthy baby died and was replaced, has not slept in 2 days, and is responding to voices she hears. Her partner reports she has bipolar disorder. What is the priority?", [
+  ["She has lost contact with reality — psychosis can be fatal for mother and infant, and she needs inpatient psychiatric care with the baby kept supervised", true, "Hallucinations and a fixed delusion about the baby are lost reality contact — the psychosis dividing line. It often rides on bipolar disorder, danger peaks in manic episodes (poor judgment, feeling invulnerable), and the appropriate setting in many cases is inpatient psychiatric treatment."],
+  ["Reassure the partner that vivid experiences and confusion are part of the baby blues and will resolve within 2 weeks on their own", false, "The blues never include delusions or voices. Reassuring this family sends a psychiatric emergency home with a newborn."],
+  ["Arrange outpatient counseling for next week and send her home with the baby, because family support is present around the clock", false, "Supportive family does not convert an emergency into an outpatient problem. Psychosis can be fatal for mother and infant; the setting is inpatient."],
+  ["Focus on sleep hygiene and nutrition teaching, because exhaustion and poor intake are driving the whole picture", false, "Rest and nutrition are blues-level supports. They are adjuncts at best here — they do not treat lost reality contact, and teaching is not supervision."]
+], "ANSWER KEY — Correct answer: emergency — inpatient psychiatric care, baby supervised and safe. DETAILED RATIONALE — Psychosis is the rarest of the three (fewer than 3 per 1,000 births) and the only one that is an emergency by definition. The depressed mother knows what is real; the psychotic mother may not — and her delusion here is ABOUT the baby, which sets the safety plan. PRIORITY FRAMEWORK — Safety first: reality lost + infant involved = emergency containment before all else.");
+
+S("Postpartum Mood Disorders — Blues, Depression, Psychosis", "A nurse is reviewing four postpartum mothers at a clinic. Which mother carries the strongest stack of risk factors for a postpartum mood disorder and needs the closest watching?", [
+  ["A mother with previous postpartum depression and a family history of bipolar disorder, whose twins are in the NICU and who is struggling to breastfeed", true, "Her stack hits the chapter's list from every direction: her own history (a previous postpartum depression), family history (bipolar disorder), baby factors (multiples, infants with health problems), and a breastfeeding struggle — on top of the fatigue and stress every new mother carries."],
+  ["A first-time mother with a supportive partner, an uncomplicated birth, and a healthy baby who is feeding well", false, "Her profile is the low-risk comparison: stable relationship, healthy baby, feeding going well, no mood history named."],
+  ["A mother who was tearful on day 2, is now sleeping when the baby sleeps, eating well, and enjoying her visitors", false, "That is the blues resolving on schedule — a normal course to support, not a risk stack to surveil hardest."],
+  ["A mother whose main concern is affording diapers, with no personal or family mood history and a healthy baby", false, "Money worries ARE a named risk factor — but one factor is a thinner stack than a previous episode plus family bipolar history plus NICU twins plus feeding struggles. The question asks for the strongest stack."]
+], "ANSWER KEY — Correct answer: the mother with a previous postpartum depression, family bipolar history, NICU twins, and breastfeeding struggles. DETAILED RATIONALE — Mood-disorder risk is cumulative and family-shaped: personal or family depression or bipolar history, a previous postpartum episode, infant health problems, multiples, breastfeeding struggles, money worries, and an unstable partner relationship. With no routine formal screening, the nurse's risk sort IS the screening. PRIORITY FRAMEWORK — Risk stratification: the thickest stack gets the closest watch.");
+
+var BLUEPRINT = {
+ "Postpartum Hemorrhage — Shock and First Response": {
+  "name": "Postpartum Hemorrhage — Shock and First Response",
+  "count": 17,
+  "types": {
+   "single": 11,
+   "multi": 4,
+   "matrix": 2
+  }
+ },
+ "Uterine Atony, Bladder, and Subinvolution": {
+  "name": "Uterine Atony, Bladder, and Subinvolution",
+  "count": 10,
+  "types": {
+   "single": 5,
+   "order": 2,
+   "multi": 2,
+   "matrix": 1
+  }
+ },
+ "Lacerations and Hematomas — Concealed Bleeding": {
+  "name": "Lacerations and Hematomas — Concealed Bleeding",
+  "count": 7,
+  "types": {
+   "single": 4,
+   "multi": 1,
+   "matrix": 1,
+   "dropdown": 1
+  }
+ },
+ "Postpartum Infections — Uterus, Wound, Urinary Tract, Breast": {
+  "name": "Postpartum Infections — Uterus, Wound, Urinary Tract, Breast",
+  "count": 9,
+  "types": {
+   "multi": 2,
+   "order": 1,
+   "single": 5,
+   "matrix": 1
+  }
+ },
+ "Thromboembolism — SVT, DVT, and Pulmonary Embolism": {
+  "name": "Thromboembolism — SVT, DVT, and Pulmonary Embolism",
+  "count": 8,
+  "types": {
+   "single": 4,
+   "multi": 1,
+   "order": 1,
+   "dropdown": 1,
+   "matrix": 1
+  }
+ },
+ "Clotting Problems and Hemorrhage Medications": {
+  "name": "Clotting Problems and Hemorrhage Medications",
+  "count": 4,
+  "types": {
+   "dropdown": 1,
+   "single": 2,
+   "matrix": 1
+  }
+ },
+ "Postpartum Mood Disorders — Blues, Depression, Psychosis": {
+  "name": "Postpartum Mood Disorders — Blues, Depression, Psychosis",
+  "count": 5,
+  "types": {
+   "matrix": 1,
+   "single": 4
+  }
+ }
+};
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { shuffle(q.opts); S.resp.push(-1); }
+    else if (q.type === "multi") { shuffle(q.opts); S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { shuffle(q.blanks[k].o); d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>OB Ch 11 — Complications After Birth: Critical Thinking Test</h1>';
+  h += '<div class="sub">Brutal mode | Leifer, Introduction to Maternity and Pediatric Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order<br><span class="small">Answer choices always shuffle, even dropdowns. Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>
