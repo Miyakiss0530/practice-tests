@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OB Ch 14 — Predicted Test (BRUTAL): The Newborn With a Perinatal Injury or Congenital Malformation</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+function S(cat, stem, opts, tp, extra) { var q = { cat: cat, type: "single", stem: stem, opts: opts.map(function (o) { return O(o[0], o[1], o[2]); }), tp: tp }; if (extra) { for (var k in extra) q[k] = extra[k]; } BANK.push(q); }
+function M(cat, stem, opts, tp, extra) { var q = { cat: cat, type: "multi", stem: stem, opts: opts.map(function (o) { return O(o[0], o[1], o[2]); }), tp: tp }; if (extra) { for (var k in extra) q[k] = extra[k]; } BANK.push(q); }
+var C1 = "Hydrocephalus and Raised Intracranial Pressure";
+var C2 = "Spina Bifida — Sac Protection, Bladder Care, and Latex Safety";
+var C3 = "Cleft Lip and Cleft Palate — Feeding and Repair Care";
+var C4 = "Hip Dysplasia, Clubfoot, and Cast Care";
+var C5 = "PKU and the Metabolic Disorders";
+var C6 = "Down Syndrome — Newborn Care and Family Support";
+var C7 = "Hemolytic Disease — Rh, ABO, Coombs, and RhoGAM";
+var C8 = "Phototherapy, Exchange Transfusion, Macrosomia, and Perinatal Injuries";
+var CATS = [C1, C2, C3, C4, C5, C6, C7, C8];
+var KEYTERMS = [];
+
+/* ===== CASE 1 (PRED-CASE1) — Maya: Rh disease, bilirubin 16, under the lights ===== */
+var CASE_P1 = "CASE STUDY — Maya: Yellow and Rising. Baby girl Maya is 2 days old, born at term to an Rh-negative mother; Maya herself is Rh-positive. Her jaundice was first noted at 14 hours of age and has deepened steadily. Today's serum bilirubin is 16 mg/dL and still rising. She is lethargic at feeds, takes the breast poorly, and her temperature in the incubator is 37.0°C. She has been placed, diapered only, in an incubator under phototherapy lights, and the provider is watching her closely for bilirubin toxicity while the team discusses whether she may need an exchange transfusion.";
+
+M(C7, "Which findings in Maya's picture require the nurse to act now? Select all that apply.", [
+    ["Jaundice first noted at 14 hours of age", true, "Jaundice evident within 24 hours of birth is pathological, never the physiological pattern, and is reported immediately."],
+    ["Serum bilirubin of 16 mg/dL and still rising", true, "She is climbing toward the toxicity zone near 20 mg/dL; a rising 16 drives daily levels, toxicity watch, and treatment decisions."],
+    ["Lethargy with poor feeding at the breast", true, "Lethargy and poor feeding sit on the bilirubin-toxicity list alongside irritability, shrill cry, and muscle weakness."],
+    ["An Rh-positive baby born to an Rh-negative mother", true, "That pairing is the setup for hemolytic disease; maternal antibodies can cross and destroy the baby's red blood cells."],
+    ["Incubator temperature of 37.0°C during therapy", false, "The neutral thermal range for phototherapy is 36.3–37.4°C, so 37.0°C sits inside the target band."],
+    ["Diapered only while lying under the lights", false, "Maximum skin exposure with a diaper shielding the gonads is exactly the correct phototherapy setup."]
+  ], "ANSWER KEY — Correct answers: jaundice at 14 hours, bilirubin 16 mg/dL and rising, lethargy with poor feeding, and the Rh-negative mother with an Rh-positive baby. DETAILED RATIONALE — Recognize Cues separates the disease cues (first-day jaundice, a level climbing toward 20 mg/dL, toxicity-list behavior, the Rh setup that explains the hemolysis) from two correct-care findings (temperature inside 36.3–37.4°C, diaper-only exposure). PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): act on the cues that crossed a named line, not on the parts of the setup that are already right.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+S(C7, "Maya's mother asks how her own blood could be making her baby so yellow. Which explanation is most accurate?", [
+    ["Antibodies you formed against the Rh factor crossed the placenta and are breaking down Maya's red blood cells faster than her liver can clear the bilirubin released", true, "Sensitization, antibody crossing, hemolysis, and a bilirubin flood the immature liver cannot process — the full chain of erythroblastosis fetalis."],
+    ["Your blood type is simply different from hers, so her body is rejecting your milk and the bilirubin is building up because she cannot digest feeds normally yet", false, "The disease is antibody-driven hemolysis before birth and after, not a feeding or digestion problem; her poor feeding is a result, not the cause."],
+    ["The lights she is under are breaking down her red blood cells too quickly, and the yellow color is a side effect of the treatment rather than of any blood problem", false, "Phototherapy breaks down bilirubin in the skin; it does not destroy red cells, and the jaundice was present and pathological before the lights began."],
+    ["Her liver was injured during delivery, so it cannot process bilirubin, and the red blood cell breakdown you are hearing about is a separate and unrelated finding", false, "No liver injury is in this picture; the liver is simply overwhelmed by bilirubin from antibody-driven hemolysis, which is the single unifying mechanism."]
+  ], "ANSWER KEY — Correct answer: maternal anti-Rh antibodies crossed the placenta and are hemolyzing Maya's red cells faster than her liver can clear the bilirubin. DETAILED RATIONALE — One sensitizing exposure loads the mother's immune system; in the affected pregnancy the antibodies cross, coat fetal red cells, and destroy them, and the released bilirubin outruns the newborn liver. Feeding trouble and the lights are consequences and treatment, not causes. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): the right explanation connects every finding in the case to one mechanism.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+S(C8, "Maya is about to go under the phototherapy lights. All of the following are correct nursing actions — which one must be done FIRST, before the lights are switched on?", [
+    ["Place eye patches over her closed eyes and check that they fit snugly without slipping", true, "Eye protection goes on over closed eyes before exposure begins; unprotected eyes under the bank of lights are the injury the care plan names first."],
+    ["Cover her gonads with a diaper so the ovaries are shielded during the treatment session", false, "Correct shielding, and part of the same setup — but the diaper can be secured in the same minute, while eye exposure starts the instant the lights come on."],
+    ["Set the incubator to hold her temperature inside the neutral thermal range for therapy", false, "Correct temperature control, done as the setup is completed; it protects her during treatment rather than guarding the structure the light hits first."],
+    ["Explain the treatment and the eye patches to her mother so her anxiety is eased early", false, "Correct family care that belongs in this round of work — after the baby herself is protected from the light she is about to lie under."]
+  ], "ANSWER KEY — Correct answer: place eye patches over her closed eyes before the lights are switched on. All four options are correct nursing actions — safety sequencing decides: the eyes are protected before exposure starts, the gonads are shielded with the diaper, temperature is held at 36.3–37.4°C, and the mother is taught and reassured. DETAILED RATIONALE — The phototherapy care plan lists injury to eyes and gonads first; patches come off at least once a shift to check for conjunctivitis and during feedings for eye contact and bonding. PRIORITY FRAMEWORK — Safety-first sequencing: protect the patient from the treatment's own hazard before the treatment begins.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+BANK.push({ cat: C8, type: "dropdown", stem: "The nurse completes Maya's phototherapy care plan. For each statement, choose the correct completion.<br><br>To expose every skin surface evenly, Maya is repositioned at least every<br>[[0]]<br><br>When blood is drawn for her daily bilirubin level, the phototherapy lights are<br>[[1]]<br><br>Phototherapy is discontinued once her bilirubin is steadily declining and reaches<br>[[2]]", blanks: [
+  { o: [O("2 hours", true, "Repositioning at least every 2 hours exposes all surfaces and lets pressure areas be checked."), O("4 hours", false, "Four hours leaves surfaces unexposed too long; the care plan interval is every 2 hours."), O("8 hours", false, "A whole shift in one position defeats the purpose of the lights and risks pressure injury.")] },
+  { o: [O("Turned off for the draw", true, "Blood for bilirubin is drawn with the lights off, or the sample reading cannot be trusted."), O("Left on for the draw", false, "Drawing under the lights is the named trap; the reading lies when the lights stay on."), O("Dimmed halfway for the draw", false, "There is no halfway rule in the care plan; the lights are turned off when blood is drawn.")] },
+  { o: [O("14 mg/dL", true, "The stop rule is a steady decline reaching 14 mg/dL."), O("10 mg/dL", false, "Ten to 14 mg/dL is the home-phototherapy referral range, not the stop number for hospital therapy."), O("20 mg/dL", false, "Twenty mg/dL is the toxicity danger zone the treatment exists to keep her away from, not a stop point.")] }
+], tp: "ANSWER KEY — Correct answers: reposition at least every 2 hours; lights turned off for the bilirubin draw; discontinue at a steady decline to 14 mg/dL. DETAILED RATIONALE — Each blank is a direction check from the care plan: the short reposition interval, the lights-off draw, and the stop number that sits below the referral range and well below the 20 mg/dL toxicity zone. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): build the plan from the numbers the chapter attaches to each step.", scen: CASE_P1, grp: "PRED-CASE1" });
+
+S(C8, "The provider decides Maya needs an exchange transfusion. Her mother asks what blood her Rh-positive daughter will receive. Which answer is correct?", [
+    ["Rh-negative donor blood, exchanged in small amounts through the umbilical vein until about twice her blood volume has been given", true, "Donor cells must carry no Rh antigen for the circulating maternal antibodies to attack; 10–20 mL aliquots through the umbilical vein total about twice her blood volume, capped at 500 mL."],
+    ["Rh-positive donor blood matched to her own type, so her body accepts the new cells as its own and stops breaking down red cells so quickly", false, "Rh-positive cells carry the very antigen her mother's antibodies target; they would be hemolyzed just like her own cells."],
+    ["Her mother's freshly donated blood, because a parent's blood is always the safest match for a newborn needing a large-volume exchange", false, "The mother's blood carries the anti-Rh antibodies driving the disease; giving it would add antibody, not remove the problem."],
+    ["Rh-negative donor blood given all at once as a single rapid infusion, so the antibody-coated cells are diluted before they can cause more damage", false, "The exchange is deliberately gradual — small 10–20 mL withdrawals and replacements repeated — not a single rapid infusion."]
+  ], "ANSWER KEY — Correct answer: Rh-negative donor blood, in small exchanges through the umbilical vein, totaling about twice her blood volume. DETAILED RATIONALE — After the second exchange about 85% of her original blood has been replaced, washing out antibody-coated cells and bilirubin. Rh-positive or maternal blood would feed the hemolysis, and the aliquot-by-aliquot technique is what makes the exchange safe. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): the donor choice follows from the mechanism — remove the antigen the antibodies are hunting.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+S(C7, "Before Maya's mother is discharged, the nurse reviews her Rh care. Her antibody screen in this pregnancy was negative. Which plan is correct?", [
+    ["Give her RhoGAM by intramuscular injection within 72 hours of the delivery, because she is Rh-negative, unsensitized, and delivered an Rh-positive baby", true, "Prevention works only before sensitization; a negative screen plus an Rh-positive baby plus the 72-hour window is exactly the RhoGAM picture, with the 28-week antenatal dose as the other routine window."],
+    ["Withhold RhoGAM now, because Maya already became jaundiced in her first day, which proves the mother is sensitized and the injection can no longer change anything", false, "First-day jaundice raises the question, but her screen was negative — and the screen, not the baby's color alone, decides whether prevention can still work."],
+    ["Give the RhoGAM to Maya instead of her mother, because the baby is the one whose red blood cells are being destroyed by the antibodies right now", false, "RhoGAM goes to the mother, never the baby; its job is stopping the mother from forming antibodies, not treating the infant's hemolysis."],
+    ["Schedule her RhoGAM for her 6-week postpartum visit, because the injection is equally effective whenever it is given in the weeks after delivery", false, "The postpartum window is 72 hours, not 6 weeks; a prevention dose given late misses the sensitizing exposure it was meant to cover."]
+  ], "ANSWER KEY — Correct answer: RhoGAM IM to the mother within 72 hours of delivery, because she is Rh-negative, not yet sensitized, and the baby is Rh-positive. DETAILED RATIONALE — RhoGAM prevents antibody formation and does nothing to antibodies that already exist, so the negative indirect Coombs screen is the deciding fact. It is a maternal injection on a deadline, paired with the routine 28-week antenatal window. PRIORITY FRAMEWORK — Timed prevention: a prophylactic intervention is judged by its window and by whether its precondition (no sensitization yet) still holds.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+
+/* ===== CASE 2 (PRED-CASE2) — Leo: meningomyelocele, protecting the sac ===== */
+var CASE_P2 = "CASE STUDY — Leo: A Sac on His Back. Baby boy Leo was born 3 hours ago with a cystic sac protruding from the midline of his lower back, about the size of a walnut. The sac is intact, with no leakage. He moves his arms well but his legs are flaccid, his urine dribbles constantly, and he has no anal sphincter control. His head circumference is at the upper end of the chart and his fontanels are full. He is awaiting surgical closure of the defect, and his parents are asking why he cannot simply be held and fed like the other babies.";
+
+M(C2, "Which nursing actions protect Leo while he waits for surgery? Select all that apply.", [
+    ["Cover the sac with a sterile dressing kept moist with sterile saline, as ordered", true, "An open lesion must not dry out; sterile moist dressings plus strict sterile technique are the core sac-protection actions."],
+    ["Position him prone, with a pad between his legs to hold abduction", true, "Prone positioning keeps all pressure off the sac, and the pad counters hip subluxation while he lies there."],
+    ["Measure his head circumference and check his fontanels as part of this assessment", true, "Hydrocephalus is commonly associated with this defect, so head circumference and fontanel status are baseline data, not extras."],
+    ["Hold him upright against the shoulder for burping after each feeding", false, "Upright shoulder holding presses on a midline back sac; this baby is positioned prone and handled so nothing presses the lesion."],
+    ["Place a snug diaper up over the lower back to pad and protect the sac", false, "A diaper over the lesion adds pressure and contamination from urine and feces; the perineal area is kept meticulously clean instead."],
+    ["Record the size of the sac and note any tears or leakage of its wall", true, "Size, tears, and leakage are the recorded observations that show whether the sac is staying intact and uninfected."]
+  ], "ANSWER KEY — Correct answers: sterile moist dressing over the sac, prone positioning with a pad between the legs, head circumference and fontanel checks, and recording the sac's size and any tears or leakage. DETAILED RATIONALE — Recognize Cues here means knowing the pre-op objectives cold: prevent infection of and injury to the sac, position with no pressure on it, and watch for the associated hydrocephalus. Shoulder holding and a padded diaper both press or contaminate the lesion. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): every correct action either shields the sac or watches the head.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+S(C2, "Leo's parents ask why his legs do not move when his arms move so well. Which explanation is most accurate?", [
+    ["His sac contains the spinal cord itself along with the membranes and fluid, so the cord's signals to his legs and bladder are interrupted below the defect", true, "Meningomyelocele means meninges, cerebrospinal fluid, and the spinal cord protrude together; cord involvement explains the flaccid legs, dribbling urine, and absent sphincter control."],
+    ["His sac contains only membranes and fluid while the cord stayed safely inside, so the leg weakness is from positioning and should resolve within a day or two", false, "A membranes-and-fluid-only sac is a meningocele, which carries the better prognosis; Leo's paralysis and sphincter findings say the cord itself is involved."],
+    ["His legs are weak because the sac is pressing on his brain and slowing its signals, and once the head swelling settles the leg movement should return fully", false, "The leg findings come from the spinal defect itself, not from pressure in the head; his full fontanels are a separate associated problem to monitor."],
+    ["His leg muscles did not develop because he was cramped in the uterus, and exercises alone over the next few weeks are expected to bring the movement back", false, "This is a neural tube defect with cord tissue in the sac, not a positioning deformity; the deficit tracks the type and level of the lesion."]
+  ], "ANSWER KEY — Correct answer: the sac contains the spinal cord itself, interrupting signals to the legs and bladder. DETAILED RATIONALE — The contents decide the diagnosis and the prognosis: meningocele holds meninges and fluid only, while meningomyelocele adds the cord — and the higher the lesion, the greater the deficit. Leo's flaccid legs, constant urine dribbling, and absent anal control are the cord-involvement clues. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): name the structure in the sac and the whole picture follows.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+S(C2, "Leo has just arrived in the nursery and his sac is uncovered. All of the following are correct nursing actions — which one comes FIRST?", [
+    ["Cover the lesion with a sterile moist dressing so the sac does not dry out", true, "The exposed open lesion is the immediate vulnerability; covering it sterile and moist is the first protective move, before the fuller assessment set is completed."],
+    ["Measure and record his head circumference and the status of his fontanels", false, "Correct and required, because hydrocephalus is commonly associated — but the baseline head check follows covering the open sac that is exposed right now."],
+    ["Position him prone with a small roll placed under his ankles for foot alignment", false, "Correct positioning that protects the sac and the feet; it is arranged as part of the same setup, right after the lesion itself is covered."],
+    ["Talk with his parents about the defect and the plan for surgical closure", false, "Correct family support that matters greatly in this admission — and it proceeds once the baby's open lesion is protected."]
+  ], "ANSWER KEY — Correct answer: cover the lesion with a sterile moist dressing first. All four options are correct nursing actions — protection of the exposed sac outranks the baseline head measurement, the full positioning setup, and the family conversation, each of which follows in the same round of care. DETAILED RATIONALE — Pre-op care objectives start with preventing infection of and injury to the sac; a drying, exposed sac is the risk that is running right now. PRIORITY FRAMEWORK — Safety-first (protect the open lesion): close the exposure before completing the assessment around it.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+BANK.push({ cat: C2, type: "order", stem: "The nurse sets up Leo's pre-operative care on his arrival in the nursery. Place the actions in the order they should be done.", items: [
+  { t: "Cover the sac with a sterile moist dressing using sterile technique", r: "The exposed lesion is covered first so it cannot dry out or be contaminated." },
+  { t: "Position him prone with a pad between his legs and a roll under his ankles", r: "Prone positioning keeps pressure off the sac; the pad holds abduction and the roll positions the feet." },
+  { t: "Record the size of the sac, any leakage, and the movement of his extremities", r: "Baseline observations document sac integrity and the movement pattern that reflects cord involvement." },
+  { t: "Measure his head circumference and assess the fullness of his fontanels", r: "The head baseline screens for the hydrocephalus commonly associated with this defect." }
+], tp: "ANSWER KEY — Correct order: cover the sac with a sterile moist dressing → position prone with pad and ankle roll → record sac size, leakage, and extremity movement → measure head circumference and assess fontanels. DETAILED RATIONALE — The order follows exposure first, positioning second, then the recorded baselines for the lesion and for the associated hydrocephalus watch. PRIORITY FRAMEWORK — Take Action (Clinical Judgment): in a procedure item, the sequence is itself the intervention.", scen: CASE_P2, grp: "PRED-CASE2" });
+
+S(C1, "Leo's head circumference has risen on two consecutive daily measurements and his fontanels feel fuller than yesterday. Which interpretation is correct?", [
+    ["He is likely developing the hydrocephalus commonly associated with his defect, and the trend should be reported with his fontanel findings now", true, "Daily head circumference is measured precisely because the trend is the evidence; a rising trend plus fuller fontanels in a baby with this defect is a report-now combination."],
+    ["A rising head circumference is expected after any birth and settles on its own, so the measurements should simply be charted until his surgery is done", false, "Head growth in this defect is a monitored danger sign, not an expected settling pattern; the chapter pairs this defect with hydrocephalus surveillance for a reason."],
+    ["The fuller fontanels most likely mean he is dehydrated from dribbling urine, so the next step is to push fluids and recheck the head measurement tomorrow", false, "Dehydration sinks fontanels rather than filling them; bulging fontanels point toward rising pressure inside the skull, the opposite direction."],
+    ["The head findings are unrelated to his back defect, because the two systems develop separately and one cannot influence the other after birth", false, "Hydrocephalus is commonly associated with the spina bifida cystica defects; assessing the head is a written part of this baby's care, not a coincidence hunt."]
+  ], "ANSWER KEY — Correct answer: likely developing associated hydrocephalus — report the rising head-circumference trend and fuller fontanels now. DETAILED RATIONALE — Generate Solutions starts from the association: this defect and hydrocephalus travel together, which is why head circumference is a daily measurement and fontanels are a baseline. Dehydration produces the opposite fontanel finding. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): a trend across two measurements outranks either single value.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+S(C2, "Leo's defect was closed surgically yesterday. This morning he is irritable, has vomited twice, and his fontanels are bulging. All of the following are correct nursing actions — which one comes FIRST?", [
+    ["Report the findings promptly, because irritability, vomiting, and bulging fontanels after closure can signal rising pressure in the head that may need a shunt", true, "The post-op watch names exactly this cluster: fontanel status and raised-pressure signs, with a shunt often placed soon after closure when hydrocephalus is present."],
+    ["Measure and record his head circumference and reassess his fontanels, then compare both with yesterday’s baseline values to trend the pressure picture", false, "Correct assessment, and part of this round — but the cluster already matches the raised-pressure list, so the provider is notified before further trending delays the shunt decision."],
+    ["Document the vomiting episodes, the irritability, and the fontanel findings with their times in the chart so the whole team can follow the trend today", false, "Correct documentation that preserves the trend; it is completed as the report is made, not before it, because the decision these findings drive belongs to the provider."],
+    ["Explain to his parents what the findings may mean, what a shunt would do, and that the provider is being updated about his condition right now", false, "Correct family communication that belongs in this round; it follows the notification, because the parents’ next questions depend on the provider’s plan."]
+  ], "ANSWER KEY — Correct answer: report promptly — irritability, vomiting, and bulging fontanels after closure can signal rising intracranial pressure that may need a shunt. All four options are correct nursing actions — reporting leads because the shunt decision cannot wait for more trending. DETAILED RATIONALE — Evaluate Outcomes compares the post-op picture against the complication list taught for this surgery: meningitis, pneumonia, urinary infection, and rising pressure. The cluster matches the pressure list, so evaluation ends in escalation, not reassurance. PRIORITY FRAMEWORK — Evaluate Outcomes (Clinical Judgment): judge the recovery against the named complications of this specific surgery.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+
+/* ===== C1 standalones — Hydrocephalus & raised ICP ===== */
+S(C1, "A 6-week-old with hydrocephalus is admitted. His mother says his head 'looks bigger every week,' his eyes show white above the pupils, and the veins on his shiny scalp stand out. Which assessment finding should the nurse report as the priority concern in this same examination?", [
+    ["His blood pressure has risen while his pulse and respirations have fallen since the morning checks", true, "That vital-sign direction — pressure up, pulse and respirations down — is the raised intracranial pressure pattern, the emergency threaded through this condition."],
+    ["His head circumference measures larger than his chest circumference at this visit, as it did last week", false, "A rapidly enlarging head is the hallmark of the condition itself and is tracked daily; it confirms the diagnosis rather than announcing an acute change."],
+    ["His cry is shrill and high-pitched when he is handled, and he settles slowly afterward in the crib", false, "A shrill cry is part of the hydrocephalus picture and of the pressure sign list, but the vital-sign shift is the finding that signals pressure rising now."],
+    ["His body looks thin with poor muscle tone, and he cannot lift his heavy head when prone", false, "The thin body, weak tone, and heavy head are the chronic look of the condition; they describe his baseline, not today's deterioration."]
+  ], "ANSWER KEY — Correct answer: blood pressure risen while pulse and respirations have fallen. DETAILED RATIONALE — The enlarging head, setting-sun eyes, scalp veins, shrill cry, and weak tone all name the condition; only the vital-sign direction names rising pressure, which is the report-immediately emergency. PRIORITY FRAMEWORK — ABCs / safety-first prioritization: separate the signs of the diagnosis from the signs of its dangerous complication.");
+
+S(C1, "An infant returns from ventriculoperitoneal shunt surgery. On assessment his fontanels are sunken. All of the following are correct nursing actions — which positioning action comes FIRST?", [
+    ["Keep him flat, because sunken fontanels suggest fluid is draining too fast through the new shunt", true, "The fontanel rule runs by what the fontanels show: sunken means drainage may be too rapid, and too-rapid reduction can cause seizures or cortical bleeding, so flat is the position."],
+    ["Support his head carefully every time he is lifted or turned during routine care this shift", false, "Correct handling for a heavy head and weak neck, and it applies all shift — but the position order is decided by the fontanel finding in front of the nurse now."],
+    ["Turn him frequently and protect the pressure points at his head, ears, and bony prominences", false, "Correct skin and pneumonia prevention for this infant; it proceeds inside whatever position the fontanel rule sets, not instead of setting it."],
+    ["Keep the diaper below his abdominal suture line and keep the suture lines clean and dry", false, "Correct post-operative care for the abdominal end of the shunt; it does not answer the drainage-speed problem the sunken fontanels are announcing."]
+  ], "ANSWER KEY — Correct answer: keep him flat — sunken fontanels after shunt surgery signal drainage that may be too fast. All four options are correct nursing actions; the fontanel finding picks the first one. DETAILED RATIONALE — The paired rule is sunken → flat, bulging → semi-Fowler to promote drainage. Head support, frequent turning, pressure-point protection, and suture care all continue around the chosen position. PRIORITY FRAMEWORK — Safety-first prioritization: when a finding carries its own positioning rule, that rule is executed before the general care set.");
+
+S(C1, "A toddler with a shunt placed in infancy is brought in with headache, lethargy, and a change in his usual alertness. His mother says, 'He just isn't himself.' All of the following are correct nursing actions — which one comes FIRST?", [
+    ["Notify the provider promptly, treating this cluster as shunt malfunction warning signs until proven otherwise", true, "Headache, lethargy, and a change in consciousness are the taught malfunction cluster, matching the raised-pressure signs the parents were told to report."],
+    ["Assess his vital signs, pupils, and level of alertness and compare them with his usual baseline", false, "Correct assessment that sharpens the report; it is gathered in the same minutes, while the notification goes out first because pressure problems do not wait for a full workup."],
+    ["Document his mother’s report that he is not himself, along with the headache and lethargy findings", false, "Correct documentation — a parent’s change-from-baseline report is real data in this condition — and it is completed alongside the notification, not ahead of it."],
+    ["Ask his mother when the headache began and whether he has vomited or fed poorly since it started", false, "Correct history that helps separate malfunction from infection; it informs the provider conversation rather than preceding the call itself."]
+  ], "ANSWER KEY — Correct answer: notify the provider promptly, treating headache, lethargy, and changed alertness as shunt malfunction signs. All four options are correct nursing actions — notification leads because this cluster is the taught malfunction list. DETAILED RATIONALE — Parents are taught the malfunction list before discharge precisely so this presentation is escalated; infection remains a hazard to assess, with a different lead picture. PRIORITY FRAMEWORK — Safety-first prioritization: in a shunted child, the pressure cluster is escalated first and explained second.");
+
+M(C1, "A nurse is reviewing the signs of increased intracranial pressure in an infant whose sutures are still open. Which findings belong on that list? Select all that apply.", [
+    ["Bulging fontanels", true, "With open sutures, rising pressure pushes the fontanels outward — a named sign on the chapter's list."],
+    ["High-pitched, shrill cry", true, "The shrill cry is a pressure sign in infants and also appears in intracranial hemorrhage and bilirubin toxicity."],
+    ["Blood pressure falling while pulse and respirations rise", false, "The direction is flipped: in raised pressure the blood pressure rises while the pulse and respirations fall."],
+    ["Pupils unequal in size or in their response to light", true, "Unequal pupils, or pupils unequal in light response, are on the raised-pressure list."],
+    ["Irritability or lethargy, with poor feeding", true, "Behavior change in either direction plus poor feeding completes the infant pressure picture."],
+    ["A sunken fontanel with dry, sticky mucous membranes", false, "Sunken fontanels belong to dehydration and to over-drainage after a shunt — the opposite fontanel direction from rising pressure."]
+  ], "ANSWER KEY — Correct answers: bulging fontanels, high-pitched shrill cry, unequal pupils, and irritability or lethargy with poor feeding. DETAILED RATIONALE — The list is a set of directions: fontanels bulge (not sink), blood pressure rises while pulse and respirations fall (not the reverse), and the cry, pupils, behavior, and feeding all shift together. In the older child the list adds personality change, falling consciousness level, and unrelieved headache. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): pressure items are won on direction — every flipped sign is a distractor.");
+
+BANK.push({ cat: C1, type: "order", stem: "A student is learning how cerebrospinal fluid normally circulates before it is absorbed into the blood. Place the structures in the order the fluid passes through them.", items: [
+  { t: "Lateral ventricles, where the fluid is formed in the choroid plexus", r: "Production begins in the ventricles, mainly in the choroid plexus." },
+  { t: "The ventricle reached through the foramen of Monro", r: "The foramen of Monro is the passage from the lateral ventricles into the third." },
+  { t: "The ventricle reached through the aqueduct of Sylvius", r: "The aqueduct of Sylvius carries the fluid onward — and it is the classic block site in obstructive hydrocephalus." },
+  { t: "Cisterns at the base of the brain, then over the brain and down the cord", r: "Fluid exits through the foramina of Luschka and Magendie into the cisterns before spreading over the surfaces." },
+  { t: "Absorption into the blood through the arachnoid villi", r: "Absorption is the last step; failure here produces the communicating type." }
+], tp: "ANSWER KEY — Correct order: lateral ventricles → third ventricle via the foramen of Monro → fourth ventricle via the aqueduct of Sylvius → cisterns and over the brain and cord → absorption through the arachnoid villi. DETAILED RATIONALE — The pathway explains both types of hydrocephalus: a block along the route (classically the aqueduct) is the noncommunicating type, while free flow with failed absorption is the communicating type. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): a sequence item is answered by the pathway, not by which structure sounds most important." });
+
+BANK.push({ cat: C1, type: "matrix", stem: "On a hydrocephalus teaching round, the nurse presents four findings and test results from infants on the unit. Match each one to the correct interpretation.", cols: ["Obstructive (noncommunicating) type", "Communicating type", "Normal test result", "Excess fluid in the skull"], rows: [
+  { t: "Flow is blocked at the aqueduct of Sylvius, so fluid cannot move along its pathway", a: 0, r: "A block along the pathway is the noncommunicating, obstructive type." },
+  { t: "Flow moves freely through the pathway, but absorption in the subarachnoid space is inadequate", a: 1, r: "Free flow with failed absorption is the communicating type; the endpoint, accumulating fluid, is the same." },
+  { t: "Transillumination in a darkened room shows only a small halo of light around the source", a: 2, r: "A small halo is the normal transillumination result." },
+  { t: "Transillumination in a darkened room shows a large halo of light around the source", a: 3, r: "A large halo means excess fluid in the skull — the flipped partner of the small-halo result." }
+], tp: "ANSWER KEY — Correct matches: block at the aqueduct = obstructive type; free flow with poor absorption = communicating type; small halo = normal; large halo = excess fluid. DETAILED RATIONALE — Two opposite pairs decide this item: where the flow fails (blocked route vs failed absorption) and what the light shows (small halo normal, large halo fluid). Both pairs end in the same accumulating pressure if missed. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): paired opposites are separated by one discriminating feature each." });
+
+S(C1, "The provider prescribes acetazolamide and furosemide for an infant with hydrocephalus whose surgery is being planned. The mother asks what these medicines are supposed to do. Which answer is correct?", [
+    ["They reduce how much cerebrospinal fluid the choroid plexus produces, easing his symptoms while the surgical plan moves forward", true, "Both drugs lower cerebrospinal fluid production; they are a symptom bridge, while the shunt remains the principal, definitive treatment."],
+    ["They dissolve the blockage inside the aqueduct so the fluid can flow again, which is why many children never need the shunt surgery", false, "Neither drug opens a blocked pathway; surgery with a shunt is the mainstay, and drug therapy relieves symptoms rather than curing the obstruction."],
+    ["They draw the extra fluid out of the ventricles and into the bloodstream within hours, replacing the need for daily head measurements", false, "The drugs reduce production; they do not drain existing fluid, and daily head circumference measurement continues because the trend is the evidence."],
+    ["They prevent infection of the shunt tubing after surgery, which is the main reason they are started before the operation takes place", false, "Infection prevention is not their role; the pair is used for cerebrospinal fluid production, and shunt infection is watched for with its own sign list."]
+  ], "ANSWER KEY — Correct answer: both drugs reduce cerebrospinal fluid production and ease symptoms while surgery is planned. DETAILED RATIONALE — Acetazolamide and furosemide share one job in this chapter — less fluid made — and neither replaces the shunt, opens the aqueduct, or prevents shunt infection. PRIORITY FRAMEWORK — Medication safety (Nursing Process): a drug answer is right only when its stated action matches the action the chapter assigns it.");
+
+/* ===== C2 standalones — folic acid, bladder/latex, habilitation ===== */
+S(C2, "A woman who hopes to conceive in the next few months asks what she can do now to lower her baby's risk of a neural tube defect. She takes no prescription medicines and has no affected children. Which teaching is correct?", [
+    ["Take a daily multivitamin with 0.4 mg of folic acid, starting before conception and continuing through week 12 of the pregnancy", true, "The dose and the window are the whole answer: 0.4 mg daily, begun before conception, because basic neural tube development is complete by week 12."],
+    ["Start 0.4 mg of folic acid as soon as her pregnancy test is positive, since that is when the neural tube begins forming in the embryo", false, "Waiting for a positive test misses the point of the timing rule; the supplement must already be on board before conception to cover tube closure."],
+    ["Take a higher prescribed folic acid dose, because prevention doses are the same for every woman planning a pregnancy", false, "Higher prescribed doses are reserved for a previous child with a neural tube defect or anticonvulsant therapy; neither applies to her."],
+    ["Focus on folate-rich foods alone, because dietary folate prevents these defects as reliably as the supplement at the studied dose", false, "The chapter's prevention lever is the multivitamin with 0.4 mg of folic acid on the stated schedule, not diet alone."]
+  ], "ANSWER KEY — Correct answer: 0.4 mg of folic acid daily, started before conception and continued through week 12. DETAILED RATIONALE — Neural tube defects come from failure of the tube to close early; folic acid taken before conception dramatically reduces their occurrence, and starting after the window cannot recover it. PRIORITY FRAMEWORK — Timed prevention: for a developmental window, when an intervention starts matters as much as what it is.");
+
+S(C2, "A 4-year-old with spina bifida has a neurogenic bladder. His chart lists oxybutynin, scheduled Credé pressure, and preventive medicine for urinary infections. His mother asks why he needs 'so many bladder things.' Which explanation is correct?", [
+    ["His bladder cannot store or empty normally, so the medicine helps it hold urine, the pressure over the pubic bone helps it empty, and infection prevention protects him while urine lingers", true, "Each element maps to a stated part of the program: oxybutynin increases storage capacity, the Credé method empties by pressure over the symphysis pubis, and urinary monitoring with preventive medication is routine."],
+    ["The medicine and the pressure technique do the same job twice, so either one could be stopped once he starts kindergarten in the fall", false, "Storage and emptying are opposite halves of bladder function; the drug works on one half and the Credé method on the other, so they are partners, not duplicates."],
+    ["The infection medicine is the main treatment, and the other two items are comfort measures that can be skipped on days he seems dry", false, "Incontinence is common and lingering urine drives infection risk; skipping the storage or emptying steps raises the very risk the medicine is guarding against."],
+    ["He will outgrow the bladder problem once his spine repair has fully healed, so these measures are only needed for the first year after surgery", false, "Bladder management in this condition is a long-term program — clean intermittent catheterization is later taught for self-care — not a one-year post-operative phase."]
+  ], "ANSWER KEY — Correct answer: the drug aids storage, Credé pressure aids emptying, and infection prevention guards against the urinary infections this bladder invites. DETAILED RATIONALE — Constant dribbling and absent sphincter control show the bladder program's problem; each intervention answers a different part of it. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): match each intervention to the half of the function it supports.");
+
+S(C2, "The parents of a child with spina bifida are planning a birthday party. They list balloons, a 'koosh' ball, bananas, avocados, and kiwi fruit. Which teaching should the nurse give about this list?", [
+    ["Remove all five items, because children with this condition commonly develop latex sensitivity, and those foods cross-react with latex", true, "Balloons and koosh balls are named latex products to avoid, and bananas, avocados, and kiwi fruit are the cross-reactive foods; a latex-free environment and a medical identification tag are the taught plan."],
+    ["Remove only the balloons and the ball, because the foods are a separate fruit allergy that has nothing to do with this child's spinal condition", false, "The three fruits are on the list precisely because they cross-react with latex; treating them as an unrelated allergy leaves the exposure in place."],
+    ["Keep the foods but remove the ball only, because latex reactions in these children come from toys and never from anything they eat at a party", false, "Both categories are named in the teaching: latex products and cross-reactive foods. Keeping either half keeps the risk."],
+    ["Keep everything this year, because latex sensitivity only matters during surgery, when antihistamines or steroids may be prescribed beforehand", false, "Perioperative medicines are an addition, not a substitute; the standing instruction is a latex-free environment whenever possible, with staff using nitrile gloves."]
+  ], "ANSWER KEY — Correct answer: remove all five — the balloons and ball are latex products, and bananas, avocados, and kiwi cross-react with latex. DETAILED RATIONALE — Many children with spina bifida develop latex sensitivity, so the party list is a disguised exposure list: two latex items plus all three cross-reactive foods named in the chapter. PRIORITY FRAMEWORK — Safety-first prevention: an allergy plan fails if even one named exposure category is waved through.");
+
+
+/* ===== C3 — Cleft lip & palate ===== */
+S(C3, "Two newborns are admitted on the same shift. Baby A has an opening in the upper lip and feeds with difficulty but manages a seal. Baby B's mouth looks normal outside, yet she cannot build suction and milk escapes through her nose. Which analysis is correct?", [
+    ["Baby B's palate defect is the more serious feeding problem, because without a closed roof to the mouth she cannot create the negative pressure sucking requires", true, "The side-by-side distinction: the lip defect mainly affects appearance and sucking, while the palate defect makes sucking truly fail because negative pressure cannot be built."],
+    ["Baby A's lip defect is the more serious feeding problem, because any visible opening in the lip prevents all suction until it is surgically repaired", false, "The lip baby has sucking difficulty, not sucking failure; the invisible palate defect is the one that removes negative pressure entirely."],
+    ["Both babies have the same feeding problem for the same reason, because the lip and palate fuse together at the same weeks of development", false, "They are different structures on different clocks — the lip at weeks 7–8, the palate at weeks 7–12 — with different downstream problems."],
+    ["Baby B's problem is most likely a weak suck reflex rather than a structural defect, because a palate defect would be visible from outside the mouth", false, "A palate defect is a midline fissure in the roof of the mouth found on oral examination; invisibility from outside does not rule it out, and the suction failure fits it exactly."]
+  ], "ANSWER KEY — Correct answer: the palate defect is the more serious feeding problem because sucking cannot build negative pressure without a closed palate. DETAILED RATIONALE — Cleft lip follows failure of the maxillary and median nasal processes to unite; cleft palate follows failure of the two sides of the hard palate to fuse. The palate baby also carries the respiratory and middle-ear infection, hearing, and speech risks. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): the visible defect is not automatically the functionally worse one.");
+
+S(C3, "An infant is 2 months old, gaining weight well, and free of infection. Her parents ask why her cleft lip surgery is scheduled now while her friend's baby waits until later for palate surgery. Which answer is correct?", [
+    ["Lip repair is done before 3 months of age once weight gain is established and she is infection-free, while palate repair waits until 1 to 18 months, ideally before speech patterns are set", true, "Both timing rules with their conditions: cheiloplasty before 3 months under exactly her circumstances, and palate repair in the 1–18 month window timed around speech and the tooth buds."],
+    ["Lip repair waits until after 3 months so the tissues are stronger, while palate repair is done in the first weeks before feeding habits become established", false, "Both directions are flipped: the lip deadline is before 3 months, and the palate window opens at 1 month and runs to 18 months."],
+    ["Both repairs are done at the same age, and the difference in scheduling is only the surgeon's preference for one family over the other family", false, "The chapter assigns each repair its own window for developmental reasons; preference is not the deciding factor in either schedule."],
+    ["Palate repair is delayed until 18 months at the earliest so speech can develop first and show the surgeon exactly which structures need closing", false, "The palate window is 1–18 months and the goal is repair before speech patterns set in — developing speech first reverses the reason for the timing."]
+  ], "ANSWER KEY — Correct answer: cheiloplasty before 3 months once weight gain is established and the baby is infection-free; palate repair at 1–18 months, before speech patterns set in. DETAILED RATIONALE — Timing items in this chapter are paired opposites: lip early (before 3 months), palate later (1–18 months). Together the defects occur in about 1 in 1600 births, and the lip alone in about 1 in 2800. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): for paired repairs, state each window with its reason, not just its number.");
+
+S(C3, "An infant returns from cheiloplasty with a Logan bow taped to her cheeks and elbow restraints in place. All of the following are correct nursing actions — which one comes FIRST in the immediate post-operative checks?", [
+    ["Position her carefully, never on her abdomen, so no pressure or rubbing reaches the fresh suture line", true, "Position is the standing protection order for this repair: never on the abdomen. It frames every other check done at the bedside in this round."],
+    ["Cleanse the suture line gently after feedings and keep crusts from forming along the repair", false, "Correct suture care that belongs to this shift; it is performed within the safe positioning that keeps the line away from the mattress in the first place."],
+    ["Feed her with a dropper, keeping the dropper itself from touching the suture line as she takes it", false, "Correct feeding technique for the healing period of about 1–2 weeks; the first feed comes after the positioning and site checks are established."],
+    ["Give pain relief and hold her for cuddling, since she cannot get sucking satisfaction right now", false, "Correct comfort care that meets a real need of this baby; it follows securing the repair that crying and rubbing could pull apart."]
+  ], "ANSWER KEY — Correct answer: position her carefully, never on her abdomen, first. All four options are correct nursing actions — the suture line's protection order leads: positioning, then gentle cleansing without crusts, dropper feeding that never touches the line, and pain relief with cuddling. DETAILED RATIONALE — Post-cheiloplasty goals are to prevent sucking and crying from pulling the line, prevent infection and scarring, and protect the repair with the Logan bow and elbow restraints. PRIORITY FRAMEWORK — Safety-first prioritization: protect the repair mechanically before performing care around it.");
+
+M(C3, "A mother is learning to feed her newborn who has an unrepaired cleft palate, before any surgery. Which feeding approaches should the nurse teach her? Select all that apply.", [
+    ["A syringe with a rubber tip", true, "One of the devices that works for this baby, because it delivers milk without requiring the suction she cannot build."],
+    ["A long nipple with a large hole", true, "A named workable device; milk flow does the work her palate cannot."],
+    ["A squeeze bottle or a medicine dropper", true, "Both are on the chapter's list of devices that work before surgery."],
+    ["A standard slow-flow nipple used with extra patience at every feeding", false, "A standard nipple still demands the negative pressure this baby cannot create; patience does not replace the adapted devices."],
+    ["Practice sessions with the mother feeding the baby before surgery", true, "A mother who has fed her baby before surgery is far more confident at discharge, so practice is part of the teaching plan."],
+    ["Thickened feeds through a straw once she is a few weeks old", false, "Straws and sucking are prohibited around these repairs, and a straw is not among the pre-operative feeding devices."]
+  ], "ANSWER KEY — Correct answers: syringe with a rubber tip, long nipple with a large hole, squeeze bottle or medicine dropper, and mother practicing feeds before surgery. DETAILED RATIONALE — Every correct device shares one feature: it delivers breastmilk or formula without requiring suction. The standard nipple fails on exactly that point, and straws belong to the prohibited list. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): choose tools that bypass the missing function instead of demanding more of it.");
+
+BANK.push({ cat: C3, type: "dropdown", stem: "A toddler is recovering the day after cleft palate repair. For each statement, choose the correct completion.<br><br>For drinking, she is given fluids by<br>[[0]]<br><br>When a spoon is used, it is placed<br>[[1]]<br><br>Foods and liquids served to her must never be<br>[[2]]", blanks: [
+  { o: [O("Cup", true, "Post-palate-repair fluids are taken by cup, progressing from clear to full fluids to a soft diet by discharge."), O("Straw", false, "She must not suck a straw after palate repair; sucking stresses the operative site."), O("Bottle with a standard nipple", false, "A standard nipple requires the sucking the repair must be protected from.")] },
+  { o: [O("Into the side of the mouth, never touching the roof", true, "The spoon enters the side of the mouth and must not touch the roof, where the repair lies."), O("Onto the middle of the tongue, aimed at the roof", false, "Contact with the roof of the mouth is exactly what the rule prohibits."), O("Between the teeth so she can suck the food off it", false, "Sucking is prohibited, and objects are kept out of the mouth after this repair.")] },
+  { o: [O("Hot", true, "Hot foods and liquids can injure the operative site and are prohibited."), O("Cold", false, "Cold items are not the named hazard; heat is."), O("Sweetened", false, "Sweetness is not the post-operative restriction in the chapter; temperature is.")] }
+], tp: "ANSWER KEY — Correct answers: fluids by cup; spoon into the side of the mouth, never the roof; nothing hot. DETAILED RATIONALE — The post-palate rules form one protective set: no sucking, no straws, no objects in the mouth (thumbs, tongue blades, toast, forks, pacifiers), no hot foods, and never suction the mouth, because the catheter can disrupt the suture line. PRIORITY FRAMEWORK — Safety-first (Nursing Process): after this repair, every feeding choice is judged by whether it can touch, heat, or pull the suture line." });
+
+S(C3, "A student suggests suctioning the mouth of a child who had palate repair this morning 'to keep the airway clear.' The nurse stops the student. Which reasoning should the nurse teach?", [
+    ["The suction catheter can disrupt the fresh suture line in the roof of the mouth, so the mouth is never suctioned after this repair", true, "This is the chapter's explicit safety rule for palate repair; airway care uses other measures while the suture line heals."],
+    ["Suctioning is allowed only with a soft catheter, and the student was stopped because the catheter at the bedside was the rigid type", false, "The prohibition is not about catheter stiffness; no suction catheter belongs in this child's mouth after the repair."],
+    ["Suctioning is delayed only until the first feeding is finished, after which the mouth can be suctioned gently like any post-operative child", false, "There is no after-the-first-feed exception; the ban protects the suture line for the healing period, not for one shift."],
+    ["The mouth is not suctioned because these children produce very little saliva, so there is never anything in the mouth that needs clearing", false, "Saliva production is not the reason given; the reason is mechanical — the catheter can tear open the repair it passes over."]
+  ], "ANSWER KEY — Correct answer: suctioning can disrupt the palate suture line, so the mouth is never suctioned after palate repair. DETAILED RATIONALE — This rule sits in the same protective set as the cup, the side-placed spoon, the nothing-hot rule, and keeping objects out of the mouth. Diversion and quiet activities prevent the crying that also stresses the repair. PRIORITY FRAMEWORK — Safety-first (Nursing Process): a routine airway habit is abandoned when the surgery makes the habit itself the hazard.");
+
+S(C3, "Parents of a newborn with a cleft lip and palate tell the nurse they have not shown the baby to relatives and feel guilty and disappointed. Which nursing response is most appropriate?", [
+    ["Acknowledge their feelings, give them a concrete basis for hope, and teach practical feeding care while connecting them with cleft resources", true, "Shock, hurt, disappointment, and guilt are the named first reactions; the taught response pairs honest hope with how-to help and referrals such as the cleft palate association and clinic programs."],
+    ["Reassure them that the defects are minor and will be fully corrected, so there is no reason for relatives to react badly when they visit", false, "Calling the defects minor dismisses feelings the chapter names as expected, and the repair path is staged over months with a full palate team involved."],
+    ["Suggest they keep the baby away from visitors until after the lip repair, to spare themselves the relatives' reactions in the meantime", false, "Hiding the child is the behavior the chapter flags as a risk to the child's self-image, because children read their parents' feelings into themselves."],
+    ["Focus the visit entirely on the surgical schedule, since understanding the operation dates is what most reduces parental guilt at this stage", false, "Dates alone do not answer grief; the family's emotional response and their feeding confidence are both named nursing work in this admission."]
+  ], "ANSWER KEY — Correct answer: acknowledge the feelings, offer concrete hope, teach practical care, and connect the family with cleft resources. DETAILED RATIONALE — The palate team spans surgeon, pediatrician, dentist, orthodontist, nurse, psychologist, speech therapist, and social worker, with the public health nurse coordinating referrals — family support is built into the treatment model, not added to it. PRIORITY FRAMEWORK — Maslow (psychosocial needs after physiologic safety): feelings are addressed directly, with practical help attached.");
+
+S(C3, "A 9-month-old had palate repair 6 months ago. At a follow-up visit he has had repeated middle-ear infections and his speech sounds are unclear for his age. Which plan fits the pattern the nurse should expect?", [
+    ["Continue regular provider follow-up with hearing and speech support, because ear infections and speech difficulty are the known downstream risks of this defect", true, "The palate defect's downstream list is respiratory and middle-ear infections leading to hearing loss, plus speech difficulty; speech therapy follows extensive repairs or hearing loss."],
+    ["Reassure the family that ear infections are unrelated to his history, because the palate was repaired and its effects ended with the surgery", false, "Repair closes the defect; it does not erase the associated ear and speech risks, which is why recurring companions of cleft palate get regular visits."],
+    ["Refer him back for a second palate operation, because unclear speech at this age proves the first repair has failed structurally", false, "Speech difficulty is an expected risk managed with therapy and follow-up; it is not, by itself, proof of structural failure requiring reoperation."],
+    ["Restrict his oral feedings again to cup-only clear fluids, because repeated ear infections show his palate is not protecting his airway", false, "The post-operative diet progression ended at discharge; ear infections at this age call for follow-up and hearing/speech support, not a return to surgical diets."]
+  ], "ANSWER KEY — Correct answer: regular follow-up with hearing and speech support for the known downstream risks of cleft palate. DETAILED RATIONALE — Speaking slowly and distinctly and encouraging correct pronunciation are the home-level speech measures, with formal therapy when repairs are extensive or hearing is affected. Dental decay joins ear infections as a recurring companion needing regular visits. PRIORITY FRAMEWORK — Evaluate Outcomes (Clinical Judgment): judge new findings against the defect's known long-term risk list before inventing a new cause.");
+
+/* ===== C4 — DDH, clubfoot, cast care ===== */
+S(C4, "During a bath assessment of a 2-week-old girl born breech, the nurse finds that the right hip barely abducts, the thigh folds are deeper on the right, and the right knee sits lower with the knees flexed. Which interpretation is correct?", [
+    ["These are early signs of developmental hip dysplasia, and limited abduction is the most reliable of the signs found", true, "Limited abduction, asymmetrical thigh folds, and a lower knee on the dislocated side are the chapter's early-sign set; limited abduction is named the most reliable sign."],
+    ["These are normal newborn findings after a breech birth, and they should be rechecked for the first time at the 6-month visit", false, "A breech-born infant is considered at risk, not reassured; treatment of this condition starts immediately when it is found, not at 6 months."],
+    ["These signs point to clubfoot of the right side, because breech positioning twists the lower limb joints out of place before birth", false, "Clubfoot is a foot deformity — the foot twisted inward or outward — not a hip picture of abduction limits and fold asymmetry."],
+    ["These signs mean the hip is already permanently damaged, because dysplasia found after the first week cannot be corrected by positioning", false, "Early positioning in flexion and abduction deepens the socket and may correct the dislocation; late discovery, not early discovery, is what pushes toward surgery."]
+  ], "ANSWER KEY — Correct answer: early developmental hip dysplasia, with limited abduction as the most reliable sign. DETAILED RATIONALE — The condition is about 7 times more common in girls, and heredity, joint laxity, breech position, and maternal hormones all contribute. The provider's Ortolani and Barlow maneuvers follow, and radiographs confirm. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): a cluster of small asymmetries is read as one named pattern, not as three curiosities.");
+
+S(C4, "The provider performs hip maneuvers on the infant above and feels a click as pressure is applied. A student asks what the click means. Which answer is correct?", [
+    ["The click is the dislocated femoral head slipping back into the socket, which is the Ortolani sign and is diagnostic of the dysplasia", true, "Direction is the test point: the Ortolani click is the head going back IN to the acetabulum under gentle pressure."],
+    ["The click is the femoral head slipping out of the socket, which proves the hip was located normally before the maneuver began", false, "That reverses the direction; a click of the head returning to the socket is the diagnostic event the chapter names."],
+    ["The click is the sound of the shallow socket cracking wider, which means the maneuver has injured the hip and must not be repeated", false, "The click is a diagnostic sign elicited by the provider's manipulation, not an injury sound; the maneuvers are the standard assessment."],
+    ["The click is produced by the thigh skin folds rubbing together, and it has no diagnostic meaning for the hip joint itself", false, "The folds are a visual sign; the click is a palpable, audible joint event — the femoral head moving into the socket."]
+  ], "ANSWER KEY — Correct answer: the Ortolani click is the dislocated femoral head slipping back into the acetabulum. DETAILED RATIONALE — Ortolani and Barlow testing is done by the provider, by manipulation of the hips. Students most often lose this point by flipping the direction of the click. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): for a named sign, direction is part of the definition — in, not out.");
+
+S(C4, "A 3-month-old is fitted with a Pavlik harness for hip dysplasia. Her parents ask what the straps are actually accomplishing. Which explanation is correct?", [
+    ["The harness holds her hips flexed and abducted for months, and that steady position lets the shallow socket deepen around the femoral head", true, "Flexion plus abduction is the treatment position at every stage: held 1–8 weeks at first to deepen the socket, and by the harness for infants about 1–6 months old."],
+    ["The harness holds her hips extended and pulled together, so the femoral head is pressed firmly down into the socket by the straps", false, "Extended and adducted is the risk position — tight swaddling that holds hips that way raises the risk of this condition; the harness does the opposite."],
+    ["The harness mainly reminds the parents to limit her kicking, because rest is what allows the hip ligaments to tighten on their own", false, "Position, not rest, is the mechanism; the pressure of the correctly placed head enlarges and deepens the socket."],
+    ["The harness is a temporary comfort device used only until her spica cast is applied at the end of this same week", false, "The harness is a treatment in its own right for months; a cast follows closed reduction or surgery, or a more rigid orthosis follows if the harness fails."]
+  ], "ANSWER KEY — Correct answer: the harness holds the hips in flexion and abduction so the socket deepens around the femoral head. DETAILED RATIONALE — Carrying an infant astride the waist with hips flexed and widely abducted lowers risk for the same mechanical reason the harness works. If the hip is not responding by 18 months, open-reduction surgery is next. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): the treatment position is the exact opposite of the risk position — a classic flipped pair.");
+
+M(C4, "A child has just been placed in a spica cast after hip surgery. Which circulation checks and teachings belong in the first hours of care? Select all that apply.", [
+    ["Check the exposed extremities and skin below the cast every 30 minutes at first, then every 1–4 hours", true, "That is the care plan's stated interval for perfusion checks after casting."],
+    ["Report pallor, cyanosis, swelling, coldness, numbness, pain, or burning promptly if any appear", true, "That symptom set is the taught report list for cast constriction, given to parents in writing as well."],
+    ["Circle any drainage spot that appears on the cast and note the date and time beside it", true, "A circled, timed spot makes growth visible; a growing circle means further bleeding or a draining infection."],
+    ["Use the bar between the legs as a handle when turning the child to a side position", false, "The turning skill prohibits this: the bar between the legs is never used as a lever to turn or lift the child."],
+    ["Teach the parents the same circulation warning signs, with written instructions to seek help at once", true, "Parent teaching with written instructions is part of the care plan, because most cast hours happen at home."],
+    ["Slip small toys under the cast edges to keep the child distracted during the first hours", false, "Small toys must not be given where they can slip inside the cast, and nothing is poked under a cast."]
+  ], "ANSWER KEY — Correct answers: checks every 30 minutes then every 1–4 hours, prompt reporting of the perfusion symptom set, circling and timing drainage spots, and teaching parents the same signs in writing. DETAILED RATIONALE — The spica care plan runs four diagnoses together: perfusion, infection, pain read from nonverbal cues, and injury risk from the cast's weight, turned with a 'ready, set, go' cue and two people. The leg bar is a support, never a handle. PRIORITY FRAMEWORK — Safety-first (Nursing Process): cast care is a schedule of checks, not a single inspection.");
+
+S(C4, "Three days after spica casting, a child cries inconsolably and the ordered pain relief is not helping; the pain keeps escalating. His toes are warm and pink. All of the following are correct nursing actions — which one comes FIRST?", [
+    ["Report the unrelieved, escalating pain promptly, because pain not relieved a few days after casting can signal compartment syndrome", true, "The chapter's warning is specific: unrelieved pain a few days after casting can mean pressure building inside a closed space, threatening the limb — a report-now finding."],
+    ["Check and record the perfusion set below the cast: color, warmth, swelling, and movement of the toes", false, "Correct and already partly done — his toes are warm and pink — but a normal perfusion check does not downgrade unrelieved escalating pain, so the report goes first."],
+    ["Document the pain pattern, the relief measures already tried, and that the pain is escalating", false, "Correct documentation that makes the escalation visible; it accompanies the report rather than gating it, because the warning is the pain pattern itself."],
+    ["Tell the parents what compartment syndrome could mean and that the provider is being contacted now", false, "Correct family communication for a frightening finding; it follows the notification, since the provider’s response shapes what happens next."]
+  ], "ANSWER KEY — Correct answer: report unrelieved escalating pain promptly as a possible compartment syndrome. All four options are correct nursing actions — reporting leads because splitting a cast is the provider’s decision and the warning pattern is already complete. DETAILED RATIONALE — Compartment syndrome is pressure inside a closed space threatening the limb, and its herald in a casted child who cannot explain himself is pain out of proportion and unrelieved. PRIORITY FRAMEWORK — Safety-first prioritization: treat escalating unrelieved pain in a cast as a report, not a comfort problem.");
+
+BANK.push({ cat: C4, type: "order", stem: "A child in a body cast needs to be turned to a side position for skin care. Place the turning actions in the order they should be done.", items: [
+  { t: "Move the child to the edge of the bed with two nurses working together", r: "Turning a body cast is a two-person skill that starts at the edge of the bed." },
+  { t: "The nearer nurse places one hand under the head and back and one under the leg part of the cast", r: "Hands support the child and the cast itself — never the bar between the legs." },
+  { t: "Turn the child to a midway side position on the shared cue", r: "The 'ready, set, go' cue keeps the turn coordinated so the cast's weight cannot twist the child." },
+  { t: "The second nurse takes over support on the other side and pillows support every body curvature", r: "Plastic-covered pillows under the cast curvatures complete the position and protect the skin." }
+], tp: "ANSWER KEY — Correct order: move to the edge of the bed with two nurses → nearer nurse supports head/back and the leg part of the cast → turn to a midway side position on cue → second nurse takes over support and pillows support every curvature. DETAILED RATIONALE — Two prohibitions frame the skill: never use the bar between the legs as a lever, and never use pillows to elevate the head and shoulders of a child in a body cast, which thrusts the chest against the cast. PRIORITY FRAMEWORK — Take Action (Clinical Judgment): a two-person sequence is judged by its hand placements and its cue, in order." });
+
+BANK.push({ cat: C4, type: "matrix", stem: "Match each newborn foot or cast finding to the correct interpretation or action.", cols: ["True clubfoot — casting, then surgery if casting fails", "Mild positional deformity — manipulative exercises", "Lift and support with open palms", "Circle it and record the time"], rows: [
+  { t: "Foot extended downward and bent inward that does not respond to manipulative exercises", a: 0, r: "Talipes equinovarus that ignores exercises is a true clubfoot; casting starts as early as possible and surgery follows if there is no improvement by 3 months." },
+  { t: "Mild foot deformity traced to positioning inside the uterus that clears with exercises", a: 1, r: "Many mild cases are positional only and clear with manipulative exercises — the cause split exams love." },
+  { t: "A parent lifts a freshly applied wet plaster cast to move the baby in the crib", a: 2, r: "Wet plaster is supported with the palms; fingertip dents press into the skin underneath and injure it while the cast dries over 24–48 hours." },
+  { t: "A discolored, spreading area appears on the cast in the hours after surgery", a: 3, r: "Bleeding on a cast is circled with the time recorded; if it spreads, vital signs are checked against the pre-operative readings." }
+], tp: "ANSWER KEY — Correct matches: exercise-resistant equinovarus = true clubfoot; positional deformity clearing with exercises = mild case; wet cast = palms only; spreading discoloration = circle and time it. DETAILED RATIONALE — Clubfoot affects about 1 in 1000 births, usually both feet, and talipes equinovarus accounts for 95% of cases. After surgery the cast changes about every 3 weeks as the foot is brought gradually into position. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): the same-looking foot splits by one test — whether exercises move it." });
+
+S(C4, "A newborn's clubfoot casting is planned. His parents ask why treatment cannot wait until he is older and stronger. All of the following are correct points — which one is the strongest reason to start now?", [
+    ["Casting starts as early as possible, before the bones and muscles develop abnormally around the deformity", true, "That is the chapter's stated reason for immediate treatment: the growing structures will otherwise set themselves around the twisted position."],
+    ["Casting now lets the team finish treatment before the family leaves the hospital after the delivery stay", false, "Treatment is prolonged, with cast changes and long-term supervision; it is not completed inside the birth admission, and convenience is not its rationale."],
+    ["Casting now prevents the hip dysplasia that breech babies develop, because the same cast holds the hips in position", false, "The clubfoot cast treats the foot; hip dysplasia has its own devices (harness, orthosis, spica cast) and its own timeline."],
+    ["Casting now is needed because exercises stop working after the first week of life in every case of this deformity", false, "Mild positional cases clear with exercises; it is the true clubfoot that does not respond — and its surgery decision point is no improvement by 3 months, not one week."]
+  ], "ANSWER KEY — Correct answer: casting starts as early as possible, before bones and muscles develop abnormally around the deformity. All four options contain a true-sounding point, but only the growth argument is the chapter's reason for urgency. DETAILED RATIONALE — Conservative care is splinting, casting, and passive stretching through infancy, with exercises or special shoes after the final cast. PRIORITY FRAMEWORK — Timed intervention: in a growing infant, delay itself becomes part of the deformity.");
+
+
+/* ===== C5 — PKU & metabolic ===== */
+S(C5, "A Guthrie test drawn at 20 hours of age, before an early discharge, returns normal. The mother asks whether the PKU screening is finished. Which answer is correct?", [
+    ["No — a test drawn that early can be falsely negative, so it must be repeated within 2 weeks, and the screen is timed at 48–72 hours, preferably after protein feeding", true, "Both halves of the timing rule: the mainstay draw is at 48–72 hours after the infant has ingested protein, and any early first test is repeated within 2 weeks."],
+    ["Yes — a normal result at any age closes the screening, because the enzyme defect is present from birth and would show on the first test", false, "Presence of the defect is not the same as a detectable level; phenylalanine must be ingested and accumulate, which is why an early draw risks a false negative."],
+    ["No — the test must be repeated at 6 months, because phenylalanine only begins building up once solid foods are started in the diet", false, "The repeat window is within 2 weeks, not 6 months; waiting half a year leaves an affected baby untreated through the months when damage begins."],
+    ["Yes — screening is required only for babies with a family history, and this baby's normal early result plus no history ends the matter", false, "Screening is required for all newborns before nursery discharge, regardless of family history."]
+  ], "ANSWER KEY — Correct answer: no — repeat within 2 weeks, because an early Guthrie can be falsely negative. DETAILED RATIONALE — The Guthrie is a heel-stick drop of capillary blood on filter paper; an abnormal screen is then confirmed with a quantitative blood phenylalanine level. The timing rules protect the test from its own blind spot. PRIORITY FRAMEWORK — Safety-first (Nursing Process): a screening result is only as good as the conditions it was drawn under.");
+
+S(C5, "Two children with PKU have blood results phoned in: one at 12 mg/dL, the other at 1.5 mg/dL. Their mother says, 'At least one of them must be fine.' Which response is correct?", [
+    ["Neither result is fine — the target corridor is 2–10 mg/dL, so the high value risks brain damage and the low value risks growth retardation", true, "The diet is a corridor, not a floor: above 10 mg/dL carries significant brain-damage risk, and below 2 mg/dL causes growth retardation. Both need dietary adjustment."],
+    ["The child at 1.5 mg/dL is fine, because in this condition lower is always safer and only the high value needs a diet change this week", false, "That is the floor fallacy the chapter warns against; too little phenylalanine is also harmful, because the body still needs some for growth."],
+    ["The child at 12 mg/dL is fine for now, because symptoms of brain effects only begin once the level reaches about 20 times the normal value", false, "Twenty times normal describes how high untreated levels can pile up; the action threshold in the chapter is above 10 mg/dL, which 12 has already crossed."],
+    ["Both results are acceptable, because the corridor applies only in the first year of life and both children are past that age now", false, "The 2–10 mg/dL corridor is the standing management target with frequent blood checks; it does not expire at one year."]
+  ], "ANSWER KEY — Correct answer: neither is fine — 12 mg/dL is above the corridor and 1.5 mg/dL is below it. DETAILED RATIONALE — Untreated phenylalanine can reach 20 times normal and cause severe cognitive impairment; management is close dietary control with a low-phenylalanine protein substitute (Lofenalac for infants) plus frequent level checks and dietitian support. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): a two-sided target makes both directions of error dangerous — check the sign before judging the number.");
+
+S(C5, "A 7-year-old with PKU is offered a sugar-free drink sweetened with aspartame at a school party. His teacher asks the nurse whether 'sugar-free means safe for him.' Which answer is correct?", [
+    ["No — aspartame is converted by the body into phenylalanine, so children with this condition must avoid it and every sugar-free label must be read", true, "That is the chapter's Safety Alert: aspartame (NutraSweet, Equal) becomes phenylalanine, and most meats, dairy foods, and diet drinks are restricted on this diet."],
+    ["Yes — sugar-free products are the safe choice for him, because his diet only restricts sugar and ordinary protein foods like meat and dairy", false, "His diet restricts phenylalanine, which is present in all protein foods; the sugar-free sweetener itself is a hidden phenylalanine source."],
+    ["Yes, in a single party serving — a 12-ounce diet drink raises his level enough to matter only if he drinks one every day of the week", false, "The chapter notes a single diet cola will not significantly raise levels, but the standing teaching is still avoidance; 'not significant once' is not the safety rule given to families."],
+    ["No — but only because carbonated drinks interfere with his Kuvan tablets, not because the sweetener itself affects his phenylalanine level", false, "Kuvan works by breaking down excess phenylalanine; the drink's problem is that aspartame adds phenylalanine, not a tablet interaction."]
+  ], "ANSWER KEY — Correct answer: no — aspartame converts to phenylalanine and must be avoided in PKU, with labels read on every sugar-free product. DETAILED RATIONALE — Kuvan (sapropterin), given by mouth as tablets or powder in juice, helps break down excess phenylalanine but does not cancel dietary sources. Food exchange lists and labeled supermarket foods are the family's practical tools. PRIORITY FRAMEWORK — Safety-first prevention: a hidden ingredient is judged by what the body turns it into, not by the claim on the front of the package.");
+
+M(C5, "A newborn on day 3 is lethargic, feeding poorly, hypotonic, and vomiting, with a noticeable sweet smell to his urine. Which conclusions and actions fit this picture? Select all that apply.", [
+    ["Report the cluster promptly, because lethargy, poor feeding, low tone, vomiting, and a unique urine odor are the chapter's report-now signs in a newborn", true, "That exact cluster is the instruction for any newborn when a metabolic disorder is suspected; these disorders turn life-threatening fast once feeding starts."],
+    ["Consider maple syrup urine disease, because sweet-smelling urine, sweat, and earwax are its signature clue", true, "The branched-chain amino acids leucine, isoleucine, and valine cannot be broken down in this disease, and the sweet odor is its hallmark."],
+    ["Expect treatment aimed at clearing the amino acids and their metabolites, with a lifelong diet low in those amino acids", true, "Hydration and peritoneal dialysis bring serum levels down, and the low-leucine, low-isoleucine, low-valine diet is lifelong, with special formulas."],
+    ["Reassure the parents that a sweet urine smell is a normal newborn finding that resolves as feeding establishes", false, "Sweet-smelling urine in the nursery is to be reported promptly; untreated, this disease can kill within about 2 weeks."],
+    ["Plan to stop all milk feedings permanently, because milk elimination is the treatment for every metabolic disorder in this family", false, "Milk elimination is the galactosemia treatment; each metabolic disorder has its own dietary target, and swapping them is a wrong-context error."]
+  ], "ANSWER KEY — Correct answers: report the cluster promptly, consider maple syrup urine disease from the sweet odor, and expect amino-acid clearance plus a lifelong low branched-chain amino acid diet. DETAILED RATIONALE — This infant also fits the disease course: healthy at birth, then feeding difficulties, loss of the Moro reflex, hypotonia, irregular respirations, and convulsions, with flare-ups often triggered by infection. Galactosemia is the milk-elimination disorder — lethargy, vomiting, diarrhea, failure to thrive, and jaundice once milk starts, treated by removing milk and lactose entirely. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): one signature clue (the odor) names the disorder inside a shared warning cluster.");
+
+BANK.push({ cat: C5, type: "dropdown", stem: "The nurse teaches a family whose newborn has just been diagnosed with PKU. For each statement, choose the correct completion.<br><br>The infant's main food will be<br>[[0]]<br><br>Blood phenylalanine levels will be kept between<br>[[1]]<br><br>When the mother herself has PKU and plans a future pregnancy, her diet must restart<br>[[2]]", blanks: [
+  { o: [O("A low-phenylalanine protein substitute such as Lofenalac", true, "Lofenalac is the infant formula on the PKU shelf; Phenex-2 serves adolescents, and partial breastfeeding plus Lofenalac is possible with careful monitoring."), O("A soy-protein formula with all milk products removed", false, "Soy and lactose-free formulas are the galactosemia substitutes; PKU needs a low-phenylalanine substitute, a different shelf."), O("Ordinary formula, with protein foods simply delayed", false, "Phenylalanine is in all protein foods, so ordinary formula feeds the buildup the treatment exists to prevent.")] },
+  { o: [O("2 and 10 mg/dL", true, "The safety corridor: below 2 risks growth retardation, above 10 risks brain damage."), O("6 and 20 mg/dL", false, "Six is the maternal-pregnancy concern level and 20 describes untreated buildup scale; neither is the child's target corridor."), O("10 and 14 mg/dL", false, "Those numbers belong to bilirubin care (the home-phototherapy range), not to phenylalanine.")] },
+  { o: [O("Before she conceives, because her own high levels can damage the fetal brain", true, "Maternal PKU teaching: the low-phenylalanine diet starts before conception, and her level above 6 mg/dL in pregnancy can affect fetal development."), O("Once her pregnancy test is positive, at the first prenatal visit", false, "Starting after conception repeats the folic-acid timing error — the fetal brain is exposed from the earliest weeks."), O("Only if the fetus is confirmed to have PKU on genetic testing", false, "Her high phenylalanine damages the fetal brain whether or not the fetus has PKU; the diet is not conditional on the baby's diagnosis.")] }
+], tp: "ANSWER KEY — Correct answers: Lofenalac as the main food; levels kept at 2–10 mg/dL; a mother with PKU restarts the diet before conceiving. DETAILED RATIONALE — Three direction checks: the right disorder's formula, the two-sided corridor, and the before-conception timing that this chapter uses for both folic acid and maternal PKU. Genetic counseling supports the family for this child and for future planning. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): a teaching plan is built from the disorder's own numbers, not from a neighboring disorder's." });
+
+S(C5, "A breastfed newborn develops lethargy, vomiting, hypotonia, diarrhea, and failure to thrive in her first week, with some jaundice. Testing shows galactose in her blood and urine with reduced enzyme activity in her red cells. All of the following are correct nursing actions — which one comes FIRST?", [
+    ["Stop the milk feedings and notify the provider, so lactose is removed while a lactose-free or soy-protein formula is arranged", true, "Elimination is the treatment: no milk and no lactose-containing foods, and breastfeeding stops. Early removal prevents cirrhosis, cataracts, and intellectual impairment — damage that is preventable, not reversible."],
+    ["Record her intake, vomiting, stools, and daily weight to track the failure-to-thrive pattern", false, "Correct monitoring of the presenting picture; it continues under the new feeding plan, while removing the offending feed is the move that stops the accumulation."],
+    ["Teach the parents which foods and formulas contain lactose so the elimination holds at home", false, "Correct discharge-level teaching for this disorder; it matters once the substitute feeding is running, not before the milk is stopped."],
+    ["Arrange review of the confirmatory enzyme and galactose results with the provider and the family", false, "Correct follow-through on the diagnosis; the results are already in hand in this picture, so the review follows the feeding change it justifies."]
+  ], "ANSWER KEY — Correct answer: stop the milk feedings first and notify the provider, eliminating lactose while a substitute formula is arranged. All four options are correct nursing actions — stopping the feed leads because every feeding adds more galactose. DETAILED RATIONALE — All three metabolic disorders share the missing-enzyme setup and the invisible-before-birth pattern, but each has its own substance and its own diet: phenylalanine corridor (PKU), branched-chain amino acids (maple syrup urine disease), galactose elimination (galactosemia). PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): in this family of disorders, naming the accumulating substance names the diet.");
+
+S(C5, "The parents of a newborn diagnosed with PKU ask why their baby looked perfectly normal at birth if something was already wrong. All of the following are correct points — which one best answers their question?", [
+    ["Metabolic defects can be invisible before birth, because symptoms begin only once the infant starts taking in nourishment", true, "That is the chapter's shared setup for this family of disorders: the missing enzyme matters only when feeding loads the substance it cannot break down."],
+    ["The defect developed during delivery, when the stress of birth damaged the liver enzyme that handles this amino acid", false, "PKU is an autosomal recessive inherited defect, present from conception; delivery stress did not create it."],
+    ["The baby was protected because the placenta removed the substance, and symptoms would have appeared even without any feeding at all", false, "The second half fails: symptoms track feeding, which is exactly why the screening timing is built around protein ingestion."],
+    ["Newborns with this condition always show a musty odor and eczema at birth, so the nursery team should have caught it on day one", false, "The untreated picture — developmental lag at 1–6 months, failure to thrive, eczema, musty odor, seizures in about a third — unfolds over time; at birth the baby appears normal."]
+  ], "ANSWER KEY — Correct answer: metabolic defects may be invisible before birth, with symptoms starting once nourishment begins. All four options sound plausible, but only the feeding-trigger explanation matches the chapter. DETAILED RATIONALE — Phenylalanine hydroxylase is the missing liver enzyme; without it phenylalanine cannot become tyrosine and builds toward 20 times normal, with phenylpyruvic acid spilling into the urine in the first weeks. Most affected children are blond and blue-eyed because phenylalanine is needed to make melanin. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): a normal-looking newborn does not clear a metabolic defect — the load test is feeding itself.");
+
+S(C5, "A woman with PKU, now 8 weeks pregnant, says she stopped her diet years ago and feels fine, so she will restart it 'once the baby is bigger.' Her last phenylalanine level was 9 mg/dL. All of the following are correct nursing actions — which one comes FIRST?", [
+    ["Teach her that her level already exceeds the pregnancy concern point and arrange urgent dietitian and provider follow-up to restart the diet now", true, "In pregnancy, a maternal level above 6 mg/dL can affect fetal development, and the diet was supposed to restart before conception; at 9 mg/dL and 8 weeks, now is the corrective action."],
+    ["Document her current level of 9 mg/dL, her statement that she stopped the diet years ago, and the foods she reports eating in a usual week now", false, "Correct documentation of the exposure history; it is recorded as the follow-up is arranged, because the level is already above the pregnancy concern point and time is the exposure."],
+    ["Give her the food exchange list and the label-reading guidance she will use on the restarted diet, and review one day of her usual meals with her", false, "Correct teaching tools for this diet; they support the restart the dietitian will direct, so they follow the urgent referral rather than replacing it."],
+    ["Schedule a repeat phenylalanine level for the coming weeks to track her response once the diet is restarted and the dietitian has set her targets", false, "Correct monitoring — frequent level checks are the management pattern — but a future level does not start the correction; the referral and the teaching do."]
+  ], "ANSWER KEY — Correct answer: teach that 9 mg/dL already exceeds the 6 mg/dL pregnancy concern level and arrange urgent follow-up to restart the diet now. All four options are correct nursing actions — the urgent teaching and referral lead because every week of delay is fetal exposure. DETAILED RATIONALE — Maternal PKU is the chapter's second before-conception lesson, paired with folic acid: the window opens before pregnancy, and inside pregnancy the exposure is already running. Genetic counseling matters for this family as well. PRIORITY FRAMEWORK — Timed prevention: when a window has been missed, the correct move is immediate correction, not a later appointment with the same advice.");
+
+/* ===== C6 — Down syndrome ===== */
+S(C6, "A newborn shows upward-slanting, close-set eyes, a flat nose, a protruding tongue, a single transverse palmar crease, and a wide space between the first and second toes. He is floppy when held. Which interpretation ties the picture together?", [
+    ["These are the recognizable features of Down syndrome, most often caused by an extra chromosome 21 from nondisjunction", true, "Trisomy 21 accounts for 95% of cases and produces exactly this feature set, with underdeveloped muscles and loose joints explaining the floppiness."],
+    ["These features indicate a metabolic disorder, because several small differences at birth usually mean an enzyme is missing", false, "This is a chromosomal abnormality — too many chromosomes — not an inborn error of metabolism; the classification decides the workup and counseling."],
+    ["These features are the expected look of a baby born to a mother over 35, and they fade as the baby grows over the first year", false, "Maternal age over 35 raises the risk; it does not make the features normal or temporary — growth and development run slower on a lasting pattern."],
+    ["These features point to a perinatal injury from a difficult delivery, because the flat face and floppiness follow pressure on the head", false, "Nothing in the picture names a birth injury; the crease, toe spacing, tongue, and eye findings are a congenital chromosomal pattern present from development."]
+  ], "ANSWER KEY — Correct answer: Down syndrome, most often trisomy 21 from nondisjunction. DETAILED RATIONALE — The other two genetic routes are mosaicism (late nondisjunction, a mix of cells, often less severely affected) and translocation (a piece of chromosome 21 attached to another chromosome). The condition occurs in about 1 in 700 live births and is the most common genetic cause of intellectual disability. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): a feature cluster is matched to its classification — chromosomal, metabolic, structural, blood, or perinatal injury.");
+
+S(C6, "The floppy newborn above needs feeding. He has mucus pooling in his mouth and his tongue protrudes, interfering with his suck. All of the following are correct nursing actions — which one comes FIRST at this feeding?", [
+    ["Bulb-suction the mucus before the feeding, because his hypotonia lets mucus accumulate and interfere with breathing and feeding", true, "Hypotonia care names this sequence: mucus accumulates and breathing suffers, so bulb suctioning may be needed before feedings. Airway and feeding readiness lead the round."],
+    ["Wrap him warmly for the feeding, because his hypotonia exposes more surface area and heat loss is a real risk for him", false, "Correct thermal care for this baby, done as part of the feeding setup; it does not clear the mucus that is already pooling in his mouth."],
+    ["Position and hold him with extra support, because his limp, flaccid muscles make ordinary holding unsafe for him", false, "Correct handling for a hypotonic infant and part of this same feeding; the pooled mucus is addressed before the feed begins."],
+    ["Plan dietary measures for constipation, because the same low muscle tone that makes him floppy also slows his bowel", false, "Correct longer-term care for this condition; it belongs to the day's plan, not to the first move at a feeding with mucus in the mouth."]
+  ], "ANSWER KEY — Correct answer: bulb-suction the mucus before the feeding first. All four options are correct nursing actions for a hypotonic infant with Down syndrome — suctioning leads because it protects breathing and feeding together. DETAILED RATIONALE — The protruding tongue interferes with sucking and leads to mouth breathing, dry cracked lips, and fissures, which is why feeding support is ongoing care for this baby. PRIORITY FRAMEWORK — ABCs (Airway first): inside a set of correct actions, clear the airway-adjacent problem before the comfort and planning items.");
+
+M(C6, "Which anticipatory guidance belongs in the care plan for a newborn with Down syndrome and his family? Select all that apply.", [
+    ["Expect development to progress steadily but more slowly, with milestones such as walking arriving later than typical", true, "The milestone table shows the pattern: walking at 22–24 months versus 12–15 months typical, with every skill shifted later on the same sequence."],
+    ["Watch for congenital heart deformities, which are associated with this condition", true, "Heart deformities are a named association, alongside poor resistance to respiratory and ear infections."],
+    ["Include the siblings in discussions and inform them about their brother's condition", true, "Young children sense parental distress and imagine worse than reality; open communication early prevents isolation and misconceptions."],
+    ["Enroll him in competitive sports as soon as he can walk, to strengthen his loose joints and muscles", false, "The cervical spine is vulnerable to injury in this condition; the provider must be consulted before sports such as the Special Olympics."],
+    ["Connect the family with the local Down syndrome support group and the national association", true, "Named resources for this family, offered from the start along with involvement in care and planning."],
+    ["Teach that toilet training will follow the typical schedule, because self-help skills are unaffected", false, "Self-help skills are also delayed — bladder control at 36–48 months versus 24 months typical — so guidance must reset that expectation too."]
+  ], "ANSWER KEY — Correct answers: slower-but-steady milestones, vigilance for associated heart deformities, including siblings in discussions, and connection to Down syndrome support resources. DETAILED RATIONALE — Health burdens to anticipate include speech and hearing problems, higher incidence of acute leukemia, and Alzheimer disease commonly in middle adult life; antibiotics have increased life span. Parents are involved in care from the start, which builds bonding. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): anticipatory guidance is built from the condition's own association list and its own milestone clock.");
+
+S(C6, "A mother who delivered a baby with Down syndrome yesterday is quiet and tearful and has not yet held him. Which nursing approach is most appropriate?", [
+    ["Sit with her, let her verbalize her concerns, and involve her in his care and planning from the start to build bonding", true, "The taught approach: nurses aware of their own feelings first, honest and tactful sharing, listening, and early involvement — small loving touches show the baby is cherished."],
+    ["Keep the baby in the nursery until she asks for him, because bringing him to her before she is ready could deepen her sadness", false, "Withholding him works against the chapter's direction; involvement in care from the very start is what builds bonding, offered gently rather than forced."],
+    ["Tell her that parents of these babies are usually happy within a day or two, so her feelings should pass quickly on their own", false, "Deep sadness is a named, expected response; predicting its quick end dismisses the grief work the nurse is meant to support."],
+    ["Ask the father to do all the holding and feeding for now, because the mother needs complete rest after a difficult diagnosis", false, "Substituting the father removes the mother from the involvement that builds her bond; rest is arranged around participation, not instead of it."]
+  ], "ANSWER KEY — Correct answer: listen, let her verbalize, and involve her in care and planning from the start. DETAILED RATIONALE — The counseling section is explicit that the nurse's own feelings come first, and that sharing an initial feeling of helplessness honestly and tactfully can itself help the parents. PRIORITY FRAMEWORK — Maslow (psychosocial needs): grief is met with presence and participation, not with distance or predictions.");
+
+BANK.push({ cat: C6, type: "matrix", stem: "At a family teaching session for a newborn with Down syndrome, the nurse checks four facts the parents have read. Match each fact to the correct value or pattern.", cols: ["1 in 700 live births", "Low AFP, high hCG, low estriol, high inhibin-A", "22–24 months", "Mosaicism"], rows: [
+  { t: "How often this condition occurs in the United States", a: 0, r: "About 1 in 700 live births — the incidence figure attached to this condition." },
+  { t: "The second-trimester quad-test pattern that flags increased risk", a: 1, r: "The Down pattern runs AFP low, hCG high, unconjugated estriol low, and inhibin-A high; first-trimester screening adds nuchal translucency and the nasal bone." },
+  { t: "The age by which a child with this condition typically walks", a: 2, r: "Walking at 22–24 months versus 12–15 months typical — the milestone table's clearest illustration of the slower clock." },
+  { t: "The genetic route in which nondisjunction happens late, leaving a mix of normal and abnormal cells", a: 3, r: "Mosaicism: late nondisjunction, mixed cells, and children who are often less severely affected." }
+], tp: "ANSWER KEY — Correct matches: incidence = 1 in 700; quad pattern = low AFP, high hCG, low estriol, high inhibin-A; walking = 22–24 months; late nondisjunction with mixed cells = mosaicism. DETAILED RATIONALE — A positive screening pattern leads to amniocentesis for confirmation, and risk climbing with maternal age over 35 is why genetic counseling and prenatal screening are offered. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): each value belongs to exactly one fact — number-swapping is the error this item is built to catch." });
+
+S(C6, "Parents ask whether their daughter with Down syndrome will learn to feed and dress herself. Her chart notes she is now 12 months old and finger-feeding. Which answer is most accurate?", [
+    ["Yes — independence comes on a slower clock: finger-feeding at about 12 months fits her pattern, with spoon use around 20 months and simple dressing at 4–5 years", true, "The self-help table gives her trajectory: finger-feeds 12 months, spoon and cup 20 months, fork 30 months, dresses self 48–60 months, brushes teeth 60 months."],
+    ["Yes — self-help skills are the one area that follows the typical schedule, so she should use a spoon and cup within the next month", false, "Self-help is delayed on the same pattern as motor milestones; typical spoon and cup age is 13 months, hers is about 20 months."],
+    ["No — children with this condition do not reach independent self-feeding, so the family should plan to feed her long-term", false, "The tables show steady progress to independence in every listed skill; the difference is timing, not attainment."],
+    ["Only if her hypotonia resolves by age 2, because muscle tone is the single factor that decides whether self-help skills develop", false, "Hypotonia shapes handling and care, but the developmental tables describe expected progress with support, not a tone deadline that cancels it."]
+  ], "ANSWER KEY — Correct answer: yes, on a slower clock — her 12-month finger-feeding matches the Down syndrome self-help pattern exactly. DETAILED RATIONALE — Steady progress on a delayed schedule is the honest hope this chapter teaches nurses to give: real milestones, real independence, later dates. PRIORITY FRAMEWORK — Evaluate Outcomes (Clinical Judgment): judge a child's progress against her own condition's timetable, not against the typical chart alone.");
+
+S(C6, "A prenatal patient at 16 weeks has quad-test results showing low alpha-fetoprotein, high hCG, low unconjugated estriol, and high inhibin-A. She asks what happens next. Which answer is correct?", [
+    ["This pattern flags increased risk for Down syndrome, and amniocentesis can confirm the diagnosis; screening itself does not make the diagnosis", true, "The four values in exactly this arrangement are the Down pattern; a positive screen is followed by amniocentesis for confirmation."],
+    ["This pattern confirms Down syndrome, so the next step is counseling about the diagnosis rather than any further testing", false, "Screening flags risk; it does not confirm. Skipping confirmation mislabels a screening tool as a diagnostic one."],
+    ["This pattern flags an open neural tube defect, because alpha-fetoprotein is the marker measured for that condition in pregnancy", false, "Raised AFP points toward an open neural tube defect; here the AFP is low, inside a four-marker chromosomal pattern — the direction decides."],
+    ["This pattern is reassuring, because low alpha-fetoprotein rules out the chromosomal conditions the test was ordered to screen for", false, "Low AFP is one quarter of the risk pattern, not a reassurance; read together, the four markers raise the flag."]
+  ], "ANSWER KEY — Correct answer: the pattern flags increased Down syndrome risk, and amniocentesis can confirm. DETAILED RATIONALE — First-trimester screening uses nuchal translucency and the nasal bone; the second-trimester quad adds the four blood markers. AFP direction is a double-duty fact in this chapter: raised in amniotic fluid with an open neural tube defect, low in the Down screening pattern. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): a marker's meaning lives in its direction and its company, never in the marker alone.");
+
+
+/* ===== C7 standalones — Rh/ABO, Coombs, hydrops ===== */
+M(C7, "A prenatal nurse reviews the history of an Rh-negative patient in her third pregnancy. Which history items are sensitizing events or warning clues for hemolytic disease? Select all that apply.", [
+    ["A previous ectopic pregnancy", true, "Ectopic pregnancy is one of the sensitizing events the history asks about, because fetal blood can reach the mother's circulation."],
+    ["A previous abortion", true, "Abortion, spontaneous or therapeutic, is a listed sensitizing event and also a RhoGAM occasion."],
+    ["A previous blood transfusion", true, "Transfusions are in the sensitizing-event history, since they can expose her to the Rh antigen."],
+    ["An older child who had pathological jaundice as a newborn", true, "Other children with pathological jaundice or anemia as newborns are the family-history clue that disease has already occurred."],
+    ["An older child who had physiological jaundice on day 3 that faded in a week", false, "Jaundice appearing after the first day and climbing gradually is the physiological pattern; it is the pathological picture that warns."],
+    ["A first pregnancy with an Rh-positive baby and RhoGAM given on time", false, "RhoGAM given within its windows is prevention working as intended, not a sensitizing event; the risk story is exposure without prevention."]
+  ], "ANSWER KEY — Correct answers: previous ectopic pregnancy, previous abortion, previous blood transfusion, and an older child with pathological newborn jaundice. DETAILED RATIONALE — Sensitization is cumulative: without RhoGAM, accumulated antibodies raise the risk with every pregnancy, because antibodies formed in one exposure cross the placenta in a later one. ABO incompatibility — most often a type O mother with a type A or B infant — is now more common than Rh disease but generally less severe, with the same treatment and nursing care. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): in this disease, the history is the first laboratory test.");
+
+S(C7, "At a delivery, cord blood is drawn from an Rh-positive newborn of an Rh-negative mother, and the direct Coombs test is positive. A student asks what the result actually shows. Which answer is correct?", [
+    ["The infant's red blood cells are already coated with the damaging antibodies, which is why the test is run on the baby's blood", true, "Direct means the baby's blood and coated cells; the cord sample at delivery detects the antibodies doing the damage."],
+    ["The mother's blood contains circulating Rh antibodies, which is what a positive result on cord blood always demonstrates", false, "Circulating maternal antibodies are the indirect Coombs, run on the mother's blood — the pair is told apart by whose blood is tested."],
+    ["The baby has formed his own antibodies against his mother's blood, and those are the antibodies coating the cells in the sample", false, "The damaging antibodies are maternal in origin; the newborn is the target of them, not their maker."],
+    ["The result shows the baby's blood type is incompatible with the donor blood bank supply, so exchange transfusion cannot be done", false, "The test says nothing about donor supply; exchange transfusion with Rh-negative blood is a standard treatment step in this disease."]
+  ], "ANSWER KEY — Correct answer: the direct Coombs on the infant's blood shows red cells already coated with damaging antibodies. DETAILED RATIONALE — The memory anchor holds both halves: direct = baby's blood, cells coated; indirect = mother's blood, antibodies circulating. The disease name itself, erythroblastosis fetalis, comes from the immature nucleated red cells flooding the circulation as the marrow compensates. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): for a paired test, whose sample it is decides what a positive result means.");
+
+S(C7, "A fetus with severe hemolytic disease is delivered with generalized edema, an enlarged liver and spleen, and signs of heart failure. Which interpretation should guide his immediate care?", [
+    ["This is hydrops fetalis, the severe end of hemolysis, where fetal hypoxia, anasarca, and heart failure follow the massive red cell destruction", true, "Progressive severe hemolysis produces exactly this picture; oxygen-carrying power falls and blood volume shrinks, so shock or heart failure can follow."],
+    ["This is the expected appearance of a baby whose mother was sensitized, and it settles as the antibodies clear over the first week", false, "Edema with heart failure is the rare, severe presentation that early detection exists to prevent; it is an immediate-care picture, not a settling one."],
+    ["This edema pattern shows the baby was overfed by a diabetic placenta, because generalized swelling is the hallmark of the macrosomic infant", false, "The macrosomic infant is oversized and puffy-faced from fat, not edematous with liver and spleen enlargement from hemolysis; the histories differ completely."],
+    ["This picture means the exchange transfusion was given too late in a previous pregnancy and has now affected this baby as well", false, "Hydrops develops in the current fetus from his own hemolysis; it is not a carried-over effect of a sibling's treatment."]
+  ], "ANSWER KEY — Correct answer: hydrops fetalis, the severe hemolysis picture of hypoxia, generalized edema, and heart failure. DETAILED RATIONALE — The immediate-exchange candidate in this chapter is exactly this infant: cardiac failure and edema from hemolytic disease get fresh whole blood right away. The condition is rare today because Rh disease is detected early, which is why the detection steps matter. PRIORITY FRAMEWORK — ABCs / safety-first prioritization: name the severity first, because severity sets the speed of everything that follows.");
+
+BANK.push({ cat: C7, type: "order", stem: "Place the events of Rh sensitization and hemolytic disease in the order they occur across two pregnancies.", items: [
+  { t: "An Rh-negative mother carries an Rh-positive fetus, and fetal blood leaks into her circulation", r: "Small leaks occur during pregnancy and a larger exposure comes at delivery." },
+  { t: "The mother's immune system reads the Rh antigen as foreign and forms anti-Rh antibodies", r: "She is now sensitized — the exposure loads the immune system for the next pregnancy." },
+  { t: "In a later pregnancy, the antibodies cross the placenta into the fetal circulation", r: "The antibodies formed earlier are small enough to cross and reach the next fetus." },
+  { t: "The antibodies destroy fetal red blood cells, producing anemia and rapidly rising bilirubin", r: "Hemolysis is the final event — anemia, and possibly heart failure, with jaundice after birth." }
+], tp: "ANSWER KEY — Correct order: fetal blood leaks to the Rh-negative mother → she forms anti-Rh antibodies → antibodies cross the placenta in a later pregnancy → fetal red cells are destroyed, causing anemia and rising bilirubin. DETAILED RATIONALE — The sequence is why one sensitizing pregnancy loads the gun for the next, and why RhoGAM is prevention aimed at the second step: stop antibody formation before it starts. Diagnosis follows the fetus with maternal titers and Doppler measurement of peak systolic velocity in the fetal middle cerebral artery. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): a two-pregnancy disease can only be interrupted if its order is understood." });
+
+S(C7, "An Rh-negative mother received no RhoGAM after her last delivery. She is now pregnant again and asks why this pregnancy is watched so much more closely than her first. All of the following are correct points — which one is the central reason?", [
+    ["Antibodies she may have formed after the last delivery can cross this placenta and destroy this baby's red blood cells, and the risk grows with each sensitized pregnancy", true, "That is the disease engine: accumulated antibodies raise the risk with every pregnancy, so this fetus is followed with titers and Doppler studies for anemia."],
+    ["Her blood type may have changed after the last delivery, so the team must recheck whether she is still Rh-negative this time", false, "Blood type does not change with delivery; what changes is her antibody status, which is exactly what the monitoring tracks."],
+    ["The RhoGAM she missed would have treated this baby in advance, so its absence means treatment must now start at the first prenatal visit", false, "RhoGAM is prevention for the mother, not advance treatment for a future baby; missing it raises risk, it does not create a treatment debt."],
+    ["Second babies are always larger, so the concern is that this baby will outgrow the placenta and develop the glucose problems of a diabetic infant", false, "Size and glucose belong to the macrosomia story; the watch here is hemolysis — anemia, hydrops risk, and bilirubin — from her antibody status."]
+  ], "ANSWER KEY — Correct answer: antibodies formed after the last delivery can cross this placenta and hemolyze this baby's red cells, with risk rising each sensitized pregnancy. All four options sound clinical, but only the antibody mechanism explains the intensified surveillance. DETAILED RATIONALE — Management follows the findings: induction of labor or intrauterine transfusion until the lungs mature, and after birth, hemoglobin and bilirubin levels decide on exchange transfusion; IVIG given at birth slows red cell destruction and reduces the need for exchange. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): surveillance intensity follows the mechanism that is actually running.");
+
+/* ===== C8 standalones — IDM, ICH, TTN/MAS, NAS, home phototherapy ===== */
+S(C8, "A 4,300 g newborn of a diabetic mother is jittery and tremulous at 3 hours of age, with a weak cry. All of the following are correct nursing actions — which one comes FIRST?", [
+    ["Check his blood glucose now, because jitteriness and tremors in this infant are hypoglycemia signs until the value proves otherwise", true, "His size already names him: over 4,082 g is macrosomia, and the infant of a diabetic mother crashes when the maternal glucose supply is cut but his insulin output stays high. Below 45 mg/dL confirms the danger."],
+    ["Feed him early, because early feeding is both nutrition and a defense against the glucose fall these infants have after birth", false, "Correct and planned — early feeding is part of his care — but the value comes first, because it decides how urgently feeding and treatment must move."],
+    ["Monitor his vital signs closely, because respiratory distress is on the complication list for infants of diabetic mothers", false, "Correct surveillance for this population; it runs alongside the glucose check, which answers the symptom he is showing right now."],
+    ["Report his irritability and tremors to the provider as possible signs of a glucose problem needing orders", false, "Correct escalation, and it is stronger with the number in hand; the chapter's care pairs prompt reporting with frequent glucose checks through the first 2 days."]
+  ], "ANSWER KEY — Correct answer: check his blood glucose first. All four options are correct nursing actions for an infant of a diabetic mother — the symptom he is displaying belongs to hypoglycemia, so its measurement leads. DETAILED RATIONALE — Maternal hyperglycemia drives fetal hyperinsulinism and excess growth; delivery cuts the glucose while the hypertrophied islets keep pumping insulin. Untreated hypoglycemia can cause rapid, permanent brain damage, and hypocalcemia and hyperbilirubinemia also occur in these infants. PRIORITY FRAMEWORK — Safety-first prioritization: measure the dangerous value the symptom is pointing at, then feed, monitor, and report around it.");
+
+S(C8, "A preterm newborn who had a prolonged labor is lethargic, with poor muscle tone, a poor suck, a tense-feeling fontanel, and unequal pupils. He has had one episode of twitching. Which plan fits this picture?", [
+    ["Treat this as intracranial hemorrhage care: incubator with oxygen and continuous observation, gentle minimal handling, head elevated, and phenobarbital available for the twitching", true, "The sign cluster is the hemorrhage picture — tone, suck, tense fontanel, unequal pupils, twitching — and its care is gentle, minimal, head-elevated, observed, with phenobarbital for twitching or convulsions and vitamin K to help control bleeding."],
+    ["Treat this as a feeding problem first: feed him carefully and frequently, because poor suck and lethargy in a newborn are most often hunger", false, "Careful feeding is part of hemorrhage care because these infants vomit easily, but the tense fontanel and unequal pupils move this out of the feeding-problem category entirely."],
+    ["Treat this as early sepsis and expect the twitching to stop once antibiotics alone have had a full day to work in his system", false, "Antibiotics may be given prophylactically in hemorrhage care, but they are not its center; the history of trauma or oxygen deprivation plus the pressure signs name the hemorrhage."],
+    ["Treat this as bilirubin toxicity and start phototherapy, because lethargy, poor feeding, and twitching are the kernicterus sign list", false, "The kernicterus list shares lethargy and poor feeding, but it is driven by bilirubin approaching 20 mg/dL — this baby's story is birth trauma in a preterm infant with a tense fontanel and unequal pupils."]
+  ], "ANSWER KEY — Correct answer: intracranial hemorrhage care — incubator, oxygen, continuous observation, gentle minimal handling, head elevated, phenobarbital for twitching. DETAILED RATIONALE — This is the most common type of birth injury, caused by trauma or anoxia and most frequent in preterm infants with fragile vessels. If a convulsion occurs, the nurse documents which body parts were involved, the side, severity, duration, and the baby's condition before and after. Mild symptoms carry a good chance of full recovery; massive hemorrhage can be fatal. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): overlapping sign lists are separated by the history and the two findings only one list owns — tense fontanel and unequal pupils.");
+
+S(C8, "Two term newborns are tachypneic. Baby A, born by cesarean, has mild retractions and grunting that the team expects to clear in about 3 days. Baby B, born after fetal distress with meconium-stained fluid, has rales, rhonchi, and worsening distress. Which analysis is correct?", [
+    ["Baby A fits transient tachypnea from slowly absorbed lung fluid, while Baby B fits meconium aspiration, which can require ventilation and NICU transfer", true, "The two trajectories must not be swapped: wet lung resolves suddenly after about 3 days on supportive care, while aspirated meconium drives distress that can linger for weeks and escalate."],
+    ["Both babies have the same wet-lung condition, because tachypnea after birth always means lung fluid that has not yet been absorbed", false, "Meconium in the lungs is a different mechanism — stained fluid drawn in by gasping after distress — with a different course and ceiling of care."],
+    ["Baby B's course will be the shorter one, because meconium is suctioned away at birth and the lungs are then clear within a day", false, "Suctioning helps, and deep endotracheal suctioning may be needed, but tachypnea after aspiration can linger for several weeks; the short course belongs to Baby A."],
+    ["Baby A needs the NICU transfer, because cesarean-born babies with retractions always deteriorate before they improve on the ward", false, "Transient tachypnea after cesarean or rapid vaginal delivery is characteristically self-limited with warmth, energy conservation, and supplemental oxygen."]
+  ], "ANSWER KEY — Correct answer: Baby A is transient tachypnea resolving in about 3 days; Baby B is meconium aspiration that may need ventilation and the NICU. DETAILED RATIONALE — Prevention in aspiration starts with surveillance: prompt recognition of fetal distress, with decelerations or loss of variability, and rapid delivery. Both babies get supportive care — warmth, oxygen, energy conservation — but only one has the benign clock. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): same presenting sign, two mechanisms, two clocks — the history tells them apart.");
+
+S(C8, "A newborn whose mother used opiates through pregnancy is tremulous, hyperirritable, wakeful, sneezing, and yawning, with poor feeding and diarrhea on day 1. All of the following are correct nursing actions — which one comes FIRST?", [
+    ["Place him in a quiet environment, swaddled, with external stimuli reduced, as his withdrawal care begins", true, "The environment is the first treatment variable for a hyperirritable baby in withdrawal: quiet, swaddling, and reduced stimuli, with seizure observation running throughout."],
+    ["Observe him closely for seizures and document the tremors, wakefulness, sneezing, and feeding pattern", false, "Correct surveillance and documentation for withdrawal; it proceeds continuously, while settling his environment is the opening move that can lower the irritability driving the signs."],
+    ["Support his mother in his care, including breastfeeding guidance consistent with her methadone treatment", false, "Correct family care — breastfeeding is supported for a mother treated with methadone — and it is arranged as his withdrawal care is established, not before he is settled."],
+    ["Offer small, supported feeding attempts and record his intake, stools, and diarrhea losses carefully", false, "Correct nutrition monitoring for a poor feeder with diarrhea; feeding attempts go better once the low-stimulation setup is in place around him."]
+  ], "ANSWER KEY — Correct answer: place him in a quiet, swaddled, low-stimulation environment first. All four options are correct nursing actions for neonatal abstinence care — settling the environment leads because stimulation is what his over-firing nervous system cannot handle. DETAILED RATIONALE — Opiates, amphetamines, tranquilizers, and multiple illicit drugs all cross the placenta and produce dependence; after birth the supply stops and withdrawal begins, with possible long-term developmental and neurological effects. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): the environment itself is a treatment variable — turn it down for the baby whose nervous system is over-firing.");
+
+BANK.push({ cat: C8, type: "matrix", stem: "A family is choosing between hospital and home phototherapy and asking about other bilirubin treatments. Match each statement to the correct fact.", cols: ["Home phototherapy fits this picture", "Metalloporphyrins (SnMP)", "Hospital phototherapy care", "Exchange transfusion fact"], rows: [
+  { t: "Mild-to-moderate physiological jaundice, bilirubin around 10–14 mg/dL, a healthy newborn, and a family able to comply with the program", a: 0, r: "That is the home-phototherapy referral picture; bilirubin typically rises on day 3, after discharge, which is why home treatment exists." },
+  { t: "An experimental alternative whose safety and long-term effects are not yet established", a: 1, r: "Tin mesoporphyrin is investigational — 'not yet established' is the test answer, not 'standard treatment.'" },
+  { t: "The baby can be held and fed during treatment because the light source lies under her, on a fiberoptic pad or bed", a: 0, r: "The Bilibed and Biliblanket advantage: therapy continues while held, and eye-damage risk falls because the light is not over the face." },
+  { t: "After the second exchange, about 85% of the infant's original blood has been replaced", a: 3, r: "The exchange endpoint figure, reached with 10–20 mL aliquots totaling about twice the blood volume, capped at 500 mL." }
+], tp: "ANSWER KEY — Correct matches: 10–14 mg/dL with a compliant family = home phototherapy; experimental and unestablished = metalloporphyrins; held and fed on a light pad = the home device advantage (Bilibed/Biliblanket); 85% replaced after the second exchange = exchange transfusion. DETAILED RATIONALE — Home care keeps the record-keeping of the hospital plan: temperature, weight, intake and output, stools, and feedings, with written instructions to the parents. Hospital care adds eye patches, q2h repositioning, and lights-off blood draws. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): place each treatment on the ladder — drug therapy, phototherapy at home or in hospital, then exchange — by its evidence and its numbers." });
+
+
+var BLUEPRINT = {
+ "Hemolytic Disease — Rh, ABO, Coombs, and RhoGAM": {
+  "name": "Hemolytic Disease — Rh, ABO, Coombs, and RhoGAM",
+  "count": 8,
+  "types": {
+   "multi": 2,
+   "single": 5,
+   "order": 1
+  }
+ },
+ "Phototherapy, Exchange Transfusion, Macrosomia, and Perinatal Injuries": {
+  "name": "Phototherapy, Exchange Transfusion, Macrosomia, and Perinatal Injuries",
+  "count": 8,
+  "types": {
+   "single": 6,
+   "dropdown": 1,
+   "matrix": 1
+  }
+ },
+ "Spina Bifida — Sac Protection, Bladder Care, and Latex Safety": {
+  "name": "Spina Bifida — Sac Protection, Bladder Care, and Latex Safety",
+  "count": 8,
+  "types": {
+   "multi": 1,
+   "single": 6,
+   "order": 1
+  }
+ },
+ "Hydrocephalus and Raised Intracranial Pressure": {
+  "name": "Hydrocephalus and Raised Intracranial Pressure",
+  "count": 8,
+  "types": {
+   "single": 5,
+   "multi": 1,
+   "order": 1,
+   "matrix": 1
+  }
+ },
+ "Cleft Lip and Cleft Palate — Feeding and Repair Care": {
+  "name": "Cleft Lip and Cleft Palate — Feeding and Repair Care",
+  "count": 8,
+  "types": {
+   "single": 6,
+   "multi": 1,
+   "dropdown": 1
+  }
+ },
+ "Hip Dysplasia, Clubfoot, and Cast Care": {
+  "name": "Hip Dysplasia, Clubfoot, and Cast Care",
+  "count": 8,
+  "types": {
+   "single": 5,
+   "multi": 1,
+   "order": 1,
+   "matrix": 1
+  }
+ },
+ "PKU and the Metabolic Disorders": {
+  "name": "PKU and the Metabolic Disorders",
+  "count": 8,
+  "types": {
+   "single": 6,
+   "multi": 1,
+   "dropdown": 1
+  }
+ },
+ "Down Syndrome — Newborn Care and Family Support": {
+  "name": "Down Syndrome — Newborn Care and Family Support",
+  "count": 7,
+  "types": {
+   "single": 5,
+   "multi": 1,
+   "matrix": 1
+  }
+ }
+};
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { shuffle(q.opts); S.resp.push(-1); }
+    else if (q.type === "multi") { shuffle(q.opts); S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { shuffle(q.blanks[k].o); d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>OB Chapter 14: The Newborn With a Perinatal Injury or Congenital Malformation — Predicted Test</h1>';
+  h += '<div class="sub">Brutal mode | Leifer, Introduction to Maternity and Pediatric Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order<br><span class="small">Answer choices always shuffle, even dropdowns. Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>
