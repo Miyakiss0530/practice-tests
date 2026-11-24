@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OB Ch 13 — Predicted Test (BRUTAL): Preterm and Postterm Newborns</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1f1b3a;background:#4c1d95;background:-webkit-linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background:linear-gradient(135deg,#4c1d95,#6d28d9 55%,#4338ca);background-attachment:fixed;min-height:100vh;padding-bottom:84px;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:12px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 24px rgba(30,10,80,.28)}
+h1{font-size:24px;margin:0 0 6px;color:#3b1a8a}
+h2{font-size:18px;margin:16px 0 8px;color:#3b1a8a}
+.sub{color:#5b5486;font-size:14px;margin-bottom:10px}
+table.bp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 10px}
+table.bp td,table.bp th{border-bottom:1px solid #e6e1f7;padding:7px 6px;text-align:left}
+table.bp th{background:#efeafd;color:#3b1a8a}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:600;cursor:pointer;color:#fff;background:#6d28d9;margin:4px 6px 4px 0}
+.btn.alt{background:#4338ca}
+.btn.ghost{background:#ece7fb;color:#3b1a8a}
+.btn:disabled{opacity:.4}
+.modebox{border:2px solid #ddd5f7;border-radius:12px;padding:10px 12px;margin:8px 0;display:block;cursor:pointer;font-size:15px}
+.modebox b{color:#3b1a8a}
+.top{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#3b1a8a;padding:8px 12px;color:#fff;font-size:13px}
+.pb{height:8px;background:#7c5bd6;border-radius:6px;overflow:hidden;margin-bottom:5px}
+.pf{height:8px;background:#fbbf24;width:0%}
+.bot{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#2e1065;color:#fff;padding:10px 14px;font-size:14px;text-align:center;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+.qh{display:flex;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.qn{font-weight:700;color:#3b1a8a;margin-right:10px}
+.chip{background:#ece7fb;color:#4c1d95;border-radius:20px;padding:3px 10px;font-size:12px;margin-right:auto}
+.flag{border:1px solid #c9bdf0;background:#fff;border-radius:10px;padding:6px 10px;font-size:13px;color:#4c1d95;cursor:pointer}
+.flag.on{background:#fde68a;border-color:#f59e0b;color:#7c4a03}
+.scen{background:#f5f2ff;border-left:4px solid #6d28d9;padding:10px 12px;border-radius:8px;margin-bottom:10px;font-size:15px}
+.qt{font-size:12px;color:#6b64a0;margin-bottom:4px}
+.stem{font-size:17px;font-weight:600;margin-bottom:12px}
+.opt{display:flex;border:2px solid #ddd5f7;border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer;background:#fff}
+.opt .lt{min-width:28px;height:28px;border-radius:50%;background:#ece7fb;color:#4c1d95;font-weight:700;text-align:center;line-height:28px;margin-right:10px;font-size:14px;flex-shrink:0}
+.opt .ot{font-size:15px;flex:1}
+.opt.sel{border-color:#6d28d9;background:#f3eefe}
+.opt.sel .lt{background:#6d28d9;color:#fff}
+.opt.good{border-color:#16a34a;background:#ecfdf3}
+.opt.good .lt{background:#16a34a;color:#fff}
+.opt.bad{border-color:#dc2626;background:#fef2f2}
+.opt.bad .lt{background:#dc2626;color:#fff}
+.opt.miss{border-color:#16a34a;border-style:dashed}
+.rat{display:block;font-size:13px;color:#3d3a55;margin-top:5px}
+.oi{display:flex;align-items:center;border:2px solid #ddd5f7;border-radius:12px;padding:8px;margin-bottom:8px}
+.oi .num{min-width:28px;height:28px;border-radius:50%;background:#6d28d9;color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:10px;font-size:14px}
+.oi .ot{flex:1;font-size:15px}
+.oi button{border:1px solid #c9bdf0;background:#f5f2ff;border-radius:8px;font-size:16px;width:40px;height:40px;margin-left:6px;color:#4c1d95}
+.oi.good{border-color:#16a34a;background:#ecfdf3}
+.oi.bad{border-color:#dc2626;background:#fef2f2}
+select{font-size:15px;padding:6px 8px;border-radius:8px;border:2px solid #b9a8ee;background:#fff;color:#1f1b3a;max-width:100%}
+select.good{border-color:#16a34a;background:#ecfdf3}
+select.bad{border-color:#dc2626;background:#fef2f2}
+.ddstem{font-size:17px;line-height:2.1;margin-bottom:10px}
+.leg{background:#f5f2ff;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:10px}
+.leg div{margin:3px 0}
+.mrow{display:flex;align-items:center;justify-content:space-between;border:2px solid #ddd5f7;border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:15px}
+.mrow.good{border-color:#16a34a;background:#ecfdf3}
+.mrow.bad{border-color:#dc2626;background:#fef2f2}
+.mrow span.mt{flex:1;margin-right:10px}
+.fbx{font-size:13px;color:#3d3a55;margin:-2px 0 8px 4px}
+.res{border-radius:10px;padding:8px 12px;font-weight:700;margin:10px 0 8px}
+.res.ok{background:#dcfce7;color:#14532d}
+.res.part{background:#fef3c7;color:#78350f}
+.res.no{background:#fee2e2;color:#7f1d1d}
+.tp{background:#eef2ff;border-left:4px solid #4338ca;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+.nav{display:flex;flex-wrap:wrap}
+.nav button{width:38px;height:38px;margin:3px;border-radius:9px;border:2px solid #ddd5f7;background:#fff;color:#3b1a8a;font-weight:700;font-size:13px}
+.nav button.ans{background:#ddd5f7}
+.nav button.fl{border-color:#f59e0b;box-shadow:inset 0 -4px 0 #f59e0b}
+.nav button.cur{background:#6d28d9;color:#fff;border-color:#6d28d9}
+.nav button.ok{background:#bbf7d0;border-color:#16a34a}
+.nav button.part{background:#fde68a;border-color:#f59e0b}
+.nav button.bad{background:#fecaca;border-color:#dc2626}
+.big{font-size:42px;font-weight:800;color:#4c1d95}
+.cb{height:12px;background:#e6e1f7;border-radius:6px;overflow:hidden;margin:3px 0 10px}
+.cb div{height:12px;background:#6d28d9}
+.small{font-size:13px;color:#5b5486}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+var BANK = [];
+function O(t, c, r) { return { t: t, c: c, r: r }; }
+function S(cat, stem, opts, tp, extra) { var q = { cat: cat, type: "single", stem: stem, opts: opts.map(function (o) { return O(o[0], o[1], o[2]); }), tp: tp }; if (extra) { for (var k in extra) q[k] = extra[k]; } BANK.push(q); }
+function M(cat, stem, opts, tp, extra) { var q = { cat: cat, type: "multi", stem: stem, opts: opts.map(function (o) { return O(o[0], o[1], o[2]); }), tp: tp }; if (extra) { for (var k in extra) q[k] = extra[k]; } BANK.push(q); }
+var C1 = "Classification, Characteristics, Ballard Score, and Causes of Preterm Birth";
+var C2 = "Respiratory Distress Syndrome, Oxygen, CPAP, and BPD";
+var C3 = "Apnea of Prematurity, Hypoxia, and Pulse Oximetry";
+var C4 = "Thermoregulation and Cold Stress";
+var C5 = "Hypoglycemia and Hypocalcemia";
+var C6 = "Feeding the Preterm Newborn — Gavage and TPN";
+var C7 = "NEC, Intracranial Hemorrhage, ROP, Sepsis, Kidneys, and Jaundice";
+var C8 = "Developmental Care, Family, the Postterm Newborn, Transport, and Discharge";
+var CATS = [C1, C2, C3, C4, C5, C6, C7, C8];
+var KEYTERMS = [];
+
+/* ===== CASE 1 (PRED-CASE1) — Sofia, the preterm twin in the NICU ===== */
+var CASE_P1 = "CASE STUDY — One Twin in the NICU. Sofia was born at 31 weeks, birth weight 1,450 g, one of twins; her brother is with their mother on the postpartum unit. Sofia showed respiratory distress at birth and was transported to the NICU in an incubator. On admission: respirations 68 breaths/min with grunting, nasal flaring, substernal retractions and see-saw respirations, color dusky, temperature 36.0°C. Her mother received an antenatal corticosteroid injection about 36 hours before delivery. A pulse oximeter sensor is on Sofia's foot.";
+
+M(C2, "Which findings in Sofia's admission assessment require the nurse to act now? Select all that apply.", [
+    ["Respirations of 68 breaths/min with grunting", true, "Tachypnea at or above 60 breaths/min with grunt-like sounds is the chapter's respiratory distress picture."],
+    ["Nasal flaring and substernal retractions", true, "Flaring and retractions are named distress signs showing she is working hard to move air."],
+    ["See-saw respirations and dusky color", true, "See-saw respirations and cyanosis complete the distress picture and signal falling gas exchange."],
+    ["Birth weight of 1,450 g at 31 weeks", false, "That weight fits her gestational age; the number alone is her baseline, not the finding driving action now."],
+    ["A twin brother rooming with their mother", false, "Multiple gestation helps explain the preterm birth, but his location is not a cue about Sofia's condition."],
+    ["Temperature of 36.0°C on admission", true, "Below the preterm target band of 36.2-37°C, and cold stress further cuts surfactant production."]
+  ], "ANSWER KEY — Correct answers: respirations 68 with grunting, flaring and retractions, see-saw respirations with dusky color, and temperature 36.0°C. DETAILED RATIONALE — Recognize Cues sorts the distress sign picture and the low temperature from baseline facts (an age-appropriate weight, a twin in another unit) that explain her story without changing her immediate needs. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): act on the cues that match the distress picture, not on the facts that only explain the history.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+S(C2, "The nurse reviews why Sofia's lungs are failing her and what her mother's injection 36 hours before delivery was meant to do. Which analysis is correct?", [
+    ["Her alveoli lack surfactant, and the steroid given to her mother 1-2 days before delivery was timed to raise fetal surfactant production", true, "RDS is deficient surfactant: alveoli cannot stay open. Antenatal betamethasone goes to the mother, and the 1-2 day window before delivery is when it reduces RDS."],
+    ["Her alveoli lack surfactant, and the steroid given to her mother worked by thinning the mucus plugging her smallest airways after birth", false, "The steroid's job is surfactant production before birth, not mucus thinning after it; the timing and target are both flipped."],
+    ["Her chest muscles failed first, and the steroid was given to Sofia after birth to mature her respiratory center in the brain", false, "Weak chest muscles contribute, but the core RDS defect is surfactant; the steroid goes to the mother before delivery, not to the baby after it."],
+    ["Her lungs are filled with fluid, and the steroid's 36 hours means it arrived too late to have any effect on her surfactant at all", false, "Thirty-six hours sits inside the 1-2 day window that helps; calling it too late reverses the chapter's timing rule."]
+  ], "ANSWER KEY — Correct answer: deficient surfactant is the defect, and the maternal steroid 1-2 days before delivery raises fetal surfactant production. DETAILED RATIONALE — Surfactant appears about 24 weeks and is adequate about 34 weeks; at 31 weeks Sofia is short. The drug pair must not be swapped: betamethasone to the mother before delivery, surfactant to the newborn through an endotracheal tube. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): match the mechanism and the drug timing to the same timeline.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+S(C3, "Sofia's oximeter reads 94%, but the monitor's heart rate reads 122 while Sofia's palpated heart rate is 148. Which one comes FIRST?", [
+    ["Reapply or adjust the foot sensor so the two sensor halves line up opposite each other", true, "A saturation is trusted only when the monitor heart rate matches the infant's own rate; a mismatch means the sensor is misread, so it is reapplied or adjusted first."],
+    ["Document the time, saturation, heart rate, sensor site, and any oxygen being given", false, "Correct documentation, and it belongs in her record — after the reading being documented is a valid one."],
+    ["Report the 94% saturation to the provider as her current oxygen status", false, "Correct to report her status, but reporting an unvalidated number hands the provider a value the monitor itself is questioning."],
+    ["Explain the oximeter's purpose and readings to her father at the bedside", false, "Correct family teaching for Skill 13.1 — it follows once the number he is being shown can be trusted."]
+  ], "ANSWER KEY — Correct answer: reapply or adjust the sensor so the sensor halves line up. Assessment validity decides the order: an unmatched heart rate invalidates the saturation, so the sensor is fixed before the value is charted, reported, or taught from. DETAILED RATIONALE — Skill 13.1 cross-checks the monitor rate against the infant's own rate; matching rates mean the reading is accurate. The sensor sits on the toe or side of the foot, flush to the skin, LED and photodetector opposite each other. PRIORITY FRAMEWORK — Assess Before You Act (Validate the Data): never chart, report, or teach from a number that failed its own check.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+BANK.push({ cat: C3, type: "dropdown", stem: "The nurse completes Sofia's oxygen plan from the chapter's rules. For each statement, choose the correct completion.<br><br>A saturation reading is considered normal at<br>[[0]]<br><br>The oximeter alarm floor is set at about<br>[[1]]<br><br>Oxygen given to Sofia must always be<br>[[2]]", blanks: [
+  { o: [O("92% or higher", true, "Pulse oximetry of 92% or higher is the chapter's normal reading."), O("88% or higher", false, "That floor is below the chapter's normal line; 92% is the number this chapter sets."), O("98% or higher", false, "The chapter does not demand near-perfect saturation; chasing it invites the oxygen toxicity behind BPD and ROP.")] },
+  { o: [O("92% to 95%", true, "The alarm is set at the minimum acceptable saturation, approximately 92-95%."), O("85% to 88%", false, "That alarm would stay silent through saturations the chapter already calls abnormal."), O("96% to 100%", false, "That alarm would fire constantly at readings the chapter calls normal.")] },
+  { o: [O("Warmed and humidified", true, "Oxygen for a newborn is warmed and humidified; cold, dry gas dries the mucous membranes."), O("Cold and dry", false, "The direction is flipped — cold, dry gas is exactly what the rule protects her membranes from."), O("Given at the highest flow she tolerates", false, "More oxygen is not automatically better; the blood level, not the delivered amount, is what is titrated.")] }
+], tp: "ANSWER KEY — Correct answers: normal saturation is 92% or higher; the alarm floor is about 92-95%; oxygen is warmed and humidified. DETAILED RATIONALE — Each blank is a number or direction the chapter fixes: the normal line, the alarm floor just above it, and the warmed-and-humidified rule for every route from cannula to ventilator. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): build the plan from the chapter's set values, not from adult-unit habits.", scen: CASE_P1, grp: "PRED-CASE1" });
+
+BANK.push({ cat: C4, type: "order", stem: "Two hours later Sofia's monitor alarms: she has not breathed for 25 seconds, her heart rate is 100 beats/min, and she looks dusky. Place the nurse's responses in the order they should be done.", items: [
+  { t: "Rub her feet, ankles, and back gently to stimulate breathing", r: "Gentle stimulation is the first rung of the apnea response ladder." },
+  { t: "Suction her nose and mouth and raise the head of her bed to a semi-Fowler position", r: "Clearing the airway and positioning come second, if stimulation alone has not restarted breathing." },
+  { t: "Ventilate her with a bag-valve mask device", r: "If breathing does not begin after stimulation, suction, and positioning, bag ventilation is the third rung." }
+], tp: "ANSWER KEY — Correct order: gentle stimulation of feet, ankles, and back, then suction the nose and mouth with the head of the bed raised to semi-Fowler, then bag-valve mask ventilation if breathing does not begin. DETAILED RATIONALE — A pause of 20 seconds or longer is apnea; with a heart rate under 110 beats/min it is bradycardia, and cyanosis travels with the pair. The ladder escalates one rung at a time and never starts at the bag. PRIORITY FRAMEWORK — Take Action (Clinical Judgment): in an escalation ladder, the least invasive effective step goes first.", scen: CASE_P1, grp: "PRED-CASE1" });
+
+S(C3, "On day 3, Sofia is weaning on CPAP, her temperature holds at 36.7°C in the incubator, and her saturations run 93-95% with quiet breathing at 48 breaths/min. How should the nurse evaluate her course?", [
+    ["She is improving — temperature inside the target band, saturation at or above the normal line, and respirations below the distress rate", true, "Evaluation re-measures the admission cues: 36.0 to 36.7°C, dusky distress at 68 breaths/min to quiet breathing at 48, saturation holding at or above 92%."],
+    ["She is not improving, because a saturation of 93-95% is still below the level a newborn should hold around the clock", false, "The chapter's normal line is 92% or higher; 93-95% clears it. Demanding more invites excess oxygen and its toxic effects."],
+    ["She needs her oxygen increased, because CPAP on day 3 means her lungs have failed to respond to treatment", false, "CPAP is weaned gradually as the infant strengthens; still using it while every measured cue improves is a weaning course, not a failure."],
+    ["Her temperature is now too high, because the incubator should hold her at the low end of the range to conserve her glucose stores", false, "36.7°C sits inside both the 36.2-37°C target and the care plan's 36.5-37°C goal; warmth at goal is the plan working."]
+  ], "ANSWER KEY — Correct answer: she is improving on every admission cue. DETAILED RATIONALE — Evaluate Outcomes compares each original value with its line: temperature into band, respirations under 60 and quiet, saturation at or above 92%. The distractors move a line (saturation, temperature) or rename a gradual CPAP wean as failure. PRIORITY FRAMEWORK — Evaluate Outcomes (Clinical Judgment): judge the course against the values that defined the problem.", { scen: CASE_P1, grp: "PRED-CASE1" });
+
+/* ===== CASE 2 (PRED-CASE2) — The feed that changed: NEC unfolding ===== */
+var CASE_P2 = "CASE STUDY — The Feed That Changed. Baby boy T. was born at 32 weeks, birth weight 1,700 g, and is now 6 days old, receiving orogavage feedings of his mother's expressed milk in the NICU. At this morning's feed check the nurse finds his abdominal girth has grown since yesterday, his bowel sounds are faint, and he vomited once after the last feed. His temperature is 36.4°C, he is sleepier than usual, and his last stool was loose. His gavage tube was last replaced 5 days ago.";
+
+M(C7, "Which findings at this feed check require the nurse to act now? Select all that apply.", [
+    ["Abdominal girth grown since yesterday", true, "A growing girth is half of the NEC early-warning pair — distention building feed by feed."],
+    ["Bowel sounds faint while the belly grows", true, "Fading bowel sounds with a growing belly are the early NEC picture, ahead of the dramatic signs."],
+    ["Vomiting after the last feed", true, "Vomiting in a preterm infant with a changing abdomen joins the warning picture and is watched at every feed."],
+    ["Gavage tube last replaced 5 days ago", false, "The tube is replaced every 3-7 days, so day 5 is still inside its window — not a cue."],
+    ["Sleepier than usual at 6 days old", true, "A behavior change in a preterm infant is a reportable observation; lethargy also travels with sepsis and NEC."],
+    ["Feeding by orogavage rather than by bottle", false, "At 1,700 g on tube feeds, orogavage is the planned route; the route itself is not a warning sign."]
+  ], "ANSWER KEY — Correct answers: grown abdominal girth, faint bowel sounds with a growing belly, vomiting after the last feed, and increased sleepiness. DETAILED RATIONALE — NEC whispers before it shouts: girth and bowel sounds change before bloody stools, diarrhea, and bilious vomitus appear. The tube at day 5 sits inside its 3-7 day replacement window, and orogavage is his prescribed route. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): catch the early-warning pair before the late signs arrive.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+S(C7, "The nurse explains to a student how a baby like T. develops this bowel problem. Which chain is correct?", [
+    ["Hypoxia or sepsis cuts blood flow to the bowel lining, the protective mucus thins, and bacteria invade the delicate bowel wall", true, "That is the chapter's NEC chain: lost blood supply, thinned mucus, bacterial invasion, inflammation progressing to necrosis."],
+    ["An immature sphincter lets feeds reflux upward, and the backed-up milk inflames the stomach until the lining breaks down", false, "Immature sphincters explain regurgitation and vomiting, not bowel necrosis; the NEC chain starts with blood supply, not reflux."],
+    ["Cow's milk raises his phosphate level, calcium falls, and the low calcium weakens the smooth muscle of his bowel wall", false, "That is the late hypocalcemia story borrowed into the wrong system; phosphate and calcium do not drive NEC."],
+    ["High oxygen levels scar the bowel the way they scar the retina, and the damaged sections slowly lose their blood supply", false, "Oxygen toxicity injures lungs (BPD) and eyes (ROP); the bowel chain runs through hypoxia or sepsis, not oxygen scarring."]
+  ], "ANSWER KEY — Correct answer: hypoxia or sepsis cuts bowel blood flow, mucus thins, and bacteria invade. DETAILED RATIONALE — Milk formula or a hypertonic gavage feeding gives the bacteria a place to grow, which is why feeds and the abdomen are assessed together. Each distractor imports a real mechanism from another topic in the chapter. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): the right chain must start where this disease starts.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+S(C7, "Which action should the nurse take FIRST for Baby T.?", [
+    ["Stop the feed, notify the provider of the girth and bowel-sound changes, and keep him monitored", true, "The early-warning pair has fired; feeds are held and the provider notified before more milk reaches a bowel that may be losing its blood supply."],
+    ["Give the next gavage feed more slowly and recheck his girth afterward to see the trend", false, "Feeding into a suspected NEC bowel feeds the bacteria growing there; a trend is not gathered by adding the next load."],
+    ["Replace his gavage tube now, since a fresh tube may explain the vomiting and the faint sounds", false, "His tube is inside its replacement window, and a tube change does not address a growing belly with a quiet gut."],
+    ["Burp him, place him on his right side, and restart the feed once he settles", false, "Right-side positioning after a feed aids gastric emptying for a routine spit-up — it is not the response to the NEC warning pair."]
+  ], "ANSWER KEY — Correct answer: stop the feed and notify the provider of the girth and bowel-sound changes. DETAILED RATIONALE — Prioritization follows the warning that has already fired: distention plus fading bowel sounds in a preterm infant on feeds is NEC until proven otherwise, and oral fluids are resumed later only carefully and as ordered. PRIORITY FRAMEWORK — Prioritization (Clinical Judgment): when an early-warning pair fires, remove the load and escalate before gathering more routine data.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+BANK.push({ cat: C6, type: "dropdown", stem: "The provider suspects necrotizing enterocolitis for Baby T. and rewrites his orders. For each statement, choose the correct completion.<br><br>His nutrition now comes from<br>[[0]]<br><br>Before any future gavage feed, the nurse aspirates the stomach; feeding proceeds as planned only when the aspirate is<br>[[1]]<br><br>His tube route, when feeds resume, stays orogavage because newborns are<br>[[2]]", blanks: [
+  { o: [O("Total parenteral nutrition, to rest the bowel", true, "TPN feeds the veins while the bowel rests — its named role in NEC care."), O("Term formula by bottle, in smaller volumes", false, "Term formula burdens preterm kidneys, and oral feeding is what a suspected NEC bowel must be spared."), O("Glucose water between rest periods for the bowel", false, "Glucose water is not a bowel-rest treatment and is specifically warned against in newborn feeding care.")] },
+  { o: [O("Mucus or air only", true, "Mucus or air only means feed as planned; a residual of liquid means notify the physician before feeding."), O("A large amount of liquid formula", false, "A liquid residual is the notify-first finding, not the feed-ahead finding — the pair is flipped."), O("Partly digested milk in any amount", false, "Any liquid residual, digested or not, is reported before feeding; only mucus or air clears the feed.")] },
+  { o: [O("Obligatory nose breathers", true, "A nasal tube steals breathing space from a baby who breathes through the nose; the oral route leaves it open."), O("Mouth breathers when they are hungry", false, "Newborns breathe through the nose — that single fact is the whole reason orogavage is preferred."), O("Unable to swallow before 40 weeks", false, "Suck-swallow-breathe coordination arrives about 34 weeks; the nose-breathing fact, not swallowing, drives the route.")] }
+], tp: "ANSWER KEY — Correct answers: TPN to rest the bowel; feed ahead only on mucus or air; orogavage because newborns are obligatory nose breathers. DETAILED RATIONALE — Generate Solutions assembles the NEC plan from three chapter rules: parenteral nutrition rests the bowel, the aspirate check gates every future feed, and the oral route protects the nasal airway. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): each element of the plan answers a specific mechanism in the case.", scen: CASE_P2, grp: "PRED-CASE2" });
+
+BANK.push({ cat: C7, type: "order", stem: "Baby T.'s stools have turned bloody and his vomitus is bilious; the provider confirms necrotizing enterocolitis. Place the nurse's ongoing responsibilities in the order they should be carried out at this point.", items: [
+  { t: "Observe his vital signs closely and maintain strict infection control techniques", r: "Close observation and infection control frame every other NEC responsibility." },
+  { t: "Keep all oral fluids held, resuming them later only carefully and as ordered", r: "The bowel rests: nothing by mouth is restarted on the nurse's own timing." },
+  { t: "Support the parenteral nutrition and antimicrobial therapy now running", r: "TPN feeds him while antimicrobials treat the invaded bowel wall." },
+  { t: "Keep measuring abdominal girth and listening for bowel sounds at each assessment", r: "The early-warning pair stays on the chart until feeding is safely re-established." }
+], tp: "ANSWER KEY — Correct order: close vital-sign observation with strict infection control, then oral fluids held and resumed only as ordered, then support for TPN and antimicrobials, then continued girth and bowel-sound measurement. DETAILED RATIONALE — NEC treatment in the chapter is antimicrobials plus parenteral nutrition to rest the bowel, with surgery if bowel has necrosed; the nurse's standing work is observation, infection control, careful fluids, and the girth-and-sounds watch. PRIORITY FRAMEWORK — Take Action (Clinical Judgment): sequence the standing responsibilities around the treatment that is already running.", scen: CASE_P2, grp: "PRED-CASE2" });
+
+S(C7, "A week later, T. is tolerating slow gavage feeds again, his girth is back to baseline, and bowel sounds are active in all areas the nurse checks. How should the nurse evaluate his recovery?", [
+    ["His early-warning signs have reversed — girth at baseline and bowel sounds active are the same measures that first signaled the problem", true, "Evaluation returns to the measures that fired: girth trend and bowel sounds. Both back at baseline, with feeds tolerated, is recovery read on the right gauges."],
+    ["He cannot be called improved until his stools are formed and his vomitus has been absent for a full week", false, "Formed stools are not a preterm recovery milestone, and no week-long vomit-free rule exists in the chapter; the gauges are girth and sounds."],
+    ["His recovery is doubtful, because a baby who had NEC once will show a growing girth at every future feed check", false, "A girth at baseline today is today's finding; a past episode raises vigilance, it does not rewrite a normal measurement."],
+    ["He is recovered because his temperature is normal, and temperature is the single measure that tracks bowel healing", false, "Temperature tracks infection broadly; the bowel-specific recovery gauges in this chapter are girth and bowel sounds."]
+  ], "ANSWER KEY — Correct answer: the early-warning pair has reversed on the same measures that signaled NEC. DETAILED RATIONALE — Evaluate Outcomes closes the loop on the original cues: distention resolved to baseline and a quiet gut turned active, with feeds tolerated. The distractors substitute gauges the chapter never assigned to this problem. PRIORITY FRAMEWORK — Evaluate Outcomes (Clinical Judgment): judge recovery with the measures that defined the problem.", { scen: CASE_P2, grp: "PRED-CASE2" });
+
+
+/* ===== C1 standalones — Classification, characteristics, Ballard, causes ===== */
+S(C1, "Two newborns are admitted together. Baby A was born at 35 weeks weighing 2,900 g; Baby B was born at 39 weeks weighing 2,400 g. Which classification is correct?", [
+    ["Baby A is preterm but not low birth weight; Baby B is low birth weight and small for gestational age, but not preterm", true, "Preterm is time (before 37 weeks) and low birth weight is weight (2,500 g or less); Baby B also falls below the 10th percentile for his age."],
+    ["Baby A is low birth weight because he came early; Baby B is preterm because his weight is below the cutoff", false, "The labels are swapped — the clock decides preterm and the scale decides low birth weight, never the reverse."],
+    ["Both babies are preterm and low birth weight, because early birth and low weight always travel together", false, "They often arrive together, but each label is earned separately; these two babies split them in opposite directions."],
+    ["Neither label applies, because classification today is based only on how mature the organs appear at examination", false, "Maturity guides care, but the labels themselves are set by gestational age and birth weight as defined."]
+  ], "ANSWER KEY — Correct answer: Baby A is preterm only; Baby B is low birth weight and SGA only. DETAILED RATIONALE — A 35-week baby is preterm whatever he weighs; a 39-week 2,400 g baby is term, low birth weight, and below the 10th percentile. Gestational age and maturation predict what the organs can do, which is why the labels are assigned fast and separately. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): apply each label by its own ruler — time for one, weight for the other.");
+
+S(C1, "A mother laboring at 33 weeks asks why her baby came early. Her chart shows twins, a urinary infection, and a history of smoking with no prenatal visits until last month. Which cause should the nurse name FIRST when teaching her?", [
+    ["Her twins — multiple gestation stretches and crowds the uterus", true, "Multiple gestation heads her personal list: it is a named cause acting directly on this pregnancy, and it is the cause her own chart makes undeniable."],
+    ["Her urinary infection — maternal infectious conditions are a named cause family", false, "Correct cause, present in her chart — it is part of the teaching, behind the multiple gestation that defines this pregnancy."],
+    ["Her smoking — a named social and substance link to preterm birth", false, "Correct cause, also hers — it belongs in the same teaching round, after the headline cause is named."],
+    ["Her missed prenatal care — adequate prenatal care is the strongest prevention lever", false, "Correct and important for the future — prevention teaching follows the explanation of what drove this birth."]
+  ], "ANSWER KEY — Correct answer: multiple gestation. The teaching order names the cause most specific to this pregnancy first, then the infection, the substance link, and the prevention lever. DETAILED RATIONALE — The chapter's cause families are multiple gestation, maternal illness including infection, pregnancy hazards, placental problems, and social/substance links including smoking and lack of prenatal care; often the cause is never found. PRIORITY FRAMEWORK — Patient Teaching (Most Specific First): start with the cause this patient's own chart proves, then widen to the rest.");
+
+S(C1, "A Ballard examination on a newly admitted newborn totals 20 points. His mother asks what the score means and how sure the team can be. Which answer is correct?", [
+    ["It estimates him at about 32 weeks, accurate within about 1-2 weeks, and it is cross-checked against her last menstrual period and ultrasound", true, "On the rating table 20 points is about 32 weeks, every 5 points moves about 2 weeks, and the score is used with the menstrual history and ultrasound."],
+    ["It estimates him at about 42 weeks, accurate within about 1-2 weeks, and it replaces the need for menstrual or ultrasound dating", false, "The anchor is flipped — 45 points is about 42 weeks, not 20 — and the score cross-checks the other methods rather than replacing them."],
+    ["It estimates him at about 32 weeks, accurate to the exact day, because it scores both his skin and his reflexes directly", false, "The week estimate is right but the precision is invented; the Ballard is accurate within about 1-2 weeks, not to the day."],
+    ["It estimates him at about 28 weeks, because each point on the total equals roughly one week of gestation", false, "The conversion is 5 points to about 2 weeks, not a point a week; that math lands four weeks too low."]
+  ], "ANSWER KEY — Correct answer: about 32 weeks, within 1-2 weeks, cross-checked with menstrual history and ultrasound. DETAILED RATIONALE — The Ballard scores external features and neurological development; anchors are 20 points at about 32 weeks and 45 at about 42 weeks. Maturity, not size, is what the score predicts — how well the organs can function outside the uterus. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): convert the score with the chapter's own anchors and state its real margin.");
+
+S(C1, "During a newborn examination, the examiner pulls a baby's elbow across his chest and it slides easily past his chin, and his heel reaches toward his ear with almost no resistance. His skin is thin with veins showing and his soles have almost no creases. Which pattern is this?", [
+    ["A preterm pattern — little flexor tone, immature skin, and a near-smooth sole", true, "Past-the-chin scarf sign, easy heel-to-ear, transparent skin, and few sole creases are all immaturity findings that agree with each other."],
+    ["A term pattern — strong flexor tone, mature skin, and deep creases over the whole sole", false, "Every element is reversed: the term elbow stops at the chin, the heel meets resistance, and the term sole is creased throughout."],
+    ["A postterm pattern — dry peeling skin, long nails, and very little lanugo or vernix left", false, "Postterm skin is dry and parchment-like with long nails; this baby's thin, veiny skin and plentiful immaturity signs point the other way."],
+    ["A normal variation pattern that appears in babies of every gestational age equally", false, "These maneuvers are maturity tests precisely because the findings change with age; they do not read the same at every age."]
+  ], "ANSWER KEY — Correct answer: a preterm pattern. DETAILED RATIONALE — The Ballard neuromuscular signs (scarf sign, heel to ear) and physical signs (skin, plantar surface) mature together: resistance grows with age. A term infant's elbow stalls at the midline and a postterm infant looks long, thin, and dry — neither matches this baby. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): when every maneuver points the same direction, name the pattern they share.");
+
+M(C1, "A nurse is completing the admission picture of a 30-week newborn, birth weight 1,350 g, in the NICU. Which findings match the expected preterm appearance? Select all that apply.", [
+    ["Extended, sprawled posture with very little flexed tone", true, "The preterm infant rests extended; the flexed posture belongs to the term infant."],
+    ["Abundant fine hair over the forehead, shoulders, and arms", true, "Lanugo is plentiful on the preterm infant and thins as gestation advances."],
+    ["Thin, transparent skin with veins visible on the abdomen", true, "Preterm skin is thin and loose enough that superficial veins show through."],
+    ["Deep creases covering the entire sole of the foot", false, "Creases over the whole sole are a mature finding; the preterm sole has few creases."],
+    ["A thick head of hair with long, meconium-stained nails", false, "That pairing belongs to the postterm infant — the opposite end of the calendar."],
+    ["Almost no padding of fat under the skin", true, "Subcutaneous fat is nearly absent in the preterm infant, which also drives his heat loss."]
+  ], "ANSWER KEY — Correct answers: extended posture, abundant lanugo, thin transparent skin with visible veins, and almost no subcutaneous fat. DETAILED RATIONALE — The preterm look is one coherent picture: sprawled tone, downy hair, see-through skin, smooth soles, scant fat. The two distractors are maturity findings borrowed from the term sole and the postterm head and nails. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): judge each finding against the preterm picture as a whole.");
+
+BANK.push({ cat: C1, type: "matrix", stem: "Four newborns are being classified on the nursery board. Match each baby to the correct classification.", cols: ["Late preterm", "Early term", "Full term", "Postterm"], rows: [
+  { t: "Born at 35 weeks and 4 days, breathing with mild support in the NICU", a: 0, r: "Late preterm runs from 34 weeks to 36 weeks and 6 days." },
+  { t: "Born at 38 weeks and 2 days after an uncomplicated labor", a: 1, r: "Early term runs from 37 weeks to 38 weeks and 6 days." },
+  { t: "Born at 40 weeks and 1 day, feeding well with his mother", a: 2, r: "Full term runs from 39 weeks to 40 weeks and 6 days." },
+  { t: "Born at 42 weeks and 3 days, long and thin with dry peeling skin", a: 3, r: "Postterm is birth beyond 42 weeks; his look matches the postmature picture." }
+], tp: "ANSWER KEY — Correct matches: 35 weeks 4 days = late preterm; 38 weeks 2 days = early term; 40 weeks 1 day = full term; 42 weeks 3 days = postterm. DETAILED RATIONALE — The classification ladder is a set of windows, not one flat idea of term: every week up to 39 counts for development, and the windows on either side carry their own risks. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): place each baby inside his window before planning his care." });
+
+S(C1, "A delivery is expected at 23 weeks. The parents ask the nurse what the team means when they call their baby periviable. Which one should the nurse share FIRST?", [
+    ["Their baby is at the very edge of viability, and births at this stage belong in a center with intensive care support", true, "Periviable means 20 to 25 weeks, the edge of viability; framing the setting and the support available is the first honest ground for every later decision."],
+    ["Survival before 24 weeks is only about 5%, and it often comes with serious impairment", false, "Correct figures from the chapter — they belong in the conversation, after the framing that lets the parents hear them as information, not verdict."],
+    ["Care before the birth may include medicines to hold off labor, steroids, and antibiotics", false, "Correct — tocolytics, antenatal steroids, and antibiotics for ruptured membranes may already have happened; the list follows the framing."],
+    ["Their informed preferences will shape the plan of care, and the team will support and guide them", false, "Correct and central to this chapter — it is stated once the parents understand what periviable means for their baby."]
+  ], "ANSWER KEY — Correct answer: the baby is at the edge of viability and belongs in a center with intensive care support. Communication order puts the definition and the setting first, then the numbers, the care already given, and the family's role in the plan. DETAILED RATIONALE — About 0.5% of births occur before the third trimester; the agreed plan is respected and any change is communicated at hand-off. PRIORITY FRAMEWORK — Therapeutic Communication (Frame Before Figures): give the meaning and the setting before the statistics.");
+
+/* ===== C2 standalones — RDS, oxygen, CPAP, BPD ===== */
+S(C2, "A 29-week newborn is 3 hours old. His respirations have climbed to 64 breaths/min, he grunts with each breath, and retractions are deepening. Which one comes FIRST?", [
+    ["Support his oxygenation by the ordered route and keep him in a warm incubator with close vital-sign monitoring", true, "His distress picture is declaring itself; oxygen support matched to need, warmth, and close monitoring are the chapter's immediate RDS spine."],
+    ["Analyze his arterial blood gases to track how his gas exchange is trending", false, "Correct and part of his care — the gases inform the support, they do not replace starting it."],
+    ["Handle him gently and as little as possible, bunching his care into quiet sessions", false, "Correct energy-saving care for a preterm infant — it shapes how the first action is delivered, not whether it starts."],
+    ["Confirm from the record whether his mother received her steroid doses before delivery", false, "Correct history to verify — it explains his risk, but a record check does not treat a baby whose retractions are deepening now."]
+  ], "ANSWER KEY — Correct answer: support oxygenation by the ordered route, in a warm incubator, with close monitoring. ABCs decide the order: a worsening breathing picture is treated first, and gases, gentle handling, and history proceed around that support. DETAILED RATIONALE — Distress signs may show at delivery or take several hours to declare; worsening brings edema, lassitude, and apnea, and mechanical ventilation may become necessary in the NICU. PRIORITY FRAMEWORK — ABCs (Breathing First): treat the failing function before documenting its history.");
+
+S(C2, "A preterm infant has been on high oxygen concentrations for many days for RDS. His nurse notes he now needs the oxygen longer than expected, and imaging suggests thickened lung membranes. Which problem has developed?", [
+    ["Bronchopulmonary dysplasia — lung damage from the toxic response to prolonged high oxygen", true, "BPD is oxygen toxicity: atelectasis, edema, and thickened membranes that interfere with ventilation and prolong oxygen dependence."],
+    ["Retinopathy of prematurity — abnormal vessel growth in his incompletely developed retina", false, "ROP is oxygen's eye injury, in the retina; this baby's injury is in his lungs, with thickened membranes and ventilator dependence."],
+    ["Necrotizing enterocolitis — inflammation of his bowel progressing toward tissue death", false, "NEC is the bowel emergency driven by lost blood supply and bacteria; nothing in this picture is abdominal."],
+    ["Intracranial hemorrhage — bleeding from the fragile capillaries inside his head", false, "That bleed announces itself with fontanel, behavior, and feeding changes — not with prolonged oxygen need and lung membrane changes."]
+  ], "ANSWER KEY — Correct answer: bronchopulmonary dysplasia. DETAILED RATIONALE — Oxygen has toxic twins: BPD in the lungs and ROP in the eyes. The lung version follows long treatment with high concentrations and can mean long dependence on oxygen or a ventilator — the reason oxygen is titrated to the blood level, never simply maximized. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): match the injury to the organ the findings describe.");
+
+S(C2, "A newborn on CPAP by nasal prongs is breathing more comfortably today, with saturations holding at 94% on less support than yesterday. His father asks what the prongs are doing and whether they can come off today. Which answer is correct?", [
+    ["The prongs hold a constant air pressure that keeps his lungs open between breaths, and the pressure is weaned gradually as he strengthens", true, "CPAP is noninvasive constant pressure used with oxygen therapy, delivered by prongs or mask, and weaned gradually — not stopped at the first good day."],
+    ["The prongs breathe for him completely, and they can be removed today now that his saturation has reached the normal range", false, "CPAP does not breathe for him — it holds his own lungs open — and a single good reading does not end a gradual wean."],
+    ["The prongs deliver extra oxygen only, and they stay until his lungs make enough surfactant at about 40 weeks", false, "Pressure, not just oxygen, is the point of CPAP, and surfactant is adequate by about 34 weeks, not 40."],
+    ["The prongs keep his airway dry, and they come off once his respiratory rate falls below 60 for a full shift", false, "Oxygen for a newborn is warmed and humidified, not drying, and no rate-for-a-shift rule governs the CPAP wean."]
+  ], "ANSWER KEY — Correct answer: CPAP holds the lungs open with constant pressure and is weaned gradually. DETAILED RATIONALE — CPAP supports the same defect RDS creates — alveoli that will not stay open — from outside, without a ventilator. Its companions are careful oxygen titration and the saturation line of 92% or higher. PRIORITY FRAMEWORK — Patient Teaching (Mechanism Before Schedule): explain what the device does before discussing when it ends.");
+
+M(C2, "A nurse is setting up oxygen for a 1,600 g preterm infant with RDS. Which elements belong in this baby's oxygen care? Select all that apply.", [
+    ["Warm and humidify the oxygen before it reaches him", true, "Newborn oxygen is always warmed and humidified; cold, dry gas dries the mucous membranes."],
+    ["Monitor his oxygen saturation continuously", true, "Saturation monitoring is continuous in this chapter, with the alarm floor set near the minimum acceptable level."],
+    ["Choose the route — cannula, hood, incubator, or ventilator — by the concentration he needs", true, "Routes are matched to the concentration required; the route is a dose decision, not a habit."],
+    ["Run the oxygen as high as the equipment allows so his saturation never dips", false, "Untitrated oxygen is the exposure behind BPD and ROP; the target is the blood level that sustains life and protects the brain."],
+    ["Watch his fluids for both overhydration and dehydration while IV fluids run", true, "IV fluids are prescribed alongside oxygen, and the nurse watches both directions of fluid error."],
+    ["Judge his oxygenation mainly by how pink his skin looks at each check", false, "Color is an unreliable witness — cyanosis needs a large amount of desaturated hemoglobin to show at all; the monitor carries this judgment."]
+  ], "ANSWER KEY — Correct answers: warmed and humidified oxygen, continuous saturation monitoring, route matched to concentration, and watching fluids in both directions. DETAILED RATIONALE — Oxygen care in this chapter is a system: the gas is conditioned, the blood level is monitored, the route fits the need, and fluids are balanced. Maximizing flow and judging by color are the two habits the chapter explicitly dismantles. PRIORITY FRAMEWORK — Safety (Oxygen as a Drug): dose it, monitor it, and respect its toxic effects like any other drug.");
+
+S(C2, "Amniotic fluid testing before a threatened 30-week delivery shows a low lecithin-to-sphingomyelin result. The mother asks what the test was looking for. Which answer is correct?", [
+    ["How much surfactant the baby's lungs have made — a low result means the lungs are short of the chemical that keeps air sacs open", true, "The L/S ratio reports surfactant in the amniotic fluid; too little surfactant is the core defect behind RDS."],
+    ["How much calcium the baby stored during the last trimester — a low result predicts jitteriness after birth", false, "Calcium transfer is a third-trimester event, but this fluid test reads lung maturity, not mineral stores."],
+    ["Whether infection is present in the fluid — a low result means bacteria have reached the baby before birth", false, "Infection risk matters in this chapter, but the L/S result is a surfactant measurement, not a culture."],
+    ["How well the placenta is aging — a low result means delivery should be delayed as long as possible", false, "Placental aging is the postterm story; this test answers a lung question for a baby threatening to come early."]
+  ], "ANSWER KEY — Correct answer: the test measures surfactant through the lecithin-to-sphingomyelin ratio. DETAILED RATIONALE — Lecithin is the fatty component surfactant is rich in; when the ratio shows too little, the antenatal steroid window and newborn surfactant through an endotracheal tube become the plan, with lung improvement expected within about 72 hours of the newborn dose. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): name what a test measures before acting on its result.");
+
+S(C2, "A preterm newborn received surfactant through his endotracheal tube 12 hours ago for RDS. His mother asks when the medicine should start helping and what the team watches meanwhile. Which answer is correct?", [
+    ["Improvement in lung function is expected within about 72 hours, while the team protects his own surfactant by keeping him warm, oxygenated, and well perfused", true, "The 72-hour expectation is the chapter's figure, and cold stress, hypoxia, and poor perfusion all reduce his own surfactant production meanwhile."],
+    ["Improvement is expected within about 12 hours, and his improving color is the main sign the team follows hour by hour", false, "The timeline is stretched wrong — the chapter allows about 72 hours — and color is the unreliable witness this chapter warns against."],
+    ["Improvement is expected within about 72 hours, but only if his oxygen is kept at maximum until the medicine takes hold", false, "The timeline is right and the condition is wrong: maximum oxygen is the exposure behind BPD and ROP, not a partner to the drug."],
+    ["Improvement cannot be judged for a week, because surfactant given this way works only after his lungs reach full maturity", false, "No week-long silence exists in the chapter; the drug is expected to improve lung function within about 72 hours."]
+  ], "ANSWER KEY — Correct answer: improvement within about 72 hours, while warmth, oxygenation, and perfusion protect his own production. DETAILED RATIONALE — Surfactant replacement and surfactant protection are the same plan: the tube dose buys time, and keeping the baby out of cold stress, hypoxia, and poor perfusion keeps his own factory running. PRIORITY FRAMEWORK — Evaluate Outcomes (Clinical Judgment): judge a drug by its named timeline and protect the physiology it depends on.");
+
+/* ===== C3 standalones — Apnea, hypoxia, oximetry ===== */
+S(C3, "A term newborn, 12 hours old and previously well, is found to have had a 30-second pause in breathing with a heart rate of 96 beats/min. Which consideration comes FIRST in the nurse's thinking?", [
+    ["Apnea in a term infant is rare and usually signals serious pathology, so this episode is escalated as a warning sign, not a variation of prematurity", true, "The context flips the meaning: apnea of prematurity belongs to the immature nervous system, but in a term infant apnea points to serious pathology and drives the response."],
+    ["Apnea is expected in the first day for babies of every gestational age, so the episode is charted with his routine observations", false, "Correct charting, wrong premise — a 30-second pause is never a routine finding in a term baby."],
+    ["His mother should be taught the stimulation routine so she can manage episodes like this at the bedside herself", false, "Correct teaching for preterm parents later in the stay — it is not the first consideration for a term baby's first episode."],
+    ["His temperature should be rechecked at the next round, since cold stress can bring on pauses in breathing", false, "Correct association for preterm cold stress — it does not outrank recognizing what apnea means in a term infant."]
+  ], "ANSWER KEY — Correct answer: in a term infant, apnea signals serious pathology and is escalated. All four options contain correct actions or associations — context decides the priority: the same 20-second-plus pause that is expected immaturity in a preterm baby is a red flag in a term baby. DETAILED RATIONALE — Apnea is breathing stopped for 20 seconds or longer, traveling with bradycardia under 110 beats/min and cyanosis; its meaning is assigned by the baby it happens to. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): interpret the finding in the patient in front of you, not the population it usually belongs to.");
+
+S(C3, "A pale, severely anemic preterm infant has a saturation reading of 95% and no blue color anywhere. A student says, 'At least his oxygen is fine — look how pink he is.' Which correction is right?", [
+    ["Neither witness clears him — cyanosis needs at least 5 g/dL of desaturated hemoglobin to show, and fetal hemoglobin can hide tissue hypoxia behind a normal saturation", true, "Both traps in one baby: an anemic infant may never look blue however hypoxic he is, and fetal hemoglobin releases oxygen reluctantly, so tissues can starve behind a reassuring number."],
+    ["The student is right about the color but wrong about the number, because saturation readings are never accurate in anemic infants", false, "The reading can be accurate as a blood value; the trap is that a normal blood value does not guarantee tissue oxygenation."],
+    ["The student is right about the number but wrong about the color, because pink skin in a newborn always means the tissues are well supplied", false, "Pink skin is exactly what severe anemia can preserve while the tissues go short; color is the weak witness here."],
+    ["Both witnesses clear him, and the real risk in anemia is a low heart rate, which should be the team's only oxygen concern", false, "Bradycardia matters in apnea, but it does not erase the two oxygen traps this baby demonstrates."]
+  ], "ANSWER KEY — Correct answer: neither color nor a normal saturation alone clears him. DETAILED RATIONALE — Hypoxia is inadequate oxygenation at the cellular level, which is a tissue judgment, not a color or a single number. Trust the monitor and the baby together — never color alone. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): when two easy witnesses can both mislead, say so explicitly and widen the assessment.");
+
+BANK.push({ cat: C3, type: "matrix", stem: "A nurse is reviewing four NICU monitor pictures at hand-off. Match each picture to the correct interpretation.", cols: ["Apnea with bradycardia", "Normal saturation", "Sensor problem", "Respiratory distress"], rows: [
+  { t: "No breath for 25 seconds, heart rate 98 beats/min, dusky color", a: 0, r: "A pause of 20 seconds or longer with a heart rate under 110 beats/min is the apnea-bradycardia pair." },
+  { t: "Saturation 94%, monitor heart rate matching the baby's own rate", a: 1, r: "At or above 92% is normal, and matching heart rates validate the reading." },
+  { t: "Saturation 91%, monitor heart rate 40 beats/min off the baby's own rate", a: 2, r: "Mismatched heart rates mean the reading cannot be trusted — reapply or adjust the sensor." },
+  { t: "Respirations 66 breaths/min, grunting, flaring, and retractions", a: 3, r: "Rate at or above 60 with grunting, flaring, and retractions is the distress sign picture." }
+], tp: "ANSWER KEY — Correct matches: 25-second pause with rate 98 = apnea with bradycardia; saturation 94% with matching rates = normal; mismatched rates = sensor problem; rate 66 with grunting and retractions = respiratory distress. DETAILED RATIONALE — Each row is read with a different rule: the 20-second and 110 lines, the 92% line plus its validation check, and the distress sign set. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): apply the rule that belongs to the picture in front of you." });
+
+S(C3, "A preterm infant's apnea monitor alarms for the third time in an hour. Each pause has ended with gentle stimulation of his feet and back. Between episodes he breathes at 44 breaths/min with a saturation of 93%. Which plan fits the chapter?", [
+    ["Keep the apnea monitor on, respond to every alarm with the stimulation ladder, and track his rate, heart rate, and saturation together", true, "Apnea of prematurity is monitor-watched and ladder-treated; his between-episode numbers sit inside their lines, so vigilant monitoring is the plan."],
+    ["Remove the monitor between episodes so the alarms stop disturbing his rest and his parents", false, "The monitor is what catches the next pause; removing it trades his safety for quiet and leaves the ladder with nothing to answer."],
+    ["Start him on a medication the chapter names for apnea so the pauses stop recurring and keep watching him closely through the next care round", false, "The chapter names no drug for apnea of prematurity — the treatment is the response ladder plus monitoring."],
+    ["Keep him flat and completely still after each episode, since any handling can trigger the next pause", false, "The ladder itself includes suction and raising the head of the bed to semi-Fowler; stillness is not the treatment, response is."]
+  ], "ANSWER KEY — Correct answer: monitor on, ladder ready, rate and saturation tracked together. DETAILED RATIONALE — Recurrent apnea of prematurity is expected in this population; the chapter's answer is surveillance plus the stimulation, suction-and-position, then bag ladder — in that order, every time. Inventing a drug or removing the alarm both fail the chapter. PRIORITY FRAMEWORK — Safety (Surveillance): for a recurring event with a defined response, the monitor and the ladder stay in place.");
+
+S(C3, "A nurse places a pulse oximeter on a preterm infant for continuous monitoring. Which placement and setup follow the chapter's skill?", [
+    ["Sensor on the toe or side of the foot, flush to the skin and taped firmly, sensor halves opposite each other, alarm set near 92-95%", true, "That is Skill 13.1 whole: site, flush fit, aligned halves shown by the printed circles, and the alarm at the minimum acceptable saturation."],
+    ["Sensor wrapped loosely around the ankle so it can be slid aside quickly during cares, alarm set near 85%", false, "A loose sensor misreads, and an 85% alarm floor stays silent through saturations the chapter calls abnormal."],
+    ["Sensor on the palm under a mitten, sensor halves side by side, alarm set near 92-95%", false, "The site and the alignment are both wrong — foot or toe, with the two halves facing each other across the vascular bed."],
+    ["Sensor on the toe, flush and aligned, with the alarm turned off so it does not wake him between checks", false, "Placement is right and the alarm rule is broken; the alarm floor is part of the skill, not an optional extra."]
+  ], "ANSWER KEY — Correct answer: foot or toe, flush, aligned halves, alarm near 92-95%. DETAILED RATIONALE — The skill ends with documentation: start time, heart rate and saturation, sensor site, and any oxygen with its method. A reading is validated by matching the monitor's heart rate to the infant's own before any of it is charted. PRIORITY FRAMEWORK — Take Action (Clinical Judgment): a monitoring skill is its setup rules, not just its device.");
+
+
+/* ===== C4 standalones — Thermoregulation and cold stress ===== */
+S(C4, "A 1,500 g preterm infant is found with mottled skin, a respiratory rate that has risen with brief pauses, a heart rate of 102 beats/min, and limp, sleepy behavior. His skin temperature is falling. Which one comes FIRST?", [
+    ["Restore his neutral thermal environment — adjust the incubator or warmer to hold his body temperature in the target band", true, "This is the cold stress sign set whole, and warmth is the treatment: the environment is corrected first so every other measure stops fighting an ongoing heat loss."],
+    ["Check his blood glucose, since a cold baby burns glucose to stay warm and keep watching him closely through the next care round", false, "Correct and expected — cold burns glucose toward hypoglycemia — but the check proceeds while the heat loss driving it is being stopped."],
+    ["Record both his temperature and the incubator's temperature on the chart", false, "Correct standing duty, done every 2 hours — documentation follows the hands-on correction of the environment."],
+    ["Teach his parents the five signs of cold stress so they can spot them on visits", false, "Correct teaching for this family — it belongs after the baby in front of them is warm and stable."]
+  ], "ANSWER KEY — Correct answer: restore the neutral thermal environment first. Maslow and safety decide the order: a baby showing decreased skin temperature, rising respirations with apnea, bradycardia, mottling, and lethargy is in cold stress, and the snowball (glucose burned, oxygen burned, surfactant suppressed) stops only when the heat loss stops. DETAILED RATIONALE — Early detection prevents the complications rather than chasing them; the glucose check, the paired temperature charting, and the parent teaching all proceed in the same round, behind the warmer. PRIORITY FRAMEWORK — Safety First (Stop the Ongoing Harm): interrupt the active process before measuring its effects.");
+
+M(C4, "A student is listing why a preterm infant gets cold so much faster than a term infant. Which reasons belong on the list? Select all that apply.", [
+    ["Little or no brown fat to insulate him", true, "The body's own insulation is missing in the preterm infant."],
+    ["A surface area that is large for his body weight, with a large head surface", true, "Radiation loss runs off that large surface, and the head's share predisposes him further."],
+    ["An immature heat-regulating center in the brain", true, "The control center itself is unfinished, so his temperature defense starts late and weak."],
+    ["Muscles too weak to shiver, in an extended posture that exposes more surface", true, "He cannot shiver, and the sprawled preterm posture opens still more surface to the room."],
+    ["Sweat glands that overwork and cool him whenever the room warms up", false, "His sweat glands are not functioning to capacity — underworking, not overworking; the direction is flipped."],
+    ["A metabolic rate so low that he produces almost no heat of his own", false, "His metabolism runs high, which is why his glucose falls easily; low production is the opposite of his problem."]
+  ], "ANSWER KEY — Correct answers: little brown fat, large surface area for weight with a large head, immature heat center, and weak muscles that cannot shiver in an extended posture. DETAILED RATIONALE — The factor list is a set of directions: insulation missing, surface too big, control immature, shivering absent, posture open, metabolism high. The two distractors each flip one direction on that list. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): learn the list by its directions, because the exam flips them one at a time.");
+
+S(C4, "At a bedside check, a nurse finds a preterm infant's temperature probe taped over a rib, slipped under his diaper, with no cover on it under his radiant warmer. Which correction set is right?", [
+    ["Move the probe to the right upper quadrant of his abdomen, off bone and out from under the diaper, and cover it with a protector under the warmer", true, "All three errors fixed at once: RUQ abdomen, never over a bony prominence or under a diaper, and a protector so the warmer's heat does not fake the reading."],
+    ["Move the probe to his upper arm and cover it with a protector, since any flat skin site reads the same under a warmer", false, "The site is specific — right upper quadrant of the abdomen — because skin temperature there falls before core temperature does."],
+    ["Leave the probe where it is but add the protector, since the cover is the only part that affects the reading", false, "A covered probe over a rib under a diaper still reads bone and diaper, not the early-warning skin site."],
+    ["Remove the probe and rely on axillary temperatures every 2 hours, since skin probes cause too many errors", false, "Axillary readings have their place, but the probe exists because skin temperature drops before core temperature — removing it removes the early warning."]
+  ], "ANSWER KEY — Correct answer: RUQ abdomen, off bone, out of the diaper, covered under the warmer. DETAILED RATIONALE — Probe rules are a matched set: site (right upper quadrant), exclusions (no bone, no diaper, no line of cool oxygen input), and the radiant-warmer protector. The probe also must not sit over brown fat areas, extremities, or broken skin. PRIORITY FRAMEWORK — Assess Before You Act (Validate the Data): a monitoring device placed wrong manufactures wrong numbers.");
+
+S(C4, "A nurse is preparing a radiant warmer for a newly admitted preterm infant. A colleague suggests laying the clear plastic shield over the warmer to 'keep his heat in.' Which response is correct?", [
+    ["Do not use the shield — it can block the infrared heat; instead, cover his temperature probe with a reflective patch", true, "The chapter's radiant-warmer pair: no Plexiglas shield over the baby, and a reflective patch over the probe so it reads the infant, not the warmer."],
+    ["Use the shield — it holds his heat in the same way the incubator walls hold heat for babies inside them", false, "The incubator comparison fails: the shield sits between the heat source and the baby and blocks the infrared heat he needs."],
+    ["Use the shield but leave the probe uncovered, so the probe can warn the team if he gets too warm", false, "An uncovered probe under a warmer reads the warmer's heat, not the baby's — the patch belongs on the probe either way."],
+    ["Do not use the shield, and lay the reflective patch over his chest so his skin reflects the excess heat away", false, "The patch's job is to shield the probe's reading, not the baby's skin; moving it to his chest invents a use the chapter never gives it."]
+  ], "ANSWER KEY — Correct answer: no shield over the warmer; reflective patch over the probe. DETAILED RATIONALE — Radiant warmers give easy access while holding a neutral thermal environment, but only if the infrared path stays open. Each distractor moves one object — shield or patch — to the wrong place. PRIORITY FRAMEWORK — Safety (Equipment Rules): in equipment items, every object has one assigned place; swapping them is the trap.");
+
+S(C4, "A small preterm infant keeps drifting below his temperature target even though his incubator is set where his larger neighbor's is set. His nurse also notes the incubator humidity reads 45%. Which one comes FIRST?", [
+    ["Raise his incubator setting — smaller infants may need higher incubator temperatures to hold their optimal body temperature", true, "The chapter's rule is size-based: the incubator is set to whatever holds this infant's temperature, and smaller infants run higher settings."],
+    ["Raise the humidity toward the desirable level of 60% or higher and keep watching him closely through the next care round", false, "Correct adjustment for his environment — it supports the same goal, behind the temperature setting that defines his thermal environment."],
+    ["Record both his temperature and the incubator's temperature at this check", false, "Correct standing duty every 2 hours — the record follows the adjustment it documents."],
+    ["Use discretion about his bath today, since a wet infant loses temperature fast by evaporation", false, "Correct heat-conserving judgment — a care decision that proceeds once his environment is set to hold him warm."]
+  ], "ANSWER KEY — Correct answer: raise his incubator setting to hold his temperature. Physiology first decides the order: the setting that holds his 36.2-37°C band is the intervention, and humidity, charting, and bath judgment arrange around it. DETAILED RATIONALE — Overheating is the opposite error and also raises oxygen and calorie needs, so the setting is titrated to the baby, never copied from a neighbor and never maximized. PRIORITY FRAMEWORK — Safety First (Individualize the Setting): the right setting is the one that holds this patient's target.");
+
+BANK.push({ cat: C4, type: "order", stem: "A preterm infant's temperature has drifted down and cold stress signs are beginning. Place the nurse's warming responsibilities in the order they should be carried out.", items: [
+  { t: "Confirm his skin probe sits on the right upper quadrant of his abdomen and is covered under the warmer", r: "Skin temperature falls before core temperature, so a valid probe reading is the gauge the warming is judged by." },
+  { t: "Adjust the incubator or warmer to hold his body temperature inside the target band", r: "The neutral thermal environment is restored to hold him at minimal oxygen and calorie cost." },
+  { t: "Watch for the cold stress signs to reverse as his temperature recovers", r: "Mottling, lethargy, bradycardia, and fast breathing with pauses are the signs that should unwind as he warms." },
+  { t: "Record his temperature together with the incubator or warmer temperature", r: "Both temperatures are charted as a pair, on the every-2-hours rhythm." }
+], tp: "ANSWER KEY — Correct order: verify the probe site and cover, then adjust the warmer to the target band, then watch the cold stress signs reverse, then record both temperatures as a pair. DETAILED RATIONALE — Warming is a measured intervention: a trustworthy gauge first, the environment corrected second, the response evaluated third, and the paired record last. PRIORITY FRAMEWORK — Nursing Process (Assess, Intervene, Evaluate, Document): the order of the steps is the process itself." });
+
+S(C4, "Parents visiting their preterm daughter see her lying in an incubator dressed only in a diaper and ask why she cannot wear the clothes they brought. Which teaching is correct?", [
+    ["The incubator holds a controlled temperature, air, and humidity so she stays warm while spending the least possible oxygen, and her team needs to see her skin and chest at all times", true, "That is the neutral thermal environment defined: normal temperature at minimum oxygen cost, with the observation access her care depends on."],
+    ["Clothes would overheat her, because preterm infants produce more body heat than term infants and cannot shed it", false, "Her problem is the opposite — she loses heat faster than she makes it; overheating is a risk of the equipment, not of her own production."],
+    ["Clothes are not allowed until she reaches 2,500 g, when hospital policy permits dressing NICU babies before the next scheduled assessment comes due", false, "No weight-for-clothes rule exists in the chapter; the diaper-only state serves the thermal environment and observation."],
+    ["Her skin is too fragile for any fabric contact until it matures at about 34 weeks of age and keep watching him closely through the next care round", false, "Her skin does need gentle handling and little tape, but fabric is not banned to a week count; warmth control and visibility are the reasons."]
+  ], "ANSWER KEY — Correct answer: the incubator is a neutral thermal environment holding her warm at the least oxygen cost, with her body visible for observation. DETAILED RATIONALE — Thermoregulation for the preterm infant is essential to survival, and the incubator also separates her from other infants as part of infection control. The teaching names both jobs so the parents read the setup as treatment, not deprivation. PRIORITY FRAMEWORK — Patient Teaching (Explain the Environment): parents cooperate with care they can explain back.");
+
+/* ===== C5 standalones — Hypoglycemia and hypocalcemia ===== */
+S(C5, "Two glucose results return together: 34 mg/dL for a term newborn and 34 mg/dL for a preterm newborn, both 3 hours old. Which interpretation and action are correct?", [
+    ["Only the term infant crosses his cutoff — below 40 mg/dL — so he is treated as hypoglycemic, while the preterm infant's line is below 30 mg/dL and he is monitored closely", true, "The two cutoffs are the chapter's classic flipped pair: term below 40, preterm below 30. The same number flags one baby and not the other."],
+    ["Both infants are hypoglycemic, because any newborn glucose under 40 mg/dL meets the definition regardless of gestation", false, "One cutoff for everyone erases the pair; the preterm line is drawn lower, at below 30 mg/dL."],
+    ["Only the preterm infant is hypoglycemic, because his stores are thinner and any low value counts double for him", false, "His thinner stores raise his risk, but the definition still runs on the numbers — and his number does not cross his line."],
+    ["Neither infant is hypoglycemic, because glucose normally dips in the first hours and results are not judged until the second day", false, "The dip is real and expected, and it is judged against the cutoffs from the start — the brain needs a steady glucose supply now."]
+  ], "ANSWER KEY — Correct answer: the term infant only, by the below-40 line; the preterm line is below 30. DETAILED RATIONALE — Every newborn's glucose dips in the first 1-2 hours, and the preterm dip runs deeper because glycogen and fat stores are thin. Sepsis, RDS, and unstable temperature drain the tank faster by raising the metabolic rate. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): judge a value against the line drawn for that patient.");
+
+S(C5, "A preterm infant shows tremors, a weak high-pitched cry, lethargy, and irritability, and his temperature is low. His glucose has not yet been checked this shift. Which one comes FIRST?", [
+    ["Check his blood glucose now — this sign set is the chapter's hypoglycemia picture, and his brain needs a steady glucose supply", true, "Tremors, weak or high-pitched cry, lethargy, convulsions, hypothermia, and irritability are the book's hypoglycemia sign list; the check that names the problem goes first."],
+    ["Begin the ordered gavage or parenteral feeding to refill his fuel stores", false, "Correct treatment direction for hypoglycemia — it is dosed and confirmed against the glucose value the first action obtains."],
+    ["Warm him in the incubator, since a low temperature can drain his glucose further", false, "Correct protective care — an unstable temperature raises his metabolic rate — and it proceeds alongside, behind the defining check."],
+    ["Document the sign set and his feeding history for the provider's rounds and keep watching him closely through the next care round", false, "Correct record-keeping — it reports a problem that the glucose check has first confirmed and sized."]
+  ], "ANSWER KEY — Correct answer: check his glucose first. Assessment before intervention decides the order when a named sign set points at a measurable problem: the value confirms hypoglycemia and steers the feeding that treats it. DETAILED RATIONALE — Hypoglycemia in this population is anticipated and treated promptly, not watched; frequent glucose monitoring is a standing nursing responsibility, and preterm infants at highest risk are the growth-restricted, the post-dates, and those born to diabetic mothers. PRIORITY FRAMEWORK — Assess Before You Act (Confirm the Measurable Problem): when a sign set names a number, get the number first.");
+
+BANK.push({ cat: C5, type: "dropdown", stem: "A nurse is teaching a student the fuel and mineral rules for preterm infants. For each statement, choose the correct completion.<br><br>The daily calorie target feedings aim at is<br>[[0]]<br><br>Late hypocalcemia appears at about<br>[[1]]<br><br>The calcium added to formula for late hypocalcemia must be the<br>[[2]]", blanks: [
+  { o: [O("120-150 kcal/kg per day", true, "That is the fuel target the chapter sets for preterm feedings."), O("80-100 kcal/kg per day", false, "That range underfeeds the target; the preterm need runs higher because stores are thin and growth is the job."), O("180-200 kcal/kg per day", false, "That range overshoots the chapter's target; almost-right numbers on either side are the trap.")] },
+  { o: [O("1 week of age, in infants fed cow's milk", true, "Late hypocalcemia arrives at about 1 week when cow's milk pushes phosphate up and calcium falls."), O("1 day of age, in infants fed breast milk", false, "The timing and the milk are both moved; the late pattern is a week out and rides on cow's milk."), O("1 month of age, in infants fed preterm formula", false, "No month-later calcium pattern exists in the chapter; the early-late pair is birth versus about 1 week.")] },
+  { o: [O("Powder form of calcium lactate", true, "Calcium lactate powder in formula lowers the phosphate driving late hypocalcemia."), O("Tablet form of calcium lactate, crushed well", false, "The tablets do not dissolve in milk and must not be used — crushing does not rescue them."), O("Intravenous form of calcium lactate", false, "The IV calcium drug in the chapter is calcium gluconate; lactate is the formula powder. The pair must not be swapped.")] }
+], tp: "ANSWER KEY — Correct answers: 120-150 kcal/kg per day; late hypocalcemia at about 1 week on cow's milk; calcium lactate as powder in formula. DETAILED RATIONALE — Each blank guards a pairing: the calorie target, the late pattern's timing and milk, and the lactate form. When the powder is later discontinued, the nurse watches again for signs of neonatal tetany. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): a plan is only right when its numbers, timing, and forms are all the chapter's." });
+
+S(C5, "A preterm infant is receiving intravenous calcium gluconate for hypocalcemia. Midway through the infusion his heart rate falls to 88 beats/min. Which action is correct?", [
+    ["Report the bradycardia at once and follow the provider's direction on the infusion — a falling heart rate is the named danger of this drug", true, "The book's Safety Alert for IV calcium gluconate: monitor the heart rate closely during the infusion and report bradycardia if it occurs."],
+    ["Slow the infusion on your own and continue it, since a slower rate usually settles a preterm heart rate", false, "Bradycardia on this drug is a report-first event, not a nurse-titrated one; the alert assigns the nurse the watching and the reporting."],
+    ["Finish the infusion quickly so the calcium is in, then recheck his heart rate at the end", false, "Speeding a drug whose danger is showing reverses the safety logic; the sign is answered when it appears, not after the dose."],
+    ["Give his next feeding early, because feeding raises a preterm infant's heart rate back toward normal", false, "Feeding is not a treatment for drug-related bradycardia, and feeding into an unstable moment adds its own risks."]
+  ], "ANSWER KEY — Correct answer: report the bradycardia at once. DETAILED RATIONALE — Early hypocalcemia rides on the missed third-trimester calcium transfer and a parathyroid that fails to respond; its high-risk list includes infants stressed by hypoxia or birth trauma, infants given sodium bicarbonate, infants of diabetic mothers, and infants whose mothers had low vitamin D intake. The IV treatment's watch is the heart rate, for the whole infusion. PRIORITY FRAMEWORK — Safety (Drug Alert): when a named drug danger appears, the assigned response is immediate reporting.");
+
+M(C5, "A nurse reviews the nursery census for babies who need the closest glucose watching today. Which babies belong on that list? Select all that apply.", [
+    ["A growth-restricted preterm infant born yesterday", true, "Growth restriction (IUGR) is on the higher-risk list — his stores were under-delivered before birth."],
+    ["A newborn whose mother has diabetes mellitus", true, "Infants of diabetic mothers are named on the hypoglycemia higher-risk list."],
+    ["A post-dates newborn admitted for observation", true, "Post-dates infants are on the list — reserves spent waiting to be born leave the tank low."],
+    ["A preterm infant being treated for sepsis", true, "Sepsis raises the metabolic rate and drains glucose faster — a tank-drainer on top of thin stores."],
+    ["A full-term infant feeding well every few hours with his mother", false, "A well-feeding term infant gets routine newborn monitoring, not a place on the closest-watch list."],
+    ["A preterm infant with an unstable temperature this morning", true, "An unstable temperature raises the metabolic rate and drains the tank — the third named drainer beside sepsis and RDS."]
+  ], "ANSWER KEY — Correct answers: the growth-restricted preterm infant, the infant of a diabetic mother, the post-dates infant, the septic preterm infant, and the preterm infant with an unstable temperature. DETAILED RATIONALE — The list has two halves: babies who start with thin stores (preterm, growth-restricted, diabetic mother's, post-dates) and babies whose tanks are being drained (sepsis, RDS, unstable temperature). The well-feeding term infant belongs to neither half. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): build a watch list from both the stores a baby started with and the drains acting on him now.");
+
+S(C5, "A 1-week-old infant fed cow's milk is found to have a low serum calcium. His mother asks why this happened now and what will be added to his feeds. Which explanation is correct?", [
+    ["This is late hypocalcemia — the milk raised his phosphate, which pulled his calcium down, and calcium lactate powder in the formula lowers the phosphate", true, "Timing, mechanism, and fix all match the late pattern: about 1 week, cow's milk, phosphate up and calcium down, powder in the formula."],
+    ["This is early hypocalcemia — his parathyroid failed to answer his low calcium at birth, and intravenous calcium is the fix", false, "Early hypocalcemia is the birth-window parathyroid story; a 1-week-old on cow's milk is the late pattern with a formula-level fix."],
+    ["This is late hypocalcemia, and crushed calcium lactate tablets stirred into each bottle will bring the phosphate down", false, "The pattern is named right and the form is wrong — the tablets are insoluble in milk and must not be used; the powder is the form."],
+    ["His calcium fell because cow's milk contains no calcium at all, and switching him to water between feeds will correct it", false, "Cow's milk carries calcium; the problem is its phosphate load, and water between feeds is not a treatment in this chapter."]
+  ], "ANSWER KEY — Correct answer: late hypocalcemia from cow's milk phosphate, treated with calcium lactate powder. DETAILED RATIONALE — Early and late hypocalcemia are told apart by the calendar and the mechanism: parathyroid lag right after birth versus phosphate pressure at about 1 week. The drug pair must stay unswapped — gluconate is intravenous, lactate is the formula powder. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): let the timing assign the pattern, then let the pattern assign the treatment.");
+
+S(C5, "A preterm infant's calcium lactate powder is being slowly discontinued this week after treatment for late hypocalcemia. Which one comes FIRST in importance for this change?", [
+    ["Watch him again for signs of neonatal tetany as the powder comes off", true, "The chapter attaches this exact watch to this exact moment: when the powder is discontinued, tetany signs are monitored for again."],
+    ["Record the discontinuation schedule and his formula volumes in his chart", false, "Correct documentation of the change — it supports the watch, it does not replace it."],
+    ["Teach his parents why the powder was added to his formula in the first place", false, "Correct teaching about the phosphate story — it proceeds in the same round, behind the surveillance the change demands."],
+    ["Check that the pharmacy has removed the tablet form from his medication bin", false, "Correct safety housekeeping, since tablets must never be used — a background check, not the front-line watch for tetany."]
+  ], "ANSWER KEY — Correct answer: watch again for signs of neonatal tetany as the powder is discontinued. The chapter's own sequencing decides the priority: a treatment being withdrawn reopens the window it was holding shut, so surveillance for the returning problem outranks the paperwork and teaching around the change. DETAILED RATIONALE — Calcium support is judged by what happens as it leaves; the tetany watch is the evaluation built into the discontinuation order itself. PRIORITY FRAMEWORK — Evaluate Outcomes (Clinical Judgment): when a support is withdrawn, watch first for the problem it was treating.");
+
+S(C5, "A nurse explains to a student why a preterm infant's glucose falls faster than a term infant's in the first hours. Which explanation is correct?", [
+    ["His shorter stay in the uterus left him thin stores of glycogen and fat, so the normal early dip runs deeper and empties sooner", true, "Store size is the mechanism: the dip of the first 1-2 hours happens to every newborn, and thin stores make the preterm version deeper."],
+    ["His kidneys waste glucose into his urine faster than a term infant's kidneys do", false, "Immature kidneys do handle fluids and salts poorly, but glucose wasting is not the chapter's mechanism for the early dip."],
+    ["His liver makes too much insulin in response to his mother's blood sugar after birth", false, "Excess insulin belongs to another story; this chapter's mechanism is stores too small for the dip, not a hormone overshoot."],
+    ["His feedings are delayed because his stomach is small, and delayed feeding is the only reason his glucose falls", false, "Feeding limits contribute to his nutrition problem, but the dip precedes feeding — it is driven by the stores he was born with."]
+  ], "ANSWER KEY — Correct answer: thin glycogen and fat stores from a shortened stay in the uterus. DETAILED RATIONALE — That is why feedings for these infants aim at 120-150 kcal/kg per day and why gavage or parenteral routes are used when he is too weak to suck and swallow: the tank must be refilled by a route he can manage. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): the right mechanism explains both the finding and the treatment plan built for it.");
+
+
+/* ===== C6 standalones — Feeding, gavage, TPN ===== */
+S(C6, "A 33-week infant, birth weight 1,800 g, is rooting weakly and tires after a few sucks. His mother wants to know why he cannot simply bottle-feed like his term cousin did. Which one should the nurse give FIRST?", [
+    ["Breathing, sucking, and swallowing do not coordinate before about 34 weeks, so oral feeding must wait for, or work around, that milestone", true, "Coordination timing is the headline reason: at 33 weeks the pattern is not yet safe, and gavage, IV fluids, or TPN bridge the gap."],
+    ["His stomach capacity is small and the sphincters at both ends are immature, so feeds come back up easily", false, "Correct gut facts that shape his feeding plan — they follow the coordination reason that decides the route today."],
+    ["Feeding tires him out, and the energy it costs can itself cause early weight loss and keep watching him closely through the next care round", false, "Correct and worth teaching — it explains his weak effort, behind the safety reason his route is a tube for now."],
+    ["His fat absorption is poor, so supplemental vitamins are usually prescribed for babies like him", false, "Correct nutrition detail for his plan — a supporting fact, not the answer to why the bottle must wait."]
+  ], "ANSWER KEY — Correct answer: suck-swallow-breathe coordination arrives at about 34 weeks. Safety decides the teaching order: the coordination milestone is what makes oral feeding unsafe today, while stomach size, effort cost, and fat absorption shape the plan built around the tube. DETAILED RATIONALE — Infants over 1,500 g may bottle-feed with a small, soft nipple with a large hole when they are ready, because it costs less sucking effort and energy. PRIORITY FRAMEWORK — Safety First (Airway and Aspiration): the explanation that protects the airway leads the teaching.");
+
+S(C6, "Before a gavage feed, a nurse aspirates a preterm infant's stomach and gets back a noticeable amount of liquid formula from the last feed. The infant is calm, with soft bowel sounds and a stable girth. Which action is correct?", [
+    ["Notify the physician before feeding — a residual of liquid is the finding that gates the feed", true, "The aspirate rule is a matched pair: mucus or air only means feed as planned; liquid residual means notify the physician before feeding."],
+    ["Feed as planned — only mucus or air in the aspirate would have been a reason to pause and call", false, "The pair is flipped exactly: mucus or air clears the feed, and liquid is the notify-first finding."],
+    ["Discard the residual, give half the feed, and chart the amount for the next nurse", false, "Halving the feed on the nurse's own judgment skips the notification the rule assigns to this finding."],
+    ["Switch him to bottle feeding for this feed, since his stomach clearly is not emptying by tube", false, "A liquid residual is not a route problem to solve by bottle; it is a report that precedes any feed by any route."]
+  ], "ANSWER KEY — Correct answer: notify the physician before feeding. DETAILED RATIONALE — The pre-feed aspirate is a standing gate for every gavage feed, alongside girth measurement and bowel sounds — the same checks that catch NEC early. A calm baby does not cancel a rule written for exactly this result. PRIORITY FRAMEWORK — Safety (Follow the Gate): when a check exists to gate an action, its result decides, not the baby's mood.");
+
+M(C6, "A nurse is planning the milk and feeding care for a 30-week infant whose mother is expressing milk. Which elements belong in the plan? Select all that apply.", [
+    ["Use the mother's expressed milk, or donor milk from the NICU bank if her milk is not in", true, "Human milk is ideal — its fat absorbs readily — and donor milk is the chapter's backup when the mother's milk is not available."],
+    ["Give him a pacifier during gavage feeds for nonnutritive sucking", true, "The pacifier during a tube feed gives comfort now and builds feeding skills for later."],
+    ["Position him on his right side or abdomen after feeds", true, "That position promotes gastric emptying and reduces aspiration if vomiting occurs."],
+    ["Substitute standard term formula freely whenever expressed milk runs short", false, "Formulas do not swap: term formula burdens preterm kidneys and can cause central nervous system problems."],
+    ["Start feedings early once his gut is ready, with bowel sounds present and meconium passed", true, "Those two signs mark gut readiness, and early feeding reduces hypoglycemia, hyperbilirubinemia, and dehydration risks."],
+    ["Feed him well past fullness at each feed so his weight gain stays ahead", false, "Overfeeding an immature stomach invites regurgitation and vomiting; his sphincters cannot hold an overloaded feed."]
+  ], "ANSWER KEY — Correct answers: mother's expressed or donor milk, pacifier during gavage feeds, right-side or abdominal positioning after feeds, and early feeding once bowel sounds and meconium show readiness. DETAILED RATIONALE — Every element answers a named preterm feeding problem: milk choice for absorption, nonnutritive sucking for skill, position for emptying and aspiration, readiness signs for timing. The formula swap and the overfeed are the two directions the chapter forbids. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): assemble the plan element by element from the problems it must solve.");
+
+S(C6, "A grandmother asks why the tube for her grandson's feeds goes into his mouth instead of his nose, 'where tubes usually go.' Which answer is correct?", [
+    ["Newborns breathe through the nose, so a nasal tube would take up space he needs for breathing; the oral route leaves his airway's front door open", true, "Orogavage over nasogastric is one of the chapter's signature directions, and obligatory nose breathing is its whole reason."],
+    ["His nose is too small for any tube until he reaches term age, so the mouth is the only route that physically fits", false, "Size is not the stated reason; nasal tubes fit, but they cost breathing space in a baby who breathes through his nose."],
+    ["Oral tubes are changed less often, and his tube only needs replacing every few weeks instead of days", false, "The replacement window is every 3-7 days — the invented weeks stretch it well past the chapter's rule."],
+    ["Feeds through the mouth digest faster, because the milk reaches his stomach already warmed by the mouth", false, "Digestion speed is not the chapter's reason; the airway space is."]
+  ], "ANSWER KEY — Correct answer: orogavage protects the nasal airway of an obligatory nose breather. DETAILED RATIONALE — This is a right-route question, and the exam flips it by offering the nasal route as the 'usual' one. In the newborn, usual loses to anatomy: the nose is the breathing route, so the feeding tube goes through the mouth. PRIORITY FRAMEWORK — Safety (Airway First): a feeding decision never spends airway space.");
+
+BANK.push({ cat: C6, type: "matrix", stem: "A charge nurse is matching four NICU infants to the feeding route that fits each one. Match each infant to the correct route.", cols: ["Orogavage feeds", "TPN by vein", "Bottle with a soft, large-hole nipple", "Breast milk by mother's choice"], rows: [
+  { t: "A 31-week infant, 1,400 g, whose suck and swallow do not yet coordinate", a: 0, r: "Coordination arrives about 34 weeks; the tube through the mouth bridges the gap." },
+  { t: "An infant with confirmed bowel necrosis risk whose bowel must rest completely", a: 1, r: "TPN infuses lipids and nutrients by vein for the infant too ill to feed by mouth — and rests the bowel in NEC." },
+  { t: "A stable infant weighing 1,650 g who roots and sucks with growing strength", a: 2, r: "Over 1,500 g he may bottle-feed with a small, soft nipple with a large hole, costing him less effort." },
+  { t: "A 29-week infant whose mother is pumping and bringing in her own milk daily", a: 3, r: "The mother's own expressed milk is a feeding option in its own right — human milk is ideal for the preterm gut." }
+], tp: "ANSWER KEY — Correct matches: uncoordinated 31-week infant = orogavage; bowel at rest = TPN; stable infant over 1,500 g = bottle with a soft, large-hole nipple; pumping mother = her own expressed milk. DETAILED RATIONALE — Routes are assigned by coordination, gut state, weight threshold, and milk availability — four different rulers for four different babies. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): match the route to the ruler that governs that infant." });
+
+S(C6, "A nurse discovers that a 36-week infant who is now feeding orally has been kept on preterm formula past the point his team planned, and a term nursery baby was offered preterm formula by mistake. Which risk should the nurse report FIRST?", [
+    ["Preterm formula continued past 34 weeks, or given to term infants, is poorly tolerated and hypercalcemia may develop", true, "That is the chapter's named danger for this exact error, and both babies in the picture are inside it — the mineral risk leads the report."],
+    ["Term formula given to a preterm infant burdens the kidneys and can cause central nervous system problems", false, "Correct danger, wrong direction — it describes the opposite swap from the one that happened here."],
+    ["Any formula change requires the parents' teaching to be repeated before the next feed", false, "Correct practice around a change — teaching follows the safety report, it does not lead it."],
+    ["Both babies' weights and intake should be rechecked and charted at the next round", false, "Correct monitoring after any feeding error — it proceeds once the named risk has been reported."]
+  ], "ANSWER KEY — Correct answer: report the hypercalcemia risk of preterm formula used past its window. Matching the risk to the error that actually happened decides the priority: this swap's danger is hypercalcemia, while kidney and CNS harm belong to the reverse swap. DETAILED RATIONALE — Formulas do not swap in either direction, and each direction carries its own named harm; reporting the wrong direction's harm misdirects the whole response. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): name the risk that belongs to this error, not the nearest similar one.");
+
+S(C6, "A preterm infant too ill to tolerate any oral feeding is receiving an intravenous infusion of lipids and nutrients. His father asks whether 'feeding through the vein' will be his permanent way of eating. Which answer is correct?", [
+    ["It is a bridge — total parenteral nutrition meets his growth needs while he is too premature or too ill for mouth feeding, and oral feeding is built toward as he strengthens", true, "TPN is defined by its temporary job: nutrition for the infant who cannot yet feed by mouth, including bowel rest in NEC."],
+    ["It is permanent if it lasts more than a few days, because his stomach will shrink and lose the ability to hold milk", false, "No such deadline exists in the chapter; IV fluids and TPN cover needs while feeding is established, not instead of it forever."],
+    ["It will be replaced by bottle feeding tomorrow, because vein feeding is only ever a one-day emergency measure and keep watching him closely through the next care round", false, "The opposite invention — TPN runs as long as the gut cannot, and feeds advance on readiness signs, not on a one-day clock."],
+    ["It means his digestive enzymes never developed, and babies older than 28 weeks are the only ones who can use breast milk", false, "Babies older than about 28 weeks usually DO have the enzymes for breast milk; enzyme absence is not what TPN declares."]
+  ], "ANSWER KEY — Correct answer: TPN is a bridge while he is too ill to feed by mouth. DETAILED RATIONALE — The chapter pairs TPN with the gut-readiness story: bowel sounds, meconium passed, coordination near 34 weeks, and early small feeds when the gut allows. Vein feeding protects growth in the interval; it does not close the road to oral feeding. PRIORITY FRAMEWORK — Patient Teaching (Name the Bridge): parents tolerate a temporary route when its job and its exit are both named.");
+
+/* ===== C7 standalones — ICH, sepsis/jaundice/kidneys ===== */
+S(C7, "A 28-week infant, day 2, is noted to have a bulging fontanel, new lethargy, and poor feeding at his last two cares. Which one comes FIRST?", [
+    ["Report the findings at once — bulging fontanels, lethargy, and poor feeding are the report set for bleeding inside his head", true, "His fragile head capillaries and low prothrombin make intracranial hemorrhage the fear behind this exact sign set, and reporting it leads the response."],
+    ["Position his bed in a slight Fowler position and keep watching him closely through the next care round", false, "Correct positioning for this problem — it is done in the same response, behind the report that mobilizes the team."],
+    ["Avoid unnecessary stimulation that could raise the pressure inside his head", false, "Correct protective care, and cluster care serves it — it frames how everything is done, after the findings are escalated."],
+    ["Arrange the head ultrasound that helps detect bleeding inside the head before the next scheduled assessment comes due", false, "Correct diagnostic step — ultrasonography detects the hemorrhage, and it is set in motion by the report that comes first."]
+  ], "ANSWER KEY — Correct answer: report the sign set at once. Safety and escalation decide the order: a possible intracranial hemorrhage is reported before its positioning, protection, and imaging are arranged. DETAILED RATIONALE — The preterm infant's neurological status is watched continuously precisely for this set; seizures join the report list when they appear. PRIORITY FRAMEWORK — Safety First (Escalate the Red-Flag Set): report the pattern that names an emergency before completing its supporting care.");
+
+S(C7, "A preterm infant at 5 days has a low temperature, is irritable and then lethargic, feeds poorly, and has mild respiratory distress. There is no redness, drainage, or local finding anywhere on his body. His mother had a fever during labor. Which analysis is correct?", [
+    ["This is the sepsis picture — a bloodstream infection that may show no local signs at all, with the vague set of low temperature, lethargy or irritability, poor feeding, and respiratory distress", true, "Every element fits: immature defenses that generalize infection, a mother with infection in labor raising his risk, and the vague four standing in for absent local signs."],
+    ["This cannot be infection, because an infected baby always shows a hot, red source the nurse can point to and keep watching him closely through the next care round", false, "That expectation is the trap the chapter dismantles — in the preterm infant there may be no local signs of infection at all."],
+    ["This is only cold stress, because a low temperature with lethargy is the cold stress list and nothing more needs considering", false, "Cold stress shares two of these signs, but it does not explain the feeding failure and distress in a baby whose mother labored with fever."],
+    ["This is a feeding problem only, because poor feeding is the most concrete finding and the others are too vague to act on before the next scheduled assessment comes due", false, "Vagueness is the presentation, not a reason to dismiss it — in this population the vague set IS the alarm."]
+  ], "ANSWER KEY — Correct answer: sepsis with no local signs, shown by the vague four. DETAILED RATIONALE — Treatment runs: blood cultures collected, intravenous antimicrobials given, warmth and nutrition maintained, vital signs monitored closely including blood pressure. Prevention lives in routine care — incubator separation, strict standard precautions, and organized handling. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): in a preterm infant, a vague pattern with a risk history is a finding, not an absence of one.");
+
+S(C7, "Two jaundice pictures are charted on the same morning. Baby P, 18 hours old, is visibly yellow. Baby Q, 3 days old, has a bilirubin that rose 6 mg/dL in the last 24 hours and now reads 13.4 mg/dL. Which statement is correct?", [
+    ["Both need careful investigation — jaundice inside the first day is the pathological pattern, and a rise over 5 mg/dL in 24 hours or a level past 12.9 mg/dL crosses the chapter's investigation lines", true, "Each baby crosses a different line: timing for Baby P (first 24 hours points to a cause such as blood-group incompatibility), and both the rise and the level for Baby Q."],
+    ["Only Baby Q needs investigation, because jaundice in the first day is the normal newborn pattern that fades on its own and keep watching him closely through the next care round", false, "The timing direction is flipped — the first-day appearance is the abnormal one; the slower rise over days is the physiological story."],
+    ["Only Baby P needs investigation, because a 3-day-old's bilirubin is expected to peak and no level at that age is concerning", false, "Bilirubin does peak at 3-5 days, and the chapter still sets investigation lines — a rise over 5 in a day, or past 12.9 — that Baby Q has crossed."],
+    ["Neither needs investigation until the yellow reaches the feet, because spread to the feet is the first reliable sign of a high level", false, "Spread tracks the level (face, then abdomen, then feet means rising), but the timing and number lines fire well before the feet are reached."]
+  ], "ANSWER KEY — Correct answer: both babies cross an investigation line. DETAILED RATIONALE — The preterm twist makes vigilance higher, not lower: the normal bilirubin rise in a preterm infant is slower but lasts longer, setting up hyperbilirubinemia, and the treatment goals are to prevent bilirubin brain damage and stop the climb. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): a finding can cross its line by timing, by rate, or by level — check all three.");
+
+/* ===== C8 standalones — Developmental care, family, postterm, transport, discharge ===== */
+S(C8, "A father stands at his preterm son's incubator saying, 'I want to see him, but I'm afraid to touch anything — he's so fragile, I might hurt him.' which one comes FIRST?", [
+    ["Name his fear as normal, explain that his gentle touch helps rather than harms, and stay beside him while guiding a first simple contact", true, "That is the care plan's critical-thinking answer: touch and immediate human contact are vital for the infant, and the nurse's presence turns fear into a first contact he can build on."],
+    ["Teach him the full kangaroo care routine so he can hold his son skin-to-skin today", false, "Correct destination for this father — kangaroo care is built toward as the infant tolerates it, after the first guided touch lands."],
+    ["Invite him to help with a diaper change at the next care time and keep watching him closely through the next care round", false, "Correct participation step — parents graduate from watching to doing one small task at a time, and touching comes before tasking."],
+    ["Show him the pictures and progress notes the team keeps for the family before the next scheduled assessment comes due", false, "Correct family support — pictures and news help siblings and parents, but they do not answer the fear he just said out loud."]
+  ], "ANSWER KEY — Correct answer: name the fear, teach that gentle touch helps, and guide a first contact at his side. Therapeutic communication decides the order: the stated fear is answered first, and holding, helping, and information follow in the order he can absorb them. DETAILED RATIONALE — Families typically feel disheartened by how the baby looks, quietly blame themselves, and fear the baby will die; the nurse guides and supports them through the whole hospitalization. PRIORITY FRAMEWORK — Therapeutic Communication (Answer the Stated Fear First): the feeling in the room outranks the teaching plan.");
+
+M(C8, "A nurse is building the developmental care plan for a 1,200 g preterm infant in an open NICU bay. Which elements belong in the plan? Select all that apply.", [
+    ["Build a nest of rolled blankets around him to give him boundaries and a flexed posture", true, "Nesting is the chapter's calming, boundary-giving space, and blanket rolls are the tool that builds it."],
+    ["Cluster his assessments and treatments so he gets long, uninterrupted rest blocks", true, "Cluster care is reorganized care — the same work, bunched so rest protects breathing and growth."],
+    ["Cover the top of his incubator with a blanket and dim the lights to soften stimulation", true, "Blocking external stimulation helps establish a day-night rhythm and protects his immature nervous system."],
+    ["Keep him in one position all shift so he is never disturbed by turning", false, "One position held too long is uncomfortable, can harm the lungs, and breaks down delicate skin under pressure."],
+    ["Wake him slowly and gently, keeping his arms flexed close to his body's midline as he is moved", true, "Gentle waking and midline flexion are the chapter's handling rules for an easily overstimulated infant."],
+    ["Use alkaline soap and medicated wipes at each diaper change to keep his skin sterile", false, "Preterm skin care forbids alkaline soap, alcohol, and medicated wipes; cleansing is gentle and baths run only a few times a week."]
+  ], "ANSWER KEY — Correct answers: nesting with blanket rolls, cluster care, a covered incubator with dimmed lights, and gentle waking with arms flexed to the midline. DETAILED RATIONALE — Developmental care doses the care itself: boundaries, bunched handling, softened light and sound, and position changes that protect skin and lungs. Skin protection pairs with it — hydrocolloid or gauze under tape, as little tape as possible, and no hexachlorophene cleansers. PRIORITY FRAMEWORK — Generate Solutions (Clinical Judgment): build the environment around the nervous system the baby actually has.");
+
+S(C8, "A preterm infant rests prone in the NICU with the head of his mattress slightly elevated. His parents, who just finished safe-sleep teaching, ask why he is 'allowed' on his stomach here. Which answer is correct?", [
+    ["In the NICU, side-lying or prone positioning drains secretions, guards against aspiration, and improves oxygenation — and he will be weaned to his back well before discharge, because back-to-sleep is the rule at home", true, "Both halves are the chapter's position story: monitored prone positioning is treatment here, and the supine wean plus back-to-sleep teaching protect him at home against SIDS."],
+    ["Prone is simply more comfortable for preterm infants, and the home rule is a preference parents may set aside for a fussy baby and tell the charge nurse what was decided at the bedside", false, "Comfort is not the reason, and back-to-sleep is a safety rule against sudden infant death, not a preference to waive."],
+    ["He is prone because his mattress is elevated, and once the elevation stops he can stay prone at home as well before the next scheduled assessment comes due", false, "The elevation serves drainage in the NICU; it does not export the prone position to the home crib."],
+    ["The NICU position is a mistake the nurse should correct now, since a baby must never be prone at any age and keep watching him closely through the next care round", false, "Monitored NICU positioning is deliberate care with named benefits; the never-prone rule belongs to unmonitored home sleep."]
+  ], "ANSWER KEY — Correct answer: prone is monitored NICU treatment, weaned to supine before discharge, with back-to-sleep at home. DETAILED RATIONALE — Position is context: the same posture is therapy under continuous monitoring and a danger unmonitored at home. Parents must be able to hold both halves or the discharge teaching collapses at the first question. PRIORITY FRAMEWORK — Patient Teaching (Context Decides): teach the rule and its setting together, never the rule alone.");
+
+S(C8, "A baby born at 43 weeks is long and thin, with loose skin over her thighs, dry peeling skin, long meconium-stained nails, and a thick head of hair. She looks alert. Which watch list belongs to her nursery care?", [
+    ["Respiratory distress from aspirated meconium, hypoglycemia from depleted glycogen stores, and hyperbilirubinemia from polycythemia", true, "That is the postterm problem set whole: the aging placenta drove chronic hypoxia, meconium passage and aspiration, spent reserves, and extra red cells that break down into bilirubin."],
+    ["Respiratory distress from missing surfactant, apnea from an immature nervous system, and bleeding from low prothrombin", false, "That is the preterm problem set — immaturity problems assigned to a baby whose problem is extra time, not missing time."],
+    ["Cold stress only, because a baby this size has plenty of fat and no other postterm risks to watch", false, "Her fat stores were spent in the uterus — she is vulnerable to cold stress precisely because she is thin — and the watch list is longer than temperature."],
+    ["Feeding intolerance only, because her size means her glucose and bilirubin will take care of themselves", false, "Size misleads again: her glycogen is depleted and her extra red cells raise bilirubin, so feeding is only one of three watches."]
+  ], "ANSWER KEY — Correct answer: meconium-aspiration distress, hypoglycemia, and hyperbilirubinemia from polycythemia. DETAILED RATIONALE — The main goal with a postterm infant is identification — finding the babies not tolerating the extra time inside. Once she survives delivery her risks fall away, but the nursery watches run first. PRIORITY FRAMEWORK — Recognize Cues (Clinical Judgment): read the baby — thin, dry, peeling, long nails — not the scale.");
+
+BANK.push({ cat: C8, type: "matrix", stem: "A nurse is sorting four nursery babies by the single fact that best explains each one's condition. Match each baby to the correct explanation.", cols: ["Aging placenta", "Immature organs", "Fast abnormal growth", "Immature kidneys"], rows: [
+  { t: "A 43-week baby, long and thin, whose reserves were spent before birth", a: 0, r: "The postterm engine: the placenta aged out of its job and could no longer keep up." },
+  { t: "A 30-week baby whose lungs, gut, and temperature control are all unfinished", a: 1, r: "One root cause sits under every preterm problem: organs that ran out of time." },
+  { t: "A very large baby of a diabetic mother, born at 39 weeks and heavy for his age", a: 2, r: "Big is not postmature — his size came from rapid, abnormal growth before delivery, not extra time." },
+  { t: "A preterm baby putting out far less urine than expected, with a sunken fontanel and poor skin turgor", a: 3, r: "Immature kidneys eliminate wastes poorly and dehydration arrives easily; expected output is 1-3 mL/kg per hour, measured as wet diaper weight minus dry diaper weight." }
+], tp: "ANSWER KEY — Correct matches: postterm baby = aging placenta; 30-week baby = immature organs; large baby of a diabetic mother = fast abnormal growth; low-calcium preterm baby = missed third trimester. DETAILED RATIONALE — Four babies, four engines. The matrix's trap is the third row: a large baby invites the postmature label, and the chapter explicitly refuses it. PRIORITY FRAMEWORK — Analyze Cues (Clinical Judgment): assign each baby his own mechanism before assigning his care." });
+
+S(C8, "Parents of a baby born at 36 weeks are upset at a follow-up visit: at 1 month old their son is 'behind' the milestone chart the clinic posted, and relatives keep commenting on his small size. Which counseling is correct?", [
+    ["Judge him by corrected age — his age minus the 4 weeks he was born early — so at 1 month his expected level is a newborn's, and his growth should near the term pace by about his second year", true, "Corrected age is the fair yardstick the chapter defines, with the worked example matching this baby exactly; the correction protects both the baby and the parents from a calendar he never had."],
+    ["Judge him by his calendar age, because using a corrected age will make the team miss real delays and keep watching him closely through the next care round", false, "The chapter's direction is the opposite: development is judged on the corrected scale precisely so expectations stay fair and follow-up stays accurate."],
+    ["Tell them size comments mean he is failing to thrive, and his feeds should be doubled until he catches up this month", false, "Relatives' comments are a named stressor to prepare parents for, not a diagnosis — and doubling feeds is not a chapter intervention."],
+    ["Reassure them he will catch up within a few weeks, since preterm growth matches term growth almost immediately before the next scheduled assessment comes due", false, "The chapter's horizon is about the second year without severe complications — a few-weeks promise sets the family up to feel failed again."]
+  ], "ANSWER KEY — Correct answer: corrected age — 1 month minus 4 weeks early equals newborn expectations, with catch-up nearing the term pace by about the second year. DETAILED RATIONALE — Very-low-birth-weight infants may catch up more slowly, slowed further by chronic illness, poor intake, or inadequate caretaking — which is why follow-up, not reassurance alone, carries this family. PRIORITY FRAMEWORK — Patient Teaching (Use the Fair Yardstick): correct the ruler before judging the child.");
+
+S(C8, "A high-risk newborn is being prepared for transport to a regional neonatal center. His mother, still in her hospital bed, cannot hold him. Which one comes FIRST?", [
+    ["Stabilize him and gather his baseline data — vital signs, blood work, blood gases, and glucose — before departure", true, "Stabilization with baseline data is the chapter's first transport rule: the receiving team inherits numbers, not surprises, and his condition is steadied before the road."],
+    ["Place his identification band and verify its name and number against his mother's band", false, "Correct and required identification work — it is completed in the same preparation, behind the stabilization that makes him safe to move."],
+    ["Wheel his transport incubator to his mother's bedside and give her a picture of him", false, "Correct and deeply important when she cannot hold him — it happens within the departure preparation, not ahead of his stabilization."],
+    ["Give his parents the receiving hospital's name and location and a physician's name and number to call", false, "Correct family handoff information — it closes the preparation once he is stable, identified, and seen by his mother."]
+  ], "ANSWER KEY — Correct answer: stabilize him and gather baseline data first. Safety decides the order in transport: a life-support transport incubator, fully charged, carries a stabilized baby whose records, identification, and family connection travel with him. DETAILED RATIONALE — After he arrives safely, the parents are contacted by telephone, and receiving staff give the transport team feedback on how he did. PRIORITY FRAMEWORK — Safety First (Stabilize Before You Move): no handoff, however kind, outranks a stable patient.");
+
+S(C8, "A preterm infant is nearing discharge. His parents have visited daily, learned his cares, and ask what must be in place before he goes home. Which discharge picture is correct?", [
+    ["They demonstrate and practice both routine and specialized care, newborn CPR is reviewed with them, follow-up and immunizations are stressed, and they leave with a way to reach the team by phone", true, "That is the chapter's discharge set whole: demonstrated competence, CPR review, the follow-up spine of well-baby exams and immunizations, and warm or hot lines for contact."],
+    ["They sign the discharge papers once his weight passes 2,500 g, since weight is the single discharge criterion for preterm infants", false, "No single weight criterion exists in the chapter; discharge planning begins at birth and is built on demonstrated care, not a scale reading."],
+    ["They are given a printed sheet only, because practicing cares in the NICU might disturb his rest blocks and keep watching him closely through the next care round", false, "Demonstration and practice by the parents are required, not optional paperwork — cluster care protects his rest around their learning."],
+    ["They are told follow-up can wait until he looks bigger, since preterm infants outgrow the need for close supervision before the next scheduled assessment comes due", false, "Continued medical supervision stays important after discharge; waiting for size reverses the chapter's follow-up spine."]
+  ], "ANSWER KEY — Correct answer: demonstrated routine and specialized care, CPR review, stressed follow-up and immunizations, and phone access to the team. DETAILED RATIONALE — Home nurse visits, social services confirmation that the home can meet his needs, and support group referrals complete the picture, along with realistic expectations taught through corrected age. PRIORITY FRAMEWORK — Evaluate Outcomes (Clinical Judgment): discharge is earned by demonstrated readiness, not by a date or a weight.");
+
+var BLUEPRINT = {
+ "Respiratory Distress Syndrome, Oxygen, CPAP, and BPD": {
+  "name": "Respiratory Distress Syndrome, Oxygen, CPAP, and BPD",
+  "count": 8,
+  "types": {
+   "multi": 2,
+   "single": 6
+  }
+ },
+ "Apnea of Prematurity, Hypoxia, and Pulse Oximetry": {
+  "name": "Apnea of Prematurity, Hypoxia, and Pulse Oximetry",
+  "count": 8,
+  "types": {
+   "single": 6,
+   "dropdown": 1,
+   "matrix": 1
+  }
+ },
+ "Thermoregulation and Cold Stress": {
+  "name": "Thermoregulation and Cold Stress",
+  "count": 8,
+  "types": {
+   "order": 2,
+   "single": 5,
+   "multi": 1
+  }
+ },
+ "NEC, Intracranial Hemorrhage, ROP, Sepsis, Kidneys, and Jaundice": {
+  "name": "NEC, Intracranial Hemorrhage, ROP, Sepsis, Kidneys, and Jaundice",
+  "count": 8,
+  "types": {
+   "multi": 1,
+   "single": 6,
+   "order": 1
+  }
+ },
+ "Feeding the Preterm Newborn — Gavage and TPN": {
+  "name": "Feeding the Preterm Newborn — Gavage and TPN",
+  "count": 8,
+  "types": {
+   "dropdown": 1,
+   "single": 5,
+   "multi": 1,
+   "matrix": 1
+  }
+ },
+ "Classification, Characteristics, Ballard Score, and Causes of Preterm Birth": {
+  "name": "Classification, Characteristics, Ballard Score, and Causes of Preterm Birth",
+  "count": 7,
+  "types": {
+   "single": 5,
+   "multi": 1,
+   "matrix": 1
+  }
+ },
+ "Hypoglycemia and Hypocalcemia": {
+  "name": "Hypoglycemia and Hypocalcemia",
+  "count": 8,
+  "types": {
+   "single": 6,
+   "dropdown": 1,
+   "multi": 1
+  }
+ },
+ "Developmental Care, Family, the Postterm Newborn, Transport, and Discharge": {
+  "name": "Developmental Care, Family, the Postterm Newborn, Transport, and Discharge",
+  "count": 8,
+  "types": {
+   "single": 6,
+   "multi": 1,
+   "matrix": 1
+  }
+ }
+};
+
+/* ============ ENGINE (ES5) ============ */
+var Q = [];
+var S = { screen: "start", mode: "practice", shuf: true, cur: 0, resp: [], touched: [], checked: [], flag: [], review: false, onlyMissed: false };
+
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { var i, j, t; for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function copy(o) { return JSON.parse(JSON.stringify(o)); }
+function letter(i) { return String.fromCharCode(65 + i); }
+
+function build() {
+  var units = [], gmap = {}, i, k, q, flat = [];
+  for (i = 0; i < BANK.length; i++) {
+    q = copy(BANK[i]);
+    if (q.grp) {
+      if (!gmap[q.grp]) { gmap[q.grp] = []; units.push(gmap[q.grp]); }
+      gmap[q.grp].push(q);
+    } else { units.push([q]); }
+  }
+  if (S.shuf) { shuffle(units); }
+  for (i = 0; i < units.length; i++) { for (k = 0; k < units[i].length; k++) { flat.push(units[i][k]); } }
+  Q = flat;
+  S.resp = []; S.touched = []; S.checked = []; S.flag = [];
+  for (i = 0; i < Q.length; i++) {
+    q = Q[i];
+    S.touched.push(false); S.checked.push(false); S.flag.push(false);
+    if (q.type === "single") { shuffle(q.opts); S.resp.push(-1); }
+    else if (q.type === "multi") { shuffle(q.opts); S.resp.push(falseArr(q.opts.length)); }
+    else if (q.type === "order") {
+      var n = q.items.length, p = [], t, tries = 0, same;
+      for (k = 0; k < n; k++) { p.push(k); }
+      if (S.shuf) {
+        do { shuffle(p); same = true; for (k = 0; k < n; k++) { if (p[k] !== k) { same = false; } } tries++; } while (same && tries < 20);
+      } else { p.reverse(); }
+      S.resp.push(p);
+    }
+    else if (q.type === "dropdown") {
+      var d = [];
+      for (k = 0; k < q.blanks.length; k++) { shuffle(q.blanks[k].o); d.push(-1); }
+      S.resp.push(d);
+    }
+    else { var m = []; for (k = 0; k < q.rows.length; k++) { m.push(-1); } S.resp.push(m); }
+  }
+}
+function falseArr(n) { var a = [], i; for (i = 0; i < n; i++) { a.push(false); } return a; }
+
+function isAnswered(i) {
+  var q = Q[i], r = S.resp[i], k;
+  if (q.type === "single") { return r >= 0; }
+  if (q.type === "multi") { for (k = 0; k < r.length; k++) { if (r[k]) { return true; } } return false; }
+  if (q.type === "order") { return S.touched[i]; }
+  for (k = 0; k < r.length; k++) { if (r[k] < 0) { return false; } }
+  return true;
+}
+function score(i) {
+  var q = Q[i], r = S.resp[i], k, s = 0, tot = 0, hit = 0, wr = 0;
+  if (q.type === "single") { return (r >= 0 && q.opts[r].c) ? 1 : 0; }
+  if (q.type === "multi") {
+    for (k = 0; k < q.opts.length; k++) { if (q.opts[k].c) { tot++; } if (r[k]) { if (q.opts[k].c) { hit++; } else { wr++; } } }
+    return Math.max(0, (hit - wr) / tot);
+  }
+  if (q.type === "order") { for (k = 0; k < r.length; k++) { if (r[k] === k) { s++; } } return s / r.length; }
+  if (q.type === "dropdown") { for (k = 0; k < q.blanks.length; k++) { if (r[k] >= 0 && q.blanks[k].o[r[k]].c) { s++; } } return s / q.blanks.length; }
+  for (k = 0; k < q.rows.length; k++) { if (r[k] === q.rows[k].a) { s++; } }
+  return s / q.rows.length;
+}
+function isLocked() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+function showFb() { return S.review || (S.mode === "practice" && S.checked[S.cur]); }
+
+/* ---------- screens ---------- */
+function renderStart() {
+  var counts = {}, i, k, h = "", kt = {};
+  for (i = 0; i < CATS.length; i++) { counts[CATS[i]] = 0; }
+  for (i = 0; i < BANK.length; i++) {
+    counts[BANK[i].cat]++;
+    if (BANK[i].kt) { for (k = 0; k < BANK[i].kt.length; k++) { kt[BANK[i].kt[k]] = (kt[BANK[i].kt[k]] || 0) + 1; } }
+  }
+  h += '<div class="wrap"><div class="card">';
+  h += '<h1>OB Chapter 13: Preterm and Postterm Newborns — Predicted Test</h1>';
+  h += '<div class="sub">Brutal mode | Leifer, Introduction to Maternity and Pediatric Nursing | ' + BANK.length + ' questions</div>';
+  h += '<h2>Question blueprint</h2><table class="bp"><tr><th>Content area</th><th>Questions</th></tr>';
+  for (i = 0; i < CATS.length; i++) { h += '<tr><td>' + CATS[i] + '</td><td>' + counts[CATS[i]] + '</td></tr>'; }
+  h += '<tr><td><b>Total</b></td><td><b>' + BANK.length + '</b></td></tr></table>';
+  h += '<div class="small"><b>Key Terms tested:</b> ';
+  for (i = 0; i < KEYTERMS.length; i++) { h += KEYTERMS[i] + ' (' + (kt[KEYTERMS[i]] || 0) + ')' + (i < KEYTERMS.length - 1 ? ', ' : ''); }
+  h += '</div>';
+  h += '<div class="small" style="margin-top:6px"><b>Item formats:</b> single best answer, select all that apply, ordering, dropdown sentences, and matching tables. Select-all, ordering, dropdown, and matching items earn partial credit.</div>';
+  h += '<h2>Mode</h2>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="practice" checked> <b>Practice mode</b><br><span class="small">Check each answer and see rationales right away.</span></label>';
+  h += '<label class="modebox"><input type="radio" name="mode" value="exam"> <b>Exam mode</b><br><span class="small">No feedback until you finish. Full review afterward.</span></label>';
+  h += '<label class="modebox"><input type="checkbox" id="shf" checked> <b>Shuffle</b> question order<br><span class="small">Answer choices always shuffle, even dropdowns. Case-study questions stay together.</span></label>';
+  h += '<button class="btn" onclick="startTest()">Start test</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+function startTest() {
+  var ms = document.getElementsByName("mode"), i;
+  for (i = 0; i < ms.length; i++) { if (ms[i].checked) { S.mode = ms[i].value; } }
+  S.shuf = $("shf").checked;
+  build();
+  S.cur = 0; S.review = false; S.onlyMissed = false; S.screen = "quiz";
+  renderShell();
+  renderQ();
+}
+
+function renderShell() {
+  var h = '<div class="top"><div class="pb"><div class="pf" id="pf"></div></div><div id="pt"></div></div>';
+  h += '<div class="wrap"><div id="qarea"></div><div class="card"><div class="small" style="margin-bottom:6px">Question navigator</div><div class="nav" id="nav"></div></div></div>';
+  h += '<div class="bot" id="bot"></div>';
+  $("app").innerHTML = h;
+}
+
+function answeredCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (isAnswered(i)) { c++; } } return c; }
+function flagCount() { var c = 0, i; for (i = 0; i < Q.length; i++) { if (S.flag[i]) { c++; } } return c; }
+
+function updateBars() {
+  var a = answeredCount(), n = Q.length, i, h = "", cls, pts = 0, cnt = 0, tot = 0;
+  $("pf").style.width = Math.round(a / n * 100) + "%";
+  $("pt").innerHTML = (S.review ? "Review mode" : (S.mode === "practice" ? "Practice mode" : "Exam mode")) + " | Question " + (S.cur + 1) + " of " + n + " | Answered " + a + " of " + n;
+  for (i = 0; i < n; i++) {
+    cls = "";
+    if (S.review) { var sc = score(i); cls = sc === 1 ? "ok" : (sc > 0 ? "part" : "bad"); }
+    else if (isAnswered(i)) { cls = "ans"; }
+    if (S.flag[i]) { cls += " fl"; }
+    if (i === S.cur) { cls += " cur"; }
+    h += '<button class="' + cls + '" onclick="goTo(' + i + ')">' + (i + 1) + '</button>';
+  }
+  $("nav").innerHTML = h;
+  var b = "";
+  if (S.review) {
+    for (i = 0; i < n; i++) { tot += score(i); }
+    b = 'Final score: ' + tot.toFixed(1) + ' / ' + n + ' (' + Math.round(tot / n * 100) + '%) &nbsp; <button class="btn ghost" style="padding:6px 12px;font-size:13px;margin:0" onclick="renderResult()">Results</button>';
+  } else if (S.mode === "practice") {
+    for (i = 0; i < n; i++) { if (S.checked[i]) { pts += score(i); cnt++; } }
+    b = cnt ? ('Running score: ' + pts.toFixed(1) + ' / ' + cnt + ' (' + Math.round(pts / cnt * 100) + '%) | Flagged ' + flagCount()) : ('Checked 0 | Flagged ' + flagCount());
+  } else {
+    b = 'Answered ' + a + ' of ' + n + ' | Flagged ' + flagCount();
+  }
+  $("bot").innerHTML = b;
+}
+
+function typeText(t) {
+  if (t === "single") { return "Select the best answer."; }
+  if (t === "multi") { return "Select all that apply."; }
+  if (t === "order") { return "Arrange the items in the correct order using the arrows."; }
+  if (t === "dropdown") { return "Choose the best option for each blank."; }
+  return "Choose the best match for each item.";
+}
+
+function renderQ() {
+  var i = S.cur, q = Q[i], r = S.resp[i], fb = showFb(), lock = isLocked(), h = "", k, o, cls;
+  h += '<div class="card"><div class="qh"><span class="qn">Question ' + (i + 1) + ' of ' + Q.length + '</span><span class="chip">' + q.cat + '</span>';
+  h += '<button class="flag' + (S.flag[i] ? ' on' : '') + '" onclick="toggleFlag()">' + (S.flag[i] ? 'Flagged' : 'Flag') + '</button></div>';
+  if (q.scen) { h += '<div class="scen">' + q.scen + '</div>'; }
+  h += '<div class="qt">' + typeText(q.type) + '</div>';
+
+  if (q.type === "single") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r === k ? " sel" : "");
+      if (fb) { if (o.c) { cls += " good"; } else if (r === k) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickS(' + k + ')"><span class="lt">' + letter(k) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? 'Correct. ' : (r === k ? 'Your answer. ' : '')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "multi") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < q.opts.length; k++) {
+      o = q.opts[k]; cls = "opt" + (r[k] ? " sel" : "");
+      if (fb) { if (o.c && r[k]) { cls += " good"; } else if (o.c && !r[k]) { cls += " miss"; } else if (!o.c && r[k]) { cls += " bad"; } }
+      h += '<div class="' + cls + '" onclick="pickM(' + k + ')"><span class="lt">' + (r[k] ? '&#10003;' : letter(k)) + '</span><span class="ot">' + o.t;
+      if (fb) { h += '<span class="rat">' + (o.c ? (r[k] ? 'Correct. ' : 'Missed - this is correct. ') : (r[k] ? 'Incorrect choice. ' : 'Not correct. ')) + o.r + '</span>'; }
+      h += '</span></div>';
+    }
+  } else if (q.type === "order") {
+    h += '<div class="stem">' + q.stem + '</div>';
+    for (k = 0; k < r.length; k++) {
+      cls = "oi"; if (fb) { cls += (r[k] === k ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="num">' + (k + 1) + '</span><span class="ot">' + q.items[r[k]].t + '</span>';
+      if (!lock) { h += '<button onclick="mv(' + k + ',-1)">&#9650;</button><button onclick="mv(' + k + ',1)">&#9660;</button>'; }
+      h += '</div>';
+    }
+    if (fb) {
+      h += '<div class="small" style="margin:8px 0 4px"><b>Correct order:</b></div>';
+      for (k = 0; k < q.items.length; k++) { h += '<div class="fbx">' + (k + 1) + '. ' + q.items[k].t + ' - ' + q.items[k].r + '</div>'; }
+    }
+  } else if (q.type === "dropdown") {
+    var st = q.stem, b, sel, j, bo;
+    for (b = 0; b < q.blanks.length; b++) {
+      cls = ""; if (fb) { cls = (r[b] >= 0 && q.blanks[b].o[r[b]].c) ? "good" : "bad"; }
+      sel = '<select class="' + cls + '"' + (lock ? ' disabled' : '') + ' onchange="pickD(' + b + ',this.value)"><option value="-1">Select...</option>';
+      for (j = 0; j < q.blanks[b].o.length; j++) { sel += '<option value="' + j + '"' + (r[b] === j ? ' selected' : '') + '>' + q.blanks[b].o[j].t + '</option>'; }
+      sel += '</select>';
+      st = st.replace('[[' + b + ']]', sel);
+    }
+    h += '<div class="ddstem">' + st + '</div>';
+    if (fb) {
+      for (b = 0; b < q.blanks.length; b++) {
+        h += '<div class="small" style="margin-top:6px"><b>Blank ' + (b + 1) + '</b></div>';
+        for (j = 0; j < q.blanks[b].o.length; j++) {
+          bo = q.blanks[b].o[j];
+          h += '<div class="fbx">' + (bo.c ? 'Correct: ' : (r[b] === j ? 'Your choice: ' : '')) + bo.t + ' - ' + bo.r + '</div>';
+        }
+      }
+    }
+  } else {
+    h += '<div class="stem">' + q.stem + '</div><div class="leg">';
+    for (k = 0; k < q.cols.length; k++) { h += '<div><b>' + letter(k) + '.</b> ' + q.cols[k] + '</div>'; }
+    h += '</div>';
+    for (k = 0; k < q.rows.length; k++) {
+      cls = "mrow"; if (fb) { cls += (r[k] === q.rows[k].a ? " good" : " bad"); }
+      h += '<div class="' + cls + '"><span class="mt">' + q.rows[k].t + '</span><select' + (lock ? ' disabled' : '') + ' onchange="pickX(' + k + ',this.value)"><option value="-1">Select</option>';
+      for (j = 0; j < q.cols.length; j++) { h += '<option value="' + j + '"' + (r[k] === j ? ' selected' : '') + '>' + letter(j) + '</option>'; }
+      h += '</select></div>';
+      if (fb) { h += '<div class="fbx">Answer: ' + letter(q.rows[k].a) + ' - ' + q.rows[k].r + '</div>'; }
+    }
+  }
+
+  if (fb) {
+    var sc = score(i);
+    h += '<div class="res ' + (sc === 1 ? 'ok' : (sc > 0 ? 'part' : 'no')) + '">' + (sc === 1 ? 'Correct' : (sc > 0 ? 'Partial credit' : 'Incorrect')) + ' - ' + sc.toFixed(2) + ' / 1</div>';
+    h += '<div class="tp"><b>Teaching point:</b> ' + q.tp + '</div>';
+  }
+
+  h += '<div>';
+  h += '<button class="btn ghost" onclick="step(-1)">Back</button>';
+  if (!S.review && S.mode === "practice" && !S.checked[i]) { h += '<button class="btn alt" onclick="checkAns()">Check answer</button>'; }
+  if (!S.review && i === Q.length - 1) { h += '<button class="btn" onclick="finish()">Finish and score</button>'; }
+  else { h += '<button class="btn" onclick="step(1)">Next</button>'; }
+  h += '</div></div>';
+  $("qarea").innerHTML = h;
+  updateBars();
+}
+
+/* ---------- interactions ---------- */
+function pickS(k) { if (isLocked()) { return; } S.resp[S.cur] = k; renderQ(); }
+function pickM(k) { if (isLocked()) { return; } S.resp[S.cur][k] = !S.resp[S.cur][k]; renderQ(); }
+function pickD(b, v) { if (isLocked()) { return; } S.resp[S.cur][b] = parseInt(v, 10); renderQ(); }
+function pickX(rw, v) { if (isLocked()) { return; } S.resp[S.cur][rw] = parseInt(v, 10); renderQ(); }
+function mv(pos, d) {
+  var r = S.resp[S.cur], t, np = pos + d;
+  if (isLocked() || np < 0 || np >= r.length) { return; }
+  t = r[pos]; r[pos] = r[np]; r[np] = t; S.touched[S.cur] = true; renderQ();
+}
+function toggleFlag() { S.flag[S.cur] = !S.flag[S.cur]; renderQ(); }
+function checkAns() {
+  var i = S.cur;
+  if (Q[i].type === "order") { S.touched[i] = true; }
+  if (!isAnswered(i)) { alert("Select or complete your answer first."); return; }
+  S.checked[i] = true; renderQ();
+}
+function goTo(i) { S.cur = i; renderQ(); window.scrollTo(0, 0); }
+function step(d) {
+  var n = S.cur + d;
+  while (n >= 0 && n < Q.length && S.review && S.onlyMissed && score(n) === 1) { n += d; }
+  if (n < 0 || n >= Q.length) { return; }
+  S.cur = n; renderQ(); window.scrollTo(0, 0);
+}
+function finish() {
+  var un = Q.length - answeredCount();
+  if (un > 0 && !confirm(un + " question(s) are unanswered. Finish anyway?")) { return; }
+  renderResult();
+}
+
+function renderResult() {
+  var i, tot = 0, n = Q.length, cat = {}, h = "", c, fullyCorrect = 0;
+  S.screen = "result"; S.review = false;
+  for (i = 0; i < CATS.length; i++) { cat[CATS[i]] = { p: 0, n: 0 }; }
+  for (i = 0; i < n; i++) { var sc = score(i); tot += sc; cat[Q[i].cat].p += sc; cat[Q[i].cat].n++; if (sc === 1) { fullyCorrect++; } }
+  h += '<div class="wrap"><div class="card"><h1>Results</h1>';
+  h += '<div class="big">' + Math.round(tot / n * 100) + '%</div>';
+  h += '<div class="sub">' + tot.toFixed(1) + ' of ' + n + ' points (partial credit included) | ' + fullyCorrect + ' fully correct</div>';
+  h += '<h2>By content area</h2>';
+  for (i = 0; i < CATS.length; i++) {
+    c = cat[CATS[i]];
+    h += '<div class="small">' + CATS[i] + ': ' + c.p.toFixed(1) + ' / ' + c.n + ' (' + Math.round(c.p / c.n * 100) + '%)</div><div class="cb"><div style="width:' + Math.round(c.p / c.n * 100) + '%"></div></div>';
+  }
+  h += '<button class="btn" onclick="startReview(false)">Review all</button>';
+  h += '<button class="btn alt" onclick="startReview(true)">Review missed only</button>';
+  h += '<button class="btn ghost" onclick="renderStart()">Home</button>';
+  h += '</div></div>';
+  $("app").innerHTML = h;
+  window.scrollTo(0, 0);
+}
+function startReview(missed) {
+  var i, first = 0;
+  S.review = true; S.onlyMissed = missed; S.screen = "quiz";
+  if (missed) { for (i = 0; i < Q.length; i++) { if (score(i) < 1) { first = i; break; } } }
+  S.cur = first;
+  renderShell(); renderQ();
+}
+
+renderStart();
+</script>
+</body>
+</html>
